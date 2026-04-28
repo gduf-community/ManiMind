@@ -13,8 +13,16 @@ from .context_assembly import (
     build_default_prompt_sections,
 )
 from .models import PipelineStage, SegmentModality, SegmentSpec, SourceBundle, TaskStatus
+from .runtime_store import (
+    load_execution_task_snapshot,
+    persist_context_packet,
+    persist_plan_snapshot,
+    persist_task_update,
+)
 from .task_board import update_execution_task_status
 from .workflow import build_project_plan
+
+DEFAULT_SESSION_ID = "manual-session"
 
 
 def _load_manifest(manifest_path: Path) -> dict:
@@ -77,6 +85,12 @@ def main() -> None:
 
     plan_parser = subparsers.add_parser("plan", help="从 JSON 清单构建项目计划")
     plan_parser.add_argument("manifest", type=Path)
+    plan_parser.add_argument(
+        "--session-id",
+        type=str,
+        default=DEFAULT_SESSION_ID,
+        help="本次计划构建对应的会话标识",
+    )
 
     context_parser = subparsers.add_parser(
         "context-pack", help="按角色与阶段装配上下文包"
@@ -85,9 +99,20 @@ def main() -> None:
     context_parser.add_argument("role_id", type=str)
     context_parser.add_argument("stage", type=str)
     context_parser.add_argument(
+        "--session-id",
+        type=str,
+        default=DEFAULT_SESSION_ID,
+        help="上下文装配对应的会话标识",
+    )
+    context_parser.add_argument(
         "--render-prompt-sections",
         action="store_true",
         help="额外输出提示词分段渲染结果",
+    )
+    context_parser.add_argument(
+        "--allow-disallowed-stage",
+        action="store_true",
+        help="允许在角色未声明支持的阶段生成 context packet",
     )
 
     task_parser = subparsers.add_parser(
@@ -97,6 +122,12 @@ def main() -> None:
     task_parser.add_argument("task_id", type=str)
     task_parser.add_argument("status", type=str)
     task_parser.add_argument("actor_role", type=str)
+    task_parser.add_argument(
+        "--session-id",
+        type=str,
+        default=DEFAULT_SESSION_ID,
+        help="任务更新对应的会话标识",
+    )
 
     args = parser.parse_args()
 
@@ -109,9 +140,18 @@ def main() -> None:
         return
 
     if args.command == "plan":
+        plan = _build_plan_model_from_manifest(args.manifest)
+        persisted = persist_plan_snapshot(
+            plan=plan,
+            session_id=args.session_id,
+            source_manifest=str(args.manifest),
+        )
         print(
             json.dumps(
-                build_plan_from_manifest(args.manifest),
+                {
+                    "plan": plan.to_dict(),
+                    "persisted_paths": persisted,
+                },
                 ensure_ascii=False,
                 indent=2,
             )
@@ -120,41 +160,60 @@ def main() -> None:
 
     if args.command == "context-pack":
         plan = _build_plan_model_from_manifest(args.manifest)
+        load_execution_task_snapshot(plan)
         stage = PipelineStage(args.stage)
-        packet = build_context_packet(
-            plan=plan,
-            role_id=args.role_id,
-            stage=stage,
-        )
+        try:
+            packet = build_context_packet(
+                plan=plan,
+                role_id=args.role_id,
+                stage=stage,
+                allow_disallowed_stage=args.allow_disallowed_stage,
+            )
+        except PermissionError as exc:
+            raise SystemExit(str(exc)) from exc
         output: dict[str, object] = {"context_packet": packet}
+        prompt_sections: list[str] | None = None
         if args.render_prompt_sections:
             cache = PromptSectionCache()
-            output["prompt_sections"] = cache.resolve(
-                build_default_prompt_sections(packet)
-            )
+            prompt_sections = cache.resolve(build_default_prompt_sections(packet))
+            output["prompt_sections"] = prompt_sections
+        output["persisted_paths"] = persist_context_packet(
+            plan=plan,
+            session_id=args.session_id,
+            packet=packet,
+            prompt_sections=prompt_sections,
+        )
         print(json.dumps(output, ensure_ascii=False, indent=2))
         return
 
     if args.command == "task-update":
         plan = _build_plan_model_from_manifest(args.manifest)
+        load_execution_task_snapshot(plan)
         result = update_execution_task_status(
             plan=plan,
             task_id=args.task_id,
             new_status=TaskStatus(args.status),
             actor_role=args.actor_role,
         )
+        mutation = {
+            "success": result.success,
+            "task_id": result.task_id,
+            "from_status": result.from_status,
+            "to_status": result.to_status,
+            "reason": result.reason,
+            "verification_nudge_needed": result.verification_nudge_needed,
+        }
+        persisted = persist_task_update(
+            plan=plan,
+            session_id=args.session_id,
+            mutation=mutation,
+        )
         print(
             json.dumps(
                 {
-                    "mutation": {
-                        "success": result.success,
-                        "task_id": result.task_id,
-                        "from_status": result.from_status,
-                        "to_status": result.to_status,
-                        "reason": result.reason,
-                        "verification_nudge_needed": result.verification_nudge_needed,
-                    },
+                    "mutation": mutation,
                     "execution_tasks": [task.to_dict() for task in plan.execution_tasks],
+                    "persisted_paths": persisted,
                 },
                 ensure_ascii=False,
                 indent=2,

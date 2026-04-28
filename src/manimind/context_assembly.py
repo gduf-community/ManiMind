@@ -54,6 +54,16 @@ def _context_map(plan: ProjectPlan) -> dict[str, ContextRecord]:
     return {record.key: record for record in plan.contexts}
 
 
+def _can_consume(record: ContextRecord, role_id: str) -> bool:
+    if role_id == "lead":
+        return True
+    if role_id == record.writer_role:
+        return True
+    if not record.consumer_roles:
+        return True
+    return role_id in record.consumer_roles
+
+
 def _collect_mode_defaults(plan: ProjectPlan, mode: AgentMode) -> set[str]:
     selected: set[str] = set()
     if mode == AgentMode.READ_ONLY:
@@ -93,17 +103,25 @@ def build_context_packet(
     plan: ProjectPlan,
     role_id: str,
     stage: PipelineStage,
+    allow_disallowed_stage: bool = False,
 ) -> dict[str, object]:
     """按角色和阶段装配上下文包。"""
     profile = next((item for item in plan.agent_profiles if item.id == role_id), None)
     if profile is None:
         raise ValueError(f"unknown role_id: {role_id}")
+    stage_allowed = stage in profile.allowed_stages
+    if not stage_allowed and not allow_disallowed_stage:
+        raise PermissionError(
+            f"stage_not_allowed: role={role_id} stage={stage.value}"
+        )
 
     context_by_key = _context_map(plan)
     selected_keys = _collect_mode_defaults(plan, profile.mode)
     selected_keys.update(profile.required_inputs)
     selected_keys = {
-        key for key in selected_keys if key in context_by_key
+        key
+        for key in selected_keys
+        if key in context_by_key and _can_consume(context_by_key[key], role_id)
     }
 
     context_specs = [
@@ -135,7 +153,7 @@ def build_context_packet(
         "role_id": profile.id,
         "mode": profile.mode.value,
         "stage": stage.value,
-        "stage_allowed": stage in profile.allowed_stages,
+        "stage_allowed": stage_allowed,
         "responsibility": profile.responsibility,
         "required_inputs": profile.required_inputs,
         "context_specs": context_specs,

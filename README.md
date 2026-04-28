@@ -74,6 +74,23 @@ powershell -ExecutionPolicy Bypass -File .\scripts\check-prerequisites.ps1
 - `context-pack <manifest.json> <role_id> <stage>`：生成角色上下文包。
 - `context-pack ... --render-prompt-sections`：额外输出提示词分段渲染结果。
 - `task-update <manifest.json> <task_id> <status> <actor_role>`：按状态机推进任务。
+- `context-pack` 默认会阻断角色非法阶段请求；需要显式放行时使用 `--allow-disallowed-stage`。
+- 三个命令支持 `--session-id`，并会把状态与事件日志落盘到 `runtime/projects/<project_id>/` 与 `runtime/sessions/<session_id>/`。
+
+## Web API 骨架（新增）
+
+- 新增 `backend/` FastAPI 骨架，直接复用编排内核：
+  - `POST /api/projects/plan`
+  - `GET /api/projects/{project_id}/runtime`
+  - `POST /api/projects/tasks`
+  - `POST /api/projects/tasks/update`
+  - `POST /api/projects/context-pack`
+- 启动示例（安装 `api` 依赖后）：
+
+```powershell
+& 'C:\Users\84025\AppData\Local\Programs\Python\Python312\python.exe' -m pip install -e ".[api]"
+& 'C:\Users\84025\AppData\Local\Programs\Python\Python312\python.exe' -m uvicorn backend.main:app --reload
+```
 
 ## 文档入口
 

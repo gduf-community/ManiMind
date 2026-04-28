@@ -67,3 +67,26 @@ def test_prompt_sections_are_cacheable() -> None:
     second = cache.resolve(sections)
 
     assert first == second
+
+
+def test_context_packet_respects_consumer_roles() -> None:
+    packet = build_context_packet(
+        plan=_demo_plan(),
+        role_id="planner",
+        stage=PipelineStage.PLAN,
+    )
+    keys = {item["key"] for item in packet["context_specs"]}
+    assert "demo.review.report" not in keys
+
+
+def test_disallowed_stage_raises_by_default() -> None:
+    try:
+        build_context_packet(
+            plan=_demo_plan(),
+            role_id="planner",
+            stage=PipelineStage.DISPATCH,
+        )
+    except PermissionError as exc:
+        assert "stage_not_allowed" in str(exc)
+    else:
+        raise AssertionError("expected PermissionError for disallowed stage")

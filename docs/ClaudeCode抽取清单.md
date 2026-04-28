@@ -94,8 +94,22 @@
 - `context-pack`：从清单生成角色上下文包
 - `context-pack --render-prompt-sections`：输出提示词分段
 - `task-update`：按状态机推进任务并返回最新执行任务状态
+- `--session-id`：支持把同一会话的上下文包与任务更新串联落盘
 
-## 六、测试覆盖（已落地）
+## 六、运行时落盘（已落地）
+
+落地位置：
+
+- [runtime_store.py](/C:/Users/84025/Desktop/ManiMind/src/manimind/runtime_store.py)
+
+抽取结果：
+
+- 项目级快照：`state.json`、`context-records.json`、`execution-tasks.json`、`project-plan.json`
+- 会话级快照：`context-packets/*.json`、`task-updates/*.json`
+- 审计日志：项目级与会话级 `events.jsonl`
+- 任务状态回填：`load_execution_task_snapshot(...)` 支持跨命令续跑
+
+## 七、测试覆盖（已落地）
 
 - [test_bootstrap.py](/C:/Users/84025/Desktop/ManiMind/tests/test_bootstrap.py)
 - [test_workflow.py](/C:/Users/84025/Desktop/ManiMind/tests/test_workflow.py)

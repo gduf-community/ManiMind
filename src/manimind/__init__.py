@@ -10,11 +10,24 @@ from .context_assembly import (
 from .models import (
     AgentProfile,
     ExecutionTask,
+    PipelineStage,
     ProjectPlan,
     RuntimeLayout,
     SegmentSpec,
     SourceBundle,
     TaskStatus,
+)
+from .runtime import (
+    ProjectRuntime,
+    apply_runtime_snapshot,
+    derive_current_stage,
+    load_project_runtime,
+)
+from .runtime_store import (
+    load_execution_task_snapshot,
+    persist_context_packet,
+    persist_plan_snapshot,
+    persist_task_update,
 )
 from .task_board import TaskMutationResult, list_available_tasks, update_execution_task_status
 from .workflow import build_project_plan
@@ -22,6 +35,8 @@ from .workflow import build_project_plan
 __all__ = [
     "AgentProfile",
     "ExecutionTask",
+    "PipelineStage",
+    "ProjectRuntime",
     "PromptSection",
     "PromptSectionCache",
     "ProjectPlan",
@@ -33,8 +48,15 @@ __all__ = [
     "build_context_packet",
     "build_default_prompt_sections",
     "build_runtime_layout",
+    "derive_current_stage",
     "build_project_plan",
     "list_available_tasks",
+    "load_project_runtime",
+    "load_execution_task_snapshot",
+    "persist_context_packet",
+    "persist_plan_snapshot",
+    "persist_task_update",
     "sanitize_identifier",
     "update_execution_task_status",
+    "apply_runtime_snapshot",
 ]
