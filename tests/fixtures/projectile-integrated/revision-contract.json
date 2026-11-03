@@ -1,0 +1,260 @@
+{
+  "schema_version": 1,
+  "project_id": "projectile-integrated-20261027",
+  "authority": "2026-10-27 user explicitly requested the legacy full derivations and variable motion plus the new position decomposition and growing speed explanation.",
+  "assets": {
+    "legacy": {
+      "path": "outputs/projectile-formula-film-20261026/v004/playback/projectile-vox-v01-all-formula-motion.mp4",
+      "sha256": "a82b5fc2c7adc17ebf5aa26742ed9390109bd28ccca6d3f17a0b0f512a0c0e57",
+      "duration": 114
+    },
+    "understanding": {
+      "path": "outputs/projectile-understanding-20261027/v002/delivery-v001/visual-master.mp4",
+      "sha256": "5e9777c6b7cafd784d3ed5bbe11ecec6dd0c316f6becbb1dd89936c3c23f40d1",
+      "duration": 147
+    }
+  },
+  "units": [
+    {
+      "id": "shared_vertical",
+      "function": "解释两球竖直过程相同，保留从一般关系代入条件而非只宣布结论",
+      "asset": "legacy",
+      "baseline_interval": [
+        18,
+        38
+      ],
+      "features": [
+        {
+          "id": "general_laws",
+          "claim": "两球各自的竖直一般方程与初态项明确",
+          "kind": "state"
+        },
+        {
+          "id": "substitute_initials",
+          "claim": "同高h、各自初始竖直速度0、共同加速度-g代入",
+          "kind": "state"
+        },
+        {
+          "id": "cancel_zero_terms",
+          "claim": "消去零初速项，保留h-gt²/2",
+          "kind": "state"
+        },
+        {
+          "id": "equal_heights",
+          "claim": "通过相同右式得到y1(t)=y2(t)",
+          "kind": "state"
+        },
+        {
+          "id": "symbol_correspondence",
+          "claim": "各球高度/时间/重力项在推导中保持可追踪对应",
+          "kind": "process"
+        }
+      ]
+    },
+    {
+      "id": "landing_time",
+      "function": "完整求出正的落地时间，不用落地条件或根式终态替代求解过程",
+      "asset": "legacy",
+      "baseline_interval": [
+        38,
+        58
+      ],
+      "features": [
+        {
+          "id": "position_law",
+          "claim": "位置式y=h-gt²/2与共同竖直投影联系",
+          "kind": "state"
+        },
+        {
+          "id": "landing_substitution",
+          "claim": "落地y=0，同时将观察时刻t改为落地时间T",
+          "kind": "state"
+        },
+        {
+          "id": "relocate_term",
+          "claim": "对等式两边作相同运算得到gT²/2=h",
+          "kind": "state"
+        },
+        {
+          "id": "multiply_two",
+          "claim": "乘2成为gT²=2h",
+          "kind": "state"
+        },
+        {
+          "id": "divide_gravity",
+          "claim": "除g成为T²=2h/g",
+          "kind": "state"
+        },
+        {
+          "id": "positive_root",
+          "claim": "说明T>0，得到T=sqrt(2h/g)，保留h>0/g>0前提",
+          "kind": "state"
+        },
+        {
+          "id": "term_motion",
+          "claim": "完整项、分母因子及重力符号沿明确路径对应，不仅淡入最终根式",
+          "kind": "process"
+        }
+      ]
+    },
+    {
+      "id": "range",
+      "function": "由横向位移到射程，保留具体代入、单位和标尺核对",
+      "asset": "legacy",
+      "baseline_interval": [
+        58,
+        74
+      ],
+      "features": [
+        {
+          "id": "landing_symbols",
+          "claim": "x=vxt在落地时成为R=vxT",
+          "kind": "state"
+        },
+        {
+          "id": "substituted_products",
+          "claim": "4/8米每秒乘共同1秒的具体代入",
+          "kind": "state"
+        },
+        {
+          "id": "unit_cancellation",
+          "claim": "秒单位消去得到4/8米，含长度条或等价几何核验",
+          "kind": "state"
+        },
+        {
+          "id": "moving_ruler",
+          "claim": "4米标尺的对应/搬移实际核对两倍射程，而非仅显示2R结论",
+          "kind": "process"
+        }
+      ]
+    },
+    {
+      "id": "height_scaling",
+      "function": "先完成相同横速5m/20m对比，再做完整根式与射程缩放",
+      "asset": "legacy",
+      "baseline_interval": [
+        74,
+        102
+      ],
+      "features": [
+        {
+          "id": "complete_landings",
+          "claim": "同尺度中先看到低球落地高球仍飞，再看到高球落地及1秒/2秒、4米/8米结果",
+          "kind": "process"
+        },
+        {
+          "id": "substitute_height",
+          "claim": "h'=4h代入T'=sqrt(2h'/g)",
+          "kind": "state"
+        },
+        {
+          "id": "split_root",
+          "claim": "从sqrt(2·4h/g)分离sqrt4与原根式",
+          "kind": "state"
+        },
+        {
+          "id": "identify_time",
+          "claim": "sqrt4=2，辨认原根式是T而得T'=2T",
+          "kind": "state"
+        },
+        {
+          "id": "range_scaling",
+          "claim": "把2T代回R'=vxT'，提取2并识别vxT=R，得到R'=2R",
+          "kind": "state"
+        },
+        {
+          "id": "symbol_motion",
+          "claim": "高度系数及时间/射程因子在替代化简中保有语义身份",
+          "kind": "process"
+        }
+      ]
+    },
+    {
+      "id": "combine_relations",
+      "function": "把高度、时间、横速、射程的关系汇总，并完成根式代入",
+      "asset": "legacy",
+      "baseline_interval": [
+        102,
+        114
+      ],
+      "features": [
+        {
+          "id": "dependency_chain",
+          "claim": "明确高度经T影响射程，横速也参与，比较条件不混淆",
+          "kind": "state"
+        },
+        {
+          "id": "combined_formula",
+          "claim": "完整R=vx sqrt(2h/g)，不是只剩R=vxT",
+          "kind": "state"
+        },
+        {
+          "id": "time_substitution_motion",
+          "claim": "T进入射程对应位置并展开成根式，vx等原项不被符号路径穿过",
+          "kind": "process"
+        }
+      ]
+    },
+    {
+      "id": "position_decomposition",
+      "function": "保留新版用共同下落位置组装不同水平位移的可见理由",
+      "asset": "understanding",
+      "baseline_interval": [
+        50,
+        70
+      ],
+      "features": [
+        {
+          "id": "fixed_time_slices",
+          "claim": "逐层呈现至少多个不同的相同时刻，共同竖直位置配不同水平位移，展开时对应高度不变",
+          "kind": "process"
+        },
+        {
+          "id": "not_real_motion",
+          "claim": "明确横向展开是位置分解，不是小球真实横向加速，竖直坐标约定与其他章节一致",
+          "kind": "state"
+        }
+      ]
+    },
+    {
+      "id": "speed_growth",
+      "function": "保留速度增长与等时不等距的解释，不以g恒定箭头代替速度",
+      "asset": "understanding",
+      "baseline_interval": [
+        83,
+        109
+      ],
+      "features": [
+        {
+          "id": "growing_speed",
+          "claim": "真实模型时间驱动向下速度大小和相应渐长箭头；0→10→20米每秒过程可辨",
+          "kind": "process"
+        },
+        {
+          "id": "distance_segments",
+          "claim": "同一竖直尺度保留第一秒5米、第二秒额外15米与总20米",
+          "kind": "state"
+        },
+        {
+          "id": "velocity_not_gravity",
+          "claim": "区分速度与加速度；采用向上坐标时清楚处理vy负号或明确写向下速率，时间/速度显示精度相容",
+          "kind": "state"
+        }
+      ]
+    }
+  ],
+  "policy": {
+    "no_unapproved_loss": true,
+    "equivalent_representations_allowed": true,
+    "scope": "Task-specific semantic preservation, not a shared storyboard, fixed detail count or layout. New useful material does not compensate for loss of an explicitly preserved feature."
+  },
+  "writer": "Production coordinator recording the user's selected baselines before revision",
+  "consumers": [
+    "visual creator",
+    "independent content-comparison reviewer",
+    "publication gate",
+    "auditor"
+  ],
+  "lifecycle": "This requested fusion project and versioned baseline inventory",
+  "invalidation": "Any selected baseline bytes, protected function, authorization or contract change requires a new comparison and matching current bindings"
+}

@@ -1,6 +1,33 @@
 {
   "nodes": [
     {
+      "id": "node-human-navigation-20261103",
+      "type": "text",
+      "x": -1440,
+      "y": -1350,
+      "width": 500,
+      "height": 240,
+      "text": "# 人类阅读与作品\n\nREADME.md / docs/ / 作品/\n课程、制作、运行、参与\n成片 / 草稿 / 历史版分开登记\n轻量预览绑定真实播放文件，完整媒体另行获取"
+    },
+    {
+      "id": "node-ai-navigation-20261103",
+      "type": "text",
+      "x": -820,
+      "y": -1350,
+      "width": 500,
+      "height": 240,
+      "text": "# AI 执行与精确契约\n\n根 AGENTS shim -> ai/AGENT_RULES.md\nai/contracts / ai/architecture / ai/reference\n当前 native 契约按原路径加载\n旧 CLI 在 main.py 边界隔离"
+    },
+    {
+      "id": "node-archive-boundary-20261103",
+      "type": "text",
+      "x": -200,
+      "y": -1350,
+      "width": 500,
+      "height": 240,
+      "text": "# 历史与本机证据\n\narchive/legacy：公开历史原文\narchive/local：Git 忽略的本机资料\n逐批 old/new/SHA 与回退字节\n原生媒体、原声、基线与实现冻结保留，不重绑"
+    },
+    {
       "id": "title",
       "type": "text",
       "x": 120,
@@ -70,7 +97,7 @@
       "y": -100,
       "width": 300,
       "height": 210,
-      "text": "# 约束文档\n\n- `AGENTS.md`\n- `强前置条件约束.md`\n- `通用项目架构模板.md`",
+      "text": "# 规则与阅读入口\n\nAGENTS.md -> ai/AGENT_RULES.md\nai/contracts/强前置条件约束.md\nai/architecture/执行架构详解.md\nREADME/docs/作品给组员阅读",
       "color": "6"
     },
     {
@@ -100,7 +127,7 @@
       "y": 160,
       "width": 300,
       "height": 180,
-      "text": "# backend API\n\n- `projects` 路由\n- `tasks` 路由\n- `contexts` 路由\n- 复用编排内核",
+      "text": "# 历史 API 原型\n\narchive/legacy/backend/\nprojects/tasks/contexts 七文件原文\n当前生产从课程监督链进入\n源码与原报告映射在 archive/migrations/20261103/",
       "color": "4"
     },
     {
@@ -173,6 +200,176 @@
       "color": "3"
     },
     {
+      "id": "node-render-module",
+      "type": "text",
+      "x": -300,
+      "y": 590,
+      "width": 320,
+      "height": 150,
+      "text": "# render/\n\n- ManimGL + manimgl.yml\n- ManimCE 兼容后端\n- ffmpeg 关键帧证据",
+      "color": "4"
+    },
+    {
+      "id": "node-review-module",
+      "type": "text",
+      "x": 160,
+      "y": 690,
+      "width": 340,
+      "height": 150,
+      "text": "# review/\n\n- 帧质量与跨帧运动\n- 公式-图形绑定\n- 语义颜色一致性",
+      "color": "3"
+    },
+    {
+      "id": "node-sol61-team",
+      "type": "text",
+      "x": -1840,
+      "y": 500,
+      "width": 420,
+      "height": 300,
+      "text": "# experiments/codex_cli_team.py\n\nGPT-6.1 Sol 订阅适配；三角色均 max\n每轮独立临时 CLI，无旧对话/项目文档/记忆\n关闭原生 shell、插件、浏览器等额外工具\n相同公共任务、JSON 动作、媒体和审核门禁\n\n短期：原始事件、原答、调用证据、角色 token\n长期：冻结合同、来源、独立批准、额度快照\n输出：媒体、成本、正式制作耗时\nsubscription_quota.py：只读账户记账，结束即退出\n账号用量与 token 等价额度区分\n原生包装差异保留；旧实验不改",
+      "color": "2"
+    },
+    {
+      "id": "node-sol-learning",
+      "type": "text",
+      "x": -2320,
+      "y": 1360,
+      "width": 420,
+      "height": 340,
+      "text": "历史实验已物理归档；原文、源码与旧报告关系见 archive/migrations/20261103/phase2-context-map.json。\n\nSol工作流：GPT-6.1 Sol max三角色，新study/角色/候选，不继承DeepSeek中止内容，token与账户变化分账。archive/legacy/src/manimind/experiments/sol_learning_v2.py: 修复v1字幕诊断rows全文泄漏，只传分组诊断白名单。archive/legacy/src/manimind/experiments/sol_learning_v3.py: 批量接口/取证，渲染自动提供图片、不伪造观察；两个新上下文全片逐cue审核，无稿首看和源码/时序审计都须通过固定量表。原帧、密集证据和发布门禁保留；减少分组判断的漏检风险需回归。archive/legacy/src/manimind/experiments/learning_background.py: sol-v2/sol-v3与profile强匹配，进程/锁/未决检查防重发，收据绑定源码参数，不新增创作上下文。v1保留偏差费用，v2未付费制作不计一轮。",
+      "color": "2"
+    },
+    {
+      "id": "node-deepseek-learning-high",
+      "type": "text",
+      "x": -2800,
+      "y": 1360,
+      "width": 420,
+      "height": 340,
+      "text": "历史实验已物理归档；原文、源码与旧报告关系见 archive/migrations/20261103/phase2-context-map.json。\n\nDeepSeek high v3: archive/legacy/src/manimind/experiments/deepseek_learning_v3.py。直接继承通用LearningWorkflow，不继承Sol CLI；官方API三角色与审核结构修复显式high。相同v3 profile、相同平抛公共任务，批量取证、无稿像素首看和源码时序审核复用冻结逻辑；两审均须通过。新study与空白角色上下文，无旧稿、旧评语、主对话或GPT内容建议。长期协议/适配器，短期原答/启动收据，输出媒体/费用分离；进程/锁/未决保护不重发未知收费请求。模型与推理等级不同，不能只归因模型；未听审、未做学生测试。",
+      "color": "2"
+    },
+    {
+      "id": "node-sol-visual-first",
+      "type": "text",
+      "x": -2800,
+      "y": 1800,
+      "width": 420,
+      "height": 380,
+      "text": "视觉优先：sol_visual_first.py。Sol max主控/创作/独立审片，复用三角色循环与订阅请求。visual_first_data.py：纯数据视觉时钟、实测事件和后写讲稿绑定。visual_first_support.py：字体/时钟复用、实际mark事件，不含题目图形。先无音轨和朗读字幕渲染，0.5秒时序和原帧供无稿首看；通过后才写旁白，再独立核对源码/事件/文本。视觉变化撤销两审和后写稿，文本变化仅撤销讲稿审核。原答/媒体哈希匹配、两审通过、全解码后导出静音主片。archive/legacy/src/manimind/experiments/sol_visual_recovery.py仅原样恢复已证实capacity失败的补帧详情，不改冻结实现或内容；短期恢复收据/独占锁绑定请求与媒体，退出或哈希变更失效，未知请求不重发。输出分段耗时/共享额度保留停机前后区间。长期协议/来源，短期阶段/请求，输出媒体/账本分离。最终语音和真实同步未接入；未听审/未做学生测试，不包装成有声成片。",
+      "color": "2"
+    },
+    {
+      "id": "node-remote-speech",
+      "type": "text",
+      "x": -3280,
+      "y": 1800,
+      "width": 420,
+      "height": 340,
+      "text": "后配音：qwen_service回环鉴权/单GPU/指纹缓存；remote_speech经Tailscale及原生SSH核验WAV。计划任务、launchd转发与开机SSH检查独立运行。preset_audition比较Qwen/Kokoro；voicedesign_audition提供原创选声；voxcpm_audition是独立VoxCPM2无参考三种子首轮试听，原音与固定增益分开，追加包保留旧A和全部媒体。用户选V01后，voxcpm_narration复用冻结helper与自选AI参考声，逐段生成，不触碰真人/广告库；visual_narration验证原视觉及讲稿独立批准，按完整WAV和实测事件排程，独立hash-bound时序审核后才混音/复制原视频码流。主片仅视频/音频，无内嵌/烧录/同名外挂字幕，可选SRT另放support。跨引擎共享互斥量；操作者协调客户端维护再暂停空闲Qwen，运行器拒绝在线服务，finally验证原身份后归还。安装、短期运维/故障/独立审核、长计划/选声、原音收据/对齐/delivery分离，来源/媒体变更失效，未知结果不重推理。不改冻结视觉/文案/物理时钟，不把工程或时序通过当听审或学生效果。",
+      "color": "2"
+    },
+    {
+      "id": "node-learning-runtime",
+      "type": "text",
+      "x": -2320,
+      "y": 940,
+      "width": 420,
+      "height": 180,
+      "text": "experiments/learning_runtime.py: 隔离ManimGL导入CLI参数。长期绑定适配器哈希和接入前调用数，短期记录只读API恢复收据。不重发provider，不重放未知写入/渲染/发布动作，不修改冻结的制作实现或候选内容。",
+      "color": "2"
+    },
+    {
+      "id": "node-learning-workflow",
+      "type": "text",
+      "x": -1840,
+      "y": 940,
+      "width": 420,
+      "height": 370,
+      "text": "experiments/learning_workflow.py: 版本化通用引导；复用三角色、渲染、来源、发布。0.5秒时序证据与原分辨率帧。无源码/讲稿首看，再复核源码/旁白。review/learning_quality.py: 字幕诊断、固定学习量表，关键维度不能由总分补偿。长期study/profile/外部评估和留出冻结，短期分角色请求/原答，输出版本原帧/诊断/播放包。开发题验收后开放留出；不改旧实验，不固定模板；未听审、未做学生理解测试。",
+      "color": "2"
+    },
+    {
+      "id": "node-freeform-team",
+      "type": "text",
+      "x": -1360,
+      "y": 500,
+      "width": 420,
+      "height": 410,
+      "text": "# experiments/freeform_team.py\n\nDeepSeek 主控 -> 创作者 -> 独立审片\n全角色 max 思考；无制作费用/轮数上限\n只接收公共任务、通用工具、本轮自身内容\n不读主对话、旧作品、记忆或 GPT 改稿\n原始委托/评语传递，不人工润色\n\n长期：冻结协作协议 / 原答来源 / 独立批准\n短期：分角色请求、工作记录、原子检查点\n输出：版本媒体、分角色费用、制作计时\n变更内容使双方看图覆盖和旧批准失效\n主控亲自看图，独立审片通过才能发布\n机械核对 reviewer 原答、输入和像素哈希\n未决调用阻止重发；完整已收原答可免重收费恢复\n\n同模型异上下文审核，未听审、未测学生理解\n不修改已有冻结实验；后续 Sol 比较另起隔离项目",
+      "color": "2"
+    },
+    {
+      "id": "node-pilot",
+      "type": "text",
+      "x": -880,
+      "y": 500,
+      "width": 380,
+      "height": 310,
+      "text": "# postproduce/ 自由试片\n\npilot.py / full_lesson.py：固定题目实验\nfreeform_pilot.py：连续场景，不限制布局/镜头数\nfreeform_isolated.py：隔离API作者、原答/成本\nfreeform_agent.py：自主查询/改码/渲染/分段看图\nfreeform_review_cycle.py：独立审片 -> 原始意见 -> 作者返工\nfreeform_review_retry.py：一次原始格式错误自修复\nfreeform_max_effort.py：空白上下文、双方max推理、无金额/轮数上限\nfreeform_support.py：仅字体、时钟、逐句字幕\n- prepare: 实测TTS与时间轴\n- render / inspect: 版本化视频与原帧\n- 新稿/重渲染使旧审核失效\n- 角色上下文/请求分离，成本分账\n- 最终独立Reviewer覆盖每段 + 输入哈希\n- assemble: 审核后合成，无整体变速\n- playback_package: 审核后逐字节复制，无外挂字幕\n  输出清单绑定视频/原批准；改变失效，不新增批准\n\n长期协议 / 短期动作和请求 / 输出媒体分离\n作者自检和API审片均不直接放行；不改历史试验\n静态能力筛选与读写/网络限制，非对抗性安全证明",
+      "color": "2"
+    },
+    {
+      "id": "node-model-benchmark",
+      "type": "text",
+      "x": -880,
+      "y": 840,
+      "width": 380,
+      "height": 400,
+      "text": "# experiments/model_benchmark.py\n\n固定教案/配音的同题实验\n- 国内 API / 校内 vLLM\n- llm/client: usage + bounded retries\n- scene_support: 字形/时钟，不提供教学图形\n- --cues 连续短片：时钟归零/PCM截取/来源哈希\n- 默认生成两次，原始源码不可手修\n- 额外修复须绑定账本的单请求用户授权\n- 独立 Reviewer 后方可合成，按冻结教案检查放大\n- CLI 会话 command.lock 排他，结束释放\n\n长期教案/审核与短期提示/失败分离\n人工监督实验，尚无渲染安全沙箱",
+      "color": "2"
+    },
+    {
+      "id": "node-model-dialogue",
+      "type": "text",
+      "x": -880,
+      "y": 1300,
+      "width": 460,
+      "height": 340,
+      "text": "# archive/legacy/src/manimind/experiments/model_dialogue.py\n\n候选模型共同诊断，不是交付审核者\n- 原始抽帧 + 哈希历史 + 有界请求预算\n- 长期 collaboration / design，短期 dialogue\n- benchmark --design-brief 冻结双方规范\n- guarded_scene: 注册标签的实际包围盒\n- layout_guard: 端点碰撞/边界/缺项确定性关卡\n- 独立 Reviewer 检查像素、数学、动态盲区\n- 原模型回答不可手修，失败继续保留\n\n同题重复实验不等于跨题稳定性",
+      "color": "2"
+    },
+    {
+      "id": "node-scene-spec",
+      "type": "text",
+      "x": -880,
+      "y": 1720,
+      "width": 460,
+      "height": 360,
+      "text": "# scene_spec/\n\n受约束数据，不执行模型代码\n- schema: 严格JSON / 枚举绑定 / 冻结数学事实\n- geometry: 坐标规划与真实直线裁剪\n- renderer: 原生ManimGL组件组合\n- experiment: 请求预算 / 原回答 / 渲染版本\n- report: 证据汇总，首轮与修复分计\n- 每帧实际包围盒、点、线与读数审计\n- Reviewer通过才合成\n\n工程校准与模型试验分开\n当前只覆盖多项式割线/切线镜头",
+      "color": "2"
+    },
+    {
+      "id": "node-model-comparison",
+      "type": "text",
+      "x": -1480,
+      "y": 1720,
+      "width": 460,
+      "height": 360,
+      "text": "# archive/legacy/src/manimind/experiments/model_comparison.py\n\n同题生成与候选审片能力对照\n- 复用 SceneSpec 冻结任务/提示/组件\n- 原帧匿名副本 + 同一无答案输入包\n- 每模型/样本独立一请求，无历史泄漏\n- ground truth / 裁定由独立 Reviewer 写入\n- archive/legacy/src/manimind/experiments/comparison_report.py: 哈希绑定汇总，无API\n- 候选审片不能批准成片\n\n长期协议与标准，短期请求，输出媒体\n小样本历史对照，不宣称总体稳定性",
+      "color": "2"
+    },
+    {
+      "id": "node-components",
+      "type": "text",
+      "x": -260,
+      "y": 1720,
+      "width": 480,
+      "height": 390,
+      "text": "# components/ 模型无关基础层\n\n- catalog: 组件 / 组合 / 整片分层 + 配色字体\n- expressions: 受限数学树 + SymPy安全公式\n- plan: 可变分镜 + 共享参数状态\n- renderer: 原生ManimGL + 每帧测量\n- typography: 字重/数字基线/源字形色彩\n- formula_motion: 原生矢量Tex语义ID/重复字面/显式配对，不猜形状\n- pipeline: 离线预检/版本化渲染/证据/发布\n- formula_refinement: 新版本局部精修/真实轨迹及帧/独立审核后替换，复用AAC，内部无损校验/兼容播放版\n- formula_film: 全片视觉精修/逐句对照事件/独立审核后复制原AAC与新视频码流\n- 独立Reviewer覆盖所有新画面\n- 工程fixture/原稿作者/监督精修干预显式记录\n\n长期计划，短期制作审核，输出分版本，不覆写旧片\n基础工程路径不直接接LLM或自动修复",
+      "color": "4"
+    },
+    {
+      "id": "node-isolated-comparison",
+      "type": "text",
+      "x": -820,
+      "y": 1720,
+      "width": 480,
+      "height": 390,
+      "text": "历史实验已物理归档；原文、源码与旧报告关系见 archive/migrations/20261103/phase2-context-map.json。\n\n# experiments/isolated_comparison + isolated_media\n\n- 冻结同题输入/组件/预算，三路独立作者\n- 干净Codex会话与无工具国产API\n- 仅原答+机器错误的一次自修复\n- 原始回答/失败/usage完整保留\n- 固定首个重复为主片，不按质量选片\n- 同TTS/渲染，独立匿名审核后合成\n- isolated_render_repair: 独立授权扩展，一次真实渲染报错反馈\n- isolated_montage: 完整单片+说明卡，独立剪辑审批后串接\n- 失败原片只可经另行诊断审批+全程警示展示，不改拒绝结论\n\n长期protocol/父协议哈希/剪辑审批，短期attempt，输出音画/剪辑计划\n扩展单独记账，基线不可覆盖；不手改候选内容",
+      "color": "2"
+    },
+    {
       "id": "node-project-runtime",
       "type": "text",
       "x": 770,
@@ -217,11 +414,225 @@
       "y": -300,
       "width": 320,
       "height": 340,
-      "text": "# 外部能力目录\n\n- `resources/skills/html-animation/`\n- `resources/references/hyperframes/`\n- `resources/skills/manim/SKILL.md`\n\n只引用，不在仓库内重写",
+      "text": "# 外部能力目录\n\n- `resources/skills/html-animation/`\n- `resources/references/hyperframes/`\n- `resources/skills/manim/SKILL.md` (CE)\n- `manimgl` package (default)\n\n只引用，不在仓库内重写",
       "color": "5"
+    },
+    {
+      "id": "node-understanding-first-v2",
+      "type": "text",
+      "x": -3280,
+      "y": 2240,
+      "width": 900,
+      "height": 660,
+      "text": "# 理解优先 v2 / v3\n\nvisual-first-workflow-v2.json: 生产给引导，审核给标准；不固定题目、分镜、章数或时长。\nsol_understanding_first: 新入口保留自由创作工具，请求/批准都验证五项编辑证据和六维质量。\nunderstanding_support: 实际focus_begin/end；semantic_focus: 完整WAV必须覆盖在对应可读区间，不只检查起点事件。\nunderstanding_render: 源码/profile/实际事件/焦点/像素分版本归档。\nunderstanding_film: 独立静音首看 -> 后写稿再审 -> 本地语音 -> 全句时序独立审核 -> 封装。flexible_voxcpm复用官方SDK/冻结helper，已选合成V01可变句数首条，GPU互斥/失败证据保留。\n长计划runtime/projects，短审核runtime/sessions，媒体outputs各自定义生命周期。视觉变化重渲染；文字/发布规则变化重新审核对应阶段。\n离线声音主机只交静音及待执行计划，不用旧声/占位音伪装有声完成；工程、编辑、听审、学生测试分开。监督fixture不冒充隔离模型量产证明。\nv3 content_regression: 主控按任务选长期基线合同 -> 作者保留功能自由改表现 -> 独立新版首看 + 另一上下文新旧回归。逐项retained/equivalent/lost与真实前中后证据；缺项/丢失拒绝正式稿和发布，总分不能补偿。understanding_film绑定合同、实际基线及比较原答哈希，后配音复核。只接监督入口，自主协议未自动接通。\nWindows维护：run-windows-flexible-voxcpm独立封装可变句数worker，生成时只有worker取GPU互斥量；操作者排空/暂停客户端与Qwen，子进程退出后恢复阶段重新持锁验证原身份并归还，锁忙/遗弃不抢占。可选短期显式GPU桌面快照绑定设备/驱动/精确进程，未知变化拒绝；不自动杀进程、不宣称整卡独占。",
+      "color": "2"
+    },
+    {
+      "id": "node-focus-captions",
+      "type": "text",
+      "x": -3280,
+      "y": 3100,
+      "width": 900,
+      "height": 330,
+      "text": "# 单套字幕：focus_captions\n\n已审真实声音 + 完整对齐 -> ASS / 字幕清单 / 冻结来源 -> 字幕候选真实像素审核 -> 正式复制交付。\n单行底部字幕，不缩放原画，不生成默认字幕轨或同名外挂；音频码流复制。长句按字数比例近似拆分，不冒充词级ASR或听审。\nprepare不是发布；release复核当前source、media、module与独立report/frame hashes。候选在outputs，审核/帧在runtime/sessions；任一变化失效。",
+      "color": "2"
+    },
+    {
+      "id": "node-lesson-opening",
+      "type": "text",
+      "x": -1160,
+      "y": 3580,
+      "width": 900,
+      "height": 510,
+      "text": "# 已发布正文片头扩展：lesson_opening\n\n当前unit_film.release_captioned body + 长期opening plan/原作者/素材receipt/source hashes。旧正文门禁重新验证，不改旧发布器。\n独立片头像素/文稿/时序通过 -> video-only concat stream copy -> 完整decoded帧/PTS正文后缀严格相等。\n完整原音PCM拼接，正文不裁切/变速/增益；片头尾部补零验证后一次AAC，保存PCM hash后缀和原输入。\n现有content_regression合同/validate_comparison实际门禁 + 异比较context的最终seam/caption像素审核 -> create-only复制交付。\n真实身份是可追溯声明，非认证；not_performed明确未听审，只交完整预览。\n长计划/合同在projects，短审核/原帧在sessions，候选PCM/媒体及release在outputs；任何绑定变化失效，不调用TTS/GPU。",
+      "color": "2"
+    },
+    {
+      "id": "node-course-unit-context",
+      "type": "text",
+      "x": -3280,
+      "y": 3580,
+      "width": 880,
+      "height": 400,
+      "text": "# 课程单元：curriculum.py\n\nCSV + 长期unit.json -> 本课lesson_context；先修出口、受众假设、前后课理解增量。不给整门课程或旧作品。\n目录不是学生掌握、课标认证或媒体批准，不规定课数/幕数/片长。\ncontext在runtime/projects，源/目录/builder变化失效；新发布器消费实际context，旧自主模型执行器不自动接通。\n案例各课scene独立，复用shared表现与纯科学model；按真实依赖失效，不让单课节奏返工波及无关课。",
+      "color": "2"
+    },
+    {
+      "id": "node-continuous-meaning-units",
+      "type": "text",
+      "x": -2220,
+      "y": 3580,
+      "width": 940,
+      "height": 510,
+      "text": "# 连续意群：unit_film / meaning_units / phrase_alignment\n\nschema3一个意群对应多个实测focus，固定V01 worker一次生成，不按教学步/字幕行重起声。\n独立环境复用stable-ts估计原WAV子句时刻；多focus求交，无解返工，不截音变速、不造平均时间。\n独立视觉 -> 文字 -> 段内时序像素 -> 单套字幕审核，工程/听感/学生理解分记。\n声音绑定原计划/参考/文本/模型；视觉节奏变化可显式复用同文声音，但当前视觉及语义必须重新批准，不改旧收据。\n长context、短维护/取证/评语、outputs版本媒体分开；旧逐句发布器不改。",
+      "color": "2"
+    },
+    {
+      "id": "node-chapter-supervision",
+      "type": "text",
+      "x": -1160,
+      "y": 4280,
+      "width": 920,
+      "height": 420,
+      "text": "# 整章监督：experiments/chapter_workflow.py\n\n长期整章unit -> 各课context/计划 -> 现有render/unit_film独立审核门禁。\n已有首课冻结来源保留，新增课另绑定整章unit；单课完成不等于整章完成。\nsessions保存排他执行锁、版本输入包与真实评语，outputs保存失败/候选/发布媒体。\n只适配阶段，不调用LLM/TTS、不写审核批准、不自动重放未决请求。覆盖库存只作完整性检查，章节组装与学生理解另审。",
+      "color": "2"
+    },
+    {
+      "id": "node-chapter-package",
+      "type": "text",
+      "x": -1160,
+      "y": 4780,
+      "width": 920,
+      "height": 440,
+      "text": "# 整章交付：postproduce/chapter_package.py\n\n显式unit + 有序八课真实captioned delivery；alignment→silent→lesson_context验证原身份，原delivery/review/current bindings哈希防漂移。\n公开unit_film.release_captioned重新验证复制原片到verified-lessons；不改旧课/发布器/chapter_workflow。\n独立chapter_assembly全八课覆盖/衔接/来源审核 -> 原生FFmpeg完整concat候选及七边界实际帧 -> 新context独立chapter_media -> 全新Desktop分课/合辑/讲稿源码依赖/审核来源包。\n长期projects版本plan；短期session包/审核/帧与pending/complete；outputs版本媒体。create-only并发/重放拒绝，失败未知不重试，源或代码漂移失效。\n候选不是发布；不伪造旧hashes/comparison批准，听审与学生测试false。详见导数整章交付.md。",
+      "color": "2"
+    },
+    {
+      "id": "node-chapter-frame-clock",
+      "type": "text",
+      "x": -1160,
+      "y": 5320,
+      "width": 920,
+      "height": 400,
+      "text": "# 版本化合章时钟：chapter_package_clock.py\n\n不改原发布器/旧plan；每调用私有native命名空间，冻结源码SHA + 新适配器/测试实现pins与新contract。\n复用全部来源、身份、assembly/media独立审核、像素、解码与create-only发布门禁。\n视频保留完整原帧，序号30fps时钟；声音按alignment和全部原WAV逐样本重建、核对原voice-mix后完整PCM拼接一次AAC，不裁音/变速。\noutputs版本PCM/candidate及来源收据；额外candidate gate每次核对全样本。源/位置/mix/code/批准漂移拒绝，失败旧候选保留。\n真实八短片冒烟不等于整章发布/听审；见整章合并时钟.md。",
+      "color": "2"
+    },
+    {
+      "id": "node-formula-continuity",
+      "type": "text",
+      "x": -1160,
+      "y": 5820,
+      "width": 920,
+      "height": 360,
+      "text": "# 可追踪公式：traceable_film_v3 + frozen v2\n\nv4.3.1绘图引导，v3纯审核监督：作者选推理承重动作，独立首看观察身份、运算与源/过程/目标。\nv2当前媒体PNG/宽高/实际像素 + agent/context双隔离；v3拒绝既存链接，核全部帧/联系表与原索引，源码SHA另绑定supervised-evidence，不使相同几何重绘。\n通过后复用冻结unit_film正式稿安装/静音发布 -> 原音/字幕来源链。formula_transfer从源坐标复制原生语义对象，不推断代数或保证路径。\n动作选择长期plan；独立观察短期session；版本媒体outputs；审核器/证据变化重审，绘图源变化重绘。旧CLI与自主模型未自动升级。",
+      "color": "2"
+    },
+    {
+      "id": "node-file-current-rules",
+      "type": "file",
+      "file": "ai/AGENT_RULES.md",
+      "x": -1440,
+      "y": -1770,
+      "width": 340,
+      "height": 230
+    },
+    {
+      "id": "node-file-current-gate",
+      "type": "file",
+      "file": "src/manimind/postproduce/traceable_film_v3.py",
+      "x": -1050,
+      "y": -1770,
+      "width": 340,
+      "height": 230
+    },
+    {
+      "id": "node-file-archive-index",
+      "type": "file",
+      "file": "archive/legacy/README.md",
+      "x": -660,
+      "y": -1770,
+      "width": 340,
+      "height": 230
+    },
+    {
+      "id": "node-file-engineering-demo",
+      "type": "file",
+      "file": "examples/manimgl_backend_smoke.py",
+      "x": -270,
+      "y": -1770,
+      "width": 340,
+      "height": 230
     }
   ],
   "edges": [
+    {
+      "id": "edge-human-ai-navigation-20261103",
+      "fromNode": "node-human-navigation-20261103",
+      "fromSide": "right",
+      "toNode": "node-ai-navigation-20261103",
+      "toSide": "left",
+      "label": "工具与审核细节"
+    },
+    {
+      "id": "edge-ai-archive-navigation-20261103",
+      "fromNode": "node-ai-navigation-20261103",
+      "fromSide": "right",
+      "toNode": "node-archive-boundary-20261103",
+      "toSide": "left",
+      "label": "历史协议与迁移证据"
+    },
+    {
+      "id": "edge-formula-continuity-course",
+      "fromNode": "node-formula-continuity",
+      "fromSide": "right",
+      "toNode": "node-continuous-meaning-units",
+      "toSide": "bottom",
+      "label": "新增过程审核后复用冻结课程发布来源链"
+    },
+    {
+      "id": "edge-chapter-frame-clock",
+      "fromNode": "node-chapter-package",
+      "fromSide": "bottom",
+      "toNode": "node-chapter-frame-clock",
+      "toSide": "top",
+      "label": "版本化编码修复，门禁不变"
+    },
+    {
+      "id": "edge-chapter-package-sources",
+      "fromNode": "node-chapter-supervision",
+      "fromSide": "bottom",
+      "toNode": "node-chapter-package",
+      "toSide": "top",
+      "label": "显式八课发布，独立章门禁"
+    },
+    {
+      "id": "edge-chapter-package-review",
+      "fromNode": "node-chapter-package",
+      "fromSide": "right",
+      "toNode": "node-review-module",
+      "toSide": "bottom",
+      "label": "assembly/media分context，不代写批准"
+    },
+    {
+      "id": "edge-chapter-continuous-gates",
+      "fromNode": "node-chapter-supervision",
+      "fromSide": "top",
+      "toNode": "node-continuous-meaning-units",
+      "toSide": "bottom",
+      "label": "复用逐课审核，不以一课代整章"
+    },
+    {
+      "id": "edge-unit-opening",
+      "fromNode": "node-continuous-meaning-units",
+      "toNode": "node-lesson-opening",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "已发布完整body；复核旧门禁，不改正文"
+    },
+    {
+      "id": "edge-opening-review",
+      "fromNode": "node-lesson-opening",
+      "toNode": "node-review-module",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "label": "独立片头 -> 现有内容回归 + 最终seam/caption"
+    },
+    {
+      "id": "edge-understanding-visual-runtime",
+      "fromNode": "node-understanding-first-v2",
+      "toNode": "node-sol-visual-first",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "label": "新版本叠加编辑标准，不改冻结历史"
+    },
+    {
+      "id": "edge-understanding-speech",
+      "fromNode": "node-understanding-first-v2",
+      "toNode": "node-remote-speech",
+      "fromSide": "left",
+      "toSide": "bottom",
+      "label": "视觉审核后可变句数，完整语音焦点覆盖"
+    },
     {
       "id": "edge-manifest-main",
       "fromNode": "node-manifest",
@@ -387,12 +798,324 @@
       "label": "产物引用"
     },
     {
+      "id": "edge-roles-render-module",
+      "fromNode": "node-roles",
+      "toNode": "node-render-module",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "label": "Manim evidence"
+    },
+    {
+      "id": "edge-render-module-outputs",
+      "fromNode": "node-render-module",
+      "toNode": "node-outputs",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "视频与抽帧"
+    },
+    {
+      "id": "edge-render-module-review-module",
+      "fromNode": "node-render-module",
+      "toNode": "node-review-module",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "证据预检"
+    },
+    {
+      "id": "edge-review-module-runtime-store",
+      "fromNode": "node-review-module",
+      "toNode": "node-runtime-store",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "label": "审核报告"
+    },
+    {
+      "id": "edge-pilot-render",
+      "fromNode": "node-pilot",
+      "toNode": "node-render-module",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "复用渲染与抽帧"
+    },
+    {
+      "id": "edge-pilot-review",
+      "fromNode": "node-pilot",
+      "toNode": "node-review-module",
+      "fromSide": "bottom",
+      "toSide": "bottom",
+      "label": "独立审核后才能合成"
+    },
+    {
+      "id": "edge-pilot-context",
+      "fromNode": "node-pilot",
+      "toNode": "node-project-runtime",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "label": "长期事实与版本绑定审核"
+    },
+    {
+      "id": "edge-benchmark-render",
+      "fromNode": "node-model-benchmark",
+      "toNode": "node-render-module",
+      "fromSide": "right",
+      "toSide": "bottom",
+      "label": "复用渲染，保留每次失败"
+    },
+    {
+      "id": "edge-benchmark-review",
+      "fromNode": "node-model-benchmark",
+      "toNode": "node-review-module",
+      "fromSide": "bottom",
+      "toSide": "bottom",
+      "label": "同一质量标准，哈希审核关卡"
+    },
+    {
+      "id": "edge-dialogue-benchmark",
+      "fromNode": "node-model-dialogue",
+      "toNode": "node-model-benchmark",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "label": "共同规范 / 图像反馈 / 重复实验"
+    },
+    {
+      "id": "edge-dialogue-review",
+      "fromNode": "node-model-dialogue",
+      "toNode": "node-review-module",
+      "fromSide": "right",
+      "toSide": "bottom",
+      "label": "协作自检不能替代独立审核"
+    },
+    {
+      "id": "edge-spec-dialogue",
+      "fromNode": "node-scene-spec",
+      "toNode": "node-model-dialogue",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "label": "联合复盘，不能自我批准"
+    },
+    {
+      "id": "edge-spec-review",
+      "fromNode": "node-scene-spec",
+      "toNode": "node-review-module",
+      "fromSide": "right",
+      "toSide": "bottom",
+      "label": "逐帧证据与版本绑定独立审核"
+    },
+    {
+      "id": "edge-comparison-spec",
+      "fromNode": "node-model-comparison",
+      "toNode": "node-scene-spec",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "固定组件的同题生成"
+    },
+    {
+      "id": "edge-comparison-dialogue",
+      "fromNode": "node-model-comparison",
+      "toNode": "node-model-dialogue",
+      "fromSide": "top",
+      "toSide": "left",
+      "label": "同帧盲审，不发标准答案"
+    },
+    {
+      "id": "edge-components-render",
+      "fromNode": "node-components",
+      "toNode": "node-render-module",
+      "fromSide": "right",
+      "toSide": "bottom",
+      "label": "受约束数据编译与原生组件渲染"
+    },
+    {
+      "id": "edge-components-review",
+      "fromNode": "node-components",
+      "toNode": "node-review-module",
+      "fromSide": "right",
+      "toSide": "bottom",
+      "label": "逐帧测量后独立审核，哈希变化失效"
+    },
+    {
+      "id": "edge-components-context",
+      "fromNode": "node-components",
+      "toNode": "node-project-runtime",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "label": "冻结计划与明确来源，不混写短期尝试"
+    },
+    {
+      "id": "edge-isolated-components",
+      "fromNode": "node-isolated-comparison",
+      "toNode": "node-components",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "相同契约与冻结渲染器，不提供旧教案"
+    },
+    {
+      "id": "edge-isolated-review",
+      "fromNode": "node-isolated-comparison",
+      "toNode": "node-review-module",
+      "fromSide": "bottom",
+      "toSide": "bottom",
+      "label": "匿名证据；独立组件/媒体双审核后合成"
+    },
+    {
+      "id": "edge-sol-team",
+      "fromNode": "node-sol61-team",
+      "toNode": "node-freeform-team",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "同流程订阅传输与用量审计适配"
+    },
+    {
+      "id": "edge-team-pilot",
+      "fromNode": "node-freeform-team",
+      "toNode": "node-pilot",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "复用媒体和来源链，独立审核后合成"
+    },
+    {
+      "id": "edge-sol-learning-workflow",
+      "fromNode": "node-sol-learning",
+      "toNode": "node-learning-workflow",
+      "fromSide": "right",
+      "toSide": "bottom",
+      "label": "复用教学引导、取证与固定审核"
+    },
+    {
+      "id": "edge-sol-learning-transport",
+      "fromNode": "node-sol-learning",
+      "toNode": "node-sol61-team",
+      "fromSide": "top",
+      "toSide": "left",
+      "label": "Sol 订阅隔离推理与用量记录"
+    },
+    {
+      "id": "edge-deepseek-high-learning",
+      "fromNode": "node-deepseek-learning-high",
+      "toNode": "node-learning-workflow",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "相同v3引导与审核，官方DeepSeek high传输"
+    },
+    {
+      "id": "edge-visual-first-sol",
+      "fromNode": "node-sol-visual-first",
+      "toNode": "node-sol61-team",
+      "fromSide": "top",
+      "toSide": "left",
+      "label": "复用隔离订阅与角色循环，不调用旧配音制作动作"
+    },
+    {
+      "id": "edge-visual-first-render",
+      "fromNode": "node-sol-visual-first",
+      "toNode": "node-render-module",
+      "fromSide": "bottom",
+      "toSide": "bottom",
+      "label": "原生渲染、实测视觉事件；独立审核后静音交付"
+    },
+    {
+      "id": "edge-visual-first-speech",
+      "fromNode": "node-sol-visual-first",
+      "toNode": "node-remote-speech",
+      "fromSide": "left",
+      "toSide": "right",
+      "label": "静音审核后讲稿供独立声音生成，不改视觉时钟"
+    },
+    {
+      "id": "edge-speech-outputs",
+      "fromNode": "node-remote-speech",
+      "toNode": "node-outputs",
+      "fromSide": "bottom",
+      "toSide": "bottom",
+      "label": "新WAV与来源收据；声音仍须独立验收"
+    },
+    {
+      "id": "edge-learning-runtime",
+      "fromNode": "node-learning-runtime",
+      "toNode": "node-learning-workflow",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "宿主参数隔离与只读恢复，单独绑定"
+    },
+    {
+      "id": "edge-learning-team",
+      "fromNode": "node-learning-workflow",
+      "toNode": "node-freeform-team",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "复用隔离三角色，不改历史实现"
+    },
+    {
+      "id": "edge-learning-review",
+      "fromNode": "node-learning-workflow",
+      "toNode": "node-review-module",
+      "fromSide": "bottom",
+      "toSide": "bottom",
+      "label": "密集时序、首看与源码复核，固定学习量表"
+    },
+    {
       "id": "edge-bootstrap-external",
       "fromNode": "node-bootstrap",
       "toNode": "node-external-capabilities",
       "fromSide": "right",
       "toSide": "left",
       "label": "检查引用"
+    },
+    {
+      "id": "edge-understanding-captions",
+      "fromNode": "node-understanding-first-v2",
+      "fromSide": "bottom",
+      "toNode": "node-focus-captions",
+      "toSide": "top",
+      "label": "已审有声交付与对齐"
+    },
+    {
+      "id": "edge-review-captions",
+      "fromNode": "node-review-module",
+      "fromSide": "bottom",
+      "toNode": "node-focus-captions",
+      "toSide": "right",
+      "label": "字幕真实像素审核"
+    },
+    {
+      "id": "edge-captions-outputs",
+      "fromNode": "node-focus-captions",
+      "fromSide": "left",
+      "toNode": "node-outputs",
+      "toSide": "bottom",
+      "label": "单套字幕正式交付"
+    },
+    {
+      "id": "edge-course-continuous-units",
+      "fromNode": "node-course-unit-context",
+      "fromSide": "right",
+      "toNode": "node-continuous-meaning-units",
+      "toSide": "left",
+      "label": "本课context与前后课意图"
+    },
+    {
+      "id": "edge-continuous-units-render",
+      "fromNode": "node-continuous-meaning-units",
+      "fromSide": "top",
+      "toNode": "node-understanding-first-v2",
+      "toSide": "right",
+      "label": "复用真实渲染与独立质量证据"
+    },
+    {
+      "id": "edge-continuous-units-voice",
+      "fromNode": "node-continuous-meaning-units",
+      "fromSide": "right",
+      "toNode": "node-remote-speech",
+      "toSide": "bottom",
+      "label": "连续文本整段一次生成，原音与收据保留"
+    },
+    {
+      "id": "edge-continuous-units-review",
+      "fromNode": "node-continuous-meaning-units",
+      "fromSide": "bottom",
+      "toNode": "node-review-module",
+      "toSide": "bottom",
+      "label": "段内指向与字幕独立审查，听审另记"
     }
   ]
 }

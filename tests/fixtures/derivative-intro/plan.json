@@ -1,0 +1,128 @@
+{
+  "artifact_type": "test_fixture",
+  "status": "test_only_not_production_or_approved",
+  "fixture_scope": "Minimal original author-draft contract for native geometry tests; no production context, rendered evidence or review authority.",
+  "author_agent": "01a1976b-d4e1-7161-a92f-0e5d6e5ab5ca",
+  "author_context": "01a1976b-d4e1-7161-a92f-0e5d6e5ab5ca",
+  "title": "导数入门：曲线上，一个点有多陡",
+  "scene": "examples/derivative_intro_visual.py",
+  "scene_class": "DerivativeIntroLesson",
+  "workflow_profile": "configs/visual-first-workflow-v4.2-unit.json",
+  "revision_mode": "fresh",
+  "duration": 304,
+  "fps": 30,
+  "cues": [
+    {
+      "id": "opening", "duration": 22, "heading": "导数入门",
+      "visual": "完整标题与自然问题后进入x²曲线和P=(2,4)。",
+      "learning_purpose": "从斜率接到一个点附近的变化率。",
+      "anchors": [
+        {"id": "opening_title_ready", "meaning": "标题和问题已显现"},
+        {"id": "opening_point_ready", "meaning": "曲线、P与本点问题已出现"}
+      ]
+    },
+    {
+      "id": "average", "duration": 34, "heading": "先看一段区间",
+      "visual": "P固定、Q=(3,9)，增量线对应Δx=h=1、Δy=5与差商。",
+      "learning_purpose": "连接图上增量、平均变化率与割线斜率。",
+      "anchors": [
+        {"id": "interval_points_ready", "meaning": "P、Q及坐标已出现"},
+        {"id": "increments_ready", "meaning": "增量线与公式均已出现"},
+        {"id": "average_quotient_ready", "meaning": "差商与平均变化率已出现"}
+      ]
+    },
+    {
+      "id": "approach", "duration": 42, "heading": "让Q沿曲线靠近P",
+      "visual": "同一h驱动Q、割线、增量线和读数，从1经0.1到0.02。",
+      "learning_purpose": "追踪区间缩短时图形与差商的共同变化。",
+      "anchors": [
+        {"id": "approach_setup_ready", "meaning": "固定P、活动Q和读数已出现"},
+        {"id": "approach_motion_mid", "meaning": "连续运动达到h=0.1、差商4.1"},
+        {"id": "approach_near_ready", "meaning": "连续运动达到h=0.02、差商4.02"}
+      ]
+    },
+    {
+      "id": "algebra", "duration": 74, "heading": "差商为什么接近4",
+      "visual": "以语义匹配完成代入、展开、合并、提取h与非零约分。",
+      "learning_purpose": "保留4+h的推理来源和约分条件。",
+      "anchors": [
+        {"id": "substitution_ready", "meaning": "((2+h)²-4)/h已出现"},
+        {"id": "expanded_ready", "meaning": "展开的语义匹配已完成"},
+        {"id": "combined_ready", "meaning": "常数合并已完成"},
+        {"id": "factored_ready", "meaning": "公因式h已提取"},
+        {"id": "cancellation_condition_ready", "meaning": "h≠0及两处待约h已出现"},
+        {"id": "simplified_ready", "meaning": "约分后4+h已出现"}
+      ]
+    },
+    {
+      "id": "both_sides", "duration": 36, "heading": "两边靠近，同一个数",
+      "visual": "左右Q、割线、正负h、Δy与斜率同步趋近。",
+      "learning_purpose": "通过双侧运动和差距恒等式解释共同趋近4。",
+      "anchors": [
+        {"id": "two_sides_ready", "meaning": "双侧点、割线和读数已出现"},
+        {"id": "two_sides_mid", "meaning": "半径0.1、斜率4.1与3.9"},
+        {"id": "two_sides_near", "meaning": "半径0.02、斜率4.02与3.98"},
+        {"id": "common_limit_ready", "meaning": "双侧极限关系已出现"}
+      ]
+    },
+    {
+      "id": "definition", "duration": 34, "heading": "把这个极限叫作导数",
+      "visual": "从f'(2)的具体极限式语义匹配到f'(a)的定义。",
+      "learning_purpose": "命名本点变化率并说明一般定义的存在条件。",
+      "anchors": [
+        {"id": "derivative_value_ready", "meaning": "f'(2)极限式与函数值标签已出现"},
+        {"id": "definition_pattern_ready", "meaning": "f'(a)定义和条件已出现"}
+      ]
+    },
+    {
+      "id": "tangent_prediction", "duration": 44, "heading": "4怎样描述P附近",
+      "visual": "真实坐标的局部曲线与切线，h从0.4减到0.1，最后核对h²余项。",
+      "learning_purpose": "联系切线和附近变化的预测，区分真值与近似。",
+      "anchors": [
+        {"id": "tangent_ready", "meaning": "局部曲线、P与切线已出现"},
+        {"id": "prediction_setup_ready", "meaning": "曲线值、预测值和误差段已出现"},
+        {"id": "prediction_small_ready", "meaning": "h=0.1，预测4.400、真值4.410"},
+        {"id": "remainder_ready", "meaning": "准确展开和h²=0.01已出现"}
+      ]
+    },
+    {
+      "id": "closing", "duration": 18, "heading": "从一个点，到每一个位置",
+      "visual": "收束本点导数并提出任意位置a的待求问题。",
+      "learning_purpose": "连接下一课一般位置与导函数。",
+      "anchors": [
+        {"id": "lesson_summary_ready", "meaning": "本点导数的联系已出现"},
+        {"id": "next_position_question_ready", "meaning": "一般位置a的问题已出现"}
+      ]
+    }
+  ],
+  "focus_intents": [
+    {"id": "opening_question", "cue": "opening"},
+    {"id": "opening_point", "cue": "opening"},
+    {"id": "interval_points", "cue": "average"},
+    {"id": "signed_increments", "cue": "average"},
+    {"id": "average_quotient", "cue": "average"},
+    {"id": "approach_setup", "cue": "approach"},
+    {"id": "right_approach", "cue": "approach"},
+    {"id": "near_rate", "cue": "approach"},
+    {"id": "quotient_substitution", "cue": "algebra"},
+    {"id": "expanded_terms", "cue": "algebra"},
+    {"id": "combined_terms", "cue": "algebra"},
+    {"id": "factored_h", "cue": "algebra"},
+    {"id": "nonzero_cancel", "cue": "algebra"},
+    {"id": "simplified_rate", "cue": "algebra"},
+    {"id": "two_sided_start", "cue": "both_sides"},
+    {"id": "two_sided_motion", "cue": "both_sides"},
+    {"id": "common_four", "cue": "both_sides"},
+    {"id": "derivative_at_two", "cue": "definition"},
+    {"id": "definition_pattern", "cue": "definition"},
+    {"id": "tangent_geometry", "cue": "tangent_prediction"},
+    {"id": "local_prediction", "cue": "tangent_prediction"},
+    {"id": "prediction_remainder", "cue": "tangent_prediction"},
+    {"id": "local_summary", "cue": "closing"},
+    {"id": "next_position", "cue": "closing"}
+  ],
+  "production_boundary": {"rendered": false, "visual_approved": false, "narration_approved": false, "audio_generated": false},
+  "state_contracts": [
+    {"state": "versioned test fixture", "writer": "test fixture author", "consumers": ["native geometry tests"], "lifecycle": "Original source-model and default-timing test baseline", "invalidation": "Update deliberately when the tested source contract changes; never production or review evidence"}
+  ]
+}

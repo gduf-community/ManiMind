@@ -1,0 +1,69 @@
+{
+  "project_id": "linear-transform-intro",
+  "title": "线性变换的几何直觉",
+  "source_bundle": {
+    "paper_path": "inputs/papers/none.pdf",
+    "note_paths": [
+      "inputs/notes/linear_transform.md"
+    ],
+    "audience": "大学本科低年级",
+    "style_refs": [
+      "先直觉后公式",
+      "偏明亮的科普视觉"
+    ]
+  },
+  "segments": [
+    {
+      "id": "seg-01",
+      "title": "什么是线性变换",
+      "goal": "从几何视角理解矩阵的本质",
+      "narration": "我们学了多年矩阵乘法，但矩阵到底是什么？",
+      "modality": "html",
+      "estimated_seconds": 20
+    },
+    {
+      "id": "seg-02",
+      "title": "基向量的命运",
+      "goal": "展示基向量在变换中的角色",
+      "narration": "基向量在变换中移动，整个空间跟着变形",
+      "modality": "manim",
+      "formulas": [
+        "A = [[a,b],[c,d]]"
+      ],
+      "estimated_seconds": 30
+    },
+    {
+      "id": "seg-03",
+      "title": "旋转与缩放",
+      "goal": "展示旋转和缩放两种基本变换",
+      "narration": "旋转矩阵里藏着三角函数",
+      "modality": "manim",
+      "formulas": [
+        "[[costheta, -sintheta], [sintheta, costheta]]"
+      ],
+      "estimated_seconds": 30
+    },
+    {
+      "id": "seg-04",
+      "title": "特征向量",
+      "goal": "理解变换中方向不变的向量",
+      "narration": "特征向量在变换后方向不变，只被拉伸",
+      "modality": "manim",
+      "formulas": [
+        "Av = lambda v"
+      ],
+      "estimated_seconds": 35
+    },
+    {
+      "id": "seg-05",
+      "title": "行列式的几何意义",
+      "goal": "行列式就是面积伸缩比",
+      "narration": "行列式大小就是变换后的面积是原来的几倍",
+      "modality": "manim",
+      "formulas": [
+        "det(A) = ad - bc"
+      ],
+      "estimated_seconds": 30
+    }
+  ]
+}

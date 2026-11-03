@@ -1,0 +1,810 @@
+{
+  "schema_version": 1,
+  "project_id": "math-derivative-ch06-extrema-20261102",
+  "version": "v001",
+  "status": "not_reviewed",
+  "title": "06 极值：只和附近比较",
+  "scene": "examples/derivative_ch06_extrema_v003.py",
+  "scene_class": "DerivativeCh06ExtremaV003",
+  "duration": 354.7,
+  "fps": 30,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "workflow_profile": "configs/visual-first-workflow-v4.2-unit.json",
+  "revision_mode": "revision",
+  "cues": [
+    {
+      "id": "opening",
+      "duration": 32.733333333333334,
+      "heading": "极值：只和附近比较",
+      "visual": "熟悉的三次曲线标出两个转向位置",
+      "learning_purpose": "承接前课单调性，引出转向处的局部比较",
+      "anchors": [
+        {
+          "id": "familiar_cubic_ready",
+          "meaning": "同一函数和导数已经出现"
+        },
+        {
+          "id": "turn_question_ready",
+          "meaning": "两个转向位置已圈出"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.3,
+        "0.06": 0.8,
+        "0.16": 2.52,
+        "0.65": 17.06,
+        "0.73": 17.68,
+        "1.00": 32.733333333333334
+      },
+      "animation_starts": {},
+      "post_holds": {}
+    },
+    {
+      "id": "neighborhood",
+      "duration": 54.333333333333336,
+      "heading": "极值的比较范围",
+      "visual": "窄窗口从-1连续移动到1；窗口内曲段加亮",
+      "learning_purpose": "理解极值只比较一个邻域，不与全图所有点比较",
+      "anchors": [
+        {
+          "id": "local_max_window_ready",
+          "meaning": "-1附近窗口与函数值2可读"
+        },
+        {
+          "id": "local_min_window_ready",
+          "meaning": "窗口到达1附近"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.3,
+        "0.06": 0.8,
+        "0.14": 1.8,
+        "0.20": 2.26,
+        "0.43": 26.4,
+        "0.48": 26.94,
+        "0.67": 30.02,
+        "0.72": 32.34,
+        "0.95": 53.12,
+        "1.00": 54.333333333333336
+      },
+      "animation_starts": {
+        "0.67": 27.04
+      },
+      "post_holds": {
+        "0.67": 31.74
+      }
+    },
+    {
+      "id": "signs",
+      "duration": 56.4,
+      "heading": "把转向翻译成导数符号",
+      "visual": "分解导数、标出-1与1、生成+ - +三段及增减折线",
+      "learning_purpose": "复用前课符号到增减，不重做求导",
+      "anchors": [
+        {
+          "id": "critical_positions_ready",
+          "meaning": "导数分解及两个零点已出现"
+        },
+        {
+          "id": "three_sign_intervals_ready",
+          "meaning": "三个开区间导数符号已出现"
+        },
+        {
+          "id": "sign_to_monotonicity_ready",
+          "meaning": "符号对应的增减线已出现"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.3,
+        "0.06": 0.8,
+        "0.13": 2.42,
+        "0.29": 14.5,
+        "0.34": 15.3,
+        "0.44": 21.06,
+        "0.67": 39.1,
+        "0.78": 40.1,
+        "1.00": 56.4
+      },
+      "animation_starts": {},
+      "post_holds": {},
+      "persistent_focuses": [
+        "critical_positions",
+        "three_sign_intervals"
+      ],
+      "focus_lifetime_reason": "Factorization/zeros/sign row genuinely stay visible below the monotonicity mapping until cue end; adjacent original references have zero acoustic gap"
+    },
+    {
+      "id": "turns",
+      "duration": 58.5,
+      "heading": "极值来自两侧增减的交接",
+      "visual": "点沿同一三次曲线先后通过两个驻点，右侧分层显示符号、增减和值",
+      "learning_purpose": "用变号解释极值及区分极值点和极值",
+      "anchors": [
+        {
+          "id": "max_traverse_start",
+          "meaning": "经过-1的移动开始"
+        },
+        {
+          "id": "min_traverse_start",
+          "meaning": "经过1的移动开始"
+        },
+        {
+          "id": "point_value_distinction_ready",
+          "meaning": "点与值区别已出现"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.3,
+        "0.06": 0.8,
+        "0.12": 1.8,
+        "0.17": 2.32,
+        "0.29": 7.72,
+        "0.43": 9.32,
+        "0.48": 24.94,
+        "0.54": 25.2,
+        "0.68": 29.66,
+        "0.81": 31.28,
+        "0.87": 43.36,
+        "1.00": 58.5
+      },
+      "animation_starts": {
+        "0.29": 6.12,
+        "0.43": 8.44,
+        "0.68": 28.28,
+        "0.81": 30.36
+      },
+      "post_holds": {
+        "0.43": 24.64,
+        "0.81": 42.68
+      }
+    },
+    {
+      "id": "stationary",
+      "duration": 50.0,
+      "heading": "切线放平，曲线也可能继续上升",
+      "visual": "x³原点水平切线，点实际从负到正经过原点",
+      "learning_purpose": "驻点不是极值的充分条件",
+      "anchors": [
+        {
+          "id": "stationary_zero_ready",
+          "meaning": "g=x³及g'(0)=0可读"
+        },
+        {
+          "id": "stationary_pass_start",
+          "meaning": "沿x³通过原点的过程开始"
+        },
+        {
+          "id": "stationary_no_extremum_ready",
+          "meaning": "无极值结论出现"
+        },
+        {
+          "id": "stationary_tangent_ready",
+          "meaning": "水平切线在实际原声首次指称前出现"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.3,
+        "0.06": 0.8,
+        "0.13": 2.42,
+        "0.24": 14.6,
+        "0.31": 17.0,
+        "0.36": 17.48,
+        "0.53": 22.32,
+        "0.58": 23.7,
+        "0.73": 32.82,
+        "0.80": 33.62,
+        "1.00": 50.0
+      },
+      "animation_starts": {
+        "0.53": 17.7,
+        "0.73": 23.84
+      },
+      "post_holds": {
+        "0.73": 33.0
+      }
+    },
+    {
+      "id": "necessary",
+      "duration": 68.4,
+      "heading": "保留条件：可导的内点",
+      "visual": "局部极大的左右差商约束与共同零导数；最后给|x|尖点",
+      "learning_purpose": "解释必要性方向及可导内点的限定对象",
+      "anchors": [
+        {
+          "id": "conditional_necessity_ready",
+          "meaning": "带条件的必要性命题出现"
+        },
+        {
+          "id": "one_sided_quotients_ready",
+          "meaning": "左右差商符号出现"
+        },
+        {
+          "id": "cusp_condition_ready",
+          "meaning": "绝对值尖点极小出现"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.3,
+        "0.06": 0.8,
+        "0.13": 2.34,
+        "0.29": 20.26,
+        "0.36": 20.44,
+        "0.55": 34.3,
+        "0.61": 34.82,
+        "0.72": 48.72,
+        "0.79": 49.36,
+        "1.00": 68.4
+      },
+      "animation_starts": {
+        "0.36": 20.26
+      },
+      "post_holds": {}
+    },
+    {
+      "id": "closing",
+      "duration": 34.333333333333336,
+      "heading": "从局部，走向整个区间",
+      "visual": "收束局部比较、变号与必要性，提出端点问题",
+      "learning_purpose": "将出口交给闭区间最值课",
+      "anchors": [
+        {
+          "id": "local_method_ready",
+          "meaning": "局部方法已收束"
+        },
+        {
+          "id": "whole_interval_question_ready",
+          "meaning": "全区间及端点问题出现"
+        },
+        {
+          "id": "boundary_scope_ready",
+          "meaning": "新增边界提示：端点不套用可导内点必要条件"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.3,
+        "0.06": 0.8,
+        "0.16": 2.44,
+        "0.65": 20.52,
+        "0.74": 21.24,
+        "0.88": 28.6,
+        "1.00": 34.333333333333336
+      },
+      "animation_starts": {},
+      "post_holds": {}
+    }
+  ],
+  "focus_intents": [
+    {
+      "id": "familiar_cubic",
+      "cue": "opening",
+      "referent": "三次函数及已知导数",
+      "process": "静态回调已有表示",
+      "state": "曲线与函数、导数同时可读",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "turn_question",
+      "cue": "opening",
+      "referent": "两个圈出的转向位置",
+      "process": "从已有单调区间提出问题",
+      "state": "只提局部问题，未宣称全局最值",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "local_max_window",
+      "cue": "neighborhood",
+      "referent": "-1邻域、曲线高亮与f(-1)=2",
+      "process": "比较左右附近点与中心",
+      "state": "窗口中心-1，半径0.42",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "window_move",
+      "cue": "neighborhood",
+      "referent": "沿x轴移动的窗口及中心点",
+      "process": "真实移动-1到1",
+      "state": "移动期间不保留旧位置的极大值标签",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "local_min_window",
+      "cue": "neighborhood",
+      "referent": "1邻域、曲线高亮与f(1)=-2",
+      "process": "比较附近点与中心",
+      "state": "窗口已停在1，左右均高于中心",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "critical_positions",
+      "cue": "signs",
+      "referent": "因式分解导数与两个零点",
+      "process": "从已知导数读出分界",
+      "state": "不重复完整求导",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "three_sign_intervals",
+      "cue": "signs",
+      "referent": "横轴上+ 0 - 0 +",
+      "process": "逐区间读符号",
+      "state": "分界点和开区间分开标注",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "sign_to_monotonicity",
+      "cue": "signs",
+      "referent": "导数符号及下方增减折线",
+      "process": "符号连接函数行为",
+      "state": "三段增减与符号一一对应",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "max_traverse",
+      "cue": "turns",
+      "referent": "沿曲线通过-1的点和+到-说明",
+      "process": "从-1.8通过-1到-0.2",
+      "state": "移动前中后均保留极大对应说明",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "min_traverse",
+      "cue": "turns",
+      "referent": "沿曲线通过1的点和-到+说明",
+      "process": "从-0.2通过1到1.8",
+      "state": "移动前中后均保留极小对应说明",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "point_value_distinction",
+      "cue": "turns",
+      "referent": "极值点与极值的区分及当前坐标",
+      "process": "从当前案例抽取可调用结论",
+      "state": "不把驻点直接当极值点",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "stationary_zero",
+      "cue": "stationary",
+      "referent": "x³、导数与原点",
+      "process": "引入一个独立反例",
+      "state": "与前面x³-3x清楚分场",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "stationary_pass",
+      "cue": "stationary",
+      "referent": "在x³上从负侧通过0到正侧的点",
+      "process": "左右两段连续移动，在0交接",
+      "state": "水平切线和+0+同时保留",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "stationary_no_extremum",
+      "cue": "stationary",
+      "referent": "原点邻域与无极值结论",
+      "process": "用两侧值和单调性完成反例",
+      "state": "驻点但无极值",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "conditional_necessity",
+      "cue": "necessary",
+      "referent": "可导内点条件和必要性箭头",
+      "process": "明确命题方向",
+      "state": "不宣称导数为零充分，也不覆盖端点",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "one_sided_quotients",
+      "cue": "necessary",
+      "referent": "局部极大的左、右差商不等式",
+      "process": "从局部比较推导差商符号",
+      "state": "左右h的符号分别可读",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "common_zero_necessity",
+      "cue": "necessary",
+      "referent": "双侧导数相同只能为0",
+      "process": "合并左右约束",
+      "state": "依据可导假设，不把差商都误读为零",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "cusp_condition",
+      "cue": "necessary",
+      "referent": "|x|的V形尖点及文字条件",
+      "process": "用尖点说明条件的作用",
+      "state": "只作简短对照，不展开不可导分类",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "local_method",
+      "cue": "closing",
+      "referent": "局部比较与变号总结",
+      "process": "收束可复用方法和限定",
+      "state": "没有将驻点提升为充分条件",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "whole_interval_question",
+      "cue": "closing",
+      "referent": "全区间比较的端点问题",
+      "process": "从局部出口连接下一课",
+      "state": "不提前重复闭区间求解",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    }
+  ],
+  "review_times": [
+    2.087,
+    2.32,
+    2.62,
+    16.627,
+    16.86,
+    17.16,
+    17.247,
+    17.48,
+    17.78,
+    32.533333,
+    34.100333,
+    34.333333,
+    34.560333,
+    34.633333,
+    34.793333,
+    35.093333,
+    58.700333,
+    58.933333,
+    59.233333,
+    59.240333,
+    59.473333,
+    59.740333,
+    59.773333,
+    61.263333,
+    62.853333,
+    64.640333,
+    64.873333,
+    65.173333,
+    85.420333,
+    85.653333,
+    85.953333,
+    86.866667,
+    89.053667,
+    89.286667,
+    89.586667,
+    101.133667,
+    101.366667,
+    101.666667,
+    101.933667,
+    102.166667,
+    102.466667,
+    107.693667,
+    107.926667,
+    108.226667,
+    125.733667,
+    125.966667,
+    126.266667,
+    126.733667,
+    126.966667,
+    127.266667,
+    143.266667,
+    144.833667,
+    145.066667,
+    145.353667,
+    145.366667,
+    145.586667,
+    145.886667,
+    149.553667,
+    150.386667,
+    151.286667,
+    151.873667,
+    152.346667,
+    152.886667,
+    168.073667,
+    168.256667,
+    168.373667,
+    168.506667,
+    168.536667,
+    168.766667,
+    171.713667,
+    172.436667,
+    173.226667,
+    173.793667,
+    174.286667,
+    174.846667,
+    186.393667,
+    186.626667,
+    186.926667,
+    201.766667,
+    203.953667,
+    204.186667,
+    204.486667,
+    216.133667,
+    216.366667,
+    216.666667,
+    218.533667,
+    218.766667,
+    219.013667,
+    219.066667,
+    219.246667,
+    219.546667,
+    219.633667,
+    221.976667,
+    224.386667,
+    225.233667,
+    225.466667,
+    225.766667,
+    225.773667,
+    230.296667,
+    234.886667,
+    235.153667,
+    235.386667,
+    235.686667,
+    251.766667,
+    253.873667,
+    254.106667,
+    254.406667,
+    271.793667,
+    272.026667,
+    272.193667,
+    272.316667,
+    272.326667,
+    272.506667,
+    285.833667,
+    286.066667,
+    286.353667,
+    286.366667,
+    286.586667,
+    286.886667,
+    300.253667,
+    300.486667,
+    300.786667,
+    300.893667,
+    301.126667,
+    301.426667,
+    320.166667,
+    322.373667,
+    322.606667,
+    322.906667,
+    340.453667,
+    340.686667,
+    340.986667,
+    341.173667,
+    341.406667,
+    341.706667,
+    348.533667,
+    348.766667,
+    349.066667,
+    354.5
+  ],
+  "sources": [
+    "examples/derivative_chapter_shared.py",
+    "docs/course-unit-workflow.md",
+    "runtime/projects/math-derivative-ch06-extrema-20261102/math-facts-v001.json",
+    "runtime/projects/math-derivative-ch06-extrema-20261102/context-v001.json",
+    "runtime/projects/math-derivative-chapter-20261102/unit-v001.json",
+    "docs/curricula/high-school-mathematics-v0.1.csv",
+    "src/manimind/curriculum.py",
+    "runtime/projects/math-derivative-ch06-extrema-20261102/scientific-brief-v001.json",
+    "runtime/projects/math-derivative-ch06-extrema-20261102/draft-plan-v001.json",
+    "examples/derivative_ch06_extrema.py",
+    "runtime/projects/math-derivative-ch06-extrema-20261102/narration-draft-v002.json",
+    "runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch06-extrema-20261102/speech-plan-v002.json",
+    "runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch06-extrema-20261102/timings-v001.json"
+  ],
+  "course_position": {
+    "chapter": 6,
+    "prerequisites": [
+      "前课同一三次函数与导数",
+      "导数符号与单调性的联系"
+    ],
+    "mastery_status": "assumed_not_tested",
+    "exit": "能用局部比较与导数变号判断极值，限定可导内点的必要条件，并用驻点反例解释非充分性",
+    "next": "把附近比较扩展为闭区间整体比较，纳入端点"
+  },
+  "context_status": "lead_will_supply_versioned_unit_and_context_before_production",
+  "subtitle_safe_bottom_px": 96,
+  "geometry_safe_min_y": -3.05,
+  "production_boundary": {
+    "rendered": false,
+    "visual_approved": false,
+    "narration_approved": false,
+    "published": false,
+    "original_audio_available": true,
+    "production_estimates_available": true,
+    "author_generated_audio": false,
+    "listening_reviewed": false,
+    "student_understanding_tested": false,
+    "independent_review_required": true
+  },
+  "state_contracts": [
+    {
+      "writer": "01a199e9-7432-7052-96f7-6bd6eb2e63bb",
+      "consumers": [
+        "chapter lead",
+        "renderer",
+        "future independent reviewer",
+        "future narration installer"
+      ],
+      "lifecycle": "Author-C v001 draft; lesson-scoped, not an approved installation",
+      "invalidation": "Change to source, model, helper, profile, chapter context, text or cue timing requires dependent revalidation",
+      "scope": "long_term_lesson_draft"
+    },
+    {
+      "writer": "01a199e9-7432-7052-96f7-6bd6eb2e63bb",
+      "consumers": [
+        "chapter lead",
+        "renderer",
+        "future independent reviewer",
+        "future narration installer"
+      ],
+      "lifecycle": "This author-C collaboration; test logs and handoff only",
+      "invalidation": "Change to source, model, helper, profile, chapter context, text or cue timing requires dependent revalidation",
+      "scope": "short_term_author_session"
+    },
+    {
+      "name": "v003_presentation_clock_and_persistent_sign_referents",
+      "writer": "01a19acd-e149-74d0-8a5d-975a3adf45f4",
+      "consumers": [
+        "main",
+        "native tests",
+        "independent reviewers"
+      ],
+      "lifecycle": "Each construct owns timing/holds/focuses and updater state; cleared at cue/end; never writes audio estimates",
+      "invalidation": "Bound inputs, scene, clock, geometry, mathematics or authorization change"
+    }
+  ],
+  "author_agent": "01a19acd-e149-74d0-8a5d-975a3adf45f4",
+  "author_context": "01a19acd-e149-74d0-8a5d-975a3adf45f4",
+  "writer": "01a19acd-e149-74d0-8a5d-975a3adf45f4",
+  "consumers": [
+    "main",
+    "native tests",
+    "independent reviewers"
+  ],
+  "lifecycle": "Long-term v003 author candidate, not rendered or reviewed",
+  "invalidation": "Bound inputs, scene, clock, geometry, mathematics or authorization change",
+  "lesson_context": "runtime/projects/math-derivative-ch06-extrema-20261102/context-v001.json",
+  "scientific_brief": "runtime/projects/math-derivative-ch06-extrema-20261102/scientific-brief-v001.json",
+  "audience": "已学高中常见函数、斜率与基本代数运算，尚未系统学习导数的学生",
+  "prior_knowledge": [
+    {
+      "lesson_id": "M02-02",
+      "assumed_exit": "函数表达式、图像与点坐标对应"
+    },
+    {
+      "lesson_id": "M03-04",
+      "assumed_exit": "对数函数与运算法则的定义域和底数条件"
+    },
+    {
+      "lesson_id": "M04-05",
+      "assumed_exit": "同角与和差公式，以及它们联系的单位圆正弦余弦"
+    },
+    {
+      "lesson_id": "M09-01",
+      "assumed_exit": "有向增量与直线斜率"
+    },
+    {
+      "lesson_id": "M01-01",
+      "assumed_exit": "展开、因式分解及非零约分"
+    }
+  ],
+  "understanding_goals": [
+    "导数为0给出驻点；局部极值要求与附近值比较。左右走势提供判定依据，极值点的位置和极值大小分别记录"
+  ],
+  "narration_draft": "runtime/projects/math-derivative-ch06-extrema-20261102/narration-draft-v002.json",
+  "contributors": [
+    {
+      "author_agent": "01a199e9-7432-7052-96f7-6bd6eb2e63bb",
+      "author_context": "01a199e9-7432-7052-96f7-6bd6eb2e63bb",
+      "contribution": "Original whole lesson, pure mathematics, coordinates, graph and native methods"
+    },
+    {
+      "author_agent": "019eaf8b-9151-75e2-9db4-5ff834335577",
+      "author_context": "019eaf8b-9151-75e2-9db4-5ff834335577",
+      "contribution": "Existing main v002 spoken-grouping correction and immutable narration source"
+    }
+  ],
+  "narration_draft_sha256": "8315f4edd875258f9f2842171e21de010fe1c1c261dd832daee4bb77742fcb57",
+  "revision_contract": "runtime/projects/math-derivative-ch06-extrema-20261102/content-regression-contract-v003.json",
+  "revision_review": "runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch06-extrema-20261102/review/regression-v003.json",
+  "timing_basis": {
+    "timings": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch06-extrema-20261102/timings-v001.json",
+    "timings_sha256": "412d61d0bdaaf82d24ae8798cac66abc6e11a9ab44f9b2adef3d47d225ac734c",
+    "plan": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch06-extrema-20261102/speech-plan-v002.json",
+    "plan_sha256": "2ac670989d0bea849cf5ea292f26f20d5c44fbf6326d072bc491bdd2ba6beba0",
+    "speech": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch06-extrema-20261102/speech",
+    "production_evidence_sha256": "2ca751d97e62fdb3e3a987de95058cc129386ef4a257ac9ad87bed4d218ec4d9",
+    "scope": "Production forced-alignment estimates, not listening or exact phoneme certification"
+  },
+  "intended_full_wav_placement": [
+    {
+      "id": "ch06-opening",
+      "cue": "opening",
+      "intended_start": 2,
+      "duration_seconds": 29.92,
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch06-extrema-20261102/speech/ch06-opening.wav",
+      "wav_sha256": "31500b98e83ee14865ae1543c9af122f3bfa6e4e22ed986d50958a8ee2215c86",
+      "audio_trimmed": false,
+      "speed_changed": false,
+      "regenerated": false
+    },
+    {
+      "id": "ch06-neighborhood",
+      "cue": "neighborhood",
+      "intended_start": 34.733333333333334,
+      "duration_seconds": 51.52,
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch06-extrema-20261102/speech/ch06-neighborhood.wav",
+      "wav_sha256": "41961b4ee8d60691a92b297e904d0763109bcbc78e5e0e96fa82c55c2244c516",
+      "audio_trimmed": false,
+      "speed_changed": false,
+      "regenerated": false
+    },
+    {
+      "id": "ch06-signs",
+      "cue": "signs",
+      "intended_start": 89.06666666666666,
+      "duration_seconds": 53.6,
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch06-extrema-20261102/speech/ch06-signs.wav",
+      "wav_sha256": "de347396d053a1562be4a9eddb4ca840beebb52f1083e37a36f426ba7afc5601",
+      "audio_trimmed": false,
+      "speed_changed": false,
+      "regenerated": false
+    },
+    {
+      "id": "ch06-turns",
+      "cue": "turns",
+      "intended_start": 145.46666666666667,
+      "duration_seconds": 55.68,
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch06-extrema-20261102/speech/ch06-turns.wav",
+      "wav_sha256": "a62d9b161820db3bc2af6daa1a9984a745ac400f73b9b51ad5afe50d18df5c57",
+      "audio_trimmed": false,
+      "speed_changed": false,
+      "regenerated": false
+    },
+    {
+      "id": "ch06-stationary",
+      "cue": "stationary",
+      "intended_start": 203.96666666666667,
+      "duration_seconds": 47.2,
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch06-extrema-20261102/speech/ch06-stationary.wav",
+      "wav_sha256": "6c10414b82339195f04e934ad3ff224470592ad84b5c137216679b45bef6cea4",
+      "audio_trimmed": false,
+      "speed_changed": false,
+      "regenerated": false
+    },
+    {
+      "id": "ch06-necessary",
+      "cue": "necessary",
+      "intended_start": 253.96666666666667,
+      "duration_seconds": 65.6,
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch06-extrema-20261102/speech/ch06-necessary.wav",
+      "wav_sha256": "51205fe13c341c77bbeab6d66a5b576c5522bbfae90495586b2886ba8282aed8",
+      "audio_trimmed": false,
+      "speed_changed": false,
+      "regenerated": false
+    },
+    {
+      "id": "ch06-closing",
+      "cue": "closing",
+      "intended_start": 322.3666666666667,
+      "duration_seconds": 31.52,
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch06-extrema-20261102/speech/ch06-closing.wav",
+      "wav_sha256": "f3307e88f71715a4ba28860ecb96632087e1af9034e8654a15e9d05f5e4dd2f9",
+      "audio_trimmed": false,
+      "speed_changed": false,
+      "regenerated": false
+    }
+  ],
+  "new_visual_support": {
+    "boundary_scope": "New explicit endpoint-scope reminder under unchanged closing-r2; not claimed present in actual v001",
+    "narration_changed": false,
+    "not_added": [
+      "No invented boundary curve example",
+      "No new mathematical theorem or audio",
+      "No fictional safe_formula event; v001 never calls it"
+    ]
+  }
+}

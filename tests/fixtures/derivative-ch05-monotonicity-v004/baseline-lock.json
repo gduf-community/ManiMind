@@ -1,0 +1,39 @@
+{
+  "status": "not_reviewed",
+  "writer": "01a19ab5-b2d3-7003-a784-edeeaecdbc23",
+  "consumers": [
+    "main coordinator",
+    "independent blind visual reviewer",
+    "separate content regression reviewer",
+    "audio timing reviewer"
+  ],
+  "lifecycle": "Chapter 05 v004 author candidate only; not approval",
+  "invalidation": "Any bound source, plan, baseline media, narration, original speech/receipt or production timing change invalidates derived data",
+  "timings_sha256": "020be85bf6364d3d0c1cff2701d4457c16c4e5db54d79e693c20697a7fffc20f",
+  "evidence_sha256": "54d178cf26e1b0ca26d62b63aaf9303082728aa98cd97143ca5fdd9d96f1eb4e",
+  "baseline": {
+    "visual_v002": {
+      "path": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/manim/media/manimgl/understanding.mp4",
+      "sha256": "133c162efefff0fb94f5111547144129be6c6573b8b973510faa47ea18a7a2ec",
+      "duration": 396
+    }
+  },
+  "sources": [
+    {
+      "path": "examples/derivative_ch05_monotonicity.py",
+      "sha256": "ffd0c30f33afd8f6fb8a68f8bf4e58f371d1a0ee7d7b6415f70063e1fd8240c2"
+    },
+    {
+      "path": "examples/derivative_ch05_monotonicity_v002.py",
+      "sha256": "c3785c58c165a168ff6db98803efeb833c8e70e8c770b50912a32484bd9a294f"
+    },
+    {
+      "path": "examples/derivative_chapter_shared.py",
+      "sha256": "ed9bb7ece0f273c72fc4db744200e7a3a96e51ad54e258861305140e9d0c17ae"
+    },
+    {
+      "path": "tests/lesson_native_harness.py",
+      "sha256": "369758767cb20889a637c03eed9ffba17e97e618972eb6c9667e6dac84fc4d18"
+    }
+  ]
+}

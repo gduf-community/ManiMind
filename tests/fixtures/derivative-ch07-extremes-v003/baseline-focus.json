@@ -1,0 +1,110 @@
+{
+  "duration": 276.0000000000035,
+  "windows": [
+    {
+      "id": "closed_problem",
+      "start": 3.599999999999994,
+      "end": 14.866666666666646
+    },
+    {
+      "id": "whole_comparison",
+      "start": 17.26666666666668,
+      "end": 24.000000000000036
+    },
+    {
+      "id": "interior_candidate",
+      "start": 29.766666666666936,
+      "end": 38.866666666666646
+    },
+    {
+      "id": "all_candidates",
+      "start": 43.66666666666637,
+      "end": 58.566666666665526
+    },
+    {
+      "id": "candidate_reason",
+      "start": 62.86666666666528,
+      "end": 71.9999999999981
+    },
+    {
+      "id": "candidate_values",
+      "start": 89.09999999999712,
+      "end": 95.56666666666342
+    },
+    {
+      "id": "closed_extremes",
+      "start": 99.3666666666632,
+      "end": 109.99999999999594
+    },
+    {
+      "id": "parameter_left_wins",
+      "start": 123.33333333332851,
+      "end": 131.46666666666138
+    },
+    {
+      "id": "parameter_to_tie",
+      "start": 133.19999999999462,
+      "end": 139.56666666666092
+    },
+    {
+      "id": "parameter_tie",
+      "start": 141.89999999999412,
+      "end": 148.26666666666043
+    },
+    {
+      "id": "parameter_right_overtakes",
+      "start": 150.033333333327,
+      "end": 158.13333333332653
+    },
+    {
+      "id": "parameter_right_wins",
+      "start": 160.46666666665973,
+      "end": 167.99999999999264
+    },
+    {
+      "id": "existence_conditions",
+      "start": 173.69999999999231,
+      "end": 186.6333333333249
+    },
+    {
+      "id": "existence_and_search",
+      "start": 190.03333333332472,
+      "end": 205.99999999999048
+    },
+    {
+      "id": "open_minimum_retained",
+      "start": 211.5333333333235,
+      "end": 222.09999999998956
+    },
+    {
+      "id": "open_approach",
+      "start": 224.39999999998943,
+      "end": 236.83333333332206
+    },
+    {
+      "id": "unattained_supremum",
+      "start": 240.03333333332188,
+      "end": 251.99999999998786
+    },
+    {
+      "id": "interval_method",
+      "start": 255.59999999998766,
+      "end": 267.83333333333036
+    },
+    {
+      "id": "modeling_bridge",
+      "start": 270.23333333333227,
+      "end": 276.0000000000035
+    }
+  ],
+  "writer": "Actual UnderstandingScene render runtime",
+  "consumers": [
+    "narrator",
+    "independent reviewer",
+    "speech aligner"
+  ],
+  "lifecycle": "This exact visual render",
+  "invalidation": "Any visual source, timing or media change",
+  "limitation": "Annotations are not proof of visibility; inspect actual pixels",
+  "status": "not_reviewed"
+}

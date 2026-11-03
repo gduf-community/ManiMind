@@ -1,0 +1,14 @@
+# Isolated macOS/Python 3.12 environment; never install into manimgl_env.
+# Official upstream: https://github.com/jianfch/stable-ts (MIT).
+# No upstream implementation is copied into manimind.
+stable-ts==2.19.1
+openai-whisper==20250625
+torch==2.7.1
+torchaudio==2.7.1
+numpy==2.2.6
+numba==0.61.2
+llvmlite==0.44.0
+# manimind.__init__ eagerly imports the LLM client. Import support only: no API use.
+openai==3.22.1
+# The same eager package import also loads ingest.markdown_reader.
+PyYAML==6.0.3

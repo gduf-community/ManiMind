@@ -1,0 +1,794 @@
+{
+  "schema_version": 1,
+  "status": "not_reviewed",
+  "project_id": "math-derivative-ch06-extrema-20261102",
+  "author_agent": "01a19acd-e149-74d0-8a5d-975a3adf45f4",
+  "author_context": "01a19acd-e149-74d0-8a5d-975a3adf45f4",
+  "writer": "01a19acd-e149-74d0-8a5d-975a3adf45f4",
+  "consumers": [
+    "main",
+    "native tests",
+    "independent reviewers"
+  ],
+  "lifecycle": "Long-term v004 inventory keeps actual original-v001 21 functions and all process triplets; not a comparison approval",
+  "invalidation": "Bound source, original input, blind feedback, mathematics, clock or authorization changes",
+  "assets": {
+    "visual_v001": {
+      "path": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/manim/media/manimgl/understanding.mp4",
+      "sha256": "b4e7d506a2119e336e6e6acec55489b0771107067b2fa9d67a58a75fda4ae404",
+      "duration": 292
+    }
+  },
+  "units": [
+    {
+      "id": "opening",
+      "asset": "visual_v001",
+      "baseline_interval": [
+        0,
+        24
+      ],
+      "function": "承接05的同一三次函数与导数，从升降转向引出局部问题",
+      "features": [
+        {
+          "id": "known_cubic",
+          "kind": "state",
+          "claim": "同一f=x³-3x、f'=3(x²-1)与坐标图，保持前课身份",
+          "baseline_interval": [
+            4.775,
+            12.001
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 4.775,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_4_775.jpg",
+              "frame_sha256": "7960c30db6886e922275aecf17ef0a0d85ea0493a5c9b2769579140db54e5b23",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            },
+            {
+              "phase": "state",
+              "time": 12,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_12_0.jpg",
+              "frame_sha256": "f0c1b025618b62b70d09c359655ea863773604562c123e7b0af0d17f8a3cb347",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "turn_question",
+          "kind": "process",
+          "claim": "从已知曲线到圈出两个转向处，再提出附近高低问题",
+          "baseline_interval": [
+            14.659,
+            19.201
+          ],
+          "baseline_samples": [
+            {
+              "phase": "before",
+              "time": 14.659,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_14_659.jpg",
+              "frame_sha256": "f0c1b025618b62b70d09c359655ea863773604562c123e7b0af0d17f8a3cb347",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            },
+            {
+              "phase": "during",
+              "time": 16.8,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_16_8.jpg",
+              "frame_sha256": "a9c34bc2451f44bf53019e734d9927fc8949e843f4e7f260dcb44a12a6ebc849",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            },
+            {
+              "phase": "after",
+              "time": 19.2,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_19_2.jpg",
+              "frame_sha256": "0d5f043cdac35e814d5a9b802301a76a49e99cfb9dfd4a48e7ed30dbc58fda2c",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            }
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "neighborhood",
+      "asset": "visual_v001",
+      "baseline_interval": [
+        24,
+        70
+      ],
+      "function": "极值只比较足够近的邻域，窗口带着比较范围移动",
+      "features": [
+        {
+          "id": "local_max",
+          "kind": "state",
+          "claim": "半径.42的-1邻域、附近曲段、f(-1)=2与左升右降",
+          "baseline_interval": [
+            34.045,
+            42.922
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 34.045,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_34_045.jpg",
+              "frame_sha256": "35b625dfc38af7a460920a6ffc98b71aa834a30a6735b8355974b93a4d8ee81d",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            },
+            {
+              "phase": "state",
+              "time": 42.921,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_42_921.jpg",
+              "frame_sha256": "4babc779fc4ab9cb0704d0f384e0bfcc6e2edaf706818a8e3243746b81e34c1c",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "moving_neighborhood",
+          "kind": "process",
+          "claim": "窗口、曲线高亮、中心点和读数同步从-1到1，旧极大标签退出",
+          "baseline_interval": [
+            44.7,
+            57.98
+          ],
+          "baseline_samples": [
+            {
+              "phase": "before",
+              "time": 44.7,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_44_7.jpg",
+              "frame_sha256": "324ff220986eb2fbad6d264a8b7d9f8dbe2c8f12fdb9ec7d8e436146547c5e01",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            },
+            {
+              "phase": "during",
+              "time": 50.45,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_50_45.jpg",
+              "frame_sha256": "8443fcc25a1ed510919632ddc14fca08369acee1b088e24c4c743e66a1bd6a66",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            },
+            {
+              "phase": "after",
+              "time": 57.979,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_57_979.jpg",
+              "frame_sha256": "9a294b159070b828936c56e144daa87635dda8968af619118c05e2778c9e3705",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            }
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "local_min",
+          "kind": "state",
+          "claim": "1邻域中中心比两侧低、f(1)=-2，比较范围仍局部而非全局",
+          "baseline_interval": [
+            60.8,
+            66.85600000000001
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 60.8,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_60_8.jpg",
+              "frame_sha256": "34ab09b69b87025ac10ed6f40060bed379209807e0d9b7f5d6b261fe20785457",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            },
+            {
+              "phase": "state",
+              "time": 66.855,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_66_855.jpg",
+              "frame_sha256": "a673f90975690ed0f0f4ae2b00a7ffe4f48e82314036b13e5e73329e3c0f486e",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "signs",
+      "asset": "visual_v001",
+      "baseline_interval": [
+        70,
+        118
+      ],
+      "function": "导数的因式、驻点和区间符号连接增减",
+      "features": [
+        {
+          "id": "factor_zeros",
+          "kind": "state",
+          "claim": "3(x-1)(x+1)与零点-1、1，不重算求导",
+          "baseline_interval": [
+            76.849,
+            83.318
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 76.849,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_76_849.jpg",
+              "frame_sha256": "3a00184adad4cde56a4b759c31fd42a5f677d6e91b9b280fe678a7e0b8165156",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            },
+            {
+              "phase": "state",
+              "time": 83.317,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_83_317.jpg",
+              "frame_sha256": "e6aa58586603c80a332c38b70a7b7eb113e68e92b50bfc48713d5fc04bbebdfe",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "interval_signs",
+          "kind": "state",
+          "claim": "三个开区间+ - +与分界点0分开标，保持符号与位置",
+          "baseline_interval": [
+            94,
+            101.28500000000001
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 94,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_94_0.jpg",
+              "frame_sha256": "66051aa2095b01f6409df4b16d2755f6d428f3a64fa33926574b9296854265a5",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            },
+            {
+              "phase": "state",
+              "time": 101.284,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_101_284.jpg",
+              "frame_sha256": "66051aa2095b01f6409df4b16d2755f6d428f3a64fa33926574b9296854265a5",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "signs_to_flow",
+          "kind": "process",
+          "claim": "在对应符号下出现增、减、增的三段几何走势",
+          "baseline_interval": [
+            101.284,
+            112.718
+          ],
+          "baseline_samples": [
+            {
+              "phase": "before",
+              "time": 101.284,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_101_284.jpg",
+              "frame_sha256": "66051aa2095b01f6409df4b16d2755f6d428f3a64fa33926574b9296854265a5",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            },
+            {
+              "phase": "during",
+              "time": 103.6,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_103_6.jpg",
+              "frame_sha256": "40451de1fb84ecc915bde1e0fab2898422da14bd8bcaa39229090397a16d4b0a",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            },
+            {
+              "phase": "after",
+              "time": 112.717,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_112_717.jpg",
+              "frame_sha256": "00d72382299d310565a7494709bbf562134e19b849a35dc01c57e9de5d0e84d1",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            }
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "turns",
+      "asset": "visual_v001",
+      "baseline_interval": [
+        118,
+        172
+      ],
+      "function": "点沿同一曲线实际越过两个驻点，给变号和点值区别以对象",
+      "features": [
+        {
+          "id": "max_crossing",
+          "kind": "process",
+          "claim": "越过-1时先升后降，对应+→-、x=-1及极大值2",
+          "baseline_interval": [
+            127.72,
+            142.30100000000002
+          ],
+          "baseline_samples": [
+            {
+              "phase": "before",
+              "time": 127.72,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_127_72.jpg",
+              "frame_sha256": "2fc91da24f8d3d3225a81299ddbea485b2e0a2e4ab90d747c41cbc072fe04cc0",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            },
+            {
+              "phase": "during",
+              "time": 134.2,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_134_2.jpg",
+              "frame_sha256": "7ffa37436f6a3b4ebf6aee9edb1023651f61e055b65f6c372ccd3767d0118d33",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            },
+            {
+              "phase": "after",
+              "time": 142.3,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_142_3.jpg",
+              "frame_sha256": "1d972b70e5cee6b7e28300c77a197a5d2ea8750cbdba03474a8e79e38e641839",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            }
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "min_crossing",
+          "kind": "process",
+          "claim": "越过1时先降后升，对应-→+、x=1及极小值-2",
+          "baseline_interval": [
+            148.332,
+            165.53
+          ],
+          "baseline_samples": [
+            {
+              "phase": "before",
+              "time": 148.332,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_148_332.jpg",
+              "frame_sha256": "57b66537804c607cac0674817d7468dcab9066238d2d2c6c0aa11af43823e4e4",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            },
+            {
+              "phase": "during",
+              "time": 154.45,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_154_45.jpg",
+              "frame_sha256": "acc80a0274ba9630f5d36146db8b83e54bc0fe9d57451e8f91678536d493f431",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            },
+            {
+              "phase": "after",
+              "time": 165.529,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_165_529.jpg",
+              "frame_sha256": "159afd964ae4ef7267ee1eb5347ee7ac2bbb86d85e6443cbb234ec275376214f",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            }
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "position_value",
+          "kind": "state",
+          "claim": "极值点是位置、极值是函数值，原函数回代值与横坐标不混淆",
+          "baseline_interval": [
+            166.6,
+            171.43800000000002
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 166.6,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_166_6.jpg",
+              "frame_sha256": "159afd964ae4ef7267ee1eb5347ee7ac2bbb86d85e6443cbb234ec275376214f",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            },
+            {
+              "phase": "state",
+              "time": 171.437,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_171_437.jpg",
+              "frame_sha256": "ef788bacbdf78aa52b3220c9fc25db51de052000dc0e0c863bd7fd5bbf6de576",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stationary",
+      "asset": "visual_v001",
+      "baseline_interval": [
+        172,
+        218
+      ],
+      "function": "x³驻点不充分的反例，保留曲线通过原点及两侧正号",
+      "features": [
+        {
+          "id": "zero_derivative",
+          "kind": "state",
+          "claim": "独立g=x³、g'=3x²、g'(0)=0，与前图分场",
+          "baseline_interval": [
+            178.631,
+            185.604
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 178.631,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_178_631.jpg",
+              "frame_sha256": "f6d353c7c5fa67e384936f4781b6d2790d013d78ea9b823c72962f83c9e0c705",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            },
+            {
+              "phase": "state",
+              "time": 185.603,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_185_603.jpg",
+              "frame_sha256": "e7d5b78c1a73391755eb782a7301df80b7caa033adeda085af6b64480f629ac5",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "flat_tangent",
+          "kind": "state",
+          "claim": "原点水平切线及+0+两侧符号，不能将切平等同极值",
+          "baseline_interval": [
+            189.927,
+            208.80100000000002
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 189.927,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_189_927.jpg",
+              "frame_sha256": "c2eee7b8884583d2225f795ffa40dd7a28fdf333a57ccdf2a8f3ace4b73a4a5e",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            },
+            {
+              "phase": "state",
+              "time": 208.8,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_208_8.jpg",
+              "frame_sha256": "afe5afc512af2a0f86f0177c4af22b2deef32de6f5de7c10d4555ce403b7cb84",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "pass_zero",
+          "kind": "process",
+          "claim": "点从负侧过原点到正侧，左值小于0右值大于0仍递增",
+          "baseline_interval": [
+            189.927,
+            208.80100000000002
+          ],
+          "baseline_samples": [
+            {
+              "phase": "before",
+              "time": 189.927,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_189_927.jpg",
+              "frame_sha256": "c2eee7b8884583d2225f795ffa40dd7a28fdf333a57ccdf2a8f3ace4b73a4a5e",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            },
+            {
+              "phase": "during",
+              "time": 197.067,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_197_067.jpg",
+              "frame_sha256": "6aeffac9f623f560301639a2cc90955dc1a01d45cc7181331873176056093185",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            },
+            {
+              "phase": "after",
+              "time": 208.8,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_208_8.jpg",
+              "frame_sha256": "afe5afc512af2a0f86f0177c4af22b2deef32de6f5de7c10d4555ce403b7cb84",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            }
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "not_extremum",
+          "kind": "state",
+          "claim": "经过原点继续增，驻点无极值，回到两侧值的比较",
+          "baseline_interval": [
+            213.4,
+            217.26500000000001
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 213.4,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_213_4.jpg",
+              "frame_sha256": "4e36f01b63b4367db18de3e900bfac02ada54d942239fd059708dd49336657c0",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            },
+            {
+              "phase": "state",
+              "time": 217.264,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_217_264.jpg",
+              "frame_sha256": "f871e2473e14adc67ddbe872306aba5d5de3d45a953d50c6bf1edcefddd5be51",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "necessary",
+      "asset": "visual_v001",
+      "baseline_interval": [
+        218,
+        266
+      ],
+      "function": "可导内点必要性用左右差商解释，并以尖点说明条件",
+      "features": [
+        {
+          "id": "interior_necessary",
+          "kind": "state",
+          "claim": "可导的内点a：局部极值⇒f'(a)=0，命题不反向、不覆盖端点",
+          "baseline_interval": [
+            226.64,
+            231.318
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 226.64,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_226_64.jpg",
+              "frame_sha256": "92c689d2d6920a65426f53bc5a075428f735a48955e601bc49a845fe755211a9",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            },
+            {
+              "phase": "state",
+              "time": 231.317,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_231_317.jpg",
+              "frame_sha256": "92c689d2d6920a65426f53bc5a075428f735a48955e601bc49a845fe755211a9",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "left_right_quotients",
+          "kind": "state",
+          "claim": "极大例中h<0差商≥0、h>0差商≤0，分子相同",
+          "baseline_interval": [
+            239.6,
+            243.67000000000002
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 239.6,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_239_6.jpg",
+              "frame_sha256": "bae297152faa535a139f16ce1b9b4bafe057dafb3c80273db75fcd33da5a0393",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            },
+            {
+              "phase": "state",
+              "time": 243.669,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_243_669.jpg",
+              "frame_sha256": "d887d752fea173cb120d31abfd31c82961bfc4c8e0bf3633c36a5c5ae5f4d0f6",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "common_limit_reason",
+          "kind": "process",
+          "claim": "由必要性前提、两侧差商约束推进到相同双侧导数只能0，极小同理",
+          "baseline_interval": [
+            231.317,
+            249.918
+          ],
+          "baseline_samples": [
+            {
+              "phase": "before",
+              "time": 231.317,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_231_317.jpg",
+              "frame_sha256": "92c689d2d6920a65426f53bc5a075428f735a48955e601bc49a845fe755211a9",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            },
+            {
+              "phase": "during",
+              "time": 239.833,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_239_833.jpg",
+              "frame_sha256": "bae297152faa535a139f16ce1b9b4bafe057dafb3c80273db75fcd33da5a0393",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            },
+            {
+              "phase": "after",
+              "time": 249.917,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_249_917.jpg",
+              "frame_sha256": "d695c3292860411aad3579bde84c817f1be5dd65e9663a67e0a8c3e88b3d19a1",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            }
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "cusp_exception",
+          "kind": "state",
+          "claim": "|x|零处尖点极小而不可导，说明条件而非否定必要性",
+          "baseline_interval": [
+            256.739,
+            265.19599999999997
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 256.739,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_256_739.jpg",
+              "frame_sha256": "20b995dd363e48ccf9f566efc0f74e3b5dcd741c69a5539c4a02be518dbb142c",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            },
+            {
+              "phase": "state",
+              "time": 265.195,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_265_195.jpg",
+              "frame_sha256": "5b9e055911ff3d00b4ccb8fa36be463bcfa315c42cb920959b618be7b4866390",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "closing",
+      "asset": "visual_v001",
+      "baseline_interval": [
+        266,
+        292
+      ],
+      "function": "收束局部方法并交接07全区间与端点比较",
+      "features": [
+        {
+          "id": "method",
+          "kind": "state",
+          "claim": "附近比较、正负转折判定、可导内点先驻点再看两侧",
+          "baseline_interval": [
+            271.185,
+            281.88199999999995
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 271.185,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_271_185.jpg",
+              "frame_sha256": "0e3d4fb0a3667790d66336ac41cb11c7d787d7d2c304316062b9df3c8cb5fae2",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            },
+            {
+              "phase": "state",
+              "time": 281.881,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_281_881.jpg",
+              "frame_sha256": "cb700fcb392ad8a839081db38051cbf1eccbb0c365ee8287c753d6af2a86b3c1",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "endpoint_handoff",
+          "kind": "process",
+          "claim": "从局部方法过渡到整个区间与端点的问题，不冒称已演示端点算例",
+          "baseline_interval": [
+            281.881,
+            288.618
+          ],
+          "baseline_samples": [
+            {
+              "phase": "before",
+              "time": 281.881,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_281_881.jpg",
+              "frame_sha256": "cb700fcb392ad8a839081db38051cbf1eccbb0c365ee8287c753d6af2a86b3c1",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            },
+            {
+              "phase": "during",
+              "time": 284.2,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_284_2.jpg",
+              "frame_sha256": "86c295cb8a5fdf07c78382c91ea6f98cf0b190b6d6f77dfb0c533b4429aaab87",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            },
+            {
+              "phase": "after",
+              "time": 288.617,
+              "frame": "outputs/math-derivative-ch06-extrema-20261102/visual-v001/frames/frame_288_617.jpg",
+              "frame_sha256": "8c36538d22e5c53f9759f1cdabe5ab6c041a7c6e6fcf93f4522966a914693725",
+              "source": "Actual archived v001 frame, author baseline selection only; not a reviewer conclusion"
+            }
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        }
+      ]
+    }
+  ],
+  "additional_candidate_requirements": {
+    "inherited_boundary_scope": "Frozen v003 explicit endpoint reminder retained, not a baseline-v001 caption",
+    "proof_gap_repair": "New explicit small nonzero h/domain, local comparison-to-numerator, same-value transfers into signed quotients, explicit left/right limits, differentiability equality and two inequalities-to-zero; original v001/v003 not claimed to have this complete bridge",
+    "minimum_case": "New explicit reversal of numerator and both one-sided inequalities under the unchanged minimum sentence",
+    "narration_changed": false,
+    "safe_formula": "No safe_formula call. Uses existing SemanticFormula and matching_transform with explicit semantic pairs; no shared implementation copied or changed"
+  },
+  "evidence_limits": [
+    "Archived frames are selected author inspection, not full video playback or independent approval",
+    "Critical crossing samples show actual before/near-crossing/after states; no archived still claims an exact peak or zero hold. Main may decode closer baseline and current frames",
+    "Actual v001 has endpoint handoff question, not an endpoint demonstration. New explicit endpoint-scope label must be reviewed as new support",
+    "The original-v001 theorem/quotient/zero sequence is inventoried as visible, not claimed to show the new complete small-h/numerator/explicit-limit bridge. All such elaboration is new in v004, and failed v003 is not the baseline"
+  ],
+  "version": "v004",
+  "repair_issue": {
+    "id": "CH06-B1",
+    "original_blind_report": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch06-extrema-20261102/review/visual-v003.json",
+    "sha256": "bef2af5c887645ec68c6dd39f7cab9d80e88a41254cc38cef2a0592b116e6004",
+    "required_actual_new_process_evidence": [
+      "small nonzero h in a two-sided local domain",
+      "local value comparison to common numerator",
+      "negative/positive denominator to signed quotient",
+      "quotients to explicit one-sided limits",
+      "finite equal limits to shared derivative and zero",
+      "minimum inequalities reversed"
+    ],
+    "evidence_phases_for_each_process": [
+      "before",
+      "during",
+      "after"
+    ],
+    "author_resolution_approved": false
+  }
+}

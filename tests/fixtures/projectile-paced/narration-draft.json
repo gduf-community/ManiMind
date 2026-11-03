@@ -1,0 +1,300 @@
+{
+  "schema_version": 1,
+  "project_id": "projectile-paced-20261027",
+  "status": "semantic_intent_only_not_installed",
+  "segments": [
+    {
+      "id": "N01",
+      "cue": "opening",
+      "focus": "launch_question",
+      "text": "横着抛得快，会更晚落地吗？"
+    },
+    {
+      "id": "N02",
+      "cue": "opening",
+      "focus": "same_height_motion",
+      "text": "一起出发，看它们何时落地。"
+    },
+    {
+      "id": "N03",
+      "cue": "opening",
+      "focus": "same_height_result",
+      "text": "都是一秒落地。横速从四变八，射程也从四米变成八米。"
+    },
+    {
+      "id": "N04",
+      "cue": "vertical",
+      "focus": "shared_vertical_conditions",
+      "text": "竖直初速度都是零，加速度都向下。"
+    },
+    {
+      "id": "N05",
+      "cue": "vertical",
+      "focus": "vertical_general",
+      "text": "先分别写出两个球的竖直位置一般式。"
+    },
+    {
+      "id": "N06",
+      "cue": "vertical",
+      "focus": "vertical_initial_substitution",
+      "text": "同高、零竖直初速，加速度代成负 g。"
+    },
+    {
+      "id": "N07",
+      "cue": "vertical",
+      "focus": "vertical_zero_removed",
+      "text": "零乘时间还是零，把这两项消去。"
+    },
+    {
+      "id": "N08",
+      "cue": "vertical",
+      "focus": "vertical_equal_positions",
+      "text": "两个右式一样，所以同一时刻，两球等高。"
+    },
+    {
+      "id": "N09",
+      "cue": "recombine",
+      "focus": "position_decomposition",
+      "text": "这里是在拆开位置，不是小球实际横着加速。"
+    },
+    {
+      "id": "N10",
+      "cue": "recombine",
+      "focus": "shared_time_slices",
+      "text": "每一层，先放上共同的竖直位置，再接上各自的水平位移。时间相同，下降一样多，横着走的距离却不同。"
+    },
+    {
+      "id": "N11",
+      "cue": "landing",
+      "focus": "vertical_position_law",
+      "text": "向上为正，初始高度减去下落距离，就是位置。"
+    },
+    {
+      "id": "N12",
+      "cue": "landing",
+      "focus": "landing_ground_condition",
+      "text": "落地位置为零，时间记成大写 T。"
+    },
+    {
+      "id": "N13",
+      "cue": "landing",
+      "focus": "landing_relocate",
+      "text": "两边同加整个分式，把它移到左边。"
+    },
+    {
+      "id": "N14",
+      "cue": "landing",
+      "focus": "landing_multiply_two",
+      "text": "两边乘二，右边变成二倍高度。"
+    },
+    {
+      "id": "N15",
+      "cue": "landing",
+      "focus": "landing_divide_gravity",
+      "text": "再除以 g，单独留下时间的平方。"
+    },
+    {
+      "id": "N16",
+      "cue": "landing",
+      "focus": "landing_positive_root",
+      "text": "时间要取正值，所以选正根。"
+    },
+    {
+      "id": "N17",
+      "cue": "landing",
+      "focus": "landing_numeric_check",
+      "text": "五米高时，算得落地时间一秒。"
+    },
+    {
+      "id": "N18",
+      "cue": "horizontal",
+      "focus": "horizontal_range_law",
+      "text": "落地时，位移记成射程，时间记成 T。"
+    },
+    {
+      "id": "N19",
+      "cue": "horizontal",
+      "focus": "horizontal_product_blue",
+      "text": "蓝球每秒四米，乘上共同的一秒。"
+    },
+    {
+      "id": "N20",
+      "cue": "horizontal",
+      "focus": "horizontal_units_blue",
+      "text": "秒约掉，四乘一，得到四米。"
+    },
+    {
+      "id": "N21",
+      "cue": "horizontal",
+      "focus": "horizontal_ruler_translation",
+      "text": "把四米标尺移过去，正好还能放一段。"
+    },
+    {
+      "id": "N22",
+      "cue": "horizontal",
+      "focus": "double_range_result",
+      "text": "同样的时间里，横速翻倍，射程也翻倍。"
+    },
+    {
+      "id": "N23",
+      "cue": "height_steps",
+      "focus": "velocity_growth",
+      "text": "速度向下增长，箭头越变越长。"
+    },
+    {
+      "id": "N24",
+      "cue": "height_steps",
+      "focus": "first_second",
+      "text": "一秒，落了五米。"
+    },
+    {
+      "id": "N25",
+      "cue": "height_steps",
+      "focus": "second_velocity_growth",
+      "text": "第二秒，向下速度还在增加。"
+    },
+    {
+      "id": "N26",
+      "cue": "height_steps",
+      "focus": "second_second",
+      "text": "又落了十五米，总共二十米。因为小球越落越快。"
+    },
+    {
+      "id": "N27",
+      "cue": "height",
+      "focus": "height_prediction",
+      "text": "高度变四倍，时间也会变四倍吗？"
+    },
+    {
+      "id": "N28",
+      "cue": "height",
+      "focus": "low_landing_observation",
+      "text": "一秒时，低球已落地，高球还在空中。"
+    },
+    {
+      "id": "N29",
+      "cue": "height",
+      "focus": "both_landing_observation",
+      "text": "两秒后，高球落地，射程八米。"
+    },
+    {
+      "id": "N30",
+      "cue": "height",
+      "focus": "height_laws",
+      "text": "把四倍高度，放回时间和射程关系。"
+    },
+    {
+      "id": "N31",
+      "cue": "height",
+      "focus": "height_substitution",
+      "text": "把四倍高度，代入时间的根式。"
+    },
+    {
+      "id": "N32",
+      "cue": "height",
+      "focus": "root_split",
+      "text": "高度和重力为正，根号四可以单独拆出来。"
+    },
+    {
+      "id": "N33",
+      "cue": "height",
+      "focus": "root_four_evaluated",
+      "text": "根号四等于二。"
+    },
+    {
+      "id": "N34",
+      "cue": "height",
+      "focus": "original_time_identified",
+      "text": "剩下的根式，就是原来的时间 T。"
+    },
+    {
+      "id": "N35",
+      "cue": "height",
+      "focus": "range_time_substitution",
+      "text": "再把两倍时间，代回新射程。"
+    },
+    {
+      "id": "N36",
+      "cue": "height",
+      "focus": "range_factor_extracted",
+      "text": "把二提到乘积前面，横速并没有变。"
+    },
+    {
+      "id": "N37",
+      "cue": "height",
+      "focus": "original_range_identified",
+      "text": "速度乘原时间，就是原射程。"
+    },
+    {
+      "id": "N38",
+      "cue": "height",
+      "focus": "height_scaling_result",
+      "text": "所以四倍高度，对应两倍时间，也对应两倍射程。"
+    },
+    {
+      "id": "N39",
+      "cue": "transfer",
+      "focus": "ninefold_prediction",
+      "text": "换成四十五米，时间和射程会是多少？"
+    },
+    {
+      "id": "N40",
+      "cue": "transfer",
+      "focus": "ninefold_time_check",
+      "text": "根号里面是九，取正根，得到三秒。"
+    },
+    {
+      "id": "N41",
+      "cue": "transfer",
+      "focus": "ninefold_range_check",
+      "text": "四乘三，秒约掉，射程就是十二米。"
+    },
+    {
+      "id": "N42",
+      "cue": "conclusion",
+      "focus": "fixed_height_summary",
+      "text": "同一高度，改变横速，只改变射程。"
+    },
+    {
+      "id": "N43",
+      "cue": "conclusion",
+      "focus": "height_summary",
+      "text": "高度先改变飞行时间，再影响射程。"
+    },
+    {
+      "id": "N44",
+      "cue": "conclusion",
+      "focus": "final_time_correspondence",
+      "text": "两处的 T，表示同一段飞行时间。"
+    },
+    {
+      "id": "N45",
+      "cue": "conclusion",
+      "focus": "final_time_transport",
+      "text": "让小 T 进入原来的时间位置。"
+    },
+    {
+      "id": "N46",
+      "cue": "conclusion",
+      "focus": "final_radical_expansion",
+      "text": "把 T 在原处展开，横速保持不变。"
+    },
+    {
+      "id": "N47",
+      "cue": "conclusion",
+      "focus": "combined_range_result",
+      "text": "高度决定时间，横速乘上时间，得到射程。"
+    }
+  ],
+  "audio_status": "not_generated",
+  "alignment_status": "unmeasured_whole_utterances_must_fit_actual_focus",
+  "writer": "supervised visual creator",
+  "consumers": [
+    "lead after visual and regression approvals",
+    "V01 narrator",
+    "whole-utterance aligner"
+  ],
+  "lifecycle": "此版中文语义草稿，不是正式稿/音频/批准",
+  "invalidation": "源码、focus、cue、科学条件、文本、审核或声音来源变化",
+  "instruction": "先视觉与回归审核，再按实际focus安装正式稿并实测V01。无须为每个微动作配音；prediction_space及未分配窗口静读。不加速/截断语音，不全片倍速。"
+}

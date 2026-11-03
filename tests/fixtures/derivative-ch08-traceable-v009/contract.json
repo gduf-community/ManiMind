@@ -1,0 +1,667 @@
+{
+  "schema_version": 1,
+  "project_id": "math-derivative-ch08-optimization-20261102",
+  "units": [
+    {
+      "id": "opening",
+      "asset": "visual_v004",
+      "baseline_interval": [
+        0,
+        22.333333333333332
+      ],
+      "function": "实际纸板与优化问题",
+      "features": [
+        {
+          "id": "square_and_question",
+          "kind": "state",
+          "claim": "12cm×12cm、四角等大裁块和无盖盒最大体积问题",
+          "baseline_interval": [
+            4.467,
+            17.868000000000002
+          ],
+          "baseline_source": "selected visual-v004, with same timing as inherited v003 for unchanged methods",
+          "required_current_evidence": [
+            "state"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cut",
+      "asset": "visual_v004",
+      "baseline_interval": [
+        22.333333333333332,
+        74.9
+      ],
+      "function": "同一裁长、两端扣除与裁角移开",
+      "features": [
+        {
+          "id": "shared_cut_variation",
+          "kind": "process",
+          "claim": "同一x使四角、底面和读数同步变化，显示1.00至3.00再回2.00；显示数值为舍入读数",
+          "baseline_interval": [
+            24.693,
+            44.933
+          ],
+          "baseline_source": "selected visual-v004, with same timing as inherited v003 for unchanged methods",
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "two_end_subtraction",
+          "kind": "state",
+          "claim": "实际尺寸线x、12-2x、x及每个方向两端各减x",
+          "baseline_interval": [
+            56.35,
+            64.037
+          ],
+          "baseline_source": "selected visual-v004, with same timing as inherited v003 for unchanged methods",
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "corner_departure",
+          "kind": "process",
+          "claim": "四角由相连到移开、淡出，剩下同一五面展开图",
+          "baseline_interval": [
+            67.1,
+            69.86800000000001
+          ],
+          "baseline_source": "selected visual-v004, with same timing as inherited v003 for unchanged methods",
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fold",
+      "asset": "visual_v004",
+      "baseline_interval": [
+        74.9,
+        123.46666666666667
+      ],
+      "function": "同一展开图的投影与固定铰边折叠",
+      "features": [
+        {
+          "id": "same_flat_paper",
+          "kind": "state",
+          "claim": "x2和底边8cm保持，剩余五面平放，未换成任意比例盒子",
+          "baseline_interval": [
+            76.94,
+            79.62100000000001
+          ],
+          "baseline_source": "selected visual-v004, with same timing as inherited v003 for unchanged methods",
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "net_projection",
+          "kind": "process",
+          "claim": "五面从平面布局连续过渡到斜视投影，非物理相机旋转",
+          "baseline_interval": [
+            76.94,
+            79.62100000000001
+          ],
+          "baseline_source": "selected visual-v004, with same timing as inherited v003 for unchanged methods",
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "hinged_folding",
+          "kind": "process",
+          "claim": "底面不动，四侧由平放绕底边抬至直角，裁长成为高",
+          "baseline_interval": [
+            90.58,
+            105.90100000000001
+          ],
+          "baseline_source": "selected visual-v004, with same timing as inherited v003 for unchanged methods",
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "folded_dimensions",
+          "kind": "state",
+          "claim": "8×8×2cm及裁长成为盒高的明确联系",
+          "baseline_interval": [
+            107.98,
+            115.051
+          ],
+          "baseline_source": "selected visual-v004, with same timing as inherited v003 for unchanged methods",
+          "required_current_evidence": [
+            "state"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "objective",
+      "asset": "visual_v004",
+      "baseline_interval": [
+        123.46666666666667,
+        176.03333333333333
+      ],
+      "function": "尺寸、体积单位与物理域一起建立",
+      "features": [
+        {
+          "id": "dimensions_cm",
+          "kind": "state",
+          "claim": "同一盒子长宽12-2x、高x，长度单位cm",
+          "baseline_interval": [
+            132.417,
+            137.976
+          ],
+          "baseline_source": "selected visual-v004, with same timing as inherited v003 for unchanged methods",
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "objective_cm3",
+          "kind": "state",
+          "claim": "V=ℓwh=x(12-2x)²与cm³，体积为目标",
+          "baseline_interval": [
+            141.115,
+            149.418
+          ],
+          "baseline_source": "selected visual-v004, with same timing as inherited v003 for unchanged methods",
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "positive_domain",
+          "kind": "state",
+          "claim": "x>0和12-2x>0导出0<x<6",
+          "baseline_interval": [
+            165.52,
+            168.018
+          ],
+          "baseline_source": "selected visual-v004, with same timing as inherited v003 for unchanged methods",
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "model_build_up",
+          "kind": "process",
+          "claim": "已有尺寸，补出乘积体积，再补正尺寸条件和可行域，理由不删",
+          "baseline_interval": [
+            133.98,
+            165.52100000000002
+          ],
+          "baseline_source": "selected visual-v004, with same timing as inherited v003 for unchanged methods",
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "optimize",
+      "asset": "visual_v004",
+      "baseline_interval": [
+        176.03333333333333,
+        245.39999999999998
+      ],
+      "function": "乘积链式求导、分解、根筛选、全域比较",
+      "features": [
+        {
+          "id": "product_chain_derivative",
+          "kind": "state",
+          "claim": "完整首行(12-2x)²-4x(12-2x)，不删除乘积/内层导数对应",
+          "baseline_interval": [
+            190.867,
+            201.284
+          ],
+          "baseline_source": "selected visual-v004, with same timing as inherited v003 for unchanged methods",
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "factor_progression",
+          "kind": "process",
+          "claim": "首行到(12-2x)(12-6x)，再到12(x-2)(x-6)，中间行保留",
+          "baseline_interval": [
+            202.84,
+            211.284
+          ],
+          "baseline_source": "selected visual-v004, with same timing as inherited v003 for unchanged methods",
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "root_screening",
+          "kind": "state",
+          "claim": "显式导数零根2、6；6不在(0,6)，内部只保留2",
+          "baseline_interval": [
+            216.233,
+            221.494
+          ],
+          "baseline_source": "selected visual-v004, with same timing as inherited v003 for unchanged methods",
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "whole_domain_signs",
+          "kind": "state",
+          "claim": "(0,2)导数正、(2,6)负，以全域先增后减得最优",
+          "baseline_interval": [
+            231.527,
+            234.584
+          ],
+          "baseline_source": "selected visual-v004, with same timing as inherited v003 for unchanged methods",
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "original_max_volume",
+          "kind": "state",
+          "claim": "回代V(2)=2×8²=128cm³",
+          "baseline_interval": [
+            234.583,
+            243.67000000000002
+          ],
+          "baseline_source": "selected visual-v004, with same timing as inherited v003 for unchanged methods",
+          "required_current_evidence": [
+            "state"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "boundary",
+      "asset": "visual_v004",
+      "baseline_interval": [
+        245.39999999999998,
+        282.29999999999995
+      ],
+      "function": "同源盒子两端退化且仍区分可行域",
+      "features": [
+        {
+          "id": "flattening",
+          "kind": "process",
+          "claim": "底面变大、高变小，显示到x0.08/V11.21的扁盒；不是实际等于0",
+          "baseline_interval": [
+            248.523,
+            255.501
+          ],
+          "baseline_source": "selected visual-v004, with same timing as inherited v003 for unchanged methods",
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "narrowing",
+          "kind": "process",
+          "claim": "从扁盒抬高且底面缩窄到x5.92/V0.15，第二段经过2，不宣称全程体积下降",
+          "baseline_interval": [
+            256.811,
+            264.70099999999996
+          ],
+          "baseline_source": "selected visual-v004, with same timing as inherited v003 for unchanged methods",
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "limits_and_feasibility",
+          "kind": "state",
+          "claim": "x趋0+与6-均体积趋零，退化边界不可做盒子",
+          "baseline_interval": [
+            274.483,
+            281.04999999999995
+          ],
+          "baseline_source": "selected visual-v004, with same timing as inherited v003 for unchanged methods",
+          "required_current_evidence": [
+            "state"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "constraint",
+      "asset": "visual_v004",
+      "baseline_interval": [
+        282.29999999999995,
+        339.0333333333333
+      ],
+      "function": "高度下界排除旧解并改变最优对象",
+      "features": [
+        {
+          "id": "changed_domain",
+          "kind": "state",
+          "claim": "高度≥3cm、新域3≤x<6，x2明确高度不足",
+          "baseline_interval": [
+            292.45,
+            298.989
+          ],
+          "baseline_source": "selected visual-v004, with same timing as inherited v003 for unchanged methods",
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "enter_feasible_set",
+          "kind": "process",
+          "claim": "x2盒连续增高进入新域，显示中途2.58与到达3.00",
+          "baseline_interval": [
+            300.74,
+            303.20099999999996
+          ],
+          "baseline_source": "selected visual-v004, with same timing as inherited v003 for unchanged methods",
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "restricted_branch_return",
+          "kind": "process",
+          "claim": "从3继续升高到显示4.50、V40.50，再退回3、V108，形状/数字同源",
+          "baseline_interval": [
+            307.009,
+            316.26099999999997
+          ],
+          "baseline_source": "selected visual-v004, with same timing as inherited v003 for unchanged methods",
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "boundary_optimum",
+          "kind": "state",
+          "claim": "[3,6)递减，允许左边界x3最优，6×6×3=108cm³",
+          "baseline_interval": [
+            323.24,
+            330.45099999999996
+          ],
+          "baseline_source": "selected visual-v004, with same timing as inherited v003 for unchanged methods",
+          "required_current_evidence": [
+            "state"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "closing",
+      "asset": "visual_v004",
+      "baseline_interval": [
+        339.0333333333333,
+        381.3666666666666
+      ],
+      "function": "原问题回顾与整章方法链、条件改变出口",
+      "features": [
+        {
+          "id": "original_answer_restored",
+          "kind": "state",
+          "claim": "v004 explicitly labels original no-height-limit case with x2,8x8x2 and128; retain original-case review",
+          "baseline_interval": [
+            347.5,
+            352.63399999999996
+          ],
+          "baseline_source": "selected visual-v004, with same timing as inherited v003 for unchanged methods",
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "chapter_model_chain",
+          "kind": "state",
+          "claim": "尺寸→同一变量→目标/域→变化率→单调性→全范围比较",
+          "baseline_interval": [
+            352.633,
+            360.20099999999996
+          ],
+          "baseline_source": "selected visual-v004, with same timing as inherited v003 for unchanged methods",
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "feasibility_transfer",
+          "kind": "process",
+          "claim": "v004 original/current conditions transition, x2 excluded by height3 before same box moves to x3/108; preserve reason, correct annotation collision",
+          "baseline_interval": [
+            363.7,
+            373.5
+          ],
+          "baseline_source": "selected visual-v004, with same timing as inherited v003 for unchanged methods",
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "original_condition_label",
+          "kind": "state",
+          "claim": "v004 original no-extra-height label binds x2/128 before changed requirement",
+          "baseline_interval": [
+            341.1,
+            363.5
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "current_constraint_exclusion",
+          "kind": "state",
+          "claim": "v004 current height at least3 and domain3<=x<6 explicitly exclude oldx2",
+          "baseline_interval": [
+            368.4,
+            371.3
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "closing_same_box_parameter",
+          "kind": "process",
+          "claim": "v004 same centimeter panel model moves x2 to3 under min-height3; intermediate values infeasible",
+          "baseline_interval": [
+            371.3,
+            372.0
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "current_result_dimensions",
+          "kind": "state",
+          "claim": "v004 current condition shows x3,6x6x3,108, never old128 as new optimum",
+          "baseline_interval": [
+            372.2,
+            379.0
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        }
+      ]
+    }
+  ],
+  "version": "v009",
+  "status": "not_reviewed",
+  "writer": "01a19f93-c389-7732-b292-5b8fc1d74f50",
+  "consumers": [
+    "main coordinator",
+    "native tests",
+    "independent reviewers"
+  ],
+  "lifecycle": "CH08 v009 after actual v008 probe diagnosis; not reviewed",
+  "invalidation": "Source, plan, baseline, clock, media, text, WAV, selection or allocation changes",
+  "assets": {
+    "visual_v004": {
+      "path": "outputs/math-derivative-ch08-optimization-20261102/visual-v004/manim/media/manimgl/understanding.mp4",
+      "sha256": "c9ad8b91cb0c0b03a2ccf2f8ca5e5968aefccbee8dc636787b2afd33b21494fb",
+      "duration": 381.366666667
+    },
+    "captioned_v004": {
+      "path": "outputs/math-derivative-ch08-optimization-20261102/captioned-v004/captioned.mp4",
+      "sha256": "c2cc0a3d5d55393244acf8aecec1d04e76aa75d2de99510a0354c1f1204d2302",
+      "duration": 381.366666667
+    }
+  },
+  "baseline_selection": "Actual selected visual-v004/captioned-v004; v003 is NOT the preservation baseline. New formula motion goals listed separately.",
+  "improvement_targets": [
+    {
+      "id": "dimensions_into_volume",
+      "operation": "substitute_dimensions",
+      "source": "two distinct base dimensions and box height",
+      "target": "V=(12-2x)(12-2x)x",
+      "purpose": "dimensions remain independent roles even when bases are equal"
+    },
+    {
+      "id": "equal_bases_to_square",
+      "operation": "multiply_equal_factors",
+      "source": "two equal whole base factors and height",
+      "target": "V=x(12-2x)^2",
+      "purpose": "one base stays, the second counts multiplicity; height moves as one factor"
+    },
+    {
+      "id": "positive_domain",
+      "operation": "solve_positive_dimensions",
+      "source": "x>0 and 12-2x>0",
+      "target": "0<x<6 cm",
+      "purpose": "positive base gives strict upper bound and excludes degenerate boxes"
+    },
+    {
+      "id": "product_rule_sources",
+      "operation": "product_derivative",
+      "source": "x and whole squared base in volume",
+      "target": "x' times base square plus x times derivative of square",
+      "purpose": "explicit differentiated and retained factors in both terms"
+    },
+    {
+      "id": "outer_square_derivative",
+      "operation": "outer_power_rule",
+      "source": "squared inner function",
+      "target": "2 times inner base times inner derivative",
+      "purpose": "outer multiplicity and inner derivative have distinct roles"
+    },
+    {
+      "id": "inner_derivative",
+      "operation": "differentiate_inner_affine",
+      "source": "(12-2x)'",
+      "target": "(-2)",
+      "purpose": "negative inner rate remains visible before multiplication"
+    },
+    {
+      "id": "chain_coefficients_collect",
+      "operation": "multiply_chain_coefficients",
+      "source": "x times 2 times base times (-2)",
+      "target": "negative 4x times base",
+      "purpose": "sign and coefficient originate from the two derivative factors"
+    },
+    {
+      "id": "extract_common_factor",
+      "operation": "factor_common_whole_base",
+      "source": "two products each containing 12-2x",
+      "target": "(12-2x)[12-2x-4x]",
+      "purpose": "two occurrences explicitly share one common factor, not a whole-line morph"
+    },
+    {
+      "id": "combine_remainder",
+      "operation": "collect_like_terms",
+      "source": "12-2x-4x",
+      "target": "12-6x",
+      "purpose": "remainder changes locally, common factor survives"
+    },
+    {
+      "id": "factor_signed_constants",
+      "operation": "factor_two_affine_terms",
+      "source": "12-2x and 12-6x",
+      "target": "(-2)(x-6) and (-6)(x-2)",
+      "purpose": "show both constants and corresponding root-bearing factors"
+    },
+    {
+      "id": "two_negatives_and_factor_order",
+      "operation": "multiply_constants_reorder_factors",
+      "source": "(-2)(x-6)(-6)(x-2)",
+      "target": "12(x-2)(x-6)",
+      "purpose": "negative signs produce positive12 and factor identities exchange positions"
+    },
+    {
+      "id": "factors_to_candidates",
+      "operation": "zero_product_candidates",
+      "source": "x-2 and x-6",
+      "target": "x=2 and x=6",
+      "purpose": "roots are derived from their own factors, not guessed by matching digits"
+    },
+    {
+      "id": "feasible_candidate",
+      "operation": "screen_domain",
+      "source": "two algebraic roots and 0<x<6",
+      "target": "only interior x=2, x=6 gives zero base",
+      "purpose": "keep rejection reason while selecting feasible candidate"
+    },
+    {
+      "id": "optimum_substitution",
+      "operation": "substitute_selected_input",
+      "source": "selected x=2 and volume objective",
+      "target": "V(2)=2(12-2*2)^2",
+      "purpose": "selected cut enters height and whole squared-base evaluation"
+    },
+    {
+      "id": "optimum_evaluation",
+      "operation": "evaluate_dimensions_and_volume",
+      "source": "2(12-2*2)^2",
+      "target": "2 times8 squared then128 cm cubed",
+      "purpose": "result follows substitution, units retained"
+    },
+    {
+      "id": "closing_rejection_relocation",
+      "operation": "separate_old_rejection_and_current_result",
+      "source": "old x2 excluded under min-height3",
+      "target": "rejection below box, current x3/108 result in clear slot",
+      "purpose": "move old annotation first; current box/result tied to new constraint"
+    },
+    {
+      "id": "closing_condition_scope",
+      "operation": "clear_inapplicable_case_before_new_constraint",
+      "source": "original no-height-limit case and its2/128/dimensions",
+      "target": "height at least3,strict new domain and old2 excluded",
+      "purpose": "Original values fully retire before current condition/domain/rejection appear, then geometry changes"
+    }
+  ],
+  "evidence_limits": [
+    "Author inventory is not approval",
+    "Old captioned defect samples are diagnostic only",
+    "No claim oldv004 had role-level formula movements",
+    "Every protected function independently checked against current real pixels"
+  ]
+}

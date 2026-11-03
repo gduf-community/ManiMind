@@ -1,0 +1,41 @@
+{
+  "project_id": "wave-reading-20261028",
+  "author_agent": "01a1817c-7136-79a3-9ca8-6b508ab35228",
+  "unit_id": "wave-unit-20261028",
+  "catalogue_ids": ["P07-05"],
+  "title": "机械波二：同一个波的空间与时间",
+  "workflow_profile": "configs/visual-first-workflow-v4-unit.json",
+  "lesson_context": "runtime/projects/wave-reading-20261028/context-v003.json",
+  "revision_mode": "fresh",
+  "scene": "examples/wave_unit_visual.py",
+  "scene_class": "WaveReadingLesson",
+  "duration": 182,
+  "fps": 30,
+  "resolution": [1920, 1080],
+  "subtitle_reserve": {"pixel_top": 984, "scene_y_max_for_bottom": -3.288888889},
+  "audience": "调用第一课固定质点与传播的出口，尚不熟y-x和y-t读图的高中生",
+  "prior_knowledge": ["第一课固定质点与向右传播波形的区别", "位移、周期、平均速度", "坐标和单位"],
+  "understanding_goals": ["区分同一时间不同位置的y-x图与同一位置不同时间的y-t图", "从同一模型读出λ和T，不把峰谷间距当波长", "跟踪同一波峰一个周期的位移，说明v=λ/T的来源及其不是质点振动速度", "已知波向右时，用左侧形状接替预测固定质点的运动方向"],
+  "scientific_brief": "runtime/projects/wave-unit-20261028/scientific-brief.json",
+  "sources": ["examples/wave_unit_model.py", "runtime/projects/wave-reading-20261028/context-v003.json", "runtime/projects/wave-unit-20261028/unit.json", "runtime/projects/wave-unit-20261028/scientific-brief.json", "runtime/projects/wave-unit-20261028/teaching-design.md", "docs/curricula/high-school-physics-v0.1.csv", "src/manimind/curriculum.py", "src/manimind/components/catalog.py"],
+  "cues": [
+    {"id": "snapshot", "duration": 24, "heading": "冻结时刻", "visual": "沿用第一课的已建立简谐波与x=4m黄色质点，选当前画面为t=0；冻结时间读4m和6m处的位移，第一次明确y-x图。", "learning_purpose": "交代重新计时及空间快照的轴含义，不重讲振动定义。", "anchors": [{"id": "reading_origin_ready", "meaning": "已建立波的新时间原点和轴单位可读"}, {"id": "spatial_slice_ready", "meaning": "同一时刻两处位移线段可见"}]},
+    {"id": "wavelength", "duration": 30, "heading": "空间重复尺度", "visual": "t=0不变，相邻波峰4m与8m用跨度连接得到λ=4m；另标4m波峰到6m波谷仅λ/2。", "learning_purpose": "把波长绑定空间同相位间距，而不是视觉上任意相似高度。", "anchors": [{"id": "two_spatial_peaks", "meaning": "相邻两个波峰和位置轴可读"}, {"id": "wavelength_ready", "meaning": "λ=4m的空间跨度已出现"}, {"id": "half_wavelength_ready", "meaning": "峰谷间距2m=λ/2，与整波长可比较"}]},
+    {"id": "time-record", "duration": 38, "heading": "固定位置记录时间", "visual": "上方同一质点始终固定x=4m，下方t轴图按相同时钟逐点生长；经历1s、2s、4s、8s，从同一模型得到两周期记录并标T=4s。", "learning_purpose": "把空间切片转到固定位置的时间记录，显示下方横向移动的是记录时间，不是实体质点迁移。", "anchors": [{"id": "temporal_axes_ready", "meaning": "上方质点与下方时间轴、记录起点可读"}, {"id": "record_quarter", "meaning": "t=1s，质点到平衡位置、时间记录同步到1s"}, {"id": "record_half", "meaning": "t=2s，质点与记录同步到负最大位移"}, {"id": "record_cycle", "meaning": "t=4s，记录已形成一整周期"}, {"id": "record_two_cycles", "meaning": "t=8s，时间记录形成两周期，T跨度仍在"}]},
+    {"id": "speed", "duration": 32, "heading": "连接λ和T", "visual": "重新从已建立波的t=0跟踪同一波峰：4s中从4m到8m，保留原峰位置；先标Δx=λ，再给v=Δx/Δt=λ/T=1m/s。", "learning_purpose": "用相位传播的实际距离/时间推导关系，不从两个量的定义硬报公式。", "anchors": [{"id": "speed_start_ready", "meaning": "起点、周期和跟踪波峰可见"}, {"id": "speed_mid", "meaning": "半周期时波峰到6m"}, {"id": "speed_one_cycle", "meaning": "一周期后同一波峰到8m"}, {"id": "speed_distance_ready", "meaning": "一个周期的传播距离正好λ"}, {"id": "speed_relation_ready", "meaning": "速度比值关系及单位落定"}]},
+    {"id": "direction", "duration": 30, "heading": "从传播读局部运动", "visual": "选t=0时x=5m下降斜坡上的质点；圈出左侧4.5m较高形状，波向右0.5m后质点x仍5m、y变正，验证向上运动。", "learning_purpose": "区分图像空间斜率和时间运动，调用固定质点概念作新预测。", "anchors": [{"id": "direction_question_ready", "meaning": "传播方向与待预测固定质点可见"}, {"id": "left_shape_ready", "meaning": "左侧即将接替的较高形状被标出"}, {"id": "direction_shifted", "meaning": "右移0.5m后黄色点仍在5m且上升"}, {"id": "direction_result_ready", "meaning": "去掉旧标记后保留向上结论和当前状态"}]},
+    {"id": "exit", "duration": 28, "heading": "由轴辨图", "visual": "上下两条外观相似曲线分别标x(m)与t(s)，先给观众判断，再揭示λ=4m、T=4s的对应跨度；下一课转同一位置同一时刻的两波。", "learning_purpose": "闭合辨图任务，以位置/时间的共同取值衔接叠加。", "anchors": [{"id": "reading_exit_ready", "meaning": "两种横轴的曲线可独立判断"}, {"id": "reading_exit_answer_ready", "meaning": "λ和T分别绑定正确图像"}, {"id": "reading_closed", "meaning": "本课答案与同处同时的下一课问题可读"}]}
+  ],
+  "focus_intents": [
+    {"id": "time_origin", "cue": "snapshot", "claim": "已建立波重新选t=0，不重启振动"}, {"id": "spatial_slice", "cue": "snapshot", "claim": "冻结t，读不同x的位移"},
+    {"id": "snapshot_peaks", "cue": "wavelength", "claim": "相邻波峰是相邻同相位点"}, {"id": "lambda_in_space", "cue": "wavelength", "claim": "λ是空间间距4m"}, {"id": "crest_trough_not_lambda", "cue": "wavelength", "claim": "峰谷只隔λ/2"},
+    {"id": "fixed_place_record", "cue": "time-record", "claim": "固定4m的质点和时间记录同源"}, {"id": "record_first_cycle", "cue": "time-record", "claim": "逐时刻把同一质点位移留在y-t图"}, {"id": "period_in_time", "cue": "time-record", "claim": "同点重复状态的间隔为T，第二周期继续验证"},
+    {"id": "speed_start", "cue": "speed", "claim": "跟踪相同波峰而非任取两处"}, {"id": "speed_crest_motion", "cue": "speed", "claim": "同一波峰在T内到相邻峰的旧位置"}, {"id": "distance_is_wavelength", "cue": "speed", "claim": "一个周期传播距离为λ"}, {"id": "speed_ratio", "cue": "speed", "claim": "传播速度是λ/T，不是质点振动速度"},
+    {"id": "slope_prediction", "cue": "direction", "claim": "下降空间斜坡上的固定质点运动方向仍需传播方向"}, {"id": "left_shape_arrives", "cue": "direction", "claim": "右行波由左侧形状接替到当前位置"}, {"id": "particle_rises", "cue": "direction", "claim": "模型推进使5m处质点上升"}, {"id": "direction_limit", "cue": "direction", "claim": "时间记录与空间形状不是同一横轴"},
+    {"id": "reading_exit_question", "cue": "exit", "claim": "只凭曲线相像不能判断λ或T"}, {"id": "reading_exit_answer", "cue": "exit", "claim": "空间图读λ，时间图读T，可组合求传播速度"}, {"id": "reading_handoff", "cue": "exit", "claim": "下一步用同一位置同一时刻合成位移"}
+  ],
+  "review_times": [2, 3, 8, 10, 18, 23, 27, 33, 34, 40, 45, 46, 52, 57, 58, 63, 64, 65, 67, 68, 69, 71, 72, 73, 74, 76, 77, 79, 80, 81, 90, 94, 96, 102, 103, 104, 105, 107, 109, 113, 114, 118, 119, 123, 127, 128, 133, 134, 139, 140, 140.25, 140.5, 141.5, 148, 153, 157, 163, 164, 172, 173, 180],
+  "authorship": "wave_unit_manim_author",
+  "production_boundary": {"status": "source_plan_and_intent_handoff", "rendered": false, "visual_approved": false, "narration_approved": false, "audio_generated": false, "independent_review_required": true},
+  "state_contract": "runtime/projects/wave-unit-20261028/scientific-brief.json#state_contracts"
+}

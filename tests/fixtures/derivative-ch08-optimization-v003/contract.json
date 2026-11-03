@@ -1,0 +1,919 @@
+{
+  "schema_version": 1,
+  "status": "not_reviewed",
+  "project_id": "math-derivative-ch08-optimization-20261102",
+  "author_agent": "01a19acd-e149-74d0-8a5d-975a3adf45f4",
+  "author_context": "01a19acd-e149-74d0-8a5d-975a3adf45f4",
+  "writer": "01a19acd-e149-74d0-8a5d-975a3adf45f4",
+  "consumers": [
+    "main",
+    "native tests",
+    "independent reviewers"
+  ],
+  "lifecycle": "Long-term pre-render v003 actual-v001 inventory from existing baseline study, not an independent comparison",
+  "invalidation": "Bound inputs, scene, clock, geometry, mathematics or authorization change",
+  "assets": {
+    "visual_v001": {
+      "path": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/manim/media/manimgl/understanding.mp4",
+      "sha256": "fd1cc9eb07bf46dd6f7b6a4a070adfe8e160b803566effe8a790a4a6819ae6bd",
+      "duration": 312
+    }
+  },
+  "units": [
+    {
+      "id": "opening",
+      "asset": "visual_v001",
+      "baseline_interval": [
+        0,
+        24
+      ],
+      "function": "承接07把全范围比较用于真实盒子建模",
+      "features": [
+        {
+          "id": "square_and_question",
+          "kind": "state",
+          "claim": "12cm×12cm纸板、四角等大裁块、无盖盒与最大体积问题",
+          "baseline_interval": [
+            4.8,
+            22.369
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 4.8,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_4_8.jpg",
+              "frame_sha256": "5cb49ec0409cb01d8738f029e8102628c47534fd00de3499df9b2fe38f6bf583",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            },
+            {
+              "phase": "state",
+              "time": 22.368,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_22_368.jpg",
+              "frame_sha256": "48c629a88575cd87eeb4348cee87cc7e84027e0150fbc932d7de3b626e62b431",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cut",
+      "asset": "visual_v001",
+      "baseline_interval": [
+        24,
+        68
+      ],
+      "function": "同一x驱动四角与底面；两端各减x并实际移走裁块",
+      "features": [
+        {
+          "id": "shared_cut_variation",
+          "kind": "process",
+          "claim": "四角同步增大又收回x=2，底边读数反向变化；样本1.28→2.70→2.00，不声称精确1或3已见",
+          "baseline_interval": [
+            30.395,
+            43.800999999999995
+          ],
+          "baseline_samples": [
+            {
+              "phase": "before",
+              "time": 30.395,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_30_395.jpg",
+              "frame_sha256": "4268fb046082f949fda9b54b80c6f17a5fd95883fa93a6a886c036d734fe2d1d",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            },
+            {
+              "phase": "during",
+              "time": 36.317,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_36_317.jpg",
+              "frame_sha256": "1166df6c0c5344ec8fe72bd251957a3372cf1551620c87ed94cf25490e536f9e",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            },
+            {
+              "phase": "after",
+              "time": 43.8,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_43_8.jpg",
+              "frame_sha256": "9e44d16324e4f047cfa75d1394f1516895d2d7002437b472376cafaf266a73bf",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            }
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "two_end_subtraction",
+          "kind": "state",
+          "claim": "实际尺寸线x、12-2x、x和每个方向两端各减x的理由",
+          "baseline_interval": [
+            51.067,
+            54.204
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 51.067,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_51_067.jpg",
+              "frame_sha256": "a4c8f4761a2d1a34c9db06238bd6f86c542132c0ce8a613eb62e1e1ef20d47de",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            },
+            {
+              "phase": "state",
+              "time": 54.203,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_54_203.jpg",
+              "frame_sha256": "a4c8f4761a2d1a34c9db06238bd6f86c542132c0ce8a613eb62e1e1ef20d47de",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "corner_departure",
+          "kind": "process",
+          "claim": "四块裁角由连在纸板到分离，再淡出，留下底面和四侧；末样仍在淡出，不声称已完全消失",
+          "baseline_interval": [
+            55.573,
+            63.693999999999996
+          ],
+          "baseline_samples": [
+            {
+              "phase": "before",
+              "time": 55.573,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_55_573.jpg",
+              "frame_sha256": "dbc594cd9b4c6b7503162d365c64d0568d8333f2f7f939ad456607ceca7d07a8",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            },
+            {
+              "phase": "during",
+              "time": 59.2,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_59_2.jpg",
+              "frame_sha256": "32c5e7e852fcf5ba467df636944258d37d0937e2be95bba9036ecb441f331c27",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            },
+            {
+              "phase": "after",
+              "time": 63.693,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_63_693.jpg",
+              "frame_sha256": "60dd6f139012146e42c75255e238b4ef3391afa17b7d77ce701ba3265921f7b7",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            }
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fold",
+      "asset": "visual_v001",
+      "baseline_interval": [
+        68,
+        114
+      ],
+      "function": "厘米尺寸连续联系展开图与绕固定底边折起的无盖盒",
+      "features": [
+        {
+          "id": "same_flat_paper",
+          "kind": "state",
+          "claim": "五面平放于固定斜视投影，x=2cm、底边8cm；旧片不是连续相机转动",
+          "baseline_interval": [
+            74.048,
+            79.453
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 74.048,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_74_048.jpg",
+              "frame_sha256": "38437999896fc46d9d8b7f6c6aff9d159bb9aa166e0b430ecc5234ba86c5feb1",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            },
+            {
+              "phase": "state",
+              "time": 79.452,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_79_452.jpg",
+              "frame_sha256": "b43de733b30eea0a8f1c99579c0dd4110ed8057bd81f04ddba0d207124b3043a",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "hinged_folding",
+          "kind": "process",
+          "claim": "相同四侧从平放绕不动的底边抬起到直角，底面不动，x转为盒高",
+          "baseline_interval": [
+            79.452,
+            100.876
+          ],
+          "baseline_samples": [
+            {
+              "phase": "before",
+              "time": 79.452,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_79_452.jpg",
+              "frame_sha256": "b43de733b30eea0a8f1c99579c0dd4110ed8057bd81f04ddba0d207124b3043a",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            },
+            {
+              "phase": "during",
+              "time": 88.7,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_88_7.jpg",
+              "frame_sha256": "75b51f9c390b976fd3f61bcd6d62dab145d85e640ae63720c63740ef2328d637",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            },
+            {
+              "phase": "after",
+              "time": 100.875,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_100_875.jpg",
+              "frame_sha256": "9c8e7c2cfb2545681b99df336ec5c9a9d7a84443de019ab5eb56ab6c695f0223",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            }
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "folded_dimensions",
+          "kind": "state",
+          "claim": "直立无盖盒，裁长成为高，8×8×2cm尺寸还原",
+          "baseline_interval": [
+            104.8,
+            112.86
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 104.8,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_104_8.jpg",
+              "frame_sha256": "9c8e7c2cfb2545681b99df336ec5c9a9d7a84443de019ab5eb56ab6c695f0223",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            },
+            {
+              "phase": "state",
+              "time": 112.859,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_112_859.jpg",
+              "frame_sha256": "9c8e7c2cfb2545681b99df336ec5c9a9d7a84443de019ab5eb56ab6c695f0223",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "objective",
+      "asset": "visual_v001",
+      "baseline_interval": [
+        114,
+        154
+      ],
+      "function": "从几何同变量尺寸建立体积与实际可行域",
+      "features": [
+        {
+          "id": "dimensions_cm",
+          "kind": "state",
+          "claim": "同一盒子旁长宽12-2x、高x，长度单位cm",
+          "baseline_interval": [
+            122,
+            122.601
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 122,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_122_0.jpg",
+              "frame_sha256": "fa1d08351917daa6c6b12eb13764b25cfcc5c3cc3b13ff6245519696f0e9781c",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            },
+            {
+              "phase": "state",
+              "time": 122.6,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_122_6.jpg",
+              "frame_sha256": "b80010a8e27c98df62681d7b1afebd7e45bc9e8e46d45100a9c93c45f7bb0e92",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "objective_cm3",
+          "kind": "state",
+          "claim": "V=ℓwh=x(12-2x)²，单位cm³，最大化的是体积",
+          "baseline_interval": [
+            133.6,
+            134.001
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 133.6,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_133_6.jpg",
+              "frame_sha256": "b293e2ead07526aaf15a6f8445592adcbd7d5b475f788fd5046644a11d18ce3e",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            },
+            {
+              "phase": "state",
+              "time": 134,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_134_0.jpg",
+              "frame_sha256": "b293e2ead07526aaf15a6f8445592adcbd7d5b475f788fd5046644a11d18ce3e",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "positive_domain",
+          "kind": "state",
+          "claim": "x>0与12-2x>0共同给出0<x<6，端点退化不属可做盒子",
+          "baseline_interval": [
+            142.224,
+            152.977
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 142.224,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_142_224.jpg",
+              "frame_sha256": "f77c969f883f5f94004cca38d61782ad109722f093b9080418951c9b1a5fae06",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            },
+            {
+              "phase": "state",
+              "time": 152.976,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_152_976.jpg",
+              "frame_sha256": "77542e04c494c51b8e9388e45a92eff11e00734784e5357d0c16de7e2250f1a3",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "model_build_up",
+          "kind": "process",
+          "claim": "保留尺寸来源，逐层补出乘积目标和正尺寸条件，而非只显示最终式",
+          "baseline_interval": [
+            122.6,
+            142.225
+          ],
+          "baseline_samples": [
+            {
+              "phase": "before",
+              "time": 122.6,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_122_6.jpg",
+              "frame_sha256": "b80010a8e27c98df62681d7b1afebd7e45bc9e8e46d45100a9c93c45f7bb0e92",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            },
+            {
+              "phase": "during",
+              "time": 129.904,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_129_904.jpg",
+              "frame_sha256": "c28601d57c2f0cbc719e766ebea7023248a5d967eccd120b49e66d6b6e9c006c",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            },
+            {
+              "phase": "after",
+              "time": 142.224,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_142_224.jpg",
+              "frame_sha256": "f77c969f883f5f94004cca38d61782ad109722f093b9080418951c9b1a5fae06",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            }
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "optimize",
+      "asset": "visual_v001",
+      "baseline_interval": [
+        154,
+        208
+      ],
+      "function": "完整乘积链式求导、因式分解与全可行域符号比较",
+      "features": [
+        {
+          "id": "product_chain_derivative",
+          "kind": "state",
+          "claim": "完整首行V'=(12-2x)²-4x(12-2x)，对应乘积与平方内层导数的原讲述",
+          "baseline_interval": [
+            166.387,
+            171.848
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 166.387,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_166_387.jpg",
+              "frame_sha256": "a78cf10747b7f943286b5ab072401b55a67d03794a97dda6d74a278f6b869013",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            },
+            {
+              "phase": "state",
+              "time": 171.847,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_171_847.jpg",
+              "frame_sha256": "a78cf10747b7f943286b5ab072401b55a67d03794a97dda6d74a278f6b869013",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "factor_progression",
+          "kind": "process",
+          "claim": "首行到提取(12-2x)(12-6x)，再到12(x-2)(x-6)，三行曾同时保留",
+          "baseline_interval": [
+            171.847,
+            182.351
+          ],
+          "baseline_samples": [
+            {
+              "phase": "before",
+              "time": 171.847,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_171_847.jpg",
+              "frame_sha256": "a78cf10747b7f943286b5ab072401b55a67d03794a97dda6d74a278f6b869013",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            },
+            {
+              "phase": "during",
+              "time": 178.052,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_178_052.jpg",
+              "frame_sha256": "ab5fea3edd3fcf291fc34df20ddfe53621f9bb4e4fd443f16a38e27176d3b75d",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            },
+            {
+              "phase": "after",
+              "time": 182.35,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_182_35.jpg",
+              "frame_sha256": "7c9f3cddaed66fd98bf380df7348dcfc0bc31dc49b6ed7cceb7dca4f691bb7bf",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            }
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "whole_domain_signs",
+          "kind": "state",
+          "claim": "在(0,2)导数正、(2,6)负，先增后减给全范围最优；不是驻点充分性",
+          "baseline_interval": [
+            197.2,
+            202.601
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 197.2,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_197_2.jpg",
+              "frame_sha256": "e2ed9b15aebe981d479bf3ded416b7c3390ea484f2417954071b3d4eb8bfd7da",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            },
+            {
+              "phase": "state",
+              "time": 202.6,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_202_6.jpg",
+              "frame_sha256": "2a15a021ebc9232557f8da39468d35330a691ac2bd3306a4560feefa0cf25240",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "original_max_volume",
+          "kind": "state",
+          "claim": "x=2在域内，回代V(2)=2×8²=128cm³",
+          "baseline_interval": [
+            202.6,
+            206.921
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 202.6,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_202_6.jpg",
+              "frame_sha256": "2a15a021ebc9232557f8da39468d35330a691ac2bd3306a4560feefa0cf25240",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            },
+            {
+              "phase": "state",
+              "time": 206.92,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_206_92.jpg",
+              "frame_sha256": "2a15a021ebc9232557f8da39468d35330a691ac2bd3306a4560feefa0cf25240",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "boundary",
+      "asset": "visual_v001",
+      "baseline_interval": [
+        208,
+        238
+      ],
+      "function": "回到同源几何解释两个退化端点与开域内部可达最大",
+      "features": [
+        {
+          "id": "flattening",
+          "kind": "process",
+          "claim": "x趋0时底面变大、高度降低、体积趋小；样本到0.22，不假称已见精确0.08",
+          "baseline_interval": [
+            212.08,
+            217.121
+          ],
+          "baseline_samples": [
+            {
+              "phase": "before",
+              "time": 212.08,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_212_08.jpg",
+              "frame_sha256": "d206328419e13a46ff5b4d23e40dbb345f233d21e091e356382a8eb16ba5a0ec",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            },
+            {
+              "phase": "during",
+              "time": 214.6,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_214_6.jpg",
+              "frame_sha256": "f15ccbd223661ab3b07b2dbb97f5b1713c02601bfd98db895ef44212376cb761",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            },
+            {
+              "phase": "after",
+              "time": 217.12,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_217_12.jpg",
+              "frame_sha256": "0b489f213a47898d4d06f3bef5fe1f672d4cbf51066285b5eba5975e6973f3a3",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            }
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "narrowing",
+          "kind": "process",
+          "claim": "从扁盒抬高同时缩窄底面，靠近6时体积再次趋零；这一整段经过2不宣称全程体积下降",
+          "baseline_interval": [
+            218.2,
+            228.341
+          ],
+          "baseline_samples": [
+            {
+              "phase": "before",
+              "time": 218.2,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_218_2.jpg",
+              "frame_sha256": "75c4358277996f73a4ab840ca6e4ff8e49a30c76326f7df0017c9f139a737e3e",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            },
+            {
+              "phase": "during",
+              "time": 223,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_223_0.jpg",
+              "frame_sha256": "635dd33d1ef813ffe93197fe4e20afd5cc40ee4c9e78bff1d371321965465597",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            },
+            {
+              "phase": "after",
+              "time": 228.34,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_228_34.jpg",
+              "frame_sha256": "33ffa54acf99448b87fa26e4514ab41ce26eb16540a7fe0d3b1a75a16aea681e",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            }
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "limits_and_feasibility",
+          "kind": "state",
+          "claim": "x→0+和x→6-均V→0，退化边界不能做盒子，内部最大可达",
+          "baseline_interval": [
+            232.75,
+            237.161
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 232.75,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_232_75.jpg",
+              "frame_sha256": "42f4968f74d6976f75153c2319d6f7330b8f49f6c4aa77951a271694620b18ef",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            },
+            {
+              "phase": "state",
+              "time": 237.16,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_237_16.jpg",
+              "frame_sha256": "35ee00f2f314d90740f42951f6f1f85753e382eafac09460adfe16a15ed9928a",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "constraint",
+      "asset": "visual_v001",
+      "baseline_interval": [
+        238,
+        282
+      ],
+      "function": "同一模型新增高度下界，排除原驻点并比较新的域",
+      "features": [
+        {
+          "id": "changed_domain",
+          "kind": "state",
+          "claim": "至少3cm、3≤x<6；原x=2/V128标为高度不足，不改体积模型",
+          "baseline_interval": [
+            244.4,
+            251.401
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 244.4,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_244_4.jpg",
+              "frame_sha256": "02461d078304e601417499fb0a060dae1608b46aab3faf01acc7e55937f28350",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            },
+            {
+              "phase": "state",
+              "time": 251.4,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_251_4.jpg",
+              "frame_sha256": "3013c213d5daa87c2adfe81f7c14f7d6dddc77f1cbf8c8c161a75bc8e33c1681",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "enter_feasible_set",
+          "kind": "process",
+          "claim": "原x2盒实际增高进入新域；样本2.00→2.51→3.25，不假称末样恰是首次到3",
+          "baseline_interval": [
+            251.4,
+            260.01399999999995
+          ],
+          "baseline_samples": [
+            {
+              "phase": "before",
+              "time": 251.4,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_251_4.jpg",
+              "frame_sha256": "3013c213d5daa87c2adfe81f7c14f7d6dddc77f1cbf8c8c161a75bc8e33c1681",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            },
+            {
+              "phase": "during",
+              "time": 256.267,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_256_267.jpg",
+              "frame_sha256": "80594792eb70fdd222d83fa54daa9530b4501349498f38bb33e51447f2f99c88",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            },
+            {
+              "phase": "after",
+              "time": 260.013,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_260_013.jpg",
+              "frame_sha256": "b668f76c80be45489d485e34afd1d0b17dd1f819f3e19e96c5cfaa54e5ea3769",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            }
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "restricted_branch_return",
+          "kind": "process",
+          "claim": "进入域后继续抬高，体积减少，再回到3体积增加；中样4.46非精确源目标4.50",
+          "baseline_interval": [
+            260.013,
+            273.20099999999996
+          ],
+          "baseline_samples": [
+            {
+              "phase": "before",
+              "time": 260.013,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_260_013.jpg",
+              "frame_sha256": "b668f76c80be45489d485e34afd1d0b17dd1f819f3e19e96c5cfaa54e5ea3769",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            },
+            {
+              "phase": "during",
+              "time": 264.633,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_264_633.jpg",
+              "frame_sha256": "933de42ae62b63d6561a57c6864f68a5b04ad50f04a5de8514deae5237e98cef",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            },
+            {
+              "phase": "after",
+              "time": 273.2,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_273_2.jpg",
+              "frame_sha256": "ceebef662f72ebf6dcc35f2c8fd5fb8faebc310e5b08bc0cf2cf0ba00868a8fc",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            }
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "boundary_optimum",
+          "kind": "state",
+          "claim": "[3,6)递减，允许的左边界x=3最优，6×6×3=108cm³；不要求此处导数为零",
+          "baseline_interval": [
+            273.904,
+            281.29699999999997
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 273.904,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_273_904.jpg",
+              "frame_sha256": "a78164260f420e77e7ea7977fd00e2b28078de80885de25f90bd9dc2139e5a82",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            },
+            {
+              "phase": "state",
+              "time": 281.296,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_281_296.jpg",
+              "frame_sha256": "5f3413964cd8d62e3296aa771d699696d58d7727bb1b7e3f9fabda1bb1c33c2d",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "closing",
+      "asset": "visual_v001",
+      "baseline_interval": [
+        282,
+        312
+      ],
+      "function": "恢复原问题答案并迁移整个建模比较链",
+      "features": [
+        {
+          "id": "original_answer_restored",
+          "kind": "state",
+          "claim": "恢复无额外高度下界的x2、8×8×2cm、128cm³，不能与新增约束108混淆",
+          "baseline_interval": [
+            287.4,
+            295.501
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 287.4,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_287_4.jpg",
+              "frame_sha256": "8b077dda8b4e754b0276fc0060c3487c15f1cb39f277bc26d59acc8041812c1e",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            },
+            {
+              "phase": "state",
+              "time": 295.5,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_295_5.jpg",
+              "frame_sha256": "7e54fff5e1fd44be3c5c091e2572848735ad20abf3c0308a1c3e659f9dec710b",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "chapter_model_chain",
+          "kind": "state",
+          "claim": "尺寸到同一变量、目标与可行域、变化率、单调性、全范围比较的联系",
+          "baseline_interval": [
+            297,
+            301.633
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 297,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_297_0.jpg",
+              "frame_sha256": "7e54fff5e1fd44be3c5c091e2572848735ad20abf3c0308a1c3e659f9dec710b",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            },
+            {
+              "phase": "state",
+              "time": 301.632,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_301_632.jpg",
+              "frame_sha256": "7e54fff5e1fd44be3c5c091e2572848735ad20abf3c0308a1c3e659f9dec710b",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "feasibility_transfer",
+          "kind": "process",
+          "claim": "在原答案与模型链后补出约束改变沿同模型重判的出口",
+          "baseline_interval": [
+            303,
+            309.001
+          ],
+          "baseline_samples": [
+            {
+              "phase": "before",
+              "time": 303,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_303_0.jpg",
+              "frame_sha256": "7e54fff5e1fd44be3c5c091e2572848735ad20abf3c0308a1c3e659f9dec710b",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            },
+            {
+              "phase": "during",
+              "time": 305.928,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_305_928.jpg",
+              "frame_sha256": "7ecd043dd15aba50069a6c3a0dcdf05b4d17a7449e3af00380f37739901a4ab7",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            },
+            {
+              "phase": "after",
+              "time": 309,
+              "frame": "outputs/math-derivative-ch08-optimization-20261102/visual-v001/frames/frame_309_0.jpg",
+              "frame_sha256": "5c3ddeed6e65fe56c2279b486c0ff9646772f55bfa49dbcf04a29793ccc45868",
+              "source": "Actual archived v001 frame selected in prior author baseline study; not independent findings"
+            }
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        }
+      ]
+    }
+  ],
+  "additional_candidate_requirements": {
+    "net_view_transition": "New continuous screen-projection interpolation of the same five x=2 panels; v001 only had a cue/view cut, not a continuous camera rotation",
+    "root_screening": "New explicit V'=0 candidates 2,6 and exclusion of 6, under unchanged optimize-r2; no such caption claimed visible in v001",
+    "narration_changed": false,
+    "not_added": [
+      "No scientific model or audio changes",
+      "No fictitious safe_formula transfer; the original never calls it",
+      "No claim that old source targets 0.08 or 4.50 were seen exactly in baseline pixels"
+    ]
+  },
+  "evidence_limits": [
+    "Existing archived contact sheets/stills were inspected as author research, not full playback or independent approval",
+    "Actual displayed numbers are rounded; exact code/native target or journal values are not pixel observations. No visible removed-area formula is claimed",
+    "Cut corner after-sample is fading, not total absence. Subsequent old fold samples show the five remaining panels in an oblique view, not continuous cross-cue camera motion",
+    "New screen-projection transition and dedicated candidate-root screening are new visual support, not retained old captions",
+    "Main must obtain actual new GL pixels and independently compare every process before/during/after; this contract has no retained/pass findings"
+  ]
+}

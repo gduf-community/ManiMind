@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "project_id": "math-derivative-ch02-basics-20261102",
+  "status": "author_model_not_independent_science_approval",
+  "facts": [
+    {
+      "id": "slope_function",
+      "statement": "For f(x)=x², the reduced nonzero-h quotient is 2a+h and f'(a)=2a for every real a.",
+      "model": [
+        "square_state",
+        "square_quotient"
+      ],
+      "conditions": [
+        "h!=0 for original quotient"
+      ]
+    },
+    {
+      "id": "identity",
+      "statement": "f(x)=x has nonzero-h difference quotient ((x+h)-x)/h=1 and derivative 1 for every real x.",
+      "model": [
+        "identity_state",
+        "identity_quotient"
+      ],
+      "conditions": [
+        "h!=0 in the difference quotient"
+      ]
+    },
+    {
+      "id": "cubic_definition",
+      "statement": "For h!=0, ((x+h)^3-x^3)/h = (3x²h+3xh²+h³)/h = 3x²+3xh+h² -> 3x² for every real x.",
+      "model": [
+        "cubic_quotient"
+      ],
+      "conditions": [
+        "Nonzero h during cancellation"
+      ]
+    },
+    {
+      "id": "constant_power",
+      "statement": "c'=0. Integer n>=1: (x^n)'=n*x^(n-1) for real x. n=0 means constant 1. Negative integers require x!=0. For real n the stated safe domain is x>0.",
+      "model": [
+        "constant_state",
+        "integer_power_state",
+        "positive_power_state",
+        "constant_quotient"
+      ],
+      "conditions": [
+        "Do not infer endpoint derivatives from the safe-domain formula",
+        "The n=0 branch never evaluates 0*x^(-1) at zero"
+      ]
+    },
+    {
+      "id": "reciprocal",
+      "statement": "(1/x)'=-1/x² for x!=0; the two branches are not joined.",
+      "model": [
+        "reciprocal_quotient",
+        "basic_state"
+      ],
+      "conditions": [
+        "Original quotient also requires h!=0 and x+h!=0"
+      ]
+    },
+    {
+      "id": "root",
+      "statement": "sqrt x is defined for x>=0 and differentiable for x>0 with derivative 1/(2sqrt x). At zero its right difference quotient diverges to +infinity.",
+      "model": [
+        "root_quotient",
+        "basic_state"
+      ],
+      "conditions": [
+        "Original quotient x>0, x+h>=0, h!=0",
+        "No ordinary finite derivative at zero"
+      ]
+    },
+    {
+      "id": "exponential",
+      "statement": "For a>0 and real x, (a^x)'=a^x ln a. a=1 is permitted and constant. e^x has derivative e^x.",
+      "model": [
+        "basic_state"
+      ],
+      "conditions": [
+        "The standard limit (a^h-1)/h -> ln a is invoked, not proved",
+        "0<a<1 gives negative slope"
+      ]
+    },
+    {
+      "id": "logarithm",
+      "statement": "For x>0, (ln x)'=1/x and (log_a x)'=1/(x ln a), where a>0 and a!=1.",
+      "model": [
+        "basic_state"
+      ],
+      "conditions": [
+        "The inverse local increment argument uses a nonzero exponential derivative",
+        "Constant multiple is explained locally and generalized in chapter 03"
+      ]
+    },
+    {
+      "id": "trigonometric",
+      "statement": "(sin x)'=cos x, (cos x)'=-sin x for all real x measured in radians.",
+      "model": [
+        "basic_state"
+      ],
+      "conditions": [
+        "Standard radian limits sin h/h->1 and (cos h-1)/h->0 are invoked",
+        "Geometric plots illustrate the formulas rather than proving those limits"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "OpenStax Calculus 1, 3.3",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/3-3-differentiation-rules"
+    },
+    {
+      "title": "OpenStax Calculus 1, 3.5",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/3-5-derivatives-of-trigonometric-functions"
+    },
+    {
+      "title": "OpenStax Calculus 1, 3.9",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/3-9-derivatives-of-exponential-and-logarithmic-functions"
+    }
+  ],
+  "display_contract": {
+    "dynamic_numbers": "Rounded to 2 decimals and explicitly approximate; never drive geometry with displayed values",
+    "geometry": "One tracker state updates point, tangent, derivative point and numeric labels",
+    "caption_safe_bottom_px": 96,
+    "formula_motion": "Fixed historical rows; explicit ordered semantic transfer only",
+    "timing": "Visual duration and optional stage_times only; no WAV or forced-alignment claims"
+  },
+  "writer": "01a199e9-7383-7a03-b45c-97d3d21bd9dd",
+  "consumers": [
+    "main coordinator",
+    "independent visual reviewer",
+    "independent narration reviewer",
+    "later speech planner"
+  ],
+  "lifecycle": "Author A chapter draft v001; not approval",
+  "invalidation": "Scene, model, helper, text, cue timing, context or profile changes require affected stages to be repeated",
+  "definition_derivations_required": [
+    "constant_quotient",
+    "identity_quotient",
+    "square_quotient",
+    "cubic_quotient",
+    "reciprocal_quotient",
+    "root_quotient"
+  ],
+  "artifact_type": "test_fixture"
+}

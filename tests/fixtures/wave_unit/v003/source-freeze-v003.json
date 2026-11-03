@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "unit_id": "wave-unit-20261028",
+  "version": "v003",
+  "frozen_at_utc": "2026-10-28T09:04:00.279358+00:00",
+  "author_agent": "01a1817c-7136-79a3-9ca8-6b508ab35228",
+  "author_context": "01a1817c-7136-79a3-9ca8-6b508ab35228",
+  "writer": "01a1817c-7136-79a3-9ca8-6b508ab35228",
+  "status": "frozen_for_lead_silent_render_not_reviewed",
+  "ready_for_silent_render": true,
+  "production_layout": {
+    "mode": "independent_lesson_sources_with_shared_base_and_model",
+    "shared_base": "examples/wave_unit_shared.py",
+    "shared_model": "examples/wave_unit_model.py",
+    "historical_aggregate": "examples/wave_unit_visual.py",
+    "historical_aggregate_sha256": "8ed9f2bb557bc37d1e525d6ff5aaa0142231832506b4ae0ceac1090a0ea906ba",
+    "historical_aggregate_policy": "Frozen unchanged; no new production source imports or watches it"
+  },
+  "lessons": [
+    {
+      "project_id": "wave-formation-20261028",
+      "scene": "examples/wave_formation_visual.py",
+      "scene_class": "WaveFormationLesson",
+      "duration": 152,
+      "plan": "runtime/projects/wave-formation-20261028/plan.json",
+      "lesson_context": "runtime/projects/wave-formation-20261028/context-v003.json",
+      "narration_draft": "runtime/projects/wave-formation-20261028/narration-draft-v002.json",
+      "watch_manifest": "runtime/projects/wave-formation-20261028/watch-v003.json",
+      "watch_manifest_sha256": "16cce193d2898145e33a524ef04a2b69473ce01f1c4bffbc5a8b793538064b94"
+    },
+    {
+      "project_id": "wave-reading-20261028",
+      "scene": "examples/wave_reading_visual.py",
+      "scene_class": "WaveReadingLesson",
+      "duration": 182,
+      "plan": "runtime/projects/wave-reading-20261028/plan.json",
+      "lesson_context": "runtime/projects/wave-reading-20261028/context-v003.json",
+      "narration_draft": "runtime/projects/wave-reading-20261028/narration-draft-v002.json",
+      "watch_manifest": "runtime/projects/wave-reading-20261028/watch-v003.json",
+      "watch_manifest_sha256": "14ad657137d3d31f092270fd1ebaa2dbabbad0a62b893e7d882b270439bf93e0"
+    },
+    {
+      "project_id": "wave-superposition-20261028",
+      "scene": "examples/wave_superposition_visual.py",
+      "scene_class": "WaveSuperpositionLesson",
+      "duration": 158,
+      "plan": "runtime/projects/wave-superposition-20261028/plan.json",
+      "lesson_context": "runtime/projects/wave-superposition-20261028/context-v003.json",
+      "narration_draft": "runtime/projects/wave-superposition-20261028/narration-draft-v002.json",
+      "watch_manifest": "runtime/projects/wave-superposition-20261028/watch-v003.json",
+      "watch_manifest_sha256": "0da469fec6a5e61b9b2d2073871f1691af8810e16332a408e39b92f75921a52c"
+    }
+  ],
+  "common_input_sha256": {
+    "configs/visual-first-workflow-v4-unit.json": "ae00dd9f63190a29f4745c54bfd83d2ae36468d459f456509907edefa095adfd",
+    "docs/curricula/high-school-physics-v0.1.csv": "267c2219d83b8fc8cfd4e3bf845b4f2a4f035ca0e097cc6950601ba30306948b",
+    "examples/wave_unit_model.py": "a6752cb1db379c5e6be24f6421e52128e0242a649a572b18d529651f79c25fde",
+    "examples/wave_unit_shared.py": "af4cf2c973a1ecbc81a7b339719a56e356d6d549e013c3bcf182be7a49454cfc",
+    "runtime/projects/wave-unit-20261028/scientific-brief.json": "43ef4ac26c3213b935174566c219fa0ffb828387c89c49230e97cb067236ecb6",
+    "runtime/projects/wave-unit-20261028/teaching-design.md": "0ecf0bc6f814cccf0821499359e522deb94c7eb4a49a9890c7be859989fcc260",
+    "runtime/projects/wave-unit-20261028/unit.json": "bfb02a0e9ccd5a032e8139f52c7582aa27d66827ad4f7beb1d04a64340f03443",
+    "src/manimind/components/catalog.py": "2bf2def6c94397613d247ad2cb7e4859c4116eb62c5c44755f7cf63450ec7bb0",
+    "src/manimind/components/formula_motion.py": "47c0dfcfe5e4f7801f6bee5a465e203c1795bc9a800eb53a3b91c9a72f2a4914",
+    "src/manimind/components/typography.py": "1cdcfcfb2ab675fb7b1940cb242c7c241a14932886d16b78ac5001039873ef48",
+    "src/manimind/curriculum.py": "6a51aaa5dd796a5d7d21e05988058ecb9dcffe5659cceaa961201fae2d81d26d",
+    "src/manimind/experiments/freeform_support.py": "28b37dc707e7e07b719c3f3cf18ba10c4db18ae8adda7b8f102aba7f90ca4967",
+    "src/manimind/experiments/understanding_support.py": "ab423add671dd567a2b6b07bd06207573cce802be359537f07eac447d4f5d542",
+    "src/manimind/experiments/visual_first_data.py": "27fef6125910067ffbbd58da3b527fe9d5ded9613f143e1ad3988edd8eaad4b0",
+    "src/manimind/experiments/visual_first_support.py": "fb879f1b53a195cea95a2cc4a1f1ca72b4dc0d98ed7e27f6696ae3897e110e08",
+    "src/manimind/postproduce/formula_film.py": "be0550d47b91bbe6111c7f2df2d90216fc3fd548247c1f03fd112b3c2be105be",
+    "src/manimind/postproduce/understanding_render.py": "38c5daa7d1584c0196fee92cb01b4d5c84c62cab45198414c3296c1b24cf4fd1",
+    "src/manimind/render/manim_renderer.py": "80a97ee2969b2b75c417a3cbf9f75a17e30d1999d8ca0936657d5be6d9ef22c4",
+    "src/manimind/review/semantic_focus.py": "83184519b434e65d341537ff3473157f1ce6b51629f01d029dc0eb1b4d4e9a34"
+  },
+  "per_lesson_visual_input_sha256": {
+    "wave-formation-20261028": {
+      "configs/visual-first-workflow-v4-unit.json": "ae00dd9f63190a29f4745c54bfd83d2ae36468d459f456509907edefa095adfd",
+      "docs/curricula/high-school-physics-v0.1.csv": "267c2219d83b8fc8cfd4e3bf845b4f2a4f035ca0e097cc6950601ba30306948b",
+      "examples/wave_formation_visual.py": "f786ea0ccdb3b9fd5155a63a239293647baeff3e95a0b047b43f4a85c0cabf00",
+      "examples/wave_unit_model.py": "a6752cb1db379c5e6be24f6421e52128e0242a649a572b18d529651f79c25fde",
+      "examples/wave_unit_shared.py": "af4cf2c973a1ecbc81a7b339719a56e356d6d549e013c3bcf182be7a49454cfc",
+      "runtime/projects/wave-formation-20261028/context-v003.json": "ace6bca6cc9ba05529b3fa97c93c9d3205fd6d96d7a89b915a3eb2a156b6f88e",
+      "runtime/projects/wave-formation-20261028/plan.json": "8e17643cf843ecdb66b0e92558a52465e5ecf7b93dec7b6f9db4e795ead6d7eb",
+      "runtime/projects/wave-unit-20261028/scientific-brief.json": "43ef4ac26c3213b935174566c219fa0ffb828387c89c49230e97cb067236ecb6",
+      "runtime/projects/wave-unit-20261028/teaching-design.md": "0ecf0bc6f814cccf0821499359e522deb94c7eb4a49a9890c7be859989fcc260",
+      "runtime/projects/wave-unit-20261028/unit.json": "bfb02a0e9ccd5a032e8139f52c7582aa27d66827ad4f7beb1d04a64340f03443",
+      "src/manimind/components/catalog.py": "2bf2def6c94397613d247ad2cb7e4859c4116eb62c5c44755f7cf63450ec7bb0",
+      "src/manimind/components/formula_motion.py": "47c0dfcfe5e4f7801f6bee5a465e203c1795bc9a800eb53a3b91c9a72f2a4914",
+      "src/manimind/components/typography.py": "1cdcfcfb2ab675fb7b1940cb242c7c241a14932886d16b78ac5001039873ef48",
+      "src/manimind/curriculum.py": "6a51aaa5dd796a5d7d21e05988058ecb9dcffe5659cceaa961201fae2d81d26d",
+      "src/manimind/experiments/freeform_support.py": "28b37dc707e7e07b719c3f3cf18ba10c4db18ae8adda7b8f102aba7f90ca4967",
+      "src/manimind/experiments/understanding_support.py": "ab423add671dd567a2b6b07bd06207573cce802be359537f07eac447d4f5d542",
+      "src/manimind/experiments/visual_first_data.py": "27fef6125910067ffbbd58da3b527fe9d5ded9613f143e1ad3988edd8eaad4b0",
+      "src/manimind/experiments/visual_first_support.py": "fb879f1b53a195cea95a2cc4a1f1ca72b4dc0d98ed7e27f6696ae3897e110e08",
+      "src/manimind/postproduce/formula_film.py": "be0550d47b91bbe6111c7f2df2d90216fc3fd548247c1f03fd112b3c2be105be",
+      "src/manimind/postproduce/understanding_render.py": "38c5daa7d1584c0196fee92cb01b4d5c84c62cab45198414c3296c1b24cf4fd1",
+      "src/manimind/render/manim_renderer.py": "80a97ee2969b2b75c417a3cbf9f75a17e30d1999d8ca0936657d5be6d9ef22c4",
+      "src/manimind/review/semantic_focus.py": "83184519b434e65d341537ff3473157f1ce6b51629f01d029dc0eb1b4d4e9a34"
+    },
+    "wave-reading-20261028": {
+      "configs/visual-first-workflow-v4-unit.json": "ae00dd9f63190a29f4745c54bfd83d2ae36468d459f456509907edefa095adfd",
+      "docs/curricula/high-school-physics-v0.1.csv": "267c2219d83b8fc8cfd4e3bf845b4f2a4f035ca0e097cc6950601ba30306948b",
+      "examples/wave_reading_visual.py": "c77e136bffa7d41308d727fbd2efc78aacf8a6e25e3a694dc325e9c90c3e2d30",
+      "examples/wave_unit_model.py": "a6752cb1db379c5e6be24f6421e52128e0242a649a572b18d529651f79c25fde",
+      "examples/wave_unit_shared.py": "af4cf2c973a1ecbc81a7b339719a56e356d6d549e013c3bcf182be7a49454cfc",
+      "runtime/projects/wave-reading-20261028/context-v003.json": "1556efcbeb01c427d54d19f55b8cf3b816df367db32916051671e7e8adf239ae",
+      "runtime/projects/wave-reading-20261028/plan.json": "b465623f7fb9c0bb64babb5ff7ee5b3fd325158d7943c9f4580764afeed14a18",
+      "runtime/projects/wave-unit-20261028/scientific-brief.json": "43ef4ac26c3213b935174566c219fa0ffb828387c89c49230e97cb067236ecb6",
+      "runtime/projects/wave-unit-20261028/teaching-design.md": "0ecf0bc6f814cccf0821499359e522deb94c7eb4a49a9890c7be859989fcc260",
+      "runtime/projects/wave-unit-20261028/unit.json": "bfb02a0e9ccd5a032e8139f52c7582aa27d66827ad4f7beb1d04a64340f03443",
+      "src/manimind/components/catalog.py": "2bf2def6c94397613d247ad2cb7e4859c4116eb62c5c44755f7cf63450ec7bb0",
+      "src/manimind/components/formula_motion.py": "47c0dfcfe5e4f7801f6bee5a465e203c1795bc9a800eb53a3b91c9a72f2a4914",
+      "src/manimind/components/typography.py": "1cdcfcfb2ab675fb7b1940cb242c7c241a14932886d16b78ac5001039873ef48",
+      "src/manimind/curriculum.py": "6a51aaa5dd796a5d7d21e05988058ecb9dcffe5659cceaa961201fae2d81d26d",
+      "src/manimind/experiments/freeform_support.py": "28b37dc707e7e07b719c3f3cf18ba10c4db18ae8adda7b8f102aba7f90ca4967",
+      "src/manimind/experiments/understanding_support.py": "ab423add671dd567a2b6b07bd06207573cce802be359537f07eac447d4f5d542",
+      "src/manimind/experiments/visual_first_data.py": "27fef6125910067ffbbd58da3b527fe9d5ded9613f143e1ad3988edd8eaad4b0",
+      "src/manimind/experiments/visual_first_support.py": "fb879f1b53a195cea95a2cc4a1f1ca72b4dc0d98ed7e27f6696ae3897e110e08",
+      "src/manimind/postproduce/formula_film.py": "be0550d47b91bbe6111c7f2df2d90216fc3fd548247c1f03fd112b3c2be105be",
+      "src/manimind/postproduce/understanding_render.py": "38c5daa7d1584c0196fee92cb01b4d5c84c62cab45198414c3296c1b24cf4fd1",
+      "src/manimind/render/manim_renderer.py": "80a97ee2969b2b75c417a3cbf9f75a17e30d1999d8ca0936657d5be6d9ef22c4",
+      "src/manimind/review/semantic_focus.py": "83184519b434e65d341537ff3473157f1ce6b51629f01d029dc0eb1b4d4e9a34"
+    },
+    "wave-superposition-20261028": {
+      "configs/visual-first-workflow-v4-unit.json": "ae00dd9f63190a29f4745c54bfd83d2ae36468d459f456509907edefa095adfd",
+      "docs/curricula/high-school-physics-v0.1.csv": "267c2219d83b8fc8cfd4e3bf845b4f2a4f035ca0e097cc6950601ba30306948b",
+      "examples/wave_superposition_visual.py": "c108decae7b7ba6d0901fdeb8f7ceeabafde5445c0907a191218e6f19bb4170a",
+      "examples/wave_unit_model.py": "a6752cb1db379c5e6be24f6421e52128e0242a649a572b18d529651f79c25fde",
+      "examples/wave_unit_shared.py": "af4cf2c973a1ecbc81a7b339719a56e356d6d549e013c3bcf182be7a49454cfc",
+      "runtime/projects/wave-superposition-20261028/context-v003.json": "6335d623a9257c753fdc0d0d04f6e4b675b0b1e567ed6477d4303403497b1961",
+      "runtime/projects/wave-superposition-20261028/plan.json": "c55ee4348d9c4d5b8b68a7f004b94078e48cae9795f064e716cf0b8a74aba26f",
+      "runtime/projects/wave-unit-20261028/scientific-brief.json": "43ef4ac26c3213b935174566c219fa0ffb828387c89c49230e97cb067236ecb6",
+      "runtime/projects/wave-unit-20261028/teaching-design.md": "0ecf0bc6f814cccf0821499359e522deb94c7eb4a49a9890c7be859989fcc260",
+      "runtime/projects/wave-unit-20261028/unit.json": "bfb02a0e9ccd5a032e8139f52c7582aa27d66827ad4f7beb1d04a64340f03443",
+      "src/manimind/components/catalog.py": "2bf2def6c94397613d247ad2cb7e4859c4116eb62c5c44755f7cf63450ec7bb0",
+      "src/manimind/components/formula_motion.py": "47c0dfcfe5e4f7801f6bee5a465e203c1795bc9a800eb53a3b91c9a72f2a4914",
+      "src/manimind/components/typography.py": "1cdcfcfb2ab675fb7b1940cb242c7c241a14932886d16b78ac5001039873ef48",
+      "src/manimind/curriculum.py": "6a51aaa5dd796a5d7d21e05988058ecb9dcffe5659cceaa961201fae2d81d26d",
+      "src/manimind/experiments/freeform_support.py": "28b37dc707e7e07b719c3f3cf18ba10c4db18ae8adda7b8f102aba7f90ca4967",
+      "src/manimind/experiments/understanding_support.py": "ab423add671dd567a2b6b07bd06207573cce802be359537f07eac447d4f5d542",
+      "src/manimind/experiments/visual_first_data.py": "27fef6125910067ffbbd58da3b527fe9d5ded9613f143e1ad3988edd8eaad4b0",
+      "src/manimind/experiments/visual_first_support.py": "fb879f1b53a195cea95a2cc4a1f1ca72b4dc0d98ed7e27f6696ae3897e110e08",
+      "src/manimind/postproduce/formula_film.py": "be0550d47b91bbe6111c7f2df2d90216fc3fd548247c1f03fd112b3c2be105be",
+      "src/manimind/postproduce/understanding_render.py": "38c5daa7d1584c0196fee92cb01b4d5c84c62cab45198414c3296c1b24cf4fd1",
+      "src/manimind/render/manim_renderer.py": "80a97ee2969b2b75c417a3cbf9f75a17e30d1999d8ca0936657d5be6d9ef22c4",
+      "src/manimind/review/semantic_focus.py": "83184519b434e65d341537ff3473157f1ce6b51629f01d029dc0eb1b4d4e9a34"
+    }
+  },
+  "visual_input_sha256": {
+    "configs/visual-first-workflow-v4-unit.json": "ae00dd9f63190a29f4745c54bfd83d2ae36468d459f456509907edefa095adfd",
+    "docs/curricula/high-school-physics-v0.1.csv": "267c2219d83b8fc8cfd4e3bf845b4f2a4f035ca0e097cc6950601ba30306948b",
+    "examples/wave_formation_visual.py": "f786ea0ccdb3b9fd5155a63a239293647baeff3e95a0b047b43f4a85c0cabf00",
+    "examples/wave_reading_visual.py": "c77e136bffa7d41308d727fbd2efc78aacf8a6e25e3a694dc325e9c90c3e2d30",
+    "examples/wave_superposition_visual.py": "c108decae7b7ba6d0901fdeb8f7ceeabafde5445c0907a191218e6f19bb4170a",
+    "examples/wave_unit_model.py": "a6752cb1db379c5e6be24f6421e52128e0242a649a572b18d529651f79c25fde",
+    "examples/wave_unit_shared.py": "af4cf2c973a1ecbc81a7b339719a56e356d6d549e013c3bcf182be7a49454cfc",
+    "runtime/projects/wave-formation-20261028/context-v003.json": "ace6bca6cc9ba05529b3fa97c93c9d3205fd6d96d7a89b915a3eb2a156b6f88e",
+    "runtime/projects/wave-formation-20261028/plan.json": "8e17643cf843ecdb66b0e92558a52465e5ecf7b93dec7b6f9db4e795ead6d7eb",
+    "runtime/projects/wave-reading-20261028/context-v003.json": "1556efcbeb01c427d54d19f55b8cf3b816df367db32916051671e7e8adf239ae",
+    "runtime/projects/wave-reading-20261028/plan.json": "b465623f7fb9c0bb64babb5ff7ee5b3fd325158d7943c9f4580764afeed14a18",
+    "runtime/projects/wave-superposition-20261028/context-v003.json": "6335d623a9257c753fdc0d0d04f6e4b675b0b1e567ed6477d4303403497b1961",
+    "runtime/projects/wave-superposition-20261028/plan.json": "c55ee4348d9c4d5b8b68a7f004b94078e48cae9795f064e716cf0b8a74aba26f",
+    "runtime/projects/wave-unit-20261028/scientific-brief.json": "43ef4ac26c3213b935174566c219fa0ffb828387c89c49230e97cb067236ecb6",
+    "runtime/projects/wave-unit-20261028/teaching-design.md": "0ecf0bc6f814cccf0821499359e522deb94c7eb4a49a9890c7be859989fcc260",
+    "runtime/projects/wave-unit-20261028/unit.json": "bfb02a0e9ccd5a032e8139f52c7582aa27d66827ad4f7beb1d04a64340f03443",
+    "src/manimind/components/catalog.py": "2bf2def6c94397613d247ad2cb7e4859c4116eb62c5c44755f7cf63450ec7bb0",
+    "src/manimind/components/formula_motion.py": "47c0dfcfe5e4f7801f6bee5a465e203c1795bc9a800eb53a3b91c9a72f2a4914",
+    "src/manimind/components/typography.py": "1cdcfcfb2ab675fb7b1940cb242c7c241a14932886d16b78ac5001039873ef48",
+    "src/manimind/curriculum.py": "6a51aaa5dd796a5d7d21e05988058ecb9dcffe5659cceaa961201fae2d81d26d",
+    "src/manimind/experiments/freeform_support.py": "28b37dc707e7e07b719c3f3cf18ba10c4db18ae8adda7b8f102aba7f90ca4967",
+    "src/manimind/experiments/understanding_support.py": "ab423add671dd567a2b6b07bd06207573cce802be359537f07eac447d4f5d542",
+    "src/manimind/experiments/visual_first_data.py": "27fef6125910067ffbbd58da3b527fe9d5ded9613f143e1ad3988edd8eaad4b0",
+    "src/manimind/experiments/visual_first_support.py": "fb879f1b53a195cea95a2cc4a1f1ca72b4dc0d98ed7e27f6696ae3897e110e08",
+    "src/manimind/postproduce/formula_film.py": "be0550d47b91bbe6111c7f2df2d90216fc3fd548247c1f03fd112b3c2be105be",
+    "src/manimind/postproduce/understanding_render.py": "38c5daa7d1584c0196fee92cb01b4d5c84c62cab45198414c3296c1b24cf4fd1",
+    "src/manimind/render/manim_renderer.py": "80a97ee2969b2b75c417a3cbf9f75a17e30d1999d8ca0936657d5be6d9ef22c4",
+    "src/manimind/review/semantic_focus.py": "83184519b434e65d341537ff3473157f1ce6b51629f01d029dc0eb1b4d4e9a34"
+  },
+  "narration_draft_sha256": {
+    "runtime/projects/wave-formation-20261028/narration-draft-v002.json": "ba19dad8f994522d7c2138b426738923a1acfdcc1022fce5bb598d8260226e6c",
+    "runtime/projects/wave-reading-20261028/narration-draft-v002.json": "8acfb114c8b93fbc7a1a55eb2e4ee06039ed93d0a5ae76fce6fb9d03b59b2404",
+    "runtime/projects/wave-superposition-20261028/narration-draft-v002.json": "4d2e84d3de4852265de4c8f69ff67c83e991e2339452ba643d50b8a9f3e62456"
+  },
+  "unit_text_sha256": {
+    "wave-formation-20261028": "6fcede0dfc2e888f26546a9cc53b1274612f98b4a599465df35e5019ae96f7e3",
+    "wave-reading-20261028": "a96f8ff9f4eb68986bc6c746cd88c51bb136e94711feb8adc7d1b71ad237e720",
+    "wave-superposition-20261028": "27dc6a10ab990fe852bfcb46e216faac1407797a5ef8d057653da660c5600a37"
+  },
+  "aggregate_is_not_a_render_dependency": true,
+  "supersession": {
+    "kind": "production-source-split-and-bounded-review-repair",
+    "previous_freeze": "runtime/projects/wave-unit-20261028/source-freeze-v002.json",
+    "previous_freeze_sha256": "193458303027c6d00c59e7ca8eb6f1b136159ea45aa1b004810f28da3d00ccbc",
+    "initial_v003_requires_three_new_renders": true,
+    "subsequent_local_hold_change_requires_only_affected_lesson": true,
+    "shared_base_model_or_common_input_change_affects_all_dependents": true,
+    "historical_v001_v002_media_and_reviews": "Preserved untouched; no approval inherited by v003"
+  },
+  "repair_scope": [
+    {
+      "lesson": "reading",
+      "finding": "Nash R1 / Cicero R04-scale-label-collision",
+      "change": "Keep the one-period/wavelength/speed derivation; move time label left of wavelength label",
+      "native_tex_horizontal_gap_scene_units": 1.6033550949096687
+    },
+    {
+      "lesson": "superposition",
+      "finding": "Nash S1 / Cicero S05-historical-result-without-time-qualifier",
+      "change": "Remove the complete-overlap sum after its reading focus and before motion resumes; preserve its derivation and the through motion"
+    },
+    {
+      "lesson": "superposition",
+      "finding": "Nash S2 minor",
+      "change": "Remove velocity caption together with arrows before resuming physical time"
+    },
+    {
+      "lesson": "superposition",
+      "finding": "Cicero S04-reference-window",
+      "change": "Split old r2 into r2a/opposite_approach and r2b/flat_result, leaving the complete S04 unit.text unchanged. Hold fully-flat result for six real reading seconds with t=3s frozen before velocity explanation",
+      "simulated_contract_windows": {
+        "opposite_approach": [
+          92,
+          99
+        ],
+        "flat_result": [
+          99,
+          105
+        ],
+        "zero_not_rest": [
+          106,
+          115
+        ],
+        "opposite_pass": [
+          116,
+          128
+        ]
+      },
+      "timing_scope": "Source/dry-clock contract, not measured v003 video or real WAV timing",
+      "superposition_duration_change_s": [
+        152,
+        158
+      ]
+    }
+  ],
+  "reference_changes": [
+    {
+      "project_id": "wave-superposition-20261028",
+      "unit": "S04",
+      "old_reference": "r2",
+      "new_references": [
+        {
+          "id": "r2a",
+          "focus": "opposite_approach",
+          "text": "相遇时，同处一个正位移、一个负位移，逐渐抵消；"
+        },
+        {
+          "id": "r2b",
+          "focus": "flat_result",
+          "text": "完全重合的一刻，绳形竟然平直了。"
+        }
+      ],
+      "all_unit_text_unchanged": true,
+      "references_are_not_tts_boundaries": true
+    }
+  ],
+  "input_review_provenance_sha256": {
+    "runtime/sessions/wave-unit-20261028/visual-formation-v002.json": "5629157bcea91943bb68d7498bdd1bef43992f7b994779ac40cc579a251e0305",
+    "runtime/sessions/wave-unit-20261028/visual-reading-v002.json": "7c5c655818b4b4752a2e31a1254d0acde48779f09802af95bb2e48c340760226",
+    "runtime/sessions/wave-unit-20261028/visual-superposition-v002.json": "1f7c58ad113dafd7e1529cbfd5c8ddee0dd8cd6ff686c68add257fce55a1d9f4",
+    "runtime/sessions/wave-unit-20261028/narration-evidence-01a181ab-ef1d-7193-9d4a-647ffa32f01c/review-notes-v001.json": "c9140e56d3a02cdd224455b801d69befeed43597eeed2f8b470e891117e45b73"
+  },
+  "verification": {
+    "pre_freeze_wave_contract_tests_passed": 38,
+    "manifest_contract_test_runs_after_creation": true,
+    "native_imports": "All three standalone classes import successfully without loading historical aggregate",
+    "preserved": "Pure model, historical aggregate, scientific brief, teaching design and every unit.text",
+    "no_author_render_or_tts": true
+  },
+  "stable_common_commitment": "Author will not edit any frozen common or lesson visual input during lead v003 rendering; remaining fixture/test verification is outside all production watch sets",
+  "consumers": [
+    "lead renderer",
+    "independent reviewer",
+    "future local retiming author"
+  ],
+  "lifecycle": "Coordinated initial v003 handoff plus independent per-lesson watch records; aggregate is archival metadata, not a common render input",
+  "invalidation": "Use each lesson watch-v003.json independently. Local source/hold/plan changes invalidate that lesson only; changes to actual shared/common watched files affect every dependent lesson. Never overwrite historical attempts or approvals",
+  "approval_boundary": "Author implementation/handoff only; actual v003 pixels, installed text and complete real WAVs need independent review by a different agent/context"
+}

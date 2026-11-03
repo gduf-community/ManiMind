@@ -1,0 +1,181 @@
+{
+  "schema_version": 3,
+  "project_id": "math-derivative-ch07-extremes-20261102",
+  "version": "v001",
+  "status": "not_reviewed",
+  "units": [
+    {
+      "id": "ch07-opening",
+      "cue": "opening",
+      "text": "上一课，我们判断一个点是不是比附近高、比附近低。现在把问题扩大：对于x减一的平方，在零到三这个闭区间里，最大的函数值是多少，最小的又是多少？闭区间把零和三也包含进来了。我们要和整个区间里的点比较，所以内部的转折位置值得检查，边界上的点也一样有资格参加。",
+      "references": [
+        {
+          "id": "opening-r1",
+          "focus": "closed_problem",
+          "text": "上一课，我们判断一个点是不是比附近高、比附近低。现在把问题扩大：对于x减一的平方，在零到三这个闭区间里，最大的函数值是多少，最小的又是多少？"
+        },
+        {
+          "id": "opening-r2",
+          "focus": "whole_comparison",
+          "text": "闭区间把零和三也包含进来了。我们要和整个区间里的点比较，所以内部的转折位置值得检查，边界上的点也一样有资格参加。"
+        }
+      ]
+    },
+    {
+      "id": "ch07-candidates",
+      "cue": "candidates",
+      "text": "这个函数的导数是二乘以括号里的x减一，内部只有x等于一时导数为零。沿用上一课的必要条件：一个可导的内部点，如果取得最大值或最小值，在附近当然也是极值点，因此它的导数必须为零。再把端点零和三加上。端点只有一边属于这个区间，用来检查内部点的双侧条件，在这里并不适用。我们现在得到三个候选：零、一、三。还要算出它们各自的函数值，才能决定谁最大、谁最小。为什么本例这样找就够了？因为函数在整段处处可导；如果最大或最小发生在内部，刚才的条件会把它收进驻点，发生在边界，则已经收进两个端点。",
+      "references": [
+        {
+          "id": "candidates-r1",
+          "focus": "interior_candidate",
+          "text": "这个函数的导数是二乘以括号里的x减一，内部只有x等于一时导数为零。沿用上一课的必要条件：一个可导的内部点，如果取得最大值或最小值，在附近当然也是极值点，因此它的导数必须为零。"
+        },
+        {
+          "id": "candidates-r2",
+          "focus": "all_candidates",
+          "text": "再把端点零和三加上。端点只有一边属于这个区间，用来检查内部点的双侧条件，在这里并不适用。我们现在得到三个候选：零、一、三。还要算出它们各自的函数值，才能决定谁最大、谁最小。"
+        },
+        {
+          "id": "candidates-r3",
+          "focus": "candidate_reason",
+          "text": "为什么本例这样找就够了？因为函数在整段处处可导；如果最大或最小发生在内部，刚才的条件会把它收进驻点，发生在边界，则已经收进两个端点。"
+        }
+      ]
+    },
+    {
+      "id": "ch07-compare",
+      "cue": "compare",
+      "text": "把三个位置分别代回原函数。零减一再平方，得到一；一减一再平方，得到零；三减一再平方，得到四。横坐标只是候选的位置，真正要比较的是右边这一列：一、零、四。零最小，所以在x等于一处取得最小值零。四最大，所以在右端点x等于三处取得最大值四。这个最高点没有出现在内部驻点，正好说明为什么端点必须留下来一起比较。",
+      "references": [
+        {
+          "id": "compare-r1",
+          "focus": "candidate_values",
+          "text": "把三个位置分别代回原函数。零减一再平方，得到一；一减一再平方，得到零；三减一再平方，得到四。横坐标只是候选的位置，真正要比较的是右边这一列：一、零、四。"
+        },
+        {
+          "id": "compare-r2",
+          "focus": "closed_extremes",
+          "text": "零最小，所以在x等于一处取得最小值零。四最大，所以在右端点x等于三处取得最大值四。这个最高点没有出现在内部驻点，正好说明为什么端点必须留下来一起比较。"
+        }
+      ]
+    },
+    {
+      "id": "ch07-parameter",
+      "cue": "parameter",
+      "text": "函数保持不变，把右端点改成可以移动的b。亮起来的曲段才是当前的闭区间，暗下来的部分只作参照。先让b在一和二之间移动，内部最低点一一直在范围里，最小值仍是零。右端点的高度还小于左端点的一，所以这时最大值在左端点取得。继续往右拉，右端点的函数值逐渐接近一。当b等于二，两端点一样高，函数值都等于一。这时最大值还是一，但取得最大值的位置有两个：零和二。最值的数值可以唯一，取得它的位置却可以不止一个。再让b越过二，右端点继续升高，超过左端点。回到b等于三，右端点的值已经是四，最大值转到了右端。我们没有更换函数，只是改变比较范围，就看到了最大值所在位置的变化。",
+      "references": [
+        {
+          "id": "parameter-r1",
+          "focus": "parameter_left_wins",
+          "text": "函数保持不变，把右端点改成可以移动的b。亮起来的曲段才是当前的闭区间，暗下来的部分只作参照。先让b在一和二之间移动，内部最低点一一直在范围里，最小值仍是零。右端点的高度还小于左端点的一，所以这时最大值在左端点取得。"
+        },
+        {
+          "id": "parameter-r2",
+          "focus": "parameter_to_tie",
+          "text": "继续往右拉，右端点的函数值逐渐接近一。"
+        },
+        {
+          "id": "parameter-r3",
+          "focus": "parameter_tie",
+          "text": "当b等于二，两端点一样高，函数值都等于一。这时最大值还是一，但取得最大值的位置有两个：零和二。最值的数值可以唯一，取得它的位置却可以不止一个。"
+        },
+        {
+          "id": "parameter-r4",
+          "focus": "parameter_right_overtakes",
+          "text": "再让b越过二，右端点继续升高，超过左端点。"
+        },
+        {
+          "id": "parameter-r5",
+          "focus": "parameter_right_wins",
+          "text": "回到b等于三，右端点的值已经是四，最大值转到了右端。我们没有更换函数，只是改变比较范围，就看到了最大值所在位置的变化。"
+        }
+      ]
+    },
+    {
+      "id": "ch07-conditions",
+      "cue": "conditions",
+      "text": "常用的保证是：函数在一个有限闭区间上连续，就一定能取得最大值和最小值。放回这张图，连续对应曲线不断开，闭区间对应两个端点也在范围里。像沿这条完整曲线走，总能在其中找到最高和最低的位置。这个保证说的是能取到。实际到哪里找，还要看函数的性质。本例处处可导，就比较端点和内部驻点；若遇到内部不可导的位置，也要把那些位置检查进去。范围、条件和搜索理由，要放在一起看。",
+      "references": [
+        {
+          "id": "conditions-r1",
+          "focus": "existence_conditions",
+          "text": "常用的保证是：函数在一个有限闭区间上连续，就一定能取得最大值和最小值。放回这张图，连续对应曲线不断开，闭区间对应两个端点也在范围里。像沿这条完整曲线走，总能在其中找到最高和最低的位置。"
+        },
+        {
+          "id": "conditions-r2",
+          "focus": "existence_and_search",
+          "text": "这个保证说的是能取到。实际到哪里找，还要看函数的性质。本例处处可导，就比较端点和内部驻点；若遇到内部不可导的位置，也要把那些位置检查进去。范围、条件和搜索理由，要放在一起看。"
+        }
+      ]
+    },
+    {
+      "id": "ch07-open_interval",
+      "cue": "open_interval",
+      "text": "仍然是x减一的平方，现在只把区间换成零到三的开区间。两个端点变成空心，表示它们不属于定义域。内部的x等于一还在，函数值零也照常能取到，所以最小值零保留下来了。往右端点靠近，曲线上的点越来越高，函数值越来越接近四。只要x还小于三，我们总能再往右走一点，找到更大的函数值；而要恰好等于四，在这个范围的边界处才会发生。这个边界三已经被排除，因此四取不到，没有最大值。四是最小的上界，叫作上确界。这里同时出现了最小值零和取不到的上确界四；开区间是否有最值，要分别看相应的位置是否还属于定义域。",
+      "references": [
+        {
+          "id": "open_interval-r1",
+          "focus": "open_minimum_retained",
+          "text": "仍然是x减一的平方，现在只把区间换成零到三的开区间。两个端点变成空心，表示它们不属于定义域。内部的x等于一还在，函数值零也照常能取到，所以最小值零保留下来了。"
+        },
+        {
+          "id": "open_interval-r2",
+          "focus": "open_approach",
+          "text": "往右端点靠近，曲线上的点越来越高，函数值越来越接近四。只要x还小于三，我们总能再往右走一点，找到更大的函数值；而要恰好等于四，在这个范围的边界处才会发生。"
+        },
+        {
+          "id": "open_interval-r3",
+          "focus": "unattained_supremum",
+          "text": "这个边界三已经被排除，因此四取不到，没有最大值。四是最小的上界，叫作上确界。这里同时出现了最小值零和取不到的上确界四；开区间是否有最值，要分别看相应的位置是否还属于定义域。"
+        }
+      ]
+    },
+    {
+      "id": "ch07-closing",
+      "cue": "closing",
+      "text": "求最值，先把比较范围说清，再找候选、比较函数值。同一个函数，在闭区间里能取到零和四；去掉这两个端点以后，零仍能取到，四只剩下趋近的上界。定义域既决定谁参加比较，也决定答案能不能实现。下一课，我们从一张正方形纸板出发，把裁剪和折盒子的尺寸写成函数，再用这些比较方法，找出真正做得出来的最大体积。",
+      "references": [
+        {
+          "id": "closing-r1",
+          "focus": "interval_method",
+          "text": "求最值，先把比较范围说清，再找候选、比较函数值。同一个函数，在闭区间里能取到零和四；去掉这两个端点以后，零仍能取到，四只剩下趋近的上界。定义域既决定谁参加比较，也决定答案能不能实现。"
+        },
+        {
+          "id": "closing-r2",
+          "focus": "modeling_bridge",
+          "text": "下一课，我们从一张正方形纸板出发，把裁剪和折盒子的尺寸写成函数，再用这些比较方法，找出真正做得出来的最大体积。"
+        }
+      ]
+    }
+  ],
+  "audio_status": "not_generated",
+  "alignment_status": "not_measured_no_acoustic_timestamps",
+  "author_agent": "019eaf8b-9151-75e2-9db4-5ff834335577",
+  "author_context": "019eaf8b-9151-75e2-9db4-5ff834335577",
+  "writer": "01a199e9-7432-7052-96f7-6bd6eb2e63bb",
+  "consumers": [
+    "chapter lead",
+    "renderer",
+    "future independent reviewer",
+    "future narration installer"
+  ],
+  "lifecycle": "Author-C v001 draft; lesson-scoped, not an approved installation",
+  "invalidation": "Change to source, model, helper, profile, chapter context, text or cue timing requires dependent revalidation",
+  "contributors": [
+    {
+      "author_agent": "01a199e9-7432-7052-96f7-6bd6eb2e63bb",
+      "author_context": "01a199e9-7432-7052-96f7-6bd6eb2e63bb",
+      "contribution": "Original interval lesson and unchanged narration"
+    }
+  ],
+  "repair": {
+    "source_draft": "/Users/pengweitai/Projects/ManiMind/runtime/projects/math-derivative-ch07-extremes-20261102/narration-draft-v001.json",
+    "source_sha256": "a3697c9a5a184e67f38f934eb63401c8bb678ea458e1bf2ad77c51805c519d33",
+    "report": "review/narration-v001.json",
+    "reference": "candidates-r1",
+    "before": "这个函数的导数是二乘x减一，内部只有x等于一时导数为零。沿用上一课的必要条件：一个可导的内部点，如果取得最大值或最小值，在附近当然也是极值点，因此它的导数必须为零。",
+    "after": "这个函数的导数是二乘以括号里的x减一，内部只有x等于一时导数为零。沿用上一课的必要条件：一个可导的内部点，如果取得最大值或最小值，在附近当然也是极值点，因此它的导数必须为零。",
+    "scope": "Only spoken multiplication grouping; visuals, candidate reasoning, conditions, all other refs and text unchanged"
+  }
+}

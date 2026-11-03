@@ -1,0 +1,48 @@
+{
+  "project_id": "deepseek-team-20261023",
+  "model": "deepseek-flash",
+  "documented_version": "DeepSeek-V4.1-Flash-1017",
+  "base_url": "https://api.deepseek.com/v1",
+  "api_key_env": "DEEPSEEK_API_KEY",
+  "thinking": {"type": "enabled"},
+  "reasoning_effort": "max",
+  "top_p": 0.95,
+  "max_output_tokens": 393216,
+  "timeout_seconds": 3600,
+  "max_requests": null,
+  "max_renders": null,
+  "max_review_cycles": null,
+  "max_cost_CNY": null,
+  "pricing": {
+    "currency": "CNY",
+    "input_per_million_peak_uncached": 2,
+    "output_per_million_peak": 8,
+    "input_per_million_offpeak_uncached": 1,
+    "input_per_million_offpeak_cached": 0.02,
+    "output_per_million_offpeak": 4,
+    "source": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/",
+    "verified_date": "2026-10-23",
+    "basis": "Official rates rechecked before this experiment; same numerical rates as prior run; estimate, not invoice"
+  },
+  "brief": {
+    "audience": "已接触速度与重力的高中学生",
+    "goal": "解释同高度水平抛出、忽略空气阻力时，横向初速度改变射程但不改变落地时间，并能预测改变高度后的结果。",
+    "suggested_duration_seconds": [90, 150],
+    "facts": {
+      "model": "质点、均匀重力场、无空气阻力、初始竖直速度为零；比较横速时初始高度相同",
+      "coordinates": "x=vx*t, y=h-g*t*t/2, ground y=0, y axis upwards",
+      "landing_time": "T=sqrt(2*h/g)",
+      "range": "R=vx*T",
+      "teaching_g": 10,
+      "source": "https://openstax.org/books/physics/pages/5-3-projectile-motion"
+    },
+    "guidance": "制作有兴趣、有因果解释、有审美完成度的原创知识动画。可以借鉴动画角色通过行动探索规律、数学可视化帮助理解的创作原则，但不复制现有角色、作品、分镜或素材。故事、例子数值、镜头、构图、节奏、配色由你自主决定，不强制固定模板。",
+    "review_standards": [
+      "科学结论与图形运动相符，交代模型适用条件",
+      "观众能跟随问题和解释，而不仅仅看见公式",
+      "关键文字可读、无严重遮挡，画面有清楚的注意力层级",
+      "旁白、字幕与关键动作顺序合理，不提前泄露尚未发生的结果",
+      "原创内容，成片连续、完整、无明显技术故障"
+    ]
+  }
+}

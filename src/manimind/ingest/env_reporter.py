@@ -53,7 +53,12 @@ class EnvReporter:
 
         python = make_result("python")
         node = make_result("node")
-        manim = make_result("manim")
+        manim_available = result.get("manimgl", result.get("manim", False))
+        manim = ToolCheckResult(
+            name="manimgl",
+            available=manim_available,
+            details="ManimGL is the default renderer; ManimCE remains optional.",
+        )
         ffmpeg = make_result("ffmpeg")
 
         # 计算总体状态
@@ -70,7 +75,7 @@ class EnvReporter:
             if not node.available:
                 missing.append("node")
             if not manim.available:
-                missing.append("manim")
+                missing.append("manimgl")
             if not ffmpeg.available:
                 missing.append("ffmpeg")
             warnings.append(f"缺少或未检测到工具: {', '.join(missing)}")

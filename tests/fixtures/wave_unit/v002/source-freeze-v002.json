@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "unit_id": "wave-unit-20261028",
+  "version": "v002",
+  "frozen_at_utc": "2026-10-28T08:35:30.417555+00:00",
+  "author_agent": "01a1817c-7136-79a3-9ca8-6b508ab35228",
+  "author_context": "01a1817c-7136-79a3-9ca8-6b508ab35228",
+  "writer": "01a1817c-7136-79a3-9ca8-6b508ab35228",
+  "status": "frozen_for_lead_silent_render_not_reviewed",
+  "ready_for_silent_render": true,
+  "shared_scene": "examples/wave_unit_visual.py",
+  "shared_model": "examples/wave_unit_model.py",
+  "lessons": [
+    {
+      "project_id": "wave-formation-20261028",
+      "scene_class": "WaveFormationLesson",
+      "duration": 152,
+      "plan": "runtime/projects/wave-formation-20261028/plan.json",
+      "lesson_context": "runtime/projects/wave-formation-20261028/context-v003.json",
+      "narration_draft": "runtime/projects/wave-formation-20261028/narration-draft-v001.json"
+    },
+    {
+      "project_id": "wave-reading-20261028",
+      "scene_class": "WaveReadingLesson",
+      "duration": 182,
+      "plan": "runtime/projects/wave-reading-20261028/plan.json",
+      "lesson_context": "runtime/projects/wave-reading-20261028/context-v003.json",
+      "narration_draft": "runtime/projects/wave-reading-20261028/narration-draft-v001.json"
+    },
+    {
+      "project_id": "wave-superposition-20261028",
+      "scene_class": "WaveSuperpositionLesson",
+      "duration": 152,
+      "plan": "runtime/projects/wave-superposition-20261028/plan.json",
+      "lesson_context": "runtime/projects/wave-superposition-20261028/context-v003.json",
+      "narration_draft": "runtime/projects/wave-superposition-20261028/narration-draft-v001.json"
+    }
+  ],
+  "supersession": {
+    "kind": "shared-source-supersession",
+    "previous_freeze": "runtime/projects/wave-unit-20261028/source-freeze-v001.json",
+    "previous_freeze_sha256": "454804fb03366001679b0a8a444406585bc4d9825d7df1ece4ccb1e54d2c98d9",
+    "affected_projects": [
+      "wave-formation-20261028",
+      "wave-reading-20261028",
+      "wave-superposition-20261028"
+    ],
+    "requires_new_attempts_for_all_lessons": true,
+    "changes": [
+      "Six Dot constructor sites now explicitly set fill_color, including ordinary grey beads",
+      "Both axis builders put horizontal quantity/unit names beyond the final tick using actual text width",
+      "Three plans and three continuous-unit drafts declare the actual author_context equal to author_agent"
+    ],
+    "unchanged": [
+      "Pure mathematical model",
+      "Teaching content and intact narration units",
+      "Cue durations, physical clocks, marks and focus windows",
+      "Scientific brief, teaching design, unit and context-v003 inputs"
+    ],
+    "changed_visual_inputs": [
+      "examples/wave_unit_visual.py",
+      "runtime/projects/wave-formation-20261028/plan.json",
+      "runtime/projects/wave-reading-20261028/plan.json",
+      "runtime/projects/wave-superposition-20261028/plan.json"
+    ],
+    "v001_render_evidence_preserved": [
+      {
+        "render_record": "outputs/wave-formation-20261028/v001/render.json",
+        "sha256": "ba9502797f1fd6bd490b31877111615d3973a05dd97c41a09b30fa17e23890b5",
+        "status": "historical_v001_not_reapproved_or_overwritten"
+      },
+      {
+        "render_record": "outputs/wave-reading-20261028/v001/render.json",
+        "sha256": "f9aa48f3db7dccf3b09fbbbaecbcfd5a7feadfc8ad248f0ff64d6672cb49aed3",
+        "status": "historical_v001_not_reapproved_or_overwritten"
+      },
+      {
+        "render_record": "outputs/wave-superposition-20261028/v001/render.json",
+        "sha256": "a62eb5a9c52c7a3e2efa0c8a6443dd4621f5162384f59e70b7f7023606df8195",
+        "status": "historical_v001_not_reapproved_or_overwritten"
+      }
+    ],
+    "review_boundary": "Nash v001 findings remain attached to original v001 evidence; no approval is inherited by v002"
+  },
+  "visual_input_sha256": {
+    "configs/visual-first-workflow-v4-unit.json": "ae00dd9f63190a29f4745c54bfd83d2ae36468d459f456509907edefa095adfd",
+    "docs/curricula/high-school-physics-v0.1.csv": "267c2219d83b8fc8cfd4e3bf845b4f2a4f035ca0e097cc6950601ba30306948b",
+    "examples/wave_unit_model.py": "a6752cb1db379c5e6be24f6421e52128e0242a649a572b18d529651f79c25fde",
+    "examples/wave_unit_visual.py": "8ed9f2bb557bc37d1e525d6ff5aaa0142231832506b4ae0ceac1090a0ea906ba",
+    "runtime/projects/wave-formation-20261028/context-v003.json": "ace6bca6cc9ba05529b3fa97c93c9d3205fd6d96d7a89b915a3eb2a156b6f88e",
+    "runtime/projects/wave-formation-20261028/plan.json": "bf73c839cadf39b008e515d66215f91f98d2adf58f6b22cbfb1badae66a68f3a",
+    "runtime/projects/wave-reading-20261028/context-v003.json": "1556efcbeb01c427d54d19f55b8cf3b816df367db32916051671e7e8adf239ae",
+    "runtime/projects/wave-reading-20261028/plan.json": "7a9abd4afd7c7f99003dc96dde85cee365ffd3594f2cee3b21336daae9fe7b7c",
+    "runtime/projects/wave-superposition-20261028/context-v003.json": "6335d623a9257c753fdc0d0d04f6e4b675b0b1e567ed6477d4303403497b1961",
+    "runtime/projects/wave-superposition-20261028/plan.json": "f8949879d5530d0d6fa306a565569f9ed9f2ee749fad63ec503a8b61a1f48b4c",
+    "runtime/projects/wave-unit-20261028/scientific-brief.json": "43ef4ac26c3213b935174566c219fa0ffb828387c89c49230e97cb067236ecb6",
+    "runtime/projects/wave-unit-20261028/teaching-design.md": "0ecf0bc6f814cccf0821499359e522deb94c7eb4a49a9890c7be859989fcc260",
+    "runtime/projects/wave-unit-20261028/unit.json": "bfb02a0e9ccd5a032e8139f52c7582aa27d66827ad4f7beb1d04a64340f03443",
+    "src/manimind/components/catalog.py": "2bf2def6c94397613d247ad2cb7e4859c4116eb62c5c44755f7cf63450ec7bb0",
+    "src/manimind/components/formula_motion.py": "47c0dfcfe5e4f7801f6bee5a465e203c1795bc9a800eb53a3b91c9a72f2a4914",
+    "src/manimind/components/typography.py": "1cdcfcfb2ab675fb7b1940cb242c7c241a14932886d16b78ac5001039873ef48",
+    "src/manimind/curriculum.py": "6a51aaa5dd796a5d7d21e05988058ecb9dcffe5659cceaa961201fae2d81d26d",
+    "src/manimind/experiments/freeform_support.py": "28b37dc707e7e07b719c3f3cf18ba10c4db18ae8adda7b8f102aba7f90ca4967",
+    "src/manimind/experiments/understanding_support.py": "ab423add671dd567a2b6b07bd06207573cce802be359537f07eac447d4f5d542",
+    "src/manimind/experiments/visual_first_data.py": "27fef6125910067ffbbd58da3b527fe9d5ded9613f143e1ad3988edd8eaad4b0",
+    "src/manimind/experiments/visual_first_support.py": "fb879f1b53a195cea95a2cc4a1f1ca72b4dc0d98ed7e27f6696ae3897e110e08",
+    "src/manimind/postproduce/formula_film.py": "be0550d47b91bbe6111c7f2df2d90216fc3fd548247c1f03fd112b3c2be105be",
+    "src/manimind/postproduce/understanding_render.py": "38c5daa7d1584c0196fee92cb01b4d5c84c62cab45198414c3296c1b24cf4fd1",
+    "src/manimind/render/manim_renderer.py": "80a97ee2969b2b75c417a3cbf9f75a17e30d1999d8ca0936657d5be6d9ef22c4",
+    "src/manimind/review/semantic_focus.py": "83184519b434e65d341537ff3473157f1ce6b51629f01d029dc0eb1b4d4e9a34"
+  },
+  "narration_draft_sha256": {
+    "runtime/projects/wave-formation-20261028/narration-draft-v001.json": "e02b2a5b45f1766c0944375d8f7a5cfaa1f1be786bf8f42c1033ff3d6b6a4c26",
+    "runtime/projects/wave-reading-20261028/narration-draft-v001.json": "b0598a1004c77fe6d86b9e040d5ed3dcc345ab03ded7eed53bf819392fc8c0e5",
+    "runtime/projects/wave-superposition-20261028/narration-draft-v001.json": "c1633022df4ee2ae4fe5ef64bcd8badd290af28cf5e9af306c0857f950e537fb"
+  },
+  "verification": {
+    "native_dot_fills": [
+      "#F3D36A",
+      "#AAB3B9",
+      "#58D5B0",
+      "#FF8F98"
+    ],
+    "native_tex_bounds": {
+      "x_axis_end10": {
+        "gap_scene_units": 0.3356810569763189,
+        "right_edge": 6.579393005371094
+      },
+      "time_axis_end8": {
+        "gap_scene_units": 0.39553127288818324,
+        "right_edge": 4.196984596252442
+      }
+    },
+    "scope": "Native object/TeX geometry and offline contracts, not new rendered pixels, listening or approval",
+    "tracked_data_snapshots": "tests/fixtures/wave_unit/v002; old root snapshots preserved"
+  },
+  "consumers": [
+    "lead renderer",
+    "independent reviewer"
+  ],
+  "lifecycle": "All three lessons share this one frozen visual implementation; no bound visual edits during v002 rendering",
+  "invalidation": "Any bound file change invalidates v002. Shared scene/model changes require coordinated new attempts for all three lessons; preserve historical media and reviews",
+  "approval_boundary": "Author handoff only. Independent reviewer agent/context must differ from the actual author. Author has not rendered v002, generated TTS or approved publication"
+}

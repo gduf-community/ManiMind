@@ -1,0 +1,48 @@
+{
+  "artifact_type": "test_fixture",
+  "status": "test_only_not_production_or_approved",
+  "model_version": "monotonicity-cubic-plus-disconnected-v002",
+  "baseline_source_sha256": "ffd0c30f33afd8f6fb8a68f8bf4e58f371d1a0ee7d7b6415f70063e1fd8240c2",
+  "shared_sha256": "ed9bb7ece0f273c72fc4db744200e7a3a96e51ad54e258861305140e9d0c17ae",
+  "samples": [
+    {
+      "x": "-2",
+      "q": "1/2",
+      "dq": "1/4"
+    },
+    {
+      "x": "-1",
+      "q": "1",
+      "dq": "1"
+    },
+    {
+      "x": "1/2",
+      "q": "-2",
+      "dq": "4"
+    },
+    {
+      "x": "1",
+      "q": "-1",
+      "dq": "1"
+    }
+  ],
+  "cross_pair": {
+    "a": "-1",
+    "b": "1",
+    "qa": "1",
+    "qb": "-1",
+    "output_difference": "-2",
+    "whole_interval_defined": false
+  },
+  "left_interval": [
+    "-2",
+    "-1"
+  ],
+  "right_interval": [
+    "1/2",
+    "1"
+  ],
+  "planned_added_seconds": 72,
+  "baseline_seconds": 324,
+  "total_seconds": 396
+}

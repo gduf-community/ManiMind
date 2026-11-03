@@ -1,0 +1,37 @@
+{
+  "version": "understanding-first-v3",
+  "editorial_revision": "2026-11-03-visible-formula-identity-v1",
+  "delivery_contract": "continuous-meaning-units-v1",
+  "formula_continuity_contract": "traceable-formula-v1",
+  "based_on": "configs/visual-first-workflow-v4.2-unit.json",
+  "purpose": "按课程位置和理解难度安排解释，关键公式变化呈现可追踪的数学对象与运算",
+  "author_guidance": [
+    "先从课程context确定本课新增理解、先修出口与后课调用，保留标题和自然引入；熟悉操作紧凑，首次出现和难以想象的关系充分展开。",
+    "用平实、准确的口语沿对象、变化、原因向前讲，保留科学术语、条件、单位和完整理由；整节通读，不反复回应预设错误。",
+    "选择推理承重的公式构建、代入、消元、提因式和表示转换，想清观众需要跟住哪个数学对象以及这一步做了什么。",
+    "同一对象沿用语义身份。可保留可读旧式，让相关整项或变量的可见副本从原位置到达新角色；新项作为新项出现，重复字形按数学角色区分。",
+    "先在目标位置淡入整式，再移动几个字符，不能说明它从上一步怎样来。用明确来路、运算关系和需要的图形联系承担解释，路径与错峰由实际布局决定。",
+    "不要求所有公式、标签或字符运动，不规定轨迹、动作数或秒数。完整项可比散字更容易跟踪；必要时重排或延长解释，不让符号同时乱飞。",
+    "优化选择当前有效内容作保留基线，新增目标单独列明；不能把旧版尚未做到的功能写成已保留，也不能以整洁删掉有效推导。",
+    "按完整意群生成或复用同文原音，实际子句与画面共同安排节奏；单套字幕、发音自然度及学生理解分别验收。"
+  ],
+  "review_checks": {
+    "mechanism": "本课新增理解有实际现象与推理支撑，术语、单位、条件及先修调用准确",
+    "attention": "关键对象清楚，复杂变化的注意力安排能跟上，文字与配音指代一致",
+    "formula_continuity": "从第一次相关公式构建开始，逐个查看选定动作的源、过程中帧和目标。判断同一量是否能被追踪、运算关系是否可见；曲线或数字在动、代码有Transform或终式正确均不能替代",
+    "pacing": "简单处紧凑，困难处看得清变化和原因；重要推导不只剩终态留读",
+    "meaning_alignment": "完整原音对应当前实际过程，不能用历史行或大focus窗掩盖动作与讲述错位",
+    "transfer": "本课出口能支持后课调用；学生理解另行实测"
+  },
+  "review": {
+    "visual_first": "独立新上下文看公共目标与当前真实画面，并在formula_continuity中逐项记录数学身份、运算及过程证据",
+    "post_visual_narration": "另一上下文按整节口语和实际focus复核指代、理由及详略",
+    "audio_alignment": "完整原WAV和真实过程帧独立审核，听感与发音另记",
+    "minimum_total": 80,
+    "critical_minimum": {"science": 3, "causality": 3, "visual_explanation": 3, "pacing": 3},
+    "scope": "保留既有独立审核与回归；新增证据校验约束审核完整性，不以数量阈值裁定教学好坏"
+  },
+  "entrypoint": "manimind.postproduce.traceable_film: gate/install/silent; later original-audio and captions use unit_film with the immutable approved silent source",
+  "generalization": "按实际题材选重要关系，不固定幕数、片长、推导条数或所有字符动画；无关键符号转换的作品沿用适用工作流",
+  "lifecycle": "新选v4.3的修订版本；v4.2及旧源码、配置、批准与媒体保持冻结。旧自主模型入口未自动支持此额外门禁。"
+}

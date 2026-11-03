@@ -2,9 +2,11 @@
 
 from __future__ import annotations
 
+import os
 from pathlib import Path
 import re
 from shutil import which
+import sys
 
 from .models import RuntimeLayout
 
@@ -99,12 +101,43 @@ def check_reference_archives(root: Path | None = None) -> dict[str, bool]:
     }
 
 
-def check_tools() -> dict[str, bool]:
+def local_tool_bin(root: Path | None = None) -> Path:
+    """Return the platform-specific bin directory of the local render environment."""
+    base = root or repo_root()
+    scripts_dir = "Scripts" if sys.platform == "win32" else "bin"
+    return base / "manimgl_env" / scripts_dir
+
+
+def resolve_tool(name: str, root: Path | None = None) -> str | None:
+    """Prefer a tool installed in ``manimgl_env`` before searching ``PATH``."""
+    executable = f"{name}.exe" if sys.platform == "win32" else name
+    local_executable = local_tool_bin(root) / executable
+    if local_executable.exists():
+        return str(local_executable)
+    return which(name)
+
+
+def prepend_local_tool_path(root: Path | None = None) -> None:
+    """Expose repository-local render tools to child processes for this run."""
+    bin_dir = local_tool_bin(root)
+    if not bin_dir.exists():
+        return
+    current = os.environ.get("PATH", "")
+    entries = current.split(os.pathsep) if current else []
+    value = str(bin_dir)
+    if value not in entries:
+        os.environ["PATH"] = os.pathsep.join([value, *entries])
+
+
+def check_tools(root: Path | None = None) -> dict[str, bool]:
     """检查关键工具是否可用。"""
     return {
-        "node": which("node") is not None,
-        "python": which("python") is not None,
-        "bun": which("bun") is not None,
-        "ffmpeg": which("ffmpeg") is not None,
-        "manim": which("manim") is not None,
+        "node": resolve_tool("node", root) is not None,
+        "python": resolve_tool("python", root) is not None,
+        "bun": resolve_tool("bun", root) is not None,
+        "ffmpeg": resolve_tool("ffmpeg", root) is not None,
+        "xelatex": resolve_tool("xelatex", root) is not None,
+        "dvisvgm": resolve_tool("dvisvgm", root) is not None,
+        "manimgl": resolve_tool("manimgl", root) is not None,
+        "manim": resolve_tool("manim", root) is not None,
     }

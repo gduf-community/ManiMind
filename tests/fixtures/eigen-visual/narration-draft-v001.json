@@ -1,0 +1,168 @@
+{
+  "status": "post_visual_intent_only_not_installed_or_approved",
+  "instruction": "动画先于声音；此稿仅为意图。静音像素独立通过后重写、复核并安装；未生成声音，不以估字速冒充实际音频排程。5080关闭，不SSH/TTS。",
+  "segments": [
+    {
+      "id": "E01",
+      "cue": "transform",
+      "focus": "matrix_map",
+      "text": "同一个矩阵作用在每个点上。红色基向量一零，变到二一。"
+    },
+    {
+      "id": "E02",
+      "cue": "transform",
+      "focus": "whole_plane",
+      "text": "网格和每支箭头一起接受同一个变换。坐标轴固定，红色箭头离开了原来的直线。"
+    },
+    {
+      "id": "E03",
+      "cue": "transform",
+      "focus": "general_turn",
+      "text": "一般方向会转向。有没有一些直线方向能够保留下来？"
+    },
+    {
+      "id": "E04",
+      "cue": "directions",
+      "focus": "definition",
+      "text": "我们寻找非零向量，让变换后的结果仍在原向量所在直线上，也就是 A v 等于拉姆达 v。"
+    },
+    {
+      "id": "E05",
+      "cue": "directions",
+      "focus": "candidate_lines",
+      "text": "观察绿色和黄色箭头。整个平面改变时，它们始终留在各自的原直线上。"
+    },
+    {
+      "id": "E06",
+      "cue": "equations",
+      "focus": "vector_equation",
+      "text": "把未知非零向量写成 x、y 两个分量。"
+    },
+    {
+      "id": "E07",
+      "cue": "equations",
+      "focus": "two_components",
+      "text": "矩阵乘法要求这两个等式同时成立。"
+    },
+    {
+      "id": "E08",
+      "cue": "equations",
+      "focus": "subtract",
+      "text": "上式减去下式，左边剩下 x 减 y，右边可以提取同一个拉姆达。"
+    },
+    {
+      "id": "E09",
+      "cue": "equations",
+      "focus": "factor",
+      "text": "再移到一边，得到两个因子的乘积等于零。"
+    },
+    {
+      "id": "E10",
+      "cue": "equal",
+      "focus": "equal_nonzero",
+      "text": "先看 x 等于 y。因为向量非零，这时 x 也一定非零。"
+    },
+    {
+      "id": "E11",
+      "cue": "equal",
+      "focus": "equal_substitute",
+      "text": "把 y 换成 x，代回第一式。"
+    },
+    {
+      "id": "E12",
+      "cue": "equal",
+      "focus": "equal_combine",
+      "text": "左边合并成三倍 x。"
+    },
+    {
+      "id": "E13",
+      "cue": "equal",
+      "focus": "equal_value",
+      "text": "除以非零的 x，得到特征值三。"
+    },
+    {
+      "id": "E14",
+      "cue": "equal",
+      "focus": "plus_direction",
+      "text": "这个方向上的所有非零向量，都对应同一个特征值三。"
+    },
+    {
+      "id": "E15",
+      "cue": "other",
+      "focus": "other_value",
+      "text": "再看 x 不等于 y。第二个因子非零，所以拉姆达只能等于一。"
+    },
+    {
+      "id": "E16",
+      "cue": "other",
+      "focus": "other_substitute",
+      "text": "把一代回第一分量。"
+    },
+    {
+      "id": "E17",
+      "cue": "other",
+      "focus": "other_reduce",
+      "text": "移项得到 x 加 y 等于零。"
+    },
+    {
+      "id": "E18",
+      "cue": "other",
+      "focus": "other_direction",
+      "text": "也就是 y 等于负 x。"
+    },
+    {
+      "id": "E19",
+      "cue": "other",
+      "focus": "all_directions",
+      "text": "于是得到另一条方向。两种情况已经覆盖了全部非零向量。"
+    },
+    {
+      "id": "E20",
+      "cue": "decompose",
+      "focus": "decompose",
+      "text": "一般向量沿两个特征方向分解。绿、黄两段首尾相接，合成向量 u。"
+    },
+    {
+      "id": "E21",
+      "cue": "decompose",
+      "focus": "independent_scaling",
+      "text": "接受同一个矩阵变换时，绿色分量变为三倍，黄色分量不变。把两段首尾相接，端点始终与直接变换重合。"
+    },
+    {
+      "id": "E22",
+      "cue": "decompose",
+      "focus": "recombine",
+      "text": "三三加上零点五、负零点五，得到三点五、二点五。"
+    },
+    {
+      "id": "E23",
+      "cue": "decompose",
+      "focus": "linearity_check",
+      "text": "直接做矩阵乘法，也得到同一个结果。这就是沿特征方向计算的用处。"
+    },
+    {
+      "id": "E24",
+      "cue": "rotation",
+      "focus": "rotation_input",
+      "text": "但在实数范围内，不是每个矩阵都有这样的方向。"
+    },
+    {
+      "id": "E25",
+      "cue": "rotation",
+      "focus": "quarter_turn",
+      "text": "这个矩阵把非零向量旋转九十度。"
+    },
+    {
+      "id": "E26",
+      "cue": "rotation",
+      "focus": "no_real_direction",
+      "text": "任意非零实向量旋转九十度后，都与原向量垂直，不可能仍在原来的直线上。因此没有实特征方向。"
+    },
+    {
+      "id": "E27",
+      "cue": "summary",
+      "focus": "summary",
+      "text": "特征向量找的是变换保留的直线，特征值给出线上变化的倍数。本例两个方向分别对应三和一。"
+    }
+  ]
+}

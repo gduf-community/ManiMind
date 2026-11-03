@@ -1,0 +1,200 @@
+{
+  "schema_version": 1,
+  "project_id": "induction-energy-20261028",
+  "segments": [
+    {
+      "id": "N01",
+      "cue": "opening",
+      "focus": "stationary_question",
+      "text": "磁场一直在，电流为何变了？"
+    },
+    {
+      "id": "N02",
+      "cue": "opening",
+      "focus": "moving_loop",
+      "text": "推杆，回路有电流；停下会怎样？"
+    },
+    {
+      "id": "N03",
+      "cue": "opening",
+      "focus": "stopped_result",
+      "text": "停下，电流归零。"
+    },
+    {
+      "id": "N04",
+      "cue": "separation",
+      "focus": "open_rod_and_electron",
+      "text": "先看开路导体棒里的电子。"
+    },
+    {
+      "id": "N05",
+      "cue": "separation",
+      "focus": "electron_deflection",
+      "text": "电子受磁场力向下偏，下端多电子，上端缺电子。"
+    },
+    {
+      "id": "N06",
+      "cue": "separation",
+      "focus": "electric_balance",
+      "text": "分开的电荷建立向下的电场，电场力把电子往上拉。"
+    },
+    {
+      "id": "N07",
+      "cue": "separation",
+      "focus": "open_force_balance",
+      "text": "达到稳态时，两种力大小相等。"
+    },
+    {
+      "id": "N08",
+      "cue": "voltage",
+      "focus": "force_balance_before_cancel",
+      "text": "两种力大小相等。"
+    },
+    {
+      "id": "N09",
+      "cue": "voltage",
+      "focus": "field_relation",
+      "text": "两边约去电荷量。"
+    },
+    {
+      "id": "N10",
+      "cue": "voltage",
+      "focus": "voltage_from_field",
+      "text": "电场强度乘棒长，就是两端电压。"
+    },
+    {
+      "id": "N11",
+      "cue": "voltage",
+      "focus": "open_voltage_result_hold",
+      "text": "代入电场强度，得到棒的开路电压。"
+    },
+    {
+      "id": "N12",
+      "cue": "flux",
+      "focus": "closed_current",
+      "text": "接通回路，两端电压推动电流。"
+    },
+    {
+      "id": "N13",
+      "cue": "flux",
+      "focus": "swept_area_motion",
+      "text": "棒走过一段距离，扫出一个长方形。"
+    },
+    {
+      "id": "N14",
+      "cue": "flux",
+      "focus": "swept_area_relation",
+      "text": "新增面积是棒长乘这段位移。"
+    },
+    {
+      "id": "N15",
+      "cue": "flux",
+      "focus": "signed_flux_relation",
+      "text": "磁场向纸内，磁通变化取负号。"
+    },
+    {
+      "id": "N16",
+      "cue": "flux",
+      "focus": "faraday_substitution",
+      "text": "电动势等于磁通变化率的负值。"
+    },
+    {
+      "id": "N17",
+      "cue": "flux",
+      "focus": "motional_emf_relation",
+      "text": "位移除以时间就是速度，又得到相同的电动势。"
+    },
+    {
+      "id": "N18",
+      "cue": "direction",
+      "focus": "lenz_increasing",
+      "text": "入纸磁通增加，感应磁场朝纸外，电流逆时针。"
+    },
+    {
+      "id": "N19",
+      "cue": "direction",
+      "focus": "stationary_flux",
+      "text": "停住后，磁通不再变，电流归零。"
+    },
+    {
+      "id": "N20",
+      "cue": "direction",
+      "focus": "lenz_decreasing",
+      "text": "反向拉，入纸磁通减少，感应磁场与电流都反向。"
+    },
+    {
+      "id": "N21",
+      "cue": "energy",
+      "focus": "mechanical_energy_source",
+      "text": "维持匀速推动，需要外力克服向左的安培力。"
+    },
+    {
+      "id": "N22",
+      "cue": "energy",
+      "focus": "force_relation",
+      "text": "电流越大，棒受到的安培力也越大。"
+    },
+    {
+      "id": "N23",
+      "cue": "energy",
+      "focus": "power_from_work",
+      "text": "外力乘运动速度，给出输入功率。"
+    },
+    {
+      "id": "N24",
+      "cue": "energy",
+      "focus": "power_product",
+      "text": "把安培力代入。"
+    },
+    {
+      "id": "N25",
+      "cue": "energy",
+      "focus": "mechanical_to_heat",
+      "text": "这份机械功率，恰好变成电阻的发热功率。"
+    },
+    {
+      "id": "N26",
+      "cue": "prediction",
+      "focus": "power_current_relation",
+      "text": "功率是电流平方乘电阻。"
+    },
+    {
+      "id": "N27",
+      "cue": "prediction",
+      "focus": "squared_current_substitution",
+      "text": "把电流式代进去。"
+    },
+    {
+      "id": "N28",
+      "cue": "prediction",
+      "focus": "quadratic_power_law",
+      "text": "功率与速度的平方成正比。"
+    },
+    {
+      "id": "N29",
+      "cue": "prediction",
+      "focus": "power_prediction",
+      "text": "速度翻倍，功率呢？"
+    },
+    {
+      "id": "N30",
+      "cue": "prediction",
+      "focus": "current_doubles",
+      "text": "电流翻倍。"
+    },
+    {
+      "id": "N31",
+      "cue": "prediction",
+      "focus": "power_scaling_result",
+      "text": "功率四倍，七点二瓦。"
+    }
+  ],
+  "audio_status": "not_generated",
+  "writer": "Physics author, post-visual narration intent",
+  "consumers": [
+    "post-visual installer",
+    "independent text reviewer"
+  ],
+  "lifecycle": "Draft only; installed and reviewed after actual visual approval",
+  "invalidation": "Text, visual, focus or profile change"
+}

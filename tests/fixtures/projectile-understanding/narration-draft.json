@@ -1,0 +1,17 @@
+{
+  "segments": [
+    {"id":"N01","cue":"question","focus":"question_hold","text":"同高抛出，横速翻倍，会更晚落地吗？"},
+    {"id":"N02","cue":"conditions","focus":"model_conditions","text":"先看无空气阻力的理想模型，竖直初速度为零。"},
+    {"id":"N03","cue":"same_height","focus":"same_height_motion","text":"一起出发，留意什么时候落地。"},
+    {"id":"N04","cue":"same_height","focus":"same_height_result","text":"都是一秒落地。横速翻倍，射程从四米变成八米，下落时间却没变。为什么？"},
+    {"id":"N05","cue":"directions","focus":"horizontal_component","text":"横速，说的是横着走多快。"},
+    {"id":"N06","cue":"directions","focus":"vertical_component","text":"横速没有分走竖直速度。它们描述两个方向。两球竖直初速相同，向下加速度也相同，所以下落过程相同。"},
+    {"id":"N07","cue":"recombine","focus":"shared_time_slices","text":"图上的展开，是拆开看同一时刻的位置，不是小球突然横向加速。每个时刻，两球下降一样多；接上不同的水平位移，位置就不同了。"},
+    {"id":"N08","cue":"landing_rule","focus":"landing_condition","text":"下降距离等于高度，就落地了。竖直条件给出这个时间。横向也用同一个时间，乘上横速，就是射程。"},
+    {"id":"N09","cue":"height_steps","focus":"first_second","text":"第一秒落下五米，向下速度已经增到每秒十米。"},
+    {"id":"N10","cue":"height_steps","focus":"second_second","text":"第二秒速度增到每秒二十米，又落了十五米。两秒落下的总距离，就成了四倍。"},
+    {"id":"N11","cue":"height_compare","focus":"height_fourfold","text":"高度从五米到二十米，是四倍，时间却只要两倍。横速不变，射程跟着时间，也变成两倍。"},
+    {"id":"N12","cue":"prediction","focus":"ninefold_question","text":"高度九倍，横速不变。时间、射程各是多少？"},
+    {"id":"N13","cue":"resolve","focus":"ninefold_check","text":"三倍时间，下降距离就是九倍。答案是三秒、十二米。换高度时先看时间；同高改横速，只改变射程。"}
+  ]
+}

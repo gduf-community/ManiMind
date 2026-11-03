@@ -1,0 +1,389 @@
+{
+  "schema_version": 1,
+  "project_id": "math-derivative-ch06-extrema-20261102",
+  "units": [
+    {
+      "id": "opening",
+      "asset": "visual_v004",
+      "baseline_interval": [
+        0,
+        32.733333333333334
+      ],
+      "function": "承接05的同一三次函数与导数，从升降转向引出局部问题",
+      "features": [
+        {
+          "id": "known_cubic",
+          "kind": "state",
+          "claim": "同一f=x³-3x、f'=3(x²-1)与坐标图，保持前课身份"
+        },
+        {
+          "id": "turn_question",
+          "kind": "process",
+          "claim": "从已知曲线到圈出两个转向处，再提出附近高低问题"
+        }
+      ]
+    },
+    {
+      "id": "neighborhood",
+      "asset": "visual_v004",
+      "baseline_interval": [
+        32.733333333333334,
+        87.06666666666666
+      ],
+      "function": "极值只比较足够近的邻域，窗口带着比较范围移动",
+      "features": [
+        {
+          "id": "local_max",
+          "kind": "state",
+          "claim": "半径.42的-1邻域、附近曲段、f(-1)=2与左升右降"
+        },
+        {
+          "id": "moving_neighborhood",
+          "kind": "process",
+          "claim": "窗口、曲线高亮、中心点和读数同步从-1到1，旧极大标签退出"
+        },
+        {
+          "id": "local_min",
+          "kind": "state",
+          "claim": "1邻域中中心比两侧低、f(1)=-2，比较范围仍局部而非全局"
+        }
+      ]
+    },
+    {
+      "id": "signs",
+      "asset": "visual_v004",
+      "baseline_interval": [
+        87.06666666666666,
+        143.46666666666667
+      ],
+      "function": "导数的因式、驻点和区间符号连接增减",
+      "features": [
+        {
+          "id": "factor_zeros",
+          "kind": "state",
+          "claim": "3(x-1)(x+1)与零点-1、1，不重算求导"
+        },
+        {
+          "id": "interval_signs",
+          "kind": "state",
+          "claim": "三个开区间+ - +与分界点0分开标，保持符号与位置"
+        },
+        {
+          "id": "signs_to_flow",
+          "kind": "process",
+          "claim": "在对应符号下出现增、减、增的三段几何走势"
+        }
+      ]
+    },
+    {
+      "id": "turns",
+      "asset": "visual_v004",
+      "baseline_interval": [
+        143.46666666666667,
+        201.96666666666667
+      ],
+      "function": "点沿同一曲线实际越过两个驻点，给变号和点值区别以对象",
+      "features": [
+        {
+          "id": "max_crossing",
+          "kind": "process",
+          "claim": "越过-1时先升后降，对应+→-、x=-1及极大值2"
+        },
+        {
+          "id": "min_crossing",
+          "kind": "process",
+          "claim": "越过1时先降后升，对应-→+、x=1及极小值-2"
+        },
+        {
+          "id": "position_value",
+          "kind": "state",
+          "claim": "极值点是位置、极值是函数值，原函数回代值与横坐标不混淆"
+        }
+      ]
+    },
+    {
+      "id": "stationary",
+      "asset": "visual_v004",
+      "baseline_interval": [
+        201.96666666666667,
+        251.96666666666667
+      ],
+      "function": "x³驻点不充分的反例，保留曲线通过原点及两侧正号",
+      "features": [
+        {
+          "id": "zero_derivative",
+          "kind": "state",
+          "claim": "独立g=x³、g'=3x²、g'(0)=0，与前图分场"
+        },
+        {
+          "id": "flat_tangent",
+          "kind": "state",
+          "claim": "原点水平切线及+0+两侧符号，不能将切平等同极值"
+        },
+        {
+          "id": "pass_zero",
+          "kind": "process",
+          "claim": "点从负侧过原点到正侧，左值小于0右值大于0仍递增"
+        },
+        {
+          "id": "not_extremum",
+          "kind": "state",
+          "claim": "经过原点继续增，驻点无极值，回到两侧值的比较"
+        }
+      ]
+    },
+    {
+      "id": "necessary",
+      "asset": "visual_v004",
+      "baseline_interval": [
+        251.96666666666667,
+        320.3666666666667
+      ],
+      "function": "可导内点必要性用左右差商解释，并以尖点说明条件",
+      "features": [
+        {
+          "id": "interior_necessary",
+          "kind": "state",
+          "claim": "可导的内点a：局部极值⇒f'(a)=0，命题不反向、不覆盖端点"
+        },
+        {
+          "id": "left_right_quotients",
+          "kind": "state",
+          "claim": "极大例中h<0差商≥0、h>0差商≤0，分子相同"
+        },
+        {
+          "id": "common_limit_reason",
+          "kind": "process",
+          "claim": "由必要性前提、两侧差商约束推进到相同双侧导数只能0，极小同理"
+        },
+        {
+          "id": "cusp_exception",
+          "kind": "state",
+          "claim": "|x|零处尖点极小而不可导，说明条件而非否定必要性"
+        },
+        {
+          "id": "two_sided_domain",
+          "kind": "process",
+          "claim": "v004内点两侧小邻域、0<|h|<δ与探针靠近，不越界"
+        },
+        {
+          "id": "comparison_numerator_transfer",
+          "kind": "process",
+          "claim": "v004同色f(a+h)/f(a)从比较式实际进入相减式，保留来源"
+        },
+        {
+          "id": "signed_quotient_transfer",
+          "kind": "process",
+          "claim": "v004共同非正分子分别除负h/正h，保留两侧差商和符号理由"
+        },
+        {
+          "id": "explicit_limit_transfer",
+          "kind": "process",
+          "claim": "v004两列值和不等式分别上移进入显式左右极限"
+        },
+        {
+          "id": "derivative_bounds_zero",
+          "kind": "state",
+          "claim": "v004已显示可导L=f'(a)=R、两种约束和零结论；不宣称旧版约束有源运动"
+        },
+        {
+          "id": "minimum_reversal",
+          "kind": "process",
+          "claim": "v004极小分子与两侧约束反向，结论仍零"
+        },
+        {
+          "id": "endpoint_scope",
+          "kind": "state",
+          "claim": "保留可导内点、非零小增量和局部范围；下一段保留端点不套用的提醒"
+        }
+      ]
+    },
+    {
+      "id": "closing",
+      "asset": "visual_v004",
+      "baseline_interval": [
+        320.3666666666667,
+        354.7
+      ],
+      "function": "收束局部方法并交接07全区间与端点比较",
+      "features": [
+        {
+          "id": "method",
+          "kind": "state",
+          "claim": "附近比较、正负转折判定、可导内点先驻点再看两侧"
+        },
+        {
+          "id": "endpoint_handoff",
+          "kind": "process",
+          "claim": "从局部方法过渡到整个区间与端点的问题，不冒称已演示端点算例"
+        }
+      ]
+    }
+  ],
+  "version": "v006",
+  "status": "not_reviewed",
+  "writer": "01a19f6b-174f-7431-a0fd-2adf59301a9e",
+  "consumers": [
+    "main",
+    "native tests",
+    "independent reviewers"
+  ],
+  "lifecycle": "CH06 v006 author revision, not approval",
+  "invalidation": "Source, baseline, clock, selected actions, media or evidence changes",
+  "assets": {
+    "visual_v004": {
+      "path": "outputs/math-derivative-ch06-extrema-20261102/visual-v004/manim/media/manimgl/understanding.mp4",
+      "sha256": "18386d4a9a24b67241f386b0c5b66d5a85136bd2c12e16ce317b23398eca5b4c",
+      "duration": 354.7
+    }
+  },
+  "baseline_selection": "Current visual-v004 complete teaching content; old v001 is not this task baseline",
+  "improvement_targets": [
+    {
+      "id": "comparison_to_numerator",
+      "operation": "subtract",
+      "source": "局部两个函数值",
+      "target": "同值相减≤0",
+      "purpose": "保留原reason_transfer"
+    },
+    {
+      "id": "negative_h_quotient",
+      "operation": "divide_negative",
+      "source": "同一非正分子与h<0",
+      "target": "左差商≥0",
+      "purpose": "保留真实源移动及条件避让"
+    },
+    {
+      "id": "positive_h_quotient",
+      "operation": "divide_positive",
+      "source": "同一非正分子与h>0",
+      "target": "右差商≤0",
+      "purpose": "保留左右分母条件"
+    },
+    {
+      "id": "quotients_to_limits",
+      "operation": "one_sided_limits",
+      "source": "两列差商与各自约束",
+      "target": "L≥0、R≤0",
+      "purpose": "约束零与极限方向零按数学角色分开"
+    },
+    {
+      "id": "equal_derivative",
+      "operation": "identify_shared_derivative",
+      "source": "可导及L/R",
+      "target": "L=f'(a)=R",
+      "purpose": "原句内形成共同导数，读后仅退别名而保留同一对象"
+    },
+    {
+      "id": "derivative_lower",
+      "operation": "equivalent_nonnegative_bound",
+      "source": "L≥0及固定f'(a)=L",
+      "target": "0≤f'(a)",
+      "purpose": "只复制零到左界，新关系符清楚绘制；可导标签在路径外"
+    },
+    {
+      "id": "bounds_join",
+      "operation": "intersect_bounds_on_fixed_object",
+      "source": "R≤0及同一固定f'(a)",
+      "target": "0≤f'(a)≤0",
+      "purpose": "接右零界，不交换导数和左界的次序，完整式继续保留"
+    },
+    {
+      "id": "bounds_to_zero",
+      "operation": "zero_width_interval",
+      "source": "保留的完整夹逼式",
+      "target": "下行同一导数=0",
+      "purpose": "副本明确来自唯一共同导数；不在原行交叠改写"
+    },
+    {
+      "id": "maximum_to_minimum",
+      "operation": "reverse_fresh_relation_glyphs",
+      "source": "极大关系与相同值/零导数",
+      "target": "极小反向，仍零",
+      "purpose": "旧关系完整退出后只绘制全新符号，不重加旧父公式"
+    }
+  ],
+  "evidence_limits": [
+    "Author inventory is not independent approval",
+    "Baseline v004 includes relation collision defects selected for repair",
+    "New movement goals never count as old baseline capabilities"
+  ],
+  "previous_unmet_improvement_targets": [
+    {
+      "id": "comparison_to_numerator",
+      "operation": "subtract",
+      "source": "局部比较中两个原函数值",
+      "target": "同值相减的非正分子",
+      "purpose": "保留v004已有的有源移动"
+    },
+    {
+      "id": "negative_h_quotient",
+      "operation": "divide_negative",
+      "source": "非正分子与h<0",
+      "target": "左差商≥0",
+      "purpose": "条件移到目的行下方，避免原路径穿标签"
+    },
+    {
+      "id": "positive_h_quotient",
+      "operation": "divide_positive",
+      "source": "同一分子与h>0",
+      "target": "右差商≤0",
+      "purpose": "保留另一侧值的真实来路"
+    },
+    {
+      "id": "quotients_to_limits",
+      "operation": "one_sided_limit",
+      "source": "两列差商及各自约束",
+      "target": "L≥0与R≤0的左右极限",
+      "purpose": "保留两列移动，不互换身份"
+    },
+    {
+      "id": "equal_derivative",
+      "operation": "identify_common_derivative",
+      "source": "可导条件及左右极限L/R",
+      "target": "L=f'(a)=R",
+      "purpose": "两侧极限汇到同一有限导数"
+    },
+    {
+      "id": "derivative_lower",
+      "operation": "substitute_left_bound",
+      "source": "共同导数与L≥0",
+      "target": "f'(a)≥0",
+      "purpose": "从两个可见来源拼装约束"
+    },
+    {
+      "id": "derivative_upper",
+      "operation": "substitute_right_bound",
+      "source": "同一个导数与R≤0",
+      "target": "f'(a)≤0",
+      "purpose": "不是两个独立导数"
+    },
+    {
+      "id": "bounds_join",
+      "operation": "intersect_bounds",
+      "source": "同一导数同时非负非正",
+      "target": "0≤f'(a)≤0",
+      "purpose": "将两约束汇合，显式换边表达同一关系"
+    },
+    {
+      "id": "bounds_to_zero",
+      "operation": "zero_width_interval",
+      "source": "0≤f'(a)≤0",
+      "target": "f'(a)=0",
+      "purpose": "同一导数被夹在两个零之间"
+    },
+    {
+      "id": "maximum_to_minimum",
+      "operation": "reverse_relations",
+      "source": "极大情形及旧关系符",
+      "target": "极小反向、共同零导数不变",
+      "purpose": "先撤旧不等号，再安装新关系，保留条件"
+    }
+  ],
+  "required_repair_outcomes": [
+    "Readable common object and equivalent bounds, not a symbol pile",
+    "A complete clamp remains readable while the zero result is derived on a separate row",
+    "Old relations never reintroduced while new opposite directions are drawn",
+    "No condition-label stringing along a moving relation"
+  ]
+}

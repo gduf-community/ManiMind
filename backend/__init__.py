@@ -1,1 +1,0 @@
-"""ManiMind backend 包。"""

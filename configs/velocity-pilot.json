@@ -1,0 +1,33 @@
+{
+  "project_id": "velocity-pilot",
+  "title": "某一瞬间，速度怎么算？",
+  "audience": "理解平均速度、尚未学习导数的高中生",
+  "fps": 30,
+  "voice": "zh-CN-YunxiNeural",
+  "speech_rate": "+8%",
+  "learning_goal": "能够解释为什么瞬时速度是平均速度的极限，而不是把时间差直接设为零。",
+  "facts": {
+    "model": "s(t)=4t^2, t>=0; t in seconds, s in metres; a deliberately idealized one-dimensional motion",
+    "focus": "t=2, s(2)=16",
+    "average": "[s(2+h)-s(2)]/h=16+4h for h!=0 and 2+h>=0",
+    "examples": [[1, 20], [0.5, 18], [0.1, 16.4], [0.02, 16.08]],
+    "limit": "The two-sided limit as h tends to zero is 16; the animation approaches from positive h.",
+    "tangent": "s=16+16(t-2); residual from curve is 4(t-2)^2",
+    "conversion": "16 m/s = 57.6 km/h",
+    "source": "Direct algebraic derivation for this illustrative model; not an empirical vehicle measurement or a paper claim."
+  },
+  "cues": [
+    {"id":"hook","subtitle_lines":["车一直在加速。","如果只问第二秒这一瞬间，它有多快？"],"visual":"加速汽车、道路刻度、冻结时刻的疑问。","min_duration":6.0},
+    {"id":"model","subtitle_lines":["给车一个简单的运动规律：","经过 t 秒，位置是四乘 t 的平方。"],"spoken":"给车一个简单的运动规律。经过踢秒，位置是四乘踢的平方。","visual":"建立理想模型 s(t)=4t²，时间与位置计数联动。","min_duration":6.0},
+    {"id":"average","subtitle_lines":["从第二秒到第三秒，它前进二十米。","除以一秒，平均速度是二十米每秒。"],"visual":"s(2)=16，s(3)=36，位移20米，时间1秒。","min_duration":7.0},
+    {"id":"graph","subtitle_lines":["横轴是时间，纵轴是位置。","这个平均速度，就是连接两点的割线斜率。"],"visual":"将道路测量映射到时间-位置曲线，展示水平/竖直增量。","min_duration":7.0},
+    {"id":"half","subtitle_lines":["一秒还是太长。只看接下来的半秒，","平均速度降到十八米每秒。"],"visual":"h从1缩到0.5，动点、割线、数值同步变化。","min_duration":5.5},
+    {"id":"tenth","subtitle_lines":["再缩到零点一秒，","它变成十六点四米每秒。"],"visual":"h从0.5缩到0.1，保留连续视觉对象。","min_duration":5.0},
+    {"id":"approach","subtitle_lines":["继续缩短，读数越来越接近十六，","割线也越来越接近同一条切线。"],"visual":"h到0.02，平均速度16.08，切线参照逐步出现。","min_duration":6.0},
+    {"id":"zero","subtitle_lines":["注意，不能把时间差直接设成零。","零除以零，不能给出速度。"],"visual":"区分趋近零与等于零，不显示0/0=0。","min_duration":6.0},
+    {"id":"algebra","subtitle_lines":["两点位置相减，除以非零的时间差。展开约分，得到16+4h。","让 h 趋近零，答案才趋近十六。"],"spoken":"两点位置相减，除以非零的时间差。展开约分，得到十六加四诶尺。让诶尺趋近零，答案才趋近十六。","visual":"差商展开、约去非零h、取极限三步。","min_duration":9.0},
+    {"id":"zoom","subtitle_lines":["再把曲线在这一点附近放大。","它越来越像一条直线，这就是切线的意义。"],"visual":"真实改变数学窗口、曲线及切线同时映射，使用随窗口更新的秒、米刻度。","min_duration":7.0},
+    {"id":"result","subtitle_lines":["所以，第二秒这一瞬间，车速是每秒十六米，","也就是每小时五十七点六公里。"],"visual":"回到汽车，t=2的瞬时速度读数，对应切线斜率16。","min_duration":7.0},
+    {"id":"recap","subtitle_lines":["瞬时速度，不是用零秒去除。","它是时间间隔趋近零时，平均速度所趋近的值。"],"visual":"保留极限定义与16m/s结论，留阅读时间。","min_duration":7.0}
+  ]
+}

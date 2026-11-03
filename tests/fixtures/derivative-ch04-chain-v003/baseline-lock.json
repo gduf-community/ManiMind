@@ -1,0 +1,109 @@
+{
+  "status": "not_reviewed",
+  "writer": "01a19acd-e149-74d0-8a5d-975a3adf45f4",
+  "consumers": [
+    "main",
+    "native tests",
+    "independent reviewers"
+  ],
+  "lifecycle": "Frozen actual-input audit for the v003 candidate",
+  "invalidation": "Any bound input, source, cue clock, mathematics, geometry or authorization change",
+  "protected_inputs": [
+    {
+      "path": "examples/derivative_ch04_chain.py",
+      "sha256": "f3c9693c712dff55ff9f7bc76276e36f1ee8143ef0d95fc573128beb49dc2b19"
+    },
+    {
+      "path": "examples/derivative_chapter_shared.py",
+      "sha256": "ed9bb7ece0f273c72fc4db744200e7a3a96e51ad54e258861305140e9d0c17ae"
+    },
+    {
+      "path": "runtime/projects/math-derivative-ch04-chain-20261102/narration-draft-v002.json",
+      "sha256": "284bdccbbfe3344453344a0c62cea2728d34f9ae798f49540eb657dd97cb4440"
+    },
+    {
+      "path": "runtime/projects/math-derivative-ch04-chain-20261102/narration-v002.json",
+      "sha256": "bab362c22c378d1ed00a09e5f7de79bff0f039d1c7f88c1115cb05653277ac9e"
+    },
+    {
+      "path": "runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch04-chain-20261102/speech-plan-v002.json",
+      "sha256": "0420ec44e28bf817051c7973b0b31cb9ba41bd6aeb566ff00f3ed59114a3f2d5"
+    },
+    {
+      "path": "runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch04-chain-20261102/timings-v001.json",
+      "sha256": "fb59a38780634d2614b91154be95e42128f3cca518a0856f57e694d91cbbb640"
+    },
+    {
+      "path": "outputs/math-derivative-ch04-chain-20261102/visual-v001/render.json",
+      "sha256": "1eebc1546328abcaafbb5022479ee2c0dd0411947fe2b8ef8c10ed1397716145"
+    },
+    {
+      "path": "outputs/math-derivative-ch04-chain-20261102/visual-v001/plan.json",
+      "sha256": "cf970d140ea9ec6c2338a432baca4a8a50745b585b8bf6c51e18d7ddabad44da"
+    },
+    {
+      "path": "outputs/math-derivative-ch04-chain-20261102/visual-v001/focus-events.json",
+      "sha256": "7e0ed8d421b77f40c0b7921b2abd80b7b3d35faa3027fb47c269f5cc48b25dd3"
+    },
+    {
+      "path": "outputs/math-derivative-ch04-chain-20261102/visual-v001/visual-events.json",
+      "sha256": "ad1892bc889449e32910d222f30a6fb32d18af1d82c2e3248ad0de2aea292037"
+    },
+    {
+      "path": "outputs/math-derivative-ch04-chain-20261102/visual-v001/chapter-motion.json",
+      "sha256": "34f496d37cac2b10078a6f31a602f3303523937eee8e99bef0de081a6563a71e"
+    },
+    {
+      "path": "outputs/math-derivative-ch04-chain-20261102/visual-v001/manim/media/manimgl/understanding.mp4",
+      "sha256": "e62de08fa4fa6c9b1af8933c57cdf2419a469b774e6a3a817012bd1aba74bcec"
+    },
+    {
+      "path": "runtime/projects/math-derivative-ch04-chain-20261102/scientific-brief-v001.json",
+      "sha256": "405bf6d895ad3ee1dfdbdb5a4e1ff1743f31166ea88bff86f21333ac23f278d2"
+    },
+    {
+      "path": "runtime/projects/math-derivative-ch04-chain-20261102/mathematical-facts-v001.json",
+      "sha256": "cb1ae1b5cc626c516683108a02da0ca918094e58694b3b2a6a08ab9460c2ca22"
+    },
+    {
+      "path": "runtime/projects/math-derivative-ch04-chain-20261102/plan-v001.json",
+      "sha256": "cf970d140ea9ec6c2338a432baca4a8a50745b585b8bf6c51e18d7ddabad44da"
+    },
+    {
+      "path": "examples/derivative_ch02_basics_v004.py",
+      "sha256": "6babd292c64a7228b67a0509a3d981de3ab6c913ccabf69d20e1ce0841f94e21"
+    },
+    {
+      "path": "runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch04-chain-20261102/speech/chain-u01.wav",
+      "sha256": "2e23feec843898c97a02a31ffeee9c002f81a021d5c22dbe427e499f41d7ebdb"
+    },
+    {
+      "path": "runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch04-chain-20261102/speech/chain-u02.wav",
+      "sha256": "db97740972aecef1548550920bcaf1ec5793980fbc7d4438c28d782af96044a1"
+    },
+    {
+      "path": "runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch04-chain-20261102/speech/chain-u03.wav",
+      "sha256": "ae4a2f6bfc35e86ea01a8243b873ed6abae159ffeabdc9c7a0d41feb41551b9f"
+    },
+    {
+      "path": "runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch04-chain-20261102/speech/chain-u04.wav",
+      "sha256": "ff917ccd0777aa902182090d429677d036656a587b5de5d18785949030769750"
+    },
+    {
+      "path": "runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch04-chain-20261102/speech/chain-u05.wav",
+      "sha256": "0e7298fd2de8f8d893662fe88f82a874b53ba26d0fe58ee88a73e6f8ba6e7d2e"
+    },
+    {
+      "path": "runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch04-chain-20261102/speech/chain-linear-unit.wav",
+      "sha256": "833c3bd987787d4b29bf40ba8b4efba89e4b2e70a746a4f6cfbd62caa80bdd56"
+    },
+    {
+      "path": "runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch04-chain-20261102/speech/chain-u06.wav",
+      "sha256": "329d5fa8c41b47dc0fd434d8208ab4c394f537ba8be4817eacd1c6274c7d84c8"
+    },
+    {
+      "path": "runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch04-chain-20261102/speech/chain-u07.wav",
+      "sha256": "aeb494ded2faeb78f107c65e6c4b9d670d9a7175031ead941e44777fab8069ac"
+    }
+  ]
+}

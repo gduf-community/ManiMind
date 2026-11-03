@@ -1,0 +1,475 @@
+{
+  "schema_version": 1,
+  "evidence_type": "Full local WAV header/frame measurement verified against original receipt hashes; no speech generation, trimming, listening or approval",
+  "safety_seconds": 0.5,
+  "round_up_seconds": 1,
+  "writer": "eigen voiced revision author (read-only media inspection)",
+  "consumers": [
+    "offline native timing tests",
+    "lead",
+    "later whole-utterance scheduler"
+  ],
+  "lifecycle": "Frozen v001 take measurements for v002 reading-only edit",
+  "invalidation": "Original WAV bytes, receipt, text, source, focus or plan change",
+  "segments": [
+    {
+      "segment": {
+        "cue": "transform",
+        "focus": "matrix_map",
+        "id": "E01",
+        "text": "同一个矩阵作用在每个点上。红色基向量一零，变到二一。"
+      },
+      "wav_path": "outputs/eigen-directions-20261028/speech-v001/E01.wav",
+      "wav_sha256": "e472a9d3b0b58b5ae816ba95d78c8918ae7ce33b0b34024fc66e70857212315a",
+      "receipt_path": "outputs/eigen-directions-20261028/speech-v001/E01.receipt.json",
+      "receipt_sha256": "5bccf2f9107f2bb89fdb61cd4d5ea8d619832c5507b7f0d97229031814bfddc1",
+      "frames": 276480,
+      "sample_rate": 48000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 5.76
+    },
+    {
+      "segment": {
+        "cue": "transform",
+        "focus": "whole_plane",
+        "id": "E02",
+        "text": "网格和每支箭头一起接受同一个变换。坐标轴固定，红色箭头离开了原来的直线。"
+      },
+      "wav_path": "outputs/eigen-directions-20261028/speech-v001/E02.wav",
+      "wav_sha256": "d5c90624fc038767020a2e0103d702a153ea1a06f96790c42816f838679aa257",
+      "receipt_path": "outputs/eigen-directions-20261028/speech-v001/E02.receipt.json",
+      "receipt_sha256": "e483076a0dce7a968af4ba80417a188fd857a51d991d762a27680c3848f1013c",
+      "frames": 376320,
+      "sample_rate": 48000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 7.84
+    },
+    {
+      "segment": {
+        "cue": "transform",
+        "focus": "general_turn",
+        "id": "E03",
+        "text": "一般方向会转向。有没有一些直线方向能够保留下来？"
+      },
+      "wav_path": "outputs/eigen-directions-20261028/speech-v001/E03.wav",
+      "wav_sha256": "bee8df72d0bd6f2d9febeaff29c9facb556199f81341e5f86df08031eff255b1",
+      "receipt_path": "outputs/eigen-directions-20261028/speech-v001/E03.receipt.json",
+      "receipt_sha256": "829e582ba7e918e89fc5610b4802bf90532903a854f3c36e8253e51f5795c687",
+      "frames": 245760,
+      "sample_rate": 48000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 5.12
+    },
+    {
+      "segment": {
+        "cue": "directions",
+        "focus": "definition",
+        "id": "E04",
+        "text": "我们寻找非零向量，让变换后的结果仍在原向量所在直线上，也就是 A v 等于拉姆达 v。"
+      },
+      "wav_path": "outputs/eigen-directions-20261028/speech-v001/E04.wav",
+      "wav_sha256": "82228d946189b4880c5f3e0879b747e8a12aa25d248e5d003f4257badcf29abd",
+      "receipt_path": "outputs/eigen-directions-20261028/speech-v001/E04.receipt.json",
+      "receipt_sha256": "0808ab2c2bedc0d52fc8c188b86cd088f026d077a84a377b0127245096b8a543",
+      "frames": 414720,
+      "sample_rate": 48000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 8.64
+    },
+    {
+      "segment": {
+        "cue": "directions",
+        "focus": "candidate_lines",
+        "id": "E05",
+        "text": "观察绿色和黄色箭头。整个平面改变时，它们始终留在各自的原直线上。"
+      },
+      "wav_path": "outputs/eigen-directions-20261028/speech-v001/E05.wav",
+      "wav_sha256": "caf9d4f007637f9eb55f3b3505ee9963036d2c1d2c746eb2e4f0477d194a3fde",
+      "receipt_path": "outputs/eigen-directions-20261028/speech-v001/E05.receipt.json",
+      "receipt_sha256": "fdb2d378f51ce54b61e023f2e054a5b5eb8f700a25f28b417163d6f0eb50a382",
+      "frames": 337920,
+      "sample_rate": 48000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 7.04
+    },
+    {
+      "segment": {
+        "cue": "equations",
+        "focus": "vector_equation",
+        "id": "E06",
+        "text": "把未知非零向量写成 x、y 两个分量。"
+      },
+      "wav_path": "outputs/eigen-directions-20261028/speech-v001/E06.wav",
+      "wav_sha256": "07f5932c9c4b6140c887e9dec8e4cf0133cd91d17aa12059944d69a2d0ee3e4c",
+      "receipt_path": "outputs/eigen-directions-20261028/speech-v001/E06.receipt.json",
+      "receipt_sha256": "2f14f49291ba0f23da148d7fa53479e32dafd9cacef890713843ec4e120e78a5",
+      "frames": 192000,
+      "sample_rate": 48000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 4
+    },
+    {
+      "segment": {
+        "cue": "equations",
+        "focus": "two_components",
+        "id": "E07",
+        "text": "矩阵乘法要求这两个等式同时成立。"
+      },
+      "wav_path": "outputs/eigen-directions-20261028/speech-v001/E07.wav",
+      "wav_sha256": "ed8bbd03bd8fc435e2ff410b4a955f0b140470630c10d6399b6f9b64b4bc33a7",
+      "receipt_path": "outputs/eigen-directions-20261028/speech-v001/E07.receipt.json",
+      "receipt_sha256": "31e3ff8f1cbf7d9af0b87d6ad6dd3ccfa4cf1ff11cc0a988191882b3b81c2d07",
+      "frames": 168960,
+      "sample_rate": 48000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 3.52
+    },
+    {
+      "segment": {
+        "cue": "equations",
+        "focus": "subtract",
+        "id": "E08",
+        "text": "上式减去下式，左边剩下 x 减 y，右边可以提取同一个拉姆达。"
+      },
+      "wav_path": "outputs/eigen-directions-20261028/speech-v001/E08.wav",
+      "wav_sha256": "daa83c7daa088302c221c847ee81e4c3540f79cde0208dd96e30bb29fa7e027f",
+      "receipt_path": "outputs/eigen-directions-20261028/speech-v001/E08.receipt.json",
+      "receipt_sha256": "65eae52c2efd6b103fdb2104c3a9d859d596afd014c80e22f8447321579add5c",
+      "frames": 307200,
+      "sample_rate": 48000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 6.4
+    },
+    {
+      "segment": {
+        "cue": "equations",
+        "focus": "factor",
+        "id": "E09",
+        "text": "再移到一边，得到两个因子的乘积等于零。"
+      },
+      "wav_path": "outputs/eigen-directions-20261028/speech-v001/E09.wav",
+      "wav_sha256": "a45943095cf7f779e2fe9c4a2cc127bb0cc5d6b5cf61535c9b1c82f76841779d",
+      "receipt_path": "outputs/eigen-directions-20261028/speech-v001/E09.receipt.json",
+      "receipt_sha256": "45af4fcbb788b8c597a85e3d074169cbb27b9817a50e3767be5f319ee11cf1da",
+      "frames": 161280,
+      "sample_rate": 48000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 3.36
+    },
+    {
+      "segment": {
+        "cue": "equal",
+        "focus": "equal_nonzero",
+        "id": "E10",
+        "text": "先看 x 等于 y。因为向量非零，这时 x 也一定非零。"
+      },
+      "wav_path": "outputs/eigen-directions-20261028/speech-v001/E10.wav",
+      "wav_sha256": "b7e668dec87de0bc942e0a89b579469827c4918db71572bc010b5e004cb8498d",
+      "receipt_path": "outputs/eigen-directions-20261028/speech-v001/E10.receipt.json",
+      "receipt_sha256": "344884dc3e72ddf69fb65ed0752d1f74986feb6e989928702ccd5cbafe4421dd",
+      "frames": 299520,
+      "sample_rate": 48000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 6.24
+    },
+    {
+      "segment": {
+        "cue": "equal",
+        "focus": "equal_substitute",
+        "id": "E11",
+        "text": "把 y 换成 x，代回第一式。"
+      },
+      "wav_path": "outputs/eigen-directions-20261028/speech-v001/E11.wav",
+      "wav_sha256": "d4bfcf46fbd3c31b0537af64ee9a90458aa3d644299099ecfc9da40b6a92dde7",
+      "receipt_path": "outputs/eigen-directions-20261028/speech-v001/E11.receipt.json",
+      "receipt_sha256": "9ebd4520223802073fe108a58df990831f3b7fc1e1e54069296bba4b7338674d",
+      "frames": 138240,
+      "sample_rate": 48000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 2.88
+    },
+    {
+      "segment": {
+        "cue": "equal",
+        "focus": "equal_combine",
+        "id": "E12",
+        "text": "左边合并成三倍 x。"
+      },
+      "wav_path": "outputs/eigen-directions-20261028/speech-v001/E12.wav",
+      "wav_sha256": "1cdb63852369ffcbd62c410fffb2815b2f6da629ef6284c1154440dbb953c824",
+      "receipt_path": "outputs/eigen-directions-20261028/speech-v001/E12.receipt.json",
+      "receipt_sha256": "09002f5b5ce79fffa8b5161f671c5a2dc4f986b471837b400c9dbe3c3b3257a1",
+      "frames": 115200,
+      "sample_rate": 48000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 2.4
+    },
+    {
+      "segment": {
+        "cue": "equal",
+        "focus": "equal_value",
+        "id": "E13",
+        "text": "除以非零的 x，得到特征值三。"
+      },
+      "wav_path": "outputs/eigen-directions-20261028/speech-v001/E13.wav",
+      "wav_sha256": "b67e39a599a252584c9f9ceac1f243c40b8b1fa67a81ca64b4835d27e2152f4c",
+      "receipt_path": "outputs/eigen-directions-20261028/speech-v001/E13.receipt.json",
+      "receipt_sha256": "796e4948baba4ff8f4c0f62b0380d440018e85a35aa25f4e6a6a375f79ed9a65",
+      "frames": 168960,
+      "sample_rate": 48000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 3.52
+    },
+    {
+      "segment": {
+        "cue": "equal",
+        "focus": "plus_direction",
+        "id": "E14",
+        "text": "这个方向上的所有非零向量，都对应同一个特征值三。"
+      },
+      "wav_path": "outputs/eigen-directions-20261028/speech-v001/E14.wav",
+      "wav_sha256": "f9e65ecaf8fc0927ba8fdda9e5b0dfe9f4db434a7896afdcc824e730ee89085b",
+      "receipt_path": "outputs/eigen-directions-20261028/speech-v001/E14.receipt.json",
+      "receipt_sha256": "17f990f8a787dc04e00c6476123c32fd310d1cb6db9f9d688954452f8ba57d48",
+      "frames": 253440,
+      "sample_rate": 48000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 5.28
+    },
+    {
+      "segment": {
+        "cue": "other",
+        "focus": "other_value",
+        "id": "E15",
+        "text": "再看 x 不等于 y。第二个因子非零，所以拉姆达只能等于一。"
+      },
+      "wav_path": "outputs/eigen-directions-20261028/speech-v001/E15.wav",
+      "wav_sha256": "17f90a3e3ed49194cdc9618e0a4a5ba49118e59c8ba380b44c5b7b46362a7a8a",
+      "receipt_path": "outputs/eigen-directions-20261028/speech-v001/E15.receipt.json",
+      "receipt_sha256": "363cf0dbe8ac1c2fccaefd1e3367049be105cf5e647d9c5dc9c55b94a6fe5860",
+      "frames": 307200,
+      "sample_rate": 48000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 6.4
+    },
+    {
+      "segment": {
+        "cue": "other",
+        "focus": "other_substitute",
+        "id": "E16",
+        "text": "把一代回第一分量。"
+      },
+      "wav_path": "outputs/eigen-directions-20261028/speech-v001/E16.wav",
+      "wav_sha256": "cdb9b5cfd1aa54ab88768da7869e9e11e9bf7e0a2cf1cd4044c4887496d0d389",
+      "receipt_path": "outputs/eigen-directions-20261028/speech-v001/E16.receipt.json",
+      "receipt_sha256": "dffe4f4c4c76b008433e098b77daf1a20b339809244f40d350f75bb992c9b999",
+      "frames": 99840,
+      "sample_rate": 48000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 2.08
+    },
+    {
+      "segment": {
+        "cue": "other",
+        "focus": "other_reduce",
+        "id": "E17",
+        "text": "移项得到 x 加 y 等于零。"
+      },
+      "wav_path": "outputs/eigen-directions-20261028/speech-v001/E17.wav",
+      "wav_sha256": "1916f79a8f89b6b804743307034b572018160eaaa227c82722492c445b25ca2c",
+      "receipt_path": "outputs/eigen-directions-20261028/speech-v001/E17.receipt.json",
+      "receipt_sha256": "1753656c78b5a689b0fb6f2a69c95d34640c4c68b2152d3e07a0401695dccb74",
+      "frames": 138240,
+      "sample_rate": 48000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 2.88
+    },
+    {
+      "segment": {
+        "cue": "other",
+        "focus": "other_direction",
+        "id": "E18",
+        "text": "也就是 y 等于负 x。"
+      },
+      "wav_path": "outputs/eigen-directions-20261028/speech-v001/E18.wav",
+      "wav_sha256": "b245080648e6d9bfb97279385d69d355f90e55e190651689bd54b526dfad86d0",
+      "receipt_path": "outputs/eigen-directions-20261028/speech-v001/E18.receipt.json",
+      "receipt_sha256": "144cde6b54947627fbc1b5687675e94d31857096f60b481b7f58077fadee91a3",
+      "frames": 115200,
+      "sample_rate": 48000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 2.4
+    },
+    {
+      "segment": {
+        "cue": "other",
+        "focus": "all_directions",
+        "id": "E19",
+        "text": "于是得到另一条方向。两种情况已经覆盖了全部非零向量。"
+      },
+      "wav_path": "outputs/eigen-directions-20261028/speech-v001/E19.wav",
+      "wav_sha256": "7e444d13db0d18170c25f2029bb17074fc64f6125ce2b1aeac3842e922b1be75",
+      "receipt_path": "outputs/eigen-directions-20261028/speech-v001/E19.receipt.json",
+      "receipt_sha256": "7f6ae49f1ccb1d9af94b556150e044940adb09968aae6a692cb96e97068b6c9e",
+      "frames": 276480,
+      "sample_rate": 48000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 5.76
+    },
+    {
+      "segment": {
+        "cue": "decompose",
+        "focus": "decompose",
+        "id": "E20",
+        "text": "一般向量沿两个特征方向分解。绿、黄两段首尾相接，合成向量 u。"
+      },
+      "wav_path": "outputs/eigen-directions-20261028/speech-v001/E20.wav",
+      "wav_sha256": "3ab8a9d3e00bda29bcae3f1a141251b5bf3afb6e5e82d65ce2bf40145289c44f",
+      "receipt_path": "outputs/eigen-directions-20261028/speech-v001/E20.receipt.json",
+      "receipt_sha256": "03017e131b891e472639c06d33968fbe78f40a16f2a858de62fe06430243ee63",
+      "frames": 337920,
+      "sample_rate": 48000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 7.04
+    },
+    {
+      "segment": {
+        "cue": "decompose",
+        "focus": "independent_scaling",
+        "id": "E21",
+        "text": "接受同一个矩阵变换时，绿色分量变为三倍，黄色分量不变。把两段首尾相接，端点始终与直接变换重合。"
+      },
+      "wav_path": "outputs/eigen-directions-20261028/speech-v001/E21.wav",
+      "wav_sha256": "5a1f1f596a327fd20d51ee4f421a86bb82bdff8e88df9c150d7f7f91963aa907",
+      "receipt_path": "outputs/eigen-directions-20261028/speech-v001/E21.receipt.json",
+      "receipt_sha256": "287e8120259a8300f8afa4ef7e51f5d5d789752f0623cd2fc2554d0c2f751020",
+      "frames": 491520,
+      "sample_rate": 48000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 10.24
+    },
+    {
+      "segment": {
+        "cue": "decompose",
+        "focus": "recombine",
+        "id": "E22",
+        "text": "三三加上零点五、负零点五，得到三点五、二点五。"
+      },
+      "wav_path": "outputs/eigen-directions-20261028/speech-v001/E22.wav",
+      "wav_sha256": "6fcf8677a833771ecaae9a4bf352d35397c076b8f6e10779966031a5acfceb0e",
+      "receipt_path": "outputs/eigen-directions-20261028/speech-v001/E22.receipt.json",
+      "receipt_sha256": "6e7aa68801cd0a5a352ee6698bb6b951cef3a4424e413f5ff42835f577fa2393",
+      "frames": 245760,
+      "sample_rate": 48000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 5.12
+    },
+    {
+      "segment": {
+        "cue": "decompose",
+        "focus": "linearity_check",
+        "id": "E23",
+        "text": "直接做矩阵乘法，也得到同一个结果。这就是沿特征方向计算的用处。"
+      },
+      "wav_path": "outputs/eigen-directions-20261028/speech-v001/E23.wav",
+      "wav_sha256": "16be29ca8749f636e63cf813411723c6bd47ac0a36d3d6de7cfb9d9298735702",
+      "receipt_path": "outputs/eigen-directions-20261028/speech-v001/E23.receipt.json",
+      "receipt_sha256": "05733a0851270c490e6eecb2bd50c5da129049b27d04b61b8591db3b70a250f8",
+      "frames": 322560,
+      "sample_rate": 48000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 6.72
+    },
+    {
+      "segment": {
+        "cue": "rotation",
+        "focus": "rotation_input",
+        "id": "E24",
+        "text": "但在实数范围内，不是每个矩阵都有这样的方向。"
+      },
+      "wav_path": "outputs/eigen-directions-20261028/speech-v001/E24.wav",
+      "wav_sha256": "7f2050a51293a7b53a56ec9a4c549f7a3b644bc1dab8cf209e84a0cab51adc0d",
+      "receipt_path": "outputs/eigen-directions-20261028/speech-v001/E24.receipt.json",
+      "receipt_sha256": "d7d23c95c4b94df1b1c2332b8cf3574b8988d97c2183185d5bc786748062b711",
+      "frames": 199680,
+      "sample_rate": 48000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 4.16
+    },
+    {
+      "segment": {
+        "cue": "rotation",
+        "focus": "quarter_turn",
+        "id": "E25",
+        "text": "这个矩阵把非零向量旋转九十度。"
+      },
+      "wav_path": "outputs/eigen-directions-20261028/speech-v001/E25.wav",
+      "wav_sha256": "29ae5203fc52a755fbceead94fdbd9f75fbc670e7e229d17fdcaed635aa7c155",
+      "receipt_path": "outputs/eigen-directions-20261028/speech-v001/E25.receipt.json",
+      "receipt_sha256": "15a67c4b5c83a0f2f276e40fd1bab422b883a5005962ebe386d49ba0faa5731e",
+      "frames": 168960,
+      "sample_rate": 48000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 3.52
+    },
+    {
+      "segment": {
+        "cue": "rotation",
+        "focus": "no_real_direction",
+        "id": "E26",
+        "text": "任意非零实向量旋转九十度后，都与原向量垂直，不可能仍在原来的直线上。因此没有实特征方向。"
+      },
+      "wav_path": "outputs/eigen-directions-20261028/speech-v001/E26.wav",
+      "wav_sha256": "8adb16a92a52cec27fa4baf3b6c5dc69694dfac493219921e2464afd9bee5c55",
+      "receipt_path": "outputs/eigen-directions-20261028/speech-v001/E26.receipt.json",
+      "receipt_sha256": "13a834df20c3b541720cfc11c7a84d8497fc2b4cb097cfaee3a6e929f3c6f416",
+      "frames": 445440,
+      "sample_rate": 48000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 9.28
+    },
+    {
+      "segment": {
+        "cue": "summary",
+        "focus": "summary",
+        "id": "E27",
+        "text": "特征向量找的是变换保留的直线，特征值给出线上变化的倍数。本例两个方向分别对应三和一。"
+      },
+      "wav_path": "outputs/eigen-directions-20261028/speech-v001/E27.wav",
+      "wav_sha256": "47e149d4c3db201a68b7d7063fa3a230ff6f635a0c04e5501f8a7131ac28971d",
+      "receipt_path": "outputs/eigen-directions-20261028/speech-v001/E27.receipt.json",
+      "receipt_sha256": "09cbaa54dd0bb435e0611a04dadad7346464076918cf109eb32771baa515dd33",
+      "frames": 437760,
+      "sample_rate": 48000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 9.12
+    }
+  ]
+}

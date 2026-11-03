@@ -1,0 +1,4562 @@
+{
+  "schema_version": 1,
+  "method": "stable_whisper_forced_alignment",
+  "timing_scope": "model_estimated_forced_alignment_not_listening",
+  "writer": "manimind.postproduce.phrase_alignment",
+  "consumers": [
+    "meaning-unit visual scheduler",
+    "operator",
+    "independent reviewer"
+  ],
+  "lifecycle": "One create-only alignment attempt; retain raw results, inputs and failures",
+  "invalidation": "Any plan, WAV, receipt, source, software, FFmpeg or model change invalidates reuse",
+  "plan": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-intro-20261101/speech-plan-v003.json",
+  "plan_sha256": "001cb7baf25a28ac95d1cca985c982551794253a5b97bac7ee3e489c15e37270",
+  "units": [
+    {
+      "id": "intro",
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-intro-20261101-voice/executions/math-derivative-intro-20261101-v003/speech/intro.wav",
+      "wav_sha256": "9255412f0d1dc9220260c15f201dc585a36b17a6cafe0d503555ab091480efeb",
+      "receipt": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-intro-20261101-voice/executions/math-derivative-intro-20261101-v003/speech/intro.receipt.json",
+      "receipt_sha256": "ad7476ff993c92292f3151017962f3a09f95cd31ba9f132d0dab4074ca510453",
+      "frames": 583680,
+      "sample_rate": 48000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 12.16,
+      "phrases": [
+        {
+          "id": "title",
+          "text": "曲线的陡缓沿途在变。今天，我们来找曲线上一个点附近的变化率。",
+          "start": 0.32,
+          "end": 5.94,
+          "words": [
+            {
+              "word": " 曲",
+              "start": 0.32,
+              "end": 0.42
+            },
+            {
+              "word": "线",
+              "start": 0.42,
+              "end": 0.6
+            },
+            {
+              "word": "的",
+              "start": 0.6,
+              "end": 0.72
+            },
+            {
+              "word": "陡",
+              "start": 0.72,
+              "end": 1
+            },
+            {
+              "word": "缓",
+              "start": 1,
+              "end": 1.18
+            },
+            {
+              "word": "沿",
+              "start": 1.28,
+              "end": 1.38
+            },
+            {
+              "word": "途",
+              "start": 1.38,
+              "end": 1.52
+            },
+            {
+              "word": "在",
+              "start": 1.52,
+              "end": 1.66
+            },
+            {
+              "word": "变。",
+              "start": 1.66,
+              "end": 1.84
+            },
+            {
+              "word": "今天，",
+              "start": 2.24,
+              "end": 3
+            },
+            {
+              "word": "我们",
+              "start": 3.3,
+              "end": 3.36
+            },
+            {
+              "word": "来",
+              "start": 3.36,
+              "end": 3.46
+            },
+            {
+              "word": "找",
+              "start": 3.46,
+              "end": 3.62
+            },
+            {
+              "word": "曲",
+              "start": 3.62,
+              "end": 3.82
+            },
+            {
+              "word": "线",
+              "start": 3.86,
+              "end": 3.96
+            },
+            {
+              "word": "上",
+              "start": 3.96,
+              "end": 4.12
+            },
+            {
+              "word": "一个",
+              "start": 4.12,
+              "end": 4.54
+            },
+            {
+              "word": "点",
+              "start": 4.54,
+              "end": 4.74
+            },
+            {
+              "word": "附",
+              "start": 5.04,
+              "end": 5.14
+            },
+            {
+              "word": "近",
+              "start": 5.14,
+              "end": 5.32
+            },
+            {
+              "word": "的",
+              "start": 5.32,
+              "end": 5.48
+            },
+            {
+              "word": "变",
+              "start": 5.52,
+              "end": 5.62
+            },
+            {
+              "word": "化",
+              "start": 5.62,
+              "end": 5.74
+            },
+            {
+              "word": "率。",
+              "start": 5.74,
+              "end": 5.94
+            }
+          ]
+        },
+        {
+          "id": "point",
+          "text": "就从熟悉的平方函数开始，把目光放在横坐标为二的这个点。",
+          "start": 6.72,
+          "end": 12.06,
+          "words": [
+            {
+              "word": " 就",
+              "start": 6.72,
+              "end": 6.76
+            },
+            {
+              "word": "从",
+              "start": 6.76,
+              "end": 6.94
+            },
+            {
+              "word": "熟",
+              "start": 6.94,
+              "end": 7.14
+            },
+            {
+              "word": "悉",
+              "start": 7.14,
+              "end": 7.28
+            },
+            {
+              "word": "的",
+              "start": 7.28,
+              "end": 7.42
+            },
+            {
+              "word": "平",
+              "start": 7.42,
+              "end": 7.7
+            },
+            {
+              "word": "方",
+              "start": 7.82,
+              "end": 7.92
+            },
+            {
+              "word": "函",
+              "start": 7.92,
+              "end": 8.1
+            },
+            {
+              "word": "数",
+              "start": 8.1,
+              "end": 8.24
+            },
+            {
+              "word": "开始，",
+              "start": 8.24,
+              "end": 8.5
+            },
+            {
+              "word": "把",
+              "start": 9.06,
+              "end": 9.16
+            },
+            {
+              "word": "目",
+              "start": 9.16,
+              "end": 9.28
+            },
+            {
+              "word": "光",
+              "start": 9.28,
+              "end": 9.42
+            },
+            {
+              "word": "放",
+              "start": 9.42,
+              "end": 9.7
+            },
+            {
+              "word": "在",
+              "start": 9.7,
+              "end": 9.9
+            },
+            {
+              "word": "横",
+              "start": 9.9,
+              "end": 10.14
+            },
+            {
+              "word": "坐",
+              "start": 10.18,
+              "end": 10.28
+            },
+            {
+              "word": "标",
+              "start": 10.28,
+              "end": 10.54
+            },
+            {
+              "word": "为",
+              "start": 10.54,
+              "end": 10.78
+            },
+            {
+              "word": "二",
+              "start": 10.98,
+              "end": 11.1
+            },
+            {
+              "word": "的",
+              "start": 11.1,
+              "end": 11.28
+            },
+            {
+              "word": "这个",
+              "start": 11.28,
+              "end": 11.66
+            },
+            {
+              "word": "点。",
+              "start": 11.66,
+              "end": 12.06
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interval",
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-intro-20261101-voice/executions/math-derivative-intro-20261101-v003/speech/interval.wav",
+      "wav_sha256": "fb03271fe71f04fb788b44f2a4efc6cdeafb9e37b4da62563652d17430ac4e46",
+      "receipt": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-intro-20261101-voice/executions/math-derivative-intro-20261101-v003/speech/interval.receipt.json",
+      "receipt_sha256": "f21f8d01cd282057c68794d063ec58270e975f2c3d55793fd492e41889c8b3dd",
+      "frames": 814080,
+      "sample_rate": 48000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 16.96,
+      "phrases": [
+        {
+          "id": "points",
+          "text": "固定P，取Q的横坐标为二加h。现在h等于一。",
+          "start": 0.36,
+          "end": 4.8,
+          "words": [
+            {
+              "word": " 固",
+              "start": 0.36,
+              "end": 0.38
+            },
+            {
+              "word": "定",
+              "start": 0.38,
+              "end": 0.52
+            },
+            {
+              "word": "P，",
+              "start": 0.52,
+              "end": 0.78
+            },
+            {
+              "word": "取",
+              "start": 1.1,
+              "end": 1.18
+            },
+            {
+              "word": "Q",
+              "start": 1.28,
+              "end": 1.38
+            },
+            {
+              "word": "的",
+              "start": 1.38,
+              "end": 1.56
+            },
+            {
+              "word": "横",
+              "start": 1.56,
+              "end": 1.7
+            },
+            {
+              "word": "坐",
+              "start": 1.7,
+              "end": 1.8
+            },
+            {
+              "word": "标",
+              "start": 1.8,
+              "end": 2.02
+            },
+            {
+              "word": "为",
+              "start": 2.02,
+              "end": 2.22
+            },
+            {
+              "word": "二",
+              "start": 2.22,
+              "end": 2.46
+            },
+            {
+              "word": "加",
+              "start": 2.46,
+              "end": 2.6
+            },
+            {
+              "word": "h。",
+              "start": 2.6,
+              "end": 2.86
+            },
+            {
+              "word": "现在",
+              "start": 3.76,
+              "end": 3.86
+            },
+            {
+              "word": "h",
+              "start": 3.86,
+              "end": 4.28
+            },
+            {
+              "word": "等",
+              "start": 4.28,
+              "end": 4.44
+            },
+            {
+              "word": "于",
+              "start": 4.44,
+              "end": 4.58
+            },
+            {
+              "word": "一。",
+              "start": 4.58,
+              "end": 4.8
+            }
+          ]
+        },
+        {
+          "id": "increments",
+          "text": "横向增加一，纵向就从四增加到九，多了五。",
+          "start": 5.56,
+          "end": 9.36,
+          "words": [
+            {
+              "word": " 横",
+              "start": 5.56,
+              "end": 5.64
+            },
+            {
+              "word": "向",
+              "start": 5.64,
+              "end": 5.82
+            },
+            {
+              "word": "增",
+              "start": 5.82,
+              "end": 6.04
+            },
+            {
+              "word": "加",
+              "start": 6.04,
+              "end": 6.2
+            },
+            {
+              "word": "一，",
+              "start": 6.2,
+              "end": 6.4
+            },
+            {
+              "word": "纵",
+              "start": 6.92,
+              "end": 7.04
+            },
+            {
+              "word": "向",
+              "start": 7.04,
+              "end": 7.24
+            },
+            {
+              "word": "就",
+              "start": 7.24,
+              "end": 7.5
+            },
+            {
+              "word": "从",
+              "start": 7.5,
+              "end": 7.7
+            },
+            {
+              "word": "四",
+              "start": 7.84,
+              "end": 7.94
+            },
+            {
+              "word": "增",
+              "start": 7.94,
+              "end": 8.26
+            },
+            {
+              "word": "加",
+              "start": 8.26,
+              "end": 8.4
+            },
+            {
+              "word": "到",
+              "start": 8.4,
+              "end": 8.5
+            },
+            {
+              "word": "九，",
+              "start": 8.5,
+              "end": 8.6
+            },
+            {
+              "word": "多",
+              "start": 9.12,
+              "end": 9.18
+            },
+            {
+              "word": "了",
+              "start": 9.18,
+              "end": 9.26
+            },
+            {
+              "word": "五。",
+              "start": 9.26,
+              "end": 9.36
+            }
+          ]
+        },
+        {
+          "id": "quotient",
+          "text": "纵向增量除以横向增量，得到五。这是区间平均变化率，也是割线斜率。",
+          "start": 10.26,
+          "end": 16.62,
+          "words": [
+            {
+              "word": " 纵",
+              "start": 10.26,
+              "end": 10.34
+            },
+            {
+              "word": "向",
+              "start": 10.34,
+              "end": 10.52
+            },
+            {
+              "word": "增",
+              "start": 10.52,
+              "end": 10.64
+            },
+            {
+              "word": "量",
+              "start": 10.64,
+              "end": 10.8
+            },
+            {
+              "word": "除",
+              "start": 11.02,
+              "end": 11.12
+            },
+            {
+              "word": "以",
+              "start": 11.12,
+              "end": 11.26
+            },
+            {
+              "word": "横",
+              "start": 11.26,
+              "end": 11.44
+            },
+            {
+              "word": "向",
+              "start": 11.5,
+              "end": 11.6
+            },
+            {
+              "word": "增",
+              "start": 11.6,
+              "end": 11.76
+            },
+            {
+              "word": "量，",
+              "start": 11.76,
+              "end": 11.96
+            },
+            {
+              "word": "得",
+              "start": 12.54,
+              "end": 12.64
+            },
+            {
+              "word": "到",
+              "start": 12.64,
+              "end": 12.78
+            },
+            {
+              "word": "五。",
+              "start": 12.78,
+              "end": 12.98
+            },
+            {
+              "word": "这是",
+              "start": 13.78,
+              "end": 13.92
+            },
+            {
+              "word": "区",
+              "start": 13.92,
+              "end": 14.34
+            },
+            {
+              "word": "间",
+              "start": 14.34,
+              "end": 14.5
+            },
+            {
+              "word": "平",
+              "start": 14.5,
+              "end": 14.68
+            },
+            {
+              "word": "均",
+              "start": 14.68,
+              "end": 14.84
+            },
+            {
+              "word": "变",
+              "start": 14.84,
+              "end": 15
+            },
+            {
+              "word": "化",
+              "start": 15,
+              "end": 15.14
+            },
+            {
+              "word": "率，",
+              "start": 15.14,
+              "end": 15.34
+            },
+            {
+              "word": "也是",
+              "start": 15.74,
+              "end": 15.94
+            },
+            {
+              "word": "割",
+              "start": 16.04,
+              "end": 16.14
+            },
+            {
+              "word": "线",
+              "start": 16.14,
+              "end": 16.26
+            },
+            {
+              "word": "斜",
+              "start": 16.36,
+              "end": 16.46
+            },
+            {
+              "word": "率。",
+              "start": 16.46,
+              "end": 16.62
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "approaching",
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-intro-20261101-voice/executions/math-derivative-intro-20261101-v003/speech/approaching.wav",
+      "wav_sha256": "bbf1ae78afc6f48100e8eed7c86f9b8d3dbba7bf96740833c1e77c54ff8f5d23",
+      "receipt": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-intro-20261101-voice/executions/math-derivative-intro-20261101-v003/speech/approaching.receipt.json",
+      "receipt_sha256": "93e6607654a2d63ddc7040bc35e684dada7a7642cb848cc768f7b1be6f13f9ce",
+      "frames": 1228800,
+      "sample_rate": 48000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 25.6,
+      "phrases": [
+        {
+          "id": "setup",
+          "text": "现在让P留在原处，用h记录Q相对P的横坐标增量。",
+          "start": 0.5,
+          "end": 5.82,
+          "words": [
+            {
+              "word": " 现在",
+              "start": 0.5,
+              "end": 0.68
+            },
+            {
+              "word": "让",
+              "start": 0.68,
+              "end": 1.02
+            },
+            {
+              "word": "P",
+              "start": 1.1,
+              "end": 1.2
+            },
+            {
+              "word": "留",
+              "start": 1.2,
+              "end": 1.36
+            },
+            {
+              "word": "在",
+              "start": 1.36,
+              "end": 1.5
+            },
+            {
+              "word": "原",
+              "start": 1.5,
+              "end": 1.64
+            },
+            {
+              "word": "处，",
+              "start": 1.64,
+              "end": 1.74
+            },
+            {
+              "word": "用",
+              "start": 2.36,
+              "end": 2.46
+            },
+            {
+              "word": "h",
+              "start": 2.46,
+              "end": 2.84
+            },
+            {
+              "word": "记",
+              "start": 2.84,
+              "end": 3.3
+            },
+            {
+              "word": "录",
+              "start": 3.3,
+              "end": 3.4
+            },
+            {
+              "word": "Q",
+              "start": 3.46,
+              "end": 3.56
+            },
+            {
+              "word": "相",
+              "start": 3.56,
+              "end": 3.8
+            },
+            {
+              "word": "对",
+              "start": 3.8,
+              "end": 3.94
+            },
+            {
+              "word": "P",
+              "start": 4.4,
+              "end": 4.5
+            },
+            {
+              "word": "的",
+              "start": 4.5,
+              "end": 4.72
+            },
+            {
+              "word": "横",
+              "start": 4.72,
+              "end": 5.14
+            },
+            {
+              "word": "坐",
+              "start": 5.2,
+              "end": 5.3
+            },
+            {
+              "word": "标",
+              "start": 5.3,
+              "end": 5.52
+            },
+            {
+              "word": "增",
+              "start": 5.52,
+              "end": 5.66
+            },
+            {
+              "word": "量。",
+              "start": 5.66,
+              "end": 5.82
+            }
+          ]
+        },
+        {
+          "id": "motion",
+          "text": "Q沿曲线向P靠近，横向、纵向的增量一起缩小，连接两点的割线也在转动。右边的比值从五降到四点一，再靠近一些，变成四点零二。",
+          "start": 6.68,
+          "end": 19.16,
+          "words": [
+            {
+              "word": " Q",
+              "start": 6.68,
+              "end": 6.68
+            },
+            {
+              "word": "沿",
+              "start": 6.68,
+              "end": 7.08
+            },
+            {
+              "word": "曲",
+              "start": 7.08,
+              "end": 7.28
+            },
+            {
+              "word": "线",
+              "start": 7.28,
+              "end": 7.46
+            },
+            {
+              "word": "向",
+              "start": 7.46,
+              "end": 7.74
+            },
+            {
+              "word": "P",
+              "start": 7.74,
+              "end": 7.92
+            },
+            {
+              "word": "靠",
+              "start": 7.98,
+              "end": 8.08
+            },
+            {
+              "word": "近，",
+              "start": 8.08,
+              "end": 8.26
+            },
+            {
+              "word": "横",
+              "start": 8.98,
+              "end": 9.28
+            },
+            {
+              "word": "向、",
+              "start": 9.28,
+              "end": 9.38
+            },
+            {
+              "word": "纵",
+              "start": 9.54,
+              "end": 9.64
+            },
+            {
+              "word": "向",
+              "start": 9.64,
+              "end": 9.8
+            },
+            {
+              "word": "的",
+              "start": 9.8,
+              "end": 9.94
+            },
+            {
+              "word": "增",
+              "start": 9.98,
+              "end": 10.08
+            },
+            {
+              "word": "量",
+              "start": 10.08,
+              "end": 10.2
+            },
+            {
+              "word": "一起",
+              "start": 10.2,
+              "end": 10.6
+            },
+            {
+              "word": "缩",
+              "start": 10.7,
+              "end": 10.8
+            },
+            {
+              "word": "小，",
+              "start": 10.8,
+              "end": 11
+            },
+            {
+              "word": "连",
+              "start": 11.54,
+              "end": 11.66
+            },
+            {
+              "word": "接",
+              "start": 11.66,
+              "end": 11.8
+            },
+            {
+              "word": "两",
+              "start": 11.8,
+              "end": 12.02
+            },
+            {
+              "word": "点",
+              "start": 12.02,
+              "end": 12.22
+            },
+            {
+              "word": "的",
+              "start": 12.28,
+              "end": 12.38
+            },
+            {
+              "word": "割",
+              "start": 12.38,
+              "end": 12.5
+            },
+            {
+              "word": "线",
+              "start": 12.5,
+              "end": 12.64
+            },
+            {
+              "word": "也",
+              "start": 12.64,
+              "end": 13.02
+            },
+            {
+              "word": "在",
+              "start": 13.12,
+              "end": 13.22
+            },
+            {
+              "word": "转",
+              "start": 13.22,
+              "end": 13.38
+            },
+            {
+              "word": "动。",
+              "start": 13.38,
+              "end": 13.58
+            },
+            {
+              "word": "右",
+              "start": 14.22,
+              "end": 14.34
+            },
+            {
+              "word": "边",
+              "start": 14.34,
+              "end": 14.46
+            },
+            {
+              "word": "的",
+              "start": 14.46,
+              "end": 14.6
+            },
+            {
+              "word": "比",
+              "start": 14.6,
+              "end": 14.72
+            },
+            {
+              "word": "值",
+              "start": 14.72,
+              "end": 14.92
+            },
+            {
+              "word": "从",
+              "start": 15.18,
+              "end": 15.28
+            },
+            {
+              "word": "五",
+              "start": 15.28,
+              "end": 15.52
+            },
+            {
+              "word": "降",
+              "start": 15.6,
+              "end": 15.7
+            },
+            {
+              "word": "到",
+              "start": 15.7,
+              "end": 15.88
+            },
+            {
+              "word": "四",
+              "start": 15.88,
+              "end": 16.18
+            },
+            {
+              "word": "点",
+              "start": 16.18,
+              "end": 16.28
+            },
+            {
+              "word": "一，",
+              "start": 16.28,
+              "end": 16.58
+            },
+            {
+              "word": "再",
+              "start": 17.04,
+              "end": 17.16
+            },
+            {
+              "word": "靠",
+              "start": 17.26,
+              "end": 17.36
+            },
+            {
+              "word": "近",
+              "start": 17.36,
+              "end": 17.52
+            },
+            {
+              "word": "一些，",
+              "start": 17.52,
+              "end": 17.62
+            },
+            {
+              "word": "变",
+              "start": 18.1,
+              "end": 18.2
+            },
+            {
+              "word": "成",
+              "start": 18.2,
+              "end": 18.38
+            },
+            {
+              "word": "四",
+              "start": 18.38,
+              "end": 18.7
+            },
+            {
+              "word": "点",
+              "start": 18.7,
+              "end": 18.82
+            },
+            {
+              "word": "零",
+              "start": 18.88,
+              "end": 18.98
+            },
+            {
+              "word": "二。",
+              "start": 18.98,
+              "end": 19.16
+            }
+          ],
+          "instantaneous_word_indices": [
+            0
+          ],
+          "word_timing_warning": "Zero-duration tokens are uncertain point estimates, not measured speech intervals"
+        },
+        {
+          "id": "near",
+          "text": "区间越来越短，平均变化率越来越接近四。为什么会是这个数？",
+          "start": 19.98,
+          "end": 25.58,
+          "words": [
+            {
+              "word": " 区",
+              "start": 19.98,
+              "end": 20
+            },
+            {
+              "word": "间",
+              "start": 20,
+              "end": 20.14
+            },
+            {
+              "word": "越",
+              "start": 20.14,
+              "end": 20.3
+            },
+            {
+              "word": "来",
+              "start": 20.3,
+              "end": 20.42
+            },
+            {
+              "word": "越",
+              "start": 20.42,
+              "end": 20.56
+            },
+            {
+              "word": "短，",
+              "start": 20.56,
+              "end": 20.9
+            },
+            {
+              "word": "平",
+              "start": 21.24,
+              "end": 21.34
+            },
+            {
+              "word": "均",
+              "start": 21.42,
+              "end": 21.52
+            },
+            {
+              "word": "变",
+              "start": 21.52,
+              "end": 21.68
+            },
+            {
+              "word": "化",
+              "start": 21.68,
+              "end": 21.84
+            },
+            {
+              "word": "率",
+              "start": 21.86,
+              "end": 21.98
+            },
+            {
+              "word": "越",
+              "start": 21.98,
+              "end": 22.32
+            },
+            {
+              "word": "来",
+              "start": 22.32,
+              "end": 22.46
+            },
+            {
+              "word": "越",
+              "start": 22.5,
+              "end": 22.68
+            },
+            {
+              "word": "接",
+              "start": 22.72,
+              "end": 22.82
+            },
+            {
+              "word": "近",
+              "start": 22.82,
+              "end": 22.98
+            },
+            {
+              "word": "四。",
+              "start": 22.98,
+              "end": 23.24
+            },
+            {
+              "word": "为什么",
+              "start": 23.8,
+              "end": 24.08
+            },
+            {
+              "word": "会",
+              "start": 24.08,
+              "end": 24.34
+            },
+            {
+              "word": "是",
+              "start": 24.34,
+              "end": 24.54
+            },
+            {
+              "word": "这个",
+              "start": 24.86,
+              "end": 24.96
+            },
+            {
+              "word": "数？",
+              "start": 24.96,
+              "end": 25.58
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "algebra_reason",
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-intro-20261101-voice/executions/math-derivative-intro-20261101-v003/speech/algebra_reason.wav",
+      "wav_sha256": "c851d8c9da05fa737aa597cfacce34d84ee46b0eda77064cf75b7b76a0a838f2",
+      "receipt": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-intro-20261101-voice/executions/math-derivative-intro-20261101-v003/speech/algebra_reason.receipt.json",
+      "receipt_sha256": "6bcdf0438295c1449a7e535f40e8a8141bc2987459375a90267e25e6243d30a8",
+      "frames": 1551360,
+      "sample_rate": 48000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 32.32,
+      "phrases": [
+        {
+          "id": "substitute",
+          "text": "把平方函数代进同一个差商，分子是二加h的平方，再减四。",
+          "start": 0.32,
+          "end": 6.08,
+          "words": [
+            {
+              "word": " 把",
+              "start": 0.32,
+              "end": 0.36
+            },
+            {
+              "word": "平",
+              "start": 0.36,
+              "end": 0.56
+            },
+            {
+              "word": "方",
+              "start": 0.56,
+              "end": 0.74
+            },
+            {
+              "word": "函",
+              "start": 0.74,
+              "end": 0.92
+            },
+            {
+              "word": "数",
+              "start": 0.92,
+              "end": 1.1
+            },
+            {
+              "word": "代",
+              "start": 1.1,
+              "end": 1.42
+            },
+            {
+              "word": "进",
+              "start": 1.42,
+              "end": 1.56
+            },
+            {
+              "word": "同",
+              "start": 1.56,
+              "end": 1.82
+            },
+            {
+              "word": "一个",
+              "start": 1.9,
+              "end": 2.08
+            },
+            {
+              "word": "差",
+              "start": 2.08,
+              "end": 2.24
+            },
+            {
+              "word": "商，",
+              "start": 2.24,
+              "end": 2.5
+            },
+            {
+              "word": "分",
+              "start": 3.1,
+              "end": 3.12
+            },
+            {
+              "word": "子",
+              "start": 3.16,
+              "end": 3.26
+            },
+            {
+              "word": "是",
+              "start": 3.26,
+              "end": 3.52
+            },
+            {
+              "word": "二",
+              "start": 3.7,
+              "end": 3.82
+            },
+            {
+              "word": "加",
+              "start": 3.82,
+              "end": 4.02
+            },
+            {
+              "word": "h",
+              "start": 4.02,
+              "end": 4.28
+            },
+            {
+              "word": "的",
+              "start": 4.28,
+              "end": 4.42
+            },
+            {
+              "word": "平",
+              "start": 4.46,
+              "end": 4.56
+            },
+            {
+              "word": "方，",
+              "start": 4.56,
+              "end": 4.8
+            },
+            {
+              "word": "再",
+              "start": 5.12,
+              "end": 5.24
+            },
+            {
+              "word": "减",
+              "start": 5.24,
+              "end": 5.32
+            },
+            {
+              "word": "四。",
+              "start": 5.32,
+              "end": 6.08
+            }
+          ]
+        },
+        {
+          "id": "expand",
+          "text": "展开以后，得到四、四h和h平方，最后减四。",
+          "start": 6.38,
+          "end": 11.78,
+          "words": [
+            {
+              "word": " 展",
+              "start": 6.38,
+              "end": 6.46
+            },
+            {
+              "word": "开",
+              "start": 6.46,
+              "end": 6.62
+            },
+            {
+              "word": "以",
+              "start": 6.62,
+              "end": 6.74
+            },
+            {
+              "word": "后，",
+              "start": 6.74,
+              "end": 6.94
+            },
+            {
+              "word": "得",
+              "start": 7.2,
+              "end": 7.32
+            },
+            {
+              "word": "到",
+              "start": 7.32,
+              "end": 7.46
+            },
+            {
+              "word": "四、",
+              "start": 7.46,
+              "end": 8.08
+            },
+            {
+              "word": "四",
+              "start": 8.28,
+              "end": 8.38
+            },
+            {
+              "word": "h",
+              "start": 8.38,
+              "end": 8.66
+            },
+            {
+              "word": "和",
+              "start": 8.66,
+              "end": 9.08
+            },
+            {
+              "word": "h",
+              "start": 9.08,
+              "end": 9.36
+            },
+            {
+              "word": "平",
+              "start": 9.46,
+              "end": 9.56
+            },
+            {
+              "word": "方，",
+              "start": 9.56,
+              "end": 9.8
+            },
+            {
+              "word": "最",
+              "start": 10.34,
+              "end": 10.44
+            },
+            {
+              "word": "后",
+              "start": 10.44,
+              "end": 10.6
+            },
+            {
+              "word": "减",
+              "start": 10.6,
+              "end": 10.98
+            },
+            {
+              "word": "四。",
+              "start": 10.98,
+              "end": 11.78
+            }
+          ]
+        },
+        {
+          "id": "combine",
+          "text": "两个常数相消，留下四h加h平方。",
+          "start": 11.96,
+          "end": 15.5,
+          "words": [
+            {
+              "word": " 两",
+              "start": 11.96,
+              "end": 12.04
+            },
+            {
+              "word": "个",
+              "start": 12.04,
+              "end": 12.16
+            },
+            {
+              "word": "常",
+              "start": 12.16,
+              "end": 12.3
+            },
+            {
+              "word": "数",
+              "start": 12.3,
+              "end": 12.5
+            },
+            {
+              "word": "相",
+              "start": 12.5,
+              "end": 12.76
+            },
+            {
+              "word": "消，",
+              "start": 12.76,
+              "end": 13.02
+            },
+            {
+              "word": "留",
+              "start": 13.6,
+              "end": 13.7
+            },
+            {
+              "word": "下",
+              "start": 13.7,
+              "end": 13.9
+            },
+            {
+              "word": "四",
+              "start": 13.9,
+              "end": 14.22
+            },
+            {
+              "word": "h",
+              "start": 14.22,
+              "end": 14.46
+            },
+            {
+              "word": "加",
+              "start": 14.7,
+              "end": 14.8
+            },
+            {
+              "word": "h",
+              "start": 14.8,
+              "end": 15.06
+            },
+            {
+              "word": "平",
+              "start": 15.16,
+              "end": 15.26
+            },
+            {
+              "word": "方。",
+              "start": 15.26,
+              "end": 15.5
+            }
+          ]
+        },
+        {
+          "id": "factor",
+          "text": "提取公因式h，分子就成了h乘以括号里的四加h。",
+          "start": 16.22,
+          "end": 20.78,
+          "words": [
+            {
+              "word": " 提",
+              "start": 16.22,
+              "end": 16.3
+            },
+            {
+              "word": "取",
+              "start": 16.38,
+              "end": 16.48
+            },
+            {
+              "word": "公",
+              "start": 16.48,
+              "end": 16.68
+            },
+            {
+              "word": "因",
+              "start": 16.68,
+              "end": 16.8
+            },
+            {
+              "word": "式",
+              "start": 16.8,
+              "end": 16.98
+            },
+            {
+              "word": "h，",
+              "start": 16.98,
+              "end": 17.34
+            },
+            {
+              "word": "分",
+              "start": 17.84,
+              "end": 17.94
+            },
+            {
+              "word": "子",
+              "start": 17.94,
+              "end": 18.16
+            },
+            {
+              "word": "就",
+              "start": 18.16,
+              "end": 18.36
+            },
+            {
+              "word": "成",
+              "start": 18.48,
+              "end": 18.58
+            },
+            {
+              "word": "了",
+              "start": 18.58,
+              "end": 18.7
+            },
+            {
+              "word": "h",
+              "start": 18.7,
+              "end": 19.08
+            },
+            {
+              "word": "乘",
+              "start": 19.32,
+              "end": 19.42
+            },
+            {
+              "word": "以",
+              "start": 19.42,
+              "end": 19.56
+            },
+            {
+              "word": "括",
+              "start": 19.64,
+              "end": 19.74
+            },
+            {
+              "word": "号",
+              "start": 19.74,
+              "end": 19.9
+            },
+            {
+              "word": "里",
+              "start": 19.9,
+              "end": 20.04
+            },
+            {
+              "word": "的",
+              "start": 20.04,
+              "end": 20.14
+            },
+            {
+              "word": "四",
+              "start": 20.14,
+              "end": 20.4
+            },
+            {
+              "word": "加",
+              "start": 20.44,
+              "end": 20.54
+            },
+            {
+              "word": "h。",
+              "start": 20.54,
+              "end": 20.78
+            }
+          ]
+        },
+        {
+          "id": "cancel",
+          "text": "P、Q仍是两个点，h不等于零，分子分母的h可以约去。",
+          "start": 21.66,
+          "end": 27.18,
+          "words": [
+            {
+              "word": " P、",
+              "start": 21.66,
+              "end": 21.76
+            },
+            {
+              "word": "Q",
+              "start": 21.98,
+              "end": 22.08
+            },
+            {
+              "word": "仍",
+              "start": 22.6,
+              "end": 22.7
+            },
+            {
+              "word": "是",
+              "start": 22.7,
+              "end": 22.86
+            },
+            {
+              "word": "两",
+              "start": 22.86,
+              "end": 23.04
+            },
+            {
+              "word": "个",
+              "start": 23.04,
+              "end": 23.14
+            },
+            {
+              "word": "点，",
+              "start": 23.14,
+              "end": 23.88
+            },
+            {
+              "word": "h",
+              "start": 23.88,
+              "end": 24.02
+            },
+            {
+              "word": "不",
+              "start": 24.24,
+              "end": 24.34
+            },
+            {
+              "word": "等",
+              "start": 24.34,
+              "end": 24.46
+            },
+            {
+              "word": "于",
+              "start": 24.46,
+              "end": 24.6
+            },
+            {
+              "word": "零，",
+              "start": 24.6,
+              "end": 24.76
+            },
+            {
+              "word": "分",
+              "start": 25.28,
+              "end": 25.38
+            },
+            {
+              "word": "子",
+              "start": 25.38,
+              "end": 25.54
+            },
+            {
+              "word": "分",
+              "start": 25.54,
+              "end": 25.72
+            },
+            {
+              "word": "母",
+              "start": 25.72,
+              "end": 25.86
+            },
+            {
+              "word": "的",
+              "start": 25.86,
+              "end": 25.98
+            },
+            {
+              "word": "h",
+              "start": 26.08,
+              "end": 26.24
+            },
+            {
+              "word": "可以",
+              "start": 26.24,
+              "end": 26.7
+            },
+            {
+              "word": "约",
+              "start": 26.84,
+              "end": 26.94
+            },
+            {
+              "word": "去。",
+              "start": 26.94,
+              "end": 27.18
+            }
+          ]
+        },
+        {
+          "id": "simple",
+          "text": "于是，每条这样的割线，斜率都等于四加h。",
+          "start": 27.96,
+          "end": 32.02,
+          "words": [
+            {
+              "word": " 于",
+              "start": 27.96,
+              "end": 28.04
+            },
+            {
+              "word": "是，",
+              "start": 28.04,
+              "end": 28.76
+            },
+            {
+              "word": "每",
+              "start": 28.76,
+              "end": 28.8
+            },
+            {
+              "word": "条",
+              "start": 28.8,
+              "end": 29.04
+            },
+            {
+              "word": "这样",
+              "start": 29.04,
+              "end": 29.3
+            },
+            {
+              "word": "的",
+              "start": 29.3,
+              "end": 29.48
+            },
+            {
+              "word": "割",
+              "start": 29.48,
+              "end": 29.6
+            },
+            {
+              "word": "线，",
+              "start": 29.6,
+              "end": 29.82
+            },
+            {
+              "word": "斜",
+              "start": 30.26,
+              "end": 30.36
+            },
+            {
+              "word": "率",
+              "start": 30.36,
+              "end": 30.52
+            },
+            {
+              "word": "都",
+              "start": 30.66,
+              "end": 30.76
+            },
+            {
+              "word": "等",
+              "start": 30.76,
+              "end": 30.96
+            },
+            {
+              "word": "于",
+              "start": 30.96,
+              "end": 31.08
+            },
+            {
+              "word": "四",
+              "start": 31.08,
+              "end": 31.46
+            },
+            {
+              "word": "加",
+              "start": 31.54,
+              "end": 31.64
+            },
+            {
+              "word": "h。",
+              "start": 31.64,
+              "end": 32.02
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "both_directions",
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-intro-20261101-voice/executions/math-derivative-intro-20261101-v003/speech/both_directions.wav",
+      "wav_sha256": "c08a7eec00373e32198361917c30ee5887ac959b8ca99231ac71a0891acb2cb8",
+      "receipt": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-intro-20261101-voice/executions/math-derivative-intro-20261101-v003/speech/both_directions.receipt.json",
+      "receipt_sha256": "7f545d2a8734fa474d847cf78e090e783e77c3190ab6af084e93db1de5123358",
+      "frames": 890880,
+      "sample_rate": 48000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 18.56,
+      "phrases": [
+        {
+          "id": "signs",
+          "text": "左边的Q对应负h，纵向增量也为负，斜率仍为正。",
+          "start": 0.46,
+          "end": 5.22,
+          "words": [
+            {
+              "word": " 左",
+              "start": 0.46,
+              "end": 0.48
+            },
+            {
+              "word": "边",
+              "start": 0.48,
+              "end": 0.62
+            },
+            {
+              "word": "的",
+              "start": 0.62,
+              "end": 0.74
+            },
+            {
+              "word": "Q",
+              "start": 0.74,
+              "end": 0.9
+            },
+            {
+              "word": "对",
+              "start": 0.9,
+              "end": 1.22
+            },
+            {
+              "word": "应",
+              "start": 1.22,
+              "end": 1.38
+            },
+            {
+              "word": "负",
+              "start": 1.48,
+              "end": 1.58
+            },
+            {
+              "word": "h，",
+              "start": 1.58,
+              "end": 1.92
+            },
+            {
+              "word": "纵",
+              "start": 2.48,
+              "end": 2.62
+            },
+            {
+              "word": "向",
+              "start": 2.62,
+              "end": 2.8
+            },
+            {
+              "word": "增",
+              "start": 2.8,
+              "end": 2.96
+            },
+            {
+              "word": "量",
+              "start": 2.96,
+              "end": 3.08
+            },
+            {
+              "word": "也",
+              "start": 3.08,
+              "end": 3.38
+            },
+            {
+              "word": "为",
+              "start": 3.44,
+              "end": 3.54
+            },
+            {
+              "word": "负，",
+              "start": 3.54,
+              "end": 3.8
+            },
+            {
+              "word": "斜",
+              "start": 4.3,
+              "end": 4.44
+            },
+            {
+              "word": "率",
+              "start": 4.44,
+              "end": 4.58
+            },
+            {
+              "word": "仍",
+              "start": 4.58,
+              "end": 4.82
+            },
+            {
+              "word": "为",
+              "start": 4.82,
+              "end": 5
+            },
+            {
+              "word": "正。",
+              "start": 5,
+              "end": 5.22
+            }
+          ]
+        },
+        {
+          "id": "moving",
+          "text": "两侧一起靠近，右边的斜率从四的上方下降，左边的从四的下方上升。",
+          "start": 5.86,
+          "end": 11.56,
+          "words": [
+            {
+              "word": " 两",
+              "start": 5.86,
+              "end": 5.94
+            },
+            {
+              "word": "侧",
+              "start": 5.94,
+              "end": 6.14
+            },
+            {
+              "word": "一起",
+              "start": 6.14,
+              "end": 6.4
+            },
+            {
+              "word": "靠",
+              "start": 6.4,
+              "end": 6.62
+            },
+            {
+              "word": "近，",
+              "start": 6.62,
+              "end": 6.82
+            },
+            {
+              "word": "右",
+              "start": 7.3,
+              "end": 7.4
+            },
+            {
+              "word": "边",
+              "start": 7.4,
+              "end": 7.54
+            },
+            {
+              "word": "的",
+              "start": 7.54,
+              "end": 7.68
+            },
+            {
+              "word": "斜",
+              "start": 7.68,
+              "end": 7.82
+            },
+            {
+              "word": "率",
+              "start": 7.82,
+              "end": 7.98
+            },
+            {
+              "word": "从",
+              "start": 7.98,
+              "end": 8.28
+            },
+            {
+              "word": "四",
+              "start": 8.28,
+              "end": 8.48
+            },
+            {
+              "word": "的",
+              "start": 8.48,
+              "end": 8.58
+            },
+            {
+              "word": "上",
+              "start": 8.58,
+              "end": 8.7
+            },
+            {
+              "word": "方",
+              "start": 8.74,
+              "end": 8.84
+            },
+            {
+              "word": "下",
+              "start": 8.84,
+              "end": 9.02
+            },
+            {
+              "word": "降，",
+              "start": 9.02,
+              "end": 9.2
+            },
+            {
+              "word": "左",
+              "start": 9.78,
+              "end": 9.86
+            },
+            {
+              "word": "边",
+              "start": 9.86,
+              "end": 10.06
+            },
+            {
+              "word": "的",
+              "start": 10.06,
+              "end": 10.16
+            },
+            {
+              "word": "从",
+              "start": 10.16,
+              "end": 10.48
+            },
+            {
+              "word": "四",
+              "start": 10.6,
+              "end": 10.7
+            },
+            {
+              "word": "的",
+              "start": 10.7,
+              "end": 10.82
+            },
+            {
+              "word": "下",
+              "start": 10.82,
+              "end": 10.96
+            },
+            {
+              "word": "方",
+              "start": 11.02,
+              "end": 11.12
+            },
+            {
+              "word": "上",
+              "start": 11.12,
+              "end": 11.34
+            },
+            {
+              "word": "升。",
+              "start": 11.34,
+              "end": 11.56
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "text": "差商离四的距离正好是h的绝对值，h趋近零，两侧就都趋近四。",
+          "start": 12.3,
+          "end": 18.14,
+          "words": [
+            {
+              "word": " 差",
+              "start": 12.3,
+              "end": 12.4
+            },
+            {
+              "word": "商",
+              "start": 12.4,
+              "end": 12.6
+            },
+            {
+              "word": "离",
+              "start": 12.6,
+              "end": 12.74
+            },
+            {
+              "word": "四",
+              "start": 12.74,
+              "end": 12.96
+            },
+            {
+              "word": "的",
+              "start": 12.96,
+              "end": 13.1
+            },
+            {
+              "word": "距",
+              "start": 13.1,
+              "end": 13.22
+            },
+            {
+              "word": "离",
+              "start": 13.22,
+              "end": 13.36
+            },
+            {
+              "word": "正",
+              "start": 13.36,
+              "end": 13.7
+            },
+            {
+              "word": "好",
+              "start": 13.7,
+              "end": 13.88
+            },
+            {
+              "word": "是",
+              "start": 13.88,
+              "end": 14.06
+            },
+            {
+              "word": "h",
+              "start": 14.22,
+              "end": 14.32
+            },
+            {
+              "word": "的",
+              "start": 14.32,
+              "end": 14.48
+            },
+            {
+              "word": "绝",
+              "start": 14.52,
+              "end": 14.62
+            },
+            {
+              "word": "对",
+              "start": 14.62,
+              "end": 14.7
+            },
+            {
+              "word": "值，",
+              "start": 14.7,
+              "end": 15
+            },
+            {
+              "word": "h",
+              "start": 15.56,
+              "end": 15.74
+            },
+            {
+              "word": "趋",
+              "start": 15.74,
+              "end": 15.94
+            },
+            {
+              "word": "近",
+              "start": 15.94,
+              "end": 15.94
+            },
+            {
+              "word": "零，",
+              "start": 15.94,
+              "end": 16.98
+            },
+            {
+              "word": "两",
+              "start": 16.98,
+              "end": 16.98
+            },
+            {
+              "word": "侧",
+              "start": 16.98,
+              "end": 17.24
+            },
+            {
+              "word": "就",
+              "start": 17.24,
+              "end": 17.42
+            },
+            {
+              "word": "都",
+              "start": 17.42,
+              "end": 17.68
+            },
+            {
+              "word": "趋",
+              "start": 17.78,
+              "end": 17.88
+            },
+            {
+              "word": "近",
+              "start": 17.88,
+              "end": 18.04
+            },
+            {
+              "word": "四。",
+              "start": 18.04,
+              "end": 18.14
+            }
+          ],
+          "instantaneous_word_indices": [
+            17,
+            19
+          ],
+          "word_timing_warning": "Zero-duration tokens are uncertain point estimates, not measured speech intervals"
+        }
+      ]
+    },
+    {
+      "id": "zero_and_limit",
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-intro-20261101-voice/executions/math-derivative-intro-20261101-v003/speech/zero_and_limit.wav",
+      "wav_sha256": "4abe3da55663b878a1c1899cf45c30870945ba005727a79d5805627e9bc3c0c8",
+      "receipt": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-intro-20261101-voice/executions/math-derivative-intro-20261101-v003/speech/zero_and_limit.receipt.json",
+      "receipt_sha256": "3df62411a8c7f10ab23e2a4f24dd51c485223e91d76bdda476afdae0054249d0",
+      "frames": 975360,
+      "sample_rate": 48000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 20.32,
+      "phrases": [
+        {
+          "id": "substitute_zero",
+          "text": "在原差商里，把h取零。",
+          "start": 0.28,
+          "end": 2.26,
+          "words": [
+            {
+              "word": " 在",
+              "start": 0.28,
+              "end": 0.38
+            },
+            {
+              "word": "原",
+              "start": 0.38,
+              "end": 0.52
+            },
+            {
+              "word": "差",
+              "start": 0.52,
+              "end": 0.68
+            },
+            {
+              "word": "商",
+              "start": 0.68,
+              "end": 0.84
+            },
+            {
+              "word": "里，",
+              "start": 0.84,
+              "end": 1.04
+            },
+            {
+              "word": "把",
+              "start": 1.34,
+              "end": 1.34
+            },
+            {
+              "word": "h",
+              "start": 1.46,
+              "end": 1.64
+            },
+            {
+              "word": "取",
+              "start": 1.64,
+              "end": 1.98
+            },
+            {
+              "word": "零。",
+              "start": 1.98,
+              "end": 2.26
+            }
+          ],
+          "instantaneous_word_indices": [
+            5
+          ],
+          "word_timing_warning": "Zero-duration tokens are uncertain point estimates, not measured speech intervals"
+        },
+        {
+          "id": "undefined",
+          "text": "分子和分母都变成零，原差商在这个输入上无定义。",
+          "start": 3.08,
+          "end": 7.58,
+          "words": [
+            {
+              "word": " 分",
+              "start": 3.08,
+              "end": 3.08
+            },
+            {
+              "word": "子",
+              "start": 3.08,
+              "end": 3.3
+            },
+            {
+              "word": "和",
+              "start": 3.3,
+              "end": 3.6
+            },
+            {
+              "word": "分",
+              "start": 3.7,
+              "end": 3.8
+            },
+            {
+              "word": "母",
+              "start": 3.8,
+              "end": 3.92
+            },
+            {
+              "word": "都",
+              "start": 3.92,
+              "end": 4.22
+            },
+            {
+              "word": "变",
+              "start": 4.22,
+              "end": 4.44
+            },
+            {
+              "word": "成",
+              "start": 4.44,
+              "end": 4.6
+            },
+            {
+              "word": "零，",
+              "start": 4.6,
+              "end": 4.82
+            },
+            {
+              "word": "原",
+              "start": 5.4,
+              "end": 5.54
+            },
+            {
+              "word": "差",
+              "start": 5.54,
+              "end": 5.72
+            },
+            {
+              "word": "商",
+              "start": 5.72,
+              "end": 5.9
+            },
+            {
+              "word": "在",
+              "start": 5.9,
+              "end": 6.18
+            },
+            {
+              "word": "这个",
+              "start": 6.18,
+              "end": 6.56
+            },
+            {
+              "word": "输",
+              "start": 6.56,
+              "end": 6.7
+            },
+            {
+              "word": "入",
+              "start": 6.7,
+              "end": 6.8
+            },
+            {
+              "word": "上",
+              "start": 6.8,
+              "end": 6.98
+            },
+            {
+              "word": "无",
+              "start": 6.98,
+              "end": 7.24
+            },
+            {
+              "word": "定",
+              "start": 7.26,
+              "end": 7.36
+            },
+            {
+              "word": "义。",
+              "start": 7.36,
+              "end": 7.58
+            }
+          ],
+          "instantaneous_word_indices": [
+            0
+          ],
+          "word_timing_warning": "Zero-duration tokens are uncertain point estimates, not measured speech intervals"
+        },
+        {
+          "id": "nearby",
+          "text": "附近的h保持非零，两侧的商仍是四加h；h靠近零，商就靠近四。",
+          "start": 8.28,
+          "end": 15.52,
+          "words": [
+            {
+              "word": " 附",
+              "start": 8.28,
+              "end": 8.32
+            },
+            {
+              "word": "近",
+              "start": 8.32,
+              "end": 8.46
+            },
+            {
+              "word": "的",
+              "start": 8.46,
+              "end": 8.58
+            },
+            {
+              "word": "h",
+              "start": 8.58,
+              "end": 8.82
+            },
+            {
+              "word": "保",
+              "start": 8.82,
+              "end": 9.28
+            },
+            {
+              "word": "持",
+              "start": 9.42,
+              "end": 9.52
+            },
+            {
+              "word": "非",
+              "start": 9.52,
+              "end": 9.78
+            },
+            {
+              "word": "零，",
+              "start": 9.78,
+              "end": 10.02
+            },
+            {
+              "word": "两",
+              "start": 10.5,
+              "end": 10.64
+            },
+            {
+              "word": "侧",
+              "start": 10.64,
+              "end": 10.82
+            },
+            {
+              "word": "的",
+              "start": 10.82,
+              "end": 10.96
+            },
+            {
+              "word": "商",
+              "start": 10.96,
+              "end": 11.1
+            },
+            {
+              "word": "仍",
+              "start": 11.1,
+              "end": 11.48
+            },
+            {
+              "word": "是",
+              "start": 11.6,
+              "end": 11.72
+            },
+            {
+              "word": "四",
+              "start": 11.72,
+              "end": 12.1
+            },
+            {
+              "word": "加",
+              "start": 12.1,
+              "end": 12.28
+            },
+            {
+              "word": "h",
+              "start": 12.46,
+              "end": 12.56
+            },
+            {
+              "word": "；",
+              "start": 12.56,
+              "end": 13.26
+            },
+            {
+              "word": "h",
+              "start": 13.3,
+              "end": 13.48
+            },
+            {
+              "word": "靠",
+              "start": 13.48,
+              "end": 13.74
+            },
+            {
+              "word": "近",
+              "start": 13.74,
+              "end": 13.9
+            },
+            {
+              "word": "零，",
+              "start": 13.9,
+              "end": 14.14
+            },
+            {
+              "word": "商",
+              "start": 14.56,
+              "end": 14.68
+            },
+            {
+              "word": "就",
+              "start": 14.68,
+              "end": 14.8
+            },
+            {
+              "word": "靠",
+              "start": 14.8,
+              "end": 15.08
+            },
+            {
+              "word": "近",
+              "start": 15.08,
+              "end": 15.24
+            },
+            {
+              "word": "四。",
+              "start": 15.24,
+              "end": 15.52
+            }
+          ]
+        },
+        {
+          "id": "comparison",
+          "text": "原式在零点无定义，附近的商共同趋近四。",
+          "start": 16.22,
+          "end": 20.08,
+          "words": [
+            {
+              "word": " 原",
+              "start": 16.22,
+              "end": 16.32
+            },
+            {
+              "word": "式",
+              "start": 16.32,
+              "end": 16.54
+            },
+            {
+              "word": "在",
+              "start": 16.54,
+              "end": 16.82
+            },
+            {
+              "word": "零",
+              "start": 16.82,
+              "end": 17.1
+            },
+            {
+              "word": "点",
+              "start": 17.1,
+              "end": 17.22
+            },
+            {
+              "word": "无",
+              "start": 17.22,
+              "end": 17.42
+            },
+            {
+              "word": "定",
+              "start": 17.42,
+              "end": 17.52
+            },
+            {
+              "word": "义，",
+              "start": 17.52,
+              "end": 17.68
+            },
+            {
+              "word": "附",
+              "start": 18.32,
+              "end": 18.4
+            },
+            {
+              "word": "近",
+              "start": 18.4,
+              "end": 18.5
+            },
+            {
+              "word": "的",
+              "start": 18.5,
+              "end": 18.62
+            },
+            {
+              "word": "商",
+              "start": 18.62,
+              "end": 18.78
+            },
+            {
+              "word": "共",
+              "start": 18.78,
+              "end": 19.08
+            },
+            {
+              "word": "同",
+              "start": 19.08,
+              "end": 19.42
+            },
+            {
+              "word": "趋",
+              "start": 19.54,
+              "end": 19.64
+            },
+            {
+              "word": "近",
+              "start": 19.64,
+              "end": 19.78
+            },
+            {
+              "word": "四。",
+              "start": 19.78,
+              "end": 20.08
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "name_derivative",
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-intro-20261101-voice/executions/math-derivative-intro-20261101-v003/speech/name_derivative.wav",
+      "wav_sha256": "668411e2aae9488981ddd71766298854f498a6baa375e79cb21a4ea6b2fcc707",
+      "receipt": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-intro-20261101-voice/executions/math-derivative-intro-20261101-v003/speech/name_derivative.receipt.json",
+      "receipt_sha256": "b62ee593ebc3f90726ea77f26f75d9a7ea8d077527b5dad1de9a0d468c4f2c5c",
+      "frames": 1013760,
+      "sample_rate": 48000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 21.12,
+      "phrases": [
+        {
+          "id": "value",
+          "text": "这个共同趋近的值叫作函数在二处的导数，记作f撇二，等于四。f二记录高度，f撇二记录这里的变化率。",
+          "start": 0.48,
+          "end": 11.1,
+          "words": [
+            {
+              "word": " 这个",
+              "start": 0.48,
+              "end": 0.66
+            },
+            {
+              "word": "共",
+              "start": 0.66,
+              "end": 0.88
+            },
+            {
+              "word": "同",
+              "start": 0.88,
+              "end": 1.14
+            },
+            {
+              "word": "趋",
+              "start": 1.14,
+              "end": 1.32
+            },
+            {
+              "word": "近",
+              "start": 1.32,
+              "end": 1.46
+            },
+            {
+              "word": "的",
+              "start": 1.46,
+              "end": 1.6
+            },
+            {
+              "word": "值",
+              "start": 1.6,
+              "end": 1.74
+            },
+            {
+              "word": "叫",
+              "start": 2.08,
+              "end": 2.18
+            },
+            {
+              "word": "作",
+              "start": 2.18,
+              "end": 2.42
+            },
+            {
+              "word": "函",
+              "start": 2.42,
+              "end": 2.7
+            },
+            {
+              "word": "数",
+              "start": 2.8,
+              "end": 2.9
+            },
+            {
+              "word": "在",
+              "start": 2.9,
+              "end": 3.08
+            },
+            {
+              "word": "二",
+              "start": 3.08,
+              "end": 3.44
+            },
+            {
+              "word": "处",
+              "start": 3.44,
+              "end": 3.66
+            },
+            {
+              "word": "的",
+              "start": 3.66,
+              "end": 3.78
+            },
+            {
+              "word": "导",
+              "start": 3.78,
+              "end": 3.92
+            },
+            {
+              "word": "数，",
+              "start": 3.92,
+              "end": 4.14
+            },
+            {
+              "word": "记",
+              "start": 4.74,
+              "end": 4.82
+            },
+            {
+              "word": "作",
+              "start": 4.82,
+              "end": 4.98
+            },
+            {
+              "word": "f",
+              "start": 4.98,
+              "end": 5.38
+            },
+            {
+              "word": "撇",
+              "start": 5.38,
+              "end": 5.6
+            },
+            {
+              "word": "二，",
+              "start": 5.6,
+              "end": 5.84
+            },
+            {
+              "word": "等",
+              "start": 6.34,
+              "end": 6.46
+            },
+            {
+              "word": "于",
+              "start": 6.5,
+              "end": 6.6
+            },
+            {
+              "word": "四。",
+              "start": 6.6,
+              "end": 6.8
+            },
+            {
+              "word": "f",
+              "start": 7.56,
+              "end": 7.7
+            },
+            {
+              "word": "二",
+              "start": 7.7,
+              "end": 7.9
+            },
+            {
+              "word": "记",
+              "start": 7.9,
+              "end": 8.12
+            },
+            {
+              "word": "录",
+              "start": 8.12,
+              "end": 8.22
+            },
+            {
+              "word": "高",
+              "start": 8.22,
+              "end": 8.38
+            },
+            {
+              "word": "度，",
+              "start": 8.38,
+              "end": 9.16
+            },
+            {
+              "word": "f",
+              "start": 9.16,
+              "end": 9.26
+            },
+            {
+              "word": "撇",
+              "start": 9.34,
+              "end": 9.44
+            },
+            {
+              "word": "二",
+              "start": 9.44,
+              "end": 9.58
+            },
+            {
+              "word": "记",
+              "start": 9.58,
+              "end": 9.9
+            },
+            {
+              "word": "录",
+              "start": 9.9,
+              "end": 10.02
+            },
+            {
+              "word": "这里",
+              "start": 10.02,
+              "end": 10.28
+            },
+            {
+              "word": "的",
+              "start": 10.28,
+              "end": 10.48
+            },
+            {
+              "word": "变",
+              "start": 10.48,
+              "end": 10.76
+            },
+            {
+              "word": "化",
+              "start": 10.82,
+              "end": 10.92
+            },
+            {
+              "word": "率。",
+              "start": 10.92,
+              "end": 11.1
+            }
+          ]
+        },
+        {
+          "id": "pattern",
+          "text": "把位置写成a，在a附近有定义，差商从两侧趋近同一个有限值时，就用这个极限定义f撇a。",
+          "start": 11.94,
+          "end": 20.84,
+          "words": [
+            {
+              "word": " 把",
+              "start": 11.94,
+              "end": 12
+            },
+            {
+              "word": "位",
+              "start": 12,
+              "end": 12.2
+            },
+            {
+              "word": "置",
+              "start": 12.2,
+              "end": 12.36
+            },
+            {
+              "word": "写",
+              "start": 12.36,
+              "end": 12.7
+            },
+            {
+              "word": "成",
+              "start": 12.78,
+              "end": 12.88
+            },
+            {
+              "word": "a，",
+              "start": 12.88,
+              "end": 13.08
+            },
+            {
+              "word": "在",
+              "start": 13.64,
+              "end": 13.78
+            },
+            {
+              "word": "a",
+              "start": 13.78,
+              "end": 14
+            },
+            {
+              "word": "附",
+              "start": 14,
+              "end": 14.2
+            },
+            {
+              "word": "近",
+              "start": 14.2,
+              "end": 14.32
+            },
+            {
+              "word": "有",
+              "start": 14.32,
+              "end": 14.62
+            },
+            {
+              "word": "定",
+              "start": 14.68,
+              "end": 14.78
+            },
+            {
+              "word": "义，",
+              "start": 14.78,
+              "end": 14.96
+            },
+            {
+              "word": "差",
+              "start": 15.68,
+              "end": 15.74
+            },
+            {
+              "word": "商",
+              "start": 15.74,
+              "end": 15.92
+            },
+            {
+              "word": "从",
+              "start": 15.92,
+              "end": 16.22
+            },
+            {
+              "word": "两",
+              "start": 16.22,
+              "end": 16.4
+            },
+            {
+              "word": "侧",
+              "start": 16.5,
+              "end": 16.6
+            },
+            {
+              "word": "趋",
+              "start": 16.72,
+              "end": 16.82
+            },
+            {
+              "word": "近",
+              "start": 16.82,
+              "end": 17
+            },
+            {
+              "word": "同",
+              "start": 17,
+              "end": 17.24
+            },
+            {
+              "word": "一个",
+              "start": 17.3,
+              "end": 17.44
+            },
+            {
+              "word": "有",
+              "start": 17.44,
+              "end": 17.56
+            },
+            {
+              "word": "限",
+              "start": 17.56,
+              "end": 17.7
+            },
+            {
+              "word": "值",
+              "start": 17.7,
+              "end": 17.86
+            },
+            {
+              "word": "时，",
+              "start": 17.86,
+              "end": 17.96
+            },
+            {
+              "word": "就",
+              "start": 18.56,
+              "end": 18.66
+            },
+            {
+              "word": "用",
+              "start": 18.66,
+              "end": 18.82
+            },
+            {
+              "word": "这个",
+              "start": 18.82,
+              "end": 19.04
+            },
+            {
+              "word": "极",
+              "start": 19.12,
+              "end": 19.22
+            },
+            {
+              "word": "限",
+              "start": 19.22,
+              "end": 19.38
+            },
+            {
+              "word": "定",
+              "start": 19.66,
+              "end": 19.76
+            },
+            {
+              "word": "义",
+              "start": 19.76,
+              "end": 20.04
+            },
+            {
+              "word": "f",
+              "start": 20.04,
+              "end": 20.38
+            },
+            {
+              "word": "撇",
+              "start": 20.38,
+              "end": 20.62
+            },
+            {
+              "word": "a。",
+              "start": 20.62,
+              "end": 20.84
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "use_nearby",
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-intro-20261101-voice/executions/math-derivative-intro-20261101-v003/speech/use_nearby.wav",
+      "wav_sha256": "602084dd22634df28ffe28cd67cf3bade6e9671f3292c0d577747c07f510f528",
+      "receipt": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-intro-20261101-voice/executions/math-derivative-intro-20261101-v003/speech/use_nearby.receipt.json",
+      "receipt_sha256": "29f98377a48a39c976e924f96425af01c904d13e85ea5daa0a5534c95ab3200f",
+      "frames": 1251840,
+      "sample_rate": 48000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 26.08,
+      "phrases": [
+        {
+          "id": "tangent",
+          "text": "把P附近的坐标放大，刚才割线趋近的方向，给出了P处的切线，斜率就是四。",
+          "start": 0.26,
+          "end": 7.96,
+          "words": [
+            {
+              "word": " 把",
+              "start": 0.26,
+              "end": 0.36
+            },
+            {
+              "word": "P",
+              "start": 0.36,
+              "end": 0.6
+            },
+            {
+              "word": "附",
+              "start": 0.6,
+              "end": 1.06
+            },
+            {
+              "word": "近",
+              "start": 1.06,
+              "end": 1.16
+            },
+            {
+              "word": "的",
+              "start": 1.16,
+              "end": 1.28
+            },
+            {
+              "word": "坐",
+              "start": 1.32,
+              "end": 1.42
+            },
+            {
+              "word": "标",
+              "start": 1.42,
+              "end": 1.54
+            },
+            {
+              "word": "放",
+              "start": 1.54,
+              "end": 1.68
+            },
+            {
+              "word": "大，",
+              "start": 1.68,
+              "end": 1.84
+            },
+            {
+              "word": "刚",
+              "start": 2.4,
+              "end": 2.5
+            },
+            {
+              "word": "才",
+              "start": 2.5,
+              "end": 2.82
+            },
+            {
+              "word": "割",
+              "start": 2.92,
+              "end": 3.04
+            },
+            {
+              "word": "线",
+              "start": 3.04,
+              "end": 3.24
+            },
+            {
+              "word": "趋",
+              "start": 3.24,
+              "end": 3.46
+            },
+            {
+              "word": "近",
+              "start": 3.46,
+              "end": 3.6
+            },
+            {
+              "word": "的",
+              "start": 3.6,
+              "end": 3.7
+            },
+            {
+              "word": "方",
+              "start": 3.7,
+              "end": 3.82
+            },
+            {
+              "word": "向，",
+              "start": 3.82,
+              "end": 4.06
+            },
+            {
+              "word": "给",
+              "start": 4.5,
+              "end": 4.6
+            },
+            {
+              "word": "出",
+              "start": 4.7,
+              "end": 4.8
+            },
+            {
+              "word": "了",
+              "start": 4.8,
+              "end": 4.92
+            },
+            {
+              "word": "P",
+              "start": 4.92,
+              "end": 5.2
+            },
+            {
+              "word": "处",
+              "start": 5.2,
+              "end": 5.4
+            },
+            {
+              "word": "的",
+              "start": 5.4,
+              "end": 5.54
+            },
+            {
+              "word": "切",
+              "start": 5.58,
+              "end": 5.68
+            },
+            {
+              "word": "线，",
+              "start": 5.68,
+              "end": 6.52
+            },
+            {
+              "word": "斜",
+              "start": 6.52,
+              "end": 6.6
+            },
+            {
+              "word": "率",
+              "start": 6.6,
+              "end": 6.7
+            },
+            {
+              "word": "就是",
+              "start": 6.7,
+              "end": 7.1
+            },
+            {
+              "word": "四。",
+              "start": 7.1,
+              "end": 7.96
+            }
+          ]
+        },
+        {
+          "id": "prediction",
+          "text": "沿着切线，输入增加h，输出就增加四h。让h从零点四减小到零点一，切线的预测值和真实曲线值越靠越近。",
+          "start": 8.1,
+          "end": 18.74,
+          "words": [
+            {
+              "word": " 沿",
+              "start": 8.1,
+              "end": 8.22
+            },
+            {
+              "word": "着",
+              "start": 8.22,
+              "end": 8.34
+            },
+            {
+              "word": "切",
+              "start": 8.34,
+              "end": 8.5
+            },
+            {
+              "word": "线，",
+              "start": 8.5,
+              "end": 9.1
+            },
+            {
+              "word": "输",
+              "start": 9.1,
+              "end": 9.18
+            },
+            {
+              "word": "入",
+              "start": 9.18,
+              "end": 9.26
+            },
+            {
+              "word": "增",
+              "start": 9.26,
+              "end": 9.4
+            },
+            {
+              "word": "加",
+              "start": 9.4,
+              "end": 9.58
+            },
+            {
+              "word": "h，",
+              "start": 9.58,
+              "end": 10.8
+            },
+            {
+              "word": "输",
+              "start": 10.8,
+              "end": 10.84
+            },
+            {
+              "word": "出",
+              "start": 10.84,
+              "end": 10.94
+            },
+            {
+              "word": "就",
+              "start": 10.94,
+              "end": 11.26
+            },
+            {
+              "word": "增",
+              "start": 11.26,
+              "end": 11.46
+            },
+            {
+              "word": "加",
+              "start": 11.46,
+              "end": 11.62
+            },
+            {
+              "word": "四",
+              "start": 11.72,
+              "end": 11.82
+            },
+            {
+              "word": "h。",
+              "start": 11.82,
+              "end": 12.16
+            },
+            {
+              "word": "让",
+              "start": 12.82,
+              "end": 12.92
+            },
+            {
+              "word": "h",
+              "start": 12.92,
+              "end": 13.2
+            },
+            {
+              "word": "从",
+              "start": 13.2,
+              "end": 13.66
+            },
+            {
+              "word": "零",
+              "start": 13.68,
+              "end": 13.84
+            },
+            {
+              "word": "点",
+              "start": 13.84,
+              "end": 13.98
+            },
+            {
+              "word": "四",
+              "start": 13.98,
+              "end": 14.2
+            },
+            {
+              "word": "减",
+              "start": 14.44,
+              "end": 14.54
+            },
+            {
+              "word": "小",
+              "start": 14.54,
+              "end": 14.74
+            },
+            {
+              "word": "到",
+              "start": 14.74,
+              "end": 14.9
+            },
+            {
+              "word": "零",
+              "start": 14.9,
+              "end": 15.16
+            },
+            {
+              "word": "点",
+              "start": 15.18,
+              "end": 15.3
+            },
+            {
+              "word": "一，",
+              "start": 15.3,
+              "end": 16.18
+            },
+            {
+              "word": "切",
+              "start": 16.18,
+              "end": 16.24
+            },
+            {
+              "word": "线",
+              "start": 16.24,
+              "end": 16.42
+            },
+            {
+              "word": "的",
+              "start": 16.42,
+              "end": 16.52
+            },
+            {
+              "word": "预",
+              "start": 16.52,
+              "end": 16.62
+            },
+            {
+              "word": "测",
+              "start": 16.62,
+              "end": 16.74
+            },
+            {
+              "word": "值",
+              "start": 16.74,
+              "end": 16.88
+            },
+            {
+              "word": "和",
+              "start": 16.88,
+              "end": 17.16
+            },
+            {
+              "word": "真",
+              "start": 17.26,
+              "end": 17.36
+            },
+            {
+              "word": "实",
+              "start": 17.36,
+              "end": 17.54
+            },
+            {
+              "word": "曲",
+              "start": 17.54,
+              "end": 17.72
+            },
+            {
+              "word": "线",
+              "start": 17.72,
+              "end": 17.86
+            },
+            {
+              "word": "值",
+              "start": 17.86,
+              "end": 18
+            },
+            {
+              "word": "越",
+              "start": 18,
+              "end": 18.3
+            },
+            {
+              "word": "靠",
+              "start": 18.3,
+              "end": 18.5
+            },
+            {
+              "word": "越",
+              "start": 18.52,
+              "end": 18.64
+            },
+            {
+              "word": "近。",
+              "start": 18.64,
+              "end": 18.74
+            }
+          ]
+        },
+        {
+          "id": "remainder",
+          "text": "预测四点四，真值四点四一；多出的零点零一，正好是h平方。",
+          "start": 19.66,
+          "end": 25.8,
+          "words": [
+            {
+              "word": " 预",
+              "start": 19.66,
+              "end": 19.68
+            },
+            {
+              "word": "测",
+              "start": 19.68,
+              "end": 19.88
+            },
+            {
+              "word": "四",
+              "start": 19.88,
+              "end": 20.06
+            },
+            {
+              "word": "点",
+              "start": 20.06,
+              "end": 20.16
+            },
+            {
+              "word": "四，",
+              "start": 20.16,
+              "end": 20.88
+            },
+            {
+              "word": "真",
+              "start": 20.88,
+              "end": 20.88
+            },
+            {
+              "word": "值",
+              "start": 20.88,
+              "end": 21.06
+            },
+            {
+              "word": "四",
+              "start": 21.06,
+              "end": 21.34
+            },
+            {
+              "word": "点",
+              "start": 21.34,
+              "end": 21.48
+            },
+            {
+              "word": "四",
+              "start": 21.54,
+              "end": 21.64
+            },
+            {
+              "word": "一",
+              "start": 21.64,
+              "end": 21.8
+            },
+            {
+              "word": "；",
+              "start": 21.8,
+              "end": 22.7
+            },
+            {
+              "word": "多",
+              "start": 22.7,
+              "end": 22.7
+            },
+            {
+              "word": "出",
+              "start": 22.7,
+              "end": 22.9
+            },
+            {
+              "word": "的",
+              "start": 22.9,
+              "end": 23.06
+            },
+            {
+              "word": "零",
+              "start": 23.06,
+              "end": 23.38
+            },
+            {
+              "word": "点",
+              "start": 23.38,
+              "end": 23.52
+            },
+            {
+              "word": "零",
+              "start": 23.62,
+              "end": 23.72
+            },
+            {
+              "word": "一，",
+              "start": 23.72,
+              "end": 23.92
+            },
+            {
+              "word": "正",
+              "start": 24.36,
+              "end": 24.46
+            },
+            {
+              "word": "好",
+              "start": 24.46,
+              "end": 24.62
+            },
+            {
+              "word": "是",
+              "start": 24.62,
+              "end": 24.88
+            },
+            {
+              "word": "h",
+              "start": 25.12,
+              "end": 25.24
+            },
+            {
+              "word": "平",
+              "start": 25.46,
+              "end": 25.56
+            },
+            {
+              "word": "方。",
+              "start": 25.56,
+              "end": 25.8
+            }
+          ],
+          "instantaneous_word_indices": [
+            5,
+            12
+          ],
+          "word_timing_warning": "Zero-duration tokens are uncertain point estimates, not measured speech intervals"
+        }
+      ]
+    },
+    {
+      "id": "handoff",
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-intro-20261101-voice/executions/math-derivative-intro-20261101-v003/speech/handoff.wav",
+      "wav_sha256": "d9baf5bfc35c5abf3912bd00d3102b5796c454590091956b87c10e2173b70454",
+      "receipt": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-intro-20261101-voice/executions/math-derivative-intro-20261101-v003/speech/handoff.receipt.json",
+      "receipt_sha256": "21852b675fceaa1de4942fad8141d7c3b89c4c5614396992a76e4b2214763dd9",
+      "frames": 552960,
+      "sample_rate": 48000,
+      "channels": 1,
+      "sample_width_bytes": 2,
+      "duration_seconds": 11.52,
+      "phrases": [
+        {
+          "id": "summary",
+          "text": "平均变化率的极限给出本点导数，也连接着切线和附近的变化。",
+          "start": 0.3,
+          "end": 5.5,
+          "words": [
+            {
+              "word": " 平",
+              "start": 0.3,
+              "end": 0.4
+            },
+            {
+              "word": "均",
+              "start": 0.4,
+              "end": 0.62
+            },
+            {
+              "word": "变",
+              "start": 0.62,
+              "end": 0.76
+            },
+            {
+              "word": "化",
+              "start": 0.76,
+              "end": 0.9
+            },
+            {
+              "word": "率",
+              "start": 0.9,
+              "end": 1.04
+            },
+            {
+              "word": "的",
+              "start": 1.04,
+              "end": 1.16
+            },
+            {
+              "word": "极",
+              "start": 1.16,
+              "end": 1.34
+            },
+            {
+              "word": "限",
+              "start": 1.34,
+              "end": 1.5
+            },
+            {
+              "word": "给",
+              "start": 1.5,
+              "end": 1.86
+            },
+            {
+              "word": "出",
+              "start": 1.86,
+              "end": 2.06
+            },
+            {
+              "word": "本",
+              "start": 2.06,
+              "end": 2.24
+            },
+            {
+              "word": "点",
+              "start": 2.24,
+              "end": 2.36
+            },
+            {
+              "word": "导",
+              "start": 2.36,
+              "end": 2.58
+            },
+            {
+              "word": "数，",
+              "start": 2.58,
+              "end": 3.36
+            },
+            {
+              "word": "也",
+              "start": 3.36,
+              "end": 3.4
+            },
+            {
+              "word": "连",
+              "start": 3.4,
+              "end": 3.52
+            },
+            {
+              "word": "接",
+              "start": 3.52,
+              "end": 3.7
+            },
+            {
+              "word": "着",
+              "start": 3.7,
+              "end": 3.9
+            },
+            {
+              "word": "切",
+              "start": 4.08,
+              "end": 4.18
+            },
+            {
+              "word": "线",
+              "start": 4.18,
+              "end": 4.42
+            },
+            {
+              "word": "和",
+              "start": 4.42,
+              "end": 4.68
+            },
+            {
+              "word": "附",
+              "start": 4.78,
+              "end": 4.88
+            },
+            {
+              "word": "近",
+              "start": 4.88,
+              "end": 5.02
+            },
+            {
+              "word": "的",
+              "start": 5.02,
+              "end": 5.16
+            },
+            {
+              "word": "变",
+              "start": 5.16,
+              "end": 5.28
+            },
+            {
+              "word": "化。",
+              "start": 5.28,
+              "end": 5.5
+            }
+          ]
+        },
+        {
+          "id": "next",
+          "text": "把二换成任意的a，导数怎样随位置改变？下一课继续。",
+          "start": 6.38,
+          "end": 11.26,
+          "words": [
+            {
+              "word": " 把",
+              "start": 6.38,
+              "end": 6.48
+            },
+            {
+              "word": "二",
+              "start": 6.48,
+              "end": 6.66
+            },
+            {
+              "word": "换",
+              "start": 6.66,
+              "end": 6.96
+            },
+            {
+              "word": "成",
+              "start": 6.96,
+              "end": 7.16
+            },
+            {
+              "word": "任",
+              "start": 7.2,
+              "end": 7.38
+            },
+            {
+              "word": "意",
+              "start": 7.38,
+              "end": 7.54
+            },
+            {
+              "word": "的",
+              "start": 7.54,
+              "end": 7.66
+            },
+            {
+              "word": "a，",
+              "start": 7.66,
+              "end": 7.9
+            },
+            {
+              "word": "导",
+              "start": 8.46,
+              "end": 8.56
+            },
+            {
+              "word": "数",
+              "start": 8.56,
+              "end": 8.74
+            },
+            {
+              "word": "怎",
+              "start": 8.74,
+              "end": 9.02
+            },
+            {
+              "word": "样",
+              "start": 9.08,
+              "end": 9.18
+            },
+            {
+              "word": "随",
+              "start": 9.18,
+              "end": 9.36
+            },
+            {
+              "word": "位",
+              "start": 9.36,
+              "end": 9.5
+            },
+            {
+              "word": "置",
+              "start": 9.5,
+              "end": 9.6
+            },
+            {
+              "word": "改",
+              "start": 9.6,
+              "end": 9.72
+            },
+            {
+              "word": "变？",
+              "start": 9.72,
+              "end": 9.94
+            },
+            {
+              "word": "下一",
+              "start": 10.56,
+              "end": 10.76
+            },
+            {
+              "word": "课",
+              "start": 10.76,
+              "end": 10.86
+            },
+            {
+              "word": "继",
+              "start": 10.86,
+              "end": 11.06
+            },
+            {
+              "word": "续。",
+              "start": 11.06,
+              "end": 11.26
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "test_only": false,
+  "smoke_only": false,
+  "listening_reviewed": false,
+  "software": {
+    "backend": "stable_whisper",
+    "source_url": "https://github.com/jianfch/stable-ts",
+    "declared_license": "MIT",
+    "packages": {
+      "Jinja2": "3.1.6",
+      "MarkupSafe": "3.0.4",
+      "PyYAML": "6.0.3",
+      "annotated-types": "0.8.0",
+      "anyio": "4.15.1",
+      "certifi": "2026.10.23",
+      "charset-normalizer": "3.5.2",
+      "filelock": "4.2.4",
+      "fsspec": "2026.9.0",
+      "h11": "0.16.0",
+      "httpcore2": "2.16.0",
+      "httpx2": "2.16.0",
+      "idna": "3.20",
+      "jiter": "0.18.0",
+      "llvmlite": "0.44.0",
+      "more-itertools": "11.2.1",
+      "mpmath": "1.3.0",
+      "networkx": "3.7",
+      "numba": "0.61.2",
+      "numpy": "2.2.6",
+      "openai": "3.22.1",
+      "openai-whisper": "20250625",
+      "pip": "25.0.1",
+      "pydantic": "2.14.1",
+      "pydantic_core": "2.50.1",
+      "regex": "2026.9.29",
+      "requests": "2.34.2",
+      "setuptools": "84.2.1",
+      "sniffio": "1.3.1",
+      "stable-ts": "2.19.1",
+      "sympy": "1.14.0",
+      "tiktoken": "0.14.0",
+      "torch": "2.7.1",
+      "torchaudio": "2.7.1",
+      "tqdm": "4.70.1",
+      "truststore": "0.10.5",
+      "typing-inspection": "0.4.4",
+      "typing_extensions": "4.16.0",
+      "urllib3": "2.8.0"
+    },
+    "wheel_record_files_checked": 8753,
+    "executable": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/bin/python",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "device": "cpu",
+    "source_files": [
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/stable_whisper/__init__.py",
+        "sha256": "9bdf43e516c1d08854832e7e7222cb30227b8a5c1912a76733df8eeac220e92e"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/stable_whisper/__main__.py",
+        "sha256": "4a1aeafb9b68e4e9aef5bcd2c42af521cf64edcc52154164742b41438fdcd631"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/stable_whisper/_version.py",
+        "sha256": "e0b316f5c5d1604714e6a0302c71f6becf78553e79ff1dfc5902833d02296707"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/stable_whisper/alignment.py",
+        "sha256": "a5be8e099e018addfd20624021a064d2be230774312582e79e4c97415132e786"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/stable_whisper/audio/__init__.py",
+        "sha256": "ca367a8dd1acb63b57da8edd8a4e3fa4beb44fd583df51e9d5d7a647ef36695d"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/stable_whisper/audio/demucs.py",
+        "sha256": "9583fd87f8a4799ad04ab3f4696036295726fb21f2092d9dc148d89084271242"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/stable_whisper/audio/dfnet.py",
+        "sha256": "6fda93b6fc53458fc0d8919b058995197fa57d285ce447d5d463bdf4b0685c1d"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/stable_whisper/audio/noisereduce.py",
+        "sha256": "20f7ad1cf51cb33f460f8cbbb931ef03c291ffab88c18401719ab6008e9041f9"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/stable_whisper/audio/output.py",
+        "sha256": "332721e31782dcaa61763ef5bbaf29204b8bb88b593a5a591b643bd5dc5a52c2"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/stable_whisper/audio/utils.py",
+        "sha256": "df736d4d130e514e837c6e2f21ea76bc6a976951a0f0f69c4341d75f5f4665ff"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/stable_whisper/decode.py",
+        "sha256": "0e55af6c87ebc32a81764e6fb80fca1cf1e034ffe7823aec03fa43307bea4441"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/stable_whisper/default.py",
+        "sha256": "45e8feaeeca3032abe8e2de53a4aab25aca153d222388cd64357d4c335ae99bd"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/stable_whisper/non_whisper/__init__.py",
+        "sha256": "9965d58faf811354caf1fe8512c904924fcd3dddb5f684e9e1acc9e5ae9408d0"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/stable_whisper/non_whisper/alignment.py",
+        "sha256": "5230ad41c17f600fe370443fa01aa6850bc8be65db791b17e603b1d58cfbb075"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/stable_whisper/non_whisper/refinement.py",
+        "sha256": "b40ab6d926f161ee7823f65f6a86067ad985ebf49cbd0b8cf2f7377998c7e349"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/stable_whisper/non_whisper/transcribe.py",
+        "sha256": "0e19153abdb6f4dd6bb1c63db3961f0a4bf7cf32461ad27126fb64b9415cc80e"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/stable_whisper/options.py",
+        "sha256": "4e036904d2ac1020d40171c652fa003a30fd5a549ad1df124b4d13a297bf1600"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/stable_whisper/quantization.py",
+        "sha256": "08d70901823c0b5502146b7828bd0e74390da09a730313b46480ce58aa2e172b"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/stable_whisper/result.py",
+        "sha256": "d9ec5d003e2b2d2377753add7dfee0533d7c7c40e4aceb88c895bd0113f28e20"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/stable_whisper/stabilization/__init__.py",
+        "sha256": "9ed0a85195f7ca9e748bdfc06530d37d2d8a7c82680975663880c154de892ce3"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/stable_whisper/stabilization/nonvad.py",
+        "sha256": "612c6c3022928e48123728096985606901ec9ece7ef720a5d3ba79ed99f62b89"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/stable_whisper/stabilization/silero_vad.py",
+        "sha256": "9d874bd9f7413ac21704b2b71a380fe762b0802007c798ae8f3c35c17043909b"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/stable_whisper/stabilization/utils.py",
+        "sha256": "f4345e588d285ddea23b98fb39da01a4c0010fe6739bb7e88a936f27a3d09ea3"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/stable_whisper/text_output.py",
+        "sha256": "458f82761719286ab7d024fbc9d3528bfc9383a64672979607fbcde9a5b5b307"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/stable_whisper/timing.py",
+        "sha256": "1a9f4abfeb550ab84f09ba37163d1acebf8a57189ded0571a863f4f689e222c6"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/stable_whisper/utils.py",
+        "sha256": "480163f3e1e759a535f90098ca77ce50c42e4aeabe1cdb4f965c8358ba99b5e1"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/stable_whisper/video_output.py",
+        "sha256": "412585cecab485947939e6275be6b3c1b76559d6c8fe0a721389380940d6ffaf"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/stable_whisper/whisper_compatibility.py",
+        "sha256": "e1d29cd39c791b94253b322d5238f4e01819a86b827941ffc920448f0ff895c2"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/stable_whisper/whisper_word_level/__init__.py",
+        "sha256": "7188c327b2b45d0d000fb207fab0b1b08a70ba04aac567af3f3775136ad6390c"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/stable_whisper/whisper_word_level/cli.py",
+        "sha256": "242dabd48b6c25582103d5535df39d6536f3ec8eb8959f687f25a11224723d19"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/stable_whisper/whisper_word_level/faster_whisper.py",
+        "sha256": "2aebcf7c4cf28c049d88dd2483d6f2c09c4ea5ee031a3685def3d672603a4b9a"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/stable_whisper/whisper_word_level/hf_whisper.py",
+        "sha256": "a14da0026991f1b7293c5211ed9427fdbaf3a84e86f49a233ff906c8e3b44d8e"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/stable_whisper/whisper_word_level/mlx_whisper.py",
+        "sha256": "b09db3eb20be611df796c2b05f92e40a5a38985ee456f87b1e2b691f3a7c9170"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/stable_whisper/whisper_word_level/original_whisper.py",
+        "sha256": "479e39375fd53c759a38d2dec259dde05900721dc088f898bc660503723faf6a"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/whisper/__init__.py",
+        "sha256": "79ecbed714783b6230931a3dba6d5da6d386e2d44f9fc27256e4fc72751e1f62"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/whisper/__main__.py",
+        "sha256": "c519d586c3a6b639f64e59d2d6fd6b591a67ecd739f9727492911fc4ce4d545a"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/whisper/audio.py",
+        "sha256": "36ed287b2de3eaf40207cd2a44a8d45d57ea5c212a39df07401d4fcb4d5a5a1a"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/whisper/decoding.py",
+        "sha256": "94084fedc5af74cabf8e1883a85552700057081f00ea669ad49435ecb29039db"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/whisper/model.py",
+        "sha256": "473491a97554ad1d0beaaef6fe91d965f12785b466b93ebb61024307b50ad683"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/whisper/normalizers/__init__.py",
+        "sha256": "f18fcdce4caee7f2e80e4c01ab0457d3a080a872a29489542c6d23c4b0bba572"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/whisper/normalizers/basic.py",
+        "sha256": "4742eaa040e0657fa1247a1361e0d856c62317a43326ea59a40c2e9edd8d2c38"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/whisper/normalizers/english.py",
+        "sha256": "2898e4672aeefc9f44cb4de38c115cdf286f5b35ae321433467a7674ce8841d0"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/whisper/timing.py",
+        "sha256": "bb091c973c428697012f0f8d1b4f5f3a605cd93c5d1c129957f712a6a878a59c"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/whisper/tokenizer.py",
+        "sha256": "3b48e361a7e95b4ec0356ca6d72bba635778aa10269153136ee7bc34cae30b85"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/whisper/transcribe.py",
+        "sha256": "848b82877500d6fb8f0b91bee7a08ac67ef670a113591d11b494848d263ad0f6"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/whisper/triton_ops.py",
+        "sha256": "26c5082f029bbd2b7ae77ecf5a3f7f196f220e5850e2c9d0ec42961caf0dde4c"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/whisper/utils.py",
+        "sha256": "c25990446ab7dd5ba30bd52bd4f0e6537f11b5e361a015f02c21355d41027b05"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/whisper/version.py",
+        "sha256": "c4d27ecccdd52a9cded762f1a82da3152db12cbc0aa6ea781f945446a143cfaf"
+      }
+    ],
+    "environment_files": [
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/pyvenv.cfg",
+        "sha256": "fb358b3521aa97829035e18fcfdf7c4758edc1c795d070ca739f045d5dd59d54"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/bin/python",
+        "sha256": "746f3c20e5d05c32d55e36234b2c3213a757eabcbebeed9248a112ba4e9f18dd"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/manimind_local_src.pth",
+        "sha256": "f174593ce0a5652b28b4a5892cdad43f7ed86c8c3cac9a4e2611dc711a9329d2"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/annotated_types-0.8.0.dist-info/METADATA",
+        "sha256": "614985b278f601b8ef863f82783b991cc3ada4b89f592eb71c7c48c5f2ef2298"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/annotated_types-0.8.0.dist-info/RECORD",
+        "sha256": "906944aac6c7f85a4ebedde03e8fc1fcc2e4b99ec400b60bc088c9ae321d2c82"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/annotated_types-0.8.0.dist-info/WHEEL",
+        "sha256": "942926c567d0b1273d09f20295879abd37507845f6b683eab9f87d808df91100"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/anyio-4.15.1.dist-info/METADATA",
+        "sha256": "043aecb571af7189e8a6c528f5d8e32545f1b2cdfaaf761d51e6d5b67ea3ca81"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/anyio-4.15.1.dist-info/RECORD",
+        "sha256": "355dd9cacd66cf28a25030f5380ac56a5cb6cbd8086423ccf1a46433d420f763"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/anyio-4.15.1.dist-info/WHEEL",
+        "sha256": "61532836a2b3111b7ec23519c09df7c41180c27165fb872a6d8913b566b88ad1"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/certifi-2026.10.23.dist-info/METADATA",
+        "sha256": "e463e38f7fe7da36a11e6d3fecc5dfa5b97be8c8022620400750d79ae7d842bc"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/certifi-2026.10.23.dist-info/RECORD",
+        "sha256": "16515d0c2f05bcaed79360c20dbcf6af21080320bccfb73dc44693a8983354b3"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/certifi-2026.10.23.dist-info/WHEEL",
+        "sha256": "98e75747d0b7c0c568bfb71263c3d8f970b3a374a6996087bc642be5cb09a1aa"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/charset_normalizer-3.5.2.dist-info/METADATA",
+        "sha256": "89ce6362bb7be88558f4be99a98f5d1b4da93d19cd0323e5ee0bac05cf883dfb"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/charset_normalizer-3.5.2.dist-info/RECORD",
+        "sha256": "1595ad4a45007af63ead7c767f2c6b20d1ff56ccdc5c8bd29c47ddda92284b56"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/charset_normalizer-3.5.2.dist-info/WHEEL",
+        "sha256": "2b957c67c65d977995cea65bdb649575e54d164dab08c18224fae8bad08eea77"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/filelock-4.2.4.dist-info/METADATA",
+        "sha256": "d99c0f72a7ab84c924b734018a28a5001505fe0f96280c4462b864313edddb50"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/filelock-4.2.4.dist-info/RECORD",
+        "sha256": "189080b8e2c4639557fc69fd64f862db4b09411db1840904b59b78819fa27295"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/filelock-4.2.4.dist-info/WHEEL",
+        "sha256": "5b77e4a649bbfb07fdbc123967eeecd1e5a478cfaca6eefc23c35e6fdf037848"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/fsspec-2026.9.0.dist-info/METADATA",
+        "sha256": "68f5a262767510638e9b1933b1493f2baadc9616fe1e696f62aedd59c8c0a37c"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/fsspec-2026.9.0.dist-info/RECORD",
+        "sha256": "ad06cc55ee7a2f52c7799fbd41788af9edbc1eba223e1df398998d44874924db"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/fsspec-2026.9.0.dist-info/WHEEL",
+        "sha256": "4c769fa1bee87cdf8db2e30decc838a99c8769023b2a40fe4257106ad6215cfa"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/h11-0.16.0.dist-info/METADATA",
+        "sha256": "28f326098ac09fcba79b8f180f96087c841fe2456215cb7b872a9c7d5cd19d64"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/h11-0.16.0.dist-info/RECORD",
+        "sha256": "ac020206998e31ee6a749a207c7746245805e64814bb88642302a572f557fb24"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/h11-0.16.0.dist-info/WHEEL",
+        "sha256": "0a6c85234931e5c7443132e238d4116c64308c8a11d5a21807b782010e0a3c9d"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/httpcore2-2.16.0.dist-info/METADATA",
+        "sha256": "c073bd68b2bd543fbc2bab3763b42ed1e70666536d32c1bf39ef2764fd50b0a4"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/httpcore2-2.16.0.dist-info/RECORD",
+        "sha256": "24c15ca785e0a44066cad3ba9431c9f85a1e10b74e001cdf04113c7eedeee90e"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/httpcore2-2.16.0.dist-info/WHEEL",
+        "sha256": "5b77e4a649bbfb07fdbc123967eeecd1e5a478cfaca6eefc23c35e6fdf037848"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/httpx2-2.16.0.dist-info/METADATA",
+        "sha256": "192f20046200ff50911a7278c21dfbee1e1a4c6fa7943227afe9231d28defc3f"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/httpx2-2.16.0.dist-info/RECORD",
+        "sha256": "03754cbac2db5f572e06590b28bf5f9219535128fa6ca260f3f4b490dba0b9a2"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/httpx2-2.16.0.dist-info/WHEEL",
+        "sha256": "5b77e4a649bbfb07fdbc123967eeecd1e5a478cfaca6eefc23c35e6fdf037848"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/idna-3.20.dist-info/METADATA",
+        "sha256": "dbd8c14c1e4ca1e0c9824a6dbc7cbbf78884f38eb52d91148cd3025f671e4b85"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/idna-3.20.dist-info/RECORD",
+        "sha256": "fd2704c32b4c450c91c83569834e2ea47857087b4aec6c004ebd017919445ed7"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/idna-3.20.dist-info/WHEEL",
+        "sha256": "96a37c8d7b7f425a05386731f644adbd66ebca17c45e8236176cfe614466df9d"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/jinja2-3.1.6.dist-info/METADATA",
+        "sha256": "68c5548fb67c4132a13898d9b31ec50c6bea2abdd915d921f214355c3a6499c8"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/jinja2-3.1.6.dist-info/RECORD",
+        "sha256": "1bb3b46d00f55f63d24c3a34a7f955ef6692d4691217a53b15261769607f9f7c"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/jinja2-3.1.6.dist-info/WHEEL",
+        "sha256": "ff6a3334508b59cf776cae1628708ef9e0d410d0e5a3e76073d714deaa2460ee"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/jiter-0.18.0.dist-info/METADATA",
+        "sha256": "605996e695df21e5ed5275c832a7cca52635d45fac23825233382012b5acfa5c"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/jiter-0.18.0.dist-info/RECORD",
+        "sha256": "97997b61cd1c5429547afd476b2b29269fc5971091d9828dfcb1dcd62d35b754"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/jiter-0.18.0.dist-info/WHEEL",
+        "sha256": "00432af65abae21a50692ef850ae61fa7101eb22b04fb2d1e3c61678710d7e53"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/llvmlite-0.44.0.dist-info/METADATA",
+        "sha256": "27e7021bb782e6c692a44f35200a714c8743bc4f6669f9ab5755b51b7095a366"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/llvmlite-0.44.0.dist-info/RECORD",
+        "sha256": "3c65fcb16c51976faefd1faa8568c4da9bcc898abc7b33e19b1f6f674da2741c"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/llvmlite-0.44.0.dist-info/WHEEL",
+        "sha256": "87d8c1360be7b846a2c78e4d804487bdf35c38f186344cb0adb3fd527ee16659"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/markupsafe-3.0.4.dist-info/METADATA",
+        "sha256": "66767d76388ece15d49d50dafb655891ef5d868715e7128e7f7d737a70b353c4"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/markupsafe-3.0.4.dist-info/RECORD",
+        "sha256": "f5e0fefce6a0acf0aea17ca87522c2e697835ae9a1a2bfb40c3e6c2b78550d8f"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/markupsafe-3.0.4.dist-info/WHEEL",
+        "sha256": "7156dcce88ca058d4e5118bde8900f7f0cacc719d55b67b78cb6de2362e7dbdb"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/more_itertools-11.2.1.dist-info/METADATA",
+        "sha256": "8c558bfab61818450e78db4018281f8f7b22115e681cd53ae1d9d4931be54f15"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/more_itertools-11.2.1.dist-info/RECORD",
+        "sha256": "09e7de5681878116a1adcb4d26e89f55ebac21a288f9b030ca97bfb72dfcc806"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/more_itertools-11.2.1.dist-info/WHEEL",
+        "sha256": "96a37c8d7b7f425a05386731f644adbd66ebca17c45e8236176cfe614466df9d"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/mpmath-1.3.0.dist-info/METADATA",
+        "sha256": "44b66ea444b9c0d19ae94815d356bf047ae6b680c19268b5c265687cd6a81406"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/mpmath-1.3.0.dist-info/RECORD",
+        "sha256": "89869bb99d259b6078aa20ebadb44d921aa20595ffa58ab929e3082d7f3f5529"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/mpmath-1.3.0.dist-info/WHEEL",
+        "sha256": "db07a93359e4e034b8785a58ad6d534ea3dca0635f1e184efe2e66e1c3a299ba"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/networkx-3.7.dist-info/METADATA",
+        "sha256": "ffcf42a343af6ffc54ff9cc4c09cf9638cd73b131370f395abd11b630186c90c"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/networkx-3.7.dist-info/RECORD",
+        "sha256": "4bb484fd2163c6b74594a75cd0cf0092354e64218ca63b6ac4cab3a51399a22a"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/networkx-3.7.dist-info/WHEEL",
+        "sha256": "61532836a2b3111b7ec23519c09df7c41180c27165fb872a6d8913b566b88ad1"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/numba-0.61.2.dist-info/METADATA",
+        "sha256": "b5f3c929bfcf7c2214c02b555b9a9788a83cd634d05cf561a0fdb31bf4a010d4"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/numba-0.61.2.dist-info/RECORD",
+        "sha256": "ecab2b588299ce3cea9a46f91f0a9bbabc950c887474ab6ddb13cac1257b679a"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/numba-0.61.2.dist-info/WHEEL",
+        "sha256": "56e8ccdf2a530b2516ea17130dd2b67a3d00455331954d438e587fcd69c382a9"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/numpy-2.2.6.dist-info/METADATA",
+        "sha256": "91d66d0d60ad467c679555c0e12ac739bb395940dc22bc5a39d45780aba129ad"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/numpy-2.2.6.dist-info/RECORD",
+        "sha256": "a832d846688119fe4048fa484ea7a34d4a8f700fae9495b6cef3c300ba73ef0f"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/numpy-2.2.6.dist-info/WHEEL",
+        "sha256": "c9205a833e45c2523ee63f7e23ee099ae0a8f4ce52f5bd09a07208776c4a19eb"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/openai-3.22.1.dist-info/METADATA",
+        "sha256": "d2c4492fd91057f714b3bc4e5514c96b1c7d3ae5502658d4bc47c1896ff651c8"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/openai-3.22.1.dist-info/RECORD",
+        "sha256": "71b4bd649ddf5c73dfe8fe1d8feb928774eb523bef29a8de627e4ea88f3fb036"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/openai-3.22.1.dist-info/WHEEL",
+        "sha256": "aad0b0a12256807936d52d4a6f88a1773236ae527564a688bab4e3fe780e8724"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/openai_whisper-20250625.dist-info/METADATA",
+        "sha256": "0fe3c19a1d04c1bee90a86098ff295f44ba71d6e7c932104ab31a863454509ed"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/openai_whisper-20250625.dist-info/RECORD",
+        "sha256": "3ce0055cc065eaeb3498dc1b202b62768e21e63d0cdc5478109d12a75d35ab50"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/openai_whisper-20250625.dist-info/WHEEL",
+        "sha256": "98e75747d0b7c0c568bfb71263c3d8f970b3a374a6996087bc642be5cb09a1aa"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/pip-25.0.1.dist-info/METADATA",
+        "sha256": "4fa7318cf30f979db7cec45c12cbbc2b4f88a15f12eefbf59a6291d0a03af926"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/pip-25.0.1.dist-info/RECORD",
+        "sha256": "fc83a8ec3d87141cf7b238d2f3e5e6af96e13e8e74841b2b1ab0162cae92599c"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/pip-25.0.1.dist-info/WHEEL",
+        "sha256": "227f454cdc5e3fad0a9d3906c3bc24ea624f61dfdd4128c46665dd05d30223ef"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/pydantic-2.14.1.dist-info/METADATA",
+        "sha256": "4d4c8e8d5e6a27d5208f0d7949f25628e6747133034969d4d1399b1ad5394036"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/pydantic-2.14.1.dist-info/RECORD",
+        "sha256": "eb9328c2db6443ef3d83ad26b2499532d51fe7ae423c1f9b771183f5ab1fda45"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/pydantic-2.14.1.dist-info/WHEEL",
+        "sha256": "5b77e4a649bbfb07fdbc123967eeecd1e5a478cfaca6eefc23c35e6fdf037848"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/pydantic_core-2.50.1.dist-info/METADATA",
+        "sha256": "ae6817764b603fa2300cd31b9566ecc33476df46163c4150fffc353121a166f2"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/pydantic_core-2.50.1.dist-info/RECORD",
+        "sha256": "2356d615439d1ab83dae666ec8b05dee228215efcf0212bfa17417e2b59b3edb"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/pydantic_core-2.50.1.dist-info/WHEEL",
+        "sha256": "00432af65abae21a50692ef850ae61fa7101eb22b04fb2d1e3c61678710d7e53"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/pyyaml-6.0.3.dist-info/METADATA",
+        "sha256": "03c3b415ed38d09faedc49360e930769b40c58f68585e6de00e2e4916a858d34"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/pyyaml-6.0.3.dist-info/RECORD",
+        "sha256": "1b027d69a740b3a21d87fface6ac135c2f3af43b8e3c79ce7eee228a1e7297ca"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/pyyaml-6.0.3.dist-info/WHEEL",
+        "sha256": "57596843a4e9c4006ed403d48343284d104ecd2293e7155cdec922cd7fa8bc25"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/regex-2026.9.29.dist-info/METADATA",
+        "sha256": "33859377dbf8dd38ee3de73fd97faebf4a63d50576e3cc1a9dfe44df08b0936a"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/regex-2026.9.29.dist-info/RECORD",
+        "sha256": "360eb9789e84ed4d28586dd9c84e3f6259f128ce1b88015a401ab87f7e293d38"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/regex-2026.9.29.dist-info/WHEEL",
+        "sha256": "7156dcce88ca058d4e5118bde8900f7f0cacc719d55b67b78cb6de2362e7dbdb"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/requests-2.34.2.dist-info/METADATA",
+        "sha256": "8c384ba3e979480faae2859d3c5e6c1276dd2c3616e322e124d52c8cfc556f27"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/requests-2.34.2.dist-info/RECORD",
+        "sha256": "9fe8a6fba6bb2091ccd8e5c3d279392ba36c03fc42e7854c792c74c98d5b3e91"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/requests-2.34.2.dist-info/WHEEL",
+        "sha256": "69e6228a0d35958183cc1812f07c565ce837b95eb51bd8a33acba9fa4f68d6c9"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/setuptools-84.2.1.dist-info/METADATA",
+        "sha256": "24939b84ead30ff4581918c8d5a95aafd377f6a8afc61f30ea18358a8786bfa4"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/setuptools-84.2.1.dist-info/RECORD",
+        "sha256": "f1e6ca44c82ea5cc815ac9b8be452e30a24ba5f713fce248f649fde1caf9eb2f"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/setuptools-84.2.1.dist-info/WHEEL",
+        "sha256": "98e75747d0b7c0c568bfb71263c3d8f970b3a374a6996087bc642be5cb09a1aa"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/sniffio-1.3.1.dist-info/METADATA",
+        "sha256": "0b318b57098edeccf585e60a889a6b6a7b5c4086f3a9aa62eff76a1d3cee12d9"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/sniffio-1.3.1.dist-info/RECORD",
+        "sha256": "47b1f08125b75fc6504a3ca37e9a2d9a268fd115fcf0bcf082a1e8df1befbb9b"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/sniffio-1.3.1.dist-info/WHEEL",
+        "sha256": "a2241587fe4f9d033413780f762cf4f5608d9b08870cc6867abfde96a0777283"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/stable_ts-2.19.1.dist-info/METADATA",
+        "sha256": "d5a16b66f47bb387e7749e914d282144b1d189b06dddf020cd941085be61c837"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/stable_ts-2.19.1.dist-info/RECORD",
+        "sha256": "c659b978b3ce9aa0a23377493801389c1af82131db4614fd6f6ad694f5b2bedc"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/stable_ts-2.19.1.dist-info/WHEEL",
+        "sha256": "98e75747d0b7c0c568bfb71263c3d8f970b3a374a6996087bc642be5cb09a1aa"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/sympy-1.14.0.dist-info/METADATA",
+        "sha256": "b756c2fbfd5be05ac5bdb0ebca61f55618f30f633ed92d88a5687429313a7595"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/sympy-1.14.0.dist-info/RECORD",
+        "sha256": "94f85aeee28b49b78496a166ba1e2e5eedff0354cb450bd4a239fbcf5cfc30c7"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/sympy-1.14.0.dist-info/WHEEL",
+        "sha256": "4a63b1614ee9ccd281a804af409ec38d7dd719417dda5ac684c6f747afe28aa2"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/tiktoken-0.14.0.dist-info/METADATA",
+        "sha256": "30086725221223f7a19463e71c0e9f79fe7aba9125b36632c00bf50a23fa968a"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/tiktoken-0.14.0.dist-info/RECORD",
+        "sha256": "fd49efc9a616f34c5ef6ee6f00fe5b8d7524b426bbef13f9cea16a8dd1bbf441"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/tiktoken-0.14.0.dist-info/WHEEL",
+        "sha256": "7156dcce88ca058d4e5118bde8900f7f0cacc719d55b67b78cb6de2362e7dbdb"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/torch-2.7.1.dist-info/METADATA",
+        "sha256": "13e69dce5f41a0f6439cb9e233d921bb5e67e6644f26b9deff5712091577f589"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/torch-2.7.1.dist-info/RECORD",
+        "sha256": "9c2339695bd4c74647d6e7f27bc8404366768eadb1d16e4a071458e483fcb38f"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/torch-2.7.1.dist-info/WHEEL",
+        "sha256": "780a9793e40d04c6b9f8c7d920af06b7aadb805d4c43063be4a08ad4da69fead"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/torchaudio-2.7.1.dist-info/METADATA",
+        "sha256": "0bb49fe44f36b769938a3171640da605f4b47d04ef8694188983b1aebb4ea4f7"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/torchaudio-2.7.1.dist-info/RECORD",
+        "sha256": "ff292e94235fee8c6e7c44d5f31362aceb4e24be8489e6d400b65492b4df282a"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/torchaudio-2.7.1.dist-info/WHEEL",
+        "sha256": "c121fb6cf34cc07e229f4ea0f59ed79b0d878932d0814c28e6d1a38e2212a0ab"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/tqdm-4.70.1.dist-info/METADATA",
+        "sha256": "a5da70b966afea3a759716041bad7187f2ece02c22348cf9e7c0a512bbf15f57"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/tqdm-4.70.1.dist-info/RECORD",
+        "sha256": "4433ef1b3e121a9ecb08c981ec56c44a5bd845302a5ff4e14213416f5b5fcef4"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/tqdm-4.70.1.dist-info/WHEEL",
+        "sha256": "61532836a2b3111b7ec23519c09df7c41180c27165fb872a6d8913b566b88ad1"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/truststore-0.10.5.dist-info/METADATA",
+        "sha256": "1fd496f290853214e630d96f7163d2dd916f84ebe634b58aa827d6853e8f8610"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/truststore-0.10.5.dist-info/RECORD",
+        "sha256": "72c2f04a4df5dc7d38b1f31a4459ec193563a5d4a5662d88c6aebb5b1af6e44e"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/truststore-0.10.5.dist-info/WHEEL",
+        "sha256": "1b68144734c4b66791f27add5d425f3620775585718a03d0f9b110ba3a4d88db"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/typing_extensions-4.16.0.dist-info/METADATA",
+        "sha256": "b05084ca1d50879865178d9fff9fabeab61bdfb1f361bfbde95421ffc8f9be46"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/typing_extensions-4.16.0.dist-info/RECORD",
+        "sha256": "78f74ed46a377d6e1debed78b3e994ff9cfe02a529d393d7c8ab80989bd25079"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/typing_extensions-4.16.0.dist-info/WHEEL",
+        "sha256": "1b68144734c4b66791f27add5d425f3620775585718a03d0f9b110ba3a4d88db"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/typing_inspection-0.4.4.dist-info/METADATA",
+        "sha256": "bad3d9e6342ef6750cf5128ec942327b8bebdce0b6e4d6f67cb15b27ae5118da"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/typing_inspection-0.4.4.dist-info/RECORD",
+        "sha256": "fdadfc73202e3db8d9a4683df0cb4b75e828e634b84374b7e99b899bc08652ab"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/typing_inspection-0.4.4.dist-info/WHEEL",
+        "sha256": "ccec20e2307acd7da453dd7437e70c6b08e2bc3ead3bc3445af135da37b56d59"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/urllib3-2.8.0.dist-info/METADATA",
+        "sha256": "10898c620e8007c030e07fa5622b68358a43010025dfbd78a1cb797699de2bb4"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/urllib3-2.8.0.dist-info/RECORD",
+        "sha256": "5d88c4832d0406a7fd3c000f924b00394c2d7f694b332bc441370d1a7f5fe392"
+      },
+      {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/lib/python3.12/site-packages/urllib3-2.8.0.dist-info/WHEEL",
+        "sha256": "ccec20e2307acd7da453dd7437e70c6b08e2bc3ead3bc3445af135da37b56d59"
+      }
+    ],
+    "ffmpeg": {
+      "path": "/Users/pengweitai/Projects/ManiMind/manimgl_env/bin/ffmpeg",
+      "sha256": "326895b16940f238d76e902fc71150f10c388c281985756f9850ff800a2f1499",
+      "version": "ffmpeg version 7.0 Copyright (c) 2000-2024 the FFmpeg developers"
+    },
+    "model": {
+      "name": "base",
+      "multilingual": true,
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/tools/meaning-alignment-env/models/base.pt",
+      "sha256": "ed3a0b6b1c0edf879ad9b11b1af5a0e6ab5db9205f891f668f8b0e6c6326e34e",
+      "declared_license": "MIT",
+      "source_url": "https://openaipublic.azureedge.net/main/whisper/models/ed3a0b6b1c0edf879ad9b11b1af5a0e6ab5db9205f891f668f8b0e6c6326e34e/base.pt"
+    },
+    "align_options": {
+      "language": "zh",
+      "original_split": true,
+      "verbose": null
+    },
+    "python": "3.12.14 (main, Sep 29 2026, 14:50:19) [Clang 22.1.3 ]",
+    "cpu_threads": 4
+  },
+  "sources": [
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-intro-20261101/forced-timings-v003.json.attempts/20261101T155640741675Z-882e798622904b2e975582b000946b60/started.json",
+      "sha256": "6fc0b6204c779977007db716c9bcdc91ac6f2feb2d0b50d36b5b2b4b390227a1"
+    }
+  ],
+  "attempt": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-intro-20261101/forced-timings-v003.json.attempts/20261101T155640741675Z-882e798622904b2e975582b000946b60",
+  "acceptance": "estimated_not_listening_or_publication_approved",
+  "fixture_scope": "Exact measured production estimate snapshot for tests; fixture itself grants no production approval."
+}

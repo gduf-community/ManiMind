@@ -1,0 +1,29 @@
+{
+  "project_id": "deepseek-learning-high-20261024",
+  "model": "deepseek-flash",
+  "documented_version": "DeepSeek-V4.1-Flash-1017",
+  "transport": "deepseek_openai_api",
+  "base_url": "https://api.deepseek.com/v1",
+  "api_key_env": "DEEPSEEK_API_KEY",
+  "thinking": {"type": "enabled"},
+  "reasoning_effort": "high",
+  "top_p": 0.95,
+  "max_output_tokens": 393216,
+  "timeout_seconds": 3600,
+  "max_requests": null,
+  "max_renders": null,
+  "max_review_cycles": null,
+  "max_cost_CNY": null,
+  "pricing": {
+    "currency": "CNY",
+    "input_per_million_peak_uncached": 2,
+    "input_per_million_peak_cached": 0.04,
+    "output_per_million_peak": 8,
+    "input_per_million_offpeak_uncached": 1,
+    "input_per_million_offpeak_cached": 0.02,
+    "output_per_million_offpeak": 4,
+    "source": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/",
+    "verified_date": "2026-10-24",
+    "basis": "Official token rates; report retains conservative peak-uncached and offpeak-cache estimates, not invoices"
+  }
+}

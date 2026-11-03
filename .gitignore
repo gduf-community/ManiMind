@@ -7,6 +7,9 @@ __pycache__/
 .venv/
 venv/
 env/
+manim_env/
+manimgl_env/
+test_venv/
 
 # Node / frontend
 node_modules/
@@ -15,10 +18,13 @@ build/
 
 # Environment
 .env
+.env.*
+!.env.example
 
 # Runtime artifacts
 runtime/cache/*
 !runtime/cache/.gitkeep
+/runtime/tools/
 runtime/projects/*
 !runtime/projects/.gitkeep
 runtime/sessions/*
@@ -30,6 +36,8 @@ outputs/*
 !outputs/.gitkeep
 logs/*
 !logs/.gitkeep
+media/
+ref_frames/
 
 # Media exports
 *.mp4
@@ -40,9 +48,23 @@ logs/*
 *.ass
 
 # Editor
+.DS_Store
 .vscode/
 .idea/
 *.swp
 *.swo
 *.tmp
 *.bak
+
+# Local migration snapshots and duplicate project exports
+/migration/git/
+/MIGRATION_CONTENTS.txt
+/MIGRATION_HANDOFF.md
+/MIGRATION_MANIFEST.sha256
+/ManiMind-*/
+
+# Private historical evidence remains local; public summaries live separately.
+/archive/local/
+
+# Machine-local agent permissions
+/.claude/settings.local.json

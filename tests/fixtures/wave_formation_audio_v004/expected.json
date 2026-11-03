@@ -1,0 +1,327 @@
+{
+  "status": "offline_provenance_checked_not_review_approval",
+  "duration": 146,
+  "original_wav_total_seconds": 104.64,
+  "schedule": [
+    {
+      "id": "F01",
+      "start": 5.08,
+      "end": 25.4,
+      "legal_start": [
+        5.080000000000001,
+        7
+      ]
+    },
+    {
+      "id": "F02",
+      "start": 32.76,
+      "end": 52.599999999999994,
+      "legal_start": [
+        32.76,
+        33.56
+      ]
+    },
+    {
+      "id": "F03",
+      "start": 62,
+      "end": 84.24,
+      "legal_start": [
+        62,
+        62.42
+      ]
+    },
+    {
+      "id": "F04",
+      "start": 91.52,
+      "end": 113.28,
+      "legal_start": [
+        91.52,
+        92.62
+      ]
+    },
+    {
+      "id": "F05",
+      "start": 122.36,
+      "end": 142.84,
+      "legal_start": [
+        122.36000000000003,
+        122.48000000000002
+      ]
+    }
+  ],
+  "word_landmarks": [
+    {
+      "unit": "F01",
+      "reference": "r2",
+      "word_indices": [
+        24,
+        27
+      ],
+      "quote": "一个周期后，",
+      "start": 16.3,
+      "end": 17.58,
+      "required_event": "contrast_after",
+      "event_time": 15.5,
+      "condition": "说一个周期后之前，完整4秒物理过程已完成",
+      "condition_kind": "visible_state_or_completed_process",
+      "passed": true,
+      "zero_duration_words_used_as_evidence": false
+    },
+    {
+      "unit": "F01",
+      "reference": "r2",
+      "word_indices": [
+        28,
+        36
+      ],
+      "quote": "质点回到原来的状态，",
+      "start": 17.58,
+      "end": 19.36,
+      "required_event": "contrast_after",
+      "event_time": 15.5,
+      "condition": "质点复位结果已可读",
+      "condition_kind": "visible_state_or_completed_process",
+      "passed": true,
+      "zero_duration_words_used_as_evidence": false
+    },
+    {
+      "unit": "F01",
+      "reference": "r2",
+      "word_indices": [
+        38,
+        43
+      ],
+      "quote": "峰已经到了另一处。",
+      "start": 19.36,
+      "end": 20.68,
+      "required_event": "contrast_after",
+      "event_time": 15.5,
+      "condition": "波峰已到另一处；不使用前一个零时长波字",
+      "condition_kind": "visible_state_or_completed_process",
+      "passed": true,
+      "zero_duration_words_used_as_evidence": false
+    },
+    {
+      "unit": "F02",
+      "reference": "r2",
+      "word_indices": [
+        37,
+        40
+      ],
+      "quote": "先到近处，",
+      "start": 45.599999999999994,
+      "end": 46.48,
+      "required_event": "disturbance_reaches_two",
+      "event_time": 38,
+      "condition": "近处已实际收到扰动",
+      "condition_kind": "visible_state_or_completed_process",
+      "passed": true,
+      "zero_duration_words_used_as_evidence": false
+    },
+    {
+      "unit": "F02",
+      "reference": "r2",
+      "word_indices": [
+        41,
+        44
+      ],
+      "quote": "再到远处。",
+      "start": 46.94,
+      "end": 47.66,
+      "required_event": "disturbance_reaches_four",
+      "event_time": 44,
+      "condition": "远处已实际收到扰动",
+      "condition_kind": "visible_state_or_completed_process",
+      "passed": true,
+      "zero_duration_words_used_as_evidence": false
+    },
+    {
+      "unit": "F03",
+      "reference": "r2",
+      "word_indices": [
+        4,
+        12
+      ],
+      "quote": "后一个位置也到了这个高度。",
+      "start": 68.16,
+      "end": 69.92,
+      "required_event": "delay_match_markers_ready",
+      "event_time": 68.1,
+      "condition": "后一位置已达到旧高度，等高标记已可读",
+      "condition_kind": "visible_state_or_completed_process",
+      "passed": true,
+      "zero_duration_words_used_as_evidence": false
+    },
+    {
+      "unit": "F03",
+      "reference": "r2",
+      "word_indices": [
+        8,
+        12
+      ],
+      "quote": "也到了这个高度。",
+      "start": 68.78,
+      "end": 69.92,
+      "required_event": "later_state_matches",
+      "event_time": 68.6,
+      "condition": "说也到了这个高度时跨时等式也已完整出现",
+      "condition_kind": "visible_state_or_completed_process",
+      "passed": true,
+      "zero_duration_words_used_as_evidence": false
+    },
+    {
+      "unit": "F03",
+      "reference": "r3",
+      "word_indices": [
+        0,
+        3
+      ],
+      "quote": "去掉记录，",
+      "start": 76.26,
+      "end": 76.8,
+      "required_event": "delay_records_removed",
+      "event_time": 76.2,
+      "condition": "旧记录已移除",
+      "condition_kind": "visible_state_or_completed_process",
+      "passed": true,
+      "zero_duration_words_used_as_evidence": false
+    },
+    {
+      "unit": "F04",
+      "reference": "r2",
+      "word_indices": [
+        4,
+        6
+      ],
+      "quote": "先到下面，",
+      "start": 98.22,
+      "end": 99.32,
+      "required_event": "period_half_record_ready",
+      "event_time": 96,
+      "condition": "下面由明确标注t=14s的历史记录支持，不声称当前实点在谷底",
+      "condition_kind": "explicit_historical_sample",
+      "passed": true,
+      "zero_duration_words_used_as_evidence": false
+    },
+    {
+      "unit": "F04",
+      "reference": "r2",
+      "word_indices": [
+        7,
+        11
+      ],
+      "quote": "再回到起点，",
+      "start": 99.32,
+      "end": 100.02,
+      "required_event": "period_finished",
+      "event_time": 98,
+      "condition": "再回起点的结果已真实出现",
+      "condition_kind": "visible_state_or_completed_process",
+      "passed": true,
+      "zero_duration_words_used_as_evidence": false
+    },
+    {
+      "unit": "F04",
+      "reference": "r2",
+      "word_indices": [
+        12,
+        15
+      ],
+      "quote": "完成一次振动",
+      "start": 100.64,
+      "end": 101.28,
+      "required_event": "period_finished",
+      "event_time": 98,
+      "condition": "完整一次振动已完成",
+      "condition_kind": "visible_state_or_completed_process",
+      "passed": true,
+      "zero_duration_words_used_as_evidence": false
+    },
+    {
+      "unit": "F04",
+      "reference": "r3",
+      "word_indices": [
+        0,
+        3
+      ],
+      "quote": "四秒过去，",
+      "start": 104.19999999999999,
+      "end": 104.84,
+      "required_event": "period_finished",
+      "event_time": 98,
+      "condition": "四秒物理时间确已过去",
+      "condition_kind": "visible_state_or_completed_process",
+      "passed": true,
+      "zero_duration_words_used_as_evidence": false
+    },
+    {
+      "unit": "F04",
+      "reference": "r3",
+      "word_indices": [
+        14,
+        21
+      ],
+      "quote": "一个波峰前进了四米。",
+      "start": 107.47999999999999,
+      "end": 108.96,
+      "required_event": "period_result_ready",
+      "event_time": 99,
+      "condition": "4m标尺与复位结果均可读；不使用同字零时长token",
+      "condition_kind": "visible_state_or_completed_process",
+      "passed": true,
+      "zero_duration_words_used_as_evidence": false
+    },
+    {
+      "unit": "F05",
+      "reference": "r2",
+      "word_indices": [
+        3,
+        7
+      ],
+      "quote": "波峰前进了，",
+      "start": 128.2,
+      "end": 129,
+      "required_event": "formation_answer_motion",
+      "event_time": 127.8,
+      "condition": "看结果是观看邀请；波峰前进了的断言在1秒推进完成后",
+      "condition_kind": "visible_state_or_completed_process",
+      "passed": true,
+      "zero_duration_words_used_as_evidence": false
+    },
+    {
+      "unit": "F05",
+      "reference": "r2",
+      "word_indices": [
+        8,
+        16
+      ],
+      "quote": "黄色质点仍在四米处，",
+      "start": 129.46,
+      "end": 131.14,
+      "required_event": "formation_answer_ready",
+      "event_time": 128.8,
+      "condition": "x=4m、y=0结果已显示",
+      "condition_kind": "visible_state_or_completed_process",
+      "passed": true,
+      "zero_duration_words_used_as_evidence": false
+    },
+    {
+      "unit": "F05",
+      "reference": "r3",
+      "word_indices": [
+        1,
+        5
+      ],
+      "quote": "清谁是质点、",
+      "start": 135,
+      "end": 135.96,
+      "required_event": "formation_closed",
+      "event_time": 135.00000000000003,
+      "condition": "出口语句有实际可读对象；不使用分字的零时长点",
+      "condition_kind": "visible_state_or_completed_process",
+      "passed": true,
+      "zero_duration_words_used_as_evidence": false
+    }
+  ],
+  "original_timing_evidence_sha256": "90cf3bc542b52c2ea06301cde8d7e3eb89f069df56bc17361d58aa4abddbc441"
+}

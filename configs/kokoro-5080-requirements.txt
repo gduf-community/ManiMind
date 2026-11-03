@@ -1,0 +1,6 @@
+kokoro==0.9.4
+misaki[en,zh]==0.9.4
+transformers==4.57.3
+soundfile==0.13.1
+numpy==2.2.6
+huggingface-hub==0.36.0

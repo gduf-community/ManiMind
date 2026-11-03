@@ -16,13 +16,22 @@ pdf = [
 ]
 llm = [
   "openai>=1.30.0",
+  "python-dotenv>=0.21,<2",
 ]
 api = [
   "fastapi>=0.111.0",
   "uvicorn>=0.30.0",
 ]
 render = [
-  "manim>=0.19.0",
+  "manimgl>=1.7.2,<1.8",
+  "setuptools<81",
+  "static-ffmpeg>=3,<4; sys_platform == 'darwin'",
+]
+components = [
+  "sympy>=1.13,<2",
+]
+render-ce = [
+  "manim>=0.20.1",
   "manim-voiceover[gtts]>=0.3.7",
 ]
 dev = [
@@ -38,3 +47,6 @@ package-dir = {"" = "src"}
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.setuptools.package-data]
+"manimind.postproduce" = ["templates/*.html"]

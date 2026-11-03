@@ -1,0 +1,35 @@
+{
+  "status": "not_reviewed",
+  "writer": "01a19ab5-b2d3-7003-a784-edeeaecdbc23",
+  "consumers": [
+    "main coordinator",
+    "independent blind visual reviewer",
+    "separate content regression reviewer",
+    "audio timing reviewer"
+  ],
+  "lifecycle": "Chapter 07 v003 author candidate only; no review or release authority",
+  "invalidation": "Bound source, baseline media, plan, narration, transport, original WAV/receipt or production timing changes invalidate derived data",
+  "timings_sha256": "81c219336dc9da96f511267c0509cdc8c00213bbb296728d2f8792eb768e4ebd",
+  "evidence_sha256": "cc0016f20dff4a7ca81a9852c7440bc6a09d95adceedcefb83f320d134064c02",
+  "baseline": {
+    "visual_v001": {
+      "path": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/manim/media/manimgl/understanding.mp4",
+      "sha256": "cc18b7041cc3cbb16a1ae6ec7ba99f94456ca6fa9bc496563ab92adc4dfe2349",
+      "duration": 276
+    }
+  },
+  "sources": [
+    {
+      "path": "examples/derivative_ch07_extremes.py",
+      "sha256": "8da5adf5a9c706c6d1c4a9aad536d08bbf138876beaaca6d9fe406303768c9f0"
+    },
+    {
+      "path": "examples/derivative_chapter_shared.py",
+      "sha256": "ed9bb7ece0f273c72fc4db744200e7a3a96e51ad54e258861305140e9d0c17ae"
+    },
+    {
+      "path": "tests/lesson_native_harness.py",
+      "sha256": "369758767cb20889a637c03eed9ffba17e97e618972eb6c9667e6dac84fc4d18"
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "schema_version": 1,
+  "project_id": "math-derivative-ch05-monotonicity-20261102",
+  "author_agent": "01a199e9-73ab-7700-8a9f-cd7b5541b0ad",
+  "author_context": "01a199e9-73ab-7700-8a9f-cd7b5541b0ad",
+  "writer": "01a199e9-73ab-7700-8a9f-cd7b5541b0ad",
+  "consumers": [
+    "main",
+    "independent content regression reviewer",
+    "unit_film.require_regression"
+  ],
+  "lifecycle": "Task-selected inventory before v002 rendering; entire visual-v001 is the frozen baseline",
+  "invalidation": "Baseline bytes or selected teaching functions change requires new contract; current media/source changes invalidate comparison evidence",
+  "assets": {
+    "visual-v001": {
+      "path": "tests/fixtures/derivative-ch05-monotonicity/v002/test-only-baseline-not-a-video",
+      "sha256": "8cccbf14aa27ce52b4191bce8050bf9bd7891bc6c7a1e913ffe5ddc49b169d7f",
+      "duration": 324
+    }
+  },
+  "units": [
+    {
+      "id": "opening",
+      "asset": "visual-v001",
+      "function": "自然承接已会求导，明确函数及本课增长问题。",
+      "baseline_interval": [
+        0,
+        24
+      ],
+      "baseline_reference_times": [
+        4,
+        16,
+        23
+      ],
+      "features": [
+        {
+          "id": "title-to-question",
+          "kind": "process",
+          "claim": "先标题，再x³-3x及哪段升降的问题，不重讲差商。"
+        }
+      ]
+    },
+    {
+      "id": "shared-input",
+      "asset": "visual-v001",
+      "function": "同一输入联动函数点、切线、导数点和数值，分清函数高度与导数值。",
+      "baseline_interval": [
+        24,
+        66
+      ],
+      "baseline_reference_times": [
+        40,
+        48,
+        58
+      ],
+      "features": [
+        {
+          "id": "common-x-motion",
+          "kind": "process",
+          "claim": "贯穿竖线及两图中的点共用x；切线与下方导数点随相同位置更新。"
+        },
+        {
+          "id": "different-y-meanings",
+          "kind": "state",
+          "claim": "上图纵坐标f(x)，下图f'(x)；轴义、颜色与单独数值读数可辨。"
+        }
+      ]
+    },
+    {
+      "id": "first-sign-turn",
+      "asset": "visual-v001",
+      "function": "保留-1处从正到零到负及函数增到减的对应。",
+      "baseline_interval": [
+        66,
+        104
+      ],
+      "baseline_reference_times": [
+        89,
+        93,
+        97
+      ],
+      "features": [
+        {
+          "id": "positive-zero-negative",
+          "kind": "process",
+          "claim": "函数点先升，-1处切线水平，再下降；导数点同步过零。"
+        }
+      ]
+    },
+    {
+      "id": "second-sign-turn",
+      "asset": "visual-v001",
+      "function": "保留1处负到零到正与函数由减转增的对应。",
+      "baseline_interval": [
+        104,
+        136
+      ],
+      "baseline_reference_times": [
+        111,
+        115,
+        119
+      ],
+      "features": [
+        {
+          "id": "negative-zero-positive",
+          "kind": "process",
+          "claim": "函数点先降，1处切线水平，再上升；导数点同步过零。"
+        }
+      ]
+    },
+    {
+      "id": "factor-sign-reasons",
+      "asset": "visual-v001",
+      "function": "因式符号解释整个实数轴三段正负正，不用有限取样代替全段分析。",
+      "baseline_interval": [
+        136,
+        178
+      ],
+      "baseline_reference_times": [
+        141,
+        147,
+        157,
+        162.667,
+        167.717,
+        173
+      ],
+      "features": [
+        {
+          "id": "roots-and-factorization",
+          "kind": "state",
+          "claim": "导数3(x-1)(x+1)及-1、1零点把实数轴分段。"
+        },
+        {
+          "id": "three-interval-reasons",
+          "kind": "process",
+          "claim": "依次左段两负得正，中段异号得负，右段两正得正；相应增减增与三个开区间完整保留。"
+        }
+      ]
+    },
+    {
+      "id": "secant-to-tangent",
+      "asset": "visual-v001",
+      "function": "先比较区间内两点，再寻找平行割线的内部切线。",
+      "baseline_interval": [
+        178,
+        216
+      ],
+      "baseline_reference_times": [
+        193,
+        201,
+        207,
+        208,
+        211,
+        215
+      ],
+      "features": [
+        {
+          "id": "moving-right-endpoint",
+          "kind": "process",
+          "claim": "固定a，右点b向右且升高，两点连线逐步形成正斜率割线。"
+        },
+        {
+          "id": "internal-parallel-tangent",
+          "kind": "process",
+          "claim": "保留两端点及割线，内部切点移动到c，最终切线平行于割线。"
+        }
+      ]
+    },
+    {
+      "id": "interval-theorem",
+      "asset": "visual-v001",
+      "function": "区间条件与中值定理连接到任意两点高低关系。",
+      "baseline_interval": [
+        216,
+        244
+      ],
+      "baseline_reference_times": [
+        223,
+        227,
+        237.928,
+        239
+      ],
+      "features": [
+        {
+          "id": "conditions-and-identity",
+          "kind": "state",
+          "claim": "整个开区间可导且处处f'>0，a<c<b，并有f(b)-f(a)=f'(c)(b-a)>0；可导蕴含所需连续性。"
+        },
+        {
+          "id": "arbitrary-pair-conclusion",
+          "kind": "process",
+          "claim": "由条件和中值定理推出任意a<b时f(a)<f(b)，再说明处处负导数时严格递减。"
+        }
+      ]
+    },
+    {
+      "id": "isolated-zero",
+      "asset": "visual-v001",
+      "function": "x³实际经过原点仍上升，并用立方差支持全实数严格递增。",
+      "baseline_interval": [
+        244,
+        294
+      ],
+      "baseline_reference_times": [
+        257,
+        266,
+        278,
+        288.75
+      ],
+      "features": [
+        {
+          "id": "cross-zero-with-horizontal-tangent",
+          "kind": "process",
+          "claim": "点先靠近原点，在零导数和水平切线处停留，再继续向右上方。"
+        },
+        {
+          "id": "cube-difference-reason",
+          "kind": "state",
+          "claim": "保留b³-a³=(b-a)(a²+ab+b²)>0(a<b)与全实数严格递增的理由。"
+        }
+      ]
+    },
+    {
+      "id": "closing-handoff",
+      "asset": "visual-v001",
+      "function": "区间总结及零导数是否改变增减的后课问题。",
+      "baseline_interval": [
+        294,
+        324
+      ],
+      "baseline_reference_times": [
+        300,
+        309,
+        320
+      ],
+      "features": [
+        {
+          "id": "summary-and-handoff",
+          "kind": "process",
+          "claim": "先给处处正负导数与增减的区间条件，再问零导数处增减一定改变吗，衔接极值课。"
+        }
+      ]
+    }
+  ],
+  "revision_addition": {
+    "finding_id": "CH05-VIS-001",
+    "scope": "q=-1/x, two independently increasing branches, cross-gap reversed output order and failed whole-interval condition",
+    "baseline_contains_addition": false,
+    "author_comparison_status": "not_performed",
+    "review_requirement": "Independent new-pixel first look for added scope; separate-context before/during/after comparison for all baseline features. No author-written review or approval."
+  },
+  "artifact_type": "test_fixture",
+  "status": "test_only_schema_input_not_media_or_comparison"
+}

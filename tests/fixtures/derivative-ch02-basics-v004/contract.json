@@ -1,0 +1,1255 @@
+{
+  "schema_version": 1,
+  "project_id": "math-derivative-ch02-basics-20261102",
+  "status": "not_reviewed",
+  "writer": "01a19ab5-b2d3-7003-a784-edeeaecdbc23",
+  "consumers": [
+    "main coordinator",
+    "independent visual reviewer",
+    "independent content regression reviewer",
+    "audio timing reviewer"
+  ],
+  "lifecycle": "Chapter 02 v004 author candidate only; never approval",
+  "invalidation": "Any bound plan, source, baseline media, narration, original WAV, receipt or production timing change invalidates derived data",
+  "baseline_selection": "Actual complete 516s visual-v002, including both logarithm bridges; v001 is not this task baseline",
+  "assets": {
+    "visual_v002": {
+      "path": "outputs/math-derivative-ch02-basics-20261102/visual-v002/manim/media/manimgl/understanding.mp4",
+      "sha256": "716b9ce6b0eff7ad27b5238ec4b5b9f3adfb9deff9a9d7ea849627c0c0ebd0f9",
+      "duration": 516
+    }
+  },
+  "scope": "No content deletions, value changes, geometry changes, audio edits, acceleration or publication; timing and same-content presentation only",
+  "evidence_status": "Baseline author selection only; current pixel comparison must be independently produced after main renders v004",
+  "units": [
+    {
+      "id": "opening",
+      "asset": "visual_v002",
+      "function": "从一个点的导数进入整条导函数",
+      "baseline_interval": [
+        0.0,
+        18.0
+      ],
+      "features": [
+        {
+          "id": "title_bridge",
+          "kind": "state",
+          "claim": "本课标题、首课f'(2)=4与换位置求斜率的问题形成自然引入",
+          "baseline_interval": [
+            5.4,
+            18
+          ],
+          "baseline_samples": [
+            {
+              "time": 6.408,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_6_408.jpg",
+              "frame_sha256": "003550c043e24ffbf02e677cf218fc08c43568d9ccf7dc90eecdc55e61cf7a18",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 14.4,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_14_4.jpg",
+              "frame_sha256": "9fd814a1a307eb8e758602a3e0123831de541cbeb388bef7ccd14b2cb6a3543f",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "general",
+      "asset": "visual_v002",
+      "function": "区分自变量、函数值与导数值",
+      "baseline_interval": [
+        18.0,
+        70.0
+      ],
+      "features": [
+        {
+          "id": "nonzero_square_algebra",
+          "kind": "process",
+          "claim": "任意a的非零h差商展开约分并趋近2a，保留可追踪的历史行",
+          "baseline_interval": [
+            24.233333,
+            45.033333
+          ],
+          "baseline_samples": [
+            {
+              "time": 25.897,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_25_897.jpg",
+              "frame_sha256": "bc1be7b8ad61560067f1825bfd38d3ebef6b10bf74f6c2dbc8eef0a918919f34",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 28.4,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_28_4.jpg",
+              "frame_sha256": "6bebe82cb318abd86dc997eded7815d6254be0573a1afd88bed3ffb3b757d889",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 36.416,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_36_416.jpg",
+              "frame_sha256": "dcb34e4901f8422553bc1a46d34a6a6b930f165adbcbca8a20d43f523367eb53",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        },
+        {
+          "id": "derivative_function",
+          "kind": "state",
+          "claim": "f'(a)=2a成为f'(x)=2x；函数值和导数值含义分开",
+          "baseline_interval": [
+            40.366667,
+            45.033333
+          ],
+          "baseline_samples": [
+            {
+              "time": 40.74,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_40_74.jpg",
+              "frame_sha256": "cc495d128084b47ef2f0e6bcd420c74392c1f370c804c6ad6e9c7c1a7a8fe4ac",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 44,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_44.jpg",
+              "frame_sha256": "d9dec8ee629f14e7fdd764363a9bf2acb80a0c1f3170c8819aee8c68e437f59d",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        },
+        {
+          "id": "linked_slope_map",
+          "kind": "process",
+          "claim": "同一a使原曲线点、切线方向、导函数同横坐标高度和近似读数连续联动；负、零、正斜率都有依据",
+          "baseline_interval": [
+            50.233333,
+            67.933333
+          ],
+          "baseline_samples": [
+            {
+              "time": 51.441,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_51_441.jpg",
+              "frame_sha256": "cd1fa0be55e7227b43c4a06fa0ae314f21b357d255812ce311547ffbdd199cb3",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 57.783,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_57_783.jpg",
+              "frame_sha256": "d14e6dff4364bae5ae6b43949e6c12d450f7636b72bafc97214af5383c406265",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 64.125,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_64_125.jpg",
+              "frame_sha256": "646753491202987b4f5c52f0ed861022bb2d95035edb011794c58195fd56279a",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "constant",
+      "asset": "visual_v002",
+      "function": "高度可以非零但变化率为零",
+      "baseline_interval": [
+        70.0,
+        92.0
+      ],
+      "features": [
+        {
+          "id": "constant_definition",
+          "kind": "state",
+          "claim": "(c-c)/h=0且h非零说明常数导数为零",
+          "baseline_interval": [
+            84.966667,
+            92
+          ],
+          "baseline_samples": [
+            {
+              "time": 85.529,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_85_529.jpg",
+              "frame_sha256": "c303b7a87e996815c594d5086b5df5d6c888ca6371b4e4f67a4d65bdeb1dbead",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 91.437,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_91_437.jpg",
+              "frame_sha256": "c303b7a87e996815c594d5086b5df5d6c888ca6371b4e4f67a4d65bdeb1dbead",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        },
+        {
+          "id": "height_not_slope",
+          "kind": "process",
+          "claim": "非零常数高度不变，移动点的切线始终水平，导函数点始终高度零",
+          "baseline_interval": [
+            73.066667,
+            82.333333
+          ],
+          "baseline_samples": [
+            {
+              "time": 73.808,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_73_808.jpg",
+              "frame_sha256": "c9b3da2f0978a1f30f2fbc04dce5ddc1fef70dfc44b2899aa44c80a56d51a888",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 77.7,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_77_7.jpg",
+              "frame_sha256": "5aee0e488cc0d818bdd945d4901ef7cd57e8fcdbbd82ea01901082ffa253ae39",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 81.592,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_81_592.jpg",
+              "frame_sha256": "775f18792dd03d5421881713b719256bb3dd7b717fb919db79fc3c8b9d2baac4",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "identity",
+      "asset": "visual_v002",
+      "function": "定义法获得(x)'=1并联系恒定切线斜率",
+      "baseline_interval": [
+        92.0,
+        110.0
+      ],
+      "features": [
+        {
+          "id": "identity_definition",
+          "kind": "state",
+          "claim": "((x+h)-x)/h=h/h=1且h非零",
+          "baseline_interval": [
+            94.333333,
+            96.866667
+          ],
+          "baseline_samples": [
+            {
+              "time": 94.536,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_94_536.jpg",
+              "frame_sha256": "ae57c469ecd069feaf20097ec71e17a859ebfca8d364584a5c29be13d737cf6a",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 96.664,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_96_664.jpg",
+              "frame_sha256": "4845f190cba23a13dfaab2db5cdb918eb578a1c9760a355f0eebe5a7ecdfcc31",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        },
+        {
+          "id": "identity_map",
+          "kind": "process",
+          "claim": "一次函数任意位置的斜率为一，右图高度为一",
+          "baseline_interval": [
+            99.033333,
+            107.833333
+          ],
+          "baseline_samples": [
+            {
+              "time": 99.737,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_99_737.jpg",
+              "frame_sha256": "5334ff51da2f27f311e4573f23152b9f4cbbfef12ee4c389d89ac76d79bc8c8a",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 103.433,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_103_433.jpg",
+              "frame_sha256": "7856c75b665d922b6327b7dfd9daa12e83e366d6e65f69270d4145f51e0c367b",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 107.129,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_107_129.jpg",
+              "frame_sha256": "c4f17515f1793ff2c21199edfa5d4dde5aa4b80d9cf83ea0cc89862b8011037f",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "power",
+      "asset": "visual_v002",
+      "function": "从增量展开看一次项留下，限定规则定义域",
+      "baseline_interval": [
+        110.0,
+        178.0
+      ],
+      "features": [
+        {
+          "id": "cubic_expansion",
+          "kind": "process",
+          "claim": "三次差商先保留完整展开分子，再除h，含h项趋零后留下3x²",
+          "baseline_interval": [
+            118.833333,
+            149.433333
+          ],
+          "baseline_samples": [
+            {
+              "time": 121.281,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_121_281.jpg",
+              "frame_sha256": "c0d4aaa1672241ab61267915df3dcb29990610764f874231527e774635812216",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 123.6,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_123_6.jpg",
+              "frame_sha256": "4274ca7f079864dd5677717f1f1eff273c2eac8341f57235e9f8e24e220ab32d",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 134.437,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_134_437.jpg",
+              "frame_sha256": "28f3bf7c1b4fcb36e49ef306e2e82fcfacd84cd58d893974d7be28718fe352d7",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        },
+        {
+          "id": "power_domains",
+          "kind": "state",
+          "claim": "正整数幂全实数、零次常数支、负整数排零、实数幂x>0安全域与端点另查",
+          "baseline_interval": [
+            146.733333,
+            149.433333
+          ],
+          "baseline_samples": [
+            {
+              "time": 148.129,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_148_129.jpg",
+              "frame_sha256": "078642555ae9c803738e3f0a184c1a1937e9ff3cd7bf69231b453d8de943857b",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        },
+        {
+          "id": "cubic_shape_slope",
+          "kind": "process",
+          "claim": "三次曲线在负侧、零点、正侧的切线和3x²图及近似读数一致",
+          "baseline_interval": [
+            155.566667,
+            174.6
+          ],
+          "baseline_samples": [
+            {
+              "time": 157.089,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_157_089.jpg",
+              "frame_sha256": "57b93f8fde35edb640bce86c1ef4e3ea74d18b57e403c78edb8b37526c93b331",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 164.4,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_164_4.jpg",
+              "frame_sha256": "8909f4295f9653317e9eaea946639afca51d1ef6f28e14767a2ecab4745387c2",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 173.077,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_173_077.jpg",
+              "frame_sha256": "74ddee49fa075091b9a0d292849ab5196463df17b8fdc0bc984de4d6c9ec8e03",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reciprocal",
+      "asset": "visual_v002",
+      "function": "负导数、零点禁区与不跨断点的运动",
+      "baseline_interval": [
+        178.0,
+        224.0
+      ],
+      "features": [
+        {
+          "id": "reciprocal_common_denominator",
+          "kind": "process",
+          "claim": "原倒数差商通分到x-(x+h)=-h，再约非零h并取极限到-1/x²",
+          "baseline_interval": [
+            183.533333,
+            200.066667
+          ],
+          "baseline_samples": [
+            {
+              "time": 187.2,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_187_2.jpg",
+              "frame_sha256": "2331d0b62bd49be18eb8b600a75ac8c29f92e12f142a6588f5f4e25ebcde212c",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 189.916,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_189_916.jpg",
+              "frame_sha256": "13abac2160a886cdf541604bd71ba30fc4761569e02e246fd2245793c19b73df",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 195.007,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_195_007.jpg",
+              "frame_sha256": "bfde24730846fd48e838c003ac626a2a4e1cfb8eaea26de5fbeabc4f57dd3dec",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        },
+        {
+          "id": "reciprocal_legal_domain",
+          "kind": "state",
+          "claim": "x、h和x+h的非零条件；原函数在零处无值且无导数",
+          "baseline_interval": [
+            183.533333,
+            200.066667
+          ],
+          "baseline_samples": [
+            {
+              "time": 187.2,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_187_2.jpg",
+              "frame_sha256": "2331d0b62bd49be18eb8b600a75ac8c29f92e12f142a6588f5f4e25ebcde212c",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 199.627,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_199_627.jpg",
+              "frame_sha256": "bfde24730846fd48e838c003ac626a2a4e1cfb8eaea26de5fbeabc4f57dd3dec",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        },
+        {
+          "id": "reciprocal_separate_branches",
+          "kind": "process",
+          "claim": "负、正半轴分别移动且不跨断点；两支斜率为负，近零更陡、远零更平的图数关系仍可观察",
+          "baseline_interval": [
+            204.666667,
+            221.233333
+          ],
+          "baseline_samples": [
+            {
+              "time": 205.109,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_205_109.jpg",
+              "frame_sha256": "5fdb34e4a4c912fdecb6239094c7b5e531fd28ba3aac117fa443a3ab810b6f70",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 209.757,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_209_757.jpg",
+              "frame_sha256": "14f5e2557e04dae5b0ed9ec7fc4a23b5e190860bad9c0520f4b31526aea39e9b",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 220.644,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_220_644.jpg",
+              "frame_sha256": "536356ff5a8067d1077602bdb00c69741088bec8ca21e695922089429431a3f7",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "root",
+      "asset": "visual_v002",
+      "function": "原函数定义域与有限导数定义域不同",
+      "baseline_interval": [
+        224.0,
+        268.0
+      ],
+      "features": [
+        {
+          "id": "root_conjugate",
+          "kind": "process",
+          "claim": "平方根原差商同乘共轭，平方差化出h再约分并取1/(2√x)",
+          "baseline_interval": [
+            229.266667,
+            245.566667
+          ],
+          "baseline_samples": [
+            {
+              "time": 232.8,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_232_8.jpg",
+              "frame_sha256": "285d132f472fcde6782977a782353333d532e134ea0dfc1b00301d09b5c576db",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 235.447,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_235_447.jpg",
+              "frame_sha256": "bee06353e59cc63473f474fefceaf5998d79e77f3bbb41a408e43d8516485dfd",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 240.292,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_240_292.jpg",
+              "frame_sha256": "3708f5d215e1b3ea77a571aee0e60e4bf2f7837678cb50909ad122996b5f363b",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        },
+        {
+          "id": "root_endpoint_domain",
+          "kind": "state",
+          "claim": "原函数x≥0、有限导数x>0；x=0无有限右斜率极限；非零h与x+h≥0条件",
+          "baseline_interval": [
+            239.833333,
+            245.566667
+          ],
+          "baseline_samples": [
+            {
+              "time": 240.292,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_240_292.jpg",
+              "frame_sha256": "3708f5d215e1b3ea77a571aee0e60e4bf2f7837678cb50909ad122996b5f363b",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 245.108,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_245_108.jpg",
+              "frame_sha256": "2f9060fd77ce7f74145cf56fcfae189167f619c75bd834be7fc0f0133380c39a",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        },
+        {
+          "id": "root_slope_map",
+          "kind": "process",
+          "claim": "正半轴上根号曲线上升而切线变平，正的导函数高度递减，近似读数一致",
+          "baseline_interval": [
+            249.966667,
+            265.366667
+          ],
+          "baseline_samples": [
+            {
+              "time": 251.199,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_251_199.jpg",
+              "frame_sha256": "a6185cb687aa4b1435a6378313ebcbf4ddce87542041739baece0b6e86818974",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 257.667,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_257_667.jpg",
+              "frame_sha256": "1332c606c91d50473ef6223d4c76722f96ef18e7da419ea0821509549e770c5d",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 264.135,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_264_135.jpg",
+              "frame_sha256": "ddc78ba4be22b069882d1181bf5a064eea5c60d68bdc5be39ffc6433274e87ef",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exponential",
+      "asset": "visual_v002",
+      "function": "区分一般指数和e底指数的斜率关系",
+      "baseline_interval": [
+        268.0,
+        312.0
+      ],
+      "features": [
+        {
+          "id": "exp_standard_limit",
+          "kind": "process",
+          "claim": "差商提出a^x，调用明确标注的标准极限ln a，区分一般底与e底",
+          "baseline_interval": [
+            274.166667,
+            290
+          ],
+          "baseline_samples": [
+            {
+              "time": 275.433,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_275_433.jpg",
+              "frame_sha256": "a6b3ae088f28bb1e857db6f7aa76b86ac71c81b9d87ea501835f712478e15100",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 282.083,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_282_083.jpg",
+              "frame_sha256": "0ca8071e223b0369370618874f1dbfb3e8a62c1931f65b6685437f87751a2624",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 288.733,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_288_733.jpg",
+              "frame_sha256": "78f44c3a78c50ad64f1ca2a7583b4840eb944a0e8b0b42090b4202412b4da5c7",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        },
+        {
+          "id": "exp_domain_sign",
+          "kind": "state",
+          "claim": "a>0、x为实数；a=1为常数；0<a<1斜率负；不冒称完整证明标准极限",
+          "baseline_interval": [
+            280.333333,
+            312
+          ],
+          "baseline_samples": [
+            {
+              "time": 282.083,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_282_083.jpg",
+              "frame_sha256": "0ca8071e223b0369370618874f1dbfb3e8a62c1931f65b6685437f87751a2624",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 311.824,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_311_824.jpg",
+              "frame_sha256": "4c8e22b6dbc186c15299271165c3bd6610e8bafff8cb5efb806689df14d2aecd",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        },
+        {
+          "id": "exp_value_slope",
+          "kind": "process",
+          "claim": "e^x原图函数值与导函数斜率同数值、同形状，同状态图数联动",
+          "baseline_interval": [
+            294.4,
+            307.6
+          ],
+          "baseline_samples": [
+            {
+              "time": 295.456,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_295_456.jpg",
+              "frame_sha256": "ed689f229dbb251f6d1a5b94953dc5c23bc781f5f080a1e18b23031e2366de9b",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 301,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_301_0.jpg",
+              "frame_sha256": "a76be23c404d69e37339fbc542be7d6ea500e82773b4a4dc55f2f6caead156a7",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 306.544,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_306_544.jpg",
+              "frame_sha256": "35dc6cbac2ab7aa01411dc07a9c3a6ad207fba3982e9c53f14fea76dcb1053ca",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "logarithm",
+      "asset": "visual_v002",
+      "function": "从已建立的指数变化率解释自然对数斜率，并在差商中追踪固定底数系数",
+      "baseline_interval": [
+        312.0,
+        422.0
+      ],
+      "features": [
+        {
+          "id": "log_graph_slope",
+          "kind": "process",
+          "claim": "ln x递增变缓、切线斜率为正且递减，与1/x同横坐标高度及近似读数联动",
+          "baseline_interval": [
+            373.6,
+            385.7
+          ],
+          "baseline_samples": [
+            {
+              "time": 374.568,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_374_568.jpg",
+              "frame_sha256": "b4cbbdf35848cfc6883e027938960963a4534d10284c24447597bad1c2615900",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 379.65,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_379_65.jpg",
+              "frame_sha256": "248cd10cb291210d8c19edf42b10e951d66d4e711eed6f4938bc5428b8450079",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 384.732,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_384_732.jpg",
+              "frame_sha256": "6fd02ca1e7a82c6488d21f19c0f09d07b8f420d48deac5bc7cb23b4e3affc0aa",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        },
+        {
+          "id": "log_family_domains",
+          "kind": "state",
+          "claim": "ln x导数1/x，一般底导数1/(x ln a)；x>0、a>0且a≠1，底大于1递增、底在0与1之间递减；修补缺桥而不删除这些结论",
+          "baseline_interval": [
+            392.3,
+            422
+          ],
+          "baseline_samples": [
+            {
+              "time": 413.904,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_413_904.jpg",
+              "frame_sha256": "7c71dc0aa40932b8dd79f245c3dd93d7657891f1b7ba68f6cba2317a0ed416c5",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 419.624,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_419_624.jpg",
+              "frame_sha256": "ee3ad65faf5d39f7b8082d2cfd38aacc981875d2c93ef37e3c197200f94e7fb3",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        },
+        {
+          "id": "log_variables_domain",
+          "kind": "state",
+          "claim": "先建立 y=ln x 与 x=e^y；x>0、非零水平增量及变化后输入仍为正",
+          "baseline_interval": [
+            323,
+            368.1
+          ],
+          "baseline_samples": [
+            {
+              "time": 323,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_323.jpg",
+              "frame_sha256": "7745b286377aaf46e5c846c11996018d85b88aaeae23bbcadba2caf05e6b4d1d",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 334,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_334.jpg",
+              "frame_sha256": "c88e6c602a2828176ed30085df8c375c0da13688bf9466c1b667f463b58a9ef4",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        },
+        {
+          "id": "log_increment_definition",
+          "kind": "state",
+          "claim": "同一对点的横竖增量对应 Δy=ln(x+Δx)-y 与 x+Δx=e^(y+Δy)",
+          "baseline_interval": [
+            329.6,
+            359.3
+          ],
+          "baseline_samples": [
+            {
+              "time": 329.6,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_329_6.jpg",
+              "frame_sha256": "ebef04be3732ecd0a668c80ca35feee841983c40743c83484047e9f46f025615",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 334,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_334.jpg",
+              "frame_sha256": "c88e6c602a2828176ed30085df8c375c0da13688bf9466c1b667f463b58a9ef4",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        },
+        {
+          "id": "log_exact_exp_increment",
+          "kind": "process",
+          "claim": "新旧指数关系相减、提出 e^y 并代回 x，获得精确 Δx=x(e^Δy-1)，保留非零 Δy 的理由",
+          "baseline_interval": [
+            329.6,
+            336.2
+          ],
+          "baseline_samples": [
+            {
+              "time": 329.6,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_329_6.jpg",
+              "frame_sha256": "ebef04be3732ecd0a668c80ca35feee841983c40743c83484047e9f46f025615",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 331.976,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_331_976.jpg",
+              "frame_sha256": "ed90e4fd7f9234ea9c90ab6c66a7e059d00a73783db3dfa46988a16e82b28e3e",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 336.2,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_336_2.jpg",
+              "frame_sha256": "acee60d370bb1906230e7df8475f1e3f824fadeae2a70949b6b98d9dec2e1dfb",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        },
+        {
+          "id": "log_linked_increment_motion",
+          "kind": "process",
+          "claim": "Δx 从0.8连续降至0.08；同状态驱动另一点、水平段、竖直段与近似读数，不把有限示例伪装成极限",
+          "baseline_interval": [
+            338.752,
+            351.6
+          ],
+          "baseline_samples": [
+            {
+              "time": 338.752,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_338_752.jpg",
+              "frame_sha256": "81671c89521314d66bb88855c45509d4deb754b8e5bac19d8c323b42b301f834",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 347.2,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_347_2.jpg",
+              "frame_sha256": "b21a711f14b57e8b46f34fdab1c239ea6714bea3623af8a8dede2ea20edcb532",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 351.6,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_351_6.jpg",
+              "frame_sha256": "7f7836ccdccf5de34a41b1aa68ed64b8c41ba668c979424f5f1fefe27dda8cc7",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        },
+        {
+          "id": "log_exp_quotient_limit",
+          "kind": "process",
+          "claim": "由对数连续性连接两增量趋零，再用指数标准差商说明 Δx/Δy 趋近正数 x",
+          "baseline_interval": [
+            351.6,
+            359.3
+          ],
+          "baseline_samples": [
+            {
+              "time": 352.15,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_352_15.jpg",
+              "frame_sha256": "3260892f795c19fd8ea50b71de6fb94173cba70ebadc00afbd6b41ec3ffdf2a7",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 356,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_356.jpg",
+              "frame_sha256": "56425963bf8381aa1a3f006fb505d7dedb55daa7020691c4e0a9954ef2bd6ba7",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 356.968,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_356_968.jpg",
+              "frame_sha256": "ae1d8d63ef4bb2b30d106547cf18a4d28c4f90c7839f5345ef5b6fecf690ec50",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        },
+        {
+          "id": "log_positive_inverse_limit",
+          "kind": "process",
+          "claim": "保留正极限 x 才能取倒数的条件，从指数差商到 Δy/Δx→1/x，再得自然对数导数",
+          "baseline_interval": [
+            356,
+            368.1
+          ],
+          "baseline_samples": [
+            {
+              "time": 356.968,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_356_968.jpg",
+              "frame_sha256": "ae1d8d63ef4bb2b30d106547cf18a4d28c4f90c7839f5345ef5b6fecf690ec50",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 364.492,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_364_492.jpg",
+              "frame_sha256": "76b32d4f242065947c32077b70bfc98d5eca5a41ec3d84a470db86a9f23d0990",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 365.548,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_365_548.jpg",
+              "frame_sha256": "e48ae7b090550d9f2249b538cacf89a735757d347d8a61e105dc184037b750b4",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        },
+        {
+          "id": "log_fixed_base_definition",
+          "kind": "state",
+          "claim": "定义 z=log_a x=k ln x 和固定 k=1/ln a，保留 x>0、a>0、a≠1",
+          "baseline_interval": [
+            392.3,
+            422
+          ],
+          "baseline_samples": [
+            {
+              "time": 392.3,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_392_3.jpg",
+              "frame_sha256": "e076550841f63d482410d5ba73e475a67660b35ace2ab30756fff1fefdbd1937",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 394.676,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_394_676.jpg",
+              "frame_sha256": "7cf45f5995aab90906c18d7a14e7d4617341cdc075e683a03b2c890b08e9e281",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        },
+        {
+          "id": "log_fixed_base_increment",
+          "kind": "process",
+          "claim": "变化前后均乘同一 k，完整相减行导出 Δz=kΔy，不直接跳到结论",
+          "baseline_interval": [
+            392.3,
+            400
+          ],
+          "baseline_samples": [
+            {
+              "time": 392.3,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_392_3.jpg",
+              "frame_sha256": "e076550841f63d482410d5ba73e475a67660b35ace2ab30756fff1fefdbd1937",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 394.676,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_394_676.jpg",
+              "frame_sha256": "7cf45f5995aab90906c18d7a14e7d4617341cdc075e683a03b2c890b08e9e281",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 400,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_400.jpg",
+              "frame_sha256": "8bb2f378d5f0c2ed221196b2129bdde0a0c24bfbbfe26f316f291501b0bdb395",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        },
+        {
+          "id": "log_fixed_base_quotient",
+          "kind": "process",
+          "claim": "在 Δz/Δx=kΔy/Δx 中追踪固定 k 到极限 k/x，再替回1/ln a",
+          "baseline_interval": [
+            400,
+            413.2
+          ],
+          "baseline_samples": [
+            {
+              "time": 400,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_400.jpg",
+              "frame_sha256": "8bb2f378d5f0c2ed221196b2129bdde0a0c24bfbbfe26f316f291501b0bdb395",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 406.6,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_406_6.jpg",
+              "frame_sha256": "b306d7f607916121af1ec94f7c99721437ad9a2ada89ef5eef69875e215e37e6",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 411,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_411_0.jpg",
+              "frame_sha256": "247dea2d5d4154819507d92a47c5176370b3b62bc547b25e13d7ad3b9ad95fc1",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        },
+        {
+          "id": "log_base_transfer_sign",
+          "kind": "state",
+          "claim": "保留一般底导数与 a=2,x=2 的1/(2ln2)迁移例，ln2在分母，并列两类底数的斜率符号",
+          "baseline_interval": [
+            413.2,
+            422
+          ],
+          "baseline_samples": [
+            {
+              "time": 413.904,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_413_904.jpg",
+              "frame_sha256": "7c71dc0aa40932b8dd79f245c3dd93d7657891f1b7ba68f6cba2317a0ed416c5",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 417.952,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_417_952.jpg",
+              "frame_sha256": "ee3ad65faf5d39f7b8082d2cfd38aacc981875d2c93ef37e3c197200f94e7fb3",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 420.768,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_420_768.jpg",
+              "frame_sha256": "ee3ad65faf5d39f7b8082d2cfd38aacc981875d2c93ef37e3c197200f94e7fb3",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sine",
+      "asset": "visual_v002",
+      "function": "从斜率正负和峰谷联系到cos而非背表",
+      "baseline_interval": [
+        422.0,
+        466.0
+      ],
+      "features": [
+        {
+          "id": "sine_standard_limits",
+          "kind": "state",
+          "claim": "正弦和角差商及两个弧度标准极限明确调用，不以示意图冒充极限证明",
+          "baseline_interval": [
+            428.166667,
+            440.466667
+          ],
+          "baseline_samples": [
+            {
+              "time": 430.8,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_430_8.jpg",
+              "frame_sha256": "a0fd348de220c71174507251992de20988d2d9a77d42648d00959522d7aa8503",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 437.833,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_437_833.jpg",
+              "frame_sha256": "e3430c8925b1627b35b9af5b778cec96b95c93f05e5272fb92315f54d1356949",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        },
+        {
+          "id": "sine_cycle",
+          "kind": "process",
+          "claim": "一周中上穿、峰顶水平、下穿及继续一周，与cos高度和近似斜率读数对应",
+          "baseline_interval": [
+            445.766667,
+            463.366667
+          ],
+          "baseline_samples": [
+            {
+              "time": 447.175,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_447_175.jpg",
+              "frame_sha256": "cfb03b3b9ba1a16c6eac5541008e8898838ac3ccdfceb5ec839256bd7dfe0721",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 454.567,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_454_567.jpg",
+              "frame_sha256": "497f10b24ccccf3abc6c4920cabd8fd4fd3cd277eeb6b3bf7c30e01398b0ea59",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 461.959,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_461_959.jpg",
+              "frame_sha256": "406f96b0ac8ea1d417736367334ffc5c5511f5ae254fb63a8665831186099f71",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        },
+        {
+          "id": "sine_domain_radians",
+          "kind": "state",
+          "claim": "(sin x)'=cos x；实数域、弧度条件",
+          "baseline_interval": [
+            445.766667,
+            466
+          ],
+          "baseline_samples": [
+            {
+              "time": 447.175,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_447_175.jpg",
+              "frame_sha256": "cfb03b3b9ba1a16c6eac5541008e8898838ac3ccdfceb5ec839256bd7dfe0721",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 457.2,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_457_2.jpg",
+              "frame_sha256": "2ffdaac8d4ef691a2100e901104c2d174381709ceb5b86eb14be4e0ac3e94a53",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosine",
+      "asset": "visual_v002",
+      "function": "解释负号对应下降半周与上升半周",
+      "baseline_interval": [
+        466.0,
+        498.0
+      ],
+      "features": [
+        {
+          "id": "cosine_cycle",
+          "kind": "process",
+          "claim": "从峰顶下降、谷底水平再上升的一周，与-sin x斜率正负及近似读数对应",
+          "baseline_interval": [
+            470.466667,
+            491.6
+          ],
+          "baseline_samples": [
+            {
+              "time": 472.157,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_472_157.jpg",
+              "frame_sha256": "490e70c7208859fa38d587c8438882a103936a1cdeb470fb17e5a7c1ab577c7d",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 482,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_482.jpg",
+              "frame_sha256": "c2c1fc9c2ddbda3513db3163627bb480bd806722dbc6afc6bce225cc58892b24",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 491.6,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_491_6.jpg",
+              "frame_sha256": "65c3a2a9288c3787add47c67c5d843f89e99baca8b58b7436920a57970781434",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        },
+        {
+          "id": "cosine_domain_sign",
+          "kind": "state",
+          "claim": "(cos x)'=-sin x；实数域、弧度条件；两个半周的导数符号说明",
+          "baseline_interval": [
+            494.466667,
+            498
+          ],
+          "baseline_samples": [
+            {
+              "time": 494.749,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_494_749.jpg",
+              "frame_sha256": "50b6c70c8d5b3f44ed8348a9ab6c578d91af7e7ecc536ebe9f1ee0603e7ae814",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 497.717,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_497_717.jpg",
+              "frame_sha256": "a0513155ef55d5b4776a19dd0fe0daf065ba218bb22a2218db93e37c062ad454",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "closing",
+      "asset": "visual_v002",
+      "function": "为组合函数求导留下真实问题",
+      "baseline_interval": [
+        498.0,
+        516.0
+      ],
+      "features": [
+        {
+          "id": "summary_handoff",
+          "kind": "state",
+          "claim": "导函数记录每个位置的斜率，公式带适用条件，乘积和商留作下一课真实问题",
+          "baseline_interval": [
+            509.166667,
+            516
+          ],
+          "baseline_samples": [
+            {
+              "time": 509.783,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_509_783.jpg",
+              "frame_sha256": "94a78b224affe8bd99089d5288ede7eda47132c4a384386e237e504d845b5f2f",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            },
+            {
+              "time": 512.4,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch02-basics-20261102/visual-v002/frames/frame_512_4.jpg",
+              "frame_sha256": "94a78b224affe8bd99089d5288ede7eda47132c4a384386e237e504d845b5f2f",
+              "source": "Existing v002 decoded frame; author baseline selection, not a reviewer finding"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

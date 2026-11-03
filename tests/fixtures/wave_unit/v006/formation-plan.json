@@ -1,0 +1,455 @@
+{
+  "project_id": "wave-formation-20261028",
+  "author_agent": "019eaf8b-9151-75e2-9db4-5ff834335577",
+  "author_context": "019eaf8b-9151-75e2-9db4-5ff834335577",
+  "unit_id": "wave-unit-20261028",
+  "catalogue_ids": [
+    "P07-04"
+  ],
+  "title": "机械波一：波峰向前，质点呢",
+  "workflow_profile": "configs/visual-first-workflow-v4-unit.json",
+  "lesson_context": "runtime/projects/wave-formation-20261028/context-v003.json",
+  "revision_mode": "revision",
+  "scene": "examples/wave_formation_visual.py",
+  "scene_class": "WaveFormationLesson",
+  "narration_draft": "runtime/projects/wave-formation-20261028/narration-draft-v002.json",
+  "duration": 146,
+  "fps": 30,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "subtitle_reserve": {
+    "pixel_top": 984,
+    "scene_y_max_for_bottom": -3.288888889
+  },
+  "audience": "已学简谐振动的位移和周期、基本坐标，但不熟波形图的高中生；先修是未实测的假设",
+  "prior_knowledge": [
+    "位移与平衡位置",
+    "一个周期的含义",
+    "坐标与单位"
+  ],
+  "understanding_goals": [
+    "追踪同一质点和同一波峰，区分局部振动与状态传播",
+    "从起波和同一状态晚到另一位置理解局部相互作用与延迟",
+    "预测质点与波峰下一时刻各在哪里，并为时空读图建立对象身份"
+  ],
+  "scientific_brief": "runtime/projects/wave-unit-20261028/scientific-brief.json",
+  "sources": [
+    "examples/wave_unit_shared.py",
+    "examples/wave_unit_model.py",
+    "runtime/projects/wave-formation-20261028/context-v003.json",
+    "runtime/projects/wave-unit-20261028/unit.json",
+    "runtime/projects/wave-unit-20261028/scientific-brief.json",
+    "runtime/projects/wave-unit-20261028/teaching-design.md",
+    "docs/curricula/high-school-physics-v0.1.csv",
+    "src/manimind/curriculum.py",
+    "src/manimind/components/catalog.py"
+  ],
+  "cues": [
+    {
+      "id": "contrast",
+      "duration": 28,
+      "heading": "质点与波峰",
+      "visual": "大幅绳形中黄色质点固定x=4m，绿环标记同一波峰；同一模型时钟从12s到16s，质点上下往复而波峰从4m到8m。",
+      "learning_purpose": "先用可追踪身份暴露颗粒跟波峰走的误解。",
+      "anchors": [
+        {
+          "id": "identities_ready",
+          "meaning": "黄色质点、绿环与各自身份文字均已出现"
+        },
+        {
+          "id": "contrast_mid",
+          "meaning": "t=14s，波峰已前进而质点在原横坐标处"
+        },
+        {
+          "id": "contrast_after",
+          "meaning": "t=16s，质点回原状态而波峰在8m"
+        }
+      ]
+    },
+    {
+      "id": "formation",
+      "duration": 30,
+      "heading": "起波与逐处到达",
+      "visual": "新的静止长绳实验，由左端光滑启动；波形严格取f(t-x/v)，扰动依次到2m、4m，前沿外的质点不预先运动。",
+      "learning_purpose": "把局部相互作用的物理前提和有限传播延迟联系起来。",
+      "anchors": [
+        {
+          "id": "string_at_rest",
+          "meaning": "驱动前整段绳静止"
+        },
+        {
+          "id": "disturbance_reaches_two",
+          "meaning": "t=2s，扰动前沿到2m，该处将开始运动"
+        },
+        {
+          "id": "disturbance_reaches_four",
+          "meaning": "t=4s，扰动前沿到4m"
+        },
+        {
+          "id": "formation_after",
+          "meaning": "t=6s，后部起伏已形成、前沿外仍静止"
+        }
+      ]
+    },
+    {
+      "id": "delay",
+      "duration": 29,
+      "heading": "同一状态晚到",
+      "visual": "圈起2m处在6.5s的高度，保留状态标记；时间到8.5s，4m处取得同一高度，点身份不交换；去除留存标记后继续观察。",
+      "learning_purpose": "把相同振动状态的传递和同一个质点的搬运区分。",
+      "anchors": [
+        {
+          "id": "earlier_state_ready",
+          "meaning": "2m处旧状态的环及固定位置标签可读"
+        },
+        {
+          "id": "later_state_matches",
+          "meaning": "后一处晚2s达到旧高度，延迟等式可读"
+        },
+        {
+          "id": "delay_continues",
+          "meaning": "去掉旧状态标记后两点继续在各自横坐标运动"
+        },
+        {
+          "id": "delay_height_arrived",
+          "meaning": "物理时钟完成真实两秒传播，后质点已到旧高度"
+        },
+        {
+          "id": "delay_match_markers_ready",
+          "meaning": "同高标记已完整可读，跨时等式随后出现"
+        },
+        {
+          "id": "delay_records_removed",
+          "meaning": "历史记录已撤除，原r3的所指对象状态真实成立"
+        }
+      ]
+    },
+    {
+      "id": "period",
+      "duration": 30,
+      "heading": "一个周期的两种结果",
+      "visual": "回到持续驱动后已建立的简谐波，t从12到16；原峰位置留环，同一波峰向右4m，黄色质点完成一次振动。",
+      "learning_purpose": "调用周期而不重讲定义，为下一课λ与T建立现象桥。",
+      "anchors": [
+        {
+          "id": "period_start_ready",
+          "meaning": "周期4s、原峰位置和对象均可见"
+        },
+        {
+          "id": "period_half",
+          "meaning": "半周期时质点到另一侧、波峰前进一半"
+        },
+        {
+          "id": "period_finished",
+          "meaning": "整周期结束、原质点复位"
+        },
+        {
+          "id": "period_result_ready",
+          "meaning": "波峰前进4m的跨度与质点复位同屏"
+        },
+        {
+          "id": "period_span_ready",
+          "meaning": "先比较原波峰位置和当前波峰之间的跨度"
+        },
+        {
+          "id": "particle_period_result_ready",
+          "meaning": "黄色质点回到原状态的说明与实际质点同时可读"
+        },
+        {
+          "id": "period_comparison_ready",
+          "meaning": "两种运动的结果分步显现后，用共用时间收束比较"
+        },
+        {
+          "id": "period_direction_trace_ready",
+          "meaning": "完整周期运动后保留波峰向右走过的方向，支持同一时间段的对比"
+        }
+      ]
+    },
+    {
+      "id": "exit",
+      "duration": 29,
+      "heading": "下一时刻的预测",
+      "visual": "t=16s的黄色点在波峰，问再过1s是否会随波峰向右；推进到17s后仍在x=4m并经过y=0，波峰从8m到9m。",
+      "learning_purpose": "闭合开头的误区预测，并把同一对象交给时空读图。",
+      "anchors": [
+        {
+          "id": "formation_question_ready",
+          "meaning": "预测题与待观察质点、波峰可见"
+        },
+        {
+          "id": "formation_answer_motion",
+          "meaning": "推进1s后质点横坐标未变"
+        },
+        {
+          "id": "formation_closed",
+          "meaning": "答案和下一课的空间/时间出口均可读"
+        },
+        {
+          "id": "formation_answer_ready",
+          "meaning": "x=4m,y=0的数值结果完整可读"
+        },
+        {
+          "id": "formation_handoff_ready",
+          "meaning": "质点与状态身份各有对应，开始向下一课提问"
+        },
+        {
+          "id": "formation_space_question_ready",
+          "meaning": "空间图的定时刻问题先出现，时间图问题尚未揭示"
+        }
+      ]
+    }
+  ],
+  "focus_intents": [
+    {
+      "id": "particle_and_crest",
+      "cue": "contrast",
+      "claim": "黄色质点与绿环指不同身份"
+    },
+    {
+      "id": "particle_stays_crest_moves",
+      "cue": "contrast",
+      "claim": "同一时钟下质点固定x、波峰前进"
+    },
+    {
+      "id": "rest_before_start",
+      "cue": "formation",
+      "claim": "起波前整段静止"
+    },
+    {
+      "id": "causal_start",
+      "cue": "formation",
+      "claim": "驱动产生扰动并依次到达邻处"
+    },
+    {
+      "id": "earlier_state",
+      "cue": "delay",
+      "claim": "旧高度标记保存2m处6.5s的状态"
+    },
+    {
+      "id": "delay_transfer",
+      "cue": "delay",
+      "claim": "两秒延迟过程及随后同高结果；复合reference的结果换挡由真实word landmarks分别检查"
+    },
+    {
+      "id": "delayed_not_transported",
+      "cue": "delay",
+      "claim": "状态标记移除，两点仍各在原横坐标"
+    },
+    {
+      "id": "period_start",
+      "cue": "period",
+      "claim": "已建立波形、T标尺和同一对象身份持续可读；不声称质点在原位置静止"
+    },
+    {
+      "id": "one_period_motion",
+      "cue": "period",
+      "claim": "真实完整运动及有明确时刻的半周期记录支持快速的先后叙述"
+    },
+    {
+      "id": "period_result",
+      "cue": "period",
+      "claim": "一个周期对应波峰前进4m"
+    },
+    {
+      "id": "formation_prediction",
+      "cue": "exit",
+      "claim": "预测黄色点会否随波峰平移"
+    },
+    {
+      "id": "formation_prediction_test",
+      "cue": "exit",
+      "claim": "观看邀请、1秒推进和随后的结果；结果断言须晚于相应视觉mark"
+    },
+    {
+      "id": "formation_handoff",
+      "cue": "exit",
+      "claim": "闭合身份问题，交给两种图像读法"
+    }
+  ],
+  "review_times": [
+    3,
+    4.9,
+    5,
+    5.1,
+    9.8,
+    11,
+    12,
+    12.9,
+    13,
+    13.1,
+    13.5,
+    15.4,
+    15.5,
+    15.6,
+    16.2,
+    16.3,
+    17.48,
+    17.58,
+    19.26,
+    19.36,
+    19.4,
+    25,
+    27,
+    31.9,
+    32,
+    32.1,
+    36,
+    37.9,
+    38,
+    38.1,
+    43.9,
+    44,
+    44.1,
+    45.5,
+    45.6,
+    46.84,
+    46.94,
+    48,
+    49.9,
+    50,
+    50.1,
+    57,
+    61.9,
+    62,
+    62.1,
+    65.6,
+    67,
+    67.5,
+    67.6,
+    67.7,
+    68,
+    68.06,
+    68.1,
+    68.16,
+    68.2,
+    68.5,
+    68.6,
+    68.68,
+    68.7,
+    68.78,
+    69.2,
+    73,
+    76,
+    76.1,
+    76.16,
+    76.2,
+    76.26,
+    76.3,
+    78.1,
+    78.2,
+    78.3,
+    84,
+    86,
+    91.9,
+    92,
+    92.1,
+    93,
+    94.9,
+    95,
+    95.1,
+    95.9,
+    96,
+    96.1,
+    96.6,
+    96.7,
+    97,
+    97.2,
+    97.7,
+    97.9,
+    98,
+    98.1,
+    98.12,
+    98.2,
+    98.22,
+    98.7,
+    98.9,
+    99,
+    99.1,
+    99.2,
+    99.22,
+    99.32,
+    99.7,
+    100.2,
+    100.54,
+    100.64,
+    100.7,
+    101.2,
+    101.6,
+    102.6,
+    103.2,
+    103.3,
+    103.4,
+    103.5,
+    103.8,
+    104,
+    104.1,
+    104.2,
+    104.4,
+    105.2,
+    105.6,
+    107,
+    107.38,
+    107.4,
+    107.48,
+    108,
+    109.4,
+    109.8,
+    113,
+    115,
+    116,
+    121.9,
+    122,
+    122.1,
+    126.8,
+    127.34,
+    127.7,
+    127.8,
+    127.9,
+    128.1,
+    128.2,
+    128.7,
+    128.8,
+    128.9,
+    129.36,
+    129.46,
+    132,
+    134.2,
+    134.9,
+    135,
+    135.1,
+    139.4,
+    139.8,
+    140.9,
+    141.3,
+    142.48,
+    145,
+    145.5
+  ],
+  "authorship": "wave_unit_manim_author",
+  "production_boundary": {
+    "status": "source_plan_and_intent_handoff",
+    "rendered": false,
+    "visual_approved": false,
+    "narration_approved": false,
+    "audio_generated": false,
+    "independent_review_required": true
+  },
+  "state_contract": "runtime/projects/wave-unit-20261028/scientific-brief.json#state_contracts",
+  "revision_contract": "runtime/projects/wave-formation-20261028/revision-contract-voiced-v001.json",
+  "revision_review": "runtime/sessions/wave-unit-20261028/regression-formation-v006.json",
+  "retime_proposal": {
+    "status": "formation_only_cutover_and_v004_render_explicitly_authorized_not_reviewed",
+    "source_proposal": "runtime/sessions/wave-unit-20261028/retime-work/formation/proposed_scene.py",
+    "timings": "outputs/wave-formation-20261028/phrase-timings-v002.json",
+    "speech_plan": "outputs/wave-formation-20261028/tts-plan-v001.json",
+    "speech": "outputs/wave-formation-20261028/speech-v001",
+    "text_and_references": "Unchanged original installed narration-v002 units",
+    "future_render": "outputs/wave-formation-20261028/v004",
+    "future_installed_narration": "runtime/projects/wave-formation-20261028/narration-v003.json",
+    "future_silent_delivery": "outputs/wave-formation-20261028/silent-v002",
+    "activation_requires": "Satisfied by latest direct human instruction: all three remote live operations complete; formation-only scene/plan cutover and v004 render authorized",
+    "original_audio_timing_evidence_sha256": "90cf3bc542b52c2ea06301cde8d7e3eb89f069df56bc17361d58aa4abddbc441"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "project_id": "projectile-understanding-20261027",
+  "scene": "examples/projectile_understanding.py",
+  "scene_class": "UnderstandingLesson",
+  "title": "同一段下落，不同的横向旅程",
+  "audience": "已接触速度和重力的高中生",
+  "prerequisites": ["速度描述位置随时间的变化", "重力产生向下加速度"],
+  "target_inference": "在匀强重力、无空气阻力、初始竖直速度为零且起落高度差相同的条件下，改变横速改变射程而不改变下落时间；改变高度时，先由竖直过程预测时间，再用横速预测射程。",
+  "likely_misconception": "以为更大的横速会分走竖直速度，或以为四倍高度必需四倍时间。",
+  "facts": {
+    "assumptions": ["匀强重力", "无空气阻力", "质点", "初始竖直速度为零", "水平地面；同高比较的高度差相同"],
+    "g_m_s2": 10,
+    "downward_positive": true,
+    "equations": {"drop": "d(t)=g*t^2/2", "horizontal": "x(t)=vx*t", "vertical_speed": "vy(t)=g*t", "landing": "h=g*T^2/2", "range": "R=vx*T"},
+    "cases": [
+      {"h_m": 5, "vx_m_s": 4, "T_s": 1, "R_m": 4},
+      {"h_m": 5, "vx_m_s": 8, "T_s": 1, "R_m": 8},
+      {"h_m": 20, "vx_m_s": 4, "T_s": 2, "R_m": 8},
+      {"h_m": 45, "vx_m_s": 4, "T_s": 3, "R_m": 12}
+    ],
+    "equal_second_drops_m": [5, 15],
+    "vertical_speed_at_seconds_m_s": [0, 10, 20],
+    "evidence_boundary": "动画是模型演示，不是真实独立实验；理解效果尚待独立审核及观众检验。"
+  },
+  "cues": [
+    {"id":"question","heading":"更快会更晚吗","visual":"同高起点与4、8米每秒水平箭头；不提前显示答案。","learning_purpose":"短问题引出同高比较，不长时间等待。","duration":7,"anchors":[{"id":"question_ready","meaning":"同高、同刻、两个横速及问题完整可见"}]},
+    {"id":"conditions","heading":"模型边界","visual":"必要假设及g、初始竖直速度短暂集中呈现。","learning_purpose":"明确模型条件和数值演示边界，不延长前置说明。","duration":7,"anchors":[{"id":"model_conditions_ready","meaning":"全部模型条件已可见"}]},
+    {"id":"same_height","heading":"同高一次比较","visual":"共享物理时钟；两个横速同时走完1秒；落地后轨迹、T1及R4/R8保持大尺寸。","learning_purpose":"观察横向差异与同时落地，不冒充独立实验证据。","duration":18,"anchors":[{"id":"same_height_launch_ready","meaning":"同高起点和时钟就绪"},{"id":"same_height_landed","meaning":"两球在物理1秒同时到地面"},{"id":"same_height_result_ready","meaning":"T1与射程4/8米全部显示并保持"}]},
+    {"id":"directions","heading":"两个方向的描述","visual":"等比例横向4/8箭头；共同竖直初速零与向下g，不画固定总速度分配。","learning_purpose":"纠正横速分走竖直速度的误解。","duration":18,"anchors":[{"id":"horizontal_components_ready","meaning":"两种横向分量及水平匀速可见"},{"id":"shared_vertical_components_ready","meaning":"共同竖直初速、加速度与方向可见"}]},
+    {"id":"recombine","heading":"逐步构建共同时间切片","visual":"同一竖直轴上按0.25/0.5/0.75/1秒建立5t²下降位置；每片双色点从共同投影在固定y处横向展开至4t/8t，旧片降对比，当前片高亮。显式说明位置分解并非实际运动。","learning_purpose":"实际看见共同下落过程如何与不同水平位移组合，不把构图展开误认为水平加速。","duration":20,"anchors":[{"id":"slice_025_ready","meaning":"0.25秒双色位置已横向展开到位"},{"id":"slice_050_ready","meaning":"0.5秒双色位置已横向展开到位"},{"id":"slice_075_ready","meaning":"0.75秒双色位置已横向展开到位"},{"id":"slice_100_ready","meaning":"1秒双色位置已横向展开到位"},{"id":"shared_time_slices_ready","meaning":"四个时间切片全部到位，保持大图对照"}]},
+    {"id":"landing_rule","heading":"把同一段时间接到射程","visual":"竖直落地条件中的T保持原位；复制单个原生矢量T，沿公式下方留白通道到R=vxT的T处，不扭曲整串公式。","learning_purpose":"使竖直过程给出的同一段时间可追踪地连接横向射程。","duration":13,"anchors":[{"id":"landing_condition_ready","meaning":"落地条件和完整射程公式可见，T尚未移动"},{"id":"shared_landing_time_linked","meaning":"单个T副本到达射程T位置，原式T保持"}]},
+    {"id":"height_steps","heading":"速度增长与两段下落","visual":"同一20米尺保留第一秒5米和第二秒额外15米；物理时钟驱动球位置、真实vy=10t读数与渐长向下速度箭头，末值为10和20米每秒，不是恒定g箭头。","learning_purpose":"用持续增大的速度和同尺度长度差解释两秒为何落下四倍距离。","duration":26,"anchors":[{"id":"first_second_ready","meaning":"1秒、5米与向下速度10米每秒同时可见"},{"id":"second_second_ready","meaning":"2秒、速度20米每秒、总20米及额外15米同时可见"}]},
+    {"id":"height_compare","heading":"四倍高度核对","visual":"相同竖直比例的5米和20米起点；大字列出T1到2、同横速R4到8。","learning_purpose":"时间翻倍使下落距离四倍；同横速射程跟随时间翻倍。","duration":12,"anchors":[{"id":"height_fourfold_ready","meaning":"四倍高度、两倍时间和射程及不变横速同屏可见"}]},
+    {"id":"prediction","heading":"九倍高度的新例","visual":"5到45米、横速4不变，时间和射程只留问号；末段无倒计时、无答案。","learning_purpose":"留出真正预测空间，不用重复题代替迁移。","duration":13,"anchors":[{"id":"ninefold_question_ready","meaning":"新例问题完整可见但无答案"},{"id":"prediction_pause_started","meaning":"画面问题不变，开始留白预测"}]},
+    {"id":"resolve","heading":"核对并带走解释","visual":"5×3²=45；大字T3秒、R12米；两条简洁条件化总结。","learning_purpose":"核对T/R三倍，回到竖直定时与横向位移的解释。","duration":13,"anchors":[{"id":"ninefold_answer_ready","meaning":"新例平方核对、时间及射程答案可见"}]}
+  ],
+  "focus_intents": [
+    {"id":"question_hold","claim":"同高水平抛出的横速不同，会不会更晚落地？","visible_evidence":"同一起点与两支标注4/8米每秒的箭头，尚无落地答案。","kind":"prediction"},
+    {"id":"model_conditions","claim":"讨论匀强重力下无空气阻力的质点，初始竖直速度为零；接下来是模型演示。","visible_evidence":"假设、g=10、vy0=0均保持可见。","kind":"explanation"},
+    {"id":"same_height_motion","claim":"模型里从同高同时水平抛出，观察两个球怎样到地面。","visible_evidence":"共享从0到1的物理时钟、同时运动的两球与各自轨迹。","kind":"simulation"},
+    {"id":"same_height_result","claim":"同为1秒落地，横速4和8对应射程4和8米。","visible_evidence":"完整轨迹和两球落点仍大而可辨，右侧大字结果，不进入公式转场。","kind":"comparison"},
+    {"id":"horizontal_component","claim":"横向速度描述横向每秒走多远。","visible_evidence":"同一比例尺下4与8的水平箭头，长度两倍关系。","kind":"explanation"},
+    {"id":"vertical_component","claim":"横速不是从某个固定总量里分走竖直速度；两球竖直初速都为零，加速度都是向下g。","visible_evidence":"水平箭头保留；独立向下箭头与vy0、ay显示共同竖直条件。","kind":"explanation"},
+    {"id":"shared_time_slices","claim":"图上横向展开是在分解同一时刻的位置，不是实际水平加速；下降距离由共同时间决定，水平位移可不同。","visible_evidence":"第一片实际展开后开启窗口；后续三片逐步下移、固定y展开，旧片降对比；最后完整大图保持。","kind":"deduction"},
+    {"id":"landing_condition","claim":"竖直落地条件给出的T，就是横向计算射程所用的同一段时间。","visible_evidence":"d(T)=h与h=gT²/2保留；单个T沿下方留白复制到完整R=vxT，随后保持。","kind":"deduction"},
+    {"id":"first_second","claim":"第一秒从竖直初速零增加到10米每秒，落下5米。","visible_evidence":"时钟1、5米第一段、速度10读数和对应长度的向下速度箭头。","kind":"simulation"},
+    {"id":"second_second","claim":"第二秒速度继续增到20米每秒，又落15米；两秒总共20米。","visible_evidence":"时钟2、速度20及两倍长速度箭头，额外15米与第一段5米同时保留。","kind":"explanation"},
+    {"id":"height_fourfold","claim":"高度从5到20是四倍，时间从1到2只两倍；横速不变，射程也翻倍。","visible_evidence":"等比例高度图与同屏数字关系，无模拟重放。","kind":"comparison"},
+    {"id":"ninefold_question","claim":"高度改为45米，横速不变，预测下落时间和射程。","visible_evidence":"新高度、固定横速、两个问号，未显示答案。","kind":"prediction"},
+    {"id":"prediction_space","claim":"留白让观众独立预测；此窗口不安排旁白。","visible_evidence":"问题持续可见，没有倒计时和答案泄漏。","kind":"prediction"},
+    {"id":"ninefold_check","claim":"时间三倍使下落距离九倍，T3秒，射程12米也是三倍；同高改横速则只改射程。","visible_evidence":"平方核对、大字T/R及条件化总结直到结尾。","kind":"deduction"}
+  ],
+  "review_times": [0,1.3,3.5,6.8,7,8.6,10.5,13.8,14,15.6,17.5,18.5,20.5,21.2,23,27,31.8,32,33.6,36,38.2,41,46,49.8,50,51.6,52.3,53.7,55.5,57.1,59,60.5,62.4,63.9,65.1,67,69.8,70,71.6,74.5,75.1,75.7,76.4,78,82.8,83,84.6,86,88.7,94,95.5,98.7,102,108.8,109,110.7,115,120.8,121,122.7,127.5,130,133.8,134,135.7,140.5,146.8],
+  "authorship": "supervised",
+  "production_boundary": {"status":"bounded_visual_revision_not_rendered_not_reviewed","revision":"director_v002_source","previous_v001":"Retained untouched; its independent silent first-look approval does not approve this revision, audio or student outcomes","audio":"none","subtitles":"none","bgm":"none","independent_review_required":true,"not_model_isolation_comparison":true},
+  "context_lifecycle": {"writer":"supervised visual creator; lead owns subsequent revisions","consumers":["render runtime","independent visual reviewer","lead narration scheduler"],"lifecycle":"This supervised video project; draft intent is not review evidence","invalidation":"Any science, scene, timing, plan or render change requires fresh matching evidence; audio draft must be checked against actual focus windows"},
+  "workflow_handoff": {"scope":"Topic-specific fixture for the lead's cross-topic workflow; not a universal lesson template","transferable_lessons":["Keep the claimed result visible for the entire explanation window","Separate physical model time from playback time","Use prediction pauses without answer leakage","Show a causal visual mechanism before compact symbolic generalization","Record focus after evidence is visible and close it before transitions"],"focus_timing":"All actual intervals are emitted by focus_begin/focus_end at render time, never inferred from this plan"}
+}

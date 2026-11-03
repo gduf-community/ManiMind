@@ -1,0 +1,26 @@
+{
+  "project_id": "sol61-understanding-first-20261027",
+  "model": "gpt-6.1-sol",
+  "transport": "codex_subscription_cli",
+  "thinking": {"type": "enabled"},
+  "reasoning_effort": "max",
+  "timeout_seconds": 3600,
+  "max_requests": null,
+  "max_renders": null,
+  "max_review_cycles": null,
+  "max_cost_CNY": null,
+  "workflow_profile": "configs/visual-first-workflow-v2.json",
+  "brief": {
+    "audience": "已接触速度与重力的高中学生",
+    "goal": "解释在匀强重力、无空气阻力、相同高度、初始竖直速度为零时，改变横向初速度为何改变射程而不改变落地时间，并能用理由预测新高度下的结果。",
+    "facts": {
+      "model": "质点、均匀重力、无空气阻力；比较横速时高度相同，初始竖直速度为零",
+      "vertical": "y=h-g*t*t/2",
+      "horizontal": "x=vx*t",
+      "positive_landing_time": "T=sqrt(2*h/g), h>0, g>0",
+      "range": "R=vx*T"
+    },
+    "guidance": "按当前profile自主创作。不提供旧片、旧稿或具体修法；可自主选择数值、镜头、节奏、布局和时长。先静音像素首看，再核对源码与后写讲稿；真实语音与全句同步另行验收。"
+  },
+  "status_note": "可运行的新自动协作配置，本轮监督式fixture不冒充该配置已完成的隔离模型实验。未运行时没有额度或成片结果。"
+}

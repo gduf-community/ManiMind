@@ -1,0 +1,35 @@
+{
+  "project_id": "sol61-visual-first-20261024-v1",
+  "model": "gpt-6.1-sol",
+  "transport": "codex_subscription_cli",
+  "thinking": {"type": "enabled"},
+  "reasoning_effort": "max",
+  "timeout_seconds": 3600,
+  "max_requests": null,
+  "max_renders": null,
+  "max_review_cycles": null,
+  "max_cost_CNY": null,
+  "workflow_profile": "configs/visual-first-workflow-v1.json",
+  "pricing": {
+    "input_credits_per_million": 50,
+    "cached_credits_per_million": 2.5,
+    "output_credits_per_million": 250,
+    "source": "https://learn.chatgpt.com/docs/pricing",
+    "verified_date": "2026-10-24",
+    "basis": "Standard credit-rate equivalent, not subscription cash cost; quota measured separately"
+  },
+  "brief": {
+    "audience": "已接触速度与重力的高中学生",
+    "goal": "解释同高度水平抛出、忽略空气阻力时，横向初速度改变射程但不改变落地时间，并能预测改变高度后的结果。",
+    "suggested_duration_seconds": [90, 150],
+    "facts": {
+      "model": "质点、均匀重力场、无空气阻力、初始竖直速度为零；比较横速时初始高度相同",
+      "coordinates": "x=vx*t, y=h-g*t*t/2, ground y=0, y axis upwards",
+      "landing_time": "T=sqrt(2*h/g)",
+      "range": "R=vx*T",
+      "teaching_g": 10
+    },
+    "guidance": "原创表达，自主选择视觉演示与节奏。先打磨静音动画并独立审片，再根据实测画面事件写后配音讲稿；最终开源语音模型后置。",
+    "review_standards": ["科学与画面一致，条件清楚", "关键关系有视觉或推导依据", "变化可追踪，注意力层级清晰", "不依赖朗读字幕替代演示", "画面完成度与节奏适合目标受众"]
+  }
+}

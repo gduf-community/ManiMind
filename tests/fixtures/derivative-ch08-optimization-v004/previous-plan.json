@@ -1,0 +1,851 @@
+{
+  "schema_version": 1,
+  "project_id": "math-derivative-ch08-optimization-20261102",
+  "version": "v003",
+  "status": "not_reviewed",
+  "title": "08 建模优化：怎样裁出最大盒子",
+  "scene": "examples/derivative_ch08_optimization_v003.py",
+  "scene_class": "DerivativeCh08OptimizationV003",
+  "duration": 381.3666666666666,
+  "fps": 30,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "workflow_profile": "configs/visual-first-workflow-v4.2-unit.json",
+  "revision_mode": "revision",
+  "cues": [
+    {
+      "id": "opening",
+      "duration": 22.333333333333332,
+      "heading": "建模优化：怎样裁出最大盒子",
+      "visual": "12cm正方形与四角同大裁块原生几何",
+      "learning_purpose": "从实际对象提出优化问题",
+      "anchors": [
+        {
+          "id": "box_problem_ready",
+          "meaning": "纸板尺寸、裁剪对象和最大体积问题可读"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.3,
+        "0.06": 0.8,
+        "0.15": 2.44,
+        "1.00": 22.333333333333332
+      },
+      "animation_starts": {},
+      "post_holds": {}
+    },
+    {
+      "id": "cut",
+      "duration": 52.56666666666667,
+      "heading": "四个角，使用同一个 x",
+      "visual": "同尺寸四角随x从1到3再回2变化，随后四角实际离开纸板",
+      "learning_purpose": "保留两端各减x的底面尺寸来源",
+      "anchors": [
+        {
+          "id": "same_cut_length_ready",
+          "meaning": "四角同x和底边动态读数可读"
+        },
+        {
+          "id": "base_dimension_ready",
+          "meaning": "边长分成x、12-2x、x"
+        },
+        {
+          "id": "net_without_corners_ready",
+          "meaning": "裁去四角后的展开图已完成"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.3,
+        "0.06": 0.8,
+        "0.12": 2.26,
+        "0.31": 18.54,
+        "0.44": 20.24,
+        "0.53": 24.86,
+        "0.70": 43.18,
+        "0.86": 45.66,
+        "0.92": 46.1,
+        "1.00": 52.56666666666667
+      },
+      "animation_starts": {
+        "0.31": 9.54,
+        "0.44": 18.92,
+        "0.86": 44.8
+      },
+      "post_holds": {
+        "0.44": 24.38,
+        "0.92": 51.9
+      }
+    },
+    {
+      "id": "fold",
+      "duration": 48.56666666666667,
+      "heading": "裁剪长度，折起后成为盒高",
+      "visual": "厘米坐标的四个侧面绕底面边连续折起到90度",
+      "learning_purpose": "建立同x的平面尺寸与立体尺寸联系",
+      "anchors": [
+        {
+          "id": "planar_panels_ready",
+          "meaning": "新增过渡起点：同一x=2的平面展开图"
+        },
+        {
+          "id": "flat_panels_ready",
+          "meaning": "裁好的同一几何以斜视平放出现"
+        },
+        {
+          "id": "fold_dimensions_ready",
+          "meaning": "盒子直立且8×8×2尺寸可读"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.3,
+        "0.06": 0.8,
+        "0.10": 2.24,
+        "0.12": 4.62,
+        "0.26": 15.58,
+        "0.62": 30.9,
+        "0.69": 31.72,
+        "1.00": 48.56666666666667
+      },
+      "animation_starts": {
+        "0.12": 2.3,
+        "0.62": 17.82
+      },
+      "post_holds": {
+        "0.62": 31.04
+      }
+    },
+    {
+      "id": "objective",
+      "duration": 52.56666666666667,
+      "heading": "目标和可行域，一起建立",
+      "visual": "实际盒子旁分层生成尺寸、体积与正尺寸条件",
+      "learning_purpose": "避免只对代数式求极值而丢失可做范围",
+      "anchors": [
+        {
+          "id": "dimensions_to_volume_ready",
+          "meaning": "长宽高关系已出现"
+        },
+        {
+          "id": "volume_objective_ready",
+          "meaning": "体积式和cm³可读"
+        },
+        {
+          "id": "physical_domain_ready",
+          "meaning": "0<x<6及正尺寸理由可读"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.3,
+        "0.06": 0.8,
+        "0.12": 2.34,
+        "0.31": 15.56,
+        "0.38": 16.08,
+        "0.60": 35.84,
+        "0.68": 36.54,
+        "1.00": 52.56666666666667
+      },
+      "animation_starts": {},
+      "post_holds": {}
+    },
+    {
+      "id": "optimize",
+      "duration": 69.36666666666666,
+      "heading": "调用导数，判断整个可行域",
+      "visual": "求导与因式分解独立分层，后接两侧符号与最大值",
+      "learning_purpose": "完整保留乘积与链式求导、因式分解、可行域检查和全范围单调依据",
+      "anchors": [
+        {
+          "id": "product_derivative_ready",
+          "meaning": "乘积求导结果出现"
+        },
+        {
+          "id": "factor_derivative_ready",
+          "meaning": "最终因式分解完成"
+        },
+        {
+          "id": "volume_peak_ready",
+          "meaning": "可行域上符号与最大体积可读"
+        },
+        {
+          "id": "root_candidates_ready",
+          "meaning": "新增候选根2、6及6不在可行域的显式筛选行"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.3,
+        "0.06": 0.8,
+        "0.10": 1.8,
+        "0.22": 2.42,
+        "0.34": 27.24,
+        "0.43": 27.36,
+        "0.55": 35.15,
+        "0.57": 40.1,
+        "0.62": 47.04,
+        "0.68": 47.45,
+        "0.75": 47.74,
+        "1.00": 69.36666666666666
+      },
+      "animation_starts": {},
+      "post_holds": {}
+    },
+    {
+      "id": "boundary",
+      "duration": 36.9,
+      "heading": "回到盒子，检查两端退化",
+      "visual": "同一几何由x2接近0，再接近6，数字和形状同源",
+      "learning_purpose": "用高度与底面退化验证边界意义，说明开域仍可有最大值",
+      "anchors": [
+        {
+          "id": "boundary_flatten_start",
+          "meaning": "向零边界的盒形变化开始"
+        },
+        {
+          "id": "degenerate_limits_ready",
+          "meaning": "两端体积趋零及退化解释可读"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.3,
+        "0.06": 0.8,
+        "0.12": 2.32,
+        "0.32": 10.0,
+        "0.57": 19.2,
+        "0.65": 21.26,
+        "1.00": 36.9
+      },
+      "animation_starts": {
+        "0.32": 3.78,
+        "0.57": 12.8
+      },
+      "post_holds": {
+        "0.32": 12.2,
+        "0.57": 20.58
+      }
+    },
+    {
+      "id": "constraint",
+      "duration": 56.733333333333334,
+      "heading": "新增条件：盒高至少 3 cm",
+      "visual": "同一盒子x2标出高度不足，移动至3，再到4.5并回3",
+      "learning_purpose": "可行域改变会排除驻点，边界可成为最优",
+      "anchors": [
+        {
+          "id": "height_constraint_ready",
+          "meaning": "新域[3,6)与旧解高度不足可读"
+        },
+        {
+          "id": "constraint_boundary_ready",
+          "meaning": "x到达3的可行左边界"
+        },
+        {
+          "id": "constrained_optimum_ready",
+          "meaning": "新最优6×6×3=108cm³可读"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.3,
+        "0.06": 0.8,
+        "0.13": 2.36,
+        "0.32": 17.94,
+        "0.35": 18.34,
+        "0.48": 20.48,
+        "0.61": 30.88,
+        "0.73": 33.86,
+        "0.80": 39.56,
+        "1.00": 56.733333333333334
+      },
+      "animation_starts": {
+        "0.48": 19.6,
+        "0.61": 27.04,
+        "0.73": 31.56
+      },
+      "post_holds": {
+        "0.48": 23.48,
+        "0.73": 39.0
+      }
+    },
+    {
+      "id": "closing",
+      "duration": 42.333333333333336,
+      "heading": "把整章模型链连起来",
+      "visual": "原约束最优盒与尺寸—变量—目标—可行域—变化率—单调比较链",
+      "learning_purpose": "整章收束而非只报优化数值",
+      "anchors": [
+        {
+          "id": "chapter_chain_ready",
+          "meaning": "整章模型链与原约束结果可读"
+        },
+        {
+          "id": "feasibility_transfer_ready",
+          "meaning": "约束改变后重新判断的出口出现"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.3,
+        "0.06": 0.8,
+        "0.13": 2.3,
+        "0.70": 24.9,
+        "0.78": 25.62,
+        "1.00": 42.333333333333336
+      },
+      "animation_starts": {},
+      "post_holds": {}
+    }
+  ],
+  "focus_intents": [
+    {
+      "id": "box_problem",
+      "cue": "opening",
+      "referent": "12cm纸板、四角裁块与问题",
+      "process": "建立同一实际情境",
+      "state": "理想薄纸板，忽略厚度和折痕损耗",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "same_cut_length",
+      "cue": "cut",
+      "referent": "随同一个x更新的四角和底面",
+      "process": "x从1到3再到2的原生多边形变化",
+      "state": "x与12-2x的动态数字同源",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "base_dimension",
+      "cue": "cut",
+      "referent": "实际尺寸线的x、12-2x、x三段",
+      "process": "从两端扣除推导底面边长",
+      "state": "没有只给目标公式省略尺寸来源",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "corners_removed",
+      "cue": "cut",
+      "referent": "四角移开、淡出后留下的底面与四侧展开图",
+      "process": "裁掉四角后形成可折展开图",
+      "state": "保留实际剩余五面承接句尾折起指称，至本cue结束前关闭",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "flat_panels",
+      "cue": "fold",
+      "referent": "x=2的厘米展开图与8cm底面",
+      "process": "新增逐面同顶点的平面到固定斜视投影连续过渡；不是物理相机旋转",
+      "state": "没有另换一张比例任意的盒子示意",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "hinge_motion",
+      "cue": "fold",
+      "referent": "四块绕底边运动的原生多边形",
+      "process": "角度从0连续增加到90度",
+      "state": "每块侧面的边长保持，非形状随意变形",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "fold_dimensions",
+      "cue": "fold",
+      "referent": "直立无盖盒与8×8×2cm",
+      "process": "将样例尺寸推广为同一变量关系",
+      "state": "先观察几何，再建立目标",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "dimensions_to_volume",
+      "cue": "objective",
+      "referent": "实际盒子与同x的长宽高",
+      "process": "从几何取出同一模型参数",
+      "state": "所有长度单位cm",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "volume_objective",
+      "cue": "objective",
+      "referent": "V=ℓwh=x(12-2x)²与cm³",
+      "process": "由三个尺寸生成体积目标",
+      "state": "目标是体积，非高度或底面积",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "physical_domain",
+      "cue": "objective",
+      "referent": "x>0和12-2x>0导出0<x<6",
+      "process": "以正尺寸约束确定可行域",
+      "state": "不将退化盒列为可实现方案",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "product_derivative",
+      "cue": "optimize",
+      "referent": "V'=(12-2x)²-4x(12-2x)",
+      "process": "乘积与链式规则各项对应",
+      "state": "完整保留内层导数-2",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "factor_derivative",
+      "cue": "optimize",
+      "referent": "两层因式分解及0<x<6",
+      "process": "提共同因式再整理符号",
+      "state": "6虽是代数根，但不是内部可行候选",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "volume_peak",
+      "cue": "optimize",
+      "referent": "完整可行域的+、-及V(2)=128",
+      "process": "用整个可行域的单调性升级到全局最大",
+      "state": "不是仅凭驻点或局部极值直接报全局结果",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "boundary_flatten",
+      "cue": "boundary",
+      "referent": "从x2到0.08的真实比例盒子",
+      "process": "底面增大而高度趋小",
+      "state": "过程只接近边界，不使用x=0造实体",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "boundary_narrow",
+      "cue": "boundary",
+      "referent": "从0.08到5.92的真实比例盒子",
+      "process": "底面变窄导致体积再次趋小",
+      "state": "从0.08升到5.92会经过x=2，整体体积不单调；靠近6时再次趋零",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "degenerate_limits",
+      "cue": "boundary",
+      "referent": "V在两端趋零和退化边界文字",
+      "process": "检查边界及内部可达性",
+      "state": "不误用闭区间定理宣称开区间无最大值",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "height_constraint",
+      "cue": "constraint",
+      "referent": "原盒x2、至少3cm条件与新域",
+      "process": "先改变约束而不更换物理情境",
+      "state": "旧解显示为不可行，不自动沿用旧最优",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "constraint_enter",
+      "cue": "constraint",
+      "referent": "x从2变3的同一盒子",
+      "process": "明确从不可行状态进入可行边界",
+      "state": "过程不将2到3之间标为可行",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "constraint_decrease",
+      "cue": "constraint",
+      "referent": "x从3到4.5再回3及体积读数",
+      "process": "在[3,6)内演示递减并回到边界",
+      "state": "依赖前面(2,6)上V'<0，不另换函数",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "constrained_optimum",
+      "cue": "constraint",
+      "referent": "x3的6×6×3盒子和108cm³",
+      "process": "用单调性选取可行边界",
+      "state": "边界最优与内点必要条件范围保持一致",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "chapter_chain",
+      "cue": "closing",
+      "referent": "原最优盒与整章模型链",
+      "process": "将导数概念和求导调用到实际优化",
+      "state": "显式回到原约束，不与108的新约束结果混用",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "feasibility_transfer",
+      "cue": "closing",
+      "referent": "约束改变后同模型重判的收束",
+      "process": "回扣闭区间课的范围与本课可行性",
+      "state": "不以教学成片或测试通过宣称学生已掌握",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    }
+  ],
+  "review_times": [
+    2.007,
+    2.24,
+    2.54,
+    22.133333,
+    24.160333,
+    24.393333,
+    24.693333,
+    31.840333,
+    36.373333,
+    40.973333,
+    41.220333,
+    41.913333,
+    42.673333,
+    46.760333,
+    46.993333,
+    47.293333,
+    65.080333,
+    65.313333,
+    65.613333,
+    67.100333,
+    67.563333,
+    68.000333,
+    68.093333,
+    68.233333,
+    68.533333,
+    74.7,
+    76.707,
+    76.94,
+    77.167,
+    77.24,
+    78.36,
+    79.62,
+    90.047,
+    90.28,
+    90.58,
+    92.687,
+    99.26,
+    105.9,
+    106.187,
+    106.42,
+    106.72,
+    123.266667,
+    125.373667,
+    125.606667,
+    125.906667,
+    138.593667,
+    138.826667,
+    139.113667,
+    139.126667,
+    139.346667,
+    139.646667,
+    158.873667,
+    159.106667,
+    159.406667,
+    159.573667,
+    159.806667,
+    160.106667,
+    175.833333,
+    177.400333,
+    177.633333,
+    177.933333,
+    178.020333,
+    178.253333,
+    178.553333,
+    202.840333,
+    203.073333,
+    203.240333,
+    203.333333,
+    203.373333,
+    203.493333,
+    210.750333,
+    210.983333,
+    211.283333,
+    215.700333,
+    215.933333,
+    216.233333,
+    222.640333,
+    222.873333,
+    223.050333,
+    223.173333,
+    223.283333,
+    223.450333,
+    223.583333,
+    223.628333,
+    223.873333,
+    245.2,
+    247.287,
+    247.52,
+    247.82,
+    249.147,
+    252.29,
+    255.5,
+    258.167,
+    261.4,
+    264.7,
+    266.227,
+    266.46,
+    266.76,
+    282.1,
+    284.227,
+    284.46,
+    284.76,
+    299.807,
+    300.04,
+    300.207,
+    300.34,
+    300.44,
+    300.74,
+    301.867,
+    302.34,
+    302.88,
+    309.307,
+    311.26,
+    313.28,
+    313.827,
+    315.01,
+    316.26,
+    321.427,
+    321.66,
+    321.96,
+    338.833333,
+    340.900333,
+    341.133333,
+    341.433333,
+    363.500333,
+    363.733333,
+    364.033333,
+    364.220333,
+    364.453333,
+    364.753333,
+    381.166667
+  ],
+  "sources": [
+    "examples/derivative_chapter_shared.py",
+    "docs/course-unit-workflow.md",
+    "runtime/projects/math-derivative-ch08-optimization-20261102/math-facts-v001.json",
+    "runtime/projects/math-derivative-ch08-optimization-20261102/context-v001.json",
+    "runtime/projects/math-derivative-chapter-20261102/unit-v001.json",
+    "docs/curricula/high-school-mathematics-v0.1.csv",
+    "src/manimind/curriculum.py",
+    "runtime/projects/math-derivative-ch08-optimization-20261102/scientific-brief-v001.json",
+    "runtime/projects/math-derivative-ch08-optimization-20261102/draft-plan-v001.json",
+    "examples/derivative_ch08_optimization.py",
+    "runtime/projects/math-derivative-ch08-optimization-20261102/narration-draft-v002.json",
+    "runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch08-optimization-20261102/speech-plan-v002.json",
+    "runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch08-optimization-20261102/timings-v001.json",
+    "runtime/projects/math-derivative-ch08-optimization-20261102/scene-draft-plan-v003.json"
+  ],
+  "course_position": {
+    "chapter": 8,
+    "prerequisites": [
+      "导数运算与复合函数求导",
+      "导数符号与单调性",
+      "极值及整个定义域的最值比较"
+    ],
+    "mastery_status": "assumed_not_tested",
+    "exit": "从同一个裁剪长度建立尺寸、体积、可行域，完成全范围最优和新增边界约束下的迁移",
+    "next": "整章收束：实际对象—变化率—函数行为—可实现最优；不自动宣称学生已掌握"
+  },
+  "context_status": "lead_will_supply_versioned_unit_and_context_before_production",
+  "subtitle_safe_bottom_px": 96,
+  "geometry_safe_min_y": -3.05,
+  "production_boundary": {
+    "rendered": false,
+    "visual_approved": false,
+    "narration_approved": false,
+    "published": false,
+    "original_audio_available": true,
+    "production_estimates_available": true,
+    "author_generated_audio": false,
+    "listening_reviewed": false,
+    "student_understanding_tested": false,
+    "independent_review_required": true
+  },
+  "state_contracts": [
+    {
+      "writer": "01a199e9-7432-7052-96f7-6bd6eb2e63bb",
+      "consumers": [
+        "chapter lead",
+        "renderer",
+        "future independent reviewer",
+        "future narration installer"
+      ],
+      "lifecycle": "Author-C v001 draft; lesson-scoped, not an approved installation",
+      "invalidation": "Change to source, model, helper, profile, chapter context, text or cue timing requires dependent revalidation",
+      "scope": "long_term_lesson_draft"
+    },
+    {
+      "writer": "01a199e9-7432-7052-96f7-6bd6eb2e63bb",
+      "consumers": [
+        "chapter lead",
+        "renderer",
+        "future independent reviewer",
+        "future narration installer"
+      ],
+      "lifecycle": "This author-C collaboration; test logs and handoff only",
+      "invalidation": "Change to source, model, helper, profile, chapter context, text or cue timing requires dependent revalidation",
+      "scope": "short_term_author_session"
+    },
+    {
+      "name": "v003_presentation_clock_projection_and_cue_local_updaters",
+      "writer": "01a19acd-e149-74d0-8a5d-975a3adf45f4",
+      "consumers": [
+        "main",
+        "native tests",
+        "independent reviewers"
+      ],
+      "lifecycle": "Each construct owns stage endpoints, starts, holds and five-face projection morph; cue drivers cleared after their process; no production input writes",
+      "invalidation": "Bound inputs, scene, clock, geometry, mathematics or authorization change"
+    }
+  ],
+  "author_agent": "01a19acd-e149-74d0-8a5d-975a3adf45f4",
+  "author_context": "01a19acd-e149-74d0-8a5d-975a3adf45f4",
+  "writer": "01a19acd-e149-74d0-8a5d-975a3adf45f4",
+  "consumers": [
+    "main",
+    "native tests",
+    "independent reviewers"
+  ],
+  "lifecycle": "Long-term v003 author candidate, not rendered or reviewed",
+  "invalidation": "Bound inputs, scene, clock, geometry, mathematics or authorization change",
+  "lesson_context": "runtime/projects/math-derivative-ch08-optimization-20261102/context-v001.json",
+  "scientific_brief": "runtime/projects/math-derivative-ch08-optimization-20261102/scientific-brief-v001.json",
+  "audience": "已学高中常见函数、斜率与基本代数运算，尚未系统学习导数的学生",
+  "prior_knowledge": [
+    {
+      "lesson_id": "M02-02",
+      "assumed_exit": "函数表达式、图像与点坐标对应"
+    },
+    {
+      "lesson_id": "M03-04",
+      "assumed_exit": "对数函数与运算法则的定义域和底数条件"
+    },
+    {
+      "lesson_id": "M04-05",
+      "assumed_exit": "同角与和差公式，以及它们联系的单位圆正弦余弦"
+    },
+    {
+      "lesson_id": "M09-01",
+      "assumed_exit": "有向增量与直线斜率"
+    },
+    {
+      "lesson_id": "M01-01",
+      "assumed_exit": "展开、因式分解及非零约分"
+    }
+  ],
+  "understanding_goals": [
+    "现实问题先决定变量、目标和可行域；导数只在这个模型中找最优，最终答案须还原成带单位、满足约束的方案"
+  ],
+  "narration_draft": "runtime/projects/math-derivative-ch08-optimization-20261102/narration-draft-v002.json",
+  "contributors": [
+    {
+      "author_agent": "01a199e9-7432-7052-96f7-6bd6eb2e63bb",
+      "author_context": "01a199e9-7432-7052-96f7-6bd6eb2e63bb",
+      "contribution": "Original whole lesson, model, centimeter coordinates, projections and native methods"
+    },
+    {
+      "author_agent": "019eaf8b-9151-75e2-9db4-5ff834335577",
+      "author_context": "019eaf8b-9151-75e2-9db4-5ff834335577",
+      "contribution": "Existing main v002 spoken-grouping correction and immutable narration source"
+    }
+  ],
+  "narration_draft_sha256": "4c6b9cdbe62f97d03fb11b779d67065d655eb0f5357301427cb5dffd97b31015",
+  "revision_contract": "runtime/projects/math-derivative-ch08-optimization-20261102/content-regression-contract-v003.json",
+  "revision_review": "runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch08-optimization-20261102/review/regression-v003.json",
+  "baseline_study": "runtime/sessions/math-derivative-chapter-20261102-audio-retime-author-08/baseline-study-v001.json",
+  "timing_basis": {
+    "timings": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch08-optimization-20261102/timings-v001.json",
+    "timings_sha256": "34a6e44f5ceba10d031bb98fcedcabede14d90fa2c90f4bfb8bc832642c8aee8",
+    "plan": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch08-optimization-20261102/speech-plan-v002.json",
+    "plan_sha256": "3e7e3c3e0c006330f699fb964d26e9d8a3952263bacbc35801f27b471052bdac",
+    "speech": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch08-optimization-20261102/speech",
+    "production_evidence_sha256": "fea90caaef2ac398754b5992eb3aa5db58ddc333f4d090cce87f2711a3116bc5",
+    "scope": "Production forced-alignment estimates, not listening or exact phoneme certification"
+  },
+  "intended_full_wav_placement": [
+    {
+      "id": "ch08-opening",
+      "cue": "opening",
+      "intended_start": 2,
+      "duration_seconds": 19.52,
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch08-optimization-20261102/speech/ch08-opening.wav",
+      "wav_sha256": "756c46a444a995ba24ba86beeb0045a4bcd75fd9a430530e76814d0f881f2bfd",
+      "audio_trimmed": false,
+      "speed_changed": false,
+      "regenerated": false
+    },
+    {
+      "id": "ch08-cut",
+      "cue": "cut",
+      "intended_start": 24.333333333333332,
+      "duration_seconds": 49.76,
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch08-optimization-20261102/speech/ch08-cut.wav",
+      "wav_sha256": "0dbd05b8ca6bb25a04c11abf0499981f4eecae484e4500c804154264aaa66ee5",
+      "audio_trimmed": false,
+      "speed_changed": false,
+      "regenerated": false
+    },
+    {
+      "id": "ch08-fold",
+      "cue": "fold",
+      "intended_start": 76.9,
+      "duration_seconds": 45.76,
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch08-optimization-20261102/speech/ch08-fold.wav",
+      "wav_sha256": "c9a8a7548bfc56af93e86031c8c08d94004cee6402fadbb0088391edab8c1e00",
+      "audio_trimmed": false,
+      "speed_changed": false,
+      "regenerated": false
+    },
+    {
+      "id": "ch08-objective",
+      "cue": "objective",
+      "intended_start": 125.46666666666667,
+      "duration_seconds": 49.76,
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch08-optimization-20261102/speech/ch08-objective.wav",
+      "wav_sha256": "ab81deca8656a03a9b131018428422791abf492bee3db6a0cf5e7722db5adf41",
+      "audio_trimmed": false,
+      "speed_changed": false,
+      "regenerated": false
+    },
+    {
+      "id": "ch08-optimize",
+      "cue": "optimize",
+      "intended_start": 178.03333333333333,
+      "duration_seconds": 66.56,
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch08-optimization-20261102/speech/ch08-optimize.wav",
+      "wav_sha256": "9624b617d0e861f272416d6ac2a02b617d1f485cab4cf52ccd16f442da005cf2",
+      "audio_trimmed": false,
+      "speed_changed": false,
+      "regenerated": false
+    },
+    {
+      "id": "ch08-boundary",
+      "cue": "boundary",
+      "intended_start": 247.39999999999998,
+      "duration_seconds": 34.08,
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch08-optimization-20261102/speech/ch08-boundary.wav",
+      "wav_sha256": "f15dbe075445720f111fc2d042a14ce9e0a6c620862ee2aa8c3b06056d4790f6",
+      "audio_trimmed": false,
+      "speed_changed": false,
+      "regenerated": false
+    },
+    {
+      "id": "ch08-constraint",
+      "cue": "constraint",
+      "intended_start": 284.29999999999995,
+      "duration_seconds": 53.92,
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch08-optimization-20261102/speech/ch08-constraint.wav",
+      "wav_sha256": "0e9db0f28b6e9e45309915d29701f53c8cb4f933796bb0fcbd905c775679ba64",
+      "audio_trimmed": false,
+      "speed_changed": false,
+      "regenerated": false
+    },
+    {
+      "id": "ch08-closing",
+      "cue": "closing",
+      "intended_start": 341.0333333333333,
+      "duration_seconds": 39.52,
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch08-optimization-20261102/speech/ch08-closing.wav",
+      "wav_sha256": "6ba0f27afaa1c57d1a5af501fbb4023ac0dbd5861ef004ce292cbd0be9638b4f",
+      "audio_trimmed": false,
+      "speed_changed": false,
+      "regenerated": false
+    }
+  ],
+  "new_visual_support": {
+    "net_view_transition": "New continuous screen-projection interpolation of the same five x=2 panels; v001 only had a cue/view cut, not a continuous camera rotation",
+    "root_screening": "New explicit V'=0 candidates 2,6 and exclusion of 6, under unchanged optimize-r2; no such caption claimed visible in v001",
+    "narration_changed": false,
+    "not_added": [
+      "No scientific model or audio changes",
+      "No fictitious safe_formula transfer; the original never calls it",
+      "No claim that old source targets 0.08 or 4.50 were seen exactly in baseline pixels"
+    ]
+  }
+}

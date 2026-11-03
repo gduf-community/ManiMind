@@ -1,0 +1,42 @@
+You are an independent educational-video author. Produce the complete lesson yourself using only the supplied workflow packet. Do not use tools, files, web, previous conversations, other candidates, or unstated project knowledge. Output ONE JSON object, without Markdown or commentary. Do not identify your model/provider in any field.
+
+TASK
+Create a complete, coherent Chinese high-school micro-lesson explaining why the discriminant predicts the number of real roots of a monic quadratic. Audience: students who know the graph y=x^2 and what an equation root is, but have memorized rather than understood the discriminant rule.
+Length is exactly six shots, each 18 seconds (108 seconds total). Design the shot order, visual evidence, examples, captions, and narration yourself. Include an opening question/motivation, a comprehensible argument, and a useful conclusion. Do not simply repeat six versions of the same observation.
+Use only the supplied components. Every shot needs a meaningful mathematical graphic; text slides alone are insufficient. Do not claim capabilities the renderer does not have. Your animation and explanation should remain understandable on an ordinary classroom display.
+
+SHARED FACTS (not a prescribed storyboard)
+For real b,c and f(x)=x^2+b*x+c, completing the square gives
+f(x)=(x+b/2)^2+c-b^2/4.
+The vertex is (-b/2,c-b^2/4). Define Delta=b^2-4*c, so vertex height=-Delta/4.
+Delta>0 gives two distinct real roots; Delta=0 gives one distinct real root (a double root); Delta<0 gives no real roots. "No real roots" does not mean "no roots over all number systems."
+Your lesson must meaningfully cover all three cases and explain the connection between vertex height, x-axis intersections and Delta. It must not imply that changing b has no effect, or that the vertex is always on the y-axis.
+Choose your own valid numerical examples, axes, parameter ranges and timing.
+
+OUTPUT ENVELOPE (exact keys)
+{"plan": <components-0.1 plan>, "narration": [{"shot_id": "<matching shot id>", "text": "<Chinese spoken narration>"}]}
+The plan must use id="lesson" and provenance={"kind":"model_output","author":"candidate","interventions":[]}. Title is your choice. These metadata values prevent identity leakage; the runner later assigns an external unique project id without altering the shots.
+Narration entries must match shots one-to-one in order. Each narration text must be 35..65 characters, plain spoken Chinese, no Markdown, LaTeX, newlines or backslashes. Speak mathematical symbols in ordinary Chinese where possible. Do not mention model names. Local TTS is fixed across candidates: Tingting at rate 240, starting 0.3 seconds into each shot, with at least 0.5 seconds at the end. Overlong audio is a failure; the runner will not shorten your text or speed it up.
+Both image and narration are YOUR output. Goal text is private author metadata, not displayed.
+
+COMPONENT CONTRACT
+The exact validator and expression compiler below are the authoritative API specification, not files you may execute. Unknown fields and capabilities are rejected.
+Each shot has exactly id,title,goal,duration,caption,axes,parameters,components,keyframes.
+Axes are mandatory, include zero on both axes, and use [minimum,maximum,step] with 1..10 tick intervals.
+Every curve is sampled over the WHOLE x-range on EVERY frame. The entire curve, all points and segment endpoints must remain inside the y-range/x-range throughout all parameter interpolation. The renderer does not clip curves for you.
+At most SIX components per shot. Each component consumes one explanation row, including points, lines, formulas and readouts. Axes are separate.
+Vectors require equal_units=true. Segments/vectors must never have coincident start/end points, including transitional frames.
+Expressions are numbers, declared symbol names, or {"op": "...", "args": [...]}; no code/formula strings. x is allowed only in curve expressions. Supported ops: add/sub/mul/div/pow/sin/cos/sqrt/abs. sqrt of a negative value, division by zero and nonfinite output are failures. pow exponent must be a literal integer from -4 through 4.
+Available colors: ink,muted,cyan,yellow,coral,green. Keep a stable meaning for a color across shots.
+Formula components only reference a curve and display its symbolic expression (parameters stay symbols); they do NOT morph algebra or substitute changing numbers. Use readouts for changing numbers. Formula lhs is a lowercase single letter or such a letter followed by "(x)". Do not create unbound TeX or long illegible equations.
+Point coordinates are NOT inferred from the curve: you must supply mathematically consistent expressions yourself.
+All components and both caption lines are present from the beginning of each shot. There is no component-level reveal, disappearance, arbitrary text placement, zoom, event cue, or highlighting API. Do not narrate nonexistent visual events. Captions should describe the process without falsely stating an intermediate value is already final.
+The renderer provides one plot region and one explanation region, shared typography, line weights and palette. You cannot change those per candidate.
+Parameter states interpolate linearly between keyframes, whose "at" fractions range from 0 to 1. Each keyframe must state ALL parameters. First state matches initial parameters. The final two states must be identical, with the penultimate at<=0.85, leaving at least 15% terminal hold. Reserve time to observe the initial state too.
+Maintain readable mathematical ranges rather than making the y-axis enormous merely to pass bounds checks.
+
+VALIDATION AND EVALUATION
+The runner rejects extra keys, malformed expressions, excessive text, wrong duration/count, and out-of-bounds/undefined/degenerate geometry on every target frame. It does not repair your work.
+You receive at most one repair request containing only your own previous answer and the exact deterministic failure. No person or other model will provide a suggested solution.
+Independent anonymous review scores mathematics (30), explanatory/causal clarity (25), visual evidence (20), pacing and narration alignment (15), and legibility/finish (10). A material mathematical or render defect blocks classroom delivery regardless of score. Review feedback will not be used to improve candidates.
+The total answer must not exceed 50000 characters. Think within the available budget and return the complete JSON.

@@ -1,0 +1,54 @@
+{
+  "id": "isolated-20261020",
+  "repetitions": 3,
+  "attempts_per_repetition": 2,
+  "primary_repetition": 1,
+  "shot_count": 6,
+  "shot_seconds": 18,
+  "max_answer_characters": 50000,
+  "api_max_completion_tokens": 32768,
+  "request_timeout_seconds": 600,
+  "voice": {"provider": "say", "name": "Tingting", "rate": 240},
+  "rubric": {
+    "mathematical_correctness": 30,
+    "explanation_and_causal_links": 25,
+    "visual_evidence": 20,
+    "pacing_and_narration_alignment": 15,
+    "legibility_and_finish": 10
+  },
+  "selection": "Use repetition 1, earliest machine-valid attempt. Never replace it with a better repetition. Repetitions 2 and 3 measure contract/preflight repeatability only unless independently rendered and reviewed.",
+  "repair": "At most one fresh request with the same original packet, own previous answer and verbatim deterministic validation error. No human or other-model advice. No semantic repairs after visual review.",
+  "limitations": [
+    "One topic is not a general model ranking or a classroom learning-outcome study.",
+    "Shared components, typography, layout and TTS are engineering inputs, not model-authored capabilities.",
+    "Provider hidden policies, tokenizers and reasoning implementations cannot be made identical.",
+    "Codex CLI has no equivalent hard max_completion_tokens flag; shared wall-time and answer-character limits apply, and actual usage is reported.",
+    "Codex uses subscription authentication; public API-equivalent cost is an estimate, not the subscription bill.",
+    "Independent review is a shared evaluation service, not a candidate self-review or repair helper."
+  ],
+  "candidates": {
+    "codex": {
+      "transport": "codex_exec",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "high",
+      "pricing": {"currency": "USD", "input_per_million": 10, "cached_input_per_million": 1, "output_per_million": 50, "cache_write_per_million": 12.5, "source": "https://developers.openai.com/api/docs/models/gpt-6-astra", "verified_date": "2026-10-20", "basis": "Standard short-context API equivalent; subscription bill unknown"}
+    },
+    "deepseek": {
+      "transport": "chat_completions",
+      "model": "deepseek-flash",
+      "expected_release": "DeepSeek-V4.1-Flash-1017",
+      "base_url": "https://api.deepseek.com/v1",
+      "api_key_env": "DEEPSEEK_API_KEY",
+      "request_options": {"thinking": {"type": "enabled"}, "reasoning_effort": "high", "max_tokens": 32768},
+      "pricing": {"currency": "CNY", "input_per_million": 2, "cached_input_per_million": 0.04, "output_per_million": 8, "off_peak_multiplier": 0.5, "source": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/", "verified_date": "2026-10-20", "basis": "Report peak/off-peak estimate interval; not reconciled billing"}
+    },
+    "kimi": {
+      "transport": "chat_completions",
+      "model": "kimi-k3",
+      "base_url": "https://api.moonshot.cn/v1",
+      "api_key_env": "OPENAI_API_KEY",
+      "request_options": {"reasoning_effort": "high", "max_completion_tokens": 32768},
+      "pricing": {"currency": "CNY", "input_per_million": 20, "cached_input_per_million": 2, "output_per_million": 100, "cache_write_per_million": 20, "source": "https://platform.kimi.com/docs/pricing/chat.md", "verified_date": "2026-10-20", "basis": "Default 5-minute cache; bound unknown cache-write charge separately, not reconciled billing"}
+    }
+  }
+}

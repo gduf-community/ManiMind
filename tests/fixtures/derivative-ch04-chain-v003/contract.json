@@ -1,0 +1,854 @@
+{
+  "schema_version": 1,
+  "status": "not_reviewed",
+  "project_id": "math-derivative-ch04-chain-20261102",
+  "author_agent": "01a19acd-e149-74d0-8a5d-975a3adf45f4",
+  "author_context": "01a19acd-e149-74d0-8a5d-975a3adf45f4",
+  "writer": "01a19acd-e149-74d0-8a5d-975a3adf45f4",
+  "consumers": [
+    "main",
+    "native tests",
+    "independent reviewers"
+  ],
+  "lifecycle": "Long-term v003 pre-render baseline inventory; no comparison approval",
+  "invalidation": "Any bound input, source, cue clock, mathematics, geometry or authorization change",
+  "assets": {
+    "visual_v001": {
+      "path": "outputs/math-derivative-ch04-chain-20261102/visual-v001/manim/media/manimgl/understanding.mp4",
+      "sha256": "e62de08fa4fa6c9b1af8933c57cdf2419a469b774e6a3a817012bd1aba74bcec",
+      "duration": 336
+    }
+  },
+  "units": [
+    {
+      "id": "opening",
+      "asset": "visual_v001",
+      "baseline_interval": [
+        0,
+        24
+      ],
+      "function": "标题定位，并以平方加一再立方承接前课求导四则",
+      "features": [
+        {
+          "id": "title_order",
+          "kind": "state",
+          "claim": "保留标题、复合表达式和先后运算顺序",
+          "baseline_interval": [
+            7,
+            22.369
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 7,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_7.jpg",
+              "frame_sha256": "0919e9571538aa6bb4ddaf06d6b2983b4a334d293bd791e4908e8c013283ab4a",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            },
+            {
+              "phase": "state",
+              "time": 22.368,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_22_368.jpg",
+              "frame_sha256": "b792c28dd4e8f290c57e405a6127891c16766292a63d2e6bf6078bac14600f14",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "two-stages",
+      "asset": "visual_v001",
+      "baseline_interval": [
+        22.368,
+        66
+      ],
+      "function": "同一内部表达式经命名连接输入与输出",
+      "features": [
+        {
+          "id": "extract_inner",
+          "kind": "process",
+          "claim": "原表达式内的x²+1复制移动到独立位置，再命名u，身份连续",
+          "baseline_interval": [
+            22.368,
+            43.001
+          ],
+          "baseline_samples": [
+            {
+              "phase": "before",
+              "time": 22.368,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_22_368.jpg",
+              "frame_sha256": "b792c28dd4e8f290c57e405a6127891c16766292a63d2e6bf6078bac14600f14",
+              "source": "Existing actual-v001 frame in preceding opening cue: intact expression before extraction. No pre-motion two-stages frame exists in the archived selection; main may extract a closer one. Author selection, not an independent verdict"
+            },
+            {
+              "phase": "during",
+              "time": 33,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_33.jpg",
+              "frame_sha256": "0ad0a39cdddffda66308259e180b2bbc6ba036543c19d47f9969452b737ae4e9",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            },
+            {
+              "phase": "after",
+              "time": 43,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_43.jpg",
+              "frame_sha256": "02eb923ec369b7f50e55e5abe7d602eab11b2514570d2cc1a62f5f2ed7fd7e4f",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            }
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "two_levels",
+          "kind": "state",
+          "claim": "u=x²+1与y=u³通过箭头连接，同一u承接两层",
+          "baseline_interval": [
+            45,
+            65.001
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 45,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_45_0.jpg",
+              "frame_sha256": "67ef6a8915e8887115ab56dff360abcbff53e51f94806faa39c67614f14e4ccb",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            },
+            {
+              "phase": "state",
+              "time": 65,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_65.jpg",
+              "frame_sha256": "82a4c857d64394c510c12a9c9c24e9e11865c78aa328d324f9b52dde83a2f787",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "base_values",
+          "kind": "process",
+          "claim": "从两层表达式推进到x=1,u=2,y=8的对应关系",
+          "baseline_interval": [
+            43,
+            54.001
+          ],
+          "baseline_samples": [
+            {
+              "phase": "before",
+              "time": 43,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_43.jpg",
+              "frame_sha256": "02eb923ec369b7f50e55e5abe7d602eab11b2514570d2cc1a62f5f2ed7fd7e4f",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            },
+            {
+              "phase": "during",
+              "time": 48,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_48.jpg",
+              "frame_sha256": "355dfc28aff597d3cfd4c9d3f7f1ce0f03e3b61e22e82cf326db052928818aae",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            },
+            {
+              "phase": "after",
+              "time": 54,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_54.jpg",
+              "frame_sha256": "aa9c83987d5e3067ff673aabc0ba2ee36ab4a2ff5350f6e98a5c258655c48b24",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            }
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "u_bridge",
+          "kind": "state",
+          "claim": "中间量既是前一步输出又是后一步输入",
+          "baseline_interval": [
+            63.043,
+            65.001
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 63.043,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_63_043.jpg",
+              "frame_sha256": "82a4c857d64394c510c12a9c9c24e9e11865c78aa328d324f9b52dde83a2f787",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            },
+            {
+              "phase": "state",
+              "time": 65,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_65.jpg",
+              "frame_sha256": "82a4c857d64394c510c12a9c9c24e9e11865c78aa328d324f9b52dde83a2f787",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "one-change",
+      "asset": "visual_v001",
+      "baseline_interval": [
+        66,
+        120
+      ],
+      "function": "同一次输入改变按x、u、y顺序传递并保留增量",
+      "features": [
+        {
+          "id": "input_motion",
+          "kind": "process",
+          "claim": "x从1到1.1时u=2,y=8保持；随后显示Δx=0.1",
+          "baseline_interval": [
+            72,
+            83.001
+          ],
+          "baseline_samples": [
+            {
+              "phase": "before",
+              "time": 72,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_72.jpg",
+              "frame_sha256": "bc549d554be1841fd3fee19c36ef65b3c8528f895f8b07be1bb713311849d84e",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            },
+            {
+              "phase": "during",
+              "time": 78,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_78.jpg",
+              "frame_sha256": "b9e420a392e362fd8320c47c78fc5fc6a2e0afd9140ff2e3c4f3268bcefceedc",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            },
+            {
+              "phase": "after",
+              "time": 83,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_83.jpg",
+              "frame_sha256": "b443fbbd38148125d819e94f53047853ec28c5254806bd17e602bde751ba87fb",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            }
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "inner_motion",
+          "kind": "process",
+          "claim": "x完成后u从2到2.21，y仍8；随后显示Δu=0.21",
+          "baseline_interval": [
+            83,
+            95.001
+          ],
+          "baseline_samples": [
+            {
+              "phase": "before",
+              "time": 83,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_83.jpg",
+              "frame_sha256": "b443fbbd38148125d819e94f53047853ec28c5254806bd17e602bde751ba87fb",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            },
+            {
+              "phase": "during",
+              "time": 88.95,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_88_95.jpg",
+              "frame_sha256": "90647a98ef8509b5b127d536a4009049291d89dcc7e8fa028d0b1a567714ea07",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            },
+            {
+              "phase": "after",
+              "time": 95,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_95.jpg",
+              "frame_sha256": "5cdb3cfbcbe601e49c202488480b3a3761eaafa808525c3bfa0ab7527be20025",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            }
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "outer_motion",
+          "kind": "process",
+          "claim": "u完成后y从8到10.793861；不得提前标已传递完成",
+          "baseline_interval": [
+            95,
+            107.001
+          ],
+          "baseline_samples": [
+            {
+              "phase": "before",
+              "time": 95,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_95.jpg",
+              "frame_sha256": "5cdb3cfbcbe601e49c202488480b3a3761eaafa808525c3bfa0ab7527be20025",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            },
+            {
+              "phase": "during",
+              "time": 101.367,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_101_367.jpg",
+              "frame_sha256": "84d40a897b977a98e9b6467c834025d1b07becbb9b1f01a32b6faa261b47d093",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            },
+            {
+              "phase": "after",
+              "time": 107,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_107.jpg",
+              "frame_sha256": "c255bcabae684999e79afcf9642bb77da169bd8b3c0cf6683a085be1002d10c1",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            }
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "complete_increments",
+          "kind": "state",
+          "claim": "三个终值与Δx=.1,Δu=.21,Δy=2.793861支持总结",
+          "baseline_interval": [
+            113,
+            119.001
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 113,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_113.jpg",
+              "frame_sha256": "c021c56a37ada6bb3a52687d30d3ff49cf331535921c3e6ce46cbc63b3cc6ea1",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            },
+            {
+              "phase": "state",
+              "time": 119,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_119.jpg",
+              "frame_sha256": "01984ea302532dc000cb04e32fef2c5a8fdb1b13388d58476e05abd0d9b0c359",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ratios",
+      "asset": "visual_v001",
+      "baseline_interval": [
+        120,
+        172
+      ],
+      "function": "以非零增量差商桥梁解释变化率乘积",
+      "features": [
+        {
+          "id": "quotient_identity",
+          "kind": "state",
+          "claim": "Δy/Δx=(Δy/Δu)(Δu/Δx)，两层分子分母身份一致",
+          "baseline_interval": [
+            130.845,
+            141.001
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 130.845,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_130_845.jpg",
+              "frame_sha256": "f058898ed36487894c8806f0e8a65182e90c8ddefa1c4e315fa5ab32cfa91971",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            },
+            {
+              "phase": "state",
+              "time": 141,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_141.jpg",
+              "frame_sha256": "d8de26d50cf069f06d5ca4c73434e5d37c2e5ec2d1b6a1bec1bfbeb36b907d8e",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "nonzero_h",
+          "kind": "state",
+          "claim": "x=1、0<|h|<1、Δx=h及Δu=h(2+h)≠0保证分解可用",
+          "baseline_interval": [
+            138.512,
+            141.001
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 138.512,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_138_512.jpg",
+              "frame_sha256": "c51b458f1823f197e7c7141d86ecb83d1028949e3a4a7a22cf664b684fe88763",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            },
+            {
+              "phase": "state",
+              "time": 141,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_141.jpg",
+              "frame_sha256": "d8de26d50cf069f06d5ca4c73434e5d37c2e5ec2d1b6a1bec1bfbeb36b907d8e",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "three_ratios_converge",
+          "kind": "process",
+          "claim": "h=.1,.01,.001三行依次出现，内层趋2外层趋12总比值趋24",
+          "baseline_interval": [
+            138.512,
+            161.482
+          ],
+          "baseline_samples": [
+            {
+              "phase": "before",
+              "time": 138.512,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_138_512.jpg",
+              "frame_sha256": "c51b458f1823f197e7c7141d86ecb83d1028949e3a4a7a22cf664b684fe88763",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            },
+            {
+              "phase": "during",
+              "time": 153.8,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_153_8.jpg",
+              "frame_sha256": "de39b055e0a53552851fb3222eda3b4a72dcb67ad4532648c28c4d11ad84e840",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            },
+            {
+              "phase": "after",
+              "time": 161.481,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_161_481.jpg",
+              "frame_sha256": "05a6a6089a4c6281c8f9c0f67dd84ef52f278fbed1c5d305d339da03426c33cf",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            }
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "limit_product",
+          "kind": "state",
+          "claim": "2×12=24与实际有限比值对照，不用最终24替代三行过程",
+          "baseline_interval": [
+            168.421,
+            171.001
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 168.421,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_168_421.jpg",
+              "frame_sha256": "18685bb7e8d036b6fe3c8375c86a7ba1f4a0386360a5b9f76e9a678a488dc8a8",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            },
+            {
+              "phase": "state",
+              "time": 171,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_171.jpg",
+              "frame_sha256": "18685bb7e8d036b6fe3c8375c86a7ba1f4a0386360a5b9f76e9a678a488dc8a8",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rule",
+      "asset": "visual_v001",
+      "baseline_interval": [
+        172,
+        222
+      ],
+      "function": "对应点可导条件与具体精确增量支持一般链式法则",
+      "features": [
+        {
+          "id": "differentiability",
+          "kind": "state",
+          "claim": "内层在x、外层在u=g(x)处可导；外层导数在当前u计算",
+          "baseline_interval": [
+            185,
+            194.401
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 185,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_185.jpg",
+              "frame_sha256": "1cf87842a8ff8f15f9e40ea4f0e8ee5c087c65deac0521516a17d4108fdb1a90",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            },
+            {
+              "phase": "state",
+              "time": 194.4,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_194_4.jpg",
+              "frame_sha256": "df6e4a865022ffd642db853c70bee8d7fc6b292ce0393ff7fde124bb3963fabd",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "outer_times_inner",
+          "kind": "state",
+          "claim": "y'=f'(u)g'(x)，保留通用结论，不以非零Δu分解冒充完整证明",
+          "baseline_interval": [
+            194.4,
+            218.001
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 194.4,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_194_4.jpg",
+              "frame_sha256": "df6e4a865022ffd642db853c70bee8d7fc6b292ce0393ff7fde124bb3963fabd",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            },
+            {
+              "phase": "state",
+              "time": 218,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_218.jpg",
+              "frame_sha256": "fb83e5332796cc941a65553edc8012ac9da97433500c93326ed26e2428191483",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "exact_remainders",
+          "kind": "state",
+          "claim": "Δu=2h+h²及Δy=12Δu+6(Δu)²+(Δu)³，高次项除以h趋零",
+          "baseline_interval": [
+            206,
+            218.001
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 206,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_206.jpg",
+              "frame_sha256": "844afba4e1d3406b634487db8d292dc9a22e11e7d185592572ba84c167a02c20",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            },
+            {
+              "phase": "state",
+              "time": 218,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_218.jpg",
+              "frame_sha256": "fb83e5332796cc941a65553edc8012ac9da97433500c93326ed26e2428191483",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "example_to_24",
+          "kind": "process",
+          "claim": "由精确增量依据推进到3(x²+1)²·2x与y'(1)=24",
+          "baseline_interval": [
+            206,
+            218.001
+          ],
+          "baseline_samples": [
+            {
+              "phase": "before",
+              "time": 206,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_206.jpg",
+              "frame_sha256": "844afba4e1d3406b634487db8d292dc9a22e11e7d185592572ba84c167a02c20",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            },
+            {
+              "phase": "during",
+              "time": 211,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_211_0.jpg",
+              "frame_sha256": "78c00987de2325c366ad79c802655013e0247d5fc5ace5c228baa48edd350f0b",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            },
+            {
+              "phase": "after",
+              "time": 218,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_218.jpg",
+              "frame_sha256": "fb83e5332796cc941a65553edc8012ac9da97433500c93326ed26e2428191483",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            }
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "linear-inner",
+      "asset": "visual_v001",
+      "baseline_interval": [
+        222,
+        258
+      ],
+      "function": "线性内层核心与常数特例",
+      "features": [
+        {
+          "id": "linear_factor",
+          "kind": "process",
+          "claim": "u=ax+b到Δu=aΔx，再到f'(ax+b)·a；b相减抵消",
+          "baseline_interval": [
+            228,
+            240.001
+          ],
+          "baseline_samples": [
+            {
+              "phase": "before",
+              "time": 228,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_228.jpg",
+              "frame_sha256": "6d076e08e0965692bd3533646bb5e22055d4462d3f3ca692f9be2a3dd94ce24d",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            },
+            {
+              "phase": "during",
+              "time": 235.153,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_235_153.jpg",
+              "frame_sha256": "bbee14ca08d8cf2f5d148f49de5da789b9e5d05a061c6d89ecc3bf9f91c291d8",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            },
+            {
+              "phase": "after",
+              "time": 240,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_240_0.jpg",
+              "frame_sha256": "042cd5ca0f814973021770773792f5fdd578f5ad937c00994b479df063221f40",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            }
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "zero_a",
+          "kind": "state",
+          "claim": "a=0只要求f(b)有定义，输出常数导数0，不要求未必存在的f'(b)",
+          "baseline_interval": [
+            254,
+            257.51
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 254,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_254.jpg",
+              "frame_sha256": "28a605815b3dde72980bd854b022c9ca92e05dfa208d4085101edd4c9312ed90",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            },
+            {
+              "phase": "state",
+              "time": 257.509,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_257_509.jpg",
+              "frame_sha256": "d1cf53a768066bee52beaceb885c625bee9f5c22410324b8a305ff23d34855d4",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "practice",
+      "asset": "visual_v001",
+      "baseline_interval": [
+        258,
+        304
+      ],
+      "function": "用(3x-1)^4迁移内外层识别、回代和相乘",
+      "features": [
+        {
+          "id": "inner_outer_product",
+          "kind": "process",
+          "claim": "先u=3x-1,u'=3，再y=u⁴,4u³，最后回代乘3到12(3x-1)³",
+          "baseline_interval": [
+            264,
+            292.734
+          ],
+          "baseline_samples": [
+            {
+              "phase": "before",
+              "time": 264,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_264.jpg",
+              "frame_sha256": "ae403e41adf8d0cd9f694ff6b9feeb80749db85b48bc3b4bcd1d4a82117f66ba",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            },
+            {
+              "phase": "during",
+              "time": 276.921,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_276_921.jpg",
+              "frame_sha256": "d63b79ec149790221b0df589c9929a8615dae4b85d8506c7361f30b2032eee36",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            },
+            {
+              "phase": "after",
+              "time": 292.733,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_292_733.jpg",
+              "frame_sha256": "350d397ed69aa814581ff367fdd477547a8fa149dfe15d6d7088d369fc0063f3",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            }
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "all_reals",
+          "kind": "state",
+          "claim": "两层为多项式全实数可导，保留整个3x-1与因子3的解释",
+          "baseline_interval": [
+            299,
+            302.198
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 299,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_299.jpg",
+              "frame_sha256": "c94e99b519f95acbc0051aec855561b89e1518e3cbdfd26b5ad82f6d88699652",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            },
+            {
+              "phase": "state",
+              "time": 302.197,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_302_197.jpg",
+              "frame_sha256": "b0d3db2da0bdb973ca8e6f62e5d2989a507923424ea37a488f4b57e06f4ad0b1",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "handoff",
+      "asset": "visual_v001",
+      "baseline_interval": [
+        304,
+        336
+      ],
+      "function": "闭合两级变化率并交给第05课区间增长问题",
+      "features": [
+        {
+          "id": "summary",
+          "kind": "state",
+          "claim": "x→u→y及y'=f'(u)u'与变化率乘积说明",
+          "baseline_interval": [
+            320,
+            334.001
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 320,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_320_0.jpg",
+              "frame_sha256": "b193a992c544a0b0328ad3b474527330fdbe5948bed4aa2dd4d286ff281e8d21",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            },
+            {
+              "phase": "state",
+              "time": 334,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_334.jpg",
+              "frame_sha256": "0eee22f11150c6d3837e6c45ee938a1c85cd6dbed17cc27739a877c26ff7a486",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "next_lesson",
+          "kind": "state",
+          "claim": "从已求导数走向导数符号与区间增长，不偷换成单点判区间",
+          "baseline_interval": [
+            329.223,
+            335.412
+          ],
+          "baseline_samples": [
+            {
+              "phase": "state",
+              "time": 329.223,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_329_223.jpg",
+              "frame_sha256": "811a23294bf013e05d1a206169c5ee90e5a5a6209bc239d390ae6c5473656872",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            },
+            {
+              "phase": "state",
+              "time": 335.411,
+              "frame": "outputs/math-derivative-ch04-chain-20261102/visual-v001/frames/frame_335_411.jpg",
+              "frame_sha256": "0eee22f11150c6d3837e6c45ee938a1c85cd6dbed17cc27739a877c26ff7a486",
+              "source": "Existing actual-v001 frame; author baseline selection, not an independent verdict"
+            }
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        }
+      ]
+    }
+  ],
+  "additional_candidate_requirements": {
+    "baseline_claim": "Not present in actual visual-v001; not falsely counted as retained",
+    "frozen_reference": "chain-u6-r4",
+    "narration_changed": false,
+    "purpose": "按本轮明确要求，在既定根式/定义与可导条件句下补充sqrt与ln；需独立审核可读性和负担",
+    "sqrt": {
+      "function": "sqrt(2x+1)",
+      "function_domain": "x>=-1/2",
+      "finite_derivative_domain": "x>-1/2"
+    },
+    "ln": {
+      "function": "ln(2x+1)",
+      "derivative": "2/(2x+1)",
+      "domain": "x>-1/2"
+    }
+  },
+  "evidence_boundary": "Baseline selections are actual existing frames, not current-candidate pixels or independent judgments. Main must render; a separate context must compare before/during/after and authorize."
+}

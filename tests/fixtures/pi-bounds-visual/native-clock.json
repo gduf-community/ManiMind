@@ -1,0 +1,204 @@
+{
+  "duration": 226,
+  "frames": 6780,
+  "fps": 30,
+  "visual_events": [
+    {
+      "id": "ratio_ready",
+      "time": 1.8
+    },
+    {
+      "id": "chord_before",
+      "time": 17.6
+    },
+    {
+      "id": "chord_split_ready",
+      "time": 25.6
+    },
+    {
+      "id": "corner_before",
+      "time": 45.6
+    },
+    {
+      "id": "corner_cut_ready",
+      "time": 55.6
+    },
+    {
+      "id": "similarity_ready",
+      "time": 72.2
+    },
+    {
+      "id": "bounds_formula_ready",
+      "time": 86.6
+    },
+    {
+      "id": "hexagon_ready",
+      "time": 99.6
+    },
+    {
+      "id": "hexagon_seed_ready",
+      "time": 107.6
+    },
+    {
+      "id": "half_geometry_ready",
+      "time": 125.6
+    },
+    {
+      "id": "pythagoras_ready",
+      "time": 133.6
+    },
+    {
+      "id": "half_side_ready",
+      "time": 148
+    },
+    {
+      "id": "half_apothem_ready",
+      "time": 157
+    },
+    {
+      "id": "polygon_6_ready",
+      "time": 171.6
+    },
+    {
+      "id": "polygon_12_ready",
+      "time": 176.4
+    },
+    {
+      "id": "polygon_24_ready",
+      "time": 181
+    },
+    {
+      "id": "polygon_48_ready",
+      "time": 185.6
+    },
+    {
+      "id": "polygon_96_ready",
+      "time": 190.2
+    },
+    {
+      "id": "calculation_table_ready",
+      "time": 200.6
+    },
+    {
+      "id": "rounding_cell_ready",
+      "time": 207.6
+    },
+    {
+      "id": "finite_gap_ready",
+      "time": 218
+    }
+  ],
+  "focus_windows": [
+    {
+      "id": "ratio_meaning",
+      "start": 1.8,
+      "end": 15.8
+    },
+    {
+      "id": "chord_before",
+      "start": 17.6,
+      "end": 21
+    },
+    {
+      "id": "chord_growth",
+      "start": 25.6,
+      "end": 43.8
+    },
+    {
+      "id": "corner_triangle",
+      "start": 45.6,
+      "end": 51
+    },
+    {
+      "id": "corner_shrink",
+      "start": 55.6,
+      "end": 69.8
+    },
+    {
+      "id": "side_similarity",
+      "start": 72.2,
+      "end": 86
+    },
+    {
+      "id": "normalized_bounds",
+      "start": 86.6,
+      "end": 97.8
+    },
+    {
+      "id": "hexagon_side",
+      "start": 99.6,
+      "end": 107
+    },
+    {
+      "id": "hexagon_seed",
+      "start": 107.6,
+      "end": 123.8
+    },
+    {
+      "id": "half_geometry",
+      "start": 125.6,
+      "end": 132
+    },
+    {
+      "id": "half_pythagoras",
+      "start": 133.6,
+      "end": 140
+    },
+    {
+      "id": "half_substitution",
+      "start": 142,
+      "end": 146
+    },
+    {
+      "id": "half_side",
+      "start": 148,
+      "end": 156
+    },
+    {
+      "id": "half_apothem",
+      "start": 157,
+      "end": 167.8
+    },
+    {
+      "id": "interval_6",
+      "start": 171.6,
+      "end": 175.4
+    },
+    {
+      "id": "interval_12",
+      "start": 176.4,
+      "end": 180
+    },
+    {
+      "id": "interval_24",
+      "start": 181,
+      "end": 184.6
+    },
+    {
+      "id": "interval_48",
+      "start": 185.6,
+      "end": 189.2
+    },
+    {
+      "id": "interval_96",
+      "start": 190.2,
+      "end": 193.8
+    },
+    {
+      "id": "calculation_table",
+      "start": 200.6,
+      "end": 207
+    },
+    {
+      "id": "rounding_cell",
+      "start": 207.6,
+      "end": 217
+    },
+    {
+      "id": "finite_gap",
+      "start": 218,
+      "end": 225.8
+    }
+  ],
+  "evidence_type": "native interpolation with vector text/TeX placeholders; no renderer or pixels"
+}

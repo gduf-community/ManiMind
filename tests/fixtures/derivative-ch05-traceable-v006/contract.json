@@ -1,0 +1,366 @@
+{
+  "schema_version": 1,
+  "project_id": "math-derivative-ch05-monotonicity-20261102",
+  "units": [
+    {
+      "id": "opening",
+      "asset": "visual_v004",
+      "function": "自然承接已会求导，明确函数及本课增长问题。",
+      "baseline_interval": [
+        0,
+        20.633333333333333
+      ],
+      "baseline_reference_times": [
+        4,
+        16,
+        23
+      ],
+      "features": [
+        {
+          "id": "title-to-question",
+          "kind": "process",
+          "claim": "先标题，再x³-3x及哪段升降的问题，不重讲差商。"
+        }
+      ]
+    },
+    {
+      "id": "shared-input",
+      "asset": "visual_v004",
+      "function": "同一输入联动函数点、切线、导数点和数值，分清函数高度与导数值。",
+      "baseline_interval": [
+        20.633333333333333,
+        65.73333333333333
+      ],
+      "baseline_reference_times": [
+        40,
+        48,
+        58
+      ],
+      "features": [
+        {
+          "id": "common-x-motion",
+          "kind": "process",
+          "claim": "贯穿竖线及两图中的点共用x；切线与下方导数点随相同位置更新。"
+        },
+        {
+          "id": "different-y-meanings",
+          "kind": "state",
+          "claim": "上图纵坐标f(x)，下图f'(x)；轴义、颜色与单独数值读数可辨。"
+        }
+      ]
+    },
+    {
+      "id": "first-sign-turn",
+      "asset": "visual_v004",
+      "function": "保留-1处从正到零到负及函数增到减的对应。",
+      "baseline_interval": [
+        65.73333333333333,
+        125.1
+      ],
+      "baseline_reference_times": [
+        89,
+        93,
+        97
+      ],
+      "features": [
+        {
+          "id": "positive-zero-negative",
+          "kind": "process",
+          "claim": "函数点先升，-1处切线水平，再下降；导数点同步过零。"
+        }
+      ]
+    },
+    {
+      "id": "second-sign-turn",
+      "asset": "visual_v004",
+      "function": "保留1处负到零到正与函数由减转增的对应。",
+      "baseline_interval": [
+        65.73333333333333,
+        125.1
+      ],
+      "baseline_reference_times": [
+        111,
+        115,
+        119
+      ],
+      "features": [
+        {
+          "id": "negative-zero-positive",
+          "kind": "process",
+          "claim": "函数点先降，1处切线水平，再上升；导数点同步过零。"
+        }
+      ]
+    },
+    {
+      "id": "factor-sign-reasons",
+      "asset": "visual_v004",
+      "function": "因式符号解释整个实数轴三段正负正，不用有限取样代替全段分析。",
+      "baseline_interval": [
+        125.1,
+        171.16666666666666
+      ],
+      "baseline_reference_times": [
+        141,
+        147,
+        157,
+        162.667,
+        167.717,
+        173
+      ],
+      "features": [
+        {
+          "id": "roots-and-factorization",
+          "kind": "state",
+          "claim": "导数3(x-1)(x+1)及-1、1零点把实数轴分段。"
+        },
+        {
+          "id": "three-interval-reasons",
+          "kind": "process",
+          "claim": "依次左段两负得正，中段异号得负，右段两正得正；相应增减增与三个开区间完整保留。"
+        }
+      ]
+    },
+    {
+      "id": "secant-to-tangent",
+      "asset": "visual_v004",
+      "function": "先比较区间内两点，再寻找平行割线的内部切线。",
+      "baseline_interval": [
+        171.16666666666666,
+        243.96666666666664
+      ],
+      "baseline_reference_times": [
+        193,
+        201,
+        207,
+        208,
+        211,
+        215
+      ],
+      "features": [
+        {
+          "id": "moving-right-endpoint",
+          "kind": "process",
+          "claim": "固定a，右点b向右且升高，两点连线逐步形成正斜率割线。"
+        },
+        {
+          "id": "internal-parallel-tangent",
+          "kind": "process",
+          "claim": "保留两端点及割线，内部切点移动到c，最终切线平行于割线。"
+        }
+      ]
+    },
+    {
+      "id": "interval-theorem",
+      "asset": "visual_v004",
+      "function": "区间条件与中值定理连接到任意两点高低关系。",
+      "baseline_interval": [
+        171.16666666666666,
+        243.96666666666664
+      ],
+      "baseline_reference_times": [
+        223,
+        227,
+        237.928,
+        239
+      ],
+      "features": [
+        {
+          "id": "conditions-and-identity",
+          "kind": "state",
+          "claim": "整个开区间可导且处处f'>0，a<c<b，并有f(b)-f(a)=f'(c)(b-a)>0；可导蕴含所需连续性。"
+        },
+        {
+          "id": "arbitrary-pair-conclusion",
+          "kind": "process",
+          "claim": "由条件和中值定理推出任意a<b时f(a)<f(b)，再说明处处负导数时严格递减。"
+        }
+      ]
+    },
+    {
+      "id": "isolated-zero",
+      "asset": "visual_v004",
+      "function": "x³实际经过原点仍上升，并用立方差支持全实数严格递增。",
+      "baseline_interval": [
+        243.96666666666664,
+        295.0
+      ],
+      "baseline_reference_times": [
+        257,
+        266,
+        278,
+        288.75
+      ],
+      "features": [
+        {
+          "id": "cross-zero-with-horizontal-tangent",
+          "kind": "process",
+          "claim": "点先靠近原点，在零导数和水平切线处停留，再继续向右上方。"
+        },
+        {
+          "id": "cube-difference-reason",
+          "kind": "state",
+          "claim": "保留b³-a³=(b-a)(a²+ab+b²)>0(a<b)与全实数严格递增的理由。"
+        }
+      ]
+    },
+    {
+      "id": "disconnected-domain",
+      "asset": "visual_v004",
+      "baseline_interval": [
+        295.0,
+        337.06666666666666
+      ],
+      "function": "分别递增的两支与跨域反序比较，明确整个区间定义和可导条件的必要性",
+      "features": [
+        {
+          "id": "disconnected-model-domain",
+          "kind": "state",
+          "claim": "q(x)=-1/x、q'(x)=1/x²>0与D=(-∞,0)∪(0,+∞)；保留两支、零处空点和无定义说明"
+        },
+        {
+          "id": "left-branch-increase",
+          "kind": "process",
+          "claim": "左支内部x从-2到-1，q从0.5到1；同一tracker驱动点及两项读数，始终不跨零"
+        },
+        {
+          "id": "right-branch-increase",
+          "kind": "process",
+          "claim": "右支另起x=0.5到1，q从-2到-1；独立正支内上升且不把两支连成跨零运动"
+        },
+        {
+          "id": "cross-gap-order-reversal",
+          "kind": "process",
+          "claim": "保留A=(-1,1)、B=(1,-1)，输入-1<1但q(-1)=1>q(1)=-1，说明两支正导数不足以推出断域整体递增"
+        },
+        {
+          "id": "missing-whole-interval-condition",
+          "kind": "state",
+          "claim": "[-1,1]含0且q(0)无定义，函数未在整个区间定义，中值定理所需条件缺失"
+        },
+        {
+          "id": "separate-intervals-not-merged",
+          "kind": "state",
+          "claim": "分别在(-∞,0)与(0,+∞)递增，不能跨未定义的零点合并判断"
+        }
+      ]
+    },
+    {
+      "id": "closing-handoff",
+      "asset": "visual_v004",
+      "function": "区间总结及零导数是否改变增减的后课问题。",
+      "baseline_interval": [
+        337.06666666666666,
+        371.3
+      ],
+      "baseline_reference_times": [
+        372,
+        381.096,
+        391.95
+      ],
+      "features": [
+        {
+          "id": "summary-and-handoff",
+          "kind": "process",
+          "claim": "先给处处正负导数与增减的区间条件，再问零导数处增减一定改变吗，衔接极值课。"
+        }
+      ]
+    }
+  ],
+  "version": "v006",
+  "status": "not_reviewed",
+  "writer": "01a19f6b-174f-7431-a0fd-2adf59301a9e",
+  "consumers": [
+    "main",
+    "native tests",
+    "independent reviewers"
+  ],
+  "lifecycle": "CH05 v006 full current-v004 inventory",
+  "invalidation": "Source, clock, plan, baseline or current evidence changes",
+  "assets": {
+    "visual_v004": {
+      "path": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v004/manim/media/manimgl/understanding.mp4",
+      "sha256": "c2398dcf481d204d6b01cc8dfb7562e6b984679ba5dd8bfa698f677a0f028254",
+      "duration": 371.3
+    }
+  },
+  "baseline_selection": "Complete current visual-v004 content including disconnected-domain correction; no old layout/old media baseline",
+  "improvement_targets": [
+    {
+      "id": "factor_to_roots",
+      "operation": "solve_zero_factors",
+      "source": "两个可见因子",
+      "target": "各自=0与x=-1/1",
+      "purpose": "保留因子来源和输入身份，不重教求导"
+    },
+    {
+      "id": "roots_to_boundaries",
+      "operation": "locate_real_axis",
+      "source": "两根中的位置数值",
+      "target": "数轴两个分界",
+      "purpose": "位置不是函数值"
+    },
+    {
+      "id": "left_factor_signs",
+      "operation": "evaluate_factor_signs",
+      "source": "x<-1时两因子",
+      "target": "两负相乘>0和增",
+      "purpose": "因子作用于整段"
+    },
+    {
+      "id": "middle_factor_signs",
+      "operation": "evaluate_factor_signs",
+      "source": "-1<x<1时两因子",
+      "target": "异号相乘<0和减",
+      "purpose": "说明负号来路"
+    },
+    {
+      "id": "right_factor_signs",
+      "operation": "evaluate_factor_signs",
+      "source": "x>1时两因子",
+      "target": "两正相乘>0和增",
+      "purpose": "不是有限曲线样本推全域"
+    },
+    {
+      "id": "witness_to_quotient",
+      "operation": "mean_value_identity",
+      "source": "图上f(a),f(b),a,b及切线f'(c)",
+      "target": "差商=f'(c)",
+      "purpose": "先保留图上来源，再逐项送入中值定理"
+    },
+    {
+      "id": "quotient_to_product",
+      "operation": "multiply_positive_delta",
+      "source": "差商等式",
+      "target": "函数值差=f'(c)(b-a)",
+      "purpose": "两因子分时移动避免交叉，b-a>0"
+    },
+    {
+      "id": "positive_difference",
+      "operation": "positive_product",
+      "source": "正导数和正b-a",
+      "target": "f(b)-f(a)>0",
+      "purpose": "两正因子的积解释函数值差"
+    },
+    {
+      "id": "difference_to_order",
+      "operation": "compare_function_values",
+      "source": "正的函数值差",
+      "target": "a<b推出f(a)<f(b)",
+      "purpose": "两函数值错峰换序，保留任意性与区间条件"
+    }
+  ],
+  "evidence_limits": [
+    "New source-motion goals are not claimed as old baseline capabilities",
+    "Author inventory, not independent comparison"
+  ],
+  "repair_targets": [
+    {
+      "finding": "CH05-A01",
+      "change": "MVT explanation above the left witness, unchanged size; no text in quotient-to-product lane"
+    },
+    {
+      "finding": "CH05-A02",
+      "change": "Positive factors below left witness, unchanged size; retire with witness before separate decreasing case"
+    }
+  ]
+}

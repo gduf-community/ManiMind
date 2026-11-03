@@ -1,0 +1,81 @@
+{
+  "project_id": "derivative-local-20261028",
+  "title": "导数为何是瞬时变化率",
+  "workflow_profile": "configs/visual-first-workflow-v3.1.json",
+  "revision_mode": "fresh",
+  "scene": "examples/derivative_visual.py",
+  "scene_class": "DerivativeLesson",
+  "duration": 234,
+  "fps": 30,
+  "resolution": [1920, 1080],
+  "subtitle_reserve": {"pixel_top": 984, "scene_y_max_for_bottom": -3.288888889},
+  "audience": "已经会代数展开与约分的高中生、大学入门学习者",
+  "prior_knowledge": ["平面坐标、直线斜率", "平方展开与公因式", "不预设求导公式或严格极限定义"],
+  "understanding_goals": [
+    "用两点的增量比说明平均变化率，再从两侧割线的共同极限解释瞬时变化率",
+    "说明 h 仍非零时才可约分，趋近零不是把零代进原来的商",
+    "用共同尺度坐标及趋零余项解释局部近似直线，而非靠拉伸图像",
+    "说明绝对值函数在零点左右斜率不同，因而不存在共同的导数"
+  ],
+  "sources": ["src/manimind/components/catalog.py"],
+  "source_references": [
+    {"id": "openstax-3-1", "title": "OpenStax Calculus Volume 1, 3.1 Defining the Derivative", "url": "https://openstax.org/books/calculus-volume-1/pages/3-1-defining-the-derivative", "accessed": "2026-10-28", "use": "差商、割线到切线、导数和瞬时变化率定义；选取 f=x²、a=1 自行推演，不复制图表或课文", "license": "CC BY-NC-SA 4.0; retain attribution and check applicable reuse terms before publication"}
+  ],
+  "source_dependencies": [
+    {"path": "src/manimind/experiments/understanding_support.py", "use": "真实时钟 focus_begin/end 与焦点文件"},
+    {"path": "src/manimind/experiments/visual_first_support.py", "use": "静音事件记录"},
+    {"path": "src/manimind/experiments/freeform_support.py", "use": "原生 Scene、30fps 时间推进、显式输出目录、文字/数字工厂"},
+    {"path": "src/manimind/components/typography.py", "use": "中文 FreeType 图像及固定数字字形"},
+    {"path": "src/manimind/components/formula_motion.py", "use": "原生 Tex 语义符号和 matching_transform；不复制其实现"},
+    {"path": "src/manimind/components/catalog.py", "use": "字体来源与字体索引"},
+    {"path": "src/manimind/postproduce/understanding_render.py", "use": "未来主控渲染的来源绑定、媒体和抽帧入口，本轮不调用"}
+  ],
+  "mathematical_facts": [
+    {"id": "secant", "statement": "f(x)=x²，P=(1,1)，Q=(1+h,(1+h)²)，h≠0；m=(f(1+h)-f(1))/h", "basis": "OpenStax 3.1 差商定义，作者具体代入", "conditions": "x,y 为抽象无量纲坐标；h 为有正负的水平增量，商描述每单位 x 的 y 增量"},
+    {"id": "algebra", "statement": "((1+h)²-1)/h=(1+2h+h²-1)/h=(2h+h²)/h=h(2+h)/h=2+h", "basis": "代数恒等式；每一步仅对 h≠0 的差商成立", "conditions": "约掉的是非零公因子 h，不是在原商中代入 0"},
+    {"id": "derivative", "statement": "h→0+ 和 h→0- 时 2+h 都趋向 2，故 f'(1)=2，切线为 y-1=2(x-1)", "basis": "OpenStax 3.1 导数定义与直线点斜式", "conditions": "有限共同极限；原差商在 h=0 未定义，不妨碍极限存在"},
+    {"id": "zoom", "statement": "s>0，U=(x-1)/s，V=(y-1)/s；曲线真实变成 V=((1+sU)²-1)/s=2U+sU²。|U|≤1 时 |V-2U|≤s，s→0+ 后在此固定窗口趋近 V=2U", "basis": "作者由平方函数精确推导；同一 s 作用于两轴且同一绘图单位长度", "conditions": "在固定有界 U 区间谈局部近似；不宣称整条抛物线变为直线，也不将 s 设为0"},
+    {"id": "corner", "statement": "g(x)=|x|，a=0；h>0 时 |h|/h=1，h<0 时 |h|/h=-1，故 g'(0) 不存在", "basis": "作者按导数定义给出的边界反例", "conditions": "两侧有限斜率不同，接近同一个点并不足以保证可导"},
+    {"id": "approximation", "statement": "f(1+h)-f(1)=2h+h²；|h|≪1 时以2h近似增量，非零h时相对线性项的误差为|h|/2", "basis": "作者的精确余项分析", "conditions": "描述局部变化率；若坐标带单位，导数单位为输出单位/输入单位，本片不强配物理单位"}
+  ],
+  "cues": [
+    {"id": "secant", "duration": 24, "heading": "从两个点开始", "visual": "单幅 y=x² 图上固定 P，右侧 Q 与真实割线、横纵增量逐个出现，连到差商。", "learning_purpose": "先让斜率与平均变化率有同一个可指认的几何对象。", "anchors": [{"id": "two_points_ready", "meaning": "P、Q、割线与函数已出现"}, {"id": "average_rate_ready", "meaning": "两条增量线段、差商和平均变化率文字已出现"}]},
+    {"id": "sides", "duration": 28, "heading": "两侧靠近", "visual": "h=±r 的两点同步靠近 P；两条割线和对应 h、斜率读数由同一个r驱动，r从0.6连续降到0.06，始终非零。", "learning_purpose": "两侧都要考察；读数给出走向2的观察，再交给精确代数解释。", "anchors": [{"id": "both_sides_ready", "meaning": "左右点、割线、读数和 h≠0 差商已出现"}, {"id": "both_sides_near", "meaning": "两侧都靠近但没有重合，h=±0.06"}]},
+    {"id": "algebra", "duration": 64, "heading": "非零时先化简", "visual": "大字差商原生符号匹配：函数代入、平方展开、常数消去、提取公因子、划掉上下非零h、得到2+h；h≠0贯穿。", "learning_purpose": "提供精确原因而非只报读数；每个关键操作后保留可读时间。", "anchors": [{"id": "quotient_ready", "meaning": "差商及非零条件可见"}, {"id": "substitute_ready", "meaning": "平方函数代入落定"}, {"id": "expand_ready", "meaning": "1+2h+h²-1的展开落定"}, {"id": "reduce_ready", "meaning": "消去1与-1后剩余2h+h²"}, {"id": "factor_ready", "meaning": "h(2+h)/h可见"}, {"id": "cancellation_ready", "meaning": "被约掉的两个h划线，h≠0仍可见"}, {"id": "simplify_ready", "meaning": "2+h落定，非零条件仍在"}]},
+    {"id": "limit", "duration": 30, "heading": "趋近而非代零", "visual": "唯一一幅差商图m=2+h，在h=0处留空心点。左右点靠近同一个高度；原商0/0未定义与极限值分开显示。", "learning_purpose": "把原商是否定义和邻近值的共同走向分开，再命名导数。", "anchors": [{"id": "hole_ready", "meaning": "差商的孔洞和h=0原商未定义可见"}, {"id": "derivative_ready", "meaning": "两侧靠近后导数极限值2落定"}]},
+    {"id": "zoom", "duration": 50, "heading": "共同尺度的局部直线", "visual": "U、V坐标均由同一s缩放；显示精确变换与V=2U+sU²，s从0.5到0.1再到0.01。固定U=1的误差线段随s缩短，黄色V=2U不变。", "learning_purpose": "在固定窗口以真实余项的趋零解释看似直线，不靠视觉拉直。", "anchors": [{"id": "zoom_coordinates_ready", "meaning": "同尺度坐标、曲线、参考直线和中心P可见"}, {"id": "zoom_substitution_ready", "meaning": "x=1+sU和y=(1+sU)²可见"}, {"id": "zoom_identity_ready", "meaning": "完整V恒等式可见"}, {"id": "zoom_error_ready", "meaning": "误差线段、s读数及有界窗口误差估计可见"}, {"id": "zoom_near_line", "meaning": "s=0.01，实际曲线靠近不动的V=2U"}]},
+    {"id": "corner", "duration": 26, "heading": "左右不一致的反例", "visual": "唯一一幅|x|图，左右点同步靠近0，两条直线方向始终不同，分段差商为±1。", "learning_purpose": "说明不是所有曲线都能在一点得到共同瞬时变化率。", "anchors": [{"id": "corner_sides_ready", "meaning": "|x|左右两条方向和分段差商已出现"}, {"id": "corner_result_ready", "meaning": "左右斜率不同，0处不可导结论可见"}]},
+    {"id": "summary", "duration": 12, "heading": "回到一点的变化率", "visual": "回到y=x²及真实切线，给出f'(1)=2、点斜式和精确增量2h+h²到局部近似2h。", "learning_purpose": "将导数值、几何方向和每单位输入的输出增量收束到同一关系。", "anchors": [{"id": "tangent_summary_ready", "meaning": "切线、导数值、精确余项及局部近似均可见"}]}
+  ],
+  "focus_intents": [
+    {"id": "two_points", "cue": "secant", "claim": "两个点确定一条割线。"},
+    {"id": "average_rate", "cue": "secant", "claim": "横纵增量之比是这段区间的平均变化率。"},
+    {"id": "both_sides_approach", "cue": "sides", "claim": "两侧割线的斜率都朝2靠近；仍有两个不同的点。"},
+    {"id": "quotient", "cue": "algebra", "claim": "先保留h≠0的差商。"},
+    {"id": "substitute", "cue": "algebra", "claim": "把平方函数代入差商。"},
+    {"id": "expand", "cue": "algebra", "claim": "完整展开平方，保留减去的1。"},
+    {"id": "reduce", "cue": "algebra", "claim": "常数相消只留下2h+h²。"},
+    {"id": "factor", "cue": "algebra", "claim": "分子提取公因子h。"},
+    {"id": "cancel_nonzero", "cue": "algebra", "claim": "上下h能约去，因为此时h≠0。"},
+    {"id": "simplify", "cue": "algebra", "claim": "所有这些非零h处，差商精确等于2+h。"},
+    {"id": "punctured_quotient", "cue": "limit", "claim": "h=0时原商未定义，差商图对应一个孔洞。"},
+    {"id": "limit_approach", "cue": "limit", "claim": "从正负两侧走近零，斜率走向同一个高度。"},
+    {"id": "derivative_value", "cue": "limit", "claim": "共同极限2就是f在1处的导数。"},
+    {"id": "common_scale", "cue": "zoom", "claim": "以P为中心，横纵增量同时除以s。"},
+    {"id": "zoom_substitution", "cue": "zoom", "claim": "新坐标U对应原坐标x=1+sU。"},
+    {"id": "zoom_identity", "cue": "zoom", "claim": "变换后实际曲线是2U+sU²。"},
+    {"id": "local_linearity", "cue": "zoom", "claim": "固定有界窗口内sU²随着s缩小，曲线靠近V=2U。"},
+    {"id": "corner_disagreement", "cue": "corner", "claim": "绝对值在0两侧斜率始终分别为1和-1。"},
+    {"id": "instantaneous_rate", "cue": "summary", "claim": "导数2同时对应切线斜率和局部增量的线性部分。"}
+  ],
+  "review_times": [2, 3, 7, 12, 25, 28, 36, 43, 49, 54, 56, 60, 61.5, 63, 67, 68, 70, 72, 78, 79, 80.5, 82, 87, 89, 91, 97, 98, 99, 100, 104, 105, 106.5, 108, 114, 120, 126, 130, 132, 134, 143, 150, 156, 157, 161, 163, 168, 170, 174, 178, 180, 183, 186, 194, 200, 205, 208, 210, 218, 226, 230, 233],
+  "authorship": "supervised_math_author_derivative",
+  "production_boundary": {"status": "bounded_source_and_plan_for_lead_handoff", "rendered": false, "visual_approved": false, "narration_approved": false, "audio_generated": false, "independent_review_required": true, "narration": "Intent draft only; rewrite against actual approved silent pixels", "execution": "No SSH, GPU service, render, publication or frozen-module modification in author turn"},
+  "state_contracts": [
+    {"state": "plan.json / narration-draft-v001.json", "writer": "derivative mathematical author; lead owns next stage", "consumers": ["Understanding renderer", "independent reviewer", "post-visual narrator"], "lifecycle": "Long-term project content and source facts for this fresh topic", "invalidation": "Science, scene, source, timing or workflow profile change invalidates downstream evidence and intent alignment"},
+    {"state": "tests/fixtures/derivative-visual", "writer": "derivative mathematical author", "consumers": ["offline tests", "lead"], "lifecycle": "Versioned reproducible test inputs, independent of ignored runtime and outputs", "invalidation": "Source or plan change requires explicit fixture updates; fixtures never grant approval"},
+    {"state": "UnderstandingScene open/closed focus, chapter_times, motion_samples, symbol_transitions", "writer": "Actual native scene execution", "consumers": ["test harness", "render teardown", "independent reviewer"], "lifecycle": "Per-scene process memory; initialized at construct/setup, drivers removed after their chapter, disposed at process end", "invalidation": "Any runtime/source/plan change; samples annotate geometry and never self-certify readable pixels"},
+    {"state": "Future outputs/<project_id>/<attempt>/focus-events.json, visual-events.json, derivative-motion.json and typography assets", "writer": "understanding_render and native scene only when lead explicitly runs it", "consumers": ["independent reviewer", "narrator", "audio scheduler"], "lifecycle": "Derived media and measured evidence for one exact render; no session notes in project facts", "invalidation": "Any bound source, profile, timing, font, native runtime or media change; independent review must consume actual pixels"},
+    {"state": "Future runtime/sessions/<session_id>/review reports", "writer": "Independent reviewer, never this author", "consumers": ["lead", "publication gate"], "lifecycle": "Short-term review of exact bound render/text", "invalidation": "Any reviewed binding or evidence change"}
+  ]
+}

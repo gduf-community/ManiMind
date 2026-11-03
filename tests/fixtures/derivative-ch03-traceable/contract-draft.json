@@ -1,0 +1,1558 @@
+{
+  "schema_version": 1,
+  "status": "author_draft_not_frozen",
+  "writer": "01a19f5e-8733-71c0-ac2d-d507423acd13",
+  "consumers": [
+    "independent regression reviewer",
+    "lead",
+    "author"
+  ],
+  "lifecycle": "This new author candidate; prior pixel diagnostics remain invalid as approval",
+  "invalidation": "Baseline bytes or task content changes",
+  "assets": {
+    "selected_visual_v006": {
+      "path": "outputs/math-derivative-ch03-rules-20261102/visual-v006/manim/media/manimgl/understanding.mp4",
+      "sha256": "4f4dd93961857bd0906895eb80a688008c431954a4a3b5484868780f3ff46fc5",
+      "duration": 433.866666667
+    }
+  },
+  "baseline_scope": "Complete current mathematical sequence, conditions, units and real graph motion; old target-row reveal is not a claimed source-to-target achievement",
+  "new_improvement_goals": [
+    {
+      "id": "linear_divide_h",
+      "cue": "linearity",
+      "operation": "linear divide h",
+      "source": "\\Delta(u\\pm v)=\\Delta u\\pm\\Delta v",
+      "target": "\\frac{\\Delta(u\\pm v)}h=\\frac{\\Delta u}h\\pm\\frac{\\Delta v}h",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        16.4,
+        19.0
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "source copy",
+        "clear old syntax if consuming",
+        "unchanged source-shape travel",
+        "land and resolve",
+        "new syntax"
+      ]
+    },
+    {
+      "id": "linear_take_limit",
+      "cue": "linearity",
+      "operation": "linear take limit",
+      "source": "\\frac{\\Delta(u\\pm v)}h=\\frac{\\Delta u}h\\pm\\frac{\\Delta v}h",
+      "target": "(u\\pm v)'=u'\\pm v'",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        20.0,
+        23.0
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "source copy",
+        "clear old syntax if consuming",
+        "unchanged source-shape travel",
+        "land and resolve",
+        "new syntax"
+      ]
+    },
+    {
+      "id": "scalar_divide_h",
+      "cue": "linearity",
+      "operation": "scalar divide h",
+      "source": "\\Delta(cu)=c\\Delta u",
+      "target": "\\frac{\\Delta(cu)}h=c\\frac{\\Delta u}h",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        28.0,
+        30.5
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "source copy",
+        "clear old syntax if consuming",
+        "unchanged source-shape travel",
+        "land and resolve",
+        "new syntax"
+      ]
+    },
+    {
+      "id": "scalar_take_limit",
+      "cue": "linearity",
+      "operation": "scalar take limit",
+      "source": "\\frac{\\Delta(cu)}h=c\\frac{\\Delta u}h",
+      "target": "(cu)'=cu'",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        31.5,
+        34.0
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "source copy",
+        "clear old syntax if consuming",
+        "unchanged source-shape travel",
+        "land and resolve",
+        "new syntax"
+      ]
+    },
+    {
+      "id": "product_collect_areas",
+      "cue": "product_area",
+      "operation": "product collect areas",
+      "source": "v\\Delta u ; u\\Delta v ; \\Delta u\\Delta v",
+      "target": "\\Delta(uv)=v\\Delta u+u\\Delta v+\\Delta u\\Delta v",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        48.9,
+        52.2
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "source copy",
+        "one role at a time",
+        "land and resolve",
+        "new syntax"
+      ]
+    },
+    {
+      "id": "product_divide_h",
+      "cue": "product_limit",
+      "operation": "product divide h",
+      "source": "\\Delta(uv)=v\\Delta u+u\\Delta v+\\Delta u\\Delta v",
+      "target": "\\frac{\\Delta(uv)}h=v\\frac{\\Delta u}h+u\\frac{\\Delta v}h+\\frac{\\Delta u}h\\Delta v",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        3.0,
+        6.2
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "source copy",
+        "clear old syntax if consuming",
+        "unchanged source-shape travel",
+        "land and resolve",
+        "new syntax"
+      ]
+    },
+    {
+      "id": "product_take_limits",
+      "cue": "product_limit",
+      "operation": "product take limits",
+      "source": "\\frac{\\Delta(uv)}h=v\\frac{\\Delta u}h+u\\frac{\\Delta v}h+\\frac{\\Delta u}h\\Delta v",
+      "target": "v u'+u v'+u'\\cdot0",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        47.2,
+        50.0
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "source copy",
+        "clear old syntax if consuming",
+        "unchanged source-shape travel",
+        "land and resolve",
+        "new syntax"
+      ]
+    },
+    {
+      "id": "product_remove_corner",
+      "cue": "product_limit",
+      "operation": "product remove corner",
+      "source": "v u'+u v'+u'\\cdot0",
+      "target": "(uv)'=u'v+uv'",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        50.4,
+        53.2
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "source copy",
+        "clear old syntax if consuming",
+        "unchanged source-shape travel",
+        "land and resolve",
+        "new syntax"
+      ]
+    },
+    {
+      "id": "product_example_first",
+      "cue": "product_example",
+      "operation": "product example first",
+      "source": "u=x^2,\\quad u'=2x;\\qquad v=\\sin x,\\quad v'=\\cos x",
+      "target": "f'(x)=2x\\sin x",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        18.5,
+        21.4
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "source copy",
+        "one role at a time",
+        "land and resolve",
+        "new syntax"
+      ]
+    },
+    {
+      "id": "product_example_second",
+      "cue": "product_example",
+      "operation": "product example second",
+      "source": "u=x^2,\\quad u'=2x;\\qquad v=\\sin x,\\quad v'=\\cos x",
+      "target": "+x^2\\cos x",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        22.0,
+        25.0
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "source copy",
+        "one role at a time",
+        "land and resolve",
+        "new syntax"
+      ]
+    },
+    {
+      "id": "quotient_build_difference",
+      "cue": "quotient_increment",
+      "operation": "quotient build difference",
+      "source": "q=\\frac uv",
+      "target": "\\Delta(u/v)=\\frac{u+\\Delta u}{v+\\Delta v}-\\frac uv",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        3.0,
+        6.0
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "source copy",
+        "clear old syntax if consuming",
+        "unchanged source-shape travel",
+        "land and resolve",
+        "new syntax"
+      ]
+    },
+    {
+      "id": "quotient_cross_multiply",
+      "cue": "quotient_increment",
+      "operation": "quotient cross multiply",
+      "source": "\\Delta(u/v)=\\frac{u+\\Delta u}{v+\\Delta v}-\\frac uv",
+      "target": "\\frac{v(u+\\Delta u)-u(v+\\Delta v)}{v(v+\\Delta v)}",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        22.2,
+        26.4
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "source copy",
+        "one role at a time",
+        "land and resolve",
+        "new syntax"
+      ]
+    },
+    {
+      "id": "quotient_expand_products",
+      "cue": "quotient_increment",
+      "operation": "quotient expand products",
+      "source": "\\frac{v(u+\\Delta u)-u(v+\\Delta v)}{v(v+\\Delta v)}",
+      "target": "\\frac{uv+v\\Delta u-uv-u\\Delta v}{v(v+\\Delta v)}",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        38.7,
+        42.2
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "source copy",
+        "clear old syntax if consuming",
+        "unchanged source-shape travel",
+        "land and resolve",
+        "new syntax"
+      ]
+    },
+    {
+      "id": "quotient_cancel_uv",
+      "cue": "quotient_increment",
+      "operation": "quotient cancel uv",
+      "source": "\\frac{uv+v\\Delta u-uv-u\\Delta v}{v(v+\\Delta v)}",
+      "target": "\\frac{v\\Delta u-u\\Delta v}{v(v+\\Delta v)}",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        43.0,
+        46.3
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "source copy",
+        "clear old syntax if consuming",
+        "unchanged source-shape travel",
+        "land and resolve",
+        "new syntax"
+      ]
+    },
+    {
+      "id": "quotient_divide_h",
+      "cue": "quotient_limit",
+      "operation": "quotient divide h",
+      "source": "\\Delta(u/v)=\\frac{v\\Delta u-u\\Delta v}{v(v+\\Delta v)}",
+      "target": "\\frac{\\Delta(u/v)}h=\\frac{v(\\Delta u/h)-u(\\Delta v/h)}{v(v+\\Delta v)}",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        3.0,
+        6.4
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "source copy",
+        "clear old syntax if consuming",
+        "unchanged source-shape travel",
+        "land and resolve",
+        "new syntax"
+      ]
+    },
+    {
+      "id": "quotient_numerator_limit",
+      "cue": "quotient_limit",
+      "operation": "quotient numerator limit",
+      "source": "\\frac{\\Delta(u/v)}h=\\frac{v(\\Delta u/h)-u(\\Delta v/h)}{v(v+\\Delta v)}",
+      "target": "\\frac{v u'-u v'}{v(v+\\Delta v)}",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        15.2,
+        18.5
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "source copy",
+        "clear old syntax if consuming",
+        "unchanged source-shape travel",
+        "land and resolve",
+        "new syntax"
+      ]
+    },
+    {
+      "id": "quotient_denominator_limit",
+      "cue": "quotient_limit",
+      "operation": "quotient denominator limit",
+      "source": "\\frac{v u'-u v'}{v(v+\\Delta v)}",
+      "target": "\\frac{v u'-u v'}{v(v+0)}",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        20.0,
+        23.2
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "source copy",
+        "clear old syntax if consuming",
+        "unchanged source-shape travel",
+        "land and resolve",
+        "new syntax"
+      ]
+    },
+    {
+      "id": "quotient_square_denominator",
+      "cue": "quotient_limit",
+      "operation": "quotient square denominator",
+      "source": "\\frac{v u'-u v'}{v(v+0)}",
+      "target": "\\left(\\frac uv\\right)'=\\frac{v u'-u v'}{v^2}\\quad(v\\ne0)",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        30.8,
+        33.8
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "source copy",
+        "clear old syntax if consuming",
+        "unchanged source-shape travel",
+        "land and resolve",
+        "new syntax"
+      ]
+    },
+    {
+      "id": "quotient_rule_order",
+      "cue": "quotient_limit",
+      "operation": "quotient rule order",
+      "source": "\\left(\\frac uv\\right)'=\\frac{v u'-u v'}{v^2}\\quad(v\\ne0)",
+      "target": "\\left(\\frac uv\\right)'=\\frac{u'v-uv'}{v^2}\\quad(v\\ne0)",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        34.4,
+        37.3
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "source copy",
+        "clear old syntax if consuming",
+        "unchanged source-shape travel",
+        "land and resolve",
+        "new syntax"
+      ]
+    },
+    {
+      "id": "cost_substitute",
+      "cue": "cost_example",
+      "operation": "cost substitute",
+      "source": "u'=2x,\\quad v'=1 ; C=x^2+4,\\quad A=\\frac{x^2+4}{x}\\quad(x>0)",
+      "target": "A'=\\frac{2x\\cdot x-(x^2+4)\\cdot1}{x^2}",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        23.3,
+        28.5
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "source copy",
+        "one role at a time",
+        "land and resolve",
+        "new syntax"
+      ]
+    },
+    {
+      "id": "cost_expand_numerator",
+      "cue": "cost_example",
+      "operation": "cost expand numerator",
+      "source": "A'=\\frac{2x\\cdot x-(x^2+4)\\cdot1}{x^2}",
+      "target": "\\frac{2x^2-x^2-4}{x^2}",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        34.0,
+        36.0
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "source copy",
+        "clear old syntax if consuming",
+        "unchanged source-shape travel",
+        "land and resolve",
+        "new syntax"
+      ]
+    },
+    {
+      "id": "cost_combine_squares",
+      "cue": "cost_example",
+      "operation": "cost combine squares",
+      "source": "\\frac{2x^2-x^2-4}{x^2}",
+      "target": "\\frac{x^2-4}{x^2}",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        36.2,
+        38.2
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "source copy",
+        "clear old syntax if consuming",
+        "unchanged source-shape travel",
+        "land and resolve",
+        "new syntax"
+      ]
+    },
+    {
+      "id": "cost_split_fraction",
+      "cue": "cost_example",
+      "operation": "cost split fraction",
+      "source": "\\frac{x^2-4}{x^2}",
+      "target": "\\frac{x^2}{x^2}-\\frac4{x^2}",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        38.5,
+        40.5
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "source copy",
+        "clear old syntax if consuming",
+        "unchanged source-shape travel",
+        "land and resolve",
+        "new syntax"
+      ]
+    },
+    {
+      "id": "cost_cancel_square",
+      "cue": "cost_example",
+      "operation": "cost cancel square",
+      "source": "\\frac{x^2}{x^2}-\\frac4{x^2}",
+      "target": "1-\\frac4{x^2}",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        40.8,
+        43.0
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "source copy",
+        "clear old syntax if consuming",
+        "unchanged source-shape travel",
+        "land and resolve",
+        "new syntax"
+      ]
+    }
+  ],
+  "units": [
+    {
+      "id": "opening",
+      "asset": "selected_visual_v006",
+      "function": "直接承接基本函数导数，不重讲首课",
+      "baseline_interval": [
+        0,
+        22.4
+      ],
+      "features": [
+        {
+          "id": "combination_handoff",
+          "kind": "state",
+          "claim": "承接基本导数，用平方乘正弦及平均成本的商提出组合增量问题",
+          "baseline_interval": [
+            0,
+            22.4
+          ],
+          "baseline_samples": [
+            {
+              "time": 4.48,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_4_48.jpg",
+              "frame_sha256": "d0cade8db3c920e1d06ba80620dbec5df3a54a4b5b7d3da18ccb989eeb378873",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 11.2,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_11_2.jpg",
+              "frame_sha256": "e866689cf2cb063e9ccc6f421f36dbd3495671b86be517c2052a47c3109be191",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 17.92,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_17_92.jpg",
+              "frame_sha256": "dae89e520b3f159ea24b070c7f1d8bd2a8b6f039cc73c590857d9323ab3c64c9",
+              "source": "Current selected v006 index; author inventory, not approval"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "linearity",
+      "asset": "selected_visual_v006",
+      "function": "用相同输入增量推导线性规则",
+      "baseline_interval": [
+        22.4,
+        78.233333
+      ],
+      "features": [
+        {
+          "id": "same_input_sum_difference",
+          "kind": "state",
+          "claim": "同一输入h下和差的增量恒等式，减法保留第二份增量的负号",
+          "baseline_interval": [
+            22.4,
+            78.233333
+          ],
+          "baseline_samples": [
+            {
+              "time": 33.567,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_33_567.jpg",
+              "frame_sha256": "6d87055f45740cae65e2e74e5810e1532c2235915c47db6ec0b298308290c0a7",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 50.317,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_50_317.jpg",
+              "frame_sha256": "88addb67d45991dc6aab4da52d892869a129a3f0b6923ef0c3ce3e5516d97cdb",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 67.067,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_67_067.jpg",
+              "frame_sha256": "0a9307b3f0d6837b7197de12864b21bdd6b6dc1c7d168673af1652293ce26fb9",
+              "source": "Current selected v006 index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "semantic_divide_and_limit",
+          "kind": "process",
+          "claim": "保留和差增量、同除h、极限与可读历史行；旧safe_formula未实现的源位置可见搬运属于本轮改进，不冒称旧已有",
+          "baseline_interval": [
+            22.4,
+            78.233333
+          ],
+          "baseline_samples": [
+            {
+              "time": 33.567,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_33_567.jpg",
+              "frame_sha256": "6d87055f45740cae65e2e74e5810e1532c2235915c47db6ec0b298308290c0a7",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 50.317,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_50_317.jpg",
+              "frame_sha256": "88addb67d45991dc6aab4da52d892869a129a3f0b6923ef0c3ce3e5516d97cdb",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 67.067,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_67_067.jpg",
+              "frame_sha256": "0a9307b3f0d6837b7197de12864b21bdd6b6dc1c7d168673af1652293ce26fb9",
+              "source": "Current selected v006 index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "fixed_scalar_and_conditions",
+          "kind": "state",
+          "claim": "c为固定常数，增量乘c到导数乘c；u、v在同一点可微",
+          "baseline_interval": [
+            22.4,
+            78.233333
+          ],
+          "baseline_samples": [
+            {
+              "time": 33.567,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_33_567.jpg",
+              "frame_sha256": "6d87055f45740cae65e2e74e5810e1532c2235915c47db6ec0b298308290c0a7",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 50.317,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_50_317.jpg",
+              "frame_sha256": "88addb67d45991dc6aab4da52d892869a129a3f0b6923ef0c3ce3e5516d97cdb",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 67.067,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_67_067.jpg",
+              "frame_sha256": "0a9307b3f0d6837b7197de12864b21bdd6b6dc1c7d168673af1652293ce26fb9",
+              "source": "Current selected v006 index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "linked_increment_bars",
+          "kind": "process",
+          "claim": "u=x²、v=x在x=1，同一个非零输入增量h逐步缩小；三条增量柱同步变小，和柱始终等于前两柱之和",
+          "baseline_interval": [
+            22.4,
+            78.233333
+          ],
+          "baseline_samples": [
+            {
+              "time": 33.567,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_33_567.jpg",
+              "frame_sha256": "6d87055f45740cae65e2e74e5810e1532c2235915c47db6ec0b298308290c0a7",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 50.317,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_50_317.jpg",
+              "frame_sha256": "88addb67d45991dc6aab4da52d892869a129a3f0b6923ef0c3ce3e5516d97cdb",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 67.067,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_67_067.jpg",
+              "frame_sha256": "0a9307b3f0d6837b7197de12864b21bdd6b6dc1c7d168673af1652293ce26fb9",
+              "source": "Current selected v006 index; author inventory, not approval"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "product_area",
+      "asset": "selected_visual_v006",
+      "function": "乘积增量必须同时追踪两因子的变化",
+      "baseline_interval": [
+        78.233333,
+        138.533333
+      ],
+      "features": [
+        {
+          "id": "area_model_and_current_values",
+          "kind": "state",
+          "claim": "u=2+x、v=1+x²在x=1取u=3,v=2，保留旧矩形、h近似读数与新乘积表达式",
+          "baseline_interval": [
+            78.233333,
+            138.533333
+          ],
+          "baseline_samples": [
+            {
+              "time": 90.293,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_90_293.jpg",
+              "frame_sha256": "12ca33454f6227814691bdce65fdcf85ed408a714fec4ff5e37af164d71d4520",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 108.383,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_108_383.jpg",
+              "frame_sha256": "7e85ab1b7d551fff5cebbd6a450ad7a13dc5de468659275e429d0fe2b9839256",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 126.473,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_126_473.jpg",
+              "frame_sha256": "a2ef16eb26dcaf14bb2e3d2286d380625013c2f8ff38f3cf7d034d07780b3245",
+              "source": "Current selected v006 index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "right_strip_v_du",
+          "kind": "process",
+          "claim": "横边增加Δu时，右条高仍为当前v，新增面积vΔu与右条同色对应",
+          "baseline_interval": [
+            78.233333,
+            138.533333
+          ],
+          "baseline_samples": [
+            {
+              "time": 90.293,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_90_293.jpg",
+              "frame_sha256": "12ca33454f6227814691bdce65fdcf85ed408a714fec4ff5e37af164d71d4520",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 108.383,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_108_383.jpg",
+              "frame_sha256": "7e85ab1b7d551fff5cebbd6a450ad7a13dc5de468659275e429d0fe2b9839256",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 126.473,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_126_473.jpg",
+              "frame_sha256": "a2ef16eb26dcaf14bb2e3d2286d380625013c2f8ff38f3cf7d034d07780b3245",
+              "source": "Current selected v006 index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "top_strip_u_dv",
+          "kind": "process",
+          "claim": "纵边增加Δv时，上条宽仍为当前u，新增面积uΔv与上条同色对应",
+          "baseline_interval": [
+            78.233333,
+            138.533333
+          ],
+          "baseline_samples": [
+            {
+              "time": 90.293,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_90_293.jpg",
+              "frame_sha256": "12ca33454f6227814691bdce65fdcf85ed408a714fec4ff5e37af164d71d4520",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 108.383,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_108_383.jpg",
+              "frame_sha256": "7e85ab1b7d551fff5cebbd6a450ad7a13dc5de468659275e429d0fe2b9839256",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 126.473,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_126_473.jpg",
+              "frame_sha256": "a2ef16eb26dcaf14bb2e3d2286d380625013c2f8ff38f3cf7d034d07780b3245",
+              "source": "Current selected v006 index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "corner_du_dv",
+          "kind": "process",
+          "claim": "右上角两边均为增量，角块面积ΔuΔv单列且不漏掉",
+          "baseline_interval": [
+            78.233333,
+            138.533333
+          ],
+          "baseline_samples": [
+            {
+              "time": 90.293,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_90_293.jpg",
+              "frame_sha256": "12ca33454f6227814691bdce65fdcf85ed408a714fec4ff5e37af164d71d4520",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 108.383,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_108_383.jpg",
+              "frame_sha256": "7e85ab1b7d551fff5cebbd6a450ad7a13dc5de468659275e429d0fe2b9839256",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 126.473,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_126_473.jpg",
+              "frame_sha256": "a2ef16eb26dcaf14bb2e3d2286d380625013c2f8ff38f3cf7d034d07780b3245",
+              "source": "Current selected v006 index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "exact_three_terms_signed_scope",
+          "kind": "state",
+          "claim": "三块合为精确乘积增量vΔu+uΔv+ΔuΔv；正增量面积示例与可带符号代数恒等式区分",
+          "baseline_interval": [
+            78.233333,
+            138.533333
+          ],
+          "baseline_samples": [
+            {
+              "time": 90.293,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_90_293.jpg",
+              "frame_sha256": "12ca33454f6227814691bdce65fdcf85ed408a714fec4ff5e37af164d71d4520",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 108.383,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_108_383.jpg",
+              "frame_sha256": "7e85ab1b7d551fff5cebbd6a450ad7a13dc5de468659275e429d0fe2b9839256",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 126.473,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_126_473.jpg",
+              "frame_sha256": "a2ef16eb26dcaf14bb2e3d2286d380625013c2f8ff38f3cf7d034d07780b3245",
+              "source": "Current selected v006 index; author inventory, not approval"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "product_limit",
+      "asset": "selected_visual_v006",
+      "function": "用Δu/h有界且Δv趋零解释余项消失",
+      "baseline_interval": [
+        138.533333,
+        200.6
+      ],
+      "features": [
+        {
+          "id": "divide_all_three_terms",
+          "kind": "state",
+          "claim": "三项均同除h，角项写为(Δu/h)Δv而非直接删掉小面积",
+          "baseline_interval": [
+            138.533333,
+            200.6
+          ],
+          "baseline_samples": [
+            {
+              "time": 150.947,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_150_947.jpg",
+              "frame_sha256": "444032ebd6565d218c923bd0a2213b796880289efec43d97d95be1f7d5429a36",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 169.567,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_169_567.jpg",
+              "frame_sha256": "e754b131679c3d30d17fdb111124327f5504d49a29a59eaca5ff15ced9b2d881",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 188.187,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_188_187.jpg",
+              "frame_sha256": "95b77e943a07151860628cad799dc4648a37a096fbabcc843b49b259d2698a63",
+              "source": "Current selected v006 index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "differentiability_and_bounded_reason",
+          "kind": "state",
+          "claim": "两个差商趋向有限导数，Δv趋零；同点可微使有限值乘趋零量的角项消失",
+          "baseline_interval": [
+            138.533333,
+            200.6
+          ],
+          "baseline_samples": [
+            {
+              "time": 150.947,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_150_947.jpg",
+              "frame_sha256": "444032ebd6565d218c923bd0a2213b796880289efec43d97d95be1f7d5429a36",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 169.567,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_169_567.jpg",
+              "frame_sha256": "e754b131679c3d30d17fdb111124327f5504d49a29a59eaca5ff15ced9b2d881",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 188.187,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_188_187.jpg",
+              "frame_sha256": "95b77e943a07151860628cad799dc4648a37a096fbabcc843b49b259d2698a63",
+              "source": "Current selected v006 index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "normalized_corner_motion",
+          "kind": "process",
+          "claim": "非零h逐步缩小，条块和角块连续收缩；同时显示归一化角块/h的近似读数，保留面积缩小与除以h后仍趋零的区别",
+          "baseline_interval": [
+            138.533333,
+            200.6
+          ],
+          "baseline_samples": [
+            {
+              "time": 150.947,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_150_947.jpg",
+              "frame_sha256": "444032ebd6565d218c923bd0a2213b796880289efec43d97d95be1f7d5429a36",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 169.567,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_169_567.jpg",
+              "frame_sha256": "e754b131679c3d30d17fdb111124327f5504d49a29a59eaca5ff15ced9b2d881",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 188.187,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_188_187.jpg",
+              "frame_sha256": "95b77e943a07151860628cad799dc4648a37a096fbabcc843b49b259d2698a63",
+              "source": "Current selected v006 index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "both_factor_rates",
+          "kind": "state",
+          "claim": "保留u'v与uv'两项：每项只有一个变化率，另一因子取同一点当前值",
+          "baseline_interval": [
+            138.533333,
+            200.6
+          ],
+          "baseline_samples": [
+            {
+              "time": 150.947,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_150_947.jpg",
+              "frame_sha256": "444032ebd6565d218c923bd0a2213b796880289efec43d97d95be1f7d5429a36",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 169.567,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_169_567.jpg",
+              "frame_sha256": "e754b131679c3d30d17fdb111124327f5504d49a29a59eaca5ff15ced9b2d881",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 188.187,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_188_187.jpg",
+              "frame_sha256": "95b77e943a07151860628cad799dc4648a37a096fbabcc843b49b259d2698a63",
+              "source": "Current selected v006 index; author inventory, not approval"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "product_example",
+      "asset": "selected_visual_v006",
+      "function": "把基本函数导数调用为乘积规则的输入",
+      "baseline_interval": [
+        200.6,
+        233.4
+      ],
+      "features": [
+        {
+          "id": "factor_derivatives_and_radians",
+          "kind": "state",
+          "claim": "x²sin x的u,v及u'=2x,v'=cos x逐项标出，保留实数域和弧度",
+          "baseline_interval": [
+            200.6,
+            233.4
+          ],
+          "baseline_samples": [
+            {
+              "time": 207.16,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_207_16.jpg",
+              "frame_sha256": "01856a6b75e64a92a6c94485245b9e74e3fddfb4c690d6225fd38e5eb769a428",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 217.0,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_217_0.jpg",
+              "frame_sha256": "5f448832edb4ea830e7ccc2d78a118ed8d73e76e95884659f4b6c5cea0114540",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 226.84,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_226_84.jpg",
+              "frame_sha256": "1d0fd10890b723f84a5cc70e84d8ad44ef15a9970105577f15ccebe6734c447c",
+              "source": "Current selected v006 index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "two_term_substitution",
+          "kind": "process",
+          "claim": "从因子各自导数代入两项，得到2x sin x+x² cos x，保留变化率乘另一当前值的解释",
+          "baseline_interval": [
+            200.6,
+            233.4
+          ],
+          "baseline_samples": [
+            {
+              "time": 207.16,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_207_16.jpg",
+              "frame_sha256": "01856a6b75e64a92a6c94485245b9e74e3fddfb4c690d6225fd38e5eb769a428",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 217.0,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_217_0.jpg",
+              "frame_sha256": "5f448832edb4ea830e7ccc2d78a118ed8d73e76e95884659f4b6c5cea0114540",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 226.84,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_226_84.jpg",
+              "frame_sha256": "1d0fd10890b723f84a5cc70e84d8ad44ef15a9970105577f15ccebe6734c447c",
+              "source": "Current selected v006 index; author inventory, not approval"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quotient_increment",
+      "asset": "selected_visual_v006",
+      "function": "使负号及两个分母来源可追踪",
+      "baseline_interval": [
+        233.4,
+        288.766667
+      ],
+      "features": [
+        {
+          "id": "old_new_fractions_and_domains",
+          "kind": "state",
+          "claim": "先分清变化后的整体分子/分母，再减原商；v与v+Δv都非零",
+          "baseline_interval": [
+            233.4,
+            288.766667
+          ],
+          "baseline_samples": [
+            {
+              "time": 244.473,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_244_473.jpg",
+              "frame_sha256": "c57580a6507a7d32ad1dfe215cd440d1b95c6f280fb5bcfd82f6fed39a95f9ff",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 261.083,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_261_083.jpg",
+              "frame_sha256": "559cb4377841daf1b1bf242fa9148c38e2119c5590b2b11722be61585a0e7321",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 277.693,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_277_693.jpg",
+              "frame_sha256": "c53a687eb52be85d160c1ace3d24eaba38739f429c0e1cc411e1dd855357594b",
+              "source": "Current selected v006 index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "common_denominator_provenance",
+          "kind": "process",
+          "claim": "通分保留v(v+Δv)，分子v(u+Δu)-u(v+Δv)交叉相乘并保留整体减号",
+          "baseline_interval": [
+            233.4,
+            288.766667
+          ],
+          "baseline_samples": [
+            {
+              "time": 244.473,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_244_473.jpg",
+              "frame_sha256": "c57580a6507a7d32ad1dfe215cd440d1b95c6f280fb5bcfd82f6fed39a95f9ff",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 261.083,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_261_083.jpg",
+              "frame_sha256": "559cb4377841daf1b1bf242fa9148c38e2119c5590b2b11722be61585a0e7321",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 277.693,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_277_693.jpg",
+              "frame_sha256": "c53a687eb52be85d160c1ace3d24eaba38739f429c0e1cc411e1dd855357594b",
+              "source": "Current selected v006 index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "uv_cancellation_and_minus",
+          "kind": "process",
+          "claim": "从保留的括号行解释两份uv相消，留下vΔu-uΔv；分母仍是原前后两部分相乘",
+          "baseline_interval": [
+            233.4,
+            288.766667
+          ],
+          "baseline_samples": [
+            {
+              "time": 244.473,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_244_473.jpg",
+              "frame_sha256": "c57580a6507a7d32ad1dfe215cd440d1b95c6f280fb5bcfd82f6fed39a95f9ff",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 261.083,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_261_083.jpg",
+              "frame_sha256": "559cb4377841daf1b1bf242fa9148c38e2119c5590b2b11722be61585a0e7321",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 277.693,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_277_693.jpg",
+              "frame_sha256": "c53a687eb52be85d160c1ace3d24eaba38739f429c0e1cc411e1dd855357594b",
+              "source": "Current selected v006 index; author inventory, not approval"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quotient_limit",
+      "asset": "selected_visual_v006",
+      "function": "解释分母平方来自两个邻近分母的同一极限",
+      "baseline_interval": [
+        288.766667,
+        333.4
+      ],
+      "features": [
+        {
+          "id": "quotient_divide_h",
+          "kind": "state",
+          "claim": "商增量同除h，v(Δu/h)-u(Δv/h)分别暴露两个变化率",
+          "baseline_interval": [
+            288.766667,
+            333.4
+          ],
+          "baseline_samples": [
+            {
+              "time": 297.693,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_297_693.jpg",
+              "frame_sha256": "8b7da1fba6e544048eb53e6cf2ae5d8b203bbf2035ed73acf1b7345ad7c4f8bc",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 311.083,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_311_083.jpg",
+              "frame_sha256": "d80d412eaed2de471a09ebe7409b8ff00230c8a1332d825d43e7232f9c8422b8",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 324.473,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_324_473.jpg",
+              "frame_sha256": "344f3f7d3f28db8cb917532d0ba0256e788f877b419add3e5951c35e80854727",
+              "source": "Current selected v006 index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "nonzero_neighborhood",
+          "kind": "state",
+          "claim": "u,v同点可微；v连续且非零，足够近处变化后分母也非零，Δv趋零",
+          "baseline_interval": [
+            288.766667,
+            333.4
+          ],
+          "baseline_samples": [
+            {
+              "time": 297.693,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_297_693.jpg",
+              "frame_sha256": "8b7da1fba6e544048eb53e6cf2ae5d8b203bbf2035ed73acf1b7345ad7c4f8bc",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 311.083,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_311_083.jpg",
+              "frame_sha256": "d80d412eaed2de471a09ebe7409b8ff00230c8a1332d825d43e7232f9c8422b8",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 324.473,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_324_473.jpg",
+              "frame_sha256": "344f3f7d3f28db8cb917532d0ba0256e788f877b419add3e5951c35e80854727",
+              "source": "Current selected v006 index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "squared_denominator_limit",
+          "kind": "process",
+          "claim": "从v(v+Δv)及Δv趋零走到v²，分子成u'v-uv'，保留负号来源与v≠0",
+          "baseline_interval": [
+            288.766667,
+            333.4
+          ],
+          "baseline_samples": [
+            {
+              "time": 297.693,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_297_693.jpg",
+              "frame_sha256": "8b7da1fba6e544048eb53e6cf2ae5d8b203bbf2035ed73acf1b7345ad7c4f8bc",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 311.083,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_311_083.jpg",
+              "frame_sha256": "d80d412eaed2de471a09ebe7409b8ff00230c8a1332d825d43e7232f9c8422b8",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 324.473,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_324_473.jpg",
+              "frame_sha256": "344f3f7d3f28db8cb917532d0ba0256e788f877b419add3e5951c35e80854727",
+              "source": "Current selected v006 index; author inventory, not approval"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cost_example",
+      "asset": "selected_visual_v006",
+      "function": "从符号判断平均成本先降后升，合法产量域x>0",
+      "baseline_interval": [
+        333.4,
+        407.8
+      ],
+      "features": [
+        {
+          "id": "positive_domain_and_units",
+          "kind": "state",
+          "claim": "连续产量x按百件、总成本C按百元、平均成本A按元/件；C=x²+4,A=C/x,x>0",
+          "baseline_interval": [
+            333.4,
+            407.8
+          ],
+          "baseline_samples": [
+            {
+              "time": 348.28,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_348_28.jpg",
+              "frame_sha256": "cdf0ca936b98b7b7416b6e65bce683b9e3cc04974db7ced3fa13a0fabb803b23",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 370.6,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_370_6.jpg",
+              "frame_sha256": "d91c1c47f33fefafc8b4823b3def080ceba4545a86314588db89dacca5f8a5b4",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 392.92,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_392_92.jpg",
+              "frame_sha256": "bc7d458d175313e31a3dc4696136a9849fb8ec3e99aa3b50bfc91ad8d344843f",
+              "source": "Current selected v006 index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "cost_rule_substitution",
+          "kind": "process",
+          "claim": "商规则逐项代入2x·x-(x²+4)·1及分母x²，再化为1-4/x²",
+          "baseline_interval": [
+            333.4,
+            407.8
+          ],
+          "baseline_samples": [
+            {
+              "time": 348.28,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_348_28.jpg",
+              "frame_sha256": "cdf0ca936b98b7b7416b6e65bce683b9e3cc04974db7ced3fa13a0fabb803b23",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 370.6,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_370_6.jpg",
+              "frame_sha256": "d91c1c47f33fefafc8b4823b3def080ceba4545a86314588db89dacca5f8a5b4",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 392.92,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_392_92.jpg",
+              "frame_sha256": "bc7d458d175313e31a3dc4696136a9849fb8ec3e99aa3b50bfc91ad8d344843f",
+              "source": "Current selected v006 index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "negative_slope_decreasing_cost",
+          "kind": "process",
+          "claim": "产量1到2时平均成本下降，原生同状态驱动点、切线、x及导数读数，斜率由负到零",
+          "baseline_interval": [
+            333.4,
+            407.8
+          ],
+          "baseline_samples": [
+            {
+              "time": 348.28,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_348_28.jpg",
+              "frame_sha256": "cdf0ca936b98b7b7416b6e65bce683b9e3cc04974db7ced3fa13a0fabb803b23",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 370.6,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_370_6.jpg",
+              "frame_sha256": "d91c1c47f33fefafc8b4823b3def080ceba4545a86314588db89dacca5f8a5b4",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 392.92,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_392_92.jpg",
+              "frame_sha256": "bc7d458d175313e31a3dc4696136a9849fb8ec3e99aa3b50bfc91ad8d344843f",
+              "source": "Current selected v006 index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "two_hundred_stationary",
+          "kind": "state",
+          "claim": "在x=2稳定停留：两百件、A=4元/件、A'=0和水平切线一致",
+          "baseline_interval": [
+            333.4,
+            407.8
+          ],
+          "baseline_samples": [
+            {
+              "time": 348.28,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_348_28.jpg",
+              "frame_sha256": "cdf0ca936b98b7b7416b6e65bce683b9e3cc04974db7ced3fa13a0fabb803b23",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 370.6,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_370_6.jpg",
+              "frame_sha256": "d91c1c47f33fefafc8b4823b3def080ceba4545a86314588db89dacca5f8a5b4",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 392.92,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_392_92.jpg",
+              "frame_sha256": "bc7d458d175313e31a3dc4696136a9849fb8ec3e99aa3b50bfc91ad8d344843f",
+              "source": "Current selected v006 index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "positive_slope_increasing_cost",
+          "kind": "process",
+          "claim": "从2到4时斜率变正且平均成本增加，点、切线和近似数值保持联动",
+          "baseline_interval": [
+            333.4,
+            407.8
+          ],
+          "baseline_samples": [
+            {
+              "time": 348.28,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_348_28.jpg",
+              "frame_sha256": "cdf0ca936b98b7b7416b6e65bce683b9e3cc04974db7ced3fa13a0fabb803b23",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 370.6,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_370_6.jpg",
+              "frame_sha256": "d91c1c47f33fefafc8b4823b3def080ceba4545a86314588db89dacca5f8a5b4",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 392.92,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_392_92.jpg",
+              "frame_sha256": "bc7d458d175313e31a3dc4696136a9849fb8ec3e99aa3b50bfc91ad8d344843f",
+              "source": "Current selected v006 index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "minimum_requires_sign_change",
+          "kind": "process",
+          "claim": "比较二之前下降、二处水平、二之后上升，最低点理由不简化为只有导数零",
+          "baseline_interval": [
+            333.4,
+            407.8
+          ],
+          "baseline_samples": [
+            {
+              "time": 348.28,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_348_28.jpg",
+              "frame_sha256": "cdf0ca936b98b7b7416b6e65bce683b9e3cc04974db7ced3fa13a0fabb803b23",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 370.6,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_370_6.jpg",
+              "frame_sha256": "d91c1c47f33fefafc8b4823b3def080ceba4545a86314588db89dacca5f8a5b4",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 392.92,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_392_92.jpg",
+              "frame_sha256": "bc7d458d175313e31a3dc4696136a9849fb8ec3e99aa3b50bfc91ad8d344843f",
+              "source": "Current selected v006 index; author inventory, not approval"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "closing",
+      "asset": "selected_visual_v006",
+      "function": "自然引入链式法则的内外层变化率",
+      "baseline_interval": [
+        407.8,
+        433.866666667
+      ],
+      "features": [
+        {
+          "id": "rules_summary",
+          "kind": "state",
+          "claim": "组合拆回增量，回顾和差、常数倍、乘积和商规则",
+          "baseline_interval": [
+            407.8,
+            433.866666667
+          ],
+          "baseline_samples": [
+            {
+              "time": 413.013,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_413_013.jpg",
+              "frame_sha256": "395fb0651f54d6db5e87952db4321c261ec39332fe6cad951b3d1834c7325ce8",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 420.833,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_420_833.jpg",
+              "frame_sha256": "e5521fc90397416b40192e246604c36c33ef68a50355b88108df89b911cf68e3",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 428.653,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_428_653.jpg",
+              "frame_sha256": "b69140f00c3caf9b5d91798d0d848f527ffd943c2d4ee25accd52767e53fb8cd",
+              "source": "Current selected v006 index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "chain_handoff",
+          "kind": "state",
+          "claim": "用sin(x²)及x到x²到sin(x²)的真实两层输入链衔接下一课",
+          "baseline_interval": [
+            407.8,
+            433.866666667
+          ],
+          "baseline_samples": [
+            {
+              "time": 413.013,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_413_013.jpg",
+              "frame_sha256": "395fb0651f54d6db5e87952db4321c261ec39332fe6cad951b3d1834c7325ce8",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 420.833,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_420_833.jpg",
+              "frame_sha256": "e5521fc90397416b40192e246604c36c33ef68a50355b88108df89b911cf68e3",
+              "source": "Current selected v006 index; author inventory, not approval"
+            },
+            {
+              "time": 428.653,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch03-rules-20261102/visual-v006/frames/frame_428_653.jpg",
+              "frame_sha256": "b69140f00c3caf9b5d91798d0d848f527ffd943c2d4ee25accd52767e53fb8cd",
+              "source": "Current selected v006 index; author inventory, not approval"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

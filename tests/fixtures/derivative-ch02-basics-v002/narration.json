@@ -1,0 +1,355 @@
+{
+  "schema_version": 3,
+  "source_contract": "continuous-meaning-units-v1",
+  "project_id": "math-derivative-ch02-basics-20261102",
+  "author_agent": "01a199e9-7383-7a03-b45c-97d3d21bd9dd",
+  "author_context": "01a199e9-7383-7a03-b45c-97d3d21bd9dd",
+  "status": "v002_author_draft_requires_current_visual_and_text_review",
+  "audio_status": "not_generated",
+  "alignment_status": "no_audio_times_claimed",
+  "units": [
+    {
+      "id": "opening_unit",
+      "cue": "opening",
+      "text": "上一课，我们找到平方函数在二处的导数等于四。这个数说的是二附近的变化快慢。现在把这个点移到别处，斜率会怎样跟着变？这次我们把各个位置的斜率连起来，再看几类常见函数。",
+      "references": [
+        {
+          "id": "opening_ref_1",
+          "focus": "opening_bridge",
+          "text": "上一课，我们找到平方函数在二处的导数等于四。这个数说的是二附近的变化快慢。"
+        },
+        {
+          "id": "opening_ref_2",
+          "focus": "opening_question",
+          "text": "现在把这个点移到别处，斜率会怎样跟着变？这次我们把各个位置的斜率连起来，再看几类常见函数。"
+        }
+      ]
+    },
+    {
+      "id": "general_unit",
+      "cue": "general",
+      "text": "把原来的二换成a。分子变成a加h的平方减a平方，展开后，a平方相消，留下二ah加h平方。h还不等于零，约掉一个h，得到二a加h。当h趋近零，剩下二a，所以a处的导数是二a。a可以代表任意位置。把输入的名字改成x，就得到导函数f撇x等于二x。它的输出是原函数在这个位置的斜率。现在让点从左往右移动。左边切线先向下倾斜，斜率是负数；走到零，切线水平；再向右，斜率变正。右图用同一个横坐标，把这些斜率画成高度。停在二处，右图的高度就是四。原图的高度和右图的高度各有含义：前者是函数值，后者是切线斜率。",
+      "references": [
+        {
+          "id": "general_ref_1",
+          "focus": "general_quotient",
+          "text": "把原来的二换成a。分子变成a加h的平方减a平方，展开后，a平方相消，留下二ah加h平方。"
+        },
+        {
+          "id": "general_ref_2",
+          "focus": "general_limit",
+          "text": "h还不等于零，约掉一个h，得到二a加h。当h趋近零，剩下二a，所以a处的导数是二a。"
+        },
+        {
+          "id": "general_ref_3",
+          "focus": "general_function",
+          "text": "a可以代表任意位置。把输入的名字改成x，就得到导函数f撇x等于二x。它的输出是原函数在这个位置的斜率。"
+        },
+        {
+          "id": "general_ref_4",
+          "focus": "general_map",
+          "text": "现在让点从左往右移动。左边切线先向下倾斜，斜率是负数；走到零，切线水平；再向右，斜率变正。右图用同一个横坐标，把这些斜率画成高度。"
+        },
+        {
+          "id": "general_ref_5",
+          "focus": "general_map_result",
+          "text": "停在二处，右图的高度就是四。原图的高度和右图的高度各有含义：前者是函数值，后者是切线斜率。"
+        }
+      ]
+    },
+    {
+      "id": "constant_unit",
+      "cue": "constant",
+      "text": "换成常数函数。点沿水平线移动，不管移到哪里，切线都水平；右边表示斜率的点始终落在零这一条线上。从增量看，前后的高度都是c，纵向增量为零。除以非零h仍是零，因此任何常数的导数都等于零。",
+      "references": [
+        {
+          "id": "constant_ref_1",
+          "focus": "constant_map",
+          "text": "换成常数函数。点沿水平线移动，不管移到哪里，切线都水平；右边表示斜率的点始终落在零这一条线上。"
+        },
+        {
+          "id": "constant_ref_2",
+          "focus": "constant_increment",
+          "text": "从增量看，前后的高度都是c，纵向增量为零。除以非零h仍是零，因此任何常数的导数都等于零。"
+        }
+      ]
+    },
+    {
+      "id": "identity_unit",
+      "cue": "identity",
+      "text": "一次函数也直接看定义。前后函数值相减，x消掉，只留下h；再除以非零h，差商恒等于一，极限也就是一。原图是一条斜率为一的直线。点移到任何位置，切线方向都相同，所以右边的导函数是一条高度为一的水平线。",
+      "references": [
+        {
+          "id": "identity_ref_1",
+          "focus": "identity_quotient",
+          "text": "一次函数也直接看定义。前后函数值相减，x消掉，只留下h；再除以非零h，差商恒等于一，极限也就是一。"
+        },
+        {
+          "id": "identity_ref_2",
+          "focus": "identity_map",
+          "text": "原图是一条斜率为一的直线。点移到任何位置，切线方向都相同，所以右边的导函数是一条高度为一的水平线。"
+        }
+      ]
+    },
+    {
+      "id": "power_unit",
+      "cue": "power",
+      "text": "三次方从定义出发。把x加h的三次方展开，再减x的三次方，分子留下三x平方乘h、三x乘h平方和h三次方。h不等于零，逐项除以h，就得到三x平方、三xh和h平方。后两项随着h趋近零而消失，留下三x平方。正整数次幂展开时，一次h项的系数是n乘x的n减一次方。除以h再取极限，就得到这条幂函数规律。正整数幂在所有实数上可用；零次幂视为常数一。负整数幂要排除零。实数指数我们先在x大于零的范围使用，更宽的定义域要另查。看三次函数的图。点从左边走向零，切线越来越平；过了零又逐渐变陡。两侧斜率都是正的，零处斜率为零，右图正好是一条开口向上的抛物线。",
+      "references": [
+        {
+          "id": "power_ref_1",
+          "focus": "power_cubic_expansion",
+          "text": "三次方从定义出发。把x加h的三次方展开，再减x的三次方，分子留下三x平方乘h、三x乘h平方和h三次方。"
+        },
+        {
+          "id": "power_ref_2",
+          "focus": "power_cubic_limit",
+          "text": "h不等于零，逐项除以h，就得到三x平方、三xh和h平方。后两项随着h趋近零而消失，留下三x平方。"
+        },
+        {
+          "id": "power_ref_3",
+          "focus": "power_rule_domain",
+          "text": "正整数次幂展开时，一次h项的系数是n乘x的n减一次方。除以h再取极限，就得到这条幂函数规律。正整数幂在所有实数上可用；零次幂视为常数一。负整数幂要排除零。实数指数我们先在x大于零的范围使用，更宽的定义域要另查。"
+        },
+        {
+          "id": "power_ref_4",
+          "focus": "power_cubic_map",
+          "text": "看三次函数的图。点从左边走向零，切线越来越平；过了零又逐渐变陡。两侧斜率都是正的，零处斜率为零，右图正好是一条开口向上的抛物线。"
+        }
+      ]
+    },
+    {
+      "id": "reciprocal_unit",
+      "cue": "reciprocal",
+      "text": "对于一除以x，把变化前后的两个倒数相减，再除以h。这里x、x加h以及h都不能等于零。先把两个倒数通分，分子成为x减去x加h，也就是负h；外面还要除以h，所以分母是h乘x乘x加h。约去非零的h，留下负一除以x乘x加h。让h趋近零，分母趋近x平方，所以导数是负一除以x平方，定义范围仍要排除零。先在负半轴这一支向右移动，函数值下降，切线斜率为负。越靠近零，曲线越陡，右图的高度越低。再单独看正半轴，点向右移动时也在下降。离零更远，斜率逐渐接近零。两个分支分别观察，零处没有函数值，也没有导数。",
+      "references": [
+        {
+          "id": "reciprocal_ref_1",
+          "focus": "reciprocal_quotient",
+          "text": "对于一除以x，把变化前后的两个倒数相减，再除以h。这里x、x加h以及h都不能等于零。"
+        },
+        {
+          "id": "reciprocal_ref_2",
+          "focus": "reciprocal_common_denominator",
+          "text": "先把两个倒数通分，分子成为x减去x加h，也就是负h；外面还要除以h，所以分母是h乘x乘x加h。"
+        },
+        {
+          "id": "reciprocal_ref_3",
+          "focus": "reciprocal_limit",
+          "text": "约去非零的h，留下负一除以x乘x加h。让h趋近零，分母趋近x平方，所以导数是负一除以x平方，定义范围仍要排除零。"
+        },
+        {
+          "id": "reciprocal_ref_4",
+          "focus": "reciprocal_negative_branch",
+          "text": "先在负半轴这一支向右移动，函数值下降，切线斜率为负。越靠近零，曲线越陡，右图的高度越低。"
+        },
+        {
+          "id": "reciprocal_ref_5",
+          "focus": "reciprocal_positive_branch",
+          "text": "再单独看正半轴，点向右移动时也在下降。离零更远，斜率逐渐接近零。两个分支分别观察，零处没有函数值，也没有导数。"
+        }
+      ]
+    },
+    {
+      "id": "root_unit",
+      "cue": "root",
+      "text": "平方根从这个差商出发。在正数x处，h不能等于零，变化后的x加h也要留在根式定义域内。给分子和分母同乘两根式的和。分子是平方差，化成x加h减x，正好留下h。再约去分子分母的h，剩下两根式之和的倒数。在x大于零时取极限，得到一除以二倍根号x。原函数在零也有定义；但从右边接近零，差商会无限增大，零处没有有限的右侧斜率极限。从靠近零的正数向右走，平方根始终上升，可是切线越来越平。右边的斜率保持正数，同时逐渐降低。",
+      "references": [
+        {
+          "id": "root_ref_1",
+          "focus": "root_rationalize",
+          "text": "平方根从这个差商出发。在正数x处，h不能等于零，变化后的x加h也要留在根式定义域内。"
+        },
+        {
+          "id": "root_ref_2",
+          "focus": "root_conjugate",
+          "text": "给分子和分母同乘两根式的和。分子是平方差，化成x加h减x，正好留下h。再约去分子分母的h，剩下两根式之和的倒数。"
+        },
+        {
+          "id": "root_ref_3",
+          "focus": "root_domain",
+          "text": "在x大于零时取极限，得到一除以二倍根号x。原函数在零也有定义；但从右边接近零，差商会无限增大，零处没有有限的右侧斜率极限。"
+        },
+        {
+          "id": "root_ref_4",
+          "focus": "root_map",
+          "text": "从靠近零的正数向右走，平方根始终上升，可是切线越来越平。右边的斜率保持正数，同时逐渐降低。"
+        }
+      ]
+    },
+    {
+      "id": "exponential_unit",
+      "cue": "exponential",
+      "text": "指数函数的差商里，可以提出a的x次方。剩下a的h次方减一，再除以h；这一部分已经与位置x无关。这里调用一个标准极限：剩下的比值趋近自然对数ln a。这个极限的证明另讲，这里用它把斜率和函数值联系起来。所以a的x次方的导数，是函数值乘ln a。底数a大于零，x可以取任意实数。以e为底时，ln e等于一，导数就等于自身。沿着e的x次方向右走，函数值增加，切线也变陡。右图记录的斜率和左图的函数值相同，所以两条图线形状一样。底数大于一，ln a是正数；底在零与一之间，ln a是负数，指数函数递减。底数等于一时，函数是常数一，导数为零。",
+      "references": [
+        {
+          "id": "exponential_ref_1",
+          "focus": "exp_factor",
+          "text": "指数函数的差商里，可以提出a的x次方。剩下a的h次方减一，再除以h；这一部分已经与位置x无关。"
+        },
+        {
+          "id": "exponential_ref_2",
+          "focus": "exp_standard_limit",
+          "text": "这里调用一个标准极限：剩下的比值趋近自然对数ln a。这个极限的证明另讲，这里用它把斜率和函数值联系起来。"
+        },
+        {
+          "id": "exponential_ref_3",
+          "focus": "exp_rule",
+          "text": "所以a的x次方的导数，是函数值乘ln a。底数a大于零，x可以取任意实数。以e为底时，ln e等于一，导数就等于自身。"
+        },
+        {
+          "id": "exponential_ref_4",
+          "focus": "exp_map",
+          "text": "沿着e的x次方向右走，函数值增加，切线也变陡。右图记录的斜率和左图的函数值相同，所以两条图线形状一样。"
+        },
+        {
+          "id": "exponential_ref_5",
+          "focus": "exp_compare",
+          "text": "底数大于一，ln a是正数；底在零与一之间，ln a是负数，指数函数递减。底数等于一时，函数是常数一，导数为零。"
+        }
+      ]
+    },
+    {
+      "id": "log_inverse_unit",
+      "cue": "logarithm",
+      "text": "先给纵坐标一个名字，令y等于ln x。这也就是x等于e的y次方。x取正数，再给它一个非零增量，并让变化后的输入仍是正数。竖直的增量，是变化后的对数值减去原来的y，记作Δy。新点同样满足指数关系：x加Δx，等于e的y加Δy次方。图中水平段和竖直段，就对应这两个增量。把新旧的指数关系相减，提出e的y次方，再用x替换它，就得到Δx等于x乘e的Δy次方减一。对数严格递增，非零的水平增量也对应非零的竖直增量。现在让水平增量变小，另一点沿着对数曲线靠近原来的点，竖直增量也跟着缩小。对数连续，所以Δx趋近零时，Δy也趋近零。把刚才的等式除以非零的Δy，右边出现指数函数已经建立的标准差商。它趋近一，因此Δx除以Δy趋近x。x大于零，可以把这个比值取倒数。于是Δy除以Δx趋近一除以x，这才得到自然对数的导数。",
+      "references": [
+        {
+          "id": "log_inverse_unit_ref_1",
+          "focus": "log_variables",
+          "text": "先给纵坐标一个名字，令y等于ln x。这也就是x等于e的y次方。x取正数，再给它一个非零增量，并让变化后的输入仍是正数。"
+        },
+        {
+          "id": "log_inverse_unit_ref_2",
+          "focus": "log_increments",
+          "text": "竖直的增量，是变化后的对数值减去原来的y，记作Δy。新点同样满足指数关系：x加Δx，等于e的y加Δy次方。图中水平段和竖直段，就对应这两个增量。"
+        },
+        {
+          "id": "log_inverse_unit_ref_3",
+          "focus": "log_exp_increment",
+          "text": "把新旧的指数关系相减，提出e的y次方，再用x替换它，就得到Δx等于x乘e的Δy次方减一。对数严格递增，非零的水平增量也对应非零的竖直增量。"
+        },
+        {
+          "id": "log_inverse_unit_ref_4",
+          "focus": "log_increment_motion",
+          "text": "现在让水平增量变小，另一点沿着对数曲线靠近原来的点，竖直增量也跟着缩小。"
+        },
+        {
+          "id": "log_inverse_unit_ref_5",
+          "focus": "log_exp_rate",
+          "text": "对数连续，所以Δx趋近零时，Δy也趋近零。把刚才的等式除以非零的Δy，右边出现指数函数已经建立的标准差商。它趋近一，因此Δx除以Δy趋近x。"
+        },
+        {
+          "id": "log_inverse_unit_ref_6",
+          "focus": "log_inverse_limit",
+          "text": "x大于零，可以把这个比值取倒数。于是Δy除以Δx趋近一除以x，这才得到自然对数的导数。"
+        }
+      ]
+    },
+    {
+      "id": "log_graph_unit",
+      "cue": "logarithm",
+      "text": "回到两幅图。自然对数向右上升，切线却逐渐变平；右图记录的正斜率，按一除以x逐渐降低。",
+      "references": [
+        {
+          "id": "log_graph_unit_ref_1",
+          "focus": "log_map",
+          "text": "回到两幅图。自然对数向右上升，切线却逐渐变平；右图记录的正斜率，按一除以x逐渐降低。"
+        }
+      ]
+    },
+    {
+      "id": "log_base_unit",
+      "cue": "logarithm",
+      "text": "一般底数用换底公式。令z等于以a为底的对数，写成ln x除以ln a。底数a固定，所以一除以ln a是一个常数，记作k。这里x大于零，a大于零且不等于一。输入改变以后，新的对数值仍乘同一个k。新旧两项相减，k留在括号外，括号里正是自然对数的增量Δy，因此Δz等于k乘Δy。两边再除以同一个Δx，差商就等于k乘自然对数的差商。取极限时k不随增量改变，所以结果是k乘一除以x。把k换回一除以ln a，导数就是一除以x乘ln a。例如以二为底，在x等于二处，斜率是一除以二倍ln二，ln二仍在分母。底数大于一，ln a为正，对数函数递增；底数在零与一之间，ln a为负，对数函数递减。",
+      "references": [
+        {
+          "id": "log_base_unit_ref_1",
+          "focus": "log_base_definition",
+          "text": "一般底数用换底公式。令z等于以a为底的对数，写成ln x除以ln a。底数a固定，所以一除以ln a是一个常数，记作k。这里x大于零，a大于零且不等于一。"
+        },
+        {
+          "id": "log_base_unit_ref_2",
+          "focus": "log_base_increment",
+          "text": "输入改变以后，新的对数值仍乘同一个k。新旧两项相减，k留在括号外，括号里正是自然对数的增量Δy，因此Δz等于k乘Δy。"
+        },
+        {
+          "id": "log_base_unit_ref_3",
+          "focus": "log_base_quotient",
+          "text": "两边再除以同一个Δx，差商就等于k乘自然对数的差商。取极限时k不随增量改变，所以结果是k乘一除以x。"
+        },
+        {
+          "id": "log_base_unit_ref_4",
+          "focus": "log_base_derivative",
+          "text": "把k换回一除以ln a，导数就是一除以x乘ln a。例如以二为底，在x等于二处，斜率是一除以二倍ln二，ln二仍在分母。"
+        },
+        {
+          "id": "log_base_unit_ref_5",
+          "focus": "log_base_sign",
+          "text": "底数大于一，ln a为正，对数函数递增；底数在零与一之间，ln a为负，对数函数递减。"
+        }
+      ]
+    },
+    {
+      "id": "sine_unit",
+      "cue": "sine",
+      "text": "三角函数的角度用弧度。把正弦的和角公式代进差商，会出现sin h除以h，以及cos h减一除以h。h趋近零时，它们分别趋近一和零，于是留下cos x。看图上的一周。从零开始，正弦向上穿过横轴，斜率是一；到波峰，切线水平，余弦高度为零。再到π，曲线向下穿过横轴，斜率是负一。继续走一周，右图的高度始终对应左图切线的斜率。",
+      "references": [
+        {
+          "id": "sine_ref_1",
+          "focus": "sine_limits",
+          "text": "三角函数的角度用弧度。把正弦的和角公式代进差商，会出现sin h除以h，以及cos h减一除以h。h趋近零时，它们分别趋近一和零，于是留下cos x。"
+        },
+        {
+          "id": "sine_ref_2",
+          "focus": "sine_map",
+          "text": "看图上的一周。从零开始，正弦向上穿过横轴，斜率是一；到波峰，切线水平，余弦高度为零。再到π，曲线向下穿过横轴，斜率是负一。继续走一周，右图的高度始终对应左图切线的斜率。"
+        }
+      ]
+    },
+    {
+      "id": "cosine_unit",
+      "cue": "cosine",
+      "text": "余弦从最高处开始，切线先水平，再向下倾斜；到π的最低处重新水平，随后向上。这些斜率连起来，就是负的正弦函数。从零到π，负正弦为负，原曲线下降；从π到二π，它为正，原曲线上升。这里正弦、余弦及导函数都在实数范围有定义，导数公式采用弧度。",
+      "references": [
+        {
+          "id": "cosine_ref_1",
+          "focus": "cosine_map",
+          "text": "余弦从最高处开始，切线先水平，再向下倾斜；到π的最低处重新水平，随后向上。这些斜率连起来，就是负的正弦函数。"
+        },
+        {
+          "id": "cosine_ref_2",
+          "focus": "cosine_sign",
+          "text": "从零到π，负正弦为负，原曲线下降；从π到二π，它为正，原曲线上升。这里正弦、余弦及导函数都在实数范围有定义，导数公式采用弧度。"
+        }
+      ]
+    },
+    {
+      "id": "closing_unit",
+      "cue": "closing",
+      "text": "导函数把每个位置的斜率整理成一个新函数。基本函数的导数式，也都要带着各自的定义条件使用。如果平方函数和正弦相乘，或者两个函数相除，斜率该怎么合在一起？下一课从增量出发，接着解决这些组合。",
+      "references": [
+        {
+          "id": "closing_ref_1",
+          "focus": "closing_summary",
+          "text": "导函数把每个位置的斜率整理成一个新函数。基本函数的导数式，也都要带着各自的定义条件使用。"
+        },
+        {
+          "id": "closing_ref_2",
+          "focus": "closing_combinations",
+          "text": "如果平方函数和正弦相乘，或者两个函数相除，斜率该怎么合在一起？下一课从增量出发，接着解决这些组合。"
+        }
+      ]
+    }
+  ],
+  "writer": "01a199e9-7383-7a03-b45c-97d3d21bd9dd",
+  "consumers": [
+    "main coordinator",
+    "independent blind visual reviewer",
+    "separate content regression reviewer",
+    "later narration reviewer"
+  ],
+  "lifecycle": "Author A ch02 v002 frozen candidate; no review authority",
+  "invalidation": "Any bound source, model, plan, text, helper, context, baseline media or contract change invalidates affected tests and all dependent reviews",
+  "artifact_type": "test_fixture"
+}

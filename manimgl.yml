@@ -1,0 +1,7 @@
+# ManiMind's reproducible ManimGL defaults.
+camera:
+  background_color: "#0F111A"
+tex:
+  template: "basic_ctex"
+text:
+  font: "Microsoft YaHei"

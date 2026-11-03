@@ -1,0 +1,15 @@
+{
+  "artifact_type": "test_fixture",
+  "status": "test_only_not_production_or_approved",
+  "default_cue_durations": [22, 34, 42, 74, 36, 68, 44, 18],
+  "definition_stages": {
+    "0.04": 1.36, "0.08": 2.72, "0.12": 4.76, "0.18": 7.48,
+    "0.30": 14.96, "0.36": 16.32, "0.54": 25.84, "0.58": 28.56,
+    "0.62": 34, "0.66": 35.36, "0.68": 36.72, "0.72": 38.08,
+    "0.80": 51, "0.88": 54.4, "0.90": 55
+  },
+  "semantic_stages": ["expanded", "combined", "factored", "simplified", "general_position"],
+  "history_y": 0.35,
+  "assembly_y": -1.55,
+  "zero_state": {"numerator": 0, "denominator": 0, "quotient_defined": false, "nearby_limit": 4}
+}

@@ -1,0 +1,160 @@
+"""Narrow CH06 formula revision. Author has no review/release authority.
+
+Writer: 01a19f6b-174f-7431-a0fd-2adf59301a9e. Consumers: native tests,
+renderer and independent reviewers. One construct; source/clock changes expire
+all observations. The v004 reason_transfer and unrelated scenes are inherited.
+"""
+
+from derivative_ch06_extrema_v004 import DerivativeCh06ExtremaV004, VALUES
+from derivative_ch06_extrema import path
+from derivative_chapter_shared import ACCENT, CURVE, MUTED, RATE
+from manimind.components.formula_motion import SemanticFormula, matching_transform
+from manimlib import Dot, FadeIn, FadeOut, Group, Line, ShowCreation, Transform, ValueTracker, VGroup, linear
+
+
+AUTHOR_AGENT = "01a19f6b-174f-7431-a0fd-2adf59301a9e"
+
+
+class DerivativeCh06Traceable(DerivativeCh06ExtremaV004):
+    def assemble(self, target, origins, end, stage):
+        """Copy authored whole roles from their visible sources, not a new row."""
+        start = self._cue["animation_starts"][f"{end:.2f}"]
+        self.until(self._cue["start"] + start)
+        moving = [source.tag(key).copy() for source, key, _ in origins]
+        # Keep selector groups alive for the entire native transform.
+        destinations = [target.tag(key) for _, _, key in origins]
+        used = {id(g) for part in destinations for g in part.family_members_with_points()}
+        syntax = VGroup(*(g for g in target.family_members_with_points() if id(g) not in used))
+        driver = Group()
+
+        def sample(_):
+            self.sample("traceable_assembly", stage=stage,
+                moving=[m.get_center().tolist() for m in moving],
+                targets=[part.get_center().tolist() for part in destinations])
+
+        sample(driver)
+        driver.add_updater(sample)
+        self.add(driver, *moving)
+        self.beat(end, *(Transform(m, dest, path_arc=0)
+            for m, dest in zip(moving, destinations)), FadeIn(syntax))
+        driver.clear_updaters()
+        self.remove(driver, syntax, *moving)
+        self.add(target)
+        self.mark(stage + "_ready")
+
+    def necessary(self, cue):
+        self.begin_chapter(cue)
+        condition = self.label("可导的内点 a", 0, 2.55, size=31, color=ACCENT)
+        implication = Group(self.label("a 是局部极值点", -2.7, 1.85, size=29, width=5),
+                            self.put(r"\Longrightarrow\quad f'(a)=0", 2.65, 1.85, size=37, width=5))
+        self.beat(.13, FadeIn(condition), FadeIn(implication))
+        self.mark("conditional_necessity_ready")
+        self.focus_begin("conditional_necessity")
+        axis = Line([-3, .65, 0], [3, .65, 0], color=MUTED, stroke_width=2)
+        ticks = Group(*(Line([x, .52, 0], [x, .78, 0], color=ACCENT) for x in (-3, 0, 3)))
+        labels = Group(self.put(r"a-\delta", -3, .12, size=29), self.put("a", 0, .12, size=29),
+                       self.put(r"a+\delta", 3, .12, size=29),
+                       self.put(r"(a-\delta,a+\delta)\subset\mathrm{Dom}(f)", 0, -.65, size=31, width=11.8),
+                       self.put(r"0<|h|<\delta", 0, -1.35, size=31, color=ACCENT))
+        approach = ValueTracker(.75)
+        probes = Group(Dot([-2.25, .65, 0], color=CURVE, radius=.065), Dot([2.25, .65, 0], color=CURVE, radius=.065))
+        self.beat(.18, ShowCreation(axis), FadeIn(ticks), FadeIn(labels), FadeIn(probes))
+        self.mark("interior_neighborhood_ready")
+        driver = Group()
+
+        def update(_):
+            ratio = approach.get_value()
+            probes[0].move_to([-3*ratio, .65, 0])
+            probes[1].move_to([3*ratio, .65, 0])
+            self.sample("proof_neighborhood", abs_h_over_delta=ratio,
+                        left=probes[0].get_center().tolist(), right=probes[1].get_center().tolist())
+
+        update(driver)
+        driver.add_updater(update)
+        self.add(driver)
+        self.beat(.22, approach.animate.set_value(.16), rate_func=linear)
+        driver.clear_updaters()
+        finite = self.label("可导：左右得到同一个有限导数", 0, -2.15, size=28)
+        self.beat(.26, FadeIn(finite))
+        self.beat(.29)
+        self.focus_end("conditional_necessity")
+
+        maximum = self.label("局部极大：取足够小的邻域", -2.7, 1.08, size=26, width=6)
+        bound = self.put(r"0<|h|<\delta", 3.5, 1.08, size=29, color=ACCENT, width=4.5)
+        comparison = self.semantic(r"f(a+h)\leq f(a)", VALUES, 0, .35, size=34, width=11.8)
+        self.beat(.32, *(FadeOut(m) for m in (axis, ticks, labels, probes, finite)),
+                  FadeIn(maximum), FadeIn(bound), FadeIn(comparison))
+        self.focus_begin("one_sided_quotients")
+        self.mark("local_comparison_ready")
+        numerator = self.semantic(r"f(a+h)-f(a)\leq0", {**VALUES, "bound": r"\leq0"}, 0, -.45, size=34, width=11.8)
+        self.reason_transfer(comparison, numerator, .38, stage="comparison_to_numerator",
+                             pairs=[("near", "near"), ("center", "center")], copy=True)
+        self.mark("common_numerator_ready")
+        # Put denominator conditions below destinations, outside both routes.
+        left_sign = self.put("h<0", -3, -2.55, size=30, color=ACCENT)
+        right_sign = self.put("h>0", 3, -2.55, size=30, color=ACCENT)
+        left = self.semantic(r"\frac{f(a+h)-f(a)}h\geq0", {**VALUES, "bound": r"\geq0"}, -3, -1.75)
+        right = self.semantic(r"\frac{f(a+h)-f(a)}h\leq0", {**VALUES, "bound": r"\leq0"}, 3, -1.75)
+        self.beat(.40, FadeIn(left_sign))
+        self.reason_transfer(numerator, left, .44, stage="negative_h_quotient",
+                             pairs=[("near", "near"), ("center", "center")], copy=True)
+        self.mark("left_quotient_ready")
+        self.beat(.46, FadeIn(right_sign))
+        self.reason_transfer(numerator, right, .50, stage="positive_h_quotient",
+                             pairs=[("near", "near"), ("center", "center")], copy=True)
+        self.mark("one_sided_quotients_ready")
+        self.beat(.55)
+        self.focus_end("one_sided_quotients")
+        self.beat(.56, *(FadeOut(m) for m in (comparison, numerator, left_sign, right_sign)))
+        self.focus_begin("common_zero_necessity")
+
+        limit_tokens = {**VALUES, "bound": r"\geq0", "side": "L"}
+        left_limit = self.semantic(r"L=\lim_{h\to0^-}\frac{f(a+h)-f(a)}h\geq0", limit_tokens, -3.1, -.25, size=30, width=5.9)
+        right_limit = self.semantic(r"R=\lim_{h\to0^+}\frac{f(a+h)-f(a)}h\leq0",
+            {**VALUES, "bound": r"\leq0", "side": "R"}, 3.1, -.25, size=30, width=5.9)
+        pairs = [(key, key) for key in ("near", "center", "bound")]
+        self.beat(.58, matching_transform(left, left_limit, pairs=pairs, unmatched_in_place=True),
+                  matching_transform(right, right_limit, pairs=pairs, unmatched_in_place=True))
+        self.mark("one_sided_limits_ready")
+        equality = self.semantic(r"L=f'(a)=R", {"left": "L", "derivative": "f'(a)", "right": "R"}, .5, -1.12, size=37)
+        equal_reason = self.label("可导", -2.6, -1.12, size=28, color=ACCENT, width=1.7)
+        self.add(equal_reason)
+        self.assemble(equality, [(left_limit, "side", "left"), (right_limit, "side", "right")], .61, "equal_derivative")
+        common = {"derivative": "f'(a)", "bound": r"\geq0"}
+        lower = self.semantic(r"f'(a)\geq0", common, -3, -2, size=35)
+        upper = self.semantic(r"f'(a)\leq0", {**common, "bound": r"\leq0"}, 3, -2, size=35)
+        self.assemble(lower, [(equality, "derivative", "derivative"), (left_limit, "bound", "bound")], .64, "derivative_lower")
+        self.assemble(upper, [(equality, "derivative", "derivative"), (right_limit, "bound", "bound")], .67, "derivative_upper")
+        joint = self.semantic(r"0\leq f'(a)\leq0", {"lower": r"0\leq", "derivative": "f'(a)", "upper": r"\leq0"}, 0, -2.85, size=35)
+        self.assemble(joint, [(lower, "bound", "lower"), (lower, "derivative", "derivative"),
+                             (upper, "bound", "upper")], .69, "bounds_join")
+        zero = self.semantic(r"f'(a)=0", {"derivative": "f'(a)", "zero": "0"}, 0, -2.85, size=35)
+        self.reason_transfer(joint, zero, .70, stage="bounds_to_zero", pairs=[("derivative", "derivative")])
+        self.mark("common_zero_proved")
+
+        minimum = self.label("局部极小：不等号反向", -2.7, 1.08, size=26, width=6)
+        minimum_bound = self.put(r"0<|h|<\delta:\ f(a+h)-f(a)\geq0", 0, .65, size=28, width=11.8)
+        left_min = self.semantic(r"L=\lim_{h\to0^-}\frac{f(a+h)-f(a)}h\leq0", {**VALUES, "bound": r"\leq0", "side": "L"}, -3.1, -.25, size=30, width=5.9)
+        right_min = self.semantic(r"R=\lim_{h\to0^+}\frac{f(a+h)-f(a)}h\geq0", {**VALUES, "bound": r"\geq0", "side": "R"}, 3.1, -.25, size=30, width=5.9)
+        lower_min = self.semantic(r"f'(a)\leq0", {**common, "bound": r"\leq0"}, -3, -2, size=35)
+        upper_min = self.semantic(r"f'(a)\geq0", common, 3, -2, size=35)
+        self.beat(.71, FadeOut(maximum), FadeOut(bound), FadeIn(minimum))
+        # Erase old relations completely before installing opposite relations.
+        self.beat(.72, *(FadeOut(m.tag("bound")) for m in (left_limit, right_limit, lower, upper)))
+        self.mark("minimum_old_relations_removed")
+        self.beat(.73, FadeIn(minimum_bound),
+            matching_transform(left_limit, left_min, pairs=[("near", "near"), ("center", "center"), ("side", "side")], unmatched_in_place=True),
+            matching_transform(right_limit, right_min, pairs=[("near", "near"), ("center", "center"), ("side", "side")], unmatched_in_place=True),
+            matching_transform(lower, lower_min, pairs=[("derivative", "derivative")], unmatched_in_place=True),
+            matching_transform(upper, upper_min, pairs=[("derivative", "derivative")], unmatched_in_place=True))
+        self.mark("minimum_same_zero_ready")
+        self.beat(.74)
+        self.focus_end("common_zero_necessity")
+        self.beat(.77, *(FadeOut(m) for m in (minimum, minimum_bound, left_min, right_min, equality, equal_reason, lower_min, upper_min, zero)))
+        cusp = path([[-2.4, -1.3, 0], [-1.2, -2.5, 0], [0, -1.3, 0]], ACCENT)
+        self.beat(.79, ShowCreation(cusp), FadeIn(self.put(r"y=|x|", -4, -1.9, size=35, width=2.3)),
+                  FadeIn(self.label("0 是尖点极小，导数不存在", 3.1, -1.8, size=28, width=5.7)),
+                  FadeIn(self.label("这说明为什么要保留“可导内点”", 3.1, -2.5, size=26, color=MUTED, width=5.7)))
+        self.mark("cusp_condition_ready")
+        self.focus_begin("cusp_condition")
+        self.end_chapter()

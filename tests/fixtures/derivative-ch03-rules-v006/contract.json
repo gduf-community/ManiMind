@@ -1,0 +1,1111 @@
+{
+  "schema_version": 1,
+  "project_id": "math-derivative-ch03-rules-20261102",
+  "status": "not_reviewed",
+  "writer": "019eaf8b-9151-75e2-9db4-5ff834335577",
+  "consumers": [
+    "main coordinator",
+    "independent blind visual reviewer",
+    "separate content regression reviewer",
+    "audio timing reviewer"
+  ],
+  "lifecycle": "Chapter 03 v004 author candidate only; no review authority",
+  "invalidation": "Bound source, plan, baseline, narration, original speech/receipts or verified timing changes invalidate derived data",
+  "baseline_selection": "Actual complete visual-v002, 378 seconds, including the NumPy endpoint correction; never incomplete visual-v001",
+  "assets": {
+    "visual_v002": {
+      "path": "outputs/math-derivative-ch03-rules-20261102/visual-v002/manim/media/manimgl/understanding.mp4",
+      "sha256": "8f457f542a058e7707b5779e92479b477c323f7666b5c16dfd906102d6909706",
+      "duration": 378
+    }
+  },
+  "scope": "Retain all selected mathematical explanations, semantic identities, geometry, values, conditions, units and examples; timing/presentation only",
+  "evidence_status": "awaiting_new_current_independent_comparison",
+  "units": [
+    {
+      "id": "opening",
+      "asset": "visual_v002",
+      "function": "直接承接基本函数导数，不重讲首课",
+      "baseline_interval": [
+        0.0,
+        18.0
+      ],
+      "features": [
+        {
+          "id": "combination_handoff",
+          "kind": "state",
+          "claim": "承接基本导数，用平方乘正弦及平均成本的商提出组合增量问题",
+          "baseline_interval": [
+            6.133333,
+            18
+          ],
+          "baseline_samples": [
+            {
+              "time": 7.083,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_7_083.jpg",
+              "frame_sha256": "1201ac92f5e8ee956c4d365d6d070e345d9ca788ddefc63384fbceca97307994"
+            },
+            {
+              "time": 14.4,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_14_4.jpg",
+              "frame_sha256": "1d15e0b9497583424a80dd4adde6f093adbd929d03b5815c83a450a26254b6cc"
+            }
+          ],
+          "candidate_focus_ids": [
+            "opening_combinations",
+            "opening_increment"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "linearity",
+      "asset": "visual_v002",
+      "function": "用相同输入增量推导线性规则",
+      "baseline_interval": [
+        18.0,
+        66.0
+      ],
+      "features": [
+        {
+          "id": "same_input_sum_difference",
+          "kind": "state",
+          "claim": "同一输入h下和差的增量恒等式，减法保留第二份增量的负号",
+          "baseline_interval": [
+            23.766667,
+            66
+          ],
+          "baseline_samples": [
+            {
+              "time": 33.769,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_33_769.jpg",
+              "frame_sha256": "e5c5bde98a583a022ad5faeba66c8fb8874586947ccefbfb569198a1474c42bc"
+            },
+            {
+              "time": 42,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_42.jpg",
+              "frame_sha256": "bfeda0513a415231fa2554d95981b778b1fa4ec371b7cb68854620afad71cf65"
+            }
+          ],
+          "candidate_focus_ids": [
+            "linear_increment"
+          ]
+        },
+        {
+          "id": "semantic_divide_and_limit",
+          "kind": "process",
+          "claim": "原增量行保留，语义身份Δu、Δv复制搬运到同除h的差商行，分别取极限得到和差法则",
+          "baseline_interval": [
+            23.766667,
+            38.166667
+          ],
+          "baseline_samples": [
+            {
+              "time": 27.145,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_27_145.jpg",
+              "frame_sha256": "28b023ece8dc5a179b9bc7d0a3988928d1505df1a4d88f1e6d3bb0b6d6ce6dee"
+            },
+            {
+              "time": 27.6,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_27_6.jpg",
+              "frame_sha256": "bab06ad73c2aa1c4e90dca0b2f894c1a54d0a66168848f1fcfd6d36ba6ab46b5"
+            },
+            {
+              "time": 33.769,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_33_769.jpg",
+              "frame_sha256": "e5c5bde98a583a022ad5faeba66c8fb8874586947ccefbfb569198a1474c42bc"
+            }
+          ],
+          "candidate_focus_ids": [
+            "linear_increment",
+            "linear_limit"
+          ]
+        },
+        {
+          "id": "fixed_scalar_and_conditions",
+          "kind": "state",
+          "claim": "c为固定常数，增量乘c到导数乘c；u、v在同一点可微",
+          "baseline_interval": [
+            38.166667,
+            66
+          ],
+          "baseline_samples": [
+            {
+              "time": 40.393,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_40_393.jpg",
+              "frame_sha256": "01a40380e849f22c1282d5454852124cc2f0faf49ed40c1fea560d48beae98c5"
+            },
+            {
+              "time": 63.773,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_63_773.jpg",
+              "frame_sha256": "23e3640cfa52ff959500283d9eaad8117bf2ac55ecdbf750f21acda19c092ee9"
+            }
+          ],
+          "candidate_focus_ids": [
+            "linear_scalar",
+            "linear_increment"
+          ]
+        },
+        {
+          "id": "linked_increment_bars",
+          "kind": "process",
+          "claim": "u=x²、v=x在x=1，同一个非零输入增量h逐步缩小；三条增量柱同步变小，和柱始终等于前两柱之和",
+          "baseline_interval": [
+            44.866667,
+            66
+          ],
+          "baseline_samples": [
+            {
+              "time": 44.883,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_44_883.jpg",
+              "frame_sha256": "1fad632d0b277a085ed08c9e4cb140fdf37a1a16f2082a822c370de2a6bde775"
+            },
+            {
+              "time": 52.55,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_52_55.jpg",
+              "frame_sha256": "68902853223b0dc48886629bedb5a88d7a6f6e4b0b9a7b8853f348e8951a18f2"
+            },
+            {
+              "time": 63.197,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_63_197.jpg",
+              "frame_sha256": "23e3640cfa52ff959500283d9eaad8117bf2ac55ecdbf750f21acda19c092ee9"
+            }
+          ],
+          "candidate_focus_ids": [
+            "linear_motion"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "product_area",
+      "asset": "visual_v002",
+      "function": "乘积增量必须同时追踪两因子的变化",
+      "baseline_interval": [
+        66.0,
+        124.0
+      ],
+      "features": [
+        {
+          "id": "area_model_and_current_values",
+          "kind": "state",
+          "claim": "u=2+x、v=1+x²在x=1取u=3,v=2，保留旧矩形、h近似读数与新乘积表达式",
+          "baseline_interval": [
+            72.966667,
+            124
+          ],
+          "baseline_samples": [
+            {
+              "time": 77.6,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_77_6.jpg",
+              "frame_sha256": "3dc5b2d216f34c399149aa246984fdd3ffc39636760ba09df3b468ef43f419d8"
+            },
+            {
+              "time": 112.4,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_112_4.jpg",
+              "frame_sha256": "dbcaab733a64fcca3bef39a00c9abbd3d5a4c9f2485a48674f7f1a47f0621b94"
+            }
+          ],
+          "candidate_focus_ids": [
+            "product_base"
+          ]
+        },
+        {
+          "id": "right_strip_v_du",
+          "kind": "process",
+          "claim": "横边增加Δu时，右条高仍为当前v，新增面积vΔu与右条同色对应",
+          "baseline_interval": [
+            72.966667,
+            91.533333
+          ],
+          "baseline_samples": [
+            {
+              "time": 77.049,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_77_049.jpg",
+              "frame_sha256": "6a4053c063ac1052671241536422dea2a1b1dc95bc28eeda70212622f61a19e1"
+            },
+            {
+              "time": 77.6,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_77_6.jpg",
+              "frame_sha256": "3dc5b2d216f34c399149aa246984fdd3ffc39636760ba09df3b468ef43f419d8"
+            },
+            {
+              "time": 85.575,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_85_575.jpg",
+              "frame_sha256": "b176f1832f7f5f12267b79d75a792ee3e7d973e2a1c3dec9751f7ccc0961d088"
+            }
+          ],
+          "candidate_focus_ids": [
+            "product_base",
+            "product_right"
+          ]
+        },
+        {
+          "id": "top_strip_u_dv",
+          "kind": "process",
+          "claim": "纵边增加Δv时，上条宽仍为当前u，新增面积uΔv与上条同色对应",
+          "baseline_interval": [
+            82.233333,
+            100.8
+          ],
+          "baseline_samples": [
+            {
+              "time": 85.575,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_85_575.jpg",
+              "frame_sha256": "b176f1832f7f5f12267b79d75a792ee3e7d973e2a1c3dec9751f7ccc0961d088"
+            },
+            {
+              "time": 94.131,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_94_131.jpg",
+              "frame_sha256": "581f6c689544805940f0d16053599a14d98bcff556176c952967c29acf518785"
+            },
+            {
+              "time": 95,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_95.jpg",
+              "frame_sha256": "41d74c3693ea9cecccd363b7c53da99fa49494aaeebf862c3da2dfc2563f1726"
+            }
+          ],
+          "candidate_focus_ids": [
+            "product_right",
+            "product_top"
+          ]
+        },
+        {
+          "id": "corner_du_dv",
+          "kind": "process",
+          "claim": "右上角两边均为增量，角块面积ΔuΔv单列且不漏掉",
+          "baseline_interval": [
+            91.533333,
+            110.666667
+          ],
+          "baseline_samples": [
+            {
+              "time": 94.131,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_94_131.jpg",
+              "frame_sha256": "581f6c689544805940f0d16053599a14d98bcff556176c952967c29acf518785"
+            },
+            {
+              "time": 98.483,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_98_483.jpg",
+              "frame_sha256": "9ea89d3ce6eae4b7f25e46daa5a1346eea17bc24d613e767f13039b014618f08"
+            },
+            {
+              "time": 103.117,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_103_117.jpg",
+              "frame_sha256": "c3f67ffeebd335a8081ab8673db70092d21a6a77baf5f77d4afffdc359a7b711"
+            }
+          ],
+          "candidate_focus_ids": [
+            "product_top",
+            "product_corner"
+          ]
+        },
+        {
+          "id": "exact_three_terms_signed_scope",
+          "kind": "state",
+          "claim": "三块合为精确乘积增量vΔu+uΔv+ΔuΔv；正增量面积示例与可带符号代数恒等式区分",
+          "baseline_interval": [
+            110.666667,
+            124
+          ],
+          "baseline_samples": [
+            {
+              "time": 111.733,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_111_733.jpg",
+              "frame_sha256": "dbcaab733a64fcca3bef39a00c9abbd3d5a4c9f2485a48674f7f1a47f0621b94"
+            },
+            {
+              "time": 122.933,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_122_933.jpg",
+              "frame_sha256": "09234571cc801d0572fb10830a3e815697fe795913d50fe04e5fc83bc6b3d2b8"
+            }
+          ],
+          "candidate_focus_ids": [
+            "product_exact_increment"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "product_limit",
+      "asset": "visual_v002",
+      "function": "用Δu/h有界且Δv趋零解释余项消失",
+      "baseline_interval": [
+        124.0,
+        182.0
+      ],
+      "features": [
+        {
+          "id": "divide_all_three_terms",
+          "kind": "state",
+          "claim": "三项均同除h，角项写为(Δu/h)Δv而非直接删掉小面积",
+          "baseline_interval": [
+            131.533333,
+            182
+          ],
+          "baseline_samples": [
+            {
+              "time": 143.053,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_143_053.jpg",
+              "frame_sha256": "9e5d36ca9f95c0a40e6ceaed23a62270ffaf9ba3ef9d563940a235c6edb67d5e"
+            },
+            {
+              "time": 181.027,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_181_027.jpg",
+              "frame_sha256": "77d5a24866a631356b23d4dd3fa81dedf1193aca56a43703533e93fdffad65a5"
+            }
+          ],
+          "candidate_focus_ids": [
+            "product_divided"
+          ]
+        },
+        {
+          "id": "differentiability_and_bounded_reason",
+          "kind": "state",
+          "claim": "两个差商趋向有限导数，Δv趋零；同点可微使有限值乘趋零量的角项消失",
+          "baseline_interval": [
+            139.666667,
+            182
+          ],
+          "baseline_samples": [
+            {
+              "time": 143.053,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_143_053.jpg",
+              "frame_sha256": "9e5d36ca9f95c0a40e6ceaed23a62270ffaf9ba3ef9d563940a235c6edb67d5e"
+            },
+            {
+              "time": 177.963,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_177_963.jpg",
+              "frame_sha256": "77d5a24866a631356b23d4dd3fa81dedf1193aca56a43703533e93fdffad65a5"
+            }
+          ],
+          "candidate_focus_ids": [
+            "product_limits",
+            "product_rule"
+          ]
+        },
+        {
+          "id": "normalized_corner_motion",
+          "kind": "process",
+          "claim": "非零h逐步缩小，条块和角块连续收缩；同时显示归一化角块/h的近似读数，保留面积缩小与除以h后仍趋零的区别",
+          "baseline_interval": [
+            143.053,
+            170.807
+          ],
+          "baseline_samples": [
+            {
+              "time": 143.053,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_143_053.jpg",
+              "frame_sha256": "9e5d36ca9f95c0a40e6ceaed23a62270ffaf9ba3ef9d563940a235c6edb67d5e"
+            },
+            {
+              "time": 155.033,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_155_033.jpg",
+              "frame_sha256": "e0be0cbe9043ffa245b4dd1e3eb2a057f1959afdfc1a7640ad604f2af559911a"
+            },
+            {
+              "time": 170.807,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_170_807.jpg",
+              "frame_sha256": "ed29d6b8b3ab88e268d83bd69bf3defa4a86a7cceacc972604c6e6b492c2e687"
+            }
+          ],
+          "candidate_focus_ids": [
+            "product_corner_shrink"
+          ]
+        },
+        {
+          "id": "both_factor_rates",
+          "kind": "state",
+          "claim": "保留u'v与uv'两项：每项只有一个变化率，另一因子取同一点当前值",
+          "baseline_interval": [
+            169.833333,
+            182
+          ],
+          "baseline_samples": [
+            {
+              "time": 170.807,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_170_807.jpg",
+              "frame_sha256": "ed29d6b8b3ab88e268d83bd69bf3defa4a86a7cceacc972604c6e6b492c2e687"
+            },
+            {
+              "time": 178.613,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_178_613.jpg",
+              "frame_sha256": "77d5a24866a631356b23d4dd3fa81dedf1193aca56a43703533e93fdffad65a5"
+            }
+          ],
+          "candidate_focus_ids": [
+            "product_rule"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "product_example",
+      "asset": "visual_v002",
+      "function": "把基本函数导数调用为乘积规则的输入",
+      "baseline_interval": [
+        182.0,
+        210.0
+      ],
+      "features": [
+        {
+          "id": "factor_derivatives_and_radians",
+          "kind": "state",
+          "claim": "x²sin x的u,v及u'=2x,v'=cos x逐项标出，保留实数域和弧度",
+          "baseline_interval": [
+            186.2,
+            210
+          ],
+          "baseline_samples": [
+            {
+              "time": 187.6,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_187_6.jpg",
+              "frame_sha256": "9f75cb202b812f003385e71916c0fc572497f01a2b24ac177129812a29c388fc"
+            },
+            {
+              "time": 194.023,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_194_023.jpg",
+              "frame_sha256": "197d4b3ddf4c4e2d351673af9b8b773eba61df21a1847f9c1b33596b53d4df6e"
+            }
+          ],
+          "candidate_focus_ids": [
+            "product_example_factors",
+            "product_example_derivatives"
+          ]
+        },
+        {
+          "id": "two_term_substitution",
+          "kind": "process",
+          "claim": "从因子各自导数代入两项，得到2x sin x+x² cos x，保留变化率乘另一当前值的解释",
+          "baseline_interval": [
+            186.2,
+            210
+          ],
+          "baseline_samples": [
+            {
+              "time": 188.104,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_188_104.jpg",
+              "frame_sha256": "98ccea7e8ddcbfdf844648e53d179574b445d8e78cab827c779b38f456f757c0"
+            },
+            {
+              "time": 198.1,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_198_1.jpg",
+              "frame_sha256": "6b44ff62a27c5abc81bfc5b2bd3fd19f7ca132e4ff0b0b6e859857bd31f8642d"
+            },
+            {
+              "time": 205.233,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_205_233.jpg",
+              "frame_sha256": "77c466efdf5ad1ab352b36d03d35ade6558c0afab462f4baad4fb0b7fd14f4bc"
+            }
+          ],
+          "candidate_focus_ids": [
+            "product_example_derivatives",
+            "product_example_result"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quotient_increment",
+      "asset": "visual_v002",
+      "function": "使负号及两个分母来源可追踪",
+      "baseline_interval": [
+        210.0,
+        268.0
+      ],
+      "features": [
+        {
+          "id": "old_new_fractions_and_domains",
+          "kind": "state",
+          "claim": "先分清变化后的整体分子/分母，再减原商；v与v+Δv都非零",
+          "baseline_interval": [
+            217.533333,
+            268
+          ],
+          "baseline_samples": [
+            {
+              "time": 221.6,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_221_6.jpg",
+              "frame_sha256": "5eeb84e1079b8dec6283646b4459e1569fbd5a80a0950b90300ef94114e559cd"
+            },
+            {
+              "time": 263.963,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_263_963.jpg",
+              "frame_sha256": "510e9ccd476d4744112dbe7901f02d229f4b88b66cd0819a22ec9306d5b69b5a"
+            }
+          ],
+          "candidate_focus_ids": [
+            "quotient_difference"
+          ]
+        },
+        {
+          "id": "common_denominator_provenance",
+          "kind": "process",
+          "claim": "通分保留v(v+Δv)，分子v(u+Δu)-u(v+Δv)交叉相乘并保留整体减号",
+          "baseline_interval": [
+            217.533333,
+            245.366667
+          ],
+          "baseline_samples": [
+            {
+              "time": 221.6,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_221_6.jpg",
+              "frame_sha256": "5eeb84e1079b8dec6283646b4459e1569fbd5a80a0950b90300ef94114e559cd"
+            },
+            {
+              "time": 232.243,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_232_243.jpg",
+              "frame_sha256": "e19ee8769269c593f0a0b2e416f8e6830cad01b519124cb4c1f6315d9c1db09b"
+            },
+            {
+              "time": 239,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_239.jpg",
+              "frame_sha256": "81fde08cfad0fce7a89197fa019f52c84598358947ea63471e3af0437fa40071"
+            }
+          ],
+          "candidate_focus_ids": [
+            "quotient_difference",
+            "quotient_common_denominator"
+          ]
+        },
+        {
+          "id": "uv_cancellation_and_minus",
+          "kind": "process",
+          "claim": "从保留的括号行解释两份uv相消，留下vΔu-uΔv；分母仍是原前后两部分相乘",
+          "baseline_interval": [
+            229.133333,
+            268
+          ],
+          "baseline_samples": [
+            {
+              "time": 232.243,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_232_243.jpg",
+              "frame_sha256": "e19ee8769269c593f0a0b2e416f8e6830cad01b519124cb4c1f6315d9c1db09b"
+            },
+            {
+              "time": 242.767,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_242_767.jpg",
+              "frame_sha256": "88bf9b6c0c73a45bf8d8b0016a118cad959cee9b22835664a81c65fcd95217b1"
+            },
+            {
+              "time": 256.4,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_256_4.jpg",
+              "frame_sha256": "dea84875f326495ce8acde47a2dab2d2c32c1f433f725db24f3d3fbfc0a33019"
+            }
+          ],
+          "candidate_focus_ids": [
+            "quotient_common_denominator",
+            "quotient_cancel"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quotient_limit",
+      "asset": "visual_v002",
+      "function": "解释分母平方来自两个邻近分母的同一极限",
+      "baseline_interval": [
+        268.0,
+        308.0
+      ],
+      "features": [
+        {
+          "id": "quotient_divide_h",
+          "kind": "state",
+          "claim": "商增量同除h，v(Δu/h)-u(Δv/h)分别暴露两个变化率",
+          "baseline_interval": [
+            273.2,
+            308
+          ],
+          "baseline_samples": [
+            {
+              "time": 276,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_276.jpg",
+              "frame_sha256": "55110c2cf67c05631a716664e4cec972fcc9e7a7940063d4dbb10708768da639"
+            },
+            {
+              "time": 300,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_300.jpg",
+              "frame_sha256": "75016c7bb1946e84f0d5eab47da0394bf6dd88f263e0e1d72316b9e1f35d3712"
+            }
+          ],
+          "candidate_focus_ids": [
+            "quotient_divide_h"
+          ]
+        },
+        {
+          "id": "nonzero_neighborhood",
+          "kind": "state",
+          "claim": "u,v同点可微；v连续且非零，足够近处变化后分母也非零，Δv趋零",
+          "baseline_interval": [
+            282,
+            308
+          ],
+          "baseline_samples": [
+            {
+              "time": 284.08,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_284_08.jpg",
+              "frame_sha256": "e65845c01c3dbde44c4d1c1aeabc1300aac2978a06f7fb92b7c49ea5fd62e216"
+            },
+            {
+              "time": 306.816,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_306_816.jpg",
+              "frame_sha256": "c56dabab1d151126806598c93af52adb5bf8a6daa5190923c26a7b02c8eb4861"
+            }
+          ],
+          "candidate_focus_ids": [
+            "quotient_take_limit"
+          ]
+        },
+        {
+          "id": "squared_denominator_limit",
+          "kind": "process",
+          "claim": "从v(v+Δv)及Δv趋零走到v²，分子成u'v-uv'，保留负号来源与v≠0",
+          "baseline_interval": [
+            273.2,
+            308
+          ],
+          "baseline_samples": [
+            {
+              "time": 276,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_276.jpg",
+              "frame_sha256": "55110c2cf67c05631a716664e4cec972fcc9e7a7940063d4dbb10708768da639"
+            },
+            {
+              "time": 288,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_288.jpg",
+              "frame_sha256": "75569c231f2eea298b8d38dc4a2e3222a0157447b9c6d78c3eeeef8feac6e462"
+            },
+            {
+              "time": 300.6,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_300_6.jpg",
+              "frame_sha256": "c56dabab1d151126806598c93af52adb5bf8a6daa5190923c26a7b02c8eb4861"
+            }
+          ],
+          "candidate_focus_ids": [
+            "quotient_divide_h",
+            "quotient_take_limit",
+            "quotient_rule"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cost_example",
+      "asset": "visual_v002",
+      "function": "从符号判断平均成本先降后升，合法产量域x>0",
+      "baseline_interval": [
+        308.0,
+        360.0
+      ],
+      "features": [
+        {
+          "id": "positive_domain_and_units",
+          "kind": "state",
+          "claim": "连续产量x按百件、总成本C按百元、平均成本A按元/件；C=x²+4,A=C/x,x>0",
+          "baseline_interval": [
+            314.233333,
+            360
+          ],
+          "baseline_samples": [
+            {
+              "time": 318.4,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_318_4.jpg",
+              "frame_sha256": "d3acd393272c734dad493aedd7eb801fd958f9a2a2cb21588f6616bb5c8751e8"
+            },
+            {
+              "time": 349.6,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_349_6.jpg",
+              "frame_sha256": "1dd31051e71641df78573b4477e512ce77c81d07fcfab06cc756fb5d6dfa40c6"
+            }
+          ],
+          "candidate_focus_ids": [
+            "cost_model"
+          ]
+        },
+        {
+          "id": "cost_rule_substitution",
+          "kind": "process",
+          "claim": "商规则逐项代入2x·x-(x²+4)·1及分母x²，再化为1-4/x²",
+          "baseline_interval": [
+            314.233333,
+            360
+          ],
+          "baseline_samples": [
+            {
+              "time": 318.4,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_318_4.jpg",
+              "frame_sha256": "d3acd393272c734dad493aedd7eb801fd958f9a2a2cb21588f6616bb5c8751e8"
+            },
+            {
+              "time": 324.12,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_324_12.jpg",
+              "frame_sha256": "379862db6e949f217ddd102e3152160590d5bbd3adad882e4746a4ccbaa30bc9"
+            },
+            {
+              "time": 329.855,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_329_855.jpg",
+              "frame_sha256": "a0992e442e30202bba864ef3ee1f2b4d528f8ec02c8624acc7872c3ffa32e30c"
+            }
+          ],
+          "candidate_focus_ids": [
+            "cost_model",
+            "cost_substitute",
+            "cost_derivative"
+          ]
+        },
+        {
+          "id": "negative_slope_decreasing_cost",
+          "kind": "process",
+          "claim": "产量1到2时平均成本下降，原生同状态驱动点、切线、x及导数读数，斜率由负到零",
+          "baseline_interval": [
+            331.4,
+            343.366667
+          ],
+          "baseline_samples": [
+            {
+              "time": 332.067,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_332_067.jpg",
+              "frame_sha256": "f721814d0b611e05db861425788d6db94874a66c069257b20c2859f673d5bd35"
+            },
+            {
+              "time": 335.567,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_335_567.jpg",
+              "frame_sha256": "923f80b63abc70c5039232940888aa54f69c2fe7da30a73e90e7c5c376abd193"
+            },
+            {
+              "time": 340.5,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_340_5.jpg",
+              "frame_sha256": "8cf00430d1c0ff3e48e303383cfe0426ab418249a057108c5172d63c5293e78d"
+            }
+          ],
+          "candidate_focus_ids": [
+            "cost_decreasing"
+          ]
+        },
+        {
+          "id": "two_hundred_stationary",
+          "kind": "state",
+          "claim": "在x=2稳定停留：两百件、A=4元/件、A'=0和水平切线一致",
+          "baseline_interval": [
+            343.366667,
+            347
+          ],
+          "baseline_samples": [
+            {
+              "time": 343.657,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_343_657.jpg",
+              "frame_sha256": "f8f0bbb63b163f48cada02b2afe747fc21bba049a0901dc4a1393d1d9c4bc445"
+            },
+            {
+              "time": 346.709,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_346_709.jpg",
+              "frame_sha256": "f8f0bbb63b163f48cada02b2afe747fc21bba049a0901dc4a1393d1d9c4bc445"
+            }
+          ],
+          "candidate_focus_ids": [
+            "cost_stationary"
+          ]
+        },
+        {
+          "id": "positive_slope_increasing_cost",
+          "kind": "process",
+          "claim": "从2到4时斜率变正且平均成本增加，点、切线和近似数值保持联动",
+          "baseline_interval": [
+            348.566667,
+            360
+          ],
+          "baseline_samples": [
+            {
+              "time": 349.273,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_349_273.jpg",
+              "frame_sha256": "1832f88a526e250a7f0c699e566e3de0831aea267a8f253120ac148afaa58969"
+            },
+            {
+              "time": 352.983,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_352_983.jpg",
+              "frame_sha256": "c014f04db594484eade64ef1bc1f6aab8b92b295117a24f6408bf80569147585"
+            },
+            {
+              "time": 357.379,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_357_379.jpg",
+              "frame_sha256": "8a67935ef589170b4026dbeed9cb79bebd5bbb005b84a89b88fe59f4d27cb6b7"
+            }
+          ],
+          "candidate_focus_ids": [
+            "cost_increasing"
+          ]
+        },
+        {
+          "id": "minimum_requires_sign_change",
+          "kind": "process",
+          "claim": "比较二之前下降、二处水平、二之后上升，最低点理由不简化为只有导数零",
+          "baseline_interval": [
+            331.4,
+            360
+          ],
+          "baseline_samples": [
+            {
+              "time": 335.567,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_335_567.jpg",
+              "frame_sha256": "923f80b63abc70c5039232940888aa54f69c2fe7da30a73e90e7c5c376abd193"
+            },
+            {
+              "time": 345.183,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_345_183.jpg",
+              "frame_sha256": "f8f0bbb63b163f48cada02b2afe747fc21bba049a0901dc4a1393d1d9c4bc445"
+            },
+            {
+              "time": 356.339,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_356_339.jpg",
+              "frame_sha256": "b9eaaa81ac88adecf99bd755044b853669c75508ae687d8c6b1735a9741ad273"
+            }
+          ],
+          "candidate_focus_ids": [
+            "cost_decreasing",
+            "cost_stationary",
+            "cost_increasing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "closing",
+      "asset": "visual_v002",
+      "function": "自然引入链式法则的内外层变化率",
+      "baseline_interval": [
+        360.0,
+        378.0
+      ],
+      "features": [
+        {
+          "id": "rules_summary",
+          "kind": "state",
+          "claim": "组合拆回增量，回顾和差、常数倍、乘积和商规则",
+          "baseline_interval": [
+            366.3,
+            378
+          ],
+          "baseline_samples": [
+            {
+              "time": 367.236,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_367_236.jpg",
+              "frame_sha256": "f2f4c0bb176fe3d257c460750a73a78b6831d2c3b29c9684ad77f50a884b0811"
+            },
+            {
+              "time": 374.4,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_374_4.jpg",
+              "frame_sha256": "f9fe35c659219d683d6654859c3a558225ce84fda2218a9ef76aae367cbc3961"
+            }
+          ],
+          "candidate_focus_ids": [
+            "closing_rules"
+          ]
+        },
+        {
+          "id": "chain_handoff",
+          "kind": "state",
+          "claim": "用sin(x²)及x到x²到sin(x²)的真实两层输入链衔接下一课",
+          "baseline_interval": [
+            371.866667,
+            378
+          ],
+          "baseline_samples": [
+            {
+              "time": 372.15,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_372_15.jpg",
+              "frame_sha256": "f9fe35c659219d683d6654859c3a558225ce84fda2218a9ef76aae367cbc3961"
+            },
+            {
+              "time": 377.509,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch03-rules-20261102/visual-v002/frames/frame_377_509.jpg",
+              "frame_sha256": "b69140f00c3caf9b5d91798d0d848f527ffd943c2d4ee25accd52767e53fb8cd"
+            }
+          ],
+          "candidate_focus_ids": [
+            "closing_chain"
+          ]
+        }
+      ]
+    }
+  ],
+  "baseline_inventory_correction": {
+    "writer": "019eaf8b-9151-75e2-9db4-5ff834335577",
+    "consumers": [
+      "independent comparator",
+      "coordinator",
+      "future inventory editor"
+    ],
+    "lifecycle": "This v005 inventory correction only; never a retention or release approval",
+    "invalidation": "Changed old/new contract, observed media, failed report or visual implementation",
+    "original_contract": {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/projects/math-derivative-ch03-rules-20261102/content-regression-contract-v004.json",
+      "sha256": "cf88683e60acde1c16878aca191000f9b32f960069f81627ecd6b0fd156fb129"
+    },
+    "observation": {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch03-rules-20261102/review/regression-v004.json",
+      "sha256": "7ae8bd86ce94e8f425a072cada4e5ab075ebb7dd24d70291f47389d389331a0a"
+    },
+    "feature": "linearity.linked_increment_bars",
+    "previous_claim": "u=x²、v=x在x=1，共同h从0.5到0.05，三条增量柱同时缩小且和柱始终等于前两柱之和",
+    "current_claim": "u=x²、v=x在x=1，同一个非零输入增量h逐步缩小；三条增量柱同步变小，和柱始终等于前两柱之和",
+    "reason": "The source drives h from 0.5 to 0.05, but neither selected film displays those numeric endpoints. Compare the visible common-input shrinkage and additive increments; do not certify an unreadable source parameter as observed pixels.",
+    "mathematics_changed": false,
+    "source_or_timing_changed": false,
+    "narration_changed": false,
+    "features_removed": [],
+    "approval_transferred": false,
+    "still_required": "All 30 actual baseline teaching functions and both-version process evidence, independent current first look, current narration/audio/caption gates"
+  },
+  "baseline_inventory_corrections": [
+    {
+      "writer": "019eaf8b-9151-75e2-9db4-5ff834335577",
+      "consumers": [
+        "independent comparator",
+        "coordinator",
+        "future inventory editor"
+      ],
+      "lifecycle": "This v005 inventory correction only; never a retention or release approval",
+      "invalidation": "Changed old/new contract, observed media, failed report or visual implementation",
+      "original_contract": {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/projects/math-derivative-ch03-rules-20261102/content-regression-contract-v004.json",
+        "sha256": "cf88683e60acde1c16878aca191000f9b32f960069f81627ecd6b0fd156fb129"
+      },
+      "observation": {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch03-rules-20261102/review/regression-v004.json",
+        "sha256": "7ae8bd86ce94e8f425a072cada4e5ab075ebb7dd24d70291f47389d389331a0a"
+      },
+      "feature": "linearity.linked_increment_bars",
+      "previous_claim": "u=x²、v=x在x=1，共同h从0.5到0.05，三条增量柱同时缩小且和柱始终等于前两柱之和",
+      "current_claim": "u=x²、v=x在x=1，同一个非零输入增量h逐步缩小；三条增量柱同步变小，和柱始终等于前两柱之和",
+      "reason": "The source drives h from 0.5 to 0.05, but neither selected film displays those numeric endpoints. Compare the visible common-input shrinkage and additive increments; do not certify an unreadable source parameter as observed pixels.",
+      "mathematics_changed": false,
+      "source_or_timing_changed": false,
+      "narration_changed": false,
+      "features_removed": [],
+      "approval_transferred": false,
+      "still_required": "All 30 actual baseline teaching functions and both-version process evidence, independent current first look, current narration/audio/caption gates"
+    },
+    {
+      "writer": "019eaf8b-9151-75e2-9db4-5ff834335577",
+      "consumers": [
+        "independent comparator",
+        "coordinator",
+        "future inventory editor"
+      ],
+      "lifecycle": "This transparent v006 inventory correction, never approval",
+      "invalidation": "Changed inventory, observation, baseline, source, media, text or timing",
+      "original_contract": {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/projects/math-derivative-ch03-rules-20261102/content-regression-contract-v005.json",
+        "sha256": "8cdf1f3d935cb50143114bf7ea2fafbcdf2cee745aa6d1a091213f4dc50d3218"
+      },
+      "observation": {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch03-rules-20261102/review/regression-v005.json",
+        "sha256": "5e616464cf29a53c1f62b76fc8568b3512d971a2d3c235a124f2f0b5013384db"
+      },
+      "feature": "product_limit.normalized_corner_motion",
+      "previous_claim": "h从0.6到0.025，条块和角块连续收缩，并显示角块/h而不只展示面积本身变小",
+      "current_claim": "非零h逐步缩小，条块和角块连续收缩；同时显示归一化角块/h的近似读数，保留面积缩小与除以h后仍趋零的区别",
+      "reason": "Actual finite-precision h and corner/h readouts visibly support the contraction and normalization. They do not uniquely disclose the exact internal endpoint0.025. Preserve the visible reasoning and all math conditions without relabelling a rounded display as exact.",
+      "source_or_timing_changed": false,
+      "narration_changed": false,
+      "features_removed": [],
+      "approval_transferred": false,
+      "inventory_audit": {
+        "all_feature_claims_read": 30,
+        "internal_animation_endpoint_claims_identified": [
+          "linearity.linked_increment_bars: already corrected in v005 with its original provenance retained",
+          "product_limit.normalized_corner_motion: corrected in v006"
+        ],
+        "explicit_math_conditions_and_selected_example_values": "Retained verbatim, including domain exclusions, units, factor values, named cost quantities and the exact stationary example"
+      }
+    }
+  ],
+  "numeric_readout_scope": {
+    "writer": "019eaf8b-9151-75e2-9db4-5ff834335577",
+    "consumers": [
+      "independent comparator",
+      "inventory author"
+    ],
+    "lifecycle": "Interpretation of this selected visible-function inventory only",
+    "invalidation": "Changed visual statements, readout precision, mathematical model or inventory",
+    "mathematical_statements": "Explicit identities, inequalities, conditions and selected exact examples retain their stated meaning; an error or loss remains blocking",
+    "dynamic_readouts": "Judge displayed approximate readouts at their actual precision, coordinated motion and algebraic connection; do not demand unique recovery of hidden floats from rounded pixels",
+    "internal_parameters": "Render-state provenance may establish implementation facts, but a hidden parameter is not a claimed visible teaching function",
+    "retention": "All30 functions, variables, derivations, conditions, units and two-version process evidence remain mandatory; no total score compensates for loss"
+  }
+}

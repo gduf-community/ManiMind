@@ -1,0 +1,38 @@
+{
+  "version": "understanding-first-v3",
+  "editorial_revision": "2026-11-03-visible-formula-identity-v2",
+  "delivery_contract": "continuous-meaning-units-v1",
+  "formula_continuity_contract": "traceable-formula-v1",
+  "formula_continuity_gate": "traceable_film_v2",
+  "based_on": "configs/visual-first-workflow-v4.3-unit.json",
+  "purpose": "按课程位置安排解释，关键公式变化呈现可追踪的对象与运算，审核核对实际视频像素和上下文隔离",
+  "author_guidance": [
+    "从课程context确定新增理解、先修与后课调用，保留标题和自然引入；熟悉操作紧凑，首次出现和难以想象的关系充分展开。",
+    "用平实准确的口语沿对象、变化、原因向前讲，保留条件、单位和完整理由；整节通读，按完整意群安排声音。",
+    "选择推理承重的公式构建、代入、消元、提因式和表示转换，说明观众需要跟住哪个数学对象、当前做了什么运算。",
+    "同一对象沿用语义身份，重复字形按数学角色区分。保留可读旧式时，相关变量或完整项的可见副本可从实际原位置进入新角色，新项作为新项出现。",
+    "先在目标位置淡入整式再移动少数字符，不能显示它从上一步怎样来。选择能跟踪的路径与错峰，避免同时乱飞和碎字遮挡。",
+    "不要求所有公式、标签或字符运动，不规定轨迹、动作数、秒数或分镜模板。空间或时长服从解释。",
+    "当前有效内容是保留基线，本轮新增目标单独列明；完整推导、图形联系、数学条件和单位不能在优化中暗删。",
+    "复用同文原音仍重新审核当前实际时序和单套字幕；自然听感、发音和学生理解另行验收。"
+  ],
+  "review_checks": {
+    "mechanism": "新增理解有真实现象及推理依据，术语、条件、单位、先修调用准确",
+    "attention": "关键对象、公式角色及语言指代清楚",
+    "formula_continuity": "从第一次相关构建起逐项核对源、过程中帧和目标，同一量可追踪且运算关系可见；代码有Transform、数字在动或终式正确均不替代",
+    "pacing": "简单处紧凑，困难处能看清过程；不只剩终态等待",
+    "meaning_alignment": "完整原音各子句与当前实际动作对应，历史行和大focus不能掩盖错位",
+    "transfer": "保留后课可调用的出口，学生理解另行测试"
+  },
+  "review": {
+    "visual_first": "独立新上下文看公共目标及真实画面，formula_continuity逐项记录数学身份、运算和实际过程帧",
+    "post_visual_narration": "不同上下文通读整课口语并对照当前focus",
+    "audio_alignment": "完整原音与真实帧独立审核，听感及发音另记",
+    "minimum_total": 80,
+    "critical_minimum": {"science": 3, "causality": 3, "visual_explanation": 3, "pacing": 3},
+    "scope": "第一眼审核与新旧比较的agent和context均独立；所有公式证据逐项解码核对当前媒体对应时刻，不只信任索引"
+  },
+  "entrypoint": "manimind.postproduce.traceable_film_v2: evidence extracts current-video lossless PNGs before independent review; gate/install/silent verify the bound lossless index, dimensions and actual pixels; later original-audio and captions retain immutable approved silent sources",
+  "generalization": "重要关系按题材选，审核证据完整性不是教学数量配额；旧自主入口未自动升级",
+  "lifecycle": "新选v4.3.1的版本；v4.3试验源和诊断媒体保留，不复用其批准，旧unit_film及历史输入不变"
+}

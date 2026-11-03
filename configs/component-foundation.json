@@ -1,0 +1,54 @@
+{
+  "schema_version": "components-0.1",
+  "id": "component-foundation-20261018",
+  "title": "通用组件工程校准：函数、向量与方程",
+  "provenance": {"kind": "engineering_fixture", "author": "Codex engineering",
+    "interventions": ["三组测试数据由工程师编写，用来验收通用组件，不计入任何LLM成功率。"]},
+  "shots": [
+    {
+      "id": "sine-shift", "title": "改变参数，观察正弦曲线平移",
+      "goal": "用同一数学状态联动函数曲线、零点、参数读数。",
+      "duration": 9, "caption": ["保持波形不变，只改变水平位移参数。", "曲线和标出的零点由同一个参数驱动。"],
+      "axes": {"x_range": [-4, 4, 2], "y_range": [-2, 2, 1], "x_label": "x", "y_label": "y", "equal_units": false},
+      "parameters": {"p": -1.5},
+      "components": [
+        {"id": "wave", "kind": "curve", "label": "正弦曲线", "color": "cyan", "expression": {"op": "sin", "args": [{"op": "sub", "args": ["x", "p"]}]}},
+        {"id": "law", "kind": "formula", "label": "函数关系", "color": "ink", "lhs": "y", "source": "wave"},
+        {"id": "zero", "kind": "point", "label": "随曲线移动的零点", "color": "yellow", "position": ["p", 0]},
+        {"id": "phase", "kind": "readout", "label": "位移参数 p", "color": "yellow", "expression": "p", "unit": "rad", "decimals": 2}
+      ],
+      "keyframes": [{"at": 0, "values": {"p": -1.5}}, {"at": 0.15, "values": {"p": -1.5}}, {"at": 0.8, "values": {"p": 1.5}}, {"at": 1, "values": {"p": 1.5}}]
+    },
+    {
+      "id": "vector-addition", "title": "向量相加，首尾相接",
+      "goal": "改变第二个向量的倍率，同时显示合向量及其长度。",
+      "duration": 9, "caption": ["蓝色向量固定，黄色向量按倍率增长。", "红色合向量连接第一个起点和最后的终点。"],
+      "axes": {"x_range": [-1, 4, 1], "y_range": [-1, 4, 1], "x_label": "x", "y_label": "y", "equal_units": true},
+      "parameters": {"k": 0.2},
+      "components": [
+        {"id": "first", "kind": "vector", "label": "向量 a", "color": "cyan", "start": [0, 0], "end": [2, 1]},
+        {"id": "second", "kind": "vector", "label": "向量 k b", "color": "yellow", "start": [2, 1], "end": [{"op": "sub", "args": [2, "k"]}, {"op": "add", "args": [1, {"op": "mul", "args": [2, "k"]}]}]},
+        {"id": "result", "kind": "vector", "label": "合向量 a + k b", "color": "coral", "start": [0, 0], "end": [{"op": "sub", "args": [2, "k"]}, {"op": "add", "args": [1, {"op": "mul", "args": [2, "k"]}]}]},
+        {"id": "scale", "kind": "readout", "label": "倍率 k", "color": "yellow", "expression": "k", "unit": "倍", "decimals": 2},
+        {"id": "length", "kind": "readout", "label": "合向量长度", "color": "coral", "expression": {"op": "sqrt", "args": [{"op": "add", "args": [{"op": "pow", "args": [{"op": "sub", "args": [2, "k"]}, 2]}, {"op": "pow", "args": [{"op": "add", "args": [1, {"op": "mul", "args": [2, "k"]}]}, 2]}]}]}, "unit": "单位", "decimals": 2}
+      ],
+      "keyframes": [{"at": 0, "values": {"k": 0.2}}, {"at": 0.15, "values": {"k": 0.2}}, {"at": 0.8, "values": {"k": 1}}, {"at": 1, "values": {"k": 1}}]
+    },
+    {
+      "id": "quadratic-roots", "title": "把方程的两个解画出来",
+      "goal": "用水平辅助线、两个交点与参数读数展示方程x²=k的实根。",
+      "duration": 9, "caption": ["水平线越高，两个交点离对称轴越远。", "交点的横坐标，就是方程的两个实数解。"],
+      "axes": {"x_range": [-2.5, 2.5, 1], "y_range": [-1, 7, 1], "x_label": "x", "y_label": "y", "equal_units": false},
+      "parameters": {"k": 0.25},
+      "components": [
+        {"id": "parabola", "kind": "curve", "label": "抛物线", "color": "cyan", "expression": {"op": "pow", "args": ["x", 2]}},
+        {"id": "level", "kind": "segment", "label": "水平线 y = k", "color": "yellow", "start": [-2.5, "k"], "end": [2.5, "k"], "dashed": true},
+        {"id": "left-root", "kind": "point", "label": "左侧交点", "color": "coral", "position": [{"op": "mul", "args": [-1, {"op": "sqrt", "args": ["k"]}]}, "k"]},
+        {"id": "right-root", "kind": "point", "label": "右侧交点", "color": "green", "position": [{"op": "sqrt", "args": ["k"]}, "k"]},
+        {"id": "law", "kind": "formula", "label": "函数关系", "color": "ink", "lhs": "y", "source": "parabola"},
+        {"id": "height", "kind": "readout", "label": "水平线高度 k", "color": "yellow", "expression": "k", "unit": "单位", "decimals": 2}
+      ],
+      "keyframes": [{"at": 0, "values": {"k": 0.25}}, {"at": 0.15, "values": {"k": 0.25}}, {"at": 0.8, "values": {"k": 4}}, {"at": 1, "values": {"k": 4}}]
+    }
+  ]
+}

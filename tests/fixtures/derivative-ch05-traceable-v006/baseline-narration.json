@@ -1,0 +1,262 @@
+{
+  "schema_version": 3,
+  "project_id": "math-derivative-ch05-monotonicity-20261102",
+  "author_agent": "019eaf8b-9151-75e2-9db4-5ff834335577",
+  "author_context": "019eaf8b-9151-75e2-9db4-5ff834335577",
+  "status": "v003_author_clarity_pass_before_independent_narration_review",
+  "audio_status": "not_generated",
+  "alignment_status": "not_performed_no_acoustic_times",
+  "writer": "01a199e9-73ab-7700-8a9f-cd7b5541b0ad",
+  "consumers": [
+    "main",
+    "independent narration reviewer",
+    "future meaning-unit speech planner"
+  ],
+  "lifecycle": "v002 continuous meaning-unit draft; existing seven units unchanged",
+  "invalidation": "Changed text/references/context or mismatch with actual visual",
+  "units": [
+    {
+      "id": "monotonicity-u1",
+      "cue": "opening",
+      "text": "上一课，我们沿着两级变化求出了复合函数的导数。现在已经会算导数了，就把这个结果拿回图上用。眼前这个函数，往右走时有的地方升高，有的地方降低。导数的正负，怎样帮我们读出这些区间？",
+      "references": [
+        {
+          "id": "mono-u1-r1",
+          "focus": "monotonicity_opening",
+          "text": "上一课，我们沿着两级变化求出了复合函数的导数。现在已经会算导数了，就把这个结果拿回图上用。眼前这个函数，往右走时有的地方升高，有的地方降低。导数的正负，怎样帮我们读出这些区间？"
+        }
+      ]
+    },
+    {
+      "id": "monotonicity-u2",
+      "cue": "same-x",
+      "text": "上面画的是原函数，纵坐标告诉我们函数值有多高。下面画的是它的导函数，纵坐标告诉我们当前的导数值。两张图的纵坐标说的是不同的量。让输入x向右移动，同一条竖线会同时带动上面的函数点和下面的导数点。上面的黄色切线也跟着更新，它的斜率，正是下面那个点表示的导数值。这样，我们就能把同一个位置上的函数高度、切线方向和导数值连起来。两张图共用横坐标，下面点的高度读的是斜率，数值也单独列在右边。",
+      "references": [
+        {
+          "id": "mono-u2-r1",
+          "focus": "axes_meanings",
+          "text": "上面画的是原函数，纵坐标告诉我们函数值有多高。下面画的是它的导函数，纵坐标告诉我们当前的导数值。两张图的纵坐标说的是不同的量。"
+        },
+        {
+          "id": "mono-u2-r2",
+          "focus": "same_x_motion",
+          "text": "让输入x向右移动，同一条竖线会同时带动上面的函数点和下面的导数点。上面的黄色切线也跟着更新，它的斜率，正是下面那个点表示的导数值。"
+        },
+        {
+          "id": "mono-u2-r3",
+          "focus": "same_x_result",
+          "text": "这样，我们就能把同一个位置上的函数高度、切线方向和导数值连起来。两张图共用横坐标，下面点的高度读的是斜率，数值也单独列在右边。"
+        }
+      ]
+    },
+    {
+      "id": "monotonicity-u3",
+      "cue": "sweep",
+      "text": "从左边向右走，下面的导数点在零轴上方，导数为正。上面的切线向右上方倾斜，函数点也随着输入增加而升高。走到负一，导数点落到零轴上。就在负一处，上面的切线水平了。继续向右，导数点进入零轴下方。切线向右下方倾斜，函数点从较高处向下走。这一整段的导数为负，直到走到一，导数再次回到零。一这个位置的切线，也恰好水平。再往右走，导数点回到零轴上方，切线恢复向右上方倾斜，函数点重新上升。三段走完，我们把上升、下降、再上升的过程，和下面的正、负、正对应起来。接下来用导数式子，确定这些区间的完整范围。",
+      "references": [
+        {
+          "id": "mono-u3-r1",
+          "focus": "left_interval_motion",
+          "text": "从左边向右走，下面的导数点在零轴上方，导数为正。上面的切线向右上方倾斜，函数点也随着输入增加而升高。走到负一，导数点落到零轴上。"
+        },
+        {
+          "id": "mono-u3-r2",
+          "focus": "minus_one_horizontal",
+          "text": "就在负一处，上面的切线水平了。"
+        },
+        {
+          "id": "mono-u3-r3",
+          "focus": "middle_interval_motion",
+          "text": "继续向右，导数点进入零轴下方。切线向右下方倾斜，函数点从较高处向下走。这一整段的导数为负，直到走到一，导数再次回到零。"
+        },
+        {
+          "id": "mono-u3-r4",
+          "focus": "plus_one_horizontal",
+          "text": "一这个位置的切线，也恰好水平。"
+        },
+        {
+          "id": "mono-u3-r5",
+          "focus": "right_interval_motion",
+          "text": "再往右走，导数点回到零轴上方，切线恢复向右上方倾斜，函数点重新上升。"
+        },
+        {
+          "id": "mono-u3-r6",
+          "focus": "sweep_result",
+          "text": "三段走完，我们把上升、下降、再上升的过程，和下面的正、负、正对应起来。接下来用导数式子，确定这些区间的完整范围。"
+        }
+      ]
+    },
+    {
+      "id": "monotonicity-u4",
+      "cue": "signs",
+      "text": "导数写成三个因子相乘：三、x减一、x加一。它在负一和一等于零，这两个数把实数轴分成三段。小于负一时，两个因子都为负，乘积为正，所以左边这一整段增长。负一和一之间，两个因子一正一负，导数为负，对应中间这一段下降。大于一时，两个因子都为正，导数也为正，函数重新增长。这些符号来自因子在整个区间上的取值，所以判断覆盖整段实数轴。图上刚才走过的过程，帮助我们看清了符号所对应的变化。",
+      "references": [
+        {
+          "id": "mono-u4-r1",
+          "focus": "sign_boundaries",
+          "text": "导数写成三个因子相乘：三、x减一、x加一。它在负一和一等于零，这两个数把实数轴分成三段。"
+        },
+        {
+          "id": "mono-u4-r2",
+          "focus": "left_sign",
+          "text": "小于负一时，两个因子都为负，乘积为正，所以左边这一整段增长。"
+        },
+        {
+          "id": "mono-u4-r3",
+          "focus": "middle_sign",
+          "text": "负一和一之间，两个因子一正一负，导数为负，对应中间这一段下降。"
+        },
+        {
+          "id": "mono-u4-r4",
+          "focus": "right_sign",
+          "text": "大于一时，两个因子都为正，导数也为正，函数重新增长。"
+        },
+        {
+          "id": "mono-u4-r5",
+          "focus": "whole_sign_chart",
+          "text": "这些符号来自因子在整个区间上的取值，所以判断覆盖整段实数轴。图上刚才走过的过程，帮助我们看清了符号所对应的变化。"
+        }
+      ]
+    },
+    {
+      "id": "monotonicity-u5",
+      "cue": "interval",
+      "text": "为什么要强调整个区间？先在左边这段取两个位置，把左点固定为a，让右点b向右移动。随着b增加，右边的函数值继续升高。两点连线的斜率，因此为正。保持这两个端点，把切点移到它们之间，找到与两点连线平行的那条切线。现在，中间这处的切线斜率，等于刚才两点连线的斜率。把这个联系说完整，就是中值定理：函数在整个开区间内可导，那么对区间内任意两点，总能在它们之间找到这样的切点。如果整个区间的导数都为正，中间找到的导数也为正。两点的横坐标之差为正，乘起来就说明右边函数值更大。对任意两点都成立，才得到整个区间严格递增。整个区间的导数都为负时，同样的关系给出右边函数值更小，也就得到严格递减。只知道某一个位置的切线方向，还没有给出其他位置的导数符号。",
+      "references": [
+        {
+          "id": "mono-u5-r1",
+          "focus": "interval_pair_motion",
+          "text": "为什么要强调整个区间？先在左边这段取两个位置，把左点固定为a，让右点b向右移动。随着b增加，右边的函数值继续升高。"
+        },
+        {
+          "id": "mono-u5-r2",
+          "focus": "interval_pair_result",
+          "text": "两点连线的斜率，因此为正。"
+        },
+        {
+          "id": "mono-u5-r3",
+          "focus": "secant_witness_motion",
+          "text": "保持这两个端点，把切点移到它们之间，找到与两点连线平行的那条切线。"
+        },
+        {
+          "id": "mono-u5-r4",
+          "focus": "secant_witness_result",
+          "text": "现在，中间这处的切线斜率，等于刚才两点连线的斜率。"
+        },
+        {
+          "id": "mono-u5-r5",
+          "focus": "interval_theorem",
+          "text": "把这个联系说完整，就是中值定理：函数在整个开区间内可导，那么对区间内任意两点，总能在它们之间找到这样的切点。如果整个区间的导数都为正，中间找到的导数也为正。两点的横坐标之差为正，乘起来就说明右边函数值更大。对任意两点都成立，才得到整个区间严格递增。"
+        },
+        {
+          "id": "mono-u5-r6",
+          "focus": "interval_decreasing",
+          "text": "整个区间的导数都为负时，同样的关系给出右边函数值更小，也就得到严格递减。只知道某一个位置的切线方向，还没有给出其他位置的导数符号。"
+        }
+      ]
+    },
+    {
+      "id": "monotonicity-u6",
+      "cue": "zero-point",
+      "text": "再来看x的立方。点从左边向原点靠近，函数值一直升高。到原点时，导数三x平方等于零，这里的切线水平。让输入继续向右走，函数点又向上走了。要判断整个区间，我们看任意两个输入a小于b。它们的立方差能分成两个因子的乘积：b减a为正，后面那个二次式在这两个输入不相等时也为正，因此右边的函数值总是更大。x的立方在整个实数范围严格递增，原点导数为零与这件事可以同时成立。正导数给出了严格递增的充分条件，单独一个零导数点并没有决定整段的增减。",
+      "references": [
+        {
+          "id": "mono-u6-r1",
+          "focus": "cube_to_zero",
+          "text": "再来看x的立方。点从左边向原点靠近，函数值一直升高。"
+        },
+        {
+          "id": "mono-u6-r2",
+          "focus": "cube_zero_state",
+          "text": "到原点时，导数三x平方等于零，这里的切线水平。"
+        },
+        {
+          "id": "mono-u6-r3",
+          "focus": "cube_after_zero",
+          "text": "让输入继续向右走，函数点又向上走了。"
+        },
+        {
+          "id": "mono-u6-r4",
+          "focus": "cube_interval_reason",
+          "text": "要判断整个区间，我们看任意两个输入a小于b。它们的立方差能分成两个因子的乘积：b减a为正，后面那个二次式在这两个输入不相等时也为正，因此右边的函数值总是更大。x的立方在整个实数范围严格递增，原点导数为零与这件事可以同时成立。正导数给出了严格递增的充分条件，单独一个零导数点并没有决定整段的增减。"
+        }
+      ]
+    },
+    {
+      "id": "monotonicity-disconnected-u-v002",
+      "cue": "disconnected-domain",
+      "text": "看负一除以x。零处没有定义，曲线分成两支，每支导数都为正。先沿左支向右走，输入从负二到负一，输出从零点五升到一。右支也一样，从零点五到一，输出从负二升到负一。再比较两侧的输入：负一小于一，对应输出却是一大于负一，顺序反了。两个输入之间含零，函数没有在整个区间上定义，中值定理的条件在这里缺失。所以分别在两边递增，不能跨过零点合并判断。",
+      "references": [
+        {
+          "id": "disconnected-v002-r1",
+          "focus": "disconnected_domain",
+          "text": "看负一除以x。零处没有定义，曲线分成两支，每支导数都为正。"
+        },
+        {
+          "id": "disconnected-v002-r2",
+          "focus": "branch_left_motion",
+          "text": "先沿左支向右走，输入从负二到负一，输出从零点五升到一。"
+        },
+        {
+          "id": "disconnected-v002-r3",
+          "focus": "branch_right_motion",
+          "text": "右支也一样，从零点五到一，输出从负二升到负一。"
+        },
+        {
+          "id": "disconnected-v002-r4",
+          "focus": "cross_gap_comparison",
+          "text": "再比较两侧的输入：负一小于一，对应输出却是一大于负一，顺序反了。"
+        },
+        {
+          "id": "disconnected-v002-r5",
+          "focus": "gap_interval_condition",
+          "text": "两个输入之间含零，函数没有在整个区间上定义，中值定理的条件在这里缺失。"
+        },
+        {
+          "id": "disconnected-v002-r6",
+          "focus": "separate_intervals",
+          "text": "所以分别在两边递增，不能跨过零点合并判断。"
+        }
+      ]
+    },
+    {
+      "id": "monotonicity-u7",
+      "cue": "handoff",
+      "text": "这节课，我们把同一个输入放在函数图和导数图上一起观察。判断区间单调，要把条件和符号放在一起：整个区间内可导，导数处处为正，函数严格递增；处处为负，函数严格递减。负一和一处导数为零，x的立方在原点的导数也为零。这些位置，函数的增减一定会改变吗？下一课就继续比较它们左右两边的表现。",
+      "references": [
+        {
+          "id": "mono-u7-r1",
+          "focus": "monotonicity_summary",
+          "text": "这节课，我们把同一个输入放在函数图和导数图上一起观察。判断区间单调，要把条件和符号放在一起：整个区间内可导，导数处处为正，函数严格递增；处处为负，函数严格递减。"
+        },
+        {
+          "id": "mono-u7-r2",
+          "focus": "monotonicity_to_extrema",
+          "text": "负一和一处导数为零，x的立方在原点的导数也为零。这些位置，函数的增减一定会改变吗？下一课就继续比较它们左右两边的表现。"
+        }
+      ]
+    }
+  ],
+  "revision_mode": "revision",
+  "revision_contract": "runtime/projects/math-derivative-ch05-monotonicity-20261102/content-regression-contract-v002.json",
+  "contributors": [
+    {
+      "author_agent": "01a199e9-73ab-7700-8a9f-cd7b5541b0ad",
+      "author_context": "01a199e9-73ab-7700-8a9f-cd7b5541b0ad",
+      "contribution": "Original lesson and all retained teaching content"
+    }
+  ],
+  "editorial_clarity_pass": {
+    "source_draft": "/Users/pengweitai/Projects/ManiMind/runtime/projects/math-derivative-ch05-monotonicity-20261102/narration-draft-v002.json",
+    "source_sha256": "1af311f8de09d4060876d26984b311a997b6d7265bb4377022f34d4ef6d04fd9",
+    "changes": [
+      {
+        "reference": "mono-u4-r1",
+        "before": "导数是三乘x减一，再乘x加一。它在负一和一等于零，这两个数把实数轴分成三段。",
+        "after": "导数写成三个因子相乘：三、x减一、x加一。它在负一和一等于零，这两个数把实数轴分成三段。"
+      }
+    ],
+    "basis": "Author-side follow-up on repeated independent grouping findings in other lessons; not an independent narration verdict on this lesson",
+    "scope": "Explicit spoken scopes only; same visual-v002, order, references, conditions, derivations and graph explanations; new independent narration review required"
+  }
+}

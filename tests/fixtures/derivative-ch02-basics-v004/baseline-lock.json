@@ -1,0 +1,28 @@
+{
+  "status": "not_reviewed",
+  "writer": "01a19ab5-b2d3-7003-a784-edeeaecdbc23",
+  "consumers": [
+    "main coordinator",
+    "independent visual reviewer",
+    "independent content regression reviewer",
+    "audio timing reviewer"
+  ],
+  "lifecycle": "Chapter 02 v004 author candidate only; never approval",
+  "invalidation": "Any bound plan, source, baseline media, narration, original WAV, receipt or production timing change invalidates derived data",
+  "protected_inputs": [
+    {
+      "path": "examples/derivative_chapter_shared.py",
+      "sha256": "ed9bb7ece0f273c72fc4db744200e7a3a96e51ad54e258861305140e9d0c17ae"
+    },
+    {
+      "path": "examples/derivative_ch02_basics.py",
+      "sha256": "0aaa235b5356293dd5ba78d2da027aac45d43bc8d28f7ca1bd194792e9995c66"
+    },
+    {
+      "path": "examples/derivative_ch02_basics_v002.py",
+      "sha256": "677268343973d59433a6ca80c6e68bff8e1605f7c930d13c7b7bf614e6ba31ed"
+    }
+  ],
+  "production_timings_sha256": "98d1d802b11cfa7bdbd2430ccb876d1b9cf00de36cda426a290ccee6224e81cb",
+  "evidence_sha256": "d0c91851455e8e2df6a6ea65dfab04aeee385d8259265cb03a0fa2acdc92875f"
+}

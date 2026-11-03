@@ -1,0 +1,494 @@
+{
+  "schema_version": 1,
+  "artifact_type": "visual_design_and_content_regression_contract",
+  "status": "v009_observed_process_repairs_not_approved",
+  "author_agent": "01a19f5e-8709-7490-9ea2-091eac2db5ef",
+  "author_context": "01a19f5e-8709-7490-9ea2-091eac2db5ef",
+  "baseline_selection": "Current delivered captioned-v007 corresponds to this actual visual-v007 silent master. Protect all its teaching content. Source-origin transfer is a new improvement target, not a claim that the first v007 quotient already moved.",
+  "assets": {
+    "intro_v007": {
+      "path": "outputs/math-derivative-intro-20261101/visual-v007/manim/media/manimgl/understanding.mp4",
+      "sha256": "ee1445156188014abb97b7723e332593016e980364723eb73e249375d8b8d8fb",
+      "duration": 228
+    }
+  },
+  "units": [
+    {
+      "id": "opening",
+      "asset": "intro_v007",
+      "baseline_interval": [
+        0,
+        15
+      ],
+      "function": "标题与本点问题的自然定位",
+      "features": [
+        {
+          "id": "title_and_point",
+          "kind": "process",
+          "claim": "完整标题与自然问题后进入熟悉的x²和P=(2,4)，不是后拼片头。"
+        }
+      ]
+    },
+    {
+      "id": "increments",
+      "asset": "intro_v007",
+      "baseline_interval": [
+        15,
+        36
+      ],
+      "function": "同图增量与区间平均变化率",
+      "features": [
+        {
+          "id": "same_points",
+          "kind": "process",
+          "claim": "P、Q、横纵增量及差商同指；h=1、Δy=5、斜率5的联系保留。"
+        }
+      ]
+    },
+    {
+      "id": "approach",
+      "asset": "intro_v007",
+      "baseline_interval": [
+        36,
+        65
+      ],
+      "function": "一个h驱动连续几何与读数",
+      "features": [
+        {
+          "id": "fixed_p_moving_q",
+          "kind": "process",
+          "claim": "P固定，Q沿曲线由h=1经0.1到0.02，增量、割线和数值同步变化。"
+        }
+      ]
+    },
+    {
+      "id": "algebra",
+      "asset": "intro_v007",
+      "baseline_interval": [
+        65,
+        105
+      ],
+      "function": "完整化简推导及变量身份",
+      "features": [
+        {
+          "id": "all_steps",
+          "kind": "process",
+          "claim": "Retain concrete substitution, square expansion, constant cancellation, factoring h, nonzero cancellation to 4+h, complete history and graph connection. v007 includes destination-local token motion, not the newly required source-to-row journey."
+        },
+        {
+          "id": "nonzero_condition",
+          "kind": "state",
+          "claim": "约分时有h≠0及P、Q不同的解释，伴随增量图与原差商保留。"
+        },
+        {
+          "id": "condition_readability",
+          "kind": "process",
+          "claim": "Keep the current v007 readable nonzero condition and distinct-point explanation throughout cancellation, outside the final expression."
+        }
+      ]
+    },
+    {
+      "id": "sides",
+      "asset": "intro_v007",
+      "baseline_interval": [
+        105,
+        130
+      ],
+      "function": "有向增量与双侧极限依据",
+      "features": [
+        {
+          "id": "signed_motion",
+          "kind": "process",
+          "claim": "左右Q与割线动态，负h、负Δy及正斜率读数共同出现并趋近4。"
+        },
+        {
+          "id": "arbitrary_small_reason",
+          "kind": "state",
+          "claim": "|m(h)-4|=|h|保留为有限样例之外的趋近理由。"
+        }
+      ]
+    },
+    {
+      "id": "definition",
+      "asset": "intro_v007",
+      "baseline_interval": [
+        153.1,
+        182
+      ],
+      "function": "本点导数、函数高度及一般定义",
+      "features": [
+        {
+          "id": "height_and_rate",
+          "kind": "state",
+          "claim": "分别标明f(2)记录高度和f'(2)记录本点变化率。"
+        },
+        {
+          "id": "general_position",
+          "kind": "process",
+          "claim": "Retain both complete point-specific and general derivative formulas, h roles, and the nearby-defined finite two-sided-limit condition. Source-origin promotion is the new improvement goal."
+        }
+      ]
+    },
+    {
+      "id": "prediction",
+      "asset": "intro_v007",
+      "baseline_interval": [
+        182,
+        212
+      ],
+      "function": "切线的局部预测与误差",
+      "features": [
+        {
+          "id": "true_local_coordinates",
+          "kind": "process",
+          "claim": "真实坐标局部放大，切线和曲线由同一h驱动，h从0.4减到0.1。"
+        },
+        {
+          "id": "exact_error",
+          "kind": "state",
+          "claim": "预测4.400、真值4.410，准确展开与h²=0.01的余项解释保留。"
+        }
+      ]
+    },
+    {
+      "id": "closing",
+      "asset": "intro_v007",
+      "baseline_interval": [
+        212,
+        228
+      ],
+      "function": "收束并衔接下一课",
+      "features": [
+        {
+          "id": "next_question",
+          "kind": "state",
+          "claim": "回应本点变化率，留下任意位置a处导数怎样改变的问题，不提前宣称一般规则已经讲完。"
+        }
+      ]
+    },
+    {
+      "id": "zero_bridge",
+      "asset": "intro_v007",
+      "baseline_interval": [
+        130,
+        153.1
+      ],
+      "function": "保留新增的原差商零点无定义与附近共同极限的直接联系",
+      "features": [
+        {
+          "id": "undefined_and_nearby",
+          "kind": "process",
+          "claim": "原差商代入零的无定义形式，与保持非零的双侧读数、共同极限4并列，观众可追踪两种问题的对象与依据。"
+        }
+      ]
+    }
+  ],
+  "preserved_by_inheritance_intent": [
+    "opening",
+    "approach",
+    "both_sides",
+    "algebra content and stationary history",
+    "zero bridge",
+    "tangent_prediction",
+    "closing"
+  ],
+  "palette": {
+    "background": "#101416",
+    "text": "#EEF1F4",
+    "curve_and_output": "#58CFA9",
+    "h_and_Q": "#F1CD68",
+    "derivative_and_tangent": "#F08D85"
+  },
+  "layout": {
+    "algebra_row_y": [
+      2.35,
+      1.15,
+      -0.05,
+      -1.25,
+      -2.45
+    ],
+    "algebra_row_left": 0.85,
+    "algebra_equals_x": 0.3,
+    "algebra_font_size": 44,
+    "source_relation_center": [
+      -4.1,
+      -0.15
+    ],
+    "condition_center": [
+      -4.1,
+      -1.65
+    ],
+    "general_specific_center": [
+      0,
+      0.25
+    ],
+    "general_target_center": [
+      0,
+      -1.45
+    ],
+    "general_condition_y": -2.75,
+    "subtitle_content_min_y": -3.05
+  },
+  "timing": {
+    "duration": 228,
+    "cue_durations": [
+      15,
+      21,
+      29,
+      40,
+      25,
+      52,
+      30,
+      16
+    ],
+    "stage_times": {
+      "opening": {
+        "0.10": 1.3333333333333333,
+        "0.46": 7,
+        "0.60": 7.6
+      },
+      "average": {
+        "0.04": 0.4,
+        "0.08": 0.8,
+        "0.14": 1.3666666666666667,
+        "0.32": 5.9,
+        "0.38": 6.2,
+        "0.44": 6.5,
+        "0.64": 10.5,
+        "0.74": 11.2
+      },
+      "approach": {
+        "0.04": 0.4,
+        "0.08": 0.9,
+        "0.12": 1.5,
+        "0.24": 7.5,
+        "0.52": 16.8,
+        "0.58": 18,
+        "0.80": 19.333333333333332
+      },
+      "algebra": {
+        "0.04": 0.3,
+        "0.08": 0.8,
+        "0.10": 1.3333333333333333,
+        "0.20": 4.5,
+        "0.26": 7.9,
+        "0.36": 12.8,
+        "0.42": 14.6,
+        "0.51": 17.1,
+        "0.58": 19.9,
+        "0.68": 21.9,
+        "0.73": 22.5,
+        "0.83": 26.8,
+        "0.89": 29.2
+      },
+      "both_sides": {
+        "0.04": 0.4,
+        "0.08": 0.9,
+        "0.12": 1.4666666666666666,
+        "0.34": 6.6,
+        "0.55": 10.3,
+        "reason_motion_start": 12.8,
+        "0.78": 13.25,
+        "0.72": 17.8
+      },
+      "definition": {
+        "0.04": 0.4,
+        "0.08": 0.95,
+        "0.12": 1.3,
+        "0.18": 3.7,
+        "0.30": 8.7,
+        "0.36": 9.2,
+        "0.54": 15.6,
+        "0.58": 17.15,
+        "0.62": 22.5,
+        "0.66": 23.1,
+        "0.68": 23.5,
+        "0.72": 24,
+        "0.80": 35.2,
+        "0.88": 36.6,
+        "0.90": 37.1
+      },
+      "tangent_prediction": {
+        "0.04": 0.4,
+        "0.08": 0.9,
+        "0.12": 1.2666666666666666,
+        "0.32": 7.9,
+        "0.42": 8.95,
+        "motion_start": 15.3,
+        "0.72": 16.25,
+        "0.78": 19.85,
+        "0.80": 20.55
+      },
+      "closing": {
+        "0.04": 0.4,
+        "0.08": 0.85,
+        "0.14": 1.3,
+        "0.53": 6.6,
+        "0.62": 7.2
+      }
+    },
+    "voice_plan_sha256": "001cb7baf25a28ac95d1cca985c982551794253a5b97bac7ee3e489c15e37270",
+    "timings_sha256": "cbc2f9668c3fe4dd28e73dbfdccfcd8b88da1055cb14308e247fd6c4ad452f5f",
+    "wav_total_seconds": 184.64,
+    "wav_manifest": [
+      {
+        "id": "intro",
+        "wav_sha256": "9255412f0d1dc9220260c15f201dc585a36b17a6cafe0d503555ab091480efeb",
+        "receipt_sha256": "ad7476ff993c92292f3151017962f3a09f95cd31ba9f132d0dab4074ca510453",
+        "frames": 583680,
+        "sample_rate": 48000,
+        "duration_seconds": 12.16
+      },
+      {
+        "id": "interval",
+        "wav_sha256": "fb03271fe71f04fb788b44f2a4efc6cdeafb9e37b4da62563652d17430ac4e46",
+        "receipt_sha256": "f21f8d01cd282057c68794d063ec58270e975f2c3d55793fd492e41889c8b3dd",
+        "frames": 814080,
+        "sample_rate": 48000,
+        "duration_seconds": 16.96
+      },
+      {
+        "id": "approaching",
+        "wav_sha256": "bbf1ae78afc6f48100e8eed7c86f9b8d3dbba7bf96740833c1e77c54ff8f5d23",
+        "receipt_sha256": "93e6607654a2d63ddc7040bc35e684dada7a7642cb848cc768f7b1be6f13f9ce",
+        "frames": 1228800,
+        "sample_rate": 48000,
+        "duration_seconds": 25.6
+      },
+      {
+        "id": "algebra_reason",
+        "wav_sha256": "c851d8c9da05fa737aa597cfacce34d84ee46b0eda77064cf75b7b76a0a838f2",
+        "receipt_sha256": "6bcdf0438295c1449a7e535f40e8a8141bc2987459375a90267e25e6243d30a8",
+        "frames": 1551360,
+        "sample_rate": 48000,
+        "duration_seconds": 32.32
+      },
+      {
+        "id": "both_directions",
+        "wav_sha256": "c08a7eec00373e32198361917c30ee5887ac959b8ca99231ac71a0891acb2cb8",
+        "receipt_sha256": "7f545d2a8734fa474d847cf78e090e783e77c3190ab6af084e93db1de5123358",
+        "frames": 890880,
+        "sample_rate": 48000,
+        "duration_seconds": 18.56
+      },
+      {
+        "id": "zero_and_limit",
+        "wav_sha256": "4abe3da55663b878a1c1899cf45c30870945ba005727a79d5805627e9bc3c0c8",
+        "receipt_sha256": "3df62411a8c7f10ab23e2a4f24dd51c485223e91d76bdda476afdae0054249d0",
+        "frames": 975360,
+        "sample_rate": 48000,
+        "duration_seconds": 20.32
+      },
+      {
+        "id": "name_derivative",
+        "wav_sha256": "668411e2aae9488981ddd71766298854f498a6baa375e79cb21a4ea6b2fcc707",
+        "receipt_sha256": "b62ee593ebc3f90726ea77f26f75d9a7ea8d077527b5dad1de9a0d468c4f2c5c",
+        "frames": 1013760,
+        "sample_rate": 48000,
+        "duration_seconds": 21.12
+      },
+      {
+        "id": "use_nearby",
+        "wav_sha256": "602084dd22634df28ffe28cd67cf3bade6e9671f3292c0d577747c07f510f528",
+        "receipt_sha256": "29f98377a48a39c976e924f96425af01c904d13e85ea5daa0a5534c95ab3200f",
+        "frames": 1251840,
+        "sample_rate": 48000,
+        "duration_seconds": 26.08
+      },
+      {
+        "id": "handoff",
+        "wav_sha256": "d9baf5bfc35c5abf3912bd00d3102b5796c454590091956b87c10e2173b70454",
+        "receipt_sha256": "21852b675fceaa1de4942fad8141d7c3b89c4c5614396992a76e4b2214763dd9",
+        "frames": 552960,
+        "sample_rate": 48000,
+        "duration_seconds": 11.52
+      }
+    ]
+  },
+  "verification_scope": "Author-native and real-Tex tests plus later actual render; independent review remains separate",
+  "writer": "01a19f5e-8709-7490-9ea2-091eac2db5ef",
+  "consumers": [
+    "lead",
+    "renderer",
+    "independent visual reviewer",
+    "independent content regression reviewer"
+  ],
+  "lifecycle": "This v009 revision against the current v007 teaching baseline",
+  "invalidation": "Source, plan, narration, model, timing, contract or baseline media change requires renewed verification and independent review",
+  "contributors": [
+    {
+      "agent": "019eaf8b-9151-75e2-9db4-5ff834335577",
+      "context": "019eaf8b-9151-75e2-9db4-5ff834335577",
+      "contribution": "Frozen v003 visual correction and unchanged narration author"
+    }
+  ],
+  "improvement_targets": [
+    {
+      "id": "average_ratio",
+      "operation": "Form an output/input increment ratio",
+      "source": "Visible Delta-y and Delta-x increment relations",
+      "target": "Numerator Delta-y and denominator Delta-x of m",
+      "purpose": "Connect the same graph increments to their distinct quotient roles"
+    },
+    {
+      "id": "average_substitution",
+      "operation": "Substitute the already displayed increment expressions",
+      "source": "Delta-y=f(2+h)-4 and Delta-x=h",
+      "target": "m=[f(2+h)-4]/h=5",
+      "purpose": "Trace the complete output difference and input h from retained increments; reveal =5 only when the substitution is complete"
+    },
+    {
+      "id": "expanded",
+      "operation": "Expand the square without inventing identity for newly produced terms",
+      "source": "[(2+h)^2-4]/h",
+      "target": "[4+4h+h^2-4]/h",
+      "purpose": "Track the input h and subtracted 4 while new expansion terms appear as new terms; visibly transport the complete source expression before the structured local operation, preserving readable history"
+    },
+    {
+      "id": "combined",
+      "operation": "Cancel the equal constant terms",
+      "source": "[4+4h+h^2-4]/h",
+      "target": "[4h+h^2]/h",
+      "purpose": "Retain complete history and transfer the surviving terms and denominator to the next equality; visibly transport the complete source expression before the structured local operation, preserving readable history"
+    },
+    {
+      "id": "factored",
+      "operation": "Factor the common numerator h",
+      "source": "[4h+h^2]/h",
+      "target": "h(4+h)/h",
+      "purpose": "Transfer the common h before the reordered coefficient and remaining h, avoiding simultaneous crossing; visibly transport the complete source expression before the structured local operation, preserving readable history"
+    },
+    {
+      "id": "simplified",
+      "operation": "Cancel the nonzero common factor",
+      "source": "h(4+h)/h with h!=0",
+      "target": "4+h",
+      "purpose": "Keep the nonzero condition and crossed factors readable while the surviving terms travel; visibly transport the complete source expression before the structured local operation, preserving readable history"
+    },
+    {
+      "id": "general_position",
+      "operation": "Promote the point-specific position to a general position",
+      "source": "f'(2)=lim[f(2+h)-f(2)]/h=4",
+      "target": "f'(a)=lim[f(a+h)-f(a)]/h",
+      "purpose": "Retain the specific definition and copy its position and h roles into the general definition; visibly transport the complete source expression before the structured local operation, preserving readable history"
+    }
+  ],
+  "diagnosis": "runtime/sessions/math-derivative-intro-motion-diagnosis-20261103/README.md",
+  "changes": [
+    {
+      "finding": "Current v007 first quotient fades in; later copies appear at the destination before local token motion",
+      "implementation": "Create visible semantic copies only at current source coordinates, then transfer them with explicit grouping and staggered native Transform paths"
+    },
+    {
+      "finding": "Actual v008 23.2s premature =5; 25.9s apparent 5h; 82.6-84.4s factoring fragments; 165.7-166.3s fragmentary promotion",
+      "implementation": "Defer average right-hand equality/result. For later rewrites first visibly transport a complete copy from history, then operate inside its intact fraction structure; factor h routes separately. New scene, source pins and independent current-media review required."
+    }
+  ],
+  "pending_pixel_questions": [
+    "No average result before complete substitution; input h does not pass visible result syntax",
+    "Complete moving fraction remains recognizable during source-to-row transport and factoring",
+    "Local factoring h route and coefficient reordering avoid overprinting or false multiplication",
+    "General position promotion preserves a readable complete difference quotient during motion",
+    "All original teaching content, 31 anchors, 28 foci and nine full WAVs remain compatible"
+  ]
+}

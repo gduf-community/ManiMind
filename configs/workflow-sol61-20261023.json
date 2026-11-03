@@ -1,0 +1,54 @@
+{
+  "study_id": "workflow-sol61-20261023",
+  "provider_config": "configs/sol61-team-20261023.json",
+  "policy": {
+    "production": "GPT-6.1 Sol director, creator and independent reviewer; all max; fresh subscription CLI contexts; no external candidate content edits",
+    "versions": "Freeze each workflow profile and implementation before first call; changed profiles use new run ids",
+    "evaluation": "One fixed rubric across all rounds; retain failures and all token/time costs",
+    "comparison": "Different topics and single samples cannot establish a causal score improvement; repeat a development case after a material change",
+    "holdout": "Run only after development assessments and final profile are frozen; never tune on its result and still call it held out",
+    "stopping": "Aim for three production/evaluation rounds, add same-topic regression when needed; do not force changes just to reach an iteration count",
+    "success": "No critical learning/technical blocker, consistent quality on development and held-out content; still needs listening and target-student validation",
+    "guardrails": "No fixed storyboard, scene count, character, palette or requirement for constant motion",
+    "isolation": "Do not import the interrupted DeepSeek attempt, old films, scripts, plans, review comments, main conversation or memory",
+    "accounting": "Per-role token logs identify production usage; account quota snapshots include concurrent chats and must not be attributed solely to this run"
+  },
+  "cases": [
+    {
+      "id": "projectile",
+      "split": "development",
+      "brief": {
+        "audience": "已接触速度与重力的高中学生",
+        "goal": "解释同高度水平抛出、忽略空气阻力时，横向初速度改变射程但不改变落地时间，并能预测改变高度后的结果。",
+        "suggested_duration_seconds": [90, 150],
+        "facts": {"model": "质点、均匀重力场、无空气阻力、初始竖直速度为零；比较横速时初始高度相同", "coordinates": "x=vx*t, y=h-g*t*t/2, ground y=0, y axis upwards", "landing_time": "T=sqrt(2*h/g)", "range": "R=vx*T", "teaching_g": 10},
+        "guidance": "原创表达，独立选择例子、叙事与画面，不接受旧片、旧讲稿、分镜或逐片修改意见。",
+        "review_standards": ["科学与画面一致，条件清楚", "因果有画面或推导依据，不只宣告结论", "观众可辨认关键过程与前后对应", "字幕与动作不产生意义矛盾", "视觉清楚且精简，完整连续"]
+      }
+    },
+    {
+      "id": "conditional",
+      "split": "development",
+      "brief": {
+        "audience": "知道频数和简单概率的高中学生",
+        "goal": "解释条件概率为什么需要改变被计数的集合，并区分P(A|B)与P(B|A)，让观众能预测改变群体构成后的条件概率。",
+        "suggested_duration_seconds": [90, 150],
+        "facts": {"definition": "P(A|B)=P(A and B)/P(B), P(B)>0", "meaning": "Restrict the sample population to B; count A within it", "reverse": "P(A|B) is generally not P(B|A)", "example_optional": "100 cards: 60 red (45 round), 40 blue (5 round). P(red|round)=45/50=0.9; P(round|red)=45/60=0.75", "boundary": "The counting model assumes uniform sampling from the stated population; changing its composition changes the probability"},
+        "guidance": "例子和视觉表示由作者自主选择；不照搬物理运动的节奏或分镜。",
+        "review_standards": ["分子分母和被筛选集合正确对应", "能看见条件如何改变样本集合", "区别正向和反向条件而非背诵公式", "关键表示变化可追踪", "字幕可读，画面有明确主次"]
+      }
+    },
+    {
+      "id": "parallel",
+      "split": "holdout",
+      "brief": {
+        "audience": "知道欧姆定律的高中学生",
+        "goal": "解释理想恒压电源下，两条并联支路中一条电阻改变，为什么另一支路电流不变而总电流改变，并能预测新参数下的结果。",
+        "suggested_duration_seconds": [90, 150],
+        "facts": {"model": "Ideal constant-voltage source, negligible wire resistance, purely resistive steady-state parallel branches", "voltage": "Both branches share the source voltage U", "branch_currents": "I1=U/R1, I2=U/R2", "total": "I=I1+I2", "optional_example": "U=12V, R1=6ohm, R2=12ohm: I1=2A, I2=1A, total=3A. Changing R2 to6ohm gives I2=2A, I1 remains2A, total=4A", "boundary": "A nonideal source or significant shared wire resistance can change branch voltage, so the unchanged-current claim then needs rechecking"},
+        "guidance": "独立选择表达方式，不要求角色、流动粒子或慢动作；图示方向与电路连接应一致，不把电流描述为被电阻消耗。",
+        "review_standards": ["电路连接与公式正确", "解释不变电压如何决定不变支路电流", "区分支路变化和总量变化", "预测有依据且条件清楚", "视觉、字幕和讲解一致可读"]
+      }
+    }
+  ]
+}

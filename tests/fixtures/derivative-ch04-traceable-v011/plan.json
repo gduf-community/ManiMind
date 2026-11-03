@@ -1,0 +1,1302 @@
+{
+  "schema_version": 1,
+  "project_id": "math-derivative-ch04-chain-20261102",
+  "author_agent": "01a19f6b-1725-7be3-a4d8-bf988a308b31",
+  "author_context": "01a19f6b-1725-7be3-a4d8-bf988a308b31",
+  "title": "导数04：链式法则",
+  "workflow_profile": "configs/visual-first-workflow-v4.3.1-unit.json",
+  "revision_mode": "revision",
+  "scene": "examples/derivative_ch04_traceable_v011.py",
+  "scene_class": "DerivativeChainTraceableV011",
+  "duration": 348.0333333333333,
+  "fps": 30,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "subtitle_reserve": {
+    "bottom_px": 96,
+    "pixel_top": 984,
+    "scene_content_bottom_min": -3.1
+  },
+  "context": {
+    "status": "pending_main_unit_context_installation",
+    "owner": "main",
+    "prerequisites": [
+      "求导四则",
+      "幂函数求导",
+      "单变量导数"
+    ],
+    "next": "第05课导数符号与单调性",
+    "scope": "核心f(ax+b)及(3x-1)^4；保留(x²+1)^3作为一般链式支持；不讲多变量"
+  },
+  "narration_draft": "runtime/projects/math-derivative-ch04-chain-20261102/narration-draft-v002.json",
+  "scientific_brief": "runtime/projects/math-derivative-ch04-chain-20261102/scientific-brief-v001.json",
+  "sources": [
+    "examples/derivative_ch04_chain_v005.py",
+    "configs/visual-first-workflow-v4.2-unit.json",
+    "src/manimind/postproduce/understanding_render.py",
+    "src/manimind/postproduce/formula_film.py",
+    "src/manimind/render/manim_renderer.py",
+    "src/manimind/experiments/understanding_support.py",
+    "src/manimind/experiments/visual_first_support.py",
+    "src/manimind/experiments/visual_first_data.py",
+    "src/manimind/experiments/freeform_support.py",
+    "src/manimind/components/typography.py",
+    "src/manimind/components/formula_motion.py",
+    "src/manimind/review/semantic_focus.py",
+    "examples/derivative_chapter_shared.py",
+    "runtime/projects/math-derivative-ch04-chain-20261102/mathematical-facts-v001.json",
+    "docs/course-unit-workflow.md",
+    "runtime/projects/math-derivative-ch04-chain-20261102/context-v001.json",
+    "runtime/projects/math-derivative-chapter-20261102/unit-v001.json",
+    "docs/curricula/high-school-mathematics-v0.1.csv",
+    "src/manimind/curriculum.py",
+    "runtime/projects/math-derivative-ch04-chain-20261102/scientific-brief-v001.json",
+    "runtime/projects/math-derivative-ch04-chain-20261102/scene-draft-plan-v001.json",
+    "examples/derivative_ch04_chain.py",
+    "runtime/projects/math-derivative-ch04-chain-20261102/narration-draft-v002.json",
+    "runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch04-chain-20261102/speech-plan-v002.json",
+    "runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch04-chain-20261102/timings-v001.json",
+    "examples/derivative_ch04_chain_v003.py",
+    "runtime/projects/math-derivative-ch04-chain-20261102/scene-draft-plan-v003.json",
+    "examples/derivative_ch04_chain_v004.py",
+    "runtime/projects/math-derivative-ch04-chain-20261102/scene-draft-plan-v004.json",
+    "runtime/projects/math-derivative-ch04-chain-20261102/scene-draft-plan-v005.json",
+    "runtime/projects/math-derivative-ch04-chain-20261102/content-regression-contract-v005.json",
+    "src/manimind/review/content_regression.py",
+    "src/manimind/postproduce/traceable_film.py",
+    "src/manimind/postproduce/traceable_film_v2.py",
+    "src/manimind/postproduce/unit_film.py",
+    "docs/formula-continuity.md",
+    "docs/formula-continuity-v2.md",
+    "manimgl.yml",
+    "runtime/sessions/derivative-motion-revision-20261103/lesson04-author/prepare_v006.py",
+    "tests/test_derivative_ch04_traceable.py",
+    "runtime/sessions/derivative-motion-revision-20261103/lesson04-author/finalprepare_v007.py",
+    "src/manimind/postproduce/understanding_film.py",
+    "src/manimind/review/meaning_units.py",
+    "src/manimind/postproduce/pilot.py",
+    "src/manimind/postproduce/preset_audition.py",
+    "runtime/projects/math-derivative-ch04-chain-20261102/scene-draft-plan-v007.json",
+    "examples/derivative_ch04_traceable.py",
+    "runtime/sessions/derivative-motion-revision-20261103/lesson04-author/prepare_v008.py",
+    "tests/test_derivative_ch04_traceable_v007.py",
+    "runtime/projects/math-derivative-ch04-chain-20261102/scene-draft-plan-v008.json",
+    "examples/derivative_ch04_traceable_v007.py",
+    "runtime/sessions/derivative-motion-revision-20261103/lesson04-author/prepare_v009.py",
+    "tests/test_derivative_ch04_traceable_v008.py",
+    "runtime/projects/math-derivative-ch04-chain-20261102/scene-draft-plan-v009.json",
+    "examples/derivative_ch04_traceable_v008.py",
+    "runtime/sessions/derivative-motion-revision-20261103/lesson04-author/prepare_v010.py",
+    "tests/test_derivative_ch04_traceable_v009.py",
+    "runtime/projects/math-derivative-ch04-chain-20261102/scene-draft-plan-v010.json",
+    "examples/derivative_ch04_traceable_v009.py",
+    "runtime/sessions/derivative-motion-revision-20261103/lesson04-author/prepare_v011.py",
+    "tests/test_derivative_ch04_traceable_v010.py",
+    "docs/公式动画创作引导.md",
+    "docs/formula-continuity-v3.md",
+    "runtime/projects/math-derivative-ch04-chain-20261102/scene-draft-plan-v011.json",
+    "examples/derivative_ch04_traceable_v010.py",
+    "examples/derivative_ch04_traceable_v011.py",
+    "tests/test_derivative_ch04_traceable_v011.py",
+    "runtime/sessions/derivative-motion-revision-20261103/lesson04-author/prepare_v012.py",
+    "runtime/projects/math-derivative-ch04-chain-20261102/scene-draft-plan-v012.json"
+  ],
+  "cues": [
+    {
+      "id": "opening",
+      "duration": 24.3,
+      "heading": "非线性内层拓展：两级变化",
+      "visual": "承接求导四则，从平方加一再立方的运算顺序引入复合。",
+      "learning_purpose": "定位复合结构与本课问题。",
+      "anchors": [
+        {
+          "id": "chain_title_ready",
+          "meaning": "标题与复合表达式可读"
+        },
+        {
+          "id": "chain_question_ready",
+          "meaning": "运算顺序引入可读"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.3,
+        "0.06": 0.8,
+        "0.15": 2.48,
+        "0.55": 6.2,
+        "0.68": 8.7,
+        "1.00": 24.3
+      },
+      "animation_starts": {}
+    },
+    {
+      "id": "two-stages",
+      "duration": 36.46666666666667,
+      "heading": "非线性内层拓展：中间量",
+      "visual": "有色内部表达式先移动到独立位置，退场后出现u定义；再出现外层及x=1,u=2,y=8。",
+      "learning_purpose": "中间量是内层输出与外层输入；颜色与箭头保持身份。",
+      "anchors": [
+        {
+          "id": "chain_inner_named",
+          "meaning": "u定义已完成显现"
+        },
+        {
+          "id": "chain_two_levels_ready",
+          "meaning": "两层及连接箭头已出现"
+        },
+        {
+          "id": "chain_base_values_ready",
+          "meaning": "1到2到8的值已出现"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.3,
+        "0.06": 0.8,
+        "0.12": 2.6,
+        "0.24": 7.2,
+        "0.28": 7.52,
+        "0.34": 7.76,
+        "0.48": 13.58,
+        "0.66": 19.5,
+        "0.90": 20.0,
+        "1.00": 36.46666666666667
+      },
+      "animation_starts": {
+        "0.24": 5.3,
+        "0.28": 7.2,
+        "0.34": 7.52
+      }
+    },
+    {
+      "id": "one-change",
+      "duration": 39.5,
+      "heading": "非线性内层拓展：依次传递",
+      "visual": "x从1到1.1先完成，u随后从2到2.21，y最后从8到10.793861；对应增量随后标出。",
+      "learning_purpose": "追踪同一输入增量在两级计算中的依次传递，不把尚未完成的输出提前标完成。",
+      "anchors": [
+        {
+          "id": "change_base_ready",
+          "meaning": "初始三值已出现"
+        },
+        {
+          "id": "input_change_complete",
+          "meaning": "输入动画完成"
+        },
+        {
+          "id": "inner_change_complete",
+          "meaning": "中间量动画完成"
+        },
+        {
+          "id": "outer_change_complete",
+          "meaning": "输出动画完成"
+        },
+        {
+          "id": "chain_transfer_ready",
+          "meaning": "三个实际增量和传递结论可读"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.3,
+        "0.06": 0.8,
+        "0.12": 2.5,
+        "0.28": 5.22,
+        "0.34": 5.88,
+        "0.37": 7.66,
+        "0.39": 8.3,
+        "0.51": 13.66,
+        "0.57": 14.32,
+        "0.60": 15.86,
+        "0.63": 16.52,
+        "0.74": 21.12,
+        "0.77": 22.86,
+        "0.80": 23.12,
+        "0.86": 23.3,
+        "1.00": 39.5,
+        "0.76": 22.3
+      },
+      "animation_starts": {
+        "0.28": 3.6,
+        "0.51": 12.12,
+        "0.74": 19.98,
+        "0.34": 5.48,
+        "0.57": 13.92,
+        "0.80": 22.9,
+        "0.86": 23.12,
+        "0.76": 21.9
+      }
+    },
+    {
+      "id": "ratios",
+      "duration": 54.4,
+      "heading": "非线性内层拓展：两级比值",
+      "visual": "限定x=1和0<|h|<1，展示Δu=h(2+h)非零后，依次添加h=.1,.01,.001数值行。",
+      "learning_purpose": "说明有限差商乘积来源及缩小时2、12、24的联系，零增量不参与除法。",
+      "anchors": [
+        {
+          "id": "ratio_identity_ready",
+          "meaning": "有限非零差商等式已出现"
+        },
+        {
+          "id": "ratio_nonzero_ready",
+          "meaning": "当前例子Δu非零条件已出现"
+        },
+        {
+          "id": "ratio_row_1_ready",
+          "meaning": "第一行实际比值可读"
+        },
+        {
+          "id": "ratio_row_2_ready",
+          "meaning": "第二行实际比值可读"
+        },
+        {
+          "id": "ratio_row_3_ready",
+          "meaning": "第三行实际比值可读"
+        },
+        {
+          "id": "ratio_limit_ready",
+          "meaning": "极限乘积24已出现"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.3,
+        "0.06": 0.8,
+        "0.14": 2.4,
+        "0.30": 20.7,
+        "0.38": 37.6,
+        "0.48": 38.0,
+        "0.63": 40.94,
+        "0.78": 42.84,
+        "0.90": 48.68,
+        "1.00": 54.4
+      },
+      "animation_starts": {
+        "0.48": 37.6,
+        "0.63": 40.1,
+        "0.78": 41.6,
+        "0.90": 47.8
+      }
+    },
+    {
+      "id": "rule",
+      "duration": 72.16666666666667,
+      "heading": "非线性内层拓展：链式法则",
+      "visual": "一般链式关系退出后，先重列本例函数和x=1,u=2，再出现该基点的精确增量；退出基点后回到本例任意实数输入的导数，并另列x=1的数值",
+      "learning_purpose": "区分具体差商演示与通用链式法则，解释小变化近似的高阶项。",
+      "anchors": [
+        {
+          "id": "chain_conditions_ready",
+          "meaning": "对应输入处的两层可导条件可读"
+        },
+        {
+          "id": "chain_rule_ready",
+          "meaning": "链式法则已出现"
+        },
+        {
+          "id": "chain_remainders_ready",
+          "meaning": "具体例子的精确增量展开已出现"
+        },
+        {
+          "id": "chain_example_derivative_ready",
+          "meaning": "总导数与24已出现"
+        },
+        {
+          "id": "example_point_scope_ready",
+          "meaning": "本例函数与x=1,u=2先于增量式就绪"
+        },
+        {
+          "id": "example_variable_scope_ready",
+          "meaning": "退出基点范围后恢复任意实数输入"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.3,
+        "0.06": 0.8,
+        "0.14": 2.1,
+        "0.25": 2.42,
+        "0.40": 14.58,
+        "0.56": 26,
+        "0.69": 40.52,
+        "0.82": 47.72,
+        "1.00": 72.16666666666667
+      },
+      "animation_starts": {
+        "0.56": 25.6
+      }
+    },
+    {
+      "id": "linear-inner",
+      "duration": 40.3,
+      "heading": "核心简单复合：f(ax+b)",
+      "visual": "先出现线性内层u=ax+b，再出现精确增量Δu=aΔx与链式式子；单独给a=0时常数分支，不使用可能未定义的f'(b)。",
+      "learning_purpose": "覆盖课标简单复合的线性内层，追踪a如何传递；a=0只要求f(b)有定义。",
+      "anchors": [
+        {
+          "id": "linear_inner_ready",
+          "meaning": "线性内层已出现"
+        },
+        {
+          "id": "linear_increment_ready",
+          "meaning": "线性增量关系已出现"
+        },
+        {
+          "id": "linear_chain_ready",
+          "meaning": "线性内层求导法则已出现"
+        },
+        {
+          "id": "zero_linear_constant_ready",
+          "meaning": "常数分支和导数0已出现"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.3,
+        "0.06": 0.8,
+        "0.16": 2.34,
+        "0.31": 9.8,
+        "0.49": 16.52,
+        "0.70": 25.1,
+        "0.83": 25.34,
+        "1.00": 40.3
+      },
+      "animation_starts": {}
+    },
+    {
+      "id": "practice",
+      "duration": 45.4,
+      "heading": "换一个复合函数",
+      "visual": "(3x-1)^4先给内层及3，再给外层及4u³，最后乘积和实数域条件。",
+      "learning_purpose": "迁移识别内外输入与求导，保持各步骤先后可见。",
+      "anchors": [
+        {
+          "id": "affine_composite_ready",
+          "meaning": "练习表达式已出现"
+        },
+        {
+          "id": "affine_inner_ready",
+          "meaning": "内层与内层导数已出现"
+        },
+        {
+          "id": "affine_outer_ready",
+          "meaning": "外层及外层导数已出现"
+        },
+        {
+          "id": "affine_product_ready",
+          "meaning": "两个因子相乘的结果已出现"
+        },
+        {
+          "id": "chain_root_domain_ready",
+          "meaning": "新增sqrt函数域与有限导数域区分"
+        },
+        {
+          "id": "chain_log_domain_ready",
+          "meaning": "新增ln求导、因子2与定义域"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.3,
+        "0.06": 0.8,
+        "0.13": 2.36,
+        "0.36": 7.78,
+        "0.51": 15.56,
+        "0.69": 22.8,
+        "0.82": 30.2,
+        "0.90": 31.2,
+        "0.92": 35.25,
+        "0.94": 36.3,
+        "0.96": 39.6,
+        "1.00": 45.4
+      },
+      "animation_starts": {
+        "0.92": 34.95,
+        "0.94": 35.5,
+        "0.96": 38.8
+      }
+    },
+    {
+      "id": "handoff",
+      "duration": 35.5,
+      "heading": "从算导数走向读增长",
+      "visual": "保留x到u到y和变化率乘积，提出导数符号与区间增长的问题。",
+      "learning_purpose": "闭合本课，接第05课区间上的增长。",
+      "anchors": [
+        {
+          "id": "chain_summary_ready",
+          "meaning": "两层与链式表达式可读"
+        },
+        {
+          "id": "chain_handoff_ready",
+          "meaning": "增长问题已出现"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.3,
+        "0.06": 0.8,
+        "0.15": 1.9,
+        "0.30": 2.5,
+        "0.58": 9.92,
+        "0.77": 20.3,
+        "1.00": 35.5
+      },
+      "animation_starts": {}
+    }
+  ],
+  "focus_intents": [
+    {
+      "id": "chain_opening",
+      "cue": "opening",
+      "claim": "先平方加一，再立方"
+    },
+    {
+      "id": "compound_expression",
+      "cue": "two-stages",
+      "claim": "整个x²+1是下一层输入"
+    },
+    {
+      "id": "inner_named",
+      "cue": "two-stages",
+      "claim": "u承接内部运算"
+    },
+    {
+      "id": "two_levels",
+      "cue": "two-stages",
+      "claim": "两层通过u连接"
+    },
+    {
+      "id": "base_values",
+      "cue": "two-stages",
+      "claim": "在x=1有u=2,y=8"
+    },
+    {
+      "id": "input_change",
+      "cue": "one-change",
+      "claim": "输入正处于变化过程"
+    },
+    {
+      "id": "inner_change",
+      "cue": "one-change",
+      "claim": "u正随已改变的输入更新"
+    },
+    {
+      "id": "outer_change",
+      "cue": "one-change",
+      "claim": "输出正随已改变的u更新"
+    },
+    {
+      "id": "transfer_complete",
+      "cue": "one-change",
+      "claim": "同一增量已传过两层"
+    },
+    {
+      "id": "ratio_identity",
+      "cue": "ratios",
+      "claim": "非零增量的代数分解"
+    },
+    {
+      "id": "nonzero_increment",
+      "cue": "ratios",
+      "claim": "当前邻域Δu非零"
+    },
+    {
+      "id": "ratio_limit",
+      "cue": "ratios",
+      "claim": "具体数值趋近两层导数的乘积"
+    },
+    {
+      "id": "chain_conditions",
+      "cue": "rule",
+      "claim": "内外层在对应输入处可导"
+    },
+    {
+      "id": "chain_rule",
+      "cue": "rule",
+      "claim": "外层变化率乘内层变化率"
+    },
+    {
+      "id": "small_change_reason",
+      "cue": "rule",
+      "claim": "具体多项式高次余项说明近似来源"
+    },
+    {
+      "id": "chain_example_result",
+      "cue": "rule",
+      "claim": "本例总导数与24"
+    },
+    {
+      "id": "affine_question",
+      "cue": "practice",
+      "claim": "识别(3x-1)^4的内部"
+    },
+    {
+      "id": "affine_inner",
+      "cue": "practice",
+      "claim": "内层变化率3"
+    },
+    {
+      "id": "affine_outer",
+      "cue": "practice",
+      "claim": "外层变化率4u³"
+    },
+    {
+      "id": "affine_product",
+      "cue": "practice",
+      "claim": "恢复原输入并相乘"
+    },
+    {
+      "id": "chain_summary",
+      "cue": "handoff",
+      "claim": "两级变化率相乘"
+    },
+    {
+      "id": "chain_to_monotonicity",
+      "cue": "handoff",
+      "claim": "导数符号怎样描述增长"
+    },
+    {
+      "id": "linear_input",
+      "cue": "linear-inner",
+      "claim": "识别f(ax+b)的线性内层"
+    },
+    {
+      "id": "linear_increment",
+      "cue": "linear-inner",
+      "claim": "同一输入增量乘以a传给u"
+    },
+    {
+      "id": "linear_chain",
+      "cue": "linear-inner",
+      "claim": "外层在ax+b处求导，再乘a"
+    },
+    {
+      "id": "zero_linear_constant",
+      "cue": "linear-inner",
+      "claim": "a=0时f(b)有定义即可得到常数"
+    },
+    {
+      "id": "chain_domain_examples",
+      "cue": "practice",
+      "claim": "新增条件补充：sqrt边界区分函数域与有限导数域；ln的线性内层因子2及定义域"
+    }
+  ],
+  "review_times": [
+    0.15,
+    0.55,
+    2.047,
+    2.28,
+    2.58,
+    5.767,
+    6.0,
+    6.3,
+    8.267,
+    8.5,
+    8.8,
+    24.1,
+    24.45,
+    24.85,
+    26.467,
+    26.7,
+    27.0,
+    29.567,
+    29.6,
+    30.55,
+    30.6,
+    31.467,
+    31.6,
+    31.66,
+    31.787,
+    31.92,
+    31.94,
+    32.06,
+    32.16,
+    37.447,
+    37.68,
+    37.98,
+    43.367,
+    43.6,
+    43.867,
+    43.9,
+    44.1,
+    44.4,
+    60.566667,
+    60.916667,
+    61.316667,
+    62.833667,
+    63.066667,
+    63.366667,
+    64.333667,
+    65.176667,
+    66.086667,
+    66.213667,
+    66.446667,
+    66.746667,
+    67.993667,
+    68.226667,
+    68.526667,
+    68.633667,
+    68.866667,
+    69.166667,
+    72.853667,
+    73.656667,
+    74.526667,
+    74.653667,
+    74.886667,
+    75.186667,
+    76.193667,
+    76.426667,
+    76.726667,
+    76.853667,
+    77.086667,
+    77.386667,
+    80.713667,
+    81.316667,
+    81.986667,
+    83.193667,
+    83.426667,
+    83.633667,
+    83.726667,
+    83.776667,
+    83.853667,
+    83.976667,
+    83.986667,
+    84.166667,
+    100.066667,
+    100.416667,
+    100.816667,
+    102.233667,
+    102.466667,
+    102.766667,
+    105.267,
+    110.267,
+    115.267,
+    120.533667,
+    120.766667,
+    121.066667,
+    137.433667,
+    137.666667,
+    137.833667,
+    137.966667,
+    138.066667,
+    138.366667,
+    140.333667,
+    140.786667,
+    141.306667,
+    141.833667,
+    142.486667,
+    143.206667,
+    148.033667,
+    148.506667,
+    149.046667,
+    154.466667,
+    154.816667,
+    155.216667,
+    156.333667,
+    156.566667,
+    156.733667,
+    156.866667,
+    156.926667,
+    157.186667,
+    168.813667,
+    169.046667,
+    169.267,
+    169.346667,
+    171.667,
+    174.067,
+    179.567,
+    179.767,
+    179.867,
+    179.893667,
+    180.067,
+    180.1,
+    180.126667,
+    180.267,
+    180.426667,
+    180.427,
+    180.467,
+    180.667,
+    180.9,
+    184.053,
+    194.753667,
+    194.986667,
+    195.286667,
+    197.9,
+    201.567,
+    201.667,
+    201.767,
+    201.867,
+    201.953667,
+    201.967,
+    202.067,
+    202.186667,
+    202.267,
+    202.367,
+    202.486667,
+    202.667,
+    205.667,
+    208.667,
+    226.633333,
+    226.983333,
+    227.383333,
+    228.740333,
+    228.973333,
+    229.273333,
+    236.200333,
+    236.433333,
+    236.733333,
+    236.833,
+    237.233,
+    238.033,
+    238.333,
+    238.433,
+    238.833,
+    239.3,
+    240.133,
+    240.833,
+    242.920333,
+    243.153333,
+    243.453333,
+    243.833,
+    245.833,
+    249.833,
+    251.500333,
+    251.733333,
+    251.900333,
+    252.033333,
+    252.053333,
+    252.273333,
+    266.933333,
+    267.283333,
+    267.683333,
+    269.060333,
+    269.293333,
+    269.593333,
+    274.480333,
+    274.713333,
+    275.013333,
+    282.260333,
+    282.493333,
+    282.793333,
+    289.500333,
+    289.733333,
+    290.033333,
+    290.133,
+    292.033,
+    294.533,
+    294.733,
+    295.433,
+    295.533,
+    295.6,
+    295.833,
+    295.9,
+    296,
+    296.033,
+    296.067,
+    296.1,
+    296.2,
+    296.267,
+    296.3,
+    296.4,
+    296.5,
+    296.533,
+    296.7,
+    296.733,
+    296.900333,
+    297.133333,
+    297.433333,
+    297.900333,
+    298.133333,
+    298.433333,
+    302.050333,
+    302.233333,
+    302.483333,
+    302.600333,
+    303.033333,
+    303.533333,
+    305.900333,
+    306.333333,
+    306.833333,
+    312.333333,
+    312.683333,
+    313.083333,
+    314.000333,
+    314.233333,
+    314.533333,
+    314.600333,
+    314.833333,
+    315.133333,
+    322.020333,
+    322.253333,
+    322.553333,
+    332.400333,
+    332.633333,
+    332.933333,
+    347.833333
+  ],
+  "state_contracts": [
+    {
+      "name": "scene_trackers_and_samples",
+      "writer": "01a199e9-73ab-7700-8a9f-cd7b5541b0ad",
+      "consumers": [
+        "main",
+        "independent visual reviewer",
+        "timing reviewer"
+      ],
+      "lifecycle": "One exact scene execution; only actual runtime emits samples and windows",
+      "invalidation": "Any scene/helper/model/plan/profile/context/font/timing change"
+    },
+    {
+      "name": "versioned_plan_facts_and_narration",
+      "writer": "01a199e9-73ab-7700-8a9f-cd7b5541b0ad",
+      "consumers": [
+        "main installer",
+        "renderer",
+        "independent reviewer",
+        "future meaning-unit speech planner"
+      ],
+      "lifecycle": "v001 author draft for this lesson; not an approval or acoustic record",
+      "invalidation": "Changed mathematics, wording, references, shared helper, course context or visual source requires a new revision"
+    },
+    {
+      "name": "render_local_drivers",
+      "writer": "DerivativeChainLesson.one_change",
+      "consumers": [
+        "three visible numbers",
+        "chapter-motion journal"
+      ],
+      "lifecycle": "Created after base state appears; cleared after outer transfer; removed at next cue",
+      "invalidation": "New scene execution or changed dependency/order/geometry"
+    },
+    {
+      "name": "v003_native_presentation_clock",
+      "writer": "01a19acd-e149-74d0-8a5d-975a3adf45f4",
+      "consumers": [
+        "main",
+        "native tests",
+        "independent reviewers"
+      ],
+      "lifecycle": "One v003 scene execution; emit actual native focuses/motion, never audio timestamps",
+      "invalidation": "Any bound input, source, cue clock, mathematics, geometry or authorization change"
+    },
+    {
+      "name": "explicit_formula_transfers",
+      "writer": "01a19f6b-1725-7be3-a4d8-bf988a308b31",
+      "consumers": [
+        "renderer",
+        "native tests",
+        "pixel reviewers"
+      ],
+      "lifecycle": "One construct; copies removed after arrival; target retained until cue exit",
+      "invalidation": "Any source/grouping/path/time or formula change"
+    },
+    {
+      "name": "scope_and_stationary_factor",
+      "writer": "01a19f6b-1725-7be3-a4d8-bf988a308b31",
+      "consumers": [
+        "native tests",
+        "render journal",
+        "independent reviewers"
+      ],
+      "lifecycle": "One rule/practice cue; point context removed before variable x, collection driver cleared after native cleanup",
+      "invalidation": "Functions/base point/glyph geometry/factor grouping/math clock or source changes"
+    }
+  ],
+  "production_boundary": {
+    "rendered": false,
+    "published": false,
+    "independent_review_required": true,
+    "audio_generated_by_this_author": false,
+    "listening_reviewed": false,
+    "student_understanding_tested": false
+  },
+  "lesson_context": "runtime/projects/math-derivative-ch04-chain-20261102/context-v001.json",
+  "audience": "已学高中常见函数、斜率与基本代数运算，尚未系统学习导数的学生",
+  "prior_knowledge": [
+    {
+      "lesson_id": "M02-02",
+      "assumed_exit": "函数表达式、图像与点坐标对应"
+    },
+    {
+      "lesson_id": "M03-04",
+      "assumed_exit": "对数函数与运算法则的定义域和底数条件"
+    },
+    {
+      "lesson_id": "M04-05",
+      "assumed_exit": "同角与和差公式，以及它们联系的单位圆正弦余弦"
+    },
+    {
+      "lesson_id": "M09-01",
+      "assumed_exit": "有向增量与直线斜率"
+    },
+    {
+      "lesson_id": "M01-01",
+      "assumed_exit": "展开、因式分解及非零约分"
+    }
+  ],
+  "understanding_goals": [
+    "x先改变中间量u=ax+b，u再影响y=f(u)；每单位x引起的y变化，要把两层变化率连接起来"
+  ],
+  "writer": "01a19f6b-1725-7be3-a4d8-bf988a308b31",
+  "consumers": [
+    "main",
+    "native tests",
+    "independent first-look reviewer",
+    "independent regression reviewer"
+  ],
+  "lifecycle": "Serial scalar replacement after real probe; not reviewed or approved",
+  "invalidation": "Source, selected baseline, geometry, clock, narration, WAV or scope changes require a new version",
+  "status": "not_reviewed",
+  "contributors": [
+    {
+      "author_agent": "01a199e9-73ab-7700-8a9f-cd7b5541b0ad",
+      "author_context": "01a199e9-73ab-7700-8a9f-cd7b5541b0ad",
+      "contribution": "Original complete lesson mathematics, geometry, native stages and narration"
+    },
+    {
+      "author_agent": "019eaf8b-9151-75e2-9db4-5ff834335577",
+      "author_context": "019eaf8b-9151-75e2-9db4-5ff834335577",
+      "contribution": "Existing frozen v002 spoken-grouping repair; no narration edits by v003 author"
+    }
+  ],
+  "revision_contract": "runtime/projects/math-derivative-ch04-chain-20261102/content-regression-contract-v012.json",
+  "revision_review": "runtime/sessions/derivative-motion-revision-20261103/lesson04-author/regression-v011-render.json",
+  "narration_draft_sha256": "284bdccbbfe3344453344a0c62cea2728d34f9ae798f49540eb657dd97cb4440",
+  "intended_full_wav_placement": [
+    {
+      "id": "chain-u01",
+      "cue": "opening",
+      "intended_start": 2,
+      "duration_seconds": 21.6,
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch04-chain-20261102/speech/chain-u01.wav",
+      "wav_sha256": "2e23feec843898c97a02a31ffeee9c002f81a021d5c22dbe427e499f41d7ebdb",
+      "audio_trimmed": false,
+      "speed_changed": false,
+      "regenerated": false
+    },
+    {
+      "id": "chain-u02",
+      "cue": "two-stages",
+      "intended_start": 26.3,
+      "duration_seconds": 33.76,
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch04-chain-20261102/speech/chain-u02.wav",
+      "wav_sha256": "db97740972aecef1548550920bcaf1ec5793980fbc7d4438c28d782af96044a1",
+      "audio_trimmed": false,
+      "speed_changed": false,
+      "regenerated": false
+    },
+    {
+      "id": "chain-u03",
+      "cue": "one-change",
+      "intended_start": 62.766666666666666,
+      "duration_seconds": 36.8,
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch04-chain-20261102/speech/chain-u03.wav",
+      "wav_sha256": "ae4a2f6bfc35e86ea01a8243b873ed6abae159ffeabdc9c7a0d41feb41551b9f",
+      "audio_trimmed": false,
+      "speed_changed": false,
+      "regenerated": false
+    },
+    {
+      "id": "chain-u04",
+      "cue": "ratios",
+      "intended_start": 102.26666666666667,
+      "duration_seconds": 51.68,
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch04-chain-20261102/speech/chain-u04.wav",
+      "wav_sha256": "ff917ccd0777aa902182090d429677d036656a587b5de5d18785949030769750",
+      "audio_trimmed": false,
+      "speed_changed": false,
+      "regenerated": false
+    },
+    {
+      "id": "chain-u05",
+      "cue": "rule",
+      "intended_start": 156.66666666666666,
+      "duration_seconds": 69.44,
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch04-chain-20261102/speech/chain-u05.wav",
+      "wav_sha256": "0e7298fd2de8f8d893662fe88f82a874b53ba26d0fe58ee88a73e6f8ba6e7d2e",
+      "audio_trimmed": false,
+      "speed_changed": false,
+      "regenerated": false
+    },
+    {
+      "id": "chain-linear-unit",
+      "cue": "linear-inner",
+      "intended_start": 228.83333333333331,
+      "duration_seconds": 37.6,
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch04-chain-20261102/speech/chain-linear-unit.wav",
+      "wav_sha256": "833c3bd987787d4b29bf40ba8b4efba89e4b2e70a746a4f6cfbd62caa80bdd56",
+      "audio_trimmed": false,
+      "speed_changed": false,
+      "regenerated": false
+    },
+    {
+      "id": "chain-u06",
+      "cue": "practice",
+      "intended_start": 269.1333333333333,
+      "duration_seconds": 40.8,
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch04-chain-20261102/speech/chain-u06.wav",
+      "wav_sha256": "329d5fa8c41b47dc0fd434d8208ab4c394f537ba8be4817eacd1c6274c7d84c8",
+      "audio_trimmed": false,
+      "speed_changed": false,
+      "regenerated": false
+    },
+    {
+      "id": "chain-u07",
+      "cue": "handoff",
+      "intended_start": 314.5333333333333,
+      "duration_seconds": 32.8,
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch04-chain-20261102/speech/chain-u07.wav",
+      "wav_sha256": "aeb494ded2faeb78f107c65e6c4b9d670d9a7175031ead941e44777fab8069ac",
+      "audio_trimmed": false,
+      "speed_changed": false,
+      "regenerated": false
+    }
+  ],
+  "timing_basis": {
+    "plan": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch04-chain-20261102/speech-plan-v002.json",
+    "plan_sha256": "0420ec44e28bf817051c7973b0b31cb9ba41bd6aeb566ff00f3ed59114a3f2d5",
+    "timings": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch04-chain-20261102/timings-v001.json",
+    "timings_sha256": "fb59a38780634d2614b91154be95e42128f3cca518a0856f57e694d91cbbb640",
+    "speech": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch04-chain-20261102/speech",
+    "production_evidence_sha256": "5bdd4e0ac657fe1a6dc861851e5993b32b85be37b5dbe8464fa70e75b88632c1",
+    "scope": "Production model estimates, not listening, exact phoneme synchronization or pixel approval"
+  },
+  "new_visual_support": {
+    "baseline": "visual-v005",
+    "narration_changed": false,
+    "scope": "Only traceable formula movement is new; nonlinear headings, early Delta y and root/log domains already belong to this baseline"
+  },
+  "formula_transitions": [
+    {
+      "id": "name_inner",
+      "operation": "name",
+      "source": "(x^2+1) in the original composite",
+      "target": "u=x^2+1",
+      "purpose": "Keep the landed whole inner expression while naming it"
+    },
+    {
+      "id": "split_ratio",
+      "operation": "factor",
+      "source": "Delta y/Delta x and a new nonzero Delta u",
+      "target": "(Delta y/Delta u)(Delta u/Delta x)",
+      "purpose": "Insert the same intermediate increment in two distinct roles"
+    },
+    {
+      "id": "multiply_rates",
+      "operation": "multiply",
+      "source": "f'(u) and g'(x), at corresponding inputs",
+      "target": "y'=f'(u)g'(x)",
+      "purpose": "Assemble the two rates without inventing a general proof from nonzero increments"
+    },
+    {
+      "id": "example_substitution",
+      "operation": "substitute",
+      "source": "3u^2, u=x^2+1, and 2x",
+      "target": "3(x^2+1)^2 times 2x",
+      "purpose": "Substitute the whole inner expression then multiply the inner rate"
+    },
+    {
+      "id": "linear_increment",
+      "operation": "subtract",
+      "source": "a(x+Delta x)+b-(ax+b), expanded into ax+a Delta x+b-ax-b",
+      "target": "a Delta x",
+      "purpose": "Distribute both states, cancel the opposite ax and b pairs; move the surviving entire a Delta x without a whole-line morph"
+    },
+    {
+      "id": "linear_substitution",
+      "operation": "substitute",
+      "source": "ax+b and the a in Delta u=a Delta x",
+      "target": "f'(ax+b) times a",
+      "purpose": "Separate whole-input substitution from the inner rate; a=0 handled independently"
+    },
+    {
+      "id": "practice_substitution",
+      "operation": "substitute",
+      "source": "4u^3, u=3x-1, u'=3",
+      "target": "4(3x-1)^3 times 3",
+      "purpose": "Keep 3x-1 intact and bring the rate from its different source"
+    },
+    {
+      "id": "practice_collect",
+      "operation": "collect_constants",
+      "source": "4(3x-1)^3 times 3, with a reserved two-digit coefficient slot",
+      "target": "12(3x-1)^3 with the exact same lhs and entire factor glyph geometry",
+      "purpose": "Only 4, the multiplication sign, and the external 3 leave; only 12 enters. No whole-row or factor morph during finalization"
+    },
+    {
+      "id": "example_point_scope",
+      "operation": "bind",
+      "source": "u=g(x), y=f(u) and their general derivative",
+      "target": "u=x^2+1, y=u^3, x=1,u=2, Delta x=h before the exact increment identities",
+      "purpose": "Establish the specific functions and base point before numerical coefficients 2,12,6 appear"
+    },
+    {
+      "id": "example_variable_scope",
+      "operation": "change_scope",
+      "source": "The example at x=1,u=2 and its exact increments",
+      "target": "The same polynomial functions at any real x, then a separately labeled evaluation at x=1",
+      "purpose": "Clear the point-only scope before using variable x; do not generalize its numerical coefficients"
+    }
+  ],
+  "transition_review_times": [
+    {
+      "id": "name_inner",
+      "cue": "two-stages",
+      "before": 29.6,
+      "during": 30.6,
+      "after": 32.06
+    },
+    {
+      "id": "split_ratio",
+      "cue": "ratios",
+      "before": 105.267,
+      "during": 110.267,
+      "after": 115.267
+    },
+    {
+      "id": "multiply_rates",
+      "cue": "rule",
+      "before": 169.267,
+      "during": 171.667,
+      "after": 174.067
+    },
+    {
+      "id": "example_substitution",
+      "cue": "rule",
+      "before": 202.667,
+      "during": 205.667,
+      "after": 208.667
+    },
+    {
+      "id": "linear_increment",
+      "cue": "linear-inner",
+      "before": 236.833,
+      "during": 238.333,
+      "after": 240.833
+    },
+    {
+      "id": "linear_substitution",
+      "cue": "linear-inner",
+      "before": 243.833,
+      "during": 245.833,
+      "after": 249.833
+    },
+    {
+      "id": "practice_substitution",
+      "cue": "practice",
+      "before": 290.133,
+      "during": 292.033,
+      "after": 294.533
+    },
+    {
+      "id": "practice_collect",
+      "cue": "practice",
+      "before": 294.733,
+      "during": 296.067,
+      "after": 296.733
+    },
+    {
+      "id": "example_point_scope",
+      "cue": "rule",
+      "before": 179.567,
+      "during": 180.1,
+      "after": 180.9
+    },
+    {
+      "id": "example_variable_scope",
+      "cue": "rule",
+      "before": 201.567,
+      "during": 201.967,
+      "after": 202.367
+    }
+  ],
+  "final_preparation": {
+    "lossless_entrypoint": "manimind.postproduce.traceable_film_v3.prepare_evidence",
+    "evidence_output": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/derivative-motion-revision-20261103/lesson04-author/lossless-v011",
+    "rendered_output": "outputs/math-derivative-ch04-chain-20261102/visual-v011",
+    "v006_preliminary_inputs_retained": true,
+    "stable_core_confirmed_by_main": true,
+    "author_test_scope": "native clock and actual TeX selectors, not rendered pixels"
+  },
+  "correction_scope": [
+    "A: remove general f/g before explicitly binding the example functions and x=1,u=2",
+    "B: keep the actual entire factor and lhs geometries fixed; native in-place matching changes constants only, including cleanup",
+    "B follow-up: old 4 and times 3 fully exit before new 12 is introduced; no crossfade multiplication ambiguity"
+  ],
+  "repair_request": {
+    "reports": {
+      "first-look-v009.json": "777a9c8dc7efdb502f1a27fc4d2b9a449d4365dbb6bf28ebad6467906e08f370",
+      "regression-v009-render.json": "0c726c7adac625dc298c4d489c722a84ec27d2ec26aa257f246fd9c7929433fe"
+    },
+    "old_decisions": "revise; never inherited as approval",
+    "scope_excludes": "lesson08"
+  },
+  "substage_review_times": [
+    {
+      "id": "general_exit",
+      "cue": "rule",
+      "before": 179.567,
+      "during": 179.767,
+      "after": 179.867
+    },
+    {
+      "id": "point_bind",
+      "cue": "rule",
+      "before": 179.867,
+      "during": 180.067,
+      "after": 180.267
+    },
+    {
+      "id": "point_increment",
+      "cue": "rule",
+      "before": 180.267,
+      "during": 180.467,
+      "after": 180.667
+    },
+    {
+      "id": "point_exit",
+      "cue": "rule",
+      "before": 201.667,
+      "during": 201.767,
+      "after": 201.867
+    },
+    {
+      "id": "variable_resume",
+      "cue": "rule",
+      "before": 201.867,
+      "during": 202.067,
+      "after": 202.267
+    },
+    {
+      "id": "collect_constants",
+      "cue": "practice",
+      "before": 294.733,
+      "during": 295.433,
+      "after": 295.833
+    },
+    {
+      "id": "collect_finalize",
+      "cue": "practice",
+      "before": 295.833,
+      "during": 296.067,
+      "after": 296.533
+    },
+    {
+      "id": "collect_cleanup",
+      "cue": "practice",
+      "before": 296.5,
+      "during": 296.533,
+      "after": 296.733
+    },
+    {
+      "id": "collect_old_constants_exit",
+      "cue": "practice",
+      "before": 295.6,
+      "during": 295.833,
+      "after": 296.033
+    },
+    {
+      "id": "collect_result_introduction",
+      "cue": "practice",
+      "before": 296.033,
+      "during": 296.267,
+      "after": 296.5
+    }
+  ]
+}

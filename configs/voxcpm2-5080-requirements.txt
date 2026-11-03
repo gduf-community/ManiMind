@@ -1,0 +1,4 @@
+voxcpm==2.0.3
+torch==2.11.0+cu128
+torchaudio==2.11.0+cu128
+transformers==4.57.3

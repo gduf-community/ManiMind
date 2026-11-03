@@ -1,0 +1,37 @@
+{
+  "schema_version": 3,
+  "source_contract": "continuous-meaning-units-v1",
+  "project_id": "wave-formation-20261028",
+  "author_agent": "01a1817c-7136-79a3-9ca8-6b508ab35228",
+  "status": "intent_draft_not_approved_not_audio_timed",
+  "instruction": "每个unit是一段连续解释，不因reference或字幕换行另生成WAV。须在真实静音像素审核后据实改稿并安装，真实WAV逐子句对齐；可调整真实阅读hold并重渲染，不拉伸物理时钟。",
+  "units": [
+    {"id": "F01", "cue": "contrast", "text": "黄色点是同一个质点，绿环跟踪同一个波峰。让时间往前走：波峰向右移，黄色点却只在自己的位置上下运动。一个周期后，质点回到原来的状态，波峰已经到了另一处。所以，不能把这个波峰当成一颗向前跑的绳上颗粒。", "references": [
+      {"id": "r1", "focus": "particle_and_crest", "text": "黄色点是同一个质点，绿环跟踪同一个波峰。"},
+      {"id": "r2", "focus": "particle_stays_crest_moves", "text": "让时间往前走：波峰向右移，黄色点却只在自己的位置上下运动。一个周期后，质点回到原来的状态，波峰已经到了另一处。所以，不能把这个波峰当成一颗向前跑的绳上颗粒。"}
+    ]},
+    {"id": "F02", "cue": "formation", "text": "先回到起波前的静止绳。波源小幅上下运动，局部形变通过相邻部分的相互作用传下去。注意两个标记不是同时开始运动：扰动先到近处，再到远处。我们看的是绷紧长绳上、反射还没有返回的这一段。", "references": [
+      {"id": "r1", "focus": "rest_before_start", "text": "先回到起波前的静止绳。"},
+      {"id": "r2", "focus": "causal_start", "text": "波源小幅上下运动，局部形变通过相邻部分的相互作用传下去。注意两个标记不是同时开始运动：扰动先到近处，再到远处。我们看的是绷紧长绳上、反射还没有返回的这一段。"}
+    ]},
+    {"id": "F03", "cue": "delay", "text": "把前一个位置此刻的高度圈住，记下这个状态。再等两秒，后一个位置也到了这个高度。这里圈住的是先前状态的记录，不是一颗被运到右边的质点。去掉记录，继续看，两个质点仍然各自在原来的横坐标上运动；传过去的是振动状态。", "references": [
+      {"id": "r1", "focus": "earlier_state", "text": "把前一个位置此刻的高度圈住，记下这个状态。"},
+      {"id": "r2", "focus": "delay_transfer", "text": "再等两秒，后一个位置也到了这个高度。这里圈住的是先前状态的记录，不是一颗被运到右边的质点。"},
+      {"id": "r3", "focus": "delayed_not_transported", "text": "去掉记录，继续看，两个质点仍然各自在原来的横坐标上运动；传过去的是振动状态。"}
+    ]},
+    {"id": "F04", "cue": "period", "text": "现在看持续振动后已经建立的波，用你熟悉的一个周期来比较。黄色质点先到下面，再回到起点，完成一次振动；绿环却一直向右。四秒过去，质点回到原来的状态，同一个波峰前进了四米。这两个过程共用时间，却不是同一种运动。", "references": [
+      {"id": "r1", "focus": "period_start", "text": "现在看持续振动后已经建立的波，用你熟悉的一个周期来比较。"},
+      {"id": "r2", "focus": "one_period_motion", "text": "黄色质点先到下面，再回到起点，完成一次振动；绿环却一直向右。"},
+      {"id": "r3", "focus": "period_result", "text": "四秒过去，质点回到原来的状态，同一个波峰前进了四米。这两个过程共用时间，却不是同一种运动。"}
+    ]},
+    {"id": "F05", "cue": "exit", "text": "再过一秒，黄色质点也会跟着波峰向右一米吗？看结果：波峰前进了，黄色质点仍在四米处，只是从最高处回到平衡位置。分清谁是质点、谁是传播的状态，就能接着问：同一个波，怎样分别用空间图和时间图来读？", "references": [
+      {"id": "r1", "focus": "formation_prediction", "text": "再过一秒，黄色质点也会跟着波峰向右一米吗？"},
+      {"id": "r2", "focus": "formation_prediction_test", "text": "看结果：波峰前进了，黄色质点仍在四米处，只是从最高处回到平衡位置。"},
+      {"id": "r3", "focus": "formation_handoff", "text": "分清谁是质点、谁是传播的状态，就能接着问：同一个波，怎样分别用空间图和时间图来读？"}
+    ]}
+  ],
+  "writer": "01a1817c-7136-79a3-9ca8-6b508ab35228",
+  "consumers": ["lead", "post-visual narrator", "independent narration reviewer"],
+  "lifecycle": "本课长期未批准意图稿，不是声音时序证据",
+  "invalidation": "视觉、focus、科学条件、课程context或文字变化后重新核对"
+}

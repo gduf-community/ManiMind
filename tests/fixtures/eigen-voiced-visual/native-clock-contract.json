@@ -1,0 +1,625 @@
+{
+  "evidence_type": "Native 30fps placeholder geometry and clock; no GL, pixels or approval",
+  "duration": 254,
+  "frames": 7620,
+  "chapters": [
+    {
+      "id": "transform",
+      "start": 0,
+      "end": 29
+    },
+    {
+      "id": "directions",
+      "start": 29,
+      "end": 57
+    },
+    {
+      "id": "equations",
+      "start": 57,
+      "end": 91
+    },
+    {
+      "id": "equal",
+      "start": 91,
+      "end": 125
+    },
+    {
+      "id": "other",
+      "start": 125,
+      "end": 160
+    },
+    {
+      "id": "decompose",
+      "start": 160,
+      "end": 206
+    },
+    {
+      "id": "rotation",
+      "start": 206,
+      "end": 234
+    },
+    {
+      "id": "summary",
+      "start": 234,
+      "end": 254
+    }
+  ],
+  "events": [
+    {
+      "id": "map_ready",
+      "time": 3
+    },
+    {
+      "id": "plane_transformed",
+      "time": 18
+    },
+    {
+      "id": "turn_ready",
+      "time": 23
+    },
+    {
+      "id": "definition_ready",
+      "time": 33
+    },
+    {
+      "id": "candidates_ready",
+      "time": 50
+    },
+    {
+      "id": "vector_ready",
+      "time": 60
+    },
+    {
+      "id": "components_ready",
+      "time": 68
+    },
+    {
+      "id": "subtract_ready",
+      "time": 77
+    },
+    {
+      "id": "factor_ready",
+      "time": 87
+    },
+    {
+      "id": "equal_condition_ready",
+      "time": 94
+    },
+    {
+      "id": "equal_substitute_ready",
+      "time": 102
+    },
+    {
+      "id": "equal_combine_ready",
+      "time": 108
+    },
+    {
+      "id": "equal_value_ready",
+      "time": 113
+    },
+    {
+      "id": "plus_direction_ready",
+      "time": 119
+    },
+    {
+      "id": "other_value_ready",
+      "time": 128
+    },
+    {
+      "id": "other_substitute_ready",
+      "time": 136
+    },
+    {
+      "id": "other_reduce_ready",
+      "time": 142
+    },
+    {
+      "id": "other_direction_ready",
+      "time": 149
+    },
+    {
+      "id": "all_directions_ready",
+      "time": 153
+    },
+    {
+      "id": "decomposition_ready",
+      "time": 168
+    },
+    {
+      "id": "components_transformed",
+      "time": 186
+    },
+    {
+      "id": "recombined_ready",
+      "time": 190
+    },
+    {
+      "id": "direct_check_ready",
+      "time": 198
+    },
+    {
+      "id": "rotation_input_ready",
+      "time": 210
+    },
+    {
+      "id": "no_real_direction_ready",
+      "time": 223
+    },
+    {
+      "id": "summary_ready",
+      "time": 244
+    }
+  ],
+  "windows": [
+    {
+      "id": "matrix_map",
+      "start": 3,
+      "end": 10
+    },
+    {
+      "id": "whole_plane",
+      "start": 10,
+      "end": 22
+    },
+    {
+      "id": "general_turn",
+      "start": 23,
+      "end": 29
+    },
+    {
+      "id": "definition",
+      "start": 33,
+      "end": 43
+    },
+    {
+      "id": "candidate_lines",
+      "start": 43,
+      "end": 57
+    },
+    {
+      "id": "vector_equation",
+      "start": 60,
+      "end": 65
+    },
+    {
+      "id": "two_components",
+      "start": 68,
+      "end": 73
+    },
+    {
+      "id": "subtract",
+      "start": 77,
+      "end": 84
+    },
+    {
+      "id": "factor",
+      "start": 87,
+      "end": 91
+    },
+    {
+      "id": "equal_nonzero",
+      "start": 94,
+      "end": 101
+    },
+    {
+      "id": "equal_substitute",
+      "start": 102,
+      "end": 106
+    },
+    {
+      "id": "equal_combine",
+      "start": 108,
+      "end": 111
+    },
+    {
+      "id": "equal_value",
+      "start": 113,
+      "end": 118
+    },
+    {
+      "id": "plus_direction",
+      "start": 119,
+      "end": 125
+    },
+    {
+      "id": "other_value",
+      "start": 128,
+      "end": 135
+    },
+    {
+      "id": "other_substitute",
+      "start": 136,
+      "end": 139
+    },
+    {
+      "id": "other_reduce",
+      "start": 142,
+      "end": 146
+    },
+    {
+      "id": "other_direction",
+      "start": 149,
+      "end": 152
+    },
+    {
+      "id": "all_directions",
+      "start": 153,
+      "end": 160
+    },
+    {
+      "id": "decompose",
+      "start": 168,
+      "end": 176
+    },
+    {
+      "id": "independent_scaling",
+      "start": 177,
+      "end": 189
+    },
+    {
+      "id": "recombine",
+      "start": 190,
+      "end": 196
+    },
+    {
+      "id": "linearity_check",
+      "start": 198,
+      "end": 206
+    },
+    {
+      "id": "rotation_input",
+      "start": 210,
+      "end": 215
+    },
+    {
+      "id": "quarter_turn",
+      "start": 215,
+      "end": 222
+    },
+    {
+      "id": "no_real_direction",
+      "start": 223,
+      "end": 233
+    },
+    {
+      "id": "summary",
+      "start": 238,
+      "end": 254
+    }
+  ],
+  "symbol_transitions": [
+    {
+      "stage": "components",
+      "start": 65,
+      "end": 68,
+      "source": "A\\binom{x}{y}=\\lambda\\binom{x}{y}",
+      "target": "\\begin{aligned}2x+y&=\\lambda x\\\\x+2y&=\\lambda y\\end{aligned}",
+      "source_center": [
+        0,
+        0.85,
+        0
+      ],
+      "target_center": [
+        0,
+        -0.7,
+        0
+      ]
+    },
+    {
+      "stage": "subtract",
+      "start": 74,
+      "end": 77,
+      "source": "\\begin{aligned}2x+y&=\\lambda x\\\\x+2y&=\\lambda y\\end{aligned}",
+      "target": "x-y=\\lambda(x-y)",
+      "source_center": [
+        0,
+        -0.7,
+        0
+      ],
+      "target_center": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "stage": "factor",
+      "start": 84,
+      "end": 87,
+      "source": "x-y=\\lambda(x-y)",
+      "target": "(\\lambda-1)(x-y)=0",
+      "source_center": [
+        0,
+        1,
+        0
+      ],
+      "target_center": [
+        0,
+        -1.5,
+        0
+      ]
+    },
+    {
+      "stage": "equal_combine",
+      "start": 106,
+      "end": 108,
+      "source": "2x+x=\\lambda x",
+      "target": "3x=\\lambda x",
+      "source_center": [
+        0,
+        0.1,
+        0
+      ],
+      "target_center": [
+        0,
+        -1.25,
+        0
+      ]
+    },
+    {
+      "stage": "equal_value",
+      "start": 111,
+      "end": 113,
+      "source": "3x=\\lambda x",
+      "target": "\\lambda=3",
+      "source_center": [
+        0,
+        -1.25,
+        0
+      ],
+      "target_center": [
+        0,
+        0.05,
+        0
+      ]
+    },
+    {
+      "stage": "other_reduce",
+      "start": 139,
+      "end": 142,
+      "source": "2x+y=x",
+      "target": "x+y=0",
+      "source_center": [
+        0,
+        0.8,
+        0
+      ],
+      "target_center": [
+        0,
+        -0.6,
+        0
+      ]
+    },
+    {
+      "stage": "other_direction",
+      "start": 146,
+      "end": 149,
+      "source": "x+y=0",
+      "target": "y=-x",
+      "source_center": [
+        0,
+        -0.6,
+        0
+      ],
+      "target_center": [
+        0,
+        0.6,
+        0
+      ]
+    }
+  ],
+  "plays": [
+    {
+      "start": 0,
+      "end": 1
+    },
+    {
+      "start": 1,
+      "end": 3
+    },
+    {
+      "start": 10,
+      "end": 18
+    },
+    {
+      "start": 22,
+      "end": 23
+    },
+    {
+      "start": 29,
+      "end": 30
+    },
+    {
+      "start": 30,
+      "end": 31
+    },
+    {
+      "start": 31,
+      "end": 33
+    },
+    {
+      "start": 43,
+      "end": 50
+    },
+    {
+      "start": 57,
+      "end": 58
+    },
+    {
+      "start": 58,
+      "end": 59
+    },
+    {
+      "start": 59,
+      "end": 60
+    },
+    {
+      "start": 65,
+      "end": 68
+    },
+    {
+      "start": 73,
+      "end": 73.5
+    },
+    {
+      "start": 73.5,
+      "end": 74
+    },
+    {
+      "start": 74,
+      "end": 77
+    },
+    {
+      "start": 84,
+      "end": 87
+    },
+    {
+      "start": 91,
+      "end": 92
+    },
+    {
+      "start": 92,
+      "end": 93
+    },
+    {
+      "start": 93,
+      "end": 94
+    },
+    {
+      "start": 101,
+      "end": 102
+    },
+    {
+      "start": 106,
+      "end": 108
+    },
+    {
+      "start": 111,
+      "end": 113
+    },
+    {
+      "start": 118,
+      "end": 119
+    },
+    {
+      "start": 125,
+      "end": 126
+    },
+    {
+      "start": 126,
+      "end": 127
+    },
+    {
+      "start": 127,
+      "end": 128
+    },
+    {
+      "start": 135,
+      "end": 136
+    },
+    {
+      "start": 139,
+      "end": 142
+    },
+    {
+      "start": 146,
+      "end": 149
+    },
+    {
+      "start": 152,
+      "end": 153
+    },
+    {
+      "start": 160,
+      "end": 161
+    },
+    {
+      "start": 161,
+      "end": 162
+    },
+    {
+      "start": 162,
+      "end": 164
+    },
+    {
+      "start": 164,
+      "end": 166
+    },
+    {
+      "start": 166,
+      "end": 168
+    },
+    {
+      "start": 176,
+      "end": 177
+    },
+    {
+      "start": 177,
+      "end": 186
+    },
+    {
+      "start": 189,
+      "end": 190
+    },
+    {
+      "start": 196,
+      "end": 197
+    },
+    {
+      "start": 197,
+      "end": 198
+    },
+    {
+      "start": 206,
+      "end": 207
+    },
+    {
+      "start": 207,
+      "end": 208
+    },
+    {
+      "start": 208,
+      "end": 210
+    },
+    {
+      "start": 215,
+      "end": 220
+    },
+    {
+      "start": 222,
+      "end": 223
+    },
+    {
+      "start": 234,
+      "end": 235
+    },
+    {
+      "start": 235,
+      "end": 236
+    },
+    {
+      "start": 236,
+      "end": 238
+    },
+    {
+      "start": 238,
+      "end": 244
+    },
+    {
+      "start": 248,
+      "end": 251
+    },
+    {
+      "start": 251,
+      "end": 254
+    }
+  ],
+  "writer": "Original native helper executing inherited scene methods with test-only placeholder glyphs",
+  "consumers": [
+    "offline native regression tests",
+    "lead"
+  ],
+  "lifecycle": "Frozen observations of this exact v002 source and plan at 30fps",
+  "invalidation": "Source, plan, speech measurements, typography or native runtime changes require a fresh measurement",
+  "limitation": "No GL pixels, rendered-media approval, content-regression decision or listening verdict"
+}

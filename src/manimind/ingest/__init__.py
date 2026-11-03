@@ -11,12 +11,13 @@ from typing import Optional
 from .markdown_reader import MarkdownNote, MarkdownReader
 from .env_reporter import EnvReport, EnvReporter
 from .asset_scanner import AssetList, AssetScanner
+from .pdf_reader import PaperContent, PdfReader
 
 
 @dataclass
 class SourceBundle:
     """输入摄取层的统一输出，给 Explorer 使用。"""
-    paper: Optional[dict] = None
+    paper: Optional[PaperContent] = None
     notes: list[MarkdownNote] = None
     assets: Optional[AssetList] = None
     env_report: Optional[EnvReport] = None
@@ -26,9 +27,22 @@ class SourceBundle:
             self.notes = []
 
 
-def load_source_bundle(note_paths: list[str] | None = None) -> SourceBundle:
-    """加载所有输入源，返回统一 SourceBundle。"""
+def load_source_bundle(
+    paper_path: str | None = None,
+    note_paths: list[str] | None = None,
+) -> SourceBundle:
+    """加载所有输入源，返回统一 SourceBundle。
+
+    Args:
+        paper_path: PDF 论文路径（可选）
+        note_paths: Markdown 笔记路径列表（可选）
+    """
     bundle = SourceBundle()
+
+    # 解析 PDF 论文
+    if paper_path:
+        reader = PdfReader(paper_path)
+        bundle.paper = reader.read()
 
     # 扫描资产
     scanner = AssetScanner()
@@ -36,10 +50,9 @@ def load_source_bundle(note_paths: list[str] | None = None) -> SourceBundle:
 
     # 读取笔记
     if note_paths:
-        reader = MarkdownReader()
         for path in note_paths:
             try:
-                note = reader.read(path)
+                note = MarkdownReader(path).read()
                 bundle.notes.append(note)
             except Exception as e:
                 print(f"[警告] 读取笔记失败: {path} — {e}")

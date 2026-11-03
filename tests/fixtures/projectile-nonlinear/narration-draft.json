@@ -1,0 +1,312 @@
+{
+  "schema_version": 1,
+  "project_id": "projectile-nonlinear-20261027",
+  "status": "semantic_intent_only_not_installed",
+  "segments": [
+    {
+      "id": "N01",
+      "cue": "opening",
+      "focus": "launch_question",
+      "text": "横着抛得快，会更晚落地吗？"
+    },
+    {
+      "id": "N02",
+      "cue": "opening",
+      "focus": "same_height_motion",
+      "text": "一起出发，看它们何时落地。"
+    },
+    {
+      "id": "N03",
+      "cue": "opening",
+      "focus": "same_height_result",
+      "text": "都是一秒落地。水平速度翻倍，射程也从四米变八米。"
+    },
+    {
+      "id": "N04",
+      "cue": "vertical",
+      "focus": "shared_vertical_conditions",
+      "text": "竖直初速度都是零，加速度都向下。"
+    },
+    {
+      "id": "N05",
+      "cue": "vertical",
+      "focus": "vertical_general",
+      "text": "先分别写出两个球的竖直位置一般式。"
+    },
+    {
+      "id": "N06",
+      "cue": "vertical",
+      "focus": "vertical_initial_substitution",
+      "text": "同高、零竖直初速，加速度代成负 g。"
+    },
+    {
+      "id": "N07",
+      "cue": "vertical",
+      "focus": "vertical_zero_removed",
+      "text": "零乘时间还是零，把这两项消去。"
+    },
+    {
+      "id": "N08",
+      "cue": "vertical",
+      "focus": "vertical_equal_positions",
+      "text": "右式相同，两球始终等高。"
+    },
+    {
+      "cue": "recombine",
+      "focus": "synchronous_trails",
+      "text": "两个球一起运动，每隔四分之一秒留下一个位置。",
+      "id": "N09"
+    },
+    {
+      "cue": "recombine",
+      "focus": "equal_time_spacing",
+      "text": "蓝球留影水平等距，竖直间距增大。",
+      "id": "N10"
+    },
+    {
+      "id": "N11",
+      "cue": "landing",
+      "focus": "vertical_position_law",
+      "text": "向上为正，初始高度减去下落距离，就是位置。"
+    },
+    {
+      "id": "N12",
+      "cue": "landing",
+      "focus": "landing_ground_condition",
+      "text": "落地位置为零，时间记成大写 T。"
+    },
+    {
+      "id": "N13",
+      "cue": "landing",
+      "focus": "landing_relocate",
+      "text": "两边同加整个分式，把它移到左边。"
+    },
+    {
+      "id": "N14",
+      "cue": "landing",
+      "focus": "landing_multiply_two",
+      "text": "两边乘二，右边变成二倍高度。"
+    },
+    {
+      "id": "N15",
+      "cue": "landing",
+      "focus": "landing_divide_gravity",
+      "text": "再除以 g，单独留下时间的平方。"
+    },
+    {
+      "id": "N16",
+      "cue": "landing",
+      "focus": "landing_positive_root",
+      "text": "时间要取正值，所以选正根。"
+    },
+    {
+      "id": "N17",
+      "cue": "landing",
+      "focus": "landing_numeric_check",
+      "text": "五米高时，算得落地时间一秒。"
+    },
+    {
+      "cue": "horizontal",
+      "focus": "horizontal_range_law",
+      "text": "落地时，射程记R，时间记T。",
+      "id": "N18"
+    },
+    {
+      "cue": "horizontal",
+      "focus": "horizontal_parallel_products",
+      "text": "水平速度乘一秒。",
+      "id": "N19"
+    },
+    {
+      "cue": "horizontal",
+      "focus": "horizontal_parallel_units",
+      "text": "秒约掉，射程分别是四米和八米。",
+      "id": "N20"
+    },
+    {
+      "cue": "height_steps",
+      "focus": "constant_gravity",
+      "text": "重力加速度保持不变，竖直初速度为零。",
+      "id": "N21"
+    },
+    {
+      "cue": "height_steps",
+      "focus": "first_rate_growth",
+      "text": "第一秒，下落速率从零增到十米每秒。",
+      "id": "N22"
+    },
+    {
+      "cue": "height_steps",
+      "focus": "equal_speed_increments",
+      "text": "每秒都增加十米每秒。",
+      "id": "N23"
+    },
+    {
+      "cue": "height_steps",
+      "focus": "second_rate_growth",
+      "text": "第二秒，下落速率从十增到二十米每秒。",
+      "id": "N24"
+    },
+    {
+      "cue": "height_steps",
+      "focus": "growing_gaps",
+      "text": "每半秒留一个位置，间隔越来越大。",
+      "id": "N25"
+    },
+    {
+      "cue": "height_steps",
+      "focus": "first_average_distance",
+      "text": "把上面这块补到左边。宽还是一秒，高是平均速率五米每秒。乘起来，正好下落五米。",
+      "id": "N26"
+    },
+    {
+      "cue": "height_steps",
+      "focus": "second_average_distance",
+      "text": "第二秒也这样拼。平均速率十五米每秒，乘上一秒，这一段就下落十五米。",
+      "id": "N27"
+    },
+    {
+      "cue": "height_steps",
+      "focus": "total_distance",
+      "text": "五米加十五米，总共二十米。",
+      "id": "N28"
+    },
+    {
+      "cue": "height_steps",
+      "focus": "triangle_distance_law",
+      "text": "底是T，高是gT，乘起来再除二，就是下落距离。",
+      "id": "N29"
+    },
+    {
+      "cue": "height_steps",
+      "focus": "double_time_four_area",
+      "text": "时间加倍，末速率也加倍。两条边都加倍，就能放下四块原来的三角形，下落距离变成四倍。",
+      "id": "N30"
+    },
+    {
+      "id": "N31",
+      "cue": "height",
+      "focus": "height_prediction",
+      "text": "高度变四倍，时间也会变四倍吗？"
+    },
+    {
+      "id": "N32",
+      "cue": "height",
+      "focus": "low_landing_observation",
+      "text": "一秒时，低球已落地，高球还在空中。"
+    },
+    {
+      "id": "N33",
+      "cue": "height",
+      "focus": "both_landing_observation",
+      "text": "两秒后，高球落地，射程八米。"
+    },
+    {
+      "id": "N34",
+      "cue": "height",
+      "focus": "height_laws",
+      "text": "把四倍高度，放回时间和射程关系。"
+    },
+    {
+      "id": "N35",
+      "cue": "height",
+      "focus": "height_substitution",
+      "text": "把四倍高度，代入时间的根式。"
+    },
+    {
+      "id": "N36",
+      "cue": "height",
+      "focus": "root_split",
+      "text": "h 和 g 都大于零，可以拆出根号四。"
+    },
+    {
+      "id": "N37",
+      "cue": "height",
+      "focus": "root_four_evaluated",
+      "text": "根号四等于二。"
+    },
+    {
+      "id": "N38",
+      "cue": "height",
+      "focus": "original_time_identified",
+      "text": "剩下的根式，就是原来的时间 T。"
+    },
+    {
+      "id": "N39",
+      "cue": "height",
+      "focus": "range_time_substitution",
+      "text": "再把两倍时间，代回新射程。"
+    },
+    {
+      "id": "N40",
+      "cue": "height",
+      "focus": "range_factor_extracted",
+      "text": "把二提到乘积前面，水平速度并没有变。"
+    },
+    {
+      "id": "N41",
+      "cue": "height",
+      "focus": "original_range_identified",
+      "text": "速度乘原时间，就是原射程。"
+    },
+    {
+      "id": "N42",
+      "cue": "height",
+      "focus": "height_scaling_result",
+      "text": "所以四倍高度，对应两倍时间，也对应两倍射程。"
+    },
+    {
+      "id": "N43",
+      "cue": "transfer",
+      "focus": "ninefold_prediction",
+      "text": "换成四十五米，时间和射程会是多少？"
+    },
+    {
+      "id": "N44",
+      "cue": "transfer",
+      "focus": "ninefold_time_check",
+      "text": "根号里面是九，取正根，得到三秒。"
+    },
+    {
+      "id": "N45",
+      "cue": "transfer",
+      "focus": "ninefold_range_check",
+      "text": "四乘三，秒约掉，射程就是十二米。"
+    },
+    {
+      "id": "N46",
+      "cue": "conclusion",
+      "focus": "fixed_height_summary",
+      "text": "同高时，水平速度只改射程。"
+    },
+    {
+      "id": "N47",
+      "cue": "conclusion",
+      "focus": "final_time_transport",
+      "text": "把同一段飞行时间，代入射程关系。"
+    },
+    {
+      "id": "N48",
+      "cue": "conclusion",
+      "focus": "final_radical_expansion",
+      "text": "时间写成根式，水平速度保持不变。"
+    },
+    {
+      "id": "N49",
+      "cue": "conclusion",
+      "focus": "combined_range_result",
+      "text": "先由高度求时间，再乘水平速度，得到射程。"
+    }
+  ],
+  "audio_status": "not_generated",
+  "alignment_status": "unmeasured_whole_utterances_must_fit_actual_focus",
+  "writer": "supervised visual creator",
+  "consumers": [
+    "lead after visual and regression approvals",
+    "V01 narrator",
+    "whole-utterance aligner"
+  ],
+  "lifecycle": "此版中文语义草稿，不是正式稿/音频/批准",
+  "invalidation": "源码、focus、cue、科学条件、文本、审核或声音来源变化",
+  "instruction": "先视觉与回归审核，再按实际focus安装正式稿并实测V01。无须为每个微动作配音；prediction_space及未分配窗口静读。不加速/截断语音，不全片倍速。"
+}
