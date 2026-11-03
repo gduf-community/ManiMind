@@ -1,0 +1,50 @@
+{
+  "artifact_type": "test_fixture",
+  "status": "test_only_not_production_or_approved",
+  "model_version": "chain-polynomial-v001",
+  "states": [
+    {
+      "x": 1,
+      "u": 2,
+      "y": 8,
+      "inner_rate": 2,
+      "outer_rate": 12,
+      "total_rate": 24
+    },
+    {
+      "x": 0,
+      "u": 1,
+      "y": 1,
+      "inner_rate": 0,
+      "outer_rate": 3,
+      "total_rate": 0
+    },
+    {
+      "x": -1,
+      "u": 2,
+      "y": 8,
+      "inner_rate": -2,
+      "outer_rate": 12,
+      "total_rate": -24
+    }
+  ],
+  "exact_ratio": {
+    "x": "1",
+    "h": "1/10",
+    "inner_ratio": "21/10",
+    "outer_ratio": "133041/10000",
+    "total_ratio": "2793861/100000"
+  },
+  "affine": [
+    {
+      "x": 0,
+      "value": 1,
+      "derivative": -12
+    },
+    {
+      "x": 1,
+      "value": 16,
+      "derivative": 96
+    }
+  ]
+}

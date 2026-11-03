@@ -1,0 +1,59 @@
+{
+  "artifact_type": "test_fixture",
+  "fixture_version": 1,
+  "status": "test_only_not_production_or_approved",
+  "writer": "01a199e9-7432-7052-96f7-6bd6eb2e63bb",
+  "consumers": [
+    "isolated chapter tests"
+  ],
+  "lifecycle": "Versioned v001 deterministic test input",
+  "invalidation": "Intentional design/model change requires explicit fixture revision",
+  "expected": {
+    "critical": [
+      [
+        -1,
+        2
+      ],
+      [
+        1,
+        -2
+      ]
+    ],
+    "sign_samples": [
+      [
+        -2,
+        9
+      ],
+      [
+        0,
+        -3
+      ],
+      [
+        2,
+        9
+      ]
+    ],
+    "turns": [
+      [
+        1,
+        -1,
+        "maximum"
+      ],
+      [
+        -1,
+        1,
+        "minimum"
+      ],
+      [
+        1,
+        1,
+        "neither"
+      ],
+      [
+        -1,
+        -1,
+        "neither"
+      ]
+    ]
+  }
+}

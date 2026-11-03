@@ -1,0 +1,1311 @@
+{
+  "schema_version": 1,
+  "project_id": "math-derivative-ch03-rules-20261102",
+  "title": "第03课 导数的运算法则",
+  "scene": "examples/derivative_ch03_traceable.py",
+  "scene_class": "DerivativeCh03Traceable",
+  "duration": 433.866666667,
+  "fps": 30,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "workflow_profile": "configs/visual-first-workflow-v4.3.1-unit.json",
+  "narration_draft": "runtime/projects/math-derivative-ch03-rules-20261102/narration-draft-v003.json",
+  "author_agent": "01a19f5e-8733-71c0-ac2d-d507423acd13",
+  "author_context": "01a19f5e-8733-71c0-ac2d-d507423acd13",
+  "context": {
+    "role": "course_creator_a",
+    "prior_exit": "Basic derivative functions with domains, radians",
+    "unit_binding": "Main unit-v001 and chapter-brief-v002 read; context-v001 pending main binding",
+    "next": "chain rule",
+    "prerequisites": "assumed_not_tested",
+    "chapter_brief": "runtime/projects/math-derivative-chapter-20261102/chapter-brief-v002.json",
+    "unit": "runtime/projects/math-derivative-chapter-20261102/unit-v001.json"
+  },
+  "status": "author_draft_not_frozen_no_GL_slot",
+  "cues": [
+    {
+      "id": "opening",
+      "duration": 22.4,
+      "heading": "导数的运算法则",
+      "visual": "本课标题、乘积与平均成本的商",
+      "learning_purpose": "直接承接基本函数导数，不重讲首课",
+      "anchors": [
+        {
+          "id": "opening_combinations_ready",
+          "meaning": "平方与正弦乘积、平均成本的商；新版本该事件表示源状态/推导过程可读，终式以traceable_complete及实际过程帧核对"
+        },
+        {
+          "id": "opening_increment_ready",
+          "meaning": "组合后的增量来自哪里的提问；新版本该事件表示源状态/推导过程可读，终式以traceable_complete及实际过程帧核对"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.4,
+        "0.06": 0.9,
+        "1.00": 22.4,
+        "0.18": 1.6,
+        "0.34": 2.46,
+        "0.66": 10.58
+      },
+      "animation_starts": {},
+      "animation_ends": {}
+    },
+    {
+      "id": "linearity",
+      "duration": 55.833333333333336,
+      "heading": "和差与常数倍：增量直接组合",
+      "visual": "有序搬运Δu、Δv；同h驱动增量柱",
+      "learning_purpose": "用相同输入增量推导线性规则",
+      "anchors": [
+        {
+          "id": "linear_increment_ready",
+          "meaning": "Δ(u±v)=Δu±Δv固定行；新版本该事件表示源状态/推导过程可读，终式以traceable_complete及实际过程帧核对"
+        },
+        {
+          "id": "linear_limit_ready",
+          "meaning": "同除h后两个差商分别取极限；新版本该事件表示源状态/推导过程可读，终式以traceable_complete及实际过程帧核对"
+        },
+        {
+          "id": "linear_scalar_ready",
+          "meaning": "Δ(cu)=cΔu和(cu)'=cu'；新版本该事件表示源状态/推导过程可读，终式以traceable_complete及实际过程帧核对"
+        },
+        {
+          "id": "linear_motion_ready",
+          "meaning": "u=x²、v=x、x=1、同h缩小的增量柱；新版本该事件表示源状态/推导过程可读，终式以traceable_complete及实际过程帧核对"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.4,
+        "0.06": 0.9,
+        "1.00": 55.833333333333336,
+        "0.12": 2.34,
+        "0.27": 16.14,
+        "0.42": 26.74,
+        "0.56": 39.220000000000006,
+        "0.88": 54.199999999999996,
+        "0.95": 54.4
+      },
+      "animation_starts": {
+        "0.27": 15.32,
+        "0.88": 42.58
+      },
+      "animation_ends": {
+        "0.88": 49.28
+      }
+    },
+    {
+      "id": "product_area",
+      "duration": 60.3,
+      "heading": "乘积：两条边都在改变",
+      "visual": "u=3,v=2的旧矩形，右条、上条和角块逐次出现",
+      "learning_purpose": "乘积增量必须同时追踪两因子的变化",
+      "anchors": [
+        {
+          "id": "product_base_ready",
+          "meaning": "u=2+x,v=1+x²在x=1的面积与新乘积式；新版本该事件表示源状态/推导过程可读，终式以traceable_complete及实际过程帧核对"
+        },
+        {
+          "id": "product_right_ready",
+          "meaning": "右侧新增条与vΔu同色对应；新版本该事件表示源状态/推导过程可读，终式以traceable_complete及实际过程帧核对"
+        },
+        {
+          "id": "product_top_ready",
+          "meaning": "上侧新增条与uΔv同色对应；新版本该事件表示源状态/推导过程可读，终式以traceable_complete及实际过程帧核对"
+        },
+        {
+          "id": "product_corner_ready",
+          "meaning": "单独角块与ΔuΔv同色对应；新版本该事件表示源状态/推导过程可读，终式以traceable_complete及实际过程帧核对"
+        },
+        {
+          "id": "product_exact_increment_ready",
+          "meaning": "三块面积相加的精确增量式；新版本该事件表示源状态/推导过程可读，终式以traceable_complete及实际过程帧核对"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.4,
+        "0.06": 0.9,
+        "1.00": 60.3,
+        "0.12": 2.2800000000000002,
+        "0.28": 22.38,
+        "0.44": 31.779999999999998,
+        "0.60": 41.800000000000004,
+        "0.77": 48.52
+      },
+      "animation_starts": {},
+      "animation_ends": {}
+    },
+    {
+      "id": "product_limit",
+      "duration": 62.06666666666667,
+      "heading": "小角块怎样进入极限",
+      "visual": "保留矩形与条块；显示角块/h读数并缩小h",
+      "learning_purpose": "用Δu/h有界且Δv趋零解释余项消失",
+      "anchors": [
+        {
+          "id": "product_divided_ready",
+          "meaning": "乘积增量同除h后的三项；新版本该事件表示源状态/推导过程可读，终式以traceable_complete及实际过程帧核对"
+        },
+        {
+          "id": "product_limits_ready",
+          "meaning": "可微性给出两个差商极限与Δv→0；新版本该事件表示源状态/推导过程可读，终式以traceable_complete及实际过程帧核对"
+        },
+        {
+          "id": "product_corner_shrink_ready",
+          "meaning": "h从0.6减到0.025，角块及角块/h近似值同步缩小；新版本该事件表示源状态/推导过程可读，终式以traceable_complete及实际过程帧核对"
+        },
+        {
+          "id": "product_rule_ready",
+          "meaning": "(uv)'=u'v+uv'及同点可微条件；新版本该事件表示源状态/推导过程可读，终式以traceable_complete及实际过程帧核对"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.4,
+        "0.06": 0.9,
+        "1.00": 62.06666666666667,
+        "0.13": 2.32,
+        "0.27": 17.98,
+        "0.38": 28.419999999999998,
+        "0.69": 45.82,
+        "0.79": 46.480000000000004,
+        "0.91": 57.5
+      },
+      "animation_starts": {
+        "0.69": 28.54
+      },
+      "animation_ends": {
+        "0.69": 38.2
+      }
+    },
+    {
+      "id": "product_example",
+      "duration": 32.8,
+      "heading": "用两项追踪两个因子",
+      "visual": "x²sin x逐一标出u,v及导数后代入",
+      "learning_purpose": "把基本函数导数调用为乘积规则的输入",
+      "anchors": [
+        {
+          "id": "product_example_factors_ready",
+          "meaning": "x²sin x及全实数、弧度条件；新版本该事件表示源状态/推导过程可读，终式以traceable_complete及实际过程帧核对"
+        },
+        {
+          "id": "product_example_derivatives_ready",
+          "meaning": "u=x²,u'=2x,v=sin x,v'=cos x的固定行；新版本该事件表示源状态/推导过程可读，终式以traceable_complete及实际过程帧核对"
+        },
+        {
+          "id": "product_example_result_ready",
+          "meaning": "两项导数结果与变化率乘当前值的说明；新版本该事件表示源状态/推导过程可读，终式以traceable_complete及实际过程帧核对"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.4,
+        "0.06": 0.9,
+        "1.00": 32.8,
+        "0.15": 2.42,
+        "0.38": 10.040000000000001,
+        "0.66": 18.099999999999998,
+        "0.84": 28.7
+      },
+      "animation_starts": {},
+      "animation_ends": {}
+    },
+    {
+      "id": "quotient_increment",
+      "duration": 55.36666666666667,
+      "heading": "商：先把两个分数通分",
+      "visual": "商的前后值、交叉相乘、uv相消逐行保留",
+      "learning_purpose": "使负号及两个分母来源可追踪",
+      "anchors": [
+        {
+          "id": "quotient_difference_ready",
+          "meaning": "(u+Δu)/(v+Δv)-u/v与两个非零条件；新版本该事件表示源状态/推导过程可读，终式以traceable_complete及实际过程帧核对"
+        },
+        {
+          "id": "quotient_common_denominator_ready",
+          "meaning": "分母v(v+Δv)、分子v(u+Δu)-u(v+Δv)；新版本该事件表示源状态/推导过程可读，终式以traceable_complete及实际过程帧核对"
+        },
+        {
+          "id": "quotient_cancel_ready",
+          "meaning": "uv相消后vΔu-uΔv及原通分行；新版本该事件表示源状态/推导过程可读，终式以traceable_complete及实际过程帧核对"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.4,
+        "0.06": 0.9,
+        "1.00": 55.36666666666667,
+        "0.13": 2.36,
+        "0.33": 21.419999999999998,
+        "0.61": 38.220000000000006,
+        "0.82": 51.1
+      },
+      "animation_starts": {},
+      "animation_ends": {}
+    },
+    {
+      "id": "quotient_limit",
+      "duration": 44.63333333333333,
+      "heading": "商规则：分母为何平方",
+      "visual": "差商、极限条件与商规则固定行",
+      "learning_purpose": "解释分母平方来自两个邻近分母的同一极限",
+      "anchors": [
+        {
+          "id": "quotient_divide_h_ready",
+          "meaning": "商增量同除h，两个差商分别出现；新版本该事件表示源状态/推导过程可读，终式以traceable_complete及实际过程帧核对"
+        },
+        {
+          "id": "quotient_take_limit_ready",
+          "meaning": "差商趋导数、Δv趋零及连续非零条件；新版本该事件表示源状态/推导过程可读，终式以traceable_complete及实际过程帧核对"
+        },
+        {
+          "id": "quotient_rule_ready",
+          "meaning": "(u/v)'=(u'v-uv')/v²，v≠0；新版本该事件表示源状态/推导过程可读，终式以traceable_complete及实际过程帧核对"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.4,
+        "0.06": 0.9,
+        "1.00": 44.63333333333333,
+        "0.13": 2.5,
+        "0.35": 13.92,
+        "0.63": 30.22,
+        "0.84": 42.96
+      },
+      "animation_starts": {},
+      "animation_ends": {}
+    },
+    {
+      "id": "cost_example",
+      "duration": 74.4,
+      "heading": "平均成本：导数告诉我们怎样调整",
+      "visual": "连续成本模型、商规则代入与平均成本曲线同步切线",
+      "learning_purpose": "从符号判断平均成本先降后升，合法产量域x>0",
+      "anchors": [
+        {
+          "id": "cost_model_ready",
+          "meaning": "x百件、C百元、A元每件及C=x²+4模型；新版本该事件表示源状态/推导过程可读，终式以traceable_complete及实际过程帧核对"
+        },
+        {
+          "id": "cost_substitute_ready",
+          "meaning": "A'分子为2x·x-(x²+4)·1，分母x²；新版本该事件表示源状态/推导过程可读，终式以traceable_complete及实际过程帧核对"
+        },
+        {
+          "id": "cost_derivative_ready",
+          "meaning": "A'=1-4/x²固定结果行；新版本该事件表示源状态/推导过程可读，终式以traceable_complete及实际过程帧核对"
+        },
+        {
+          "id": "cost_decreasing_ready",
+          "meaning": "x从1移到2、平均成本曲线向下且切线逐渐水平；新版本该事件表示源状态/推导过程可读，终式以traceable_complete及实际过程帧核对"
+        },
+        {
+          "id": "cost_stationary_ready",
+          "meaning": "x=2的水平切线与A=4,A'=0；新版本该事件表示源状态/推导过程可读，终式以traceable_complete及实际过程帧核对"
+        },
+        {
+          "id": "cost_increasing_ready",
+          "meaning": "x从2移到4，平均成本曲线和正切线斜率同步；新版本该事件表示源状态/推导过程可读，终式以traceable_complete及实际过程帧核对"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.4,
+        "0.06": 0.9,
+        "1.00": 74.4,
+        "0.12": 2.48,
+        "0.25": 22.259999999999998,
+        "0.37": 33.26,
+        "0.45": 44.56,
+        "0.61": 54.46,
+        "0.68": 55.06,
+        "0.75": 61.14,
+        "0.78": 61.720000000000006,
+        "0.95": 72.66
+      },
+      "animation_starts": {
+        "0.61": 47.24,
+        "0.95": 61.84
+      },
+      "animation_ends": {
+        "0.61": 50.8,
+        "0.95": 65.82
+      }
+    },
+    {
+      "id": "closing",
+      "duration": 26.066666666666666,
+      "heading": "组合增量，也能一层层传递",
+      "visual": "规则回顾及x→x²→sin(x²)",
+      "learning_purpose": "自然引入链式法则的内外层变化率",
+      "anchors": [
+        {
+          "id": "closing_rules_ready",
+          "meaning": "和差、常数倍、乘积、商的符号回顾；新版本该事件表示源状态/推导过程可读，终式以traceable_complete及实际过程帧核对"
+        },
+        {
+          "id": "closing_chain_ready",
+          "meaning": "sin(x²)输入经过平方再经过正弦的箭头；新版本该事件表示源状态/推导过程可读，终式以traceable_complete及实际过程帧核对"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.4,
+        "0.06": 0.9,
+        "1.00": 26.066666666666666,
+        "0.16": 1.6,
+        "0.35": 2.4,
+        "0.66": 12.64
+      },
+      "animation_starts": {},
+      "animation_ends": {}
+    }
+  ],
+  "focus_intents": [
+    {
+      "id": "opening_combinations",
+      "cue": "opening",
+      "referent": "平方与正弦乘积、平均成本的商；可读源状态及完整原声内的分阶段过程，不宣称终式在focus起点已经完成"
+    },
+    {
+      "id": "opening_increment",
+      "cue": "opening",
+      "referent": "组合后的增量来自哪里的提问；可读源状态及完整原声内的分阶段过程，不宣称终式在focus起点已经完成"
+    },
+    {
+      "id": "linear_increment",
+      "cue": "linearity",
+      "referent": "Δ(u±v)=Δu±Δv固定行；可读源状态及完整原声内的分阶段过程，不宣称终式在focus起点已经完成"
+    },
+    {
+      "id": "linear_limit",
+      "cue": "linearity",
+      "referent": "同除h后两个差商分别取极限；可读源状态及完整原声内的分阶段过程，不宣称终式在focus起点已经完成"
+    },
+    {
+      "id": "linear_scalar",
+      "cue": "linearity",
+      "referent": "Δ(cu)=cΔu和(cu)'=cu'；可读源状态及完整原声内的分阶段过程，不宣称终式在focus起点已经完成"
+    },
+    {
+      "id": "linear_motion",
+      "cue": "linearity",
+      "referent": "u=x²、v=x、x=1、同h缩小的增量柱；可读源状态及完整原声内的分阶段过程，不宣称终式在focus起点已经完成"
+    },
+    {
+      "id": "product_base",
+      "cue": "product_area",
+      "referent": "u=2+x,v=1+x²在x=1的面积与新乘积式；可读源状态及完整原声内的分阶段过程，不宣称终式在focus起点已经完成"
+    },
+    {
+      "id": "product_right",
+      "cue": "product_area",
+      "referent": "右侧新增条与vΔu同色对应；可读源状态及完整原声内的分阶段过程，不宣称终式在focus起点已经完成"
+    },
+    {
+      "id": "product_top",
+      "cue": "product_area",
+      "referent": "上侧新增条与uΔv同色对应；可读源状态及完整原声内的分阶段过程，不宣称终式在focus起点已经完成"
+    },
+    {
+      "id": "product_corner",
+      "cue": "product_area",
+      "referent": "单独角块与ΔuΔv同色对应；可读源状态及完整原声内的分阶段过程，不宣称终式在focus起点已经完成"
+    },
+    {
+      "id": "product_exact_increment",
+      "cue": "product_area",
+      "referent": "三块面积相加的精确增量式；可读源状态及完整原声内的分阶段过程，不宣称终式在focus起点已经完成"
+    },
+    {
+      "id": "product_divided",
+      "cue": "product_limit",
+      "referent": "乘积增量同除h后的三项；可读源状态及完整原声内的分阶段过程，不宣称终式在focus起点已经完成"
+    },
+    {
+      "id": "product_limits",
+      "cue": "product_limit",
+      "referent": "可微性给出两个差商极限与Δv→0；可读源状态及完整原声内的分阶段过程，不宣称终式在focus起点已经完成"
+    },
+    {
+      "id": "product_corner_shrink",
+      "cue": "product_limit",
+      "referent": "h从0.6减到0.025，角块及角块/h近似值同步缩小；可读源状态及完整原声内的分阶段过程，不宣称终式在focus起点已经完成"
+    },
+    {
+      "id": "product_rule",
+      "cue": "product_limit",
+      "referent": "(uv)'=u'v+uv'及同点可微条件；可读源状态及完整原声内的分阶段过程，不宣称终式在focus起点已经完成"
+    },
+    {
+      "id": "product_example_factors",
+      "cue": "product_example",
+      "referent": "x²sin x及全实数、弧度条件；可读源状态及完整原声内的分阶段过程，不宣称终式在focus起点已经完成"
+    },
+    {
+      "id": "product_example_derivatives",
+      "cue": "product_example",
+      "referent": "u=x²,u'=2x,v=sin x,v'=cos x的固定行；可读源状态及完整原声内的分阶段过程，不宣称终式在focus起点已经完成"
+    },
+    {
+      "id": "product_example_result",
+      "cue": "product_example",
+      "referent": "两项导数结果与变化率乘当前值的说明；可读源状态及完整原声内的分阶段过程，不宣称终式在focus起点已经完成"
+    },
+    {
+      "id": "quotient_difference",
+      "cue": "quotient_increment",
+      "referent": "(u+Δu)/(v+Δv)-u/v与两个非零条件；可读源状态及完整原声内的分阶段过程，不宣称终式在focus起点已经完成"
+    },
+    {
+      "id": "quotient_common_denominator",
+      "cue": "quotient_increment",
+      "referent": "分母v(v+Δv)、分子v(u+Δu)-u(v+Δv)；可读源状态及完整原声内的分阶段过程，不宣称终式在focus起点已经完成"
+    },
+    {
+      "id": "quotient_cancel",
+      "cue": "quotient_increment",
+      "referent": "uv相消后vΔu-uΔv及原通分行；可读源状态及完整原声内的分阶段过程，不宣称终式在focus起点已经完成"
+    },
+    {
+      "id": "quotient_divide_h",
+      "cue": "quotient_limit",
+      "referent": "商增量同除h，两个差商分别出现；可读源状态及完整原声内的分阶段过程，不宣称终式在focus起点已经完成"
+    },
+    {
+      "id": "quotient_take_limit",
+      "cue": "quotient_limit",
+      "referent": "差商趋导数、Δv趋零及连续非零条件；可读源状态及完整原声内的分阶段过程，不宣称终式在focus起点已经完成"
+    },
+    {
+      "id": "quotient_rule",
+      "cue": "quotient_limit",
+      "referent": "(u/v)'=(u'v-uv')/v²，v≠0；可读源状态及完整原声内的分阶段过程，不宣称终式在focus起点已经完成"
+    },
+    {
+      "id": "cost_model",
+      "cue": "cost_example",
+      "referent": "x百件、C百元、A元每件及C=x²+4模型；可读源状态及完整原声内的分阶段过程，不宣称终式在focus起点已经完成"
+    },
+    {
+      "id": "cost_substitute",
+      "cue": "cost_example",
+      "referent": "A'分子为2x·x-(x²+4)·1，分母x²；可读源状态及完整原声内的分阶段过程，不宣称终式在focus起点已经完成"
+    },
+    {
+      "id": "cost_derivative",
+      "cue": "cost_example",
+      "referent": "A'=1-4/x²固定结果行；可读源状态及完整原声内的分阶段过程，不宣称终式在focus起点已经完成"
+    },
+    {
+      "id": "cost_decreasing",
+      "cue": "cost_example",
+      "referent": "x从1移到2、平均成本曲线向下且切线逐渐水平；可读源状态及完整原声内的分阶段过程，不宣称终式在focus起点已经完成"
+    },
+    {
+      "id": "cost_stationary",
+      "cue": "cost_example",
+      "referent": "x=2的水平切线与A=4,A'=0；可读源状态及完整原声内的分阶段过程，不宣称终式在focus起点已经完成"
+    },
+    {
+      "id": "cost_increasing",
+      "cue": "cost_example",
+      "referent": "x从2移到4，平均成本曲线和正切线斜率同步；可读源状态及完整原声内的分阶段过程，不宣称终式在focus起点已经完成"
+    },
+    {
+      "id": "closing_rules",
+      "cue": "closing",
+      "referent": "和差、常数倍、乘积、商的符号回顾；可读源状态及完整原声内的分阶段过程，不宣称终式在focus起点已经完成"
+    },
+    {
+      "id": "closing_chain",
+      "cue": "closing",
+      "referent": "sin(x²)输入经过平方再经过正弦的箭头；可读源状态及完整原声内的分阶段过程，不宣称终式在focus起点已经完成"
+    }
+  ],
+  "review_times": [
+    0.4,
+    0.9,
+    1.6,
+    2.46,
+    10.58,
+    22.799999999999997,
+    23.299999999999997,
+    24.74,
+    37.72,
+    38.54,
+    38.733,
+    39.45,
+    40.1,
+    40.75,
+    41.467,
+    42.333,
+    43.15,
+    43.9,
+    44.65,
+    45.467,
+    49.14,
+    50.333,
+    51.025,
+    51.65,
+    52.275,
+    52.967,
+    53.833,
+    54.525,
+    55.15,
+    55.775,
+    56.467,
+    61.620000000000005,
+    64.97999999999999,
+    71.68,
+    76.6,
+    76.8,
+    78.63333333300001,
+    79.13333333300001,
+    80.513333333,
+    100.613333333,
+    110.013333333,
+    120.033333333,
+    126.753333333,
+    127.067,
+    127.958,
+    128.783,
+    129.608,
+    130.5,
+    138.933333333,
+    139.433333333,
+    140.853333333,
+    141.467,
+    142.333,
+    143.133,
+    143.933,
+    144.8,
+    156.513333333,
+    166.953333333,
+    167.073333333,
+    176.73333333300002,
+    184.353333333,
+    185.013333333,
+    185.667,
+    186.433,
+    187.133,
+    187.833,
+    188.6,
+    188.867,
+    189.633,
+    190.333,
+    191.033,
+    191.8,
+    196.033333333,
+    201.0,
+    201.5,
+    203.01999999999998,
+    210.64,
+    218.7,
+    219.033,
+    219.825,
+    220.55,
+    221.275,
+    222.067,
+    222.533,
+    223.35,
+    224.1,
+    224.85,
+    225.667,
+    229.29999999999998,
+    233.8,
+    234.3,
+    235.76000000000002,
+    236.333,
+    237.15,
+    237.9,
+    238.65,
+    239.467,
+    254.82,
+    255.533,
+    256.65,
+    257.7,
+    258.75,
+    259.867,
+    271.62,
+    272.033,
+    272.975,
+    273.85,
+    274.725,
+    275.667,
+    276.333,
+    277.225,
+    278.05,
+    278.875,
+    279.767,
+    284.5,
+    289.16666666699996,
+    289.66666666699996,
+    291.266666667,
+    291.7,
+    292.617,
+    293.467,
+    294.317,
+    295.233,
+    302.686666667,
+    303.9,
+    304.792,
+    305.617,
+    306.442,
+    307.333,
+    308.7,
+    309.567,
+    310.367,
+    311.167,
+    312.033,
+    318.986666667,
+    319.5,
+    320.317,
+    321.067,
+    321.817,
+    322.633,
+    323.1,
+    323.892,
+    324.617,
+    325.342,
+    326.133,
+    331.72666666699996,
+    333.79999999999995,
+    334.29999999999995,
+    335.88,
+    355.65999999999997,
+    356.633,
+    358.0,
+    359.3,
+    360.6,
+    361.967,
+    366.65999999999997,
+    367.333,
+    367.9,
+    368.4,
+    368.9,
+    369.467,
+    369.533,
+    370.1,
+    370.6,
+    371.1,
+    371.667,
+    371.833,
+    372.4,
+    372.9,
+    373.4,
+    373.967,
+    374.133,
+    374.75,
+    375.3,
+    375.85,
+    376.467,
+    377.96,
+    380.64,
+    384.2,
+    387.85999999999996,
+    388.46,
+    394.53999999999996,
+    395.12,
+    395.24,
+    399.21999999999997,
+    406.05999999999995,
+    408.2,
+    408.7,
+    409.40000000000003,
+    410.2,
+    420.44
+  ],
+  "sources": [
+    "examples/derivative_chapter_shared.py",
+    "runtime/projects/math-derivative-ch03-rules-20261102/science-facts-v001.json",
+    "runtime/projects/math-derivative-ch03-rules-20261102/scientific-brief-v001.json",
+    "runtime/projects/math-derivative-chapter-20261102/chapter-brief-v002.json",
+    "runtime/projects/math-derivative-chapter-20261102/unit-v001.json",
+    "runtime/projects/math-derivative-ch03-rules-20261102/context-v001.json",
+    "docs/curricula/high-school-mathematics-v0.1.csv",
+    "src/manimind/curriculum.py",
+    "runtime/projects/math-derivative-ch03-rules-20261102/scene-draft-plan-v002.json",
+    "examples/derivative_ch03_rules.py",
+    "runtime/projects/math-derivative-ch03-rules-20261102/narration-draft-v003.json",
+    "runtime/projects/math-derivative-ch03-rules-20261102/narration-v003.json",
+    "runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch03-rules-20261102/speech-plan-v003.json",
+    "runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch03-rules-20261102/timings-v001.json",
+    "runtime/sessions/math-derivative-chapter-20261102-ch03-inventory-correction/prepare_v005.py",
+    "runtime/sessions/math-derivative-chapter-20261102-ch03-inventory-correction/prepare_v006.py",
+    "runtime/projects/math-derivative-ch03-rules-20261102/scene-draft-plan-v006.json",
+    "examples/derivative_ch02_traceable.py",
+    "examples/derivative_ch02_basics_v005.py",
+    "examples/derivative_ch02_basics_v004.py",
+    "examples/derivative_ch02_basics_v002.py",
+    "examples/derivative_ch02_basics.py",
+    "src/manimind/components/formula_transfer.py",
+    "src/manimind/postproduce/traceable_film.py",
+    "src/manimind/postproduce/traceable_film_v2.py",
+    "docs/formula-continuity.md",
+    "docs/formula-continuity-v2.md"
+  ],
+  "writer": "01a19f5e-8733-71c0-ac2d-d507423acd13",
+  "consumers": [
+    "main coordinator",
+    "independent blind visual reviewer",
+    "separate content regression reviewer",
+    "audio timing reviewer"
+  ],
+  "lifecycle": "New metadata-only v005; unchanged v004 scene, timeline, original text and full original audio",
+  "invalidation": "Any bound source, media, inventory, context, timing, text or independent review changes",
+  "revision_mode": "revision",
+  "scientific_brief": "runtime/projects/math-derivative-ch03-rules-20261102/scientific-brief-v001.json",
+  "contributors": [
+    {
+      "author_agent": "01a199e9-7383-7a03-b45c-97d3d21bd9dd",
+      "author_context": "01a199e9-7383-7a03-b45c-97d3d21bd9dd",
+      "contribution": "Original complete lesson, narration and mathematical model"
+    },
+    {
+      "author_agent": "019eaf8b-9151-75e2-9db4-5ff834335577",
+      "author_context": "019eaf8b-9151-75e2-9db4-5ff834335577",
+      "contribution": "Main coordination, v002 NumPy endpoint repair and v003 frozen narration/source preparation"
+    },
+    {
+      "author_agent": "01a19ab5-b2d3-7003-a784-edeeaecdbc23",
+      "author_context": "01a19ab5-b2d3-7003-a784-edeeaecdbc23",
+      "contribution": "Frozen v004 visual timing author; implementation reused byte-for-byte"
+    }
+  ],
+  "revision_contract": "runtime/projects/math-derivative-ch03-rules-20261102/content-regression-contract-draft-v009.json",
+  "revision_review": "runtime/sessions/derivative-motion-revision-20261103/lesson03-author/independent-review/regression-v009.json",
+  "prior_repair": {
+    "failed_attempt": "outputs/math-derivative-ch03-rules-20261102/visual-v001",
+    "error": "ManimGL Line.put_start_and_end_on subtracts endpoint arrays; Python list-list fails",
+    "change": "Convert only two endpoint arguments to NumPy arrays; no text, math, stage or layout change",
+    "boundary": "First complete render has not passed yet; this is not a replacement of an approved lesson"
+  },
+  "timing_provenance": {
+    "path": "runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch03-rules-20261102/timings-v001.json",
+    "sha256": "dd9f6a1fbaafef365bc20b857555d43626df8788755bc1a3b093b2f237f7f5e0",
+    "evidence_sha256": "6016cca6761fee78bdb70d937e93fc5286706dbc9da273fd48fc7094074e6ff3",
+    "original_speech_plan": "runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch03-rules-20261102/speech-plan-v003.json",
+    "speech_plan_sha256": "d93b45b39d2fc954c26f81e85056ff3de8f3217d276d7cf979febe0125f573be",
+    "speech": "runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch03-rules-20261102/speech",
+    "raw_wav_seconds": 402.24,
+    "scope": "Verified production model estimates; no ASR retry or listening certification"
+  },
+  "intended_full_wav_placement": [
+    {
+      "id": "opening_unit",
+      "cue": "opening",
+      "cue_local_start": 2,
+      "intended_start": 2,
+      "duration_seconds": 18.88
+    },
+    {
+      "id": "linearity_unit",
+      "cue": "linearity",
+      "cue_local_start": 2,
+      "intended_start": 24.4,
+      "duration_seconds": 52.32
+    },
+    {
+      "id": "product_area_unit",
+      "cue": "product_area",
+      "cue_local_start": 2,
+      "intended_start": 80.23333333333333,
+      "duration_seconds": 56.8
+    },
+    {
+      "id": "product_limit_unit",
+      "cue": "product_limit",
+      "cue_local_start": 2,
+      "intended_start": 140.53333333333333,
+      "duration_seconds": 58.56
+    },
+    {
+      "id": "product_example_unit",
+      "cue": "product_example",
+      "cue_local_start": 2,
+      "intended_start": 202.6,
+      "duration_seconds": 29.28
+    },
+    {
+      "id": "quotient_increment_unit",
+      "cue": "quotient_increment",
+      "cue_local_start": 2,
+      "intended_start": 235.39999999999998,
+      "duration_seconds": 51.84
+    },
+    {
+      "id": "quotient_limit_unit",
+      "cue": "quotient_limit",
+      "cue_local_start": 2,
+      "intended_start": 290.76666666666665,
+      "duration_seconds": 41.12
+    },
+    {
+      "id": "cost_example_unit",
+      "cue": "cost_example",
+      "cue_local_start": 2,
+      "intended_start": 335.4,
+      "duration_seconds": 70.88
+    },
+    {
+      "id": "closing_unit",
+      "cue": "closing",
+      "cue_local_start": 2,
+      "intended_start": 409.79999999999995,
+      "duration_seconds": 22.56
+    }
+  ],
+  "presentation_scope": "All cue methods are inherited. Late native fade/semantic transfer and tracker motion/hold timing only; same formulas, labels, endpoints, values, geometry and focus lifecycle. Rows prepare reading before each clause; not a claim of word-by-word listening alignment.",
+  "baseline_inventory_correction": {
+    "writer": "019eaf8b-9151-75e2-9db4-5ff834335577",
+    "consumers": [
+      "independent comparator",
+      "coordinator",
+      "future inventory editor"
+    ],
+    "lifecycle": "This v005 inventory correction only; never a retention or release approval",
+    "invalidation": "Changed old/new contract, observed media, failed report or visual implementation",
+    "original_contract": {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/projects/math-derivative-ch03-rules-20261102/content-regression-contract-v004.json",
+      "sha256": "cf88683e60acde1c16878aca191000f9b32f960069f81627ecd6b0fd156fb129"
+    },
+    "observation": {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch03-rules-20261102/review/regression-v004.json",
+      "sha256": "7ae8bd86ce94e8f425a072cada4e5ab075ebb7dd24d70291f47389d389331a0a"
+    },
+    "feature": "linearity.linked_increment_bars",
+    "previous_claim": "u=x²、v=x在x=1，共同h从0.5到0.05，三条增量柱同时缩小且和柱始终等于前两柱之和",
+    "current_claim": "u=x²、v=x在x=1，同一个非零输入增量h逐步缩小；三条增量柱同步变小，和柱始终等于前两柱之和",
+    "reason": "The source drives h from 0.5 to 0.05, but neither selected film displays those numeric endpoints. Compare the visible common-input shrinkage and additive increments; do not certify an unreadable source parameter as observed pixels.",
+    "mathematics_changed": false,
+    "source_or_timing_changed": false,
+    "narration_changed": false,
+    "features_removed": [],
+    "approval_transferred": false,
+    "still_required": "All 30 actual baseline teaching functions and both-version process evidence, independent current first look, current narration/audio/caption gates"
+  },
+  "baseline_inventory_corrections": [
+    {
+      "writer": "019eaf8b-9151-75e2-9db4-5ff834335577",
+      "consumers": [
+        "independent comparator",
+        "coordinator",
+        "future inventory editor"
+      ],
+      "lifecycle": "This v005 inventory correction only; never a retention or release approval",
+      "invalidation": "Changed old/new contract, observed media, failed report or visual implementation",
+      "original_contract": {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/projects/math-derivative-ch03-rules-20261102/content-regression-contract-v004.json",
+        "sha256": "cf88683e60acde1c16878aca191000f9b32f960069f81627ecd6b0fd156fb129"
+      },
+      "observation": {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch03-rules-20261102/review/regression-v004.json",
+        "sha256": "7ae8bd86ce94e8f425a072cada4e5ab075ebb7dd24d70291f47389d389331a0a"
+      },
+      "feature": "linearity.linked_increment_bars",
+      "previous_claim": "u=x²、v=x在x=1，共同h从0.5到0.05，三条增量柱同时缩小且和柱始终等于前两柱之和",
+      "current_claim": "u=x²、v=x在x=1，同一个非零输入增量h逐步缩小；三条增量柱同步变小，和柱始终等于前两柱之和",
+      "reason": "The source drives h from 0.5 to 0.05, but neither selected film displays those numeric endpoints. Compare the visible common-input shrinkage and additive increments; do not certify an unreadable source parameter as observed pixels.",
+      "mathematics_changed": false,
+      "source_or_timing_changed": false,
+      "narration_changed": false,
+      "features_removed": [],
+      "approval_transferred": false,
+      "still_required": "All 30 actual baseline teaching functions and both-version process evidence, independent current first look, current narration/audio/caption gates"
+    },
+    {
+      "writer": "019eaf8b-9151-75e2-9db4-5ff834335577",
+      "consumers": [
+        "independent comparator",
+        "coordinator",
+        "future inventory editor"
+      ],
+      "lifecycle": "This transparent v006 inventory correction, never approval",
+      "invalidation": "Changed inventory, observation, baseline, source, media, text or timing",
+      "original_contract": {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/projects/math-derivative-ch03-rules-20261102/content-regression-contract-v005.json",
+        "sha256": "8cdf1f3d935cb50143114bf7ea2fafbcdf2cee745aa6d1a091213f4dc50d3218"
+      },
+      "observation": {
+        "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch03-rules-20261102/review/regression-v005.json",
+        "sha256": "5e616464cf29a53c1f62b76fc8568b3512d971a2d3c235a124f2f0b5013384db"
+      },
+      "feature": "product_limit.normalized_corner_motion",
+      "previous_claim": "h从0.6到0.025，条块和角块连续收缩，并显示角块/h而不只展示面积本身变小",
+      "current_claim": "非零h逐步缩小，条块和角块连续收缩；同时显示归一化角块/h的近似读数，保留面积缩小与除以h后仍趋零的区别",
+      "reason": "Actual finite-precision h and corner/h readouts visibly support the contraction and normalization. They do not uniquely disclose the exact internal endpoint0.025. Preserve the visible reasoning and all math conditions without relabelling a rounded display as exact.",
+      "source_or_timing_changed": false,
+      "narration_changed": false,
+      "features_removed": [],
+      "approval_transferred": false,
+      "inventory_audit": {
+        "all_feature_claims_read": 30,
+        "internal_animation_endpoint_claims_identified": [
+          "linearity.linked_increment_bars: already corrected in v005 with its original provenance retained",
+          "product_limit.normalized_corner_motion: corrected in v006"
+        ],
+        "explicit_math_conditions_and_selected_example_values": "Retained verbatim, including domain exclusions, units, factor values, named cost quantities and the exact stationary example"
+      }
+    }
+  ],
+  "numeric_readout_scope": {
+    "writer": "019eaf8b-9151-75e2-9db4-5ff834335577",
+    "consumers": [
+      "independent comparator",
+      "inventory author"
+    ],
+    "lifecycle": "Interpretation of this selected visible-function inventory only",
+    "invalidation": "Changed visual statements, readout precision, mathematical model or inventory",
+    "mathematical_statements": "Explicit identities, inequalities, conditions and selected exact examples retain their stated meaning; an error or loss remains blocking",
+    "dynamic_readouts": "Judge displayed approximate readouts at their actual precision, coordinated motion and algebraic connection; do not demand unique recovery of hidden floats from rounded pixels",
+    "internal_parameters": "Render-state provenance may establish implementation facts, but a hidden parameter is not a claimed visible teaching function",
+    "retention": "All30 functions, variables, derivations, conditions, units and two-version process evidence remain mandatory; no total score compensates for loss"
+  },
+  "lesson_context": "runtime/projects/math-derivative-ch03-rules-20261102/context-v001.json",
+  "audience": "已学高中常见函数、斜率与基本代数运算，尚未系统学习导数的学生",
+  "prior_knowledge": [
+    {
+      "lesson_id": "M02-02",
+      "assumed_exit": "函数表达式、图像与点坐标对应"
+    },
+    {
+      "lesson_id": "M03-04",
+      "assumed_exit": "对数函数与运算法则的定义域和底数条件"
+    },
+    {
+      "lesson_id": "M04-05",
+      "assumed_exit": "同角与和差公式，以及它们联系的单位圆正弦余弦"
+    },
+    {
+      "lesson_id": "M09-01",
+      "assumed_exit": "有向增量与直线斜率"
+    },
+    {
+      "lesson_id": "M01-01",
+      "assumed_exit": "展开、因式分解及非零约分"
+    }
+  ],
+  "understanding_goals": [
+    "直接承接基本函数导数，不重讲首课",
+    "用相同输入增量推导线性规则",
+    "乘积增量必须同时追踪两因子的变化",
+    "用Δu/h有界且Δv趋零解释余项消失",
+    "把基本函数导数调用为乘积规则的输入",
+    "使负号及两个分母来源可追踪",
+    "解释分母平方来自两个邻近分母的同一极限",
+    "从符号判断平均成本先降后升，合法产量域x>0",
+    "自然引入链式法则的内外层变化率"
+  ],
+  "formula_transitions": [
+    {
+      "id": "linear_divide_h",
+      "cue": "linearity",
+      "operation": "linear divide h",
+      "source": "\\Delta(u\\pm v)=\\Delta u\\pm\\Delta v",
+      "target": "\\frac{\\Delta(u\\pm v)}h=\\frac{\\Delta u}h\\pm\\frac{\\Delta v}h",
+      "purpose": "Keep each mathematical factor and operation traceable",
+      "authored_local_window": [
+        16.4,
+        19.0
+      ],
+      "status": "author_intent_not_approval"
+    },
+    {
+      "id": "linear_take_limit",
+      "cue": "linearity",
+      "operation": "linear take limit",
+      "source": "\\frac{\\Delta(u\\pm v)}h=\\frac{\\Delta u}h\\pm\\frac{\\Delta v}h",
+      "target": "(u\\pm v)'=u'\\pm v'",
+      "purpose": "Keep each mathematical factor and operation traceable",
+      "authored_local_window": [
+        20.0,
+        23.0
+      ],
+      "status": "author_intent_not_approval"
+    },
+    {
+      "id": "scalar_divide_h",
+      "cue": "linearity",
+      "operation": "scalar divide h",
+      "source": "\\Delta(cu)=c\\Delta u",
+      "target": "\\frac{\\Delta(cu)}h=c\\frac{\\Delta u}h",
+      "purpose": "Keep each mathematical factor and operation traceable",
+      "authored_local_window": [
+        28.0,
+        30.5
+      ],
+      "status": "author_intent_not_approval"
+    },
+    {
+      "id": "scalar_take_limit",
+      "cue": "linearity",
+      "operation": "scalar take limit",
+      "source": "\\frac{\\Delta(cu)}h=c\\frac{\\Delta u}h",
+      "target": "(cu)'=cu'",
+      "purpose": "Keep each mathematical factor and operation traceable",
+      "authored_local_window": [
+        31.5,
+        34.0
+      ],
+      "status": "author_intent_not_approval"
+    },
+    {
+      "id": "product_collect_areas",
+      "cue": "product_area",
+      "operation": "product collect areas",
+      "source": "v\\Delta u ; u\\Delta v ; \\Delta u\\Delta v",
+      "target": "\\Delta(uv)=v\\Delta u+u\\Delta v+\\Delta u\\Delta v",
+      "purpose": "Keep each mathematical factor and operation traceable",
+      "authored_local_window": [
+        48.9,
+        52.2
+      ],
+      "status": "author_intent_not_approval"
+    },
+    {
+      "id": "product_divide_h",
+      "cue": "product_limit",
+      "operation": "product divide h",
+      "source": "\\Delta(uv)=v\\Delta u+u\\Delta v+\\Delta u\\Delta v",
+      "target": "\\frac{\\Delta(uv)}h=v\\frac{\\Delta u}h+u\\frac{\\Delta v}h+\\frac{\\Delta u}h\\Delta v",
+      "purpose": "Keep each mathematical factor and operation traceable",
+      "authored_local_window": [
+        3.0,
+        6.2
+      ],
+      "status": "author_intent_not_approval"
+    },
+    {
+      "id": "product_take_limits",
+      "cue": "product_limit",
+      "operation": "product take limits",
+      "source": "\\frac{\\Delta(uv)}h=v\\frac{\\Delta u}h+u\\frac{\\Delta v}h+\\frac{\\Delta u}h\\Delta v",
+      "target": "v u'+u v'+u'\\cdot0",
+      "purpose": "Keep each mathematical factor and operation traceable",
+      "authored_local_window": [
+        47.2,
+        50.0
+      ],
+      "status": "author_intent_not_approval"
+    },
+    {
+      "id": "product_remove_corner",
+      "cue": "product_limit",
+      "operation": "product remove corner",
+      "source": "v u'+u v'+u'\\cdot0",
+      "target": "(uv)'=u'v+uv'",
+      "purpose": "Keep each mathematical factor and operation traceable",
+      "authored_local_window": [
+        50.4,
+        53.2
+      ],
+      "status": "author_intent_not_approval"
+    },
+    {
+      "id": "product_example_first",
+      "cue": "product_example",
+      "operation": "product example first",
+      "source": "u=x^2,\\quad u'=2x;\\qquad v=\\sin x,\\quad v'=\\cos x",
+      "target": "f'(x)=2x\\sin x",
+      "purpose": "Keep each mathematical factor and operation traceable",
+      "authored_local_window": [
+        18.5,
+        21.4
+      ],
+      "status": "author_intent_not_approval"
+    },
+    {
+      "id": "product_example_second",
+      "cue": "product_example",
+      "operation": "product example second",
+      "source": "u=x^2,\\quad u'=2x;\\qquad v=\\sin x,\\quad v'=\\cos x",
+      "target": "+x^2\\cos x",
+      "purpose": "Keep each mathematical factor and operation traceable",
+      "authored_local_window": [
+        22.0,
+        25.0
+      ],
+      "status": "author_intent_not_approval"
+    },
+    {
+      "id": "quotient_build_difference",
+      "cue": "quotient_increment",
+      "operation": "quotient build difference",
+      "source": "q=\\frac uv",
+      "target": "\\Delta(u/v)=\\frac{u+\\Delta u}{v+\\Delta v}-\\frac uv",
+      "purpose": "Keep each mathematical factor and operation traceable",
+      "authored_local_window": [
+        3.0,
+        6.0
+      ],
+      "status": "author_intent_not_approval"
+    },
+    {
+      "id": "quotient_cross_multiply",
+      "cue": "quotient_increment",
+      "operation": "quotient cross multiply",
+      "source": "\\Delta(u/v)=\\frac{u+\\Delta u}{v+\\Delta v}-\\frac uv",
+      "target": "\\frac{v(u+\\Delta u)-u(v+\\Delta v)}{v(v+\\Delta v)}",
+      "purpose": "Keep each mathematical factor and operation traceable",
+      "authored_local_window": [
+        22.2,
+        26.4
+      ],
+      "status": "author_intent_not_approval"
+    },
+    {
+      "id": "quotient_expand_products",
+      "cue": "quotient_increment",
+      "operation": "quotient expand products",
+      "source": "\\frac{v(u+\\Delta u)-u(v+\\Delta v)}{v(v+\\Delta v)}",
+      "target": "\\frac{uv+v\\Delta u-uv-u\\Delta v}{v(v+\\Delta v)}",
+      "purpose": "Keep each mathematical factor and operation traceable",
+      "authored_local_window": [
+        38.7,
+        42.2
+      ],
+      "status": "author_intent_not_approval"
+    },
+    {
+      "id": "quotient_cancel_uv",
+      "cue": "quotient_increment",
+      "operation": "quotient cancel uv",
+      "source": "\\frac{uv+v\\Delta u-uv-u\\Delta v}{v(v+\\Delta v)}",
+      "target": "\\frac{v\\Delta u-u\\Delta v}{v(v+\\Delta v)}",
+      "purpose": "Keep each mathematical factor and operation traceable",
+      "authored_local_window": [
+        43.0,
+        46.3
+      ],
+      "status": "author_intent_not_approval"
+    },
+    {
+      "id": "quotient_divide_h",
+      "cue": "quotient_limit",
+      "operation": "quotient divide h",
+      "source": "\\Delta(u/v)=\\frac{v\\Delta u-u\\Delta v}{v(v+\\Delta v)}",
+      "target": "\\frac{\\Delta(u/v)}h=\\frac{v(\\Delta u/h)-u(\\Delta v/h)}{v(v+\\Delta v)}",
+      "purpose": "Keep each mathematical factor and operation traceable",
+      "authored_local_window": [
+        3.0,
+        6.4
+      ],
+      "status": "author_intent_not_approval"
+    },
+    {
+      "id": "quotient_numerator_limit",
+      "cue": "quotient_limit",
+      "operation": "quotient numerator limit",
+      "source": "\\frac{\\Delta(u/v)}h=\\frac{v(\\Delta u/h)-u(\\Delta v/h)}{v(v+\\Delta v)}",
+      "target": "\\frac{v u'-u v'}{v(v+\\Delta v)}",
+      "purpose": "Keep each mathematical factor and operation traceable",
+      "authored_local_window": [
+        15.2,
+        18.5
+      ],
+      "status": "author_intent_not_approval"
+    },
+    {
+      "id": "quotient_denominator_limit",
+      "cue": "quotient_limit",
+      "operation": "quotient denominator limit",
+      "source": "\\frac{v u'-u v'}{v(v+\\Delta v)}",
+      "target": "\\frac{v u'-u v'}{v(v+0)}",
+      "purpose": "Keep each mathematical factor and operation traceable",
+      "authored_local_window": [
+        20.0,
+        23.2
+      ],
+      "status": "author_intent_not_approval"
+    },
+    {
+      "id": "quotient_square_denominator",
+      "cue": "quotient_limit",
+      "operation": "quotient square denominator",
+      "source": "\\frac{v u'-u v'}{v(v+0)}",
+      "target": "\\left(\\frac uv\\right)'=\\frac{v u'-u v'}{v^2}\\quad(v\\ne0)",
+      "purpose": "Keep each mathematical factor and operation traceable",
+      "authored_local_window": [
+        30.8,
+        33.8
+      ],
+      "status": "author_intent_not_approval"
+    },
+    {
+      "id": "quotient_rule_order",
+      "cue": "quotient_limit",
+      "operation": "quotient rule order",
+      "source": "\\left(\\frac uv\\right)'=\\frac{v u'-u v'}{v^2}\\quad(v\\ne0)",
+      "target": "\\left(\\frac uv\\right)'=\\frac{u'v-uv'}{v^2}\\quad(v\\ne0)",
+      "purpose": "Keep each mathematical factor and operation traceable",
+      "authored_local_window": [
+        34.4,
+        37.3
+      ],
+      "status": "author_intent_not_approval"
+    },
+    {
+      "id": "cost_substitute",
+      "cue": "cost_example",
+      "operation": "cost substitute",
+      "source": "u'=2x,\\quad v'=1 ; C=x^2+4,\\quad A=\\frac{x^2+4}{x}\\quad(x>0)",
+      "target": "A'=\\frac{2x\\cdot x-(x^2+4)\\cdot1}{x^2}",
+      "purpose": "Keep each mathematical factor and operation traceable",
+      "authored_local_window": [
+        23.3,
+        28.5
+      ],
+      "status": "author_intent_not_approval"
+    },
+    {
+      "id": "cost_expand_numerator",
+      "cue": "cost_example",
+      "operation": "cost expand numerator",
+      "source": "A'=\\frac{2x\\cdot x-(x^2+4)\\cdot1}{x^2}",
+      "target": "\\frac{2x^2-x^2-4}{x^2}",
+      "purpose": "Keep each mathematical factor and operation traceable",
+      "authored_local_window": [
+        34.0,
+        36.0
+      ],
+      "status": "author_intent_not_approval"
+    },
+    {
+      "id": "cost_combine_squares",
+      "cue": "cost_example",
+      "operation": "cost combine squares",
+      "source": "\\frac{2x^2-x^2-4}{x^2}",
+      "target": "\\frac{x^2-4}{x^2}",
+      "purpose": "Keep each mathematical factor and operation traceable",
+      "authored_local_window": [
+        36.2,
+        38.2
+      ],
+      "status": "author_intent_not_approval"
+    },
+    {
+      "id": "cost_split_fraction",
+      "cue": "cost_example",
+      "operation": "cost split fraction",
+      "source": "\\frac{x^2-4}{x^2}",
+      "target": "\\frac{x^2}{x^2}-\\frac4{x^2}",
+      "purpose": "Keep each mathematical factor and operation traceable",
+      "authored_local_window": [
+        38.5,
+        40.5
+      ],
+      "status": "author_intent_not_approval"
+    },
+    {
+      "id": "cost_cancel_square",
+      "cue": "cost_example",
+      "operation": "cost cancel square",
+      "source": "\\frac{x^2}{x^2}-\\frac4{x^2}",
+      "target": "1-\\frac4{x^2}",
+      "purpose": "Keep each mathematical factor and operation traceable",
+      "authored_local_window": [
+        40.8,
+        43.0
+      ],
+      "status": "author_intent_not_approval"
+    }
+  ],
+  "visual_amendment": "Source-visible division, assembly, cancellation, substitution and limits; original words, full WAV units, graph model and timing retained"
+}

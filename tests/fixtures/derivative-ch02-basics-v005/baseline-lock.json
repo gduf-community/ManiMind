@@ -1,0 +1,96 @@
+{
+  "status": "not_reviewed",
+  "writer": "01a19adc-bbae-7bc2-b33c-0be3ebd20365",
+  "consumers": [
+    "main coordinator",
+    "independent first-look visual reviewer",
+    "separate independent content regression reviewer",
+    "audio ref5 timing/listening reviewer"
+  ],
+  "lifecycle": "Chapter 02 v005 narrow author candidate; frozen at handoff, never approval",
+  "invalidation": "Any source, plan, contract, baseline media, narration, speech transport, original WAV, receipt, timing or evidence drift invalidates derived tests and all dependent reviews",
+  "protected_inputs": [
+    {
+      "sha256": "0aaa235b5356293dd5ba78d2da027aac45d43bc8d28f7ca1bd194792e9995c66",
+      "path": "examples/derivative_ch02_basics.py"
+    },
+    {
+      "sha256": "677268343973d59433a6ca80c6e68bff8e1605f7c930d13c7b7bf614e6ba31ed",
+      "path": "examples/derivative_ch02_basics_v002.py"
+    },
+    {
+      "sha256": "6babd292c64a7228b67a0509a3d981de3ab6c913ccabf69d20e1ce0841f94e21",
+      "path": "examples/derivative_ch02_basics_v004.py"
+    },
+    {
+      "sha256": "ed9bb7ece0f273c72fc4db744200e7a3a96e51ad54e258861305140e9d0c17ae",
+      "path": "examples/derivative_chapter_shared.py"
+    },
+    {
+      "sha256": "e9da16e13b0d47e93ae186ff37593ef9898a5f0ab73046eeeb1f62cc575c5194",
+      "path": "runtime/projects/math-derivative-ch02-basics-20261102/scene-draft-plan-v004.json"
+    },
+    {
+      "sha256": "e2971f4554edc15e926515dd879b3e9ae29b1c913569684fc3c3bb5042d94113",
+      "path": "runtime/projects/math-derivative-ch02-basics-20261102/content-regression-contract-v004.json"
+    },
+    {
+      "sha256": "1517c54503bc2d958e24d43a28038ca583e7848ad8d6d48bb18cde1b91082c36",
+      "path": "runtime/projects/math-derivative-ch02-basics-20261102/plan-v004.json"
+    },
+    {
+      "sha256": "0f0a546ed2f9e4376ad18c6bcf8444c9a45a36efb9cf78f02ea2d28f0f8cf3c6",
+      "path": "runtime/projects/math-derivative-ch02-basics-20261102/narration-draft-v003.json"
+    },
+    {
+      "sha256": "789a660edb7d8c581e7c4ecba145735bec57073521cdbf29fcd384be2e2f64d2",
+      "path": "runtime/projects/math-derivative-ch02-basics-20261102/narration-v003.json"
+    },
+    {
+      "sha256": "0e01591b55fc043facf5feae56ae05020b41dc15790a5cae6ccde9f54d59c281",
+      "path": "runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch02-basics-20261102/speech-plan-v003.json"
+    },
+    {
+      "sha256": "98d1d802b11cfa7bdbd2430ccb876d1b9cf00de36cda426a290ccee6224e81cb",
+      "path": "runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch02-basics-20261102/timings-v001.json"
+    },
+    {
+      "sha256": "c557efb3905a16d50e7774a73d2a176f5fa017e1f41901ce35891399d0dd609b",
+      "path": "runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch02-basics-20261102/review/regression-v004.json"
+    },
+    {
+      "sha256": "60fb4cdc27765cab47e2dcf7d349624ede806379db41ea4f64cac36c2492b232",
+      "path": "runtime/sessions/math-derivative-chapter-20261102-voiced-comparator/ch02-v004/gate-results.json"
+    },
+    {
+      "sha256": "e9da16e13b0d47e93ae186ff37593ef9898a5f0ab73046eeeb1f62cc575c5194",
+      "path": "tests/fixtures/derivative-ch02-basics-v004/plan.json"
+    },
+    {
+      "sha256": "e2971f4554edc15e926515dd879b3e9ae29b1c913569684fc3c3bb5042d94113",
+      "path": "tests/fixtures/derivative-ch02-basics-v004/contract.json"
+    },
+    {
+      "sha256": "851f166e19b45591989432a9a2c11d744aa52800774ceee24cd112efad792065",
+      "path": "tests/fixtures/derivative-ch02-basics-v004/narration.json"
+    },
+    {
+      "sha256": "98a1a6148271b68445f3848eb6de931474c9eb5795fcf3cd9c0fed5e7daea436",
+      "path": "tests/fixtures/derivative-ch02-basics-v004/timings.json"
+    },
+    {
+      "sha256": "42ab5c58b160a6d93fa9bfb4917b18a63941997230abe35d62fbd0dbcb0d823d",
+      "path": "tests/fixtures/derivative-ch02-basics-v004/baseline-lock.json"
+    },
+    {
+      "sha256": "369758767cb20889a637c03eed9ffba17e97e618972eb6c9667e6dac84fc4d18",
+      "path": "tests/lesson_native_harness.py"
+    },
+    {
+      "sha256": "93bd725fea72db9ce98fa9688c108910213886951faed57bb7df7eb526ff7c50",
+      "path": "tests/test_derivative_ch02_basics_v004.py"
+    }
+  ],
+  "production_timings_sha256": "98d1d802b11cfa7bdbd2430ccb876d1b9cf00de36cda426a290ccee6224e81cb",
+  "evidence_sha256": "d0c91851455e8e2df6a6ea65dfab04aeee385d8259265cb03a0fa2acdc92875f"
+}

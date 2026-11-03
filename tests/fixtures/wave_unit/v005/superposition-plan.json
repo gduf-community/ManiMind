@@ -1,0 +1,422 @@
+{
+  "project_id": "wave-superposition-20261028",
+  "author_agent": "01a18235-60f4-7911-9856-d1ccf3930986",
+  "author_context": "01a18235-60f4-7911-9856-d1ccf3930986",
+  "unit_id": "wave-unit-20261028",
+  "catalogue_ids": [
+    "P07-06"
+  ],
+  "title": "机械波三：相遇相加，然后各自通过",
+  "workflow_profile": "configs/visual-first-workflow-v4-unit.json",
+  "lesson_context": "runtime/projects/wave-superposition-20261028/context-v003.json",
+  "revision_mode": "revision",
+  "revision_contract": "runtime/projects/wave-superposition-20261028/revision-contract-voiced-v001.json",
+  "revision_review": "runtime/sessions/wave-unit-20261028/regression-superposition-v005.json",
+  "scene": "examples/wave_superposition_visual.py",
+  "scene_class": "WaveSuperpositionLesson",
+  "narration_draft": "runtime/projects/wave-superposition-20261028/narration-draft-v002.json",
+  "duration": 153,
+  "fps": 30,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "subtitle_reserve": {
+    "pixel_top": 984,
+    "scene_y_max_for_bottom": -3.288888889
+  },
+  "audience": "已调用前两课固定质点、传播与时空读图，但尚未学习叠加的高中生",
+  "prior_knowledge": [
+    "位移有正负",
+    "波形是同一时刻不同位置的位移",
+    "固定质点与波形传播不同"
+  ],
+  "understanding_goals": [
+    "只在同一位置、同一时刻把分量的有符号位移相加",
+    "追踪两个脉冲相遇前、重合中、通过后的连续形状",
+    "用平直时的非零局部速度与随后的通过说明瞬时相消不是波消失",
+    "预测不等幅反号脉冲重合的剩余位移"
+  ],
+  "coverage_boundary": "仅P07-06脉冲线性叠加与瞬时相长相消；没有稳定干涉节点的正式教学，不覆盖多普勒、P07-08衍射、反射透射或P07-06完整退出要求",
+  "next_exit": "另课在连续同频波源下建立稳定相长相消位置及条件；多普勒另起问题链",
+  "scientific_brief": "runtime/projects/wave-unit-20261028/scientific-brief.json",
+  "sources": [
+    "examples/wave_unit_shared.py",
+    "examples/wave_unit_model.py",
+    "runtime/projects/wave-superposition-20261028/context-v003.json",
+    "runtime/projects/wave-unit-20261028/unit.json",
+    "runtime/projects/wave-unit-20261028/scientific-brief.json",
+    "runtime/projects/wave-unit-20261028/teaching-design.md",
+    "docs/curricula/high-school-physics-v0.1.csv",
+    "src/manimind/curriculum.py",
+    "src/manimind/components/catalog.py"
+  ],
+  "cues": [
+    {
+      "id": "encounter",
+      "duration": 23.5,
+      "heading": "相遇前的预测",
+      "visual": "同一根长绳中两个正脉冲分别向右、向左，先独立呈现实际绳形，再推进至接近但尚未重合；小幅、无边界反射条件自然出现。",
+      "learning_purpose": "从熟悉传播迁移到两波相遇，提出反弹还是通过的可检验预测。",
+      "anchors": [
+        {
+          "id": "pulses_separate",
+          "meaning": "两个脉冲分开、方向及介质条件可读"
+        },
+        {
+          "id": "pulses_near",
+          "meaning": "相同时钟推进后相近但尚未接触"
+        }
+      ]
+    },
+    {
+      "id": "addition",
+      "duration": 32,
+      "heading": "同处同时相加",
+      "visual": "分量、实际绳形共用x和t；1.5s经2.5s到3s的部分至完全重合过程不变。先显现峰顶的两个+1cm，再在数值断言前显现+2cm结果；之后固定t=3s，改在明确标出的x=4.5m比较同处两分位移，先出现两项约0.62cm，再显现合位移约1.24cm。曲线及物理时钟冻结，仅更换取样说明，峰值不能当作所有位置的位移。",
+      "learning_purpose": "让叠加法则落到同处同时的实际几何，不把两个峰值在不同位置随意相加。",
+      "anchors": [
+        {
+          "id": "component_rows_ready",
+          "meaning": "同坐标分量、实际合波和5m参考列可见"
+        },
+        {
+          "id": "partial_sum_ready",
+          "meaning": "部分重叠时5m处合位移为两分量之和"
+        },
+        {
+          "id": "positive_collision",
+          "meaning": "t=3s两中心同在5m"
+        },
+        {
+          "id": "double_height_ready",
+          "meaning": "实际合位移2cm、三条位移线段及两个+1cm操作数可读，尚未展示完整数值等式"
+        },
+        {
+          "id": "addition_numeric_ready",
+          "meaning": "峰顶1cm+1cm=2cm数值等式已完整显现"
+        },
+        {
+          "id": "addition_local_probe_ready",
+          "meaning": "同一t=3s的x=4.5m三行对应取样与两项约0.62cm可读"
+        },
+        {
+          "id": "addition_local_sum_ready",
+          "meaning": "同处非峰顶取样的合位移约1.24cm显现，与峰顶2cm形成有效比较"
+        }
+      ]
+    },
+    {
+      "id": "through",
+      "duration": 29,
+      "heading": "相遇后通过",
+      "visual": "从完全重合继续原方向，先到t=5s的已分离状态；明确标时t=1.5s的虚线历史轮廓分两行依次出现，再依次给出1cm等高参照，以实际同屏前后形状比较检验通过而非反弹。历史叠图移除后才继续原时钟到t=6s，两中心到8m和2m；最后依次把同一x处的分量与实际合波连接。没有回放、重置当前时钟、改变速率或把历史线当当前绳形。",
+      "learning_purpose": "完整显示前中后，检验相遇不是刚体碰撞。",
+      "anchors": [
+        {
+          "id": "through_collision_start",
+          "meaning": "重合起点与分量身份可读"
+        },
+        {
+          "id": "through_mid",
+          "meaning": "t=4s，分量正在彼此通过"
+        },
+        {
+          "id": "through_result_ready",
+          "meaning": "t=5s实际分离状态和原方向箭头可读，尚未全部给齐形状比较与终态"
+        },
+        {
+          "id": "through_compare_first",
+          "meaning": "第一分量与明确标时的相遇前虚线轮廓可比较"
+        },
+        {
+          "id": "through_compare_second",
+          "meaning": "第二分量与明确标时的相遇前虚线轮廓可比较"
+        },
+        {
+          "id": "through_height_first",
+          "meaning": "第一分量前后相同1cm高度可读"
+        },
+        {
+          "id": "through_height_second",
+          "meaning": "第二分量前后相同1cm高度可读"
+        },
+        {
+          "id": "through_after",
+          "meaning": "历史叠图移除后实际继续到t=6s，两脉冲仍分离且位置已左右交换"
+        },
+        {
+          "id": "through_sum_first",
+          "meaning": "x=8m第一分量与实际合波同处连接可读"
+        },
+        {
+          "id": "through_sum_second",
+          "meaning": "x=2m第二分量与实际合波同处连接可读"
+        }
+      ]
+    },
+    {
+      "id": "cancellation",
+      "duration": 38.5,
+      "heading": "瞬时相消不是消失",
+      "visual": "第二脉冲反号的新实验从t=1.5s仍分开的状态开始；t=2.5s部分抵消保持至该子句结束，再到t=3s完全平直。平直结果先单独可读，再显现4.5m和5.5m处由同一模型计算的非零速度方向及零位移式；去除箭头及说明后继续同一时钟到6s，原形、原方向重新分离。推进一物理秒对应一动画秒，所有停留同时冻结几何和时钟。",
+      "learning_purpose": "区分瞬时位移为零、静止和波被消灭，不把一次相消说成稳定节点。",
+      "anchors": [
+        {
+          "id": "opposite_separate",
+          "meaning": "t=1.5s等幅反号脉冲分开"
+        },
+        {
+          "id": "opposite_partial",
+          "meaning": "部分重叠但两边仍有形变"
+        },
+        {
+          "id": "zero_displacement",
+          "meaning": "完整重合，整段合位移为零"
+        },
+        {
+          "id": "flat_result_ready",
+          "meaning": "完全平直已实际出现，在局部速度箭头显现前独立可读并覆盖结果子句"
+        },
+        {
+          "id": "cancellation_velocity_ready",
+          "meaning": "平直合波、零位移式与局部非零速度方向同时可见"
+        },
+        {
+          "id": "opposite_reappearing",
+          "meaning": "t=4.5s，形变重新分离"
+        },
+        {
+          "id": "opposite_after",
+          "meaning": "t=6s，两脉冲通过后恢复各自形状与符号"
+        }
+      ]
+    },
+    {
+      "id": "exit",
+      "duration": 30,
+      "heading": "不等幅迁移",
+      "visual": "正脉冲峰1cm、负脉冲谷-0.5cm，先预测完整重合形状；到3s实际合脉冲向上0.5cm，再到6s分别通过，留下连续波源是否有固定相消处的问题。",
+      "learning_purpose": "闭合有符号位移相加与通过任务；只提出稳定干涉的下一课出口，不假称已覆盖。",
+      "anchors": [
+        {
+          "id": "unequal_question",
+          "meaning": "1cm与-0.5cm脉冲及预测条件可见"
+        },
+        {
+          "id": "unequal_collision",
+          "meaning": "t=3s，合波为向上0.5cm脉冲"
+        },
+        {
+          "id": "unequal_after",
+          "meaning": "t=6s，不等幅脉冲各自通过"
+        },
+        {
+          "id": "superposition_closed",
+          "meaning": "本课预测已验证，连续波源的新问题可读"
+        }
+      ]
+    }
+  ],
+  "focus_intents": [
+    {
+      "id": "pulses_before",
+      "cue": "encounter",
+      "claim": "两个同介质小扰动向彼此传播"
+    },
+    {
+      "id": "pulses_approach",
+      "cue": "encounter",
+      "claim": "预测相遇时会反弹还是通过"
+    },
+    {
+      "id": "aligned_components",
+      "cue": "addition",
+      "claim": "分量与实际位移在同一个x、t比较"
+    },
+    {
+      "id": "partial_overlap",
+      "cue": "addition",
+      "claim": "部分重叠逐处相加"
+    },
+    {
+      "id": "complete_addition_motion",
+      "cue": "addition",
+      "claim": "由部分到完全重合的短运动窗"
+    },
+    {
+      "id": "complete_addition",
+      "cue": "addition",
+      "claim": "同处两个+1cm相加得+2cm"
+    },
+    {
+      "id": "through_start",
+      "cue": "through",
+      "claim": "接着上一幕重合态继续观察"
+    },
+    {
+      "id": "pulses_pass",
+      "cue": "through",
+      "claim": "各自解按原方向通过，不反弹"
+    },
+    {
+      "id": "through_result",
+      "cue": "through",
+      "claim": "通过后两脉冲原形、原速、原方向不变"
+    },
+    {
+      "id": "opposite_before",
+      "cue": "cancellation",
+      "claim": "只改变第二脉冲符号"
+    },
+    {
+      "id": "opposite_approach",
+      "cue": "cancellation",
+      "claim": "反号分量接近并逐渐抵消"
+    },
+    {
+      "id": "flat_result",
+      "cue": "cancellation",
+      "claim": "完全重合后的平直结果单独保持可读，未混入接近过程"
+    },
+    {
+      "id": "zero_not_rest",
+      "cue": "cancellation",
+      "claim": "瞬时位移为零仍可有非零速度"
+    },
+    {
+      "id": "opposite_pass",
+      "cue": "cancellation",
+      "claim": "继续原时钟后两脉冲各自通过"
+    },
+    {
+      "id": "unequal_prediction",
+      "cue": "exit",
+      "claim": "预测不等幅反号脉冲重合结果"
+    },
+    {
+      "id": "unequal_test",
+      "cue": "exit",
+      "claim": "有符号分量向完整重合演进；剩下这一断言前，实际向上0.5cm合波及算式已可读，不把整个过程标成完成态"
+    },
+    {
+      "id": "unequal_pass",
+      "cue": "exit",
+      "claim": "幅度不等也仍各自通过"
+    },
+    {
+      "id": "superposition_handoff",
+      "cue": "exit",
+      "claim": "下一课才研究稳定干涉的位置条件"
+    }
+  ],
+  "review_times": [
+    3.5,
+    10.8,
+    17.3,
+    18.1,
+    18.8,
+    22.5,
+    27.8,
+    37.1,
+    37.6,
+    38.1,
+    38.4,
+    43.6,
+    43.85,
+    44.1,
+    44.5,
+    45.5,
+    47.3,
+    47.6,
+    48.6,
+    49.1,
+    49.4,
+    49.8,
+    49.9,
+    51.3,
+    52.5,
+    52.9,
+    54.588,
+    58.9,
+    63.2,
+    63.7,
+    64.2,
+    65.1,
+    65.6,
+    68.8,
+    69.05,
+    69.3,
+    69.9,
+    70,
+    70.5,
+    70.9,
+    71.7,
+    72.1,
+    73.5,
+    74,
+    75.5,
+    76,
+    77.2,
+    77.7,
+    78.1,
+    78.3,
+    78.8,
+    79.3,
+    80,
+    80.4,
+    81.5,
+    81.9,
+    82.3,
+    83.332,
+    87.9,
+    91.8,
+    92.3,
+    92.8,
+    93.4,
+    96.9,
+    97.15,
+    97.4,
+    97.7,
+    99.7,
+    100.5,
+    100.9,
+    101.2,
+    104.5,
+    107.8,
+    110.3,
+    110.8,
+    111.1,
+    111.85,
+    112.6,
+    113.1,
+    114.1,
+    114.5,
+    121.5,
+    126.3,
+    131.5,
+    131.6,
+    133.1,
+    134.6,
+    134.8,
+    135.1,
+    139.3,
+    139.6,
+    140.3,
+    141.1,
+    142.6,
+    143.2,
+    145.7,
+    152.5
+  ],
+  "authorship": "codex_superposition_voiced_retime_author_continuing_6_1_sol",
+  "production_boundary": {
+    "status": "source_plan_and_intent_handoff",
+    "rendered": false,
+    "visual_approved": false,
+    "narration_approved": false,
+    "audio_generated": false,
+    "independent_review_required": true
+  },
+  "state_contract": "runtime/projects/wave-unit-20261028/scientific-brief.json#state_contracts"
+}

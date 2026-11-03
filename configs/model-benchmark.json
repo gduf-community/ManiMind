@@ -1,0 +1,109 @@
+{
+  "verified_date": "2026-10-14",
+  "max_generations": 2,
+  "max_requests": 3,
+  "max_output_tokens": 16384,
+  "profiles": {
+    "mimo-ezlook-fast": {
+      "model": "mimo-v2.6-pro",
+      "base_url": "https://mimo.ezlook.top/v1",
+      "api_key_env": "MIMO_EZLOOK_API_KEY",
+      "allowed_hosts": ["mimo.ezlook.top"],
+      "temperature": 0.6,
+      "timeout": 180,
+      "token_limit_param": "max_completion_tokens",
+      "extra_body": {"top_p": 0.95, "thinking": {"type": "disabled"}},
+      "pricing": null,
+      "source": "User-specified gateway; non-thinking short-scene experiment, not verified upstream identity"
+    },
+    "mimo-ezlook-pro": {
+      "model": "mimo-v2.6-pro",
+      "base_url": "https://mimo.ezlook.top/v1",
+      "api_key_env": "MIMO_EZLOOK_API_KEY",
+      "allowed_hosts": ["mimo.ezlook.top"],
+      "temperature": 1.0,
+      "token_limit_param": "max_completion_tokens",
+      "extra_body": {"top_p": 0.95, "thinking": {"type": "enabled"}},
+      "pricing": null,
+      "source": "https://mimo.ezlook.top/v1/models"
+    },
+    "mimo-pro": {
+      "verified_date": "2026-10-15",
+      "model": "mimo-v2.6-pro",
+      "base_url": "https://api.xiaomimimo.com/v1",
+      "api_key_env": "MIMO_API_KEY",
+      "allowed_hosts": ["api.xiaomimimo.com"],
+      "temperature": 1.0,
+      "token_limit_param": "max_completion_tokens",
+      "extra_body": {"top_p": 0.95, "thinking": {"type": "enabled"}},
+      "pricing": {"currency": "CNY", "input_per_million": 3, "output_per_million": 6, "basis": "Mainland China pay-as-you-go uncached estimate, verified 2026-10-15; not a bill", "source": "https://mimo.mi.com/docs/en-US/quick-start/usage-guide/text-generation/batch-api"},
+      "source": "https://mimo.mi.com/docs/en-US/quick-start/summary/first-api-call"
+    },
+    "glm-flash": {
+      "verified_date": "2026-10-15",
+      "model": "glm-5.3-flash",
+      "base_url": "https://api.z.ai/api/paas/v4/",
+      "api_key_env": "ZAI_API_KEY",
+      "allowed_hosts": ["api.z.ai"],
+      "temperature": 1.0,
+      "extra_body": {"top_p": 0.95, "thinking": {"type": "enabled", "clear_thinking": false}, "reasoning_effort": "max"},
+      "pricing": {"currency": "USD", "input_per_million": 0.15, "output_per_million": 0.5, "basis": "Z.ai pay-as-you-go uncached estimate, verified 2026-10-15; not a bill", "source": "https://docs.z.ai/guides/overview/pricing"},
+      "source": "https://docs.z.ai/guides/vlm/glm-5.3-flash"
+    },
+    "kimi-code": {
+      "model": "kimi-k2.7-code",
+      "base_url_env": "OPENAI_BASE_URL",
+      "api_key_env": "OPENAI_API_KEY",
+      "allowed_hosts": ["api.moonshot.cn", "api.moonshot.ai"],
+      "temperature": 1.0,
+      "extra_body": {},
+      "pricing": {"currency": "CNY", "input_per_million": 6.5, "output_per_million": 27, "basis": "uncached upper estimate, verified 2026-10-14; not a bill", "source": "https://platform.kimi.com/docs/pricing/chat.md"},
+      "source": "https://platform.kimi.com/docs/guide/kimi-k2-7-code-quickstart"
+    },
+    "kimi-fast": {
+      "model": "kimi-k2.6",
+      "base_url_env": "OPENAI_BASE_URL",
+      "api_key_env": "OPENAI_API_KEY",
+      "allowed_hosts": ["api.moonshot.cn", "api.moonshot.ai"],
+      "temperature": 0.6,
+      "extra_body": {"thinking": {"type": "disabled"}},
+      "pricing": {"currency": "CNY", "input_per_million": 6.5, "output_per_million": 27, "basis": "uncached upper estimate, verified 2026-10-14; not a bill", "source": "https://platform.kimi.com/docs/pricing/chat.md"},
+      "source": "https://platform.kimi.com/docs/guide/kimi-k2-6-quickstart"
+    },
+    "deepseek-flash-1017-fast": {
+      "verified_date": "2026-10-18",
+      "expected_release": "DeepSeek-V4.1-Flash-1017",
+      "release_identity_basis": "Official documentation maps rolling alias to 1017; response model must be retained, not treated as immutable version attestation",
+      "model": "deepseek-flash",
+      "base_url": "https://api.deepseek.com/v1",
+      "api_key_env": "DEEPSEEK_API_KEY",
+      "allowed_hosts": ["api.deepseek.com"],
+      "temperature": 0.6,
+      "timeout": 180,
+      "token_limit_param": "max_tokens",
+      "extra_body": {"thinking": {"type": "disabled"}},
+      "pricing": {"currency": "CNY", "input_per_million": 2, "output_per_million": 8, "basis": "Peak uncached upper estimate, verified 2026-10-18; off-peak and cache discounts excluded; not a bill", "source": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/"},
+      "source": "https://api-docs.deepseek.com/zh-cn/news/news261017/"
+    },
+    "deepseek-flash": {
+      "model": "deepseek-flash",
+      "base_url": "https://api.deepseek.com/v1",
+      "api_key_env": "DEEPSEEK_API_KEY",
+      "allowed_hosts": ["api.deepseek.com"],
+      "temperature": 0.6,
+      "extra_body": {"thinking": {"type": "disabled"}},
+      "pricing": {"currency": "USD", "input_per_million": 0.3, "output_per_million": 1.2, "basis": "peak uncached upper estimate; not a bill"},
+      "source": "https://api-docs.deepseek.com/quick_start/pricing/"
+    },
+    "school-qwen": {
+      "model": "Qwen/Qwen3-Coder-Next",
+      "model_env": "SCHOOL_LLM_MODEL",
+      "base_url_env": "SCHOOL_LLM_BASE_URL",
+      "api_key_env": "SCHOOL_LLM_API_KEY",
+      "temperature": 1.0,
+      "extra_body": {"top_p": 0.95, "top_k": 40},
+      "pricing": null,
+      "source": "https://huggingface.co/Qwen/Qwen3-Coder-Next"
+    }
+  }
+}

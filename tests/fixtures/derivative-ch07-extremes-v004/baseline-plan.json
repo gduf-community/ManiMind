@@ -1,0 +1,668 @@
+{
+  "schema_version": 1,
+  "project_id": "math-derivative-ch07-extremes-20261102",
+  "version": "v003",
+  "status": "not_reviewed",
+  "title": "07 闭区间最值：端点也参加比较",
+  "scene": "examples/derivative_ch07_extremes_v003.py",
+  "scene_class": "DerivativeCh07ExtremesV003",
+  "duration": 322.2,
+  "fps": 30,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "workflow_profile": "configs/visual-first-workflow-v4.2-unit.json",
+  "revision_mode": "revision",
+  "cues": [
+    {
+      "id": "opening",
+      "duration": 29.5,
+      "heading": "闭区间最值：端点也参加比较",
+      "visual": "抛物线在[0,3]截取为实线，端点实心",
+      "learning_purpose": "从局部比较过渡到整个定义域",
+      "anchors": [
+        {
+          "id": "closed_problem_ready",
+          "meaning": "函数和闭区间已出现"
+        },
+        {
+          "id": "whole_comparison_ready",
+          "meaning": "整个区间比较目标已出现"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.4,
+        "0.06": 0.9,
+        "1.00": 29.5,
+        "0.15": 2.52,
+        "0.62": 16.22,
+        "0.72": 16.88
+      },
+      "animation_starts": {},
+      "animation_ends": {}
+    },
+    {
+      "id": "candidates",
+      "duration": 57.0,
+      "heading": "找到候选，也说明为什么",
+      "visual": "导数给内部候选1，另外圈出端点0和3",
+      "learning_purpose": "调用上课必要条件而不重复证明",
+      "anchors": [
+        {
+          "id": "interior_candidate_ready",
+          "meaning": "内部驻点1已标出"
+        },
+        {
+          "id": "all_candidates_ready",
+          "meaning": "端点和内部候选同时可见"
+        },
+        {
+          "id": "candidate_reason_ready",
+          "meaning": "候选完整性的本例条件出现"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.4,
+        "0.06": 0.9,
+        "1.00": 57.0,
+        "0.12": 2.48,
+        "0.31": 20.96,
+        "0.41": 22.14,
+        "0.72": 41.26,
+        "0.81": 41.96
+      },
+      "animation_starts": {},
+      "animation_ends": {}
+    },
+    {
+      "id": "compare",
+      "duration": 38.4,
+      "heading": "比较的是函数值",
+      "visual": "0、1、3对应1、0、4的数值行依次生成，绑定曲线点",
+      "learning_purpose": "用数值比较确定内部最小与边界最大",
+      "anchors": [
+        {
+          "id": "candidate_values_ready",
+          "meaning": "三个候选函数值都可读"
+        },
+        {
+          "id": "closed_extremes_ready",
+          "meaning": "最小和最大结果已出现"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.4,
+        "0.06": 0.9,
+        "1.00": 38.4,
+        "0.13": 2.24,
+        "0.21": 5.02,
+        "0.23": 7.1,
+        "0.32": 7.76,
+        "0.34": 9.52,
+        "0.43": 10.3,
+        "0.45": 12.12,
+        "0.62": 19.580000000000002,
+        "0.72": 20.08,
+        "0.79": 25.0
+      },
+      "animation_starts": {},
+      "animation_ends": {}
+    },
+    {
+      "id": "parameter",
+      "duration": 64.2,
+      "heading": "让区间的右端点动起来",
+      "visual": "闭区间[0,b]亮曲段随b从1.25到3增长，候选端点值同步变动",
+      "learning_purpose": "用实际变化理解候选竞争与端点切换",
+      "anchors": [
+        {
+          "id": "parameter_left_wins_ready",
+          "meaning": "右端点低于左端点的状态出现"
+        },
+        {
+          "id": "parameter_tie_ready",
+          "meaning": "b=2两端同高"
+        },
+        {
+          "id": "parameter_right_wins_ready",
+          "meaning": "b=3右端点最高"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.4,
+        "0.06": 0.9,
+        "1.00": 64.2,
+        "0.12": 1.4,
+        "0.18": 1.85,
+        "0.23": 2.3,
+        "0.37": 25.520000000000003,
+        "0.40": 26.05,
+        "0.51": 29.580000000000002,
+        "0.55": 30.16,
+        "0.66": 45.34,
+        "0.69": 45.82,
+        "0.83": 50.4,
+        "0.87": 50.84
+      },
+      "animation_starts": {
+        "0.37": 12.26,
+        "0.51": 26.24,
+        "0.83": 46.14
+      },
+      "animation_ends": {
+        "0.37": 21.8,
+        "0.51": 29.42,
+        "0.83": 50.24
+      }
+    },
+    {
+      "id": "conditions",
+      "duration": 41.1,
+      "heading": "为什么一定能取到",
+      "visual": "同一不断开的曲线与实心有限端点，区分存在保证和候选搜索",
+      "learning_purpose": "把连续与有限闭区间联系到可达的最值",
+      "anchors": [
+        {
+          "id": "existence_conditions_ready",
+          "meaning": "连续与有限闭区间条件出现"
+        },
+        {
+          "id": "existence_and_search_ready",
+          "meaning": "存在保证和本例搜索方法同时可读"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.4,
+        "0.06": 0.9,
+        "1.00": 41.1,
+        "0.15": 2.38,
+        "0.31": 6.6,
+        "0.49": 21.48,
+        "0.53": 22.099999999999998,
+        "0.58": 27.7,
+        "0.72": 31.6
+      },
+      "animation_starts": {},
+      "animation_ends": {}
+    },
+    {
+      "id": "open_interval",
+      "duration": 57.6,
+      "heading": "打开端点，会改变什么",
+      "visual": "同一f限制于(0,3)，空心端点；点从2.2趋近2.99，内部顶点保留",
+      "learning_purpose": "开区间可有最小值而无最大值，上确界不等于可达最大值",
+      "anchors": [
+        {
+          "id": "open_minimum_retained_ready",
+          "meaning": "开区间与保留的最小值点出现"
+        },
+        {
+          "id": "open_approach_start",
+          "meaning": "接近右端点的移动开始"
+        },
+        {
+          "id": "unattained_supremum_ready",
+          "meaning": "上确界4与无最大值结论出现"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.4,
+        "0.06": 0.9,
+        "1.00": 57.6,
+        "0.12": 2.46,
+        "0.35": 20.0,
+        "0.40": 20.74,
+        "0.67": 36.620000000000005,
+        "0.74": 37.24
+      },
+      "animation_starts": {
+        "0.67": 21.02
+      },
+      "animation_ends": {
+        "0.67": 32.1
+      }
+    },
+    {
+      "id": "closing",
+      "duration": 34.4,
+      "heading": "范围决定比较，也决定能否取到",
+      "visual": "同函数在闭、开区间的结果对照，连接实际模型",
+      "learning_purpose": "收束范围、候选和值及下一课可行域",
+      "anchors": [
+        {
+          "id": "interval_method_ready",
+          "meaning": "开闭区间结果对照可读"
+        },
+        {
+          "id": "modeling_bridge_ready",
+          "meaning": "实际尺寸到函数的桥梁出现"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.4,
+        "0.06": 0.9,
+        "1.00": 34.4,
+        "0.15": 2.46,
+        "0.66": 21.66,
+        "0.76": 22.34
+      },
+      "animation_starts": {},
+      "animation_ends": {}
+    }
+  ],
+  "focus_intents": [
+    {
+      "id": "closed_problem",
+      "cue": "opening",
+      "referent": "f=(x-1)²与[0,3]曲线",
+      "process": "建立整区间比较问题",
+      "state": "函数保持同一个模型直到课末",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "whole_comparison",
+      "cue": "opening",
+      "referent": "实心端点及完整限制曲线",
+      "process": "把比较范围扩展到边界",
+      "state": "端点确实属于当前定义域",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "interior_candidate",
+      "cue": "candidates",
+      "referent": "f'=2(x-1)与内部候选1",
+      "process": "调用必要条件筛选内部位置",
+      "state": "只筛选可导内点，不把条件用于端点",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "all_candidates",
+      "cue": "candidates",
+      "referent": "圈出的0、1、3及端点/内部驻点分类",
+      "process": "补足边界候选",
+      "state": "候选位置和最终取值分开",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "candidate_reason",
+      "cue": "candidates",
+      "referent": "处处可导条件与候选完整性",
+      "process": "说明方法在本例中的依据",
+      "state": "不推广为可忽略所有不可导点",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "candidate_values",
+      "cue": "compare",
+      "referent": "可见x/f(x)表头、逐次显现的原候选行与原曲线点",
+      "process": "先位置和图点，再函数值；本reference从真实代入过程开始，不只指完成表格",
+      "state": "候选与函数值分别占独立列",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "closed_extremes",
+      "cue": "compare",
+      "referent": "最小0在1与最大4在3",
+      "process": "先显现原最小值结论，再显现原最大值结论，两者始终保留",
+      "state": "最大点位于边界",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "parameter_left_wins",
+      "cue": "parameter",
+      "referent": "亮曲段、移动边界与候选数值",
+      "process": "b从1.25移动到1.8",
+      "state": "0、1、b对应值1、0、(b-1)²",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "parameter_to_tie",
+      "cue": "parameter",
+      "referent": "沿抛物线上升的右端点",
+      "process": "b从1.8实际移动到2",
+      "state": "右端点尚未超过左端点",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "parameter_tie",
+      "cue": "parameter",
+      "referent": "b=2的曲段和两端同高状态",
+      "process": "比较并列候选",
+      "state": "argmax为0和2，最小值仍在1",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "parameter_right_overtakes",
+      "cue": "parameter",
+      "referent": "继续增长的亮曲段与端点值",
+      "process": "b从2实际移动到3",
+      "state": "候选高度从相等转为右端更高",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "parameter_right_wins",
+      "cue": "parameter",
+      "referent": "b=3与1、0、4候选值",
+      "process": "确认变化后的赢家",
+      "state": "当前最大点3，最小点1",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "existence_conditions",
+      "cue": "conditions",
+      "referent": "连续曲线与实心端点",
+      "process": "联系定理条件的实际对象",
+      "state": "只陈述有限闭区间上的连续性保证",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "existence_and_search",
+      "cue": "conditions",
+      "referent": "已可读的存在保证，继而显现原候选搜索与不可导点提醒",
+      "process": "按原声分层解释存在与搜索；不把尚未出现的文字当作已显示",
+      "state": "承接前课尖点，不展开分类",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "open_minimum_retained",
+      "cue": "open_interval",
+      "referent": "同函数的空心端点与实心顶点",
+      "process": "只改变端点是否包含",
+      "state": "min=0且在1取得",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "open_approach",
+      "cue": "open_interval",
+      "referent": "从2.2移动到2.99的点与动态函数值",
+      "process": "在开区间内部向右趋近",
+      "state": "从不抵达3，gap=4-f(x)>0",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "unattained_supremum",
+      "cue": "open_interval",
+      "referent": "x趋近3时f趋近4及结论",
+      "process": "用可达性完成判断",
+      "state": "sup=4而非9，无最大值但有最小值",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "interval_method",
+      "cue": "closing",
+      "referent": "[0,3]与(0,3)结果对照",
+      "process": "归纳整个区间比较方法",
+      "state": "没有断言所有开区间都无最值",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "modeling_bridge",
+      "cue": "closing",
+      "referent": "实际尺寸到体积目标的下一课引入",
+      "process": "把定义域联系实际可行性",
+      "state": "不提前只报优化结果",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    }
+  ],
+  "review_times": [
+    0.4,
+    0.9,
+    2.52,
+    16.22,
+    16.88,
+    29.9,
+    30.4,
+    31.98,
+    50.46,
+    51.64,
+    70.75999999999999,
+    71.46000000000001,
+    86.9,
+    87.4,
+    88.74,
+    91.52,
+    93.6,
+    94.26,
+    96.02,
+    96.8,
+    98.62,
+    106.08,
+    106.58,
+    111.5,
+    125.30000000000001,
+    125.80000000000001,
+    126.30000000000001,
+    126.75,
+    127.2,
+    137.16,
+    146.70000000000002,
+    150.42000000000002,
+    150.95000000000002,
+    151.14000000000001,
+    154.32,
+    154.48000000000002,
+    155.06,
+    170.24,
+    170.72,
+    171.04000000000002,
+    175.14000000000001,
+    175.3,
+    175.74,
+    189.5,
+    190.0,
+    191.48,
+    195.7,
+    210.57999999999998,
+    211.2,
+    216.79999999999998,
+    220.7,
+    230.6,
+    231.1,
+    232.66,
+    250.2,
+    250.94,
+    251.22,
+    262.3,
+    266.82,
+    267.44,
+    288.2,
+    288.7,
+    290.26,
+    309.46000000000004,
+    310.14
+  ],
+  "sources": [
+    "examples/derivative_chapter_shared.py",
+    "docs/course-unit-workflow.md",
+    "runtime/projects/math-derivative-ch07-extremes-20261102/math-facts-v001.json",
+    "runtime/projects/math-derivative-ch07-extremes-20261102/context-v001.json",
+    "runtime/projects/math-derivative-chapter-20261102/unit-v001.json",
+    "docs/curricula/high-school-mathematics-v0.1.csv",
+    "src/manimind/curriculum.py",
+    "runtime/projects/math-derivative-ch07-extremes-20261102/scientific-brief-v001.json",
+    "runtime/projects/math-derivative-ch07-extremes-20261102/draft-plan-v001.json",
+    "examples/derivative_ch07_extremes.py",
+    "runtime/projects/math-derivative-ch07-extremes-20261102/narration-draft-v002.json",
+    "runtime/projects/math-derivative-ch07-extremes-20261102/narration-v002.json",
+    "runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch07-extremes-20261102/speech-plan-v002.json",
+    "runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch07-extremes-20261102/timings-v001.json",
+    "runtime/projects/math-derivative-ch07-extremes-20261102/scene-draft-plan-v003.json"
+  ],
+  "course_position": {
+    "chapter": 7,
+    "prerequisites": [
+      "局部极值与可导内点必要条件",
+      "导数符号与单调性"
+    ],
+    "mastery_status": "assumed_not_tested",
+    "exit": "按定义域比较全部候选，理解端点、连续闭区间保证及开区间可能保留最小值而无最大值",
+    "next": "由实际几何建立体积目标与可行域，调用候选比较和单调性"
+  },
+  "context_status": "lead_will_supply_versioned_unit_and_context_before_production",
+  "subtitle_safe_bottom_px": 96,
+  "geometry_safe_min_y": -3.05,
+  "production_boundary": {
+    "rendered": false,
+    "visual_approved": false,
+    "narration_approved": false,
+    "audio_generated": false,
+    "published": false
+  },
+  "state_contracts": [
+    {
+      "writer": "01a199e9-7432-7052-96f7-6bd6eb2e63bb",
+      "consumers": [
+        "chapter lead",
+        "renderer",
+        "future independent reviewer",
+        "future narration installer"
+      ],
+      "lifecycle": "Author-C v001 draft; lesson-scoped, not an approved installation",
+      "invalidation": "Change to source, model, helper, profile, chapter context, text or cue timing requires dependent revalidation",
+      "scope": "long_term_lesson_draft"
+    },
+    {
+      "writer": "01a199e9-7432-7052-96f7-6bd6eb2e63bb",
+      "consumers": [
+        "chapter lead",
+        "renderer",
+        "future independent reviewer",
+        "future narration installer"
+      ],
+      "lifecycle": "This author-C collaboration; test logs and handoff only",
+      "invalidation": "Change to source, model, helper, profile, chapter context, text or cue timing requires dependent revalidation",
+      "scope": "short_term_author_session"
+    },
+    {
+      "name": "verified_original_wav_stage_timing",
+      "status": "not_reviewed",
+      "writer": "01a19ab5-b2d3-7003-a784-edeeaecdbc23",
+      "consumers": [
+        "main coordinator",
+        "independent blind visual reviewer",
+        "separate content regression reviewer",
+        "audio timing reviewer"
+      ],
+      "lifecycle": "Chapter 07 v003 author candidate only; no review or release authority",
+      "invalidation": "Bound source, baseline media, plan, narration, transport, original WAV/receipt or production timing changes invalidate derived data",
+      "scope": "Cue-local reveal/motion/hold timestamps only; inherited mathematical state and tracker paths remain unchanged"
+    }
+  ],
+  "author_agent": "01a19ab5-b2d3-7003-a784-edeeaecdbc23",
+  "author_context": "01a19ab5-b2d3-7003-a784-edeeaecdbc23",
+  "writer": "01a19ab5-b2d3-7003-a784-edeeaecdbc23",
+  "consumers": [
+    "main coordinator",
+    "independent blind visual reviewer",
+    "separate content regression reviewer",
+    "audio timing reviewer"
+  ],
+  "lifecycle": "Chapter 07 v003 author candidate only; no review or release authority",
+  "invalidation": "Bound source, baseline media, plan, narration, transport, original WAV/receipt or production timing changes invalidate derived data",
+  "lesson_context": "runtime/projects/math-derivative-ch07-extremes-20261102/context-v001.json",
+  "scientific_brief": "runtime/projects/math-derivative-ch07-extremes-20261102/scientific-brief-v001.json",
+  "audience": "已学高中常见函数、斜率与基本代数运算，尚未系统学习导数的学生",
+  "prior_knowledge": [
+    {
+      "lesson_id": "M02-02",
+      "assumed_exit": "函数表达式、图像与点坐标对应"
+    },
+    {
+      "lesson_id": "M03-04",
+      "assumed_exit": "对数函数与运算法则的定义域和底数条件"
+    },
+    {
+      "lesson_id": "M04-05",
+      "assumed_exit": "同角与和差公式，以及它们联系的单位圆正弦余弦"
+    },
+    {
+      "lesson_id": "M09-01",
+      "assumed_exit": "有向增量与直线斜率"
+    },
+    {
+      "lesson_id": "M01-01",
+      "assumed_exit": "展开、因式分解及非零约分"
+    }
+  ],
+  "understanding_goals": [
+    "局部转折只管附近，全区间最大最小必须比较所有可能位置；闭区间上的连续性先保证最值存在，再由候选点计算寻找它"
+  ],
+  "narration_draft": "runtime/projects/math-derivative-ch07-extremes-20261102/narration-draft-v002.json",
+  "revision_contract": "runtime/projects/math-derivative-ch07-extremes-20261102/content-regression-contract-v003.json",
+  "revision_review": "runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch07-extremes-20261102/review/regression-v003.json",
+  "contributors": [
+    {
+      "author_agent": "01a199e9-7432-7052-96f7-6bd6eb2e63bb",
+      "author_context": "01a199e9-7432-7052-96f7-6bd6eb2e63bb",
+      "contribution": "Original C chapter-07 mathematics, graph, native variable motions and complete visual-v001"
+    },
+    {
+      "author_agent": "019eaf8b-9151-75e2-9db4-5ff834335577",
+      "author_context": "019eaf8b-9151-75e2-9db4-5ff834335577",
+      "contribution": "Main chapter coordination and immutable v002 narration grouping/source preparation"
+    }
+  ],
+  "timing_provenance": {
+    "path": "runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch07-extremes-20261102/timings-v001.json",
+    "sha256": "81c219336dc9da96f511267c0509cdc8c00213bbb296728d2f8792eb768e4ebd",
+    "evidence_sha256": "cc0016f20dff4a7ca81a9852c7440bc6a09d95adceedcefb83f320d134064c02",
+    "speech": "runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch07-extremes-20261102/speech",
+    "original_speech_plan": "runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch07-extremes-20261102/speech-plan-v002.json",
+    "speech_plan_sha256": "70ab38026df4793c45bb004c13d114ab37e2558536a1eb7369fda896c4328493",
+    "raw_wav_seconds": 297.44,
+    "scope": "Verified original-WAV model estimates only; no listening, ASR or TTS claim"
+  },
+  "intended_full_wav_placement": [
+    {
+      "id": "ch07-opening",
+      "cue": "opening",
+      "cue_local_start": 2,
+      "intended_start": 2.0,
+      "duration_seconds": 25.92
+    },
+    {
+      "id": "ch07-candidates",
+      "cue": "candidates",
+      "cue_local_start": 2,
+      "intended_start": 31.5,
+      "duration_seconds": 53.44
+    },
+    {
+      "id": "ch07-compare",
+      "cue": "compare",
+      "cue_local_start": 2,
+      "intended_start": 88.5,
+      "duration_seconds": 34.88
+    },
+    {
+      "id": "ch07-parameter",
+      "cue": "parameter",
+      "cue_local_start": 2,
+      "intended_start": 126.9,
+      "duration_seconds": 60.64
+    },
+    {
+      "id": "ch07-conditions",
+      "cue": "conditions",
+      "cue_local_start": 2,
+      "intended_start": 191.1,
+      "duration_seconds": 37.6
+    },
+    {
+      "id": "ch07-open_interval",
+      "cue": "open_interval",
+      "cue_local_start": 2,
+      "intended_start": 232.2,
+      "duration_seconds": 54.08
+    },
+    {
+      "id": "ch07-closing",
+      "cue": "closing",
+      "cue_local_start": 2,
+      "intended_start": 289.8,
+      "duration_seconds": 30.88
+    }
+  ],
+  "presentation_scope": "Not a global stretch or focus-only widening. Full original WAVs, original mathematics/geometry, original tracker endpoints, true per-word motion timing and reading holds. Table/condition objects are unchanged, only their reveals are separated. No current pixels or listening approval."
+}

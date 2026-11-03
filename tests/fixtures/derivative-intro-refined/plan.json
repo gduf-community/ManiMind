@@ -1,0 +1,28 @@
+{
+  "artifact_type": "test_fixture",
+  "status": "test_only_not_production_or_approved",
+  "base_fixture": "../derivative-intro/plan.json",
+  "scene": "examples/derivative_intro_refined.py",
+  "scene_class": "DerivativeIntroRefinedLesson",
+  "duration": 338,
+  "sources": ["examples/derivative_intro_visual.py"],
+  "definition_update": {
+    "duration": 68,
+    "heading": "零点取值与附近趋近",
+    "visual": "对照原差商零点无定义、非零h时化简和双侧极限，再用分行组装给出一般定义。",
+    "learning_purpose": "建立零点取值与附近极限的直接辨析，保留导数命名和存在条件。"
+  },
+  "definition_anchor_prefix": [
+    {"id": "raw_difference_quotient_ready", "meaning": "原差商已出现"},
+    {"id": "zero_input_undefined_ready", "meaning": "原式0/0形式及无定义文字已出现"},
+    {"id": "nearby_nonzero_ready", "meaning": "非零化简式与双侧读数已出现"},
+    {"id": "nonzero_near_limit", "meaning": "实际运动到h=±0.01"},
+    {"id": "zero_limit_comparison_ready", "meaning": "原式零点无定义和极限4的同屏对照已出现"}
+  ],
+  "definition_focus_prefix": [
+    {"id": "raw_zero_input", "cue": "definition"},
+    {"id": "zero_undefined", "cue": "definition"},
+    {"id": "nonzero_neighborhood", "cue": "definition"},
+    {"id": "zero_value_vs_limit", "cue": "definition"}
+  ]
+}

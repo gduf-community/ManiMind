@@ -1,0 +1,400 @@
+{
+  "schema_version": 1,
+  "version": "v001",
+  "status": "test_only_not_production_or_approved",
+  "title": "06 极值：只和附近比较",
+  "scene": "examples/derivative_ch06_extrema.py",
+  "scene_class": "DerivativeCh06Extrema",
+  "duration": 292,
+  "fps": 30,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "workflow_profile": "configs/visual-first-workflow-v4.2-unit.json",
+  "revision_mode": "fresh",
+  "cues": [
+    {
+      "id": "opening",
+      "duration": 24,
+      "heading": "极值：只和附近比较",
+      "visual": "熟悉的三次曲线标出两个转向位置",
+      "learning_purpose": "承接前课单调性，引出转向处的局部比较",
+      "anchors": [
+        {
+          "id": "familiar_cubic_ready",
+          "meaning": "同一函数和导数已经出现"
+        },
+        {
+          "id": "turn_question_ready",
+          "meaning": "两个转向位置已圈出"
+        }
+      ]
+    },
+    {
+      "id": "neighborhood",
+      "duration": 46,
+      "heading": "极值的比较范围",
+      "visual": "窄窗口从-1连续移动到1；窗口内曲段加亮",
+      "learning_purpose": "理解极值只比较一个邻域，不与全图所有点比较",
+      "anchors": [
+        {
+          "id": "local_max_window_ready",
+          "meaning": "-1附近窗口与函数值2可读"
+        },
+        {
+          "id": "local_min_window_ready",
+          "meaning": "窗口到达1附近"
+        }
+      ]
+    },
+    {
+      "id": "signs",
+      "duration": 48,
+      "heading": "把转向翻译成导数符号",
+      "visual": "分解导数、标出-1与1、生成+ - +三段及增减折线",
+      "learning_purpose": "复用前课符号到增减，不重做求导",
+      "anchors": [
+        {
+          "id": "critical_positions_ready",
+          "meaning": "导数分解及两个零点已出现"
+        },
+        {
+          "id": "three_sign_intervals_ready",
+          "meaning": "三个开区间导数符号已出现"
+        },
+        {
+          "id": "sign_to_monotonicity_ready",
+          "meaning": "符号对应的增减线已出现"
+        }
+      ]
+    },
+    {
+      "id": "turns",
+      "duration": 54,
+      "heading": "极值来自两侧增减的交接",
+      "visual": "点沿同一三次曲线先后通过两个驻点，右侧分层显示符号、增减和值",
+      "learning_purpose": "用变号解释极值及区分极值点和极值",
+      "anchors": [
+        {
+          "id": "max_traverse_start",
+          "meaning": "经过-1的移动开始"
+        },
+        {
+          "id": "min_traverse_start",
+          "meaning": "经过1的移动开始"
+        },
+        {
+          "id": "point_value_distinction_ready",
+          "meaning": "点与值区别已出现"
+        }
+      ]
+    },
+    {
+      "id": "stationary",
+      "duration": 46,
+      "heading": "切线放平，曲线也可能继续上升",
+      "visual": "x³原点水平切线，点实际从负到正经过原点",
+      "learning_purpose": "驻点不是极值的充分条件",
+      "anchors": [
+        {
+          "id": "stationary_zero_ready",
+          "meaning": "g=x³及g'(0)=0可读"
+        },
+        {
+          "id": "stationary_pass_start",
+          "meaning": "沿x³通过原点的过程开始"
+        },
+        {
+          "id": "stationary_no_extremum_ready",
+          "meaning": "无极值结论出现"
+        }
+      ]
+    },
+    {
+      "id": "necessary",
+      "duration": 48,
+      "heading": "保留条件：可导的内点",
+      "visual": "局部极大的左右差商约束与共同零导数；最后给|x|尖点",
+      "learning_purpose": "解释必要性方向及可导内点的限定对象",
+      "anchors": [
+        {
+          "id": "conditional_necessity_ready",
+          "meaning": "带条件的必要性命题出现"
+        },
+        {
+          "id": "one_sided_quotients_ready",
+          "meaning": "左右差商符号出现"
+        },
+        {
+          "id": "cusp_condition_ready",
+          "meaning": "绝对值尖点极小出现"
+        }
+      ]
+    },
+    {
+      "id": "closing",
+      "duration": 26,
+      "heading": "从局部，走向整个区间",
+      "visual": "收束局部比较、变号与必要性，提出端点问题",
+      "learning_purpose": "将出口交给闭区间最值课",
+      "anchors": [
+        {
+          "id": "local_method_ready",
+          "meaning": "局部方法已收束"
+        },
+        {
+          "id": "whole_interval_question_ready",
+          "meaning": "全区间及端点问题出现"
+        }
+      ]
+    }
+  ],
+  "focus_intents": [
+    {
+      "id": "familiar_cubic",
+      "cue": "opening",
+      "referent": "三次函数及已知导数",
+      "process": "静态回调已有表示",
+      "state": "曲线与函数、导数同时可读",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "turn_question",
+      "cue": "opening",
+      "referent": "两个圈出的转向位置",
+      "process": "从已有单调区间提出问题",
+      "state": "只提局部问题，未宣称全局最值",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "local_max_window",
+      "cue": "neighborhood",
+      "referent": "-1邻域、曲线高亮与f(-1)=2",
+      "process": "比较左右附近点与中心",
+      "state": "窗口中心-1，半径0.42",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "window_move",
+      "cue": "neighborhood",
+      "referent": "沿x轴移动的窗口及中心点",
+      "process": "真实移动-1到1",
+      "state": "移动期间不保留旧位置的极大值标签",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "local_min_window",
+      "cue": "neighborhood",
+      "referent": "1邻域、曲线高亮与f(1)=-2",
+      "process": "比较附近点与中心",
+      "state": "窗口已停在1，左右均高于中心",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "critical_positions",
+      "cue": "signs",
+      "referent": "因式分解导数与两个零点",
+      "process": "从已知导数读出分界",
+      "state": "不重复完整求导",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "three_sign_intervals",
+      "cue": "signs",
+      "referent": "横轴上+ 0 - 0 +",
+      "process": "逐区间读符号",
+      "state": "分界点和开区间分开标注",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "sign_to_monotonicity",
+      "cue": "signs",
+      "referent": "导数符号及下方增减折线",
+      "process": "符号连接函数行为",
+      "state": "三段增减与符号一一对应",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "max_traverse",
+      "cue": "turns",
+      "referent": "沿曲线通过-1的点和+到-说明",
+      "process": "从-1.8通过-1到-0.2",
+      "state": "移动前中后均保留极大对应说明",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "min_traverse",
+      "cue": "turns",
+      "referent": "沿曲线通过1的点和-到+说明",
+      "process": "从-0.2通过1到1.8",
+      "state": "移动前中后均保留极小对应说明",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "point_value_distinction",
+      "cue": "turns",
+      "referent": "极值点与极值的区分及当前坐标",
+      "process": "从当前案例抽取可调用结论",
+      "state": "不把驻点直接当极值点",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "stationary_zero",
+      "cue": "stationary",
+      "referent": "x³、导数与原点",
+      "process": "引入一个独立反例",
+      "state": "与前面x³-3x清楚分场",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "stationary_pass",
+      "cue": "stationary",
+      "referent": "在x³上从负侧通过0到正侧的点",
+      "process": "左右两段连续移动，在0交接",
+      "state": "水平切线和+0+同时保留",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "stationary_no_extremum",
+      "cue": "stationary",
+      "referent": "原点邻域与无极值结论",
+      "process": "用两侧值和单调性完成反例",
+      "state": "驻点但无极值",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "conditional_necessity",
+      "cue": "necessary",
+      "referent": "可导内点条件和必要性箭头",
+      "process": "明确命题方向",
+      "state": "不宣称导数为零充分，也不覆盖端点",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "one_sided_quotients",
+      "cue": "necessary",
+      "referent": "局部极大的左、右差商不等式",
+      "process": "从局部比较推导差商符号",
+      "state": "左右h的符号分别可读",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "common_zero_necessity",
+      "cue": "necessary",
+      "referent": "双侧导数相同只能为0",
+      "process": "合并左右约束",
+      "state": "依据可导假设，不把差商都误读为零",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "cusp_condition",
+      "cue": "necessary",
+      "referent": "|x|的V形尖点及文字条件",
+      "process": "用尖点说明条件的作用",
+      "state": "只作简短对照，不展开不可导分类",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "local_method",
+      "cue": "closing",
+      "referent": "局部比较与变号总结",
+      "process": "收束可复用方法和限定",
+      "state": "没有将驻点提升为充分条件",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    },
+    {
+      "id": "whole_interval_question",
+      "cue": "closing",
+      "referent": "全区间比较的端点问题",
+      "process": "从局部出口连接下一课",
+      "state": "不提前重复闭区间求解",
+      "timing_status": "visual_intent_only_not_measured_or_acoustic"
+    }
+  ],
+  "review_times": [
+    4.32,
+    10.8,
+    16.8,
+    21.6,
+    32.28,
+    44.7,
+    56.2,
+    65.4,
+    78.64,
+    91.6,
+    103.6,
+    113.2,
+    127.72,
+    142.3,
+    155.8,
+    166.6,
+    180.28,
+    192.7,
+    204.2,
+    213.4,
+    226.64,
+    239.6,
+    251.6,
+    261.2,
+    270.68,
+    277.7,
+    284.2,
+    289.4
+  ],
+  "course_position": {
+    "chapter": 6,
+    "prerequisites": [
+      "前课同一三次函数与导数",
+      "导数符号与单调性的联系"
+    ],
+    "mastery_status": "assumed_not_tested",
+    "exit": "能用局部比较与导数变号判断极值，限定可导内点的必要条件，并用驻点反例解释非充分性",
+    "next": "把附近比较扩展为闭区间整体比较，纳入端点"
+  },
+  "subtitle_safe_bottom_px": 96,
+  "geometry_safe_min_y": -3.05,
+  "production_boundary": {
+    "rendered": false,
+    "visual_approved": false,
+    "narration_approved": false,
+    "audio_generated": false,
+    "published": false
+  },
+  "state_contracts": [
+    {
+      "writer": "01a199e9-7432-7052-96f7-6bd6eb2e63bb",
+      "consumers": [
+        "chapter lead",
+        "renderer",
+        "future independent reviewer",
+        "future narration installer"
+      ],
+      "lifecycle": "Author-C v001 draft; lesson-scoped, not an approved installation",
+      "invalidation": "Change to source, model, helper, profile, chapter context, text or cue timing requires dependent revalidation",
+      "scope": "long_term_lesson_draft"
+    },
+    {
+      "writer": "01a199e9-7432-7052-96f7-6bd6eb2e63bb",
+      "consumers": [
+        "chapter lead",
+        "renderer",
+        "future independent reviewer",
+        "future narration installer"
+      ],
+      "lifecycle": "This author-C collaboration; test logs and handoff only",
+      "invalidation": "Change to source, model, helper, profile, chapter context, text or cue timing requires dependent revalidation",
+      "scope": "short_term_author_session"
+    }
+  ],
+  "author_agent": "01a199e9-7432-7052-96f7-6bd6eb2e63bb",
+  "author_context": "01a199e9-7432-7052-96f7-6bd6eb2e63bb",
+  "writer": "01a199e9-7432-7052-96f7-6bd6eb2e63bb",
+  "consumers": [
+    "isolated chapter tests"
+  ],
+  "lifecycle": "Versioned v001 deterministic test input",
+  "invalidation": "Intentional design/model change requires explicit fixture revision",
+  "artifact_type": "test_fixture",
+  "fixture_version": 1
+}

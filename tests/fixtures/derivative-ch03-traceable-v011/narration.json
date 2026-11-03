@@ -1,0 +1,323 @@
+{
+  "schema_version": 3,
+  "source_contract": "continuous-meaning-units-v1",
+  "project_id": "math-derivative-ch03-rules-20261102",
+  "author_agent": "019eaf8b-9151-75e2-9db4-5ff834335577",
+  "author_context": "019eaf8b-9151-75e2-9db4-5ff834335577",
+  "status": "not_reviewed",
+  "audio_status": "not_generated",
+  "alignment_status": "not_aligned",
+  "units": [
+    {
+      "id": "opening_unit",
+      "cue": "opening",
+      "text": "基本函数的导数已经有了。遇到两个函数相乘、相除，怎样把它们各自的变化率用起来？我们从组合后的增量出发。先看和差与常数倍，再看乘积多出来的面积，最后处理分母也在变化的商。",
+      "references": [
+        {
+          "id": "opening_ref_1",
+          "focus": "opening_combinations",
+          "text": "基本函数的导数已经有了。遇到两个函数相乘、相除，怎样把它们各自的变化率用起来？"
+        },
+        {
+          "id": "opening_ref_2",
+          "focus": "opening_increment",
+          "text": "我们从组合后的增量出发。先看和差与常数倍，再看乘积多出来的面积，最后处理分母也在变化的商。"
+        }
+      ]
+    },
+    {
+      "id": "linearity_unit",
+      "cue": "linearity",
+      "text": "把u和v都看成x的函数，给它们同一个输入增量h。相加之后增加多少，正好是u的增量加v的增量；相减时，第二份增量也跟着减。两边除以同一个h。如果两个函数在这个位置都可微，各自的差商就有极限，因此和差的导数等于导数的和差。乘固定常数c也一样。原函数的增量乘c，除以h的比值仍然乘c，极限就是c乘u撇。c可以是正数、负数或零。下面用平方函数和一次函数，在一附近看同一个h缩小。两份增量同时变小，和的增量每次都等于它们相加。增量关系先成立，求极限才把它变成导数法则。",
+      "references": [
+        {
+          "id": "linearity_ref_1",
+          "focus": "linear_increment",
+          "text": "把u和v都看成x的函数，给它们同一个输入增量h。相加之后增加多少，正好是u的增量加v的增量；相减时，第二份增量也跟着减。"
+        },
+        {
+          "id": "linearity_ref_2",
+          "focus": "linear_limit",
+          "text": "两边除以同一个h。如果两个函数在这个位置都可微，各自的差商就有极限，因此和差的导数等于导数的和差。"
+        },
+        {
+          "id": "linearity_ref_3",
+          "focus": "linear_scalar",
+          "text": "乘固定常数c也一样。原函数的增量乘c，除以h的比值仍然乘c，极限就是c乘u撇。c可以是正数、负数或零。"
+        },
+        {
+          "id": "linearity_ref_4",
+          "focus": "linear_motion",
+          "text": "下面用平方函数和一次函数，在一附近看同一个h缩小。两份增量同时变小，和的增量每次都等于它们相加。增量关系先成立，求极限才把它变成导数法则。"
+        }
+      ]
+    },
+    {
+      "id": "product_area_unit",
+      "cue": "product_area",
+      "text": "看两个正数相乘，把u乘v画成矩形面积。这里u等于二加x，v等于一加x平方，先取x等于一，所以旧矩形的两条边分别是三和二。让输入增加h，两条边分别增加Δu和Δv。先把横向的边加长Δu。右边多出来的长条，高还是原来的v，所以面积是v乘Δu。再把纵向的边加长Δv。旧矩形上方，多出一条宽为u、高为Δv的长条，面积是u乘Δv。右上角还有一小块。它的两条边都是增量，面积是Δu乘Δv。三块加起来，才是乘积的完整增量。这个画面采用正增量；写成代数恒等式后，带正负号的增量也满足同一个关系。",
+      "references": [
+        {
+          "id": "product_area_ref_1",
+          "focus": "product_base",
+          "text": "看两个正数相乘，把u乘v画成矩形面积。这里u等于二加x，v等于一加x平方，先取x等于一，所以旧矩形的两条边分别是三和二。让输入增加h，两条边分别增加Δu和Δv。"
+        },
+        {
+          "id": "product_area_ref_2",
+          "focus": "product_right",
+          "text": "先把横向的边加长Δu。右边多出来的长条，高还是原来的v，所以面积是v乘Δu。"
+        },
+        {
+          "id": "product_area_ref_3",
+          "focus": "product_top",
+          "text": "再把纵向的边加长Δv。旧矩形上方，多出一条宽为u、高为Δv的长条，面积是u乘Δv。"
+        },
+        {
+          "id": "product_area_ref_4",
+          "focus": "product_corner",
+          "text": "右上角还有一小块。它的两条边都是增量，面积是Δu乘Δv。"
+        },
+        {
+          "id": "product_area_ref_5",
+          "focus": "product_exact_increment",
+          "text": "三块加起来，才是乘积的完整增量。这个画面采用正增量；写成代数恒等式后，带正负号的增量也满足同一个关系。"
+        }
+      ]
+    },
+    {
+      "id": "product_limit_unit",
+      "cue": "product_limit",
+      "text": "把刚才的三块面积都除以h。前两项分别是v乘Δu除以h，以及u乘Δv除以h；第三项可以写成Δu除以h，再乘Δv。如果u和v在这里可微，两个差商趋近u撇和v撇，同时Δv趋近零。这就是处理小角块的依据。现在让h变小，右上角的两条边一起缩短。旁边显示的不是角块本身，而是角块除以h；它也趋近零。因为Δu除以h趋近一个有限值，再乘趋近零的Δv，结果就趋近零。于是乘积的导数留下两项：u撇乘v，加u乘v撇。每一项只让一个因子贡献变化率，另一个取当前值。这些值都在同一个x处计算。",
+      "references": [
+        {
+          "id": "product_limit_ref_1",
+          "focus": "product_divided",
+          "text": "把刚才的三块面积都除以h。前两项分别是v乘Δu除以h，以及u乘Δv除以h；第三项可以写成Δu除以h，再乘Δv。"
+        },
+        {
+          "id": "product_limit_ref_2",
+          "focus": "product_limits",
+          "text": "如果u和v在这里可微，两个差商趋近u撇和v撇，同时Δv趋近零。这就是处理小角块的依据。"
+        },
+        {
+          "id": "product_limit_ref_3",
+          "focus": "product_corner_shrink",
+          "text": "现在让h变小，右上角的两条边一起缩短。旁边显示的不是角块本身，而是角块除以h；它也趋近零。因为Δu除以h趋近一个有限值，再乘趋近零的Δv，结果就趋近零。"
+        },
+        {
+          "id": "product_limit_ref_4",
+          "focus": "product_rule",
+          "text": "于是乘积的导数留下两项：u撇乘v，加u乘v撇。每一项只让一个因子贡献变化率，另一个取当前值。这些值都在同一个x处计算。"
+        }
+      ]
+    },
+    {
+      "id": "product_example_unit",
+      "cue": "product_example",
+      "text": "用平方函数乘正弦试一次。两个因子在所有实数上都可微，角度仍按弧度。平方函数的导数是二x，正弦的导数是余弦。先把这两份信息放在各自的因子旁边。第一项用二x乘原来的正弦，第二项用原来的x平方乘余弦，得到二x乘正弦加x平方乘余弦。两项分别追踪两个因子的变化。",
+      "references": [
+        {
+          "id": "product_example_ref_1",
+          "focus": "product_example_factors",
+          "text": "用平方函数乘正弦试一次。两个因子在所有实数上都可微，角度仍按弧度。"
+        },
+        {
+          "id": "product_example_ref_2",
+          "focus": "product_example_derivatives",
+          "text": "平方函数的导数是二x，正弦的导数是余弦。先把这两份信息放在各自的因子旁边。"
+        },
+        {
+          "id": "product_example_ref_3",
+          "focus": "product_example_result",
+          "text": "第一项用二x乘原来的正弦，第二项用原来的x平方乘余弦，得到二x乘正弦加x平方乘余弦。两项分别追踪两个因子的变化。"
+        }
+      ]
+    },
+    {
+      "id": "quotient_increment_unit",
+      "cue": "quotient_increment",
+      "text": "现在让分母也变。先把u加Δu作为分子，把v加Δv作为分母，得到变化后的商；再减去原来的u除以v，就是商的增量。原来的分母v，以及变化后的整个分母，都必须非零。通分时，公共分母是v乘以括号里的v加Δv。第一个分子，也就是括号里的u加Δu，要乘v；第二个分子u，要乘以括号里的v加Δv，中间保留减号。把括号展开，前面有uv加v乘Δu，后面减去uv和u乘Δv。两份uv相消，分子留下v乘Δu，减u乘Δv。分母仍是刚才的两部分相乘。",
+      "references": [
+        {
+          "id": "quotient_increment_ref_1",
+          "focus": "quotient_difference",
+          "text": "现在让分母也变。先把u加Δu作为分子，把v加Δv作为分母，得到变化后的商；再减去原来的u除以v，就是商的增量。原来的分母v，以及变化后的整个分母，都必须非零。"
+        },
+        {
+          "id": "quotient_increment_ref_2",
+          "focus": "quotient_common_denominator",
+          "text": "通分时，公共分母是v乘以括号里的v加Δv。第一个分子，也就是括号里的u加Δu，要乘v；第二个分子u，要乘以括号里的v加Δv，中间保留减号。"
+        },
+        {
+          "id": "quotient_increment_ref_3",
+          "focus": "quotient_cancel",
+          "text": "把括号展开，前面有uv加v乘Δu，后面减去uv和u乘Δv。两份uv相消，分子留下v乘Δu，减u乘Δv。分母仍是刚才的两部分相乘。"
+        }
+      ]
+    },
+    {
+      "id": "quotient_limit_unit",
+      "cue": "quotient_limit",
+      "text": "两边除以h，把分子整理成v乘Δu除以h，减u乘Δv除以h。这样两个已知的变化率都露出来了。u和v在这一点可微，两个差商分别趋近导数。v的增量趋近零，分母里的v加Δv就趋近v。原来的v非零，又因为v连续，足够近的地方也能保持分母非零。所以分母趋近v平方，分子得到u撇乘v，减u乘v撇。这就是商规则。负号来自前后两个分数相减，平方来自两个分母各自趋近v。",
+      "references": [
+        {
+          "id": "quotient_limit_ref_1",
+          "focus": "quotient_divide_h",
+          "text": "两边除以h，把分子整理成v乘Δu除以h，减u乘Δv除以h。这样两个已知的变化率都露出来了。"
+        },
+        {
+          "id": "quotient_limit_ref_2",
+          "focus": "quotient_take_limit",
+          "text": "u和v在这一点可微，两个差商分别趋近导数。v的增量趋近零，分母里的v加Δv就趋近v。原来的v非零，又因为v连续，足够近的地方也能保持分母非零。"
+        },
+        {
+          "id": "quotient_limit_ref_3",
+          "focus": "quotient_rule",
+          "text": "所以分母趋近v平方，分子得到u撇乘v，减u乘v撇。这就是商规则。负号来自前后两个分数相减，平方来自两个分母各自趋近v。"
+        }
+      ]
+    },
+    {
+      "id": "cost_example_unit",
+      "cue": "cost_example",
+      "text": "看一个连续产量的简化模型。x表示产量，单位是百件；总成本C的单位是百元，设它等于x平方加四。把总成本除以产量，得到每件的平均成本A，单位是元每件。产量只考虑正数。套进商规则：分子的导数二x乘分母x，再减去原分子x平方加四乘分母的导数一，最后除以x平方。化简以后，平均成本的导数等于一减四除以x平方。导数表示局部变化率：产量只增加一点时，平均成本变化的快慢。沿着左边的平均成本曲线，从一走向二，切线斜率由负趋近零。这个区间内，增加产量会降低平均成本。到x等于二，也就是两百件，斜率为零，平均成本是每件四元。再往右，切线斜率变正，平均成本开始增加。前面下降，后面上升，才使两百件成为这个连续模型下平均成本最低的位置。",
+      "references": [
+        {
+          "id": "cost_example_ref_1",
+          "focus": "cost_model",
+          "text": "看一个连续产量的简化模型。x表示产量，单位是百件；总成本C的单位是百元，设它等于x平方加四。把总成本除以产量，得到每件的平均成本A，单位是元每件。产量只考虑正数。"
+        },
+        {
+          "id": "cost_example_ref_2",
+          "focus": "cost_substitute",
+          "text": "套进商规则：分子的导数二x乘分母x，再减去原分子x平方加四乘分母的导数一，最后除以x平方。"
+        },
+        {
+          "id": "cost_example_ref_3",
+          "focus": "cost_derivative",
+          "text": "化简以后，平均成本的导数等于一减四除以x平方。导数表示局部变化率：产量只增加一点时，平均成本变化的快慢。"
+        },
+        {
+          "id": "cost_example_ref_4",
+          "focus": "cost_decreasing",
+          "text": "沿着左边的平均成本曲线，从一走向二，切线斜率由负趋近零。这个区间内，增加产量会降低平均成本。"
+        },
+        {
+          "id": "cost_example_ref_5",
+          "focus": "cost_stationary",
+          "text": "到x等于二，也就是两百件，斜率为零，平均成本是每件四元。"
+        },
+        {
+          "id": "cost_example_ref_6",
+          "focus": "cost_increasing",
+          "text": "再往右，切线斜率变正，平均成本开始增加。前面下降，后面上升，才使两百件成为这个连续模型下平均成本最低的位置。"
+        }
+      ]
+    },
+    {
+      "id": "closing_unit",
+      "cue": "closing",
+      "text": "和差、常数倍、乘积与商，都能从组合后的增量找到各自的求导法则。基本函数的导数，现在可以一起使用了。还有一种组合：先把x平方，再把结果送进正弦。输入的变化要经过两层，变化率怎样传过去？下一课继续看这条传递链。",
+      "references": [
+        {
+          "id": "closing_ref_1",
+          "focus": "closing_rules",
+          "text": "和差、常数倍、乘积与商，都能从组合后的增量找到各自的求导法则。基本函数的导数，现在可以一起使用了。"
+        },
+        {
+          "id": "closing_ref_2",
+          "focus": "closing_chain",
+          "text": "还有一种组合：先把x平方，再把结果送进正弦。输入的变化要经过两层，变化率怎样传过去？下一课继续看这条传递链。"
+        }
+      ]
+    }
+  ],
+  "writer": "Continuous-unit narration installer",
+  "consumers": [
+    "independent narration reviewer",
+    "speech planner"
+  ],
+  "lifecycle": "This current lesson/visual/text revision",
+  "invalidation": "Text, course source, visuals, focus, profile or gate changes",
+  "contributors": [
+    {
+      "author_agent": "01a199e9-7383-7a03-b45c-97d3d21bd9dd",
+      "author_context": "01a199e9-7383-7a03-b45c-97d3d21bd9dd",
+      "contribution": "Original full lesson and unchanged narration"
+    },
+    {
+      "author_agent": "019eaf8b-9151-75e2-9db4-5ff834335577",
+      "author_context": "019eaf8b-9151-75e2-9db4-5ff834335577",
+      "contribution": "Original nine meaning units; previous source retained unchanged"
+    }
+  ],
+  "repair": {
+    "source_draft": "/Users/pengweitai/Projects/ManiMind/runtime/projects/math-derivative-ch03-rules-20261102/narration-draft-v001.json",
+    "source_sha256": "b4520d96421b90a23ae8ee326c839f1a720c5e5e3d4e303f8d1158ac4d278b57",
+    "review": "review/narration-v002.json",
+    "changes": [
+      {
+        "reference": "quotient_increment_ref_1",
+        "before": "现在让分母也变。商的增量，是变化后的u加Δu除以v加Δv，减去原来的u除以v。这里v和变化后的v加Δv都必须非零。",
+        "after": "现在让分母也变。先把u加Δu作为分子，把v加Δv作为分母，得到变化后的商；再减去原来的u除以v，就是商的增量。原来的分母v，以及变化后的整个分母，都必须非零。"
+      },
+      {
+        "reference": "quotient_increment_ref_2",
+        "before": "通分时，公共分母是v乘v加Δv。前一个分子乘原来的v，后一个分子乘变化后的v加Δv，中间保留减号。",
+        "after": "通分时，公共分母是v乘以括号里的v加Δv。第一个分子，也就是括号里的u加Δu，要乘v；第二个分子u，要乘以括号里的v加Δv，中间保留减号。"
+      }
+    ],
+    "scope": "Only reported spoken grouping; same visual, mathematical order, conditions, references and focus identities"
+  },
+  "scientific_correction": {
+    "writer": "019eaf8b-9151-75e2-9db4-5ff834335577",
+    "consumers": [
+      "independent narrator reviewer",
+      "voice planner",
+      "auditor"
+    ],
+    "lifecycle": "This explicit one-clause revision, not editorial approval",
+    "invalidation": "Original draft, finding, corrected clause or mathematical model changes",
+    "original_draft": {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/projects/math-derivative-ch03-rules-20261102/narration-draft-v003.json",
+      "sha256": "471de0263de245243f2e955f7cc51908096fa29876e4947d21af44e2c6b18205"
+    },
+    "finding": {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch03-rules-20261102/review/narration-v006.json",
+      "sha256": "b75d9e9c26f98515a5632c0d3763d641b2b3df746eee715fb60b09b09f761005"
+    },
+    "changed_unit": "cost_example_unit",
+    "changed_reference": "cost_example_ref_3",
+    "previous_text": "导数在这里描述的是产量每增加一个百件，平均成本大约怎样变。",
+    "new_text": "导数表示局部变化率：产量只增加一点时，平均成本变化的快慢。",
+    "mathematics": "A=x+4/x; A'(1)=-3 is local, while A(2)-A(1)=-1. No fixed hundred-piece increment is claimed.",
+    "unchanged_units": 8,
+    "references_preserved": 32,
+    "voice_scope": "A fresh complete nine-unit plan must get new original receipts; no old receipt mutation or fabricated mixed generation state"
+  },
+  "visual_bindings": {
+    "plan_sha256": "367fdf56979e1c669b9a4640dcd6be0d65cde1421846aefe49ece874a5f1e9c0",
+    "render_sha256": "a2a98cf20ba78313ddd2073dd2cbffd17a6332482126511997f82c682f3bad6e",
+    "profile_sha256": "99507093135507fb8c3541ee43ca854aa7fc2476dacb9528d01a4b4b2d64d347",
+    "visual_sha256": "4f4dd93961857bd0906895eb80a688008c431954a4a3b5484868780f3ff46fc5",
+    "evidence_sha256": "78f2abd5bf50cb12b4c4afe5776037628095a108fabc82d702fb0f4eb1481db6",
+    "focuses_sha256": "8f9a266b206f250e3918c7ad3534d4a254fb59b173e2b6e9e079b55ee1dfd6d6",
+    "events_sha256": "ef626b7fb2632cd4d9a2608c843d0ea63802d8f9e16f912cb7d4d79c03320d2e",
+    "publisher_sha256": "b51833bbe8728fd04298c8dad9baa9839173a7d2c52094550c3613a65cafbe25",
+    "editorial_contract_sha256": "b7419eae7172b67ad3fdcf758852930a98add60a3d649485143f72ca3b123621",
+    "revision_contract_sha256": "fee9372c01d7ea65838b695e80f2452b522e470b52192495887ab68eaffd8f27",
+    "baseline_media_sha256": "b4923ce58e4b560484157baac75eb12d3a11c5ee542146e3b80041aa3c90609e",
+    "regression_validator_sha256": "272a8918eb48dddce0f93a07ac01e333134747c33fcfd01ef0834dd5956f83f8",
+    "source_contract": "continuous-meaning-units-v1",
+    "meaning_units_sha256": "3ffbe767c2b29aec4872101399775ec9a4240a66f8a3801f4fd808b73f958a98",
+    "lesson_context_sha256": "c163c4a56e4a365bf9df2872d08f0f8d3a78096a25f2a02e7ef26a616d312351",
+    "legacy_tools_sha256": "9ae3b677ccb96d9fe294a58695c78a7bfcf289418977cb482f1c6e4cbb091f5c",
+    "caption_tools_sha256": "69bb5bb08e03db02508cbebd038b14f655b04d35e98f7171c44abc5a3f3a490e",
+    "visual_author_agent": "019eaf8b-9151-75e2-9db4-5ff834335577",
+    "visual_author_context": "019eaf8b-9151-75e2-9db4-5ff834335577"
+  },
+  "source_draft": "/Users/pengweitai/Projects/ManiMind/runtime/projects/math-derivative-ch03-rules-20261102/narration-draft-v007.json",
+  "source_draft_sha256": "eb5a1c687a518017769b2b07cdab3f2128edad559df5e377bc9ee26b5a9c1351",
+  "visual_review": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch03-rules-20261102/review/visual-v006.json",
+  "visual_review_sha256": "a70223b9b2e6cc831a40081ca713b132b50a684b014098a789fb466ccd6b7ae1"
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "protected_inputs": [
+    {
+      "path": "examples/derivative_ch02_basics.py",
+      "sha256": "0aaa235b5356293dd5ba78d2da027aac45d43bc8d28f7ca1bd194792e9995c66"
+    },
+    {
+      "path": "examples/derivative_chapter_shared.py",
+      "sha256": "ed9bb7ece0f273c72fc4db744200e7a3a96e51ad54e258861305140e9d0c17ae"
+    },
+    {
+      "path": "runtime/projects/math-derivative-ch02-basics-20261102/plan-v001.json",
+      "sha256": "324585aff5a0630a75ada4fa95c3a2e3ee73b41bb2a865e44820f3c8d784c3db"
+    },
+    {
+      "path": "runtime/projects/math-derivative-ch02-basics-20261102/scene-draft-plan-v001.json",
+      "sha256": "604930135c1355ff68efbb0ecc6a5262c56a40ba2e017e6129aaf01f3eeb9474"
+    },
+    {
+      "path": "runtime/projects/math-derivative-ch02-basics-20261102/narration-draft-v001.json",
+      "sha256": "e263e1c260b88a5c0fceb4c8bbdcb4ce071636c65dd594e11abf70e1a1ac7bdb"
+    },
+    {
+      "path": "runtime/projects/math-derivative-ch02-basics-20261102/science-facts-v001.json",
+      "sha256": "5296467284abd07aae0b9dec5bffa643b3f3ec6f33bf388e98de60d0aff02ddc"
+    },
+    {
+      "path": "runtime/projects/math-derivative-ch02-basics-20261102/scientific-brief-v001.json",
+      "sha256": "a652b668ca35e37749c362e0d70bb2fc22b2ec5b112ff9b904fe40693787f9b8"
+    }
+  ],
+  "baseline_asset": {
+    "path": "outputs/math-derivative-ch02-basics-20261102/visual-v001/manim/media/manimgl/understanding.mp4",
+    "sha256": "ddb26caa018afd09eb9feb1dfed2918e05ffc49139f89f7db36d7970d419622f",
+    "duration": 452
+  },
+  "baseline_probe": {
+    "width": 1920,
+    "height": 1080,
+    "fps": "30/1",
+    "frames": 13560,
+    "duration": 452,
+    "streams": [
+      "video"
+    ]
+  },
+  "writer": "01a199e9-7383-7a03-b45c-97d3d21bd9dd",
+  "consumers": [
+    "main coordinator",
+    "independent blind visual reviewer",
+    "separate content regression reviewer",
+    "later narration reviewer"
+  ],
+  "lifecycle": "Author A ch02 v002 frozen candidate; no review authority",
+  "invalidation": "Any bound source, model, plan, text, helper, context, baseline media or contract change invalidates affected tests and all dependent reviews",
+  "artifact_type": "test_fixture"
+}

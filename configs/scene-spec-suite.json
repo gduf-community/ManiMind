@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "profile": "mimo-ezlook-fast",
+  "max_generation_requests": 8,
+  "max_attempts_per_run": 2,
+  "separate_dialogue_request_cap": 2,
+  "runs": [
+    {"id": "poly-a", "task": "original"},
+    {"id": "poly-b", "task": "original"},
+    {"id": "poly-c", "task": "original"},
+    {"id": "poly-shifted", "task": "shifted"},
+    {"id": "poly-concave", "task": "concave"}
+  ],
+  "tasks": {
+    "original": {
+      "model": {"kind": "polynomial", "coefficients": [0, 0, 4], "focus": 2, "domain": [0, 3.3]},
+      "h_sequence": [1, 0.5, 0.1, 0.02], "narration": "baseline_excerpt"
+    },
+    "shifted": {
+      "model": {"kind": "polynomial", "coefficients": [0, 2, 3], "focus": 1, "domain": [0, 2.3]},
+      "h_sequence": [1, 0.5, 0.1, 0.02], "narration": "local_say"
+    },
+    "concave": {
+      "model": {"kind": "polynomial", "coefficients": [12, 8, -1], "focus": 2, "domain": [0, 3.3]},
+      "h_sequence": [1, 0.5, 0.1, 0.02], "narration": "local_say"
+    }
+  },
+  "scope": "Position-time polynomial secant/tangent archetype only. Three independent same-task outputs and two parameter/curvature variants; not arbitrary curriculum generation."
+}

@@ -1,0 +1,197 @@
+{
+  "project_id": "projectile-independence-20261024",
+  "title": "同样是落地，为什么快球不先到？",
+  "audience": "已学过速度、重力与自由落体的高中学生",
+  "learning_goal": "能解释同高度、竖直初速度为零、忽略空气阻力时，水平初速度只改变射程而不改变落地时间；并能在水平初速度不变时，由高度变化预测落地时间与射程的变化。",
+  "authoring": "Harness-directed original scene built on the repository's freeform production chain; separate script and independent review contexts.",
+  "scene": "examples/projectile_independence.py",
+  "scene_class": "ProjectileIndependence",
+  "render_config": "configs/projectile-independence-manimgl.yml",
+  "dependencies": [
+    "src/manimind/components/typography.py",
+    "src/manimind/components/catalog.py",
+    "src/manimind/postproduce/freeform_pilot.py"
+  ],
+  "fps": 30,
+  "voice": "zh-CN-YunxiNeural",
+  "speech_rate": "+3%",
+  "video_name": "projectile-independence.mp4",
+  "subtitle_name": "projectile-independence.srt",
+  "facts": {
+    "source": "https://openstax.org/books/physics/pages/5-3-projectile-motion",
+    "model": "忽略空气阻力，水平抛出，初始竖直速度为零，只受竖直向下的重力，g 取 10 m/s² 教学近似。",
+    "coordinates": "抛出点 (0,h)，接收面 y=0，竖直向上为正。",
+    "position": "x=vx*t; y=h-g*t*t/2",
+    "acceleration": "ax=0; ay=-g",
+    "landing_time": "T=sqrt(2*h/g)，与 vx 无关",
+    "range": "R=vx*T",
+    "example": {
+      "h_m": 5,
+      "g_m_s2": 10,
+      "vx_m_s": [
+        3,
+        6
+      ],
+      "T_s": 1,
+      "R_m": [
+        3,
+        6
+      ]
+    },
+    "snapshot": {
+      "t_s": 0.5,
+      "x_m": [
+        1.5,
+        3.0
+      ],
+      "drop_m": 1.25,
+      "y_m": 3.75
+    },
+    "quarter_marks": {
+      "t_s": [
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "drop_m": [
+        0.3125,
+        1.25,
+        2.8125,
+        5.0
+      ],
+      "drop_gaps_m": [
+        0.3125,
+        0.9375,
+        1.5625,
+        2.1875
+      ]
+    },
+    "transfer": {
+      "h_m": 20,
+      "vx_m_s": 6,
+      "T_s": 2,
+      "R_m": 12
+    },
+    "limits": [
+      "g=10 m/s^2 是教学近似",
+      "忽略空气阻力",
+      "两次比较的高度相同、竖直初速度都为零",
+      "球心代表模型质点，球的大小仅作示意",
+      "画面慢放，画面时钟显示真实物理时间"
+    ]
+  },
+  "cues": [
+    {
+      "id": "setup",
+      "heading": "先猜一猜",
+      "subtitle_lines": [
+        "两颗一样的球，从同一高度同时水平射出。",
+        "慢球每秒3米，快球每秒6米。先猜：哪颗先落地？"
+      ],
+      "spoken": "两颗一样的球，从同一高度同时水平射出。慢球每秒3米，快球每秒6米。先猜一猜：哪一颗会先落地？",
+      "visual": "同一发射台、同一高度，两颗球重叠出发；只显示水平速度箭头与高度，不提前显示轨迹或结论。",
+      "min_duration": 10
+    },
+    {
+      "id": "together",
+      "heading": "同时出发",
+      "subtitle_lines": [
+        "让它们一起出发。画面慢放，时钟显示真实时间。",
+        "两颗球始终在同一高度，到1秒同时落地。"
+      ],
+      "spoken": "让它们一起出发。画面慢放，右上角是真实经过的时间。两颗球始终在同一高度。到1秒，它们同时落地。",
+      "visual": "双球同点出发，慢放并显示物理时钟；两球之间保持等高虚线，落地时同时出现落点环与射程标注；标题不提前给出结论。",
+      "min_duration": 12
+    },
+    {
+      "id": "freeze",
+      "heading": "同一时刻",
+      "subtitle_lines": [
+        "停在1秒的一半。",
+        "慢球横向1.5米，快球3米；一前一后，高度完全一样。"
+      ],
+      "spoken": "停在1秒的一半。慢球横向走了1.5米，快球走了3米。一前一后，高度却完全一样。",
+      "visual": "回到 t=0.5 s 暂停，标出 x=1.5/3.0 m 与同一高度 y=3.75 m；不显示后续结果。",
+      "min_duration": 10
+    },
+    {
+      "id": "horizontal",
+      "heading": "横向",
+      "subtitle_lines": [
+        "先只看横向，忽略空气阻力。",
+        "离手后水平方向没有力，速度保持不变；每四分之一秒走过的距离都一样。"
+      ],
+      "spoken": "先只看横向。忽略空气阻力。离手以后，水平方向没有力再推它，也没有力拦它。所以横向速度保持不变。每四分之一秒，走过的距离都一样。",
+      "visual": "先说明忽略空气阻力；完整轨迹上标出每0.25秒的位置；突出两颗球各自的水平等距，竖直方向暂时压暗。",
+      "min_duration": 12
+    },
+    {
+      "id": "vertical",
+      "heading": "竖直",
+      "subtitle_lines": [
+        "竖直初速度都是零，重力也一样。",
+        "墙上的影子完全重合，下落越来越快，但两颗球没有区别。"
+      ],
+      "spoken": "再看竖直。两颗球的竖直初速度都是零，重力也一样。墙上的影子完全重合。每一段下落越来越长，但两颗球没有任何区别。",
+      "visual": "在发射台竖直面投影出两球的墙上影子，两者重合；用1:3:5:7的下落分段说明竖直运动相同。",
+      "min_duration": 12
+    },
+    {
+      "id": "time_rule",
+      "heading": "时间只由高度决定",
+      "subtitle_lines": [
+        "落地，是竖直方向的高度归零。",
+        "5米高度代入 h=½gT²，得到 T=1 秒；式子里没有水平速度。"
+      ],
+      "spoken": "落地，是竖直方向的高度归零。5米高度，代入二分之一 g t 平方。得到1秒。这个式子里，根本没有水平速度。",
+      "visual": "从竖直下落抽象出 h=½gT²，再解得 T=√(2h/g)=1s；水平速度标记淡出并打叉，强调无关。",
+      "min_duration": 11
+    },
+    {
+      "id": "range_rule",
+      "heading": "射程",
+      "subtitle_lines": [
+        "横向速度决定这1秒能走多远。",
+        "3米每秒走3米，6米每秒走6米；R=vx·T。"
+      ],
+      "spoken": "横向速度，决定这1秒能走多远。每秒3米走3米，每秒6米走6米。射程等于水平速度乘落地时间。",
+      "visual": "两条等长时间条与水平射程条并排，R=vx·T 出现；保持T=1s不变。",
+      "min_duration": 10
+    },
+    {
+      "id": "predict",
+      "heading": "换个高度",
+      "subtitle_lines": [
+        "只改高度：同样6米每秒，从5米升到20米。",
+        "先预测：时间会变成几倍？射程会变成几倍？"
+      ],
+      "spoken": "现在只改高度。还是每秒6米，把发射台从5米升到20米。先别急着看答案：落地时间会变成几倍？射程又会变成几倍？",
+      "visual": "同一比例尺画出20米发射台与5米淡色对照，显示6 m/s；给出×2/×4选项并留出预测时间，不显示答案。",
+      "tail": 3.8,
+      "min_duration": 15
+    },
+    {
+      "id": "answer",
+      "heading": "答案",
+      "subtitle_lines": [
+        "两颗球同时出发。5米球用1秒落地。",
+        "20米球到2秒才落地；高度4倍，时间2倍，射程也2倍。"
+      ],
+      "spoken": "两颗球同时出发。5米球先落地，用1秒。20米球继续下落，到2秒才落地。高度变成4倍，时间只变成2倍。水平速度没变，射程也跟着变成2倍，12米。",
+      "visual": "两球同时出发：5米对照球在1秒落地，20米球继续到2秒落地；射程3m/6m与6m/12m同时对照，×2标记出现。",
+      "min_duration": 14
+    },
+    {
+      "id": "recap",
+      "heading": "记住",
+      "subtitle_lines": [
+        "横向速度决定每秒走多远。",
+        "高度决定走多久；两者相乘才是射程。"
+      ],
+      "spoken": "所以，横向速度决定每秒能走多远。高度决定能走多久。两者相乘，才是射程。",
+      "visual": "左右两栏分别总结横向速度与高度，最后合并为R=vx·T；文案用符号缩写，避免与字幕逐字重复；给结论留出停留时间。",
+      "min_duration": 10
+    }
+  ]
+}

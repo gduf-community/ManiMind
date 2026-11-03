@@ -1,0 +1,7 @@
+directories:
+  cache: outputs/engineering-smoke/cache
+camera:
+  background_color: "#101416"
+  fps: 30
+tex:
+  template: basic_ctex

@@ -1,0 +1,147 @@
+{
+  "project_id": "pi-bounds-20261028",
+  "status": "draft_intent_only_not_installed",
+  "audio_status": "not_generated",
+  "alignment_status": "not_scheduled_not_heard",
+  "writer": "本题数学作者",
+  "consumers": [
+    "主控后写稿",
+    "独立讲稿审核"
+  ],
+  "lifecycle": "等待真实静音图形批准的意图草稿",
+  "invalidation": "指代、视觉、focus、科学模型改变必须复核；不可直接拿预计窗口声称已对齐",
+  "segments": [
+    {
+      "id": "N01",
+      "cue": "ratio",
+      "focus": "ratio_meaning",
+      "text": "圆周长除以直径，就是π。先不写它的小数，用里面和外面的多边形把它夹住。"
+    },
+    {
+      "id": "N02",
+      "cue": "split",
+      "focus": "chord_before",
+      "text": "这条直弦从A到B。H在中间，现在还没有折起来。"
+    },
+    {
+      "id": "N03",
+      "cue": "split",
+      "focus": "chord_growth",
+      "text": "把折点移到圆弧上的M。三角形的两边之和大于第三边，新路比旧弦长。每一条旧边都这样分成两段，内接周长就增加了。"
+    },
+    {
+      "id": "N04",
+      "cue": "shave",
+      "focus": "corner_triangle",
+      "text": "外面看这个凸角。绕P、V、Q走，比直接从P到Q长。"
+    },
+    {
+      "id": "N05",
+      "cue": "shave",
+      "focus": "corner_shrink",
+      "text": "用新切线PQ削掉这个角，其余边段留下。圆还在里面，外切周长却缩短了。每个角都这样削，外界就下降。"
+    },
+    {
+      "id": "N06",
+      "cue": "lengths",
+      "focus": "side_similarity",
+      "text": "把半径当作一个长度单位。旧半边叫a，圆心到边的距离叫b。两只直角三角形相似，外面的半边就是a除以b。"
+    },
+    {
+      "id": "N07",
+      "cue": "lengths",
+      "focus": "normalized_bounds",
+      "text": "每条边有两个半边，一共有n条边。两种周长再除以直径二，留下的就是n乘a，以及n乘a再除以b。"
+    },
+    {
+      "id": "N08",
+      "cue": "hexagon",
+      "focus": "hexagon_side",
+      "text": "正六边形连到圆心，分成六个等边三角形。边长等于半径，半边a就是二分之一。"
+    },
+    {
+      "id": "N09",
+      "cue": "hexagon",
+      "focus": "hexagon_seed",
+      "text": "再用勾股，b的平方是四分之三，b就是根号三除以二。起点完全由几何给出，π先夹在三和二倍根号三之间。"
+    },
+    {
+      "id": "N10",
+      "cue": "half",
+      "focus": "half_geometry",
+      "text": "M把旧弧分成两半，H是旧弦的中点。OM是一，OH是b，所以HM是一减b。"
+    },
+    {
+      "id": "N11",
+      "cue": "half",
+      "focus": "half_pythagoras",
+      "text": "新的弦是BM。在直角三角形BHM里，BM的平方等于a的平方，加上一减b的平方。"
+    },
+    {
+      "id": "N12",
+      "cue": "half",
+      "focus": "half_substitution",
+      "text": "a平方换成一减b平方。把后面的平方展开，两项b平方接下来会抵消。"
+    },
+    {
+      "id": "N13",
+      "cue": "half",
+      "focus": "half_side",
+      "text": "最后只剩二乘一减b。K是新弦的中点，新半边是BM的一半，所以平方要除以四。"
+    },
+    {
+      "id": "N14",
+      "cue": "half",
+      "focus": "half_apothem",
+      "text": "两条半径相等，连到弦中点K就垂直于弦。OK是新的b。再用一次勾股，一减去新的a平方，就得到一加旧b再除以二。"
+    },
+    {
+      "id": "N15",
+      "cue": "refine",
+      "focus": "interval_6",
+      "text": "从六边形出发，上下界之间还有很大距离。"
+    },
+    {
+      "id": "N16",
+      "cue": "refine",
+      "focus": "interval_12",
+      "text": "同一个递推给出十二边形。下界升了，上界降了。"
+    },
+    {
+      "id": "N17",
+      "cue": "refine",
+      "focus": "interval_24",
+      "text": "二十四边形仍夹着同一个圆，区间继续缩短。"
+    },
+    {
+      "id": "N18",
+      "cue": "refine",
+      "focus": "interval_48",
+      "text": "四十八边时，边长的变化已经很小。"
+    },
+    {
+      "id": "N19",
+      "cue": "refine",
+      "focus": "interval_96",
+      "text": "九十六边，区间还没有合成一个点。"
+    },
+    {
+      "id": "N20",
+      "cue": "decimal",
+      "focus": "calculation_table",
+      "text": "继续用刚才的递推，表里算到了三千零七十二边。下界向下取，上界向上取，保住整个区间。"
+    },
+    {
+      "id": "N21",
+      "cue": "decimal",
+      "focus": "rounding_cell",
+      "text": "整个区间都在这一个舍入范围里，所以四舍五入到五位小数，一定是三点一四一五九。"
+    },
+    {
+      "id": "N22",
+      "cue": "decimal",
+      "focus": "finite_gap",
+      "text": "确定五位小数，不等于多边形已经变成了圆。有限步的间隙仍是正的；继续分细，里面继续长，外面继续短。"
+    }
+  ]
+}

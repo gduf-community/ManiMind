@@ -1,0 +1,2170 @@
+{
+  "schema_version": 1,
+  "status": "author_draft_not_frozen",
+  "writer": "01a19f5e-8733-71c0-ac2d-d507423acd13",
+  "consumers": [
+    "independent regression reviewer",
+    "revision author",
+    "lead"
+  ],
+  "lifecycle": "New v010 candidate against full selected visual-v005 baseline, not prior approval",
+  "invalidation": "Baseline bytes, selected content or authorized task scope changes",
+  "assets": {
+    "selected_visual_v005": {
+      "path": "outputs/math-derivative-ch02-basics-20261102/visual-v005/manim/media/manimgl/understanding.mp4",
+      "sha256": "c6d08fbd6a08f8652047622f9f3b0ed57692a5922d1446c7404bcb0d7a88c745",
+      "duration": 654.033333333
+    }
+  },
+  "baseline_scope": "Current visual-v005 mathematical sequence, graph motion, conditions and units; not a claim that old FadeIn/safe_formula was traceable",
+  "new_improvement_goals": [
+    {
+      "id": "square_expand",
+      "cue": "general",
+      "operation": "square expand",
+      "source": "\\frac{(a+h)^2-a^2}{h}",
+      "target": "\\frac{a^2+2ah+h^2-a^2}{h}",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        7.0,
+        9.8
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "square_cancel_squares",
+      "cue": "general",
+      "operation": "square cancel squares",
+      "source": "\\frac{a^2+2ah+h^2-a^2}{h}",
+      "target": "\\frac{2ah+h^2}{h}",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        10.0,
+        12.5
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "square_factor_h",
+      "cue": "general",
+      "operation": "square factor h",
+      "source": "\\frac{2ah+h^2}{h}",
+      "target": "\\frac{h(2a+h)}{h}",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        14.5,
+        16.5
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "square_divide_h",
+      "cue": "general",
+      "operation": "square divide h",
+      "source": "\\frac{h(2a+h)}{h}",
+      "target": "2a+h",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        16.8,
+        18.8
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "square_limit",
+      "cue": "general",
+      "operation": "square limit",
+      "source": "2a+h",
+      "target": "2a\\quad(h\\to0)",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        20.0,
+        22.4
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "square_name_derivative",
+      "cue": "general",
+      "operation": "square name derivative",
+      "source": "2a\\quad(h\\to0)",
+      "target": "f'(a)=2a",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        22.65,
+        24.36
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "rename_input",
+      "cue": "general",
+      "operation": "rename input",
+      "source": "f'(a)=2a",
+      "target": "f'(x)=2x",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        27.2,
+        30.0
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "identity_cancel",
+      "cue": "identity",
+      "operation": "identity cancel",
+      "source": "\\frac{(x+h)-x}{h}\\quad(h\\ne0)",
+      "target": "\\frac hh=1\\quad(h\\ne0)",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        5.0,
+        8.0
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "cubic_expand",
+      "cue": "power",
+      "operation": "cubic expand",
+      "source": "\\frac{(x+h)^3-x^3}{h}\\quad(h\\ne0)",
+      "target": "\\frac{x^3+3x^2h+3xh^2+h^3-x^3}{h}",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        5.0,
+        8.0
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "cubic_cancel_cubes",
+      "cue": "power",
+      "operation": "cubic cancel cubes",
+      "source": "\\frac{x^3+3x^2h+3xh^2+h^3-x^3}{h}",
+      "target": "\\frac{3x^2h+3xh^2+h^3}{h}",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        8.8,
+        11.5
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "cubic_divide_h",
+      "cue": "power",
+      "operation": "cubic divide h",
+      "source": "\\frac{3x^2h+3xh^2+h^3}{h}",
+      "target": "3x^2+3xh+h^2",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        18.0,
+        21.2
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "cubic_limit",
+      "cue": "power",
+      "operation": "cubic limit",
+      "source": "3x^2+3xh+h^2",
+      "target": "3x^2\\quad(h\\to0)",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        23.4,
+        26.4
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "reciprocal_common",
+      "cue": "reciprocal",
+      "operation": "reciprocal common",
+      "source": "\\frac{1/(x+h)-1/x}{h}",
+      "target": "\\frac{x-(x+h)}{h\\,x(x+h)}",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        13,
+        22.7
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "reciprocal_cancel_x",
+      "cue": "reciprocal",
+      "operation": "reciprocal cancel x",
+      "source": "\\frac{x-(x+h)}{h\\,x(x+h)}",
+      "target": "\\frac{-h}{h\\,x(x+h)}",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        23,
+        26.2
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "reciprocal_divide_h",
+      "cue": "reciprocal",
+      "operation": "reciprocal divide h",
+      "source": "\\frac{-h}{h\\,x(x+h)}",
+      "target": "-\\frac1{x(x+h)}",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        28.0,
+        31.0
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "reciprocal_limit",
+      "cue": "reciprocal",
+      "operation": "reciprocal limit",
+      "source": "-\\frac1{x(x+h)}",
+      "target": "-\\frac1{x^2}",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        34.0,
+        37.0
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "root_multiply_conjugate",
+      "cue": "root",
+      "operation": "root multiply conjugate",
+      "source": "\\frac{\\sqrt{x+h}-\\sqrt x}{h} ; chosen (sqrt(x+h)+sqrt(x))/(sqrt(x+h)+sqrt(x))=1, nonzero since x>0",
+      "target": "\\frac{(\\sqrt{x+h}-\\sqrt x)(\\sqrt{x+h}+\\sqrt x)}{h(\\sqrt{x+h}+\\sqrt x)}",
+      "purpose": "Choose a conjugate ratio equal to one, then copy both sums plus the old numerator and h into the product",
+      "authored_local_window": [
+        12.6,
+        16.2
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "root_difference_squares",
+      "cue": "root",
+      "operation": "root difference squares",
+      "source": "\\frac{(\\sqrt{x+h}-\\sqrt x)(\\sqrt{x+h}+\\sqrt x)}{h(\\sqrt{x+h}+\\sqrt x)}",
+      "target": "\\frac{(x+h)-x}{h(\\sqrt{x+h}+\\sqrt x)}",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        16.4,
+        18.8
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "root_cancel_x",
+      "cue": "root",
+      "operation": "root cancel x",
+      "source": "\\frac{(x+h)-x}{h(\\sqrt{x+h}+\\sqrt x)}",
+      "target": "\\frac{h}{h(\\sqrt{x+h}+\\sqrt x)}",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        19,
+        20.6
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "root_divide_h",
+      "cue": "root",
+      "operation": "root divide h",
+      "source": "\\frac{h}{h(\\sqrt{x+h}+\\sqrt x)}",
+      "target": "\\frac1{\\sqrt{x+h}+\\sqrt x}",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        20.8,
+        23.8
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "root_limit",
+      "cue": "root",
+      "operation": "root limit",
+      "source": "\\frac1{\\sqrt{x+h}+\\sqrt x}",
+      "target": "\\frac1{2\\sqrt x}",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        27.2,
+        29.7
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "exp_split_power",
+      "cue": "exponential",
+      "operation": "exp split power",
+      "source": "\\frac{a^{x+h}-a^x}{h}",
+      "target": "\\frac{a^x a^h-a^x}{h}",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        3.0,
+        5.5
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "exp_factor",
+      "cue": "exponential",
+      "operation": "exp factor",
+      "source": "\\frac{a^x a^h-a^x}{h}",
+      "target": "a^x\\frac{a^h-1}{h}",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        6.0,
+        8.8
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "exp_standard_limit",
+      "cue": "exponential",
+      "operation": "exp standard limit",
+      "source": "a^x\\frac{a^h-1}{h}",
+      "target": "\\frac{a^h-1}{h}\\longrightarrow\\ln a\\quad(a>0)",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        14.0,
+        16.5
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "exp_apply_limit",
+      "cue": "exponential",
+      "operation": "exp apply limit",
+      "source": "a^x\\frac{a^h-1}{h} ; \\frac{a^h-1}{h}\\longrightarrow\\ln a\\quad(a>0)",
+      "target": "(a^x)'=a^x\\ln a",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        24.8,
+        27.5
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "log_subtract_relations",
+      "cue": "logarithm",
+      "operation": "log subtract relations",
+      "source": "x+\\Delta x=e^{y+\\Delta y} ; y=\\ln x\\quad\\Longleftrightarrow\\quad x=e^y",
+      "target": "(x+\\Delta x)-x=e^{y+\\Delta y}-e^y",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        34.5,
+        38
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "log_factor_exponential",
+      "cue": "logarithm",
+      "operation": "log factor exponential",
+      "source": "(x+\\Delta x)-x=e^{y+\\Delta y}-e^y",
+      "target": "\\Delta x=e^y(e^{\\Delta y}-1)",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        38.2,
+        40.8
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "log_replace_exp_y",
+      "cue": "logarithm",
+      "operation": "log replace exp y",
+      "source": "\\Delta x=e^y(e^{\\Delta y}-1)",
+      "target": "\\Delta x=x(e^{\\Delta y}-1)",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        41,
+        43.6
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "log_divide_dy",
+      "cue": "logarithm",
+      "operation": "log divide dy",
+      "source": "\\Delta x=x(e^{\\Delta y}-1)",
+      "target": "\\frac{\\Delta x}{\\Delta y}=x\\frac{e^{\\Delta y}-1}{\\Delta y}",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        61.2,
+        64.0
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "log_exp_limit",
+      "cue": "logarithm",
+      "operation": "log exp limit",
+      "source": "\\frac{\\Delta x}{\\Delta y}=x\\frac{e^{\\Delta y}-1}{\\Delta y}",
+      "target": "\\frac{\\Delta x}{\\Delta y}\\longrightarrow x",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        68.0,
+        71.0
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "log_reciprocal_limit",
+      "cue": "logarithm",
+      "operation": "log reciprocal limit",
+      "source": "\\frac{\\Delta x}{\\Delta y}\\longrightarrow x",
+      "target": "\\frac{\\Delta y}{\\Delta x}\\longrightarrow\\frac1x",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        76.0,
+        79.0
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "log_base_difference",
+      "cue": "logarithm",
+      "operation": "log base difference",
+      "source": "z=\\log_a x=\\frac{\\ln x}{\\ln a}=k\\ln x",
+      "target": "\\Delta z=k\\ln(x+\\Delta x)-k\\ln x",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        118.2,
+        121.2
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "log_base_factor_k",
+      "cue": "logarithm",
+      "operation": "log base factor k",
+      "source": "\\Delta z=k\\ln(x+\\Delta x)-k\\ln x",
+      "target": "\\Delta z=k[\\ln(x+\\Delta x)-\\ln x]",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        122.0,
+        124.5
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "log_base_name_dy",
+      "cue": "logarithm",
+      "operation": "log base name dy",
+      "source": "\\Delta z=k[\\ln(x+\\Delta x)-\\ln x]",
+      "target": "\\Delta z=k\\Delta y",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        125.0,
+        127.5
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "log_base_divide_dx",
+      "cue": "logarithm",
+      "operation": "log base divide dx",
+      "source": "\\Delta z=k\\Delta y",
+      "target": "\\frac{\\Delta z}{\\Delta x}=k\\frac{\\Delta y}{\\Delta x}",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        132.2,
+        135.0
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "log_base_limit",
+      "cue": "logarithm",
+      "operation": "log base limit",
+      "source": "\\frac{\\Delta z}{\\Delta x}=k\\frac{\\Delta y}{\\Delta x}",
+      "target": "\\frac{\\Delta z}{\\Delta x}\\longrightarrow\\frac{k}{x}",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        137.0,
+        140.0
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "log_base_restore_k",
+      "cue": "logarithm",
+      "operation": "log base restore k",
+      "source": "k=\\frac1{\\ln a}\\quad\\text{(constant)},\\quad x>0,\\ a>0,\\ a\\ne1 ; \\frac{\\Delta z}{\\Delta x}\\longrightarrow\\frac{k}{x}",
+      "target": "(\\log_a x)'=\\frac1{x\\ln a}",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        145.0,
+        148.0
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "log_base_example",
+      "cue": "logarithm",
+      "operation": "log base example",
+      "source": "a=2,\\quad x=2",
+      "target": "z'=\\frac1{2\\ln2}",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        151.3,
+        154.0
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "sine_angle_substitution",
+      "cue": "sine",
+      "operation": "sine angle substitution",
+      "source": "\\frac{\\sin(x+h)-\\sin x}{h}",
+      "target": "\\frac{\\sin x\\cos h+\\cos x\\sin h-\\sin x}{h}",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        3.0,
+        5.6
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "sine_collect_ratios",
+      "cue": "sine",
+      "operation": "sine collect ratios",
+      "source": "\\frac{\\sin x\\cos h+\\cos x\\sin h-\\sin x}{h}",
+      "target": "\\sin x\\frac{\\cos h-1}{h}+\\cos x\\frac{\\sin h}{h}",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        5.8,
+        8.6
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "sine_apply_limits",
+      "cue": "sine",
+      "operation": "sine apply limits",
+      "source": "\\sin x\\frac{\\cos h-1}{h}+\\cos x\\frac{\\sin h}{h} ; \\frac{\\sin h}{h}\\to1,\\quad\\frac{\\cos h-1}{h}\\to0\\quad(\\mathrm{radians})",
+      "target": "\\sin x\\cdot0+\\cos x\\cdot1",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        10.0,
+        13.0
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    },
+    {
+      "id": "sine_remove_zero",
+      "cue": "sine",
+      "operation": "sine remove zero",
+      "source": "\\sin x\\cdot0+\\cos x\\cdot1",
+      "target": "(\\sin x)'=\\cos x",
+      "purpose": "Track authored mathematical roles and the operation without concurrent syntax overlap",
+      "authored_local_window": [
+        14.0,
+        16.5
+      ],
+      "status": "author_intent_not_pixel_approval",
+      "motion_stages": [
+        "readable source",
+        "local contracting operation when necessary",
+        "readable role travel with staged origins",
+        "local operation and complete syntax"
+      ]
+    }
+  ],
+  "units": [
+    {
+      "id": "opening",
+      "asset": "selected_visual_v005",
+      "function": "从一个点的导数进入整条导函数",
+      "baseline_interval": [
+        0,
+        21.6
+      ],
+      "features": [
+        {
+          "id": "title_bridge",
+          "kind": "state",
+          "claim": "本课标题、首课f'(2)=4与换位置求斜率的问题形成自然引入",
+          "baseline_interval": [
+            0,
+            21.6
+          ],
+          "baseline_samples": [
+            {
+              "time": 4.32,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_4_32.jpg",
+              "frame_sha256": "12a372b2b02a3d50fd338246c38df73995f2b6d0f1ed5a5fc1d0000018224da6",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 10.8,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_10_8.jpg",
+              "frame_sha256": "ac25b7b45c6a041d9d5d193719542c9aa1903d335a5d45294076c52c8021183e",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 17.28,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_17_28.jpg",
+              "frame_sha256": "4f87fabc8d74817ae88f8eef545baddcf9fc6789d155422379286228dcf4e2ee",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "general",
+      "asset": "selected_visual_v005",
+      "function": "区分自变量、函数值与导数值",
+      "baseline_interval": [
+        21.6,
+        84.966667
+      ],
+      "features": [
+        {
+          "id": "nonzero_square_algebra",
+          "kind": "process",
+          "claim": "保留非零h平方差商、展开、约分、2a结果和可读历史行；不将旧下行预移副本声称为可见来路",
+          "baseline_interval": [
+            21.6,
+            84.966667
+          ],
+          "baseline_samples": [
+            {
+              "time": 34.273,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_34_273.jpg",
+              "frame_sha256": "7e6ed1dea8bb86477323cd189039012b3a8d34d28809b16cc8c5e475b13c4aca",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 53.283,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_53_283.jpg",
+              "frame_sha256": "d9dec8ee629f14e7fdd764363a9bf2acb80a0c1f3170c8819aee8c68e437f59d",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 72.293,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_72_293.jpg",
+              "frame_sha256": "5d967efb0866c29206c5299aa3581e5ab45573f5be4d9955892c48bb8a121c35",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "derivative_function",
+          "kind": "state",
+          "claim": "f'(a)=2a成为f'(x)=2x；函数值和导数值含义分开",
+          "baseline_interval": [
+            21.6,
+            84.966667
+          ],
+          "baseline_samples": [
+            {
+              "time": 34.273,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_34_273.jpg",
+              "frame_sha256": "7e6ed1dea8bb86477323cd189039012b3a8d34d28809b16cc8c5e475b13c4aca",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 53.283,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_53_283.jpg",
+              "frame_sha256": "d9dec8ee629f14e7fdd764363a9bf2acb80a0c1f3170c8819aee8c68e437f59d",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 72.293,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_72_293.jpg",
+              "frame_sha256": "5d967efb0866c29206c5299aa3581e5ab45573f5be4d9955892c48bb8a121c35",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "linked_slope_map",
+          "kind": "process",
+          "claim": "同一a使原曲线点、切线方向、导函数同横坐标高度和近似读数连续联动；负、零、正斜率都有依据",
+          "baseline_interval": [
+            21.6,
+            84.966667
+          ],
+          "baseline_samples": [
+            {
+              "time": 34.273,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_34_273.jpg",
+              "frame_sha256": "7e6ed1dea8bb86477323cd189039012b3a8d34d28809b16cc8c5e475b13c4aca",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 53.283,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_53_283.jpg",
+              "frame_sha256": "d9dec8ee629f14e7fdd764363a9bf2acb80a0c1f3170c8819aee8c68e437f59d",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 72.293,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_72_293.jpg",
+              "frame_sha256": "5d967efb0866c29206c5299aa3581e5ab45573f5be4d9955892c48bb8a121c35",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "constant",
+      "asset": "selected_visual_v005",
+      "function": "高度可以非零但变化率为零",
+      "baseline_interval": [
+        84.966667,
+        108.8
+      ],
+      "features": [
+        {
+          "id": "constant_definition",
+          "kind": "state",
+          "claim": "(c-c)/h=0且h非零说明常数导数为零",
+          "baseline_interval": [
+            84.966667,
+            108.8
+          ],
+          "baseline_samples": [
+            {
+              "time": 89.733,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_89_733.jpg",
+              "frame_sha256": "0ef31e868b560be30ba6fa82cf1b889dafa5eae44ee08dc9158023ab77e63671",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 96.883,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_96_883.jpg",
+              "frame_sha256": "8323e06c05e6acce096fed6842486459f1439143012156bdf6497611db29353e",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 104.033,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_104_033.jpg",
+              "frame_sha256": "7244dafc4cbcc726ac482f087f2b35a181344d457eee07acfd1f4049eb002d00",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "height_not_slope",
+          "kind": "process",
+          "claim": "非零常数高度不变，移动点的切线始终水平，导函数点始终高度零",
+          "baseline_interval": [
+            84.966667,
+            108.8
+          ],
+          "baseline_samples": [
+            {
+              "time": 89.733,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_89_733.jpg",
+              "frame_sha256": "0ef31e868b560be30ba6fa82cf1b889dafa5eae44ee08dc9158023ab77e63671",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 96.883,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_96_883.jpg",
+              "frame_sha256": "8323e06c05e6acce096fed6842486459f1439143012156bdf6497611db29353e",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 104.033,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_104_033.jpg",
+              "frame_sha256": "7244dafc4cbcc726ac482f087f2b35a181344d457eee07acfd1f4049eb002d00",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "identity",
+      "asset": "selected_visual_v005",
+      "function": "定义法获得(x)'=1并联系恒定切线斜率",
+      "baseline_interval": [
+        108.8,
+        134.866667
+      ],
+      "features": [
+        {
+          "id": "identity_definition",
+          "kind": "state",
+          "claim": "((x+h)-x)/h=h/h=1且h非零",
+          "baseline_interval": [
+            108.8,
+            134.866667
+          ],
+          "baseline_samples": [
+            {
+              "time": 114.013,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_114_013.jpg",
+              "frame_sha256": "28782c9d5f9673abc224de7004cca3ef8f08c36914749f2b2a6f74fa32efacfa",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 121.833,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_121_833.jpg",
+              "frame_sha256": "e067204430f705acdf52615c4607d834e280eccc380d346f1035db4400fd22e7",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 129.653,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_129_653.jpg",
+              "frame_sha256": "9c145bbb2a38aeb4573f155459fbb05d0e3dbecc76d426c9ba4e49f64a6e5293",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "identity_map",
+          "kind": "process",
+          "claim": "一次函数任意位置的斜率为一，右图高度为一",
+          "baseline_interval": [
+            108.8,
+            134.866667
+          ],
+          "baseline_samples": [
+            {
+              "time": 114.013,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_114_013.jpg",
+              "frame_sha256": "28782c9d5f9673abc224de7004cca3ef8f08c36914749f2b2a6f74fa32efacfa",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 121.833,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_121_833.jpg",
+              "frame_sha256": "e067204430f705acdf52615c4607d834e280eccc380d346f1035db4400fd22e7",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 129.653,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_129_653.jpg",
+              "frame_sha256": "9c145bbb2a38aeb4573f155459fbb05d0e3dbecc76d426c9ba4e49f64a6e5293",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "power",
+      "asset": "selected_visual_v005",
+      "function": "从增量展开看一次项留下，限定规则定义域",
+      "baseline_interval": [
+        134.866667,
+        206.533333
+      ],
+      "features": [
+        {
+          "id": "cubic_expansion",
+          "kind": "process",
+          "claim": "三次差商先保留完整展开分子，再除h，含h项趋零后留下3x²",
+          "baseline_interval": [
+            134.866667,
+            206.533333
+          ],
+          "baseline_samples": [
+            {
+              "time": 149.2,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_149_2.jpg",
+              "frame_sha256": "5c16ba16738a0cd9b893a88a76851e89c5632da415a18a52da60c412cf6c471e",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 170.7,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_170_7.jpg",
+              "frame_sha256": "c252b26e4e76fec4c08d2301b5f9dc1cb5547c0a2ada7f5ed06403abfba9b38e",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 192.2,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_192_2.jpg",
+              "frame_sha256": "7daf6468bfa9f728dc47da6316c8ced582a3acee08c48e4379b1697adcdc607a",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "power_domains",
+          "kind": "state",
+          "claim": "正整数幂全实数、零次常数支、负整数排零、实数幂x>0安全域与端点另查",
+          "baseline_interval": [
+            134.866667,
+            206.533333
+          ],
+          "baseline_samples": [
+            {
+              "time": 149.2,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_149_2.jpg",
+              "frame_sha256": "5c16ba16738a0cd9b893a88a76851e89c5632da415a18a52da60c412cf6c471e",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 170.7,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_170_7.jpg",
+              "frame_sha256": "c252b26e4e76fec4c08d2301b5f9dc1cb5547c0a2ada7f5ed06403abfba9b38e",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 192.2,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_192_2.jpg",
+              "frame_sha256": "7daf6468bfa9f728dc47da6316c8ced582a3acee08c48e4379b1697adcdc607a",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "cubic_shape_slope",
+          "kind": "process",
+          "claim": "三次曲线在负侧、零点、正侧的切线和3x²图及近似读数一致",
+          "baseline_interval": [
+            134.866667,
+            206.533333
+          ],
+          "baseline_samples": [
+            {
+              "time": 149.2,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_149_2.jpg",
+              "frame_sha256": "5c16ba16738a0cd9b893a88a76851e89c5632da415a18a52da60c412cf6c471e",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 170.7,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_170_7.jpg",
+              "frame_sha256": "c252b26e4e76fec4c08d2301b5f9dc1cb5547c0a2ada7f5ed06403abfba9b38e",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 192.2,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_192_2.jpg",
+              "frame_sha256": "7daf6468bfa9f728dc47da6316c8ced582a3acee08c48e4379b1697adcdc607a",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reciprocal",
+      "asset": "selected_visual_v005",
+      "function": "负导数、零点禁区与不跨断点的运动",
+      "baseline_interval": [
+        206.533333,
+        274.366667
+      ],
+      "features": [
+        {
+          "id": "reciprocal_common_denominator",
+          "kind": "process",
+          "claim": "原倒数差商通分到x-(x+h)=-h，再约非零h并取极限到-1/x²",
+          "baseline_interval": [
+            206.533333,
+            274.366667
+          ],
+          "baseline_samples": [
+            {
+              "time": 220.1,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_220_1.jpg",
+              "frame_sha256": "8ca5aac92e3addb661ff7c0a9e94e2f6ac7267fe3815c942259b35e3e3b44d06",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 240.45,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_240_45.jpg",
+              "frame_sha256": "d8884781865b4bc18a30f77e49874dffa43beb802d3c5aa8a9bfdda724ca9165",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 260.8,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_260_8.jpg",
+              "frame_sha256": "5a85398bd8752f96c2f52a53c872e7f84cfb0e7433c9d9873f7bbfd81898bb56",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "reciprocal_legal_domain",
+          "kind": "state",
+          "claim": "x、h和x+h的非零条件；原函数在零处无值且无导数",
+          "baseline_interval": [
+            206.533333,
+            274.366667
+          ],
+          "baseline_samples": [
+            {
+              "time": 220.1,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_220_1.jpg",
+              "frame_sha256": "8ca5aac92e3addb661ff7c0a9e94e2f6ac7267fe3815c942259b35e3e3b44d06",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 240.45,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_240_45.jpg",
+              "frame_sha256": "d8884781865b4bc18a30f77e49874dffa43beb802d3c5aa8a9bfdda724ca9165",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 260.8,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_260_8.jpg",
+              "frame_sha256": "5a85398bd8752f96c2f52a53c872e7f84cfb0e7433c9d9873f7bbfd81898bb56",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "reciprocal_separate_branches",
+          "kind": "process",
+          "claim": "负、正半轴分别移动且不跨断点；两支斜率为负，近零更陡、远零更平的图数关系仍可观察",
+          "baseline_interval": [
+            206.533333,
+            274.366667
+          ],
+          "baseline_samples": [
+            {
+              "time": 220.1,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_220_1.jpg",
+              "frame_sha256": "8ca5aac92e3addb661ff7c0a9e94e2f6ac7267fe3815c942259b35e3e3b44d06",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 240.45,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_240_45.jpg",
+              "frame_sha256": "d8884781865b4bc18a30f77e49874dffa43beb802d3c5aa8a9bfdda724ca9165",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 260.8,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_260_8.jpg",
+              "frame_sha256": "5a85398bd8752f96c2f52a53c872e7f84cfb0e7433c9d9873f7bbfd81898bb56",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "root",
+      "asset": "selected_visual_v005",
+      "function": "原函数定义域与有限导数定义域不同",
+      "baseline_interval": [
+        274.366667,
+        327.466667
+      ],
+      "features": [
+        {
+          "id": "root_conjugate",
+          "kind": "process",
+          "claim": "平方根原差商同乘共轭，平方差化出h再约分并取1/(2√x)",
+          "baseline_interval": [
+            274.366667,
+            327.466667
+          ],
+          "baseline_samples": [
+            {
+              "time": 284.987,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_284_987.jpg",
+              "frame_sha256": "0bdfc31cf3ea18bbe33bb3fa96e03ffe1dec8ddc04018d3112863553c6c5a1d7",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 300.917,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_300_917.jpg",
+              "frame_sha256": "4c53fb4617b3533e926292f162b3250ee2e8add733365df090294dbdfa7b153c",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 316.847,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_316_847.jpg",
+              "frame_sha256": "330fc0bf5259b752786b4cad88c67123d2e09352fa2353310f47e1a01c4d8fa3",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "root_endpoint_domain",
+          "kind": "state",
+          "claim": "原函数x≥0、有限导数x>0；x=0无有限右斜率极限；非零h与x+h≥0条件",
+          "baseline_interval": [
+            274.366667,
+            327.466667
+          ],
+          "baseline_samples": [
+            {
+              "time": 284.987,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_284_987.jpg",
+              "frame_sha256": "0bdfc31cf3ea18bbe33bb3fa96e03ffe1dec8ddc04018d3112863553c6c5a1d7",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 300.917,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_300_917.jpg",
+              "frame_sha256": "4c53fb4617b3533e926292f162b3250ee2e8add733365df090294dbdfa7b153c",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 316.847,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_316_847.jpg",
+              "frame_sha256": "330fc0bf5259b752786b4cad88c67123d2e09352fa2353310f47e1a01c4d8fa3",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "root_slope_map",
+          "kind": "process",
+          "claim": "正半轴上根号曲线上升而切线变平，正的导函数高度递减，近似读数一致",
+          "baseline_interval": [
+            274.366667,
+            327.466667
+          ],
+          "baseline_samples": [
+            {
+              "time": 284.987,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_284_987.jpg",
+              "frame_sha256": "0bdfc31cf3ea18bbe33bb3fa96e03ffe1dec8ddc04018d3112863553c6c5a1d7",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 300.917,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_300_917.jpg",
+              "frame_sha256": "4c53fb4617b3533e926292f162b3250ee2e8add733365df090294dbdfa7b153c",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 316.847,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_316_847.jpg",
+              "frame_sha256": "330fc0bf5259b752786b4cad88c67123d2e09352fa2353310f47e1a01c4d8fa3",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exponential",
+      "asset": "selected_visual_v005",
+      "function": "区分一般指数和e底指数的斜率关系",
+      "baseline_interval": [
+        327.466667,
+        388.9
+      ],
+      "features": [
+        {
+          "id": "exp_standard_limit",
+          "kind": "process",
+          "claim": "差商提出a^x，调用明确标注的标准极限ln a，区分一般底与e底",
+          "baseline_interval": [
+            327.466667,
+            388.9
+          ],
+          "baseline_samples": [
+            {
+              "time": 339.753,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_339_753.jpg",
+              "frame_sha256": "296bee12d01f29ba1788bc300d3b0456a735b72002504e9d0c1418b08fd93638",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 358.183,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_358_183.jpg",
+              "frame_sha256": "77caa9a8ba715f304286d08ec82eb579e7bc81688392b53bbf4c0bee9bc23faa",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 376.613,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_376_613.jpg",
+              "frame_sha256": "f28a224fe54ec344ddf1fb9d762b3eeecb4219f0219de2716479052a15eaf00d",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "exp_domain_sign",
+          "kind": "state",
+          "claim": "保留a>0、实数x、两类底数符号及当前v005已显示的a=1常数一导数零；标准极限明确是调用而非完整证明",
+          "baseline_interval": [
+            327.466667,
+            388.9
+          ],
+          "baseline_samples": [
+            {
+              "time": 339.753,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_339_753.jpg",
+              "frame_sha256": "296bee12d01f29ba1788bc300d3b0456a735b72002504e9d0c1418b08fd93638",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 358.183,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_358_183.jpg",
+              "frame_sha256": "77caa9a8ba715f304286d08ec82eb579e7bc81688392b53bbf4c0bee9bc23faa",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 376.613,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_376_613.jpg",
+              "frame_sha256": "f28a224fe54ec344ddf1fb9d762b3eeecb4219f0219de2716479052a15eaf00d",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "exp_value_slope",
+          "kind": "process",
+          "claim": "e^x原图函数值与导函数斜率同数值、同形状，同状态图数联动",
+          "baseline_interval": [
+            327.466667,
+            388.9
+          ],
+          "baseline_samples": [
+            {
+              "time": 339.753,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_339_753.jpg",
+              "frame_sha256": "296bee12d01f29ba1788bc300d3b0456a735b72002504e9d0c1418b08fd93638",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 358.183,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_358_183.jpg",
+              "frame_sha256": "77caa9a8ba715f304286d08ec82eb579e7bc81688392b53bbf4c0bee9bc23faa",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 376.613,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_376_613.jpg",
+              "frame_sha256": "f28a224fe54ec344ddf1fb9d762b3eeecb4219f0219de2716479052a15eaf00d",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "logarithm",
+      "asset": "selected_visual_v005",
+      "function": "从已建立的指数变化率解释自然对数斜率，并在差商中追踪固定底数系数",
+      "baseline_interval": [
+        388.9,
+        559.8
+      ],
+      "features": [
+        {
+          "id": "log_graph_slope",
+          "kind": "process",
+          "claim": "ln x递增变缓、切线斜率为正且递减，与1/x同横坐标高度及近似读数联动",
+          "baseline_interval": [
+            388.9,
+            559.8
+          ],
+          "baseline_samples": [
+            {
+              "time": 423.08,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_423_08.jpg",
+              "frame_sha256": "05f678db002053f8df695ac64766889b21f0c405d795690cfb3d8721cf858916",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 474.35,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_474_35.jpg",
+              "frame_sha256": "1dd255096fb0e884c4552429e1d99299683bc0b0807e21e13ff240b87132e9a1",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 525.62,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_525_62.jpg",
+              "frame_sha256": "51cde8f9e96f3f09579073cd6abfd58db87ea45c08b5dca3d7ff3e9aae7d94d1",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "log_family_domains",
+          "kind": "state",
+          "claim": "ln x导数1/x，一般底导数1/(x ln a)；x>0、a>0且a≠1，底大于1递增、底在0与1之间递减；修补缺桥而不删除这些结论",
+          "baseline_interval": [
+            388.9,
+            559.8
+          ],
+          "baseline_samples": [
+            {
+              "time": 423.08,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_423_08.jpg",
+              "frame_sha256": "05f678db002053f8df695ac64766889b21f0c405d795690cfb3d8721cf858916",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 474.35,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_474_35.jpg",
+              "frame_sha256": "1dd255096fb0e884c4552429e1d99299683bc0b0807e21e13ff240b87132e9a1",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 525.62,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_525_62.jpg",
+              "frame_sha256": "51cde8f9e96f3f09579073cd6abfd58db87ea45c08b5dca3d7ff3e9aae7d94d1",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "log_variables_domain",
+          "kind": "state",
+          "claim": "先建立 y=ln x 与 x=e^y；x>0、非零水平增量及变化后输入仍为正",
+          "baseline_interval": [
+            388.9,
+            559.8
+          ],
+          "baseline_samples": [
+            {
+              "time": 423.08,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_423_08.jpg",
+              "frame_sha256": "05f678db002053f8df695ac64766889b21f0c405d795690cfb3d8721cf858916",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 474.35,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_474_35.jpg",
+              "frame_sha256": "1dd255096fb0e884c4552429e1d99299683bc0b0807e21e13ff240b87132e9a1",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 525.62,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_525_62.jpg",
+              "frame_sha256": "51cde8f9e96f3f09579073cd6abfd58db87ea45c08b5dca3d7ff3e9aae7d94d1",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "log_increment_definition",
+          "kind": "state",
+          "claim": "同一对点的横竖增量对应 Δy=ln(x+Δx)-y 与 x+Δx=e^(y+Δy)",
+          "baseline_interval": [
+            388.9,
+            559.8
+          ],
+          "baseline_samples": [
+            {
+              "time": 423.08,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_423_08.jpg",
+              "frame_sha256": "05f678db002053f8df695ac64766889b21f0c405d795690cfb3d8721cf858916",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 474.35,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_474_35.jpg",
+              "frame_sha256": "1dd255096fb0e884c4552429e1d99299683bc0b0807e21e13ff240b87132e9a1",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 525.62,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_525_62.jpg",
+              "frame_sha256": "51cde8f9e96f3f09579073cd6abfd58db87ea45c08b5dca3d7ff3e9aae7d94d1",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "log_exact_exp_increment",
+          "kind": "process",
+          "claim": "新旧指数关系相减、提出 e^y 并代回 x，获得精确 Δx=x(e^Δy-1)，保留非零 Δy 的理由",
+          "baseline_interval": [
+            388.9,
+            559.8
+          ],
+          "baseline_samples": [
+            {
+              "time": 423.08,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_423_08.jpg",
+              "frame_sha256": "05f678db002053f8df695ac64766889b21f0c405d795690cfb3d8721cf858916",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 474.35,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_474_35.jpg",
+              "frame_sha256": "1dd255096fb0e884c4552429e1d99299683bc0b0807e21e13ff240b87132e9a1",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 525.62,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_525_62.jpg",
+              "frame_sha256": "51cde8f9e96f3f09579073cd6abfd58db87ea45c08b5dca3d7ff3e9aae7d94d1",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "log_linked_increment_motion",
+          "kind": "process",
+          "claim": "Δx 从0.8连续降至0.08；同状态驱动另一点、水平段、竖直段与近似读数，不把有限示例伪装成极限",
+          "baseline_interval": [
+            388.9,
+            559.8
+          ],
+          "baseline_samples": [
+            {
+              "time": 423.08,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_423_08.jpg",
+              "frame_sha256": "05f678db002053f8df695ac64766889b21f0c405d795690cfb3d8721cf858916",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 474.35,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_474_35.jpg",
+              "frame_sha256": "1dd255096fb0e884c4552429e1d99299683bc0b0807e21e13ff240b87132e9a1",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 525.62,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_525_62.jpg",
+              "frame_sha256": "51cde8f9e96f3f09579073cd6abfd58db87ea45c08b5dca3d7ff3e9aae7d94d1",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "log_exp_quotient_limit",
+          "kind": "process",
+          "claim": "由对数连续性连接两增量趋零，再用指数标准差商说明 Δx/Δy 趋近正数 x",
+          "baseline_interval": [
+            388.9,
+            559.8
+          ],
+          "baseline_samples": [
+            {
+              "time": 423.08,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_423_08.jpg",
+              "frame_sha256": "05f678db002053f8df695ac64766889b21f0c405d795690cfb3d8721cf858916",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 474.35,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_474_35.jpg",
+              "frame_sha256": "1dd255096fb0e884c4552429e1d99299683bc0b0807e21e13ff240b87132e9a1",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 525.62,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_525_62.jpg",
+              "frame_sha256": "51cde8f9e96f3f09579073cd6abfd58db87ea45c08b5dca3d7ff3e9aae7d94d1",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "log_positive_inverse_limit",
+          "kind": "process",
+          "claim": "保留正极限 x 才能取倒数的条件，从指数差商到 Δy/Δx→1/x，再得自然对数导数",
+          "baseline_interval": [
+            388.9,
+            559.8
+          ],
+          "baseline_samples": [
+            {
+              "time": 423.08,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_423_08.jpg",
+              "frame_sha256": "05f678db002053f8df695ac64766889b21f0c405d795690cfb3d8721cf858916",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 474.35,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_474_35.jpg",
+              "frame_sha256": "1dd255096fb0e884c4552429e1d99299683bc0b0807e21e13ff240b87132e9a1",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 525.62,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_525_62.jpg",
+              "frame_sha256": "51cde8f9e96f3f09579073cd6abfd58db87ea45c08b5dca3d7ff3e9aae7d94d1",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "log_fixed_base_definition",
+          "kind": "state",
+          "claim": "定义 z=log_a x=k ln x 和固定 k=1/ln a，保留 x>0、a>0、a≠1",
+          "baseline_interval": [
+            388.9,
+            559.8
+          ],
+          "baseline_samples": [
+            {
+              "time": 423.08,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_423_08.jpg",
+              "frame_sha256": "05f678db002053f8df695ac64766889b21f0c405d795690cfb3d8721cf858916",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 474.35,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_474_35.jpg",
+              "frame_sha256": "1dd255096fb0e884c4552429e1d99299683bc0b0807e21e13ff240b87132e9a1",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 525.62,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_525_62.jpg",
+              "frame_sha256": "51cde8f9e96f3f09579073cd6abfd58db87ea45c08b5dca3d7ff3e9aae7d94d1",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "log_fixed_base_increment",
+          "kind": "process",
+          "claim": "变化前后均乘同一 k，完整相减行导出 Δz=kΔy，不直接跳到结论",
+          "baseline_interval": [
+            388.9,
+            559.8
+          ],
+          "baseline_samples": [
+            {
+              "time": 423.08,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_423_08.jpg",
+              "frame_sha256": "05f678db002053f8df695ac64766889b21f0c405d795690cfb3d8721cf858916",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 474.35,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_474_35.jpg",
+              "frame_sha256": "1dd255096fb0e884c4552429e1d99299683bc0b0807e21e13ff240b87132e9a1",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 525.62,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_525_62.jpg",
+              "frame_sha256": "51cde8f9e96f3f09579073cd6abfd58db87ea45c08b5dca3d7ff3e9aae7d94d1",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "log_fixed_base_quotient",
+          "kind": "process",
+          "claim": "在 Δz/Δx=kΔy/Δx 中追踪固定 k 到极限 k/x，再替回1/ln a",
+          "baseline_interval": [
+            388.9,
+            559.8
+          ],
+          "baseline_samples": [
+            {
+              "time": 423.08,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_423_08.jpg",
+              "frame_sha256": "05f678db002053f8df695ac64766889b21f0c405d795690cfb3d8721cf858916",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 474.35,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_474_35.jpg",
+              "frame_sha256": "1dd255096fb0e884c4552429e1d99299683bc0b0807e21e13ff240b87132e9a1",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 525.62,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_525_62.jpg",
+              "frame_sha256": "51cde8f9e96f3f09579073cd6abfd58db87ea45c08b5dca3d7ff3e9aae7d94d1",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "log_base_transfer_sign",
+          "kind": "state",
+          "claim": "保留一般底导数与 a=2,x=2 的1/(2ln2)迁移例，ln2在分母，并列两类底数的斜率符号",
+          "baseline_interval": [
+            388.9,
+            559.8
+          ],
+          "baseline_samples": [
+            {
+              "time": 423.08,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_423_08.jpg",
+              "frame_sha256": "05f678db002053f8df695ac64766889b21f0c405d795690cfb3d8721cf858916",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 474.35,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_474_35.jpg",
+              "frame_sha256": "1dd255096fb0e884c4552429e1d99299683bc0b0807e21e13ff240b87132e9a1",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 525.62,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_525_62.jpg",
+              "frame_sha256": "51cde8f9e96f3f09579073cd6abfd58db87ea45c08b5dca3d7ff3e9aae7d94d1",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sine",
+      "asset": "selected_visual_v005",
+      "function": "从斜率正负和峰谷联系到cos而非背表",
+      "baseline_interval": [
+        559.8,
+        601.233333
+      ],
+      "features": [
+        {
+          "id": "sine_standard_limits",
+          "kind": "state",
+          "claim": "正弦和角差商及两个弧度标准极限明确调用，不以示意图冒充极限证明",
+          "baseline_interval": [
+            559.8,
+            601.233333
+          ],
+          "baseline_samples": [
+            {
+              "time": 568.087,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_568_087.jpg",
+              "frame_sha256": "6b4cc5908590957d2a01422474b6473bf744f58e83c4b1321a0c3f1de60e9ac7",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 580.517,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_580_517.jpg",
+              "frame_sha256": "b60c063d0601a238f10f122edec9d42989f91ee74fd1bcfc1080c0c827d72008",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 592.947,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_592_947.jpg",
+              "frame_sha256": "15e6370c6a9f60a13b86fb299fdbc1209795660151ba0a03c5ece85dbc6ff551",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "sine_cycle",
+          "kind": "process",
+          "claim": "一周中上穿、峰顶水平、下穿及继续一周，与cos高度和近似斜率读数对应",
+          "baseline_interval": [
+            559.8,
+            601.233333
+          ],
+          "baseline_samples": [
+            {
+              "time": 568.087,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_568_087.jpg",
+              "frame_sha256": "6b4cc5908590957d2a01422474b6473bf744f58e83c4b1321a0c3f1de60e9ac7",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 580.517,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_580_517.jpg",
+              "frame_sha256": "b60c063d0601a238f10f122edec9d42989f91ee74fd1bcfc1080c0c827d72008",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 592.947,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_592_947.jpg",
+              "frame_sha256": "15e6370c6a9f60a13b86fb299fdbc1209795660151ba0a03c5ece85dbc6ff551",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "sine_domain_radians",
+          "kind": "state",
+          "claim": "(sin x)'=cos x；实数域、弧度条件",
+          "baseline_interval": [
+            559.8,
+            601.233333
+          ],
+          "baseline_samples": [
+            {
+              "time": 568.087,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_568_087.jpg",
+              "frame_sha256": "6b4cc5908590957d2a01422474b6473bf744f58e83c4b1321a0c3f1de60e9ac7",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 580.517,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_580_517.jpg",
+              "frame_sha256": "b60c063d0601a238f10f122edec9d42989f91ee74fd1bcfc1080c0c827d72008",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 592.947,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_592_947.jpg",
+              "frame_sha256": "15e6370c6a9f60a13b86fb299fdbc1209795660151ba0a03c5ece85dbc6ff551",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cosine",
+      "asset": "selected_visual_v005",
+      "function": "解释负号对应下降半周与上升半周",
+      "baseline_interval": [
+        601.233333,
+        631.633333
+      ],
+      "features": [
+        {
+          "id": "cosine_cycle",
+          "kind": "process",
+          "claim": "从峰顶下降、谷底水平再上升的一周，与-sin x斜率正负及近似读数对应",
+          "baseline_interval": [
+            601.233333,
+            631.633333
+          ],
+          "baseline_samples": [
+            {
+              "time": 607.313,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_607_313.jpg",
+              "frame_sha256": "b916d2e9677306832120325f1dfaaeba8783a8c3c5fad3051bf2831ea16481ea",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 616.433,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_616_433.jpg",
+              "frame_sha256": "0d2911434cec6146b7fe08d1181157b6a8599a521a7403f7bed197d47df5719f",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 625.553,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_625_553.jpg",
+              "frame_sha256": "19acd2f87e202e452e0a2f0dc44a5888d93661a493fdbc741e66dde050d380ca",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        },
+        {
+          "id": "cosine_domain_sign",
+          "kind": "state",
+          "claim": "(cos x)'=-sin x；实数域、弧度条件；两个半周的导数符号说明",
+          "baseline_interval": [
+            601.233333,
+            631.633333
+          ],
+          "baseline_samples": [
+            {
+              "time": 607.313,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_607_313.jpg",
+              "frame_sha256": "b916d2e9677306832120325f1dfaaeba8783a8c3c5fad3051bf2831ea16481ea",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 616.433,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_616_433.jpg",
+              "frame_sha256": "0d2911434cec6146b7fe08d1181157b6a8599a521a7403f7bed197d47df5719f",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 625.553,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_625_553.jpg",
+              "frame_sha256": "19acd2f87e202e452e0a2f0dc44a5888d93661a493fdbc741e66dde050d380ca",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "closing",
+      "asset": "selected_visual_v005",
+      "function": "为组合函数求导留下真实问题",
+      "baseline_interval": [
+        631.633333,
+        654.033333
+      ],
+      "features": [
+        {
+          "id": "summary_handoff",
+          "kind": "state",
+          "claim": "导函数记录每个位置的斜率，公式带适用条件，乘积和商留作下一课真实问题",
+          "baseline_interval": [
+            631.633333,
+            654.033333
+          ],
+          "baseline_samples": [
+            {
+              "time": 636.113,
+              "phase": "before",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_636_113.jpg",
+              "frame_sha256": "7b7283a6a234aad085f979ed05e6c574441260619df264514437b2bafd127804",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 642.833,
+              "phase": "during",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_642_833.jpg",
+              "frame_sha256": "fd91682656bc473fd2dcff04bd64de7646023796b2907af58b8914bd86dfb7aa",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            },
+            {
+              "time": 649.553,
+              "phase": "after",
+              "frame": "/Users/pengweitai/Projects/ManiMind/outputs/math-derivative-ch02-basics-20261102/visual-v005/frames/frame_649_553.jpg",
+              "frame_sha256": "fd91682656bc473fd2dcff04bd64de7646023796b2907af58b8914bd86dfb7aa",
+              "source": "Current selected v005 review index; author inventory, not approval"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

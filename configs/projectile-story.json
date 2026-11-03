@@ -1,0 +1,117 @@
+{
+  "project_id": "projectile-story-20261020",
+  "title": "飞得更快，会落得更晚吗？",
+  "audience": "已接触速度与重力的高中学生",
+  "learning_goal": "能解释同高度水平抛出、忽略空气阻力时，横向初速度改变射程但不改变落地时间，并能预测改变高度后的结果。",
+  "authoring": "Codex-directed original pilot with a separate Manim worker and independent reviewer; not an isolated model comparison.",
+  "scene": "examples/projectile_story.py",
+  "scene_class": "ProjectileStory",
+  "render_config": "configs/projectile-story-manimgl.yml",
+  "dependencies": ["src/manimind/components/typography.py", "src/manimind/components/catalog.py"],
+  "fps": 30,
+  "voice": "zh-CN-YunxiNeural",
+  "speech_rate": "+2%",
+  "facts": {
+    "source": "https://openstax.org/books/physics/pages/5-3-projectile-motion",
+    "model": "A point projectile in a uniform vertical gravitational field, no air resistance, initial vertical velocity zero.",
+    "coordinates": "Launch at (0,h), receiving plane y=0, positive y upwards.",
+    "position": "x=vx*t; y=h-g*t*t/2",
+    "acceleration": "ax=0; ay=-g",
+    "landing_time": "T=sqrt(2*h/g)",
+    "range": "R=vx*T",
+    "example": {"h_m": 5, "g_m_s2": 10, "vx_m_s": [3, 6], "T_s": 1, "R_m": [3, 6]},
+    "transfer": {"h_m": 20, "vx_m_s": 6, "T_s": 2, "R_m": 12},
+    "limits": ["g=10 m/s^2 is a teaching approximation", "No air drag", "Same initial height and vertical velocity for the two-ball comparison", "Ball centre represents the model point", "Displayed slow motion must use one shared physical clock"]
+  },
+  "cues": [
+    {
+      "id": "mission",
+      "heading": "送到对面",
+      "subtitle_lines": ["把探测球送进对面的接收区。", "发射台高五米，球只能水平射出。"],
+      "spoken": "把这颗探测球，送进对面的接收区。发射台高五米，球只能水平射出。",
+      "visual": "建立原创探测器、水平发射台与下方接收区。先让人看懂目标。",
+      "min_duration": 8
+    },
+    {
+      "id": "first_try",
+      "heading": "差在哪里？",
+      "subtitle_lines": ["先用每秒三米。还没到接收区，球就落地了。", "要够到目标，你会改什么？"],
+      "spoken": "先用每秒三米。还没到接收区，球就落地了。要够到目标，你会改什么？",
+      "visual": "水平发射，物理一秒后落在三米处，留下可对照的落点；操作角色作出反应。",
+      "min_duration": 9
+    },
+    {
+      "id": "faster",
+      "heading": "速度加倍",
+      "subtitle_lines": ["加到每秒六米。接住了！", "提高速度，确实能把球送得更远。"],
+      "spoken": "加到每秒六米。接住了！提高速度，确实能把球送得更远。",
+      "visual": "同样水平发射，物理一秒后落在六米接收区；与旧落点建立关系。",
+      "min_duration": 8
+    },
+    {
+      "id": "question",
+      "heading": "也飞得更久吗？",
+      "subtitle_lines": ["横着飞得快，", "是否就能在空中多待一会儿？"],
+      "spoken": "但等等。横着飞得快，是否就能在空中多待一会儿？先别急着回答。",
+      "visual": "给观众形成预测的停顿；不提前显示结论。",
+      "tail": 2.5,
+      "min_duration": 8
+    },
+    {
+      "id": "compare",
+      "heading": "让两次尝试同时发生",
+      "subtitle_lines": ["两颗球，同时从同一高度水平发射。", "画面慢放，时钟显示实际经过的时间。"],
+      "spoken": "把两次发射放在一起，同时从同一高度出发。画面慢放，时钟显示的是实际经过的时间。",
+      "visual": "不同颜色的球共用同一个物理时间，两种横速同高度同步落地；数值标注与球对应。",
+      "min_duration": 11
+    },
+    {
+      "id": "freeze",
+      "heading": "只看同一时刻",
+      "subtitle_lines": ["再停在半秒看：一前一后，高度却一样。", "横向拉开了距离，下落的进度没有变。"],
+      "spoken": "再停在半秒看。它们一前一后，高度却一样。横向拉开了距离，竖直下落的进度没有变。",
+      "visual": "回到t=0.5s，水平连线连接同高球，展示x=1.5/3m，y=3.75m，保持阅读。",
+      "min_duration": 11
+    },
+    {
+      "id": "horizontal",
+      "heading": "向前，不需要一直推",
+      "subtitle_lines": ["离开发射台后，忽略空气阻力，横向没有合力。", "球保持原有的横向速度，匀速前进。"],
+      "spoken": "为什么？离开发射台后，如果忽略空气阻力，水平方向没有力继续推它。它靠已有的速度，匀速前进。",
+      "visual": "揭示水平速度与合力不同。速度箭头向右但不能误标为力；等时水平间距保持。",
+      "min_duration": 12
+    },
+    {
+      "id": "gravity",
+      "heading": "下落，由竖直条件决定",
+      "subtitle_lines": ["竖直初速度都为零，重力加速度也相同。", "所以每一刻，下落的距离都一样。"],
+      "spoken": "竖直方向，两颗球的初速度都为零，又受到相同的重力加速度。所以每一刻，下落的距离都一样。",
+      "visual": "向下加速度g箭头，两个轨迹的竖直投影重合；重力不会因横速大而消失。",
+      "min_duration": 12
+    },
+    {
+      "id": "calculation",
+      "heading": "落地时间里，没有横向速度",
+      "subtitle_lines": ["五米＝½ × 十 × 落地时间的平方。", "算出来，两次都是一秒。"],
+      "spoken": "把竖直下落单独拿出来。五米，等于二分之一乘十，再乘落地时间的平方。算出来，两次都是一秒。",
+      "visual": "从竖直落下h对应到h=1/2 gT²，得T=sqrt(2h/g)=1s，再联系R=vx T。变量贴近图形，保留条件。",
+      "min_duration": 13
+    },
+    {
+      "id": "transfer",
+      "heading": "换一个条件试试",
+      "subtitle_lines": ["高度变成四倍，落地时间变成两倍。", "横向速度不变，射程也变成两倍。"],
+      "spoken": "如果把发射高度增到四倍呢？时间不是四倍，而是两倍。横向速度不变，它也就能飞到两倍远。",
+      "visual": "20m水平发射，标明新视图尺度；T=2s，vx=6m/s，R=12m。保留对照。",
+      "min_duration": 12
+    },
+    {
+      "id": "payoff",
+      "heading": "知道规则，才知道该改什么",
+      "subtitle_lines": ["横向速度决定这段时间能前进多远。", "竖直条件决定什么时候落地。"],
+      "spoken": "现在知道该调什么了。想飞得更远，可以提高横向速度。想让它待得更久，就要改变竖直方向的条件。",
+      "visual": "回到任务的成功送达与简洁总结，最后给结论充分停留。不要额外添加无关科幻内容。",
+      "min_duration": 11
+    }
+  ]
+}

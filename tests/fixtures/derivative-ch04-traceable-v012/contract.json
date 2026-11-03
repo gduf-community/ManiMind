@@ -1,0 +1,531 @@
+{
+  "schema_version": 1,
+  "status": "not_reviewed",
+  "project_id": "math-derivative-ch04-chain-20261102",
+  "author_agent": "01a19f6b-1725-7be3-a4d8-bf988a308b31",
+  "author_context": "01a19f6b-1725-7be3-a4d8-bf988a308b31",
+  "writer": "01a19f6b-1725-7be3-a4d8-bf988a308b31",
+  "consumers": [
+    "main",
+    "native tests",
+    "independent first-look reviewer",
+    "independent regression reviewer"
+  ],
+  "lifecycle": "New one-change state-role repair after actual visual-v011 B1; no GL or approval",
+  "invalidation": "Source, selected baseline, geometry, clock, narration, WAV or scope changes require a new version",
+  "assets": {
+    "visual_v005": {
+      "path": "outputs/math-derivative-ch04-chain-20261102/visual-v005/manim/media/manimgl/understanding.mp4",
+      "sha256": "b78719bc62b6aec2729d5baa68060f44bd5fd7d32c8b5f9af6408e2c1306818c",
+      "duration": 348.033333333
+    }
+  },
+  "units": [
+    {
+      "id": "opening",
+      "asset": "visual_v005",
+      "baseline_interval": [
+        0,
+        24.3
+      ],
+      "function": "标题定位，并以平方加一再立方承接前课求导四则",
+      "features": [
+        {
+          "id": "title_order",
+          "kind": "state",
+          "claim": "保留标题、复合表达式和先后运算顺序",
+          "baseline_interval": [
+            0,
+            24.3
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "nonlinear_scope",
+          "kind": "state",
+          "claim": "前五段明确非线性内层拓展，后段回到线性内层核心",
+          "baseline_interval": [
+            0,
+            24.3
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "two-stages",
+      "asset": "visual_v005",
+      "baseline_interval": [
+        24.3,
+        60.766666666666666
+      ],
+      "function": "同一内部表达式经命名连接输入与输出",
+      "features": [
+        {
+          "id": "extract_inner",
+          "kind": "process",
+          "claim": "原式中的整个x²+1实际搬出；旧版落地后另显u定义，保留整块身份并改为原位命名",
+          "baseline_interval": [
+            24.3,
+            60.766666666666666
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "two_levels",
+          "kind": "state",
+          "claim": "u=x²+1与y=u³通过箭头连接，同一u承接两层",
+          "baseline_interval": [
+            24.3,
+            60.766666666666666
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "base_values",
+          "kind": "process",
+          "claim": "从两层表达式推进到x=1,u=2,y=8的对应关系",
+          "baseline_interval": [
+            24.3,
+            60.766666666666666
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "u_bridge",
+          "kind": "state",
+          "claim": "中间量既是前一步输出又是后一步输入",
+          "baseline_interval": [
+            24.3,
+            60.766666666666666
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "one-change",
+      "asset": "visual_v005",
+      "baseline_interval": [
+        60.766666667,
+        100.26666666700001
+      ],
+      "function": "同一次输入改变按x、u、y顺序传递并保留增量",
+      "features": [
+        {
+          "id": "input_motion",
+          "kind": "process",
+          "claim": "x从1到1.1时u=2,y=8保持；随后显示Δx=0.1",
+          "baseline_interval": [
+            60.766666667,
+            100.26666666700001
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "inner_motion",
+          "kind": "process",
+          "claim": "x完成后u从2到2.21，y仍8；随后显示Δu=0.21",
+          "baseline_interval": [
+            60.766666667,
+            100.26666666700001
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "outer_motion",
+          "kind": "process",
+          "claim": "u完成后y从8到10.793861；不得提前标已传递完成",
+          "baseline_interval": [
+            60.766666667,
+            100.26666666700001
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "complete_increments",
+          "kind": "state",
+          "claim": "三个终值与Δx=.1,Δu=.21,Δy=2.793861支持总结",
+          "baseline_interval": [
+            60.766666667,
+            100.26666666700001
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "complete_phase_referents",
+          "kind": "process",
+          "claim": "每个变化过程包含初值、运动和终值，增量标签在相应focus结束前可见，阶段不重叠",
+          "baseline_interval": [
+            60.766666667,
+            100.26666666700001
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ratios",
+      "asset": "visual_v005",
+      "baseline_interval": [
+        100.266666667,
+        154.666666667
+      ],
+      "function": "以非零增量差商桥梁解释变化率乘积",
+      "features": [
+        {
+          "id": "quotient_identity",
+          "kind": "state",
+          "claim": "Δy/Δx=(Δy/Δu)(Δu/Δx)，两层分子分母身份一致",
+          "baseline_interval": [
+            100.266666667,
+            154.666666667
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "nonzero_h",
+          "kind": "state",
+          "claim": "x=1、0<|h|<1、Δx=h及Δu=h(2+h)≠0保证分解可用",
+          "baseline_interval": [
+            100.266666667,
+            154.666666667
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "three_ratios_converge",
+          "kind": "process",
+          "claim": "h=.1,.01,.001三行依次出现，内层趋2外层趋12总比值趋24",
+          "baseline_interval": [
+            100.266666667,
+            154.666666667
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "limit_product",
+          "kind": "state",
+          "claim": "2×12=24与实际有限比值对照，不用最终24替代三行过程",
+          "baseline_interval": [
+            100.266666667,
+            154.666666667
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rule",
+      "asset": "visual_v005",
+      "baseline_interval": [
+        154.666666667,
+        226.83333333366664
+      ],
+      "function": "对应点可导条件与具体精确增量支持一般链式法则",
+      "features": [
+        {
+          "id": "differentiability",
+          "kind": "state",
+          "claim": "内层在x、外层在u=g(x)处可导；外层导数在当前u计算",
+          "baseline_interval": [
+            154.666666667,
+            226.83333333366664
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "outer_times_inner",
+          "kind": "state",
+          "claim": "y'=f'(u)g'(x)，保留通用结论，不以非零Δu分解冒充完整证明",
+          "baseline_interval": [
+            154.666666667,
+            226.83333333366664
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "exact_remainders",
+          "kind": "state",
+          "claim": "Δu=2h+h²及Δy=12Δu+6(Δu)²+(Δu)³，高次项除以h趋零",
+          "baseline_interval": [
+            154.666666667,
+            226.83333333366664
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "example_to_24",
+          "kind": "process",
+          "claim": "由精确增量依据推进到3(x²+1)²·2x与y'(1)=24",
+          "baseline_interval": [
+            154.666666667,
+            226.83333333366664
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "linear-inner",
+      "asset": "visual_v005",
+      "baseline_interval": [
+        226.833333333,
+        267.133333333
+      ],
+      "function": "线性内层核心与常数特例",
+      "features": [
+        {
+          "id": "linear_factor",
+          "kind": "process",
+          "claim": "保留u=ax+b、Δu=aΔx、f'(ax+b)·a及b相消的完整理由；旧版为阶段显现，不声称已有有源代入",
+          "baseline_interval": [
+            226.833333333,
+            267.133333333
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "zero_a",
+          "kind": "state",
+          "claim": "a=0只要求f(b)有定义，输出常数导数0，不要求未必存在的f'(b)",
+          "baseline_interval": [
+            226.833333333,
+            267.133333333
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "practice",
+      "asset": "visual_v005",
+      "baseline_interval": [
+        267.133333333,
+        312.533333333
+      ],
+      "function": "用(3x-1)^4迁移内外层识别、回代和相乘",
+      "features": [
+        {
+          "id": "inner_outer_product",
+          "kind": "process",
+          "claim": "保留内层3x−1及导数3、外层4u³、回代乘3和12(3x−1)³；旧版结果淡入不是有源代入",
+          "baseline_interval": [
+            267.133333333,
+            312.533333333
+          ],
+          "required_current_evidence": [
+            "before",
+            "during",
+            "after"
+          ]
+        },
+        {
+          "id": "all_reals",
+          "kind": "state",
+          "claim": "两层为多项式全实数可导，保留整个3x-1与因子3的解释",
+          "baseline_interval": [
+            267.133333333,
+            312.533333333
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "root_log_domain_examples",
+          "kind": "state",
+          "claim": "保留v003根式函数定义域与有限导数的不同边界，以及对数复合的导数和定义域",
+          "baseline_interval": [
+            267.133333333,
+            312.533333333
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "handoff",
+      "asset": "visual_v005",
+      "baseline_interval": [
+        312.533333333,
+        348.033333333
+      ],
+      "function": "闭合两级变化率并交给第05课区间增长问题",
+      "features": [
+        {
+          "id": "summary",
+          "kind": "state",
+          "claim": "x→u→y及y'=f'(u)u'与变化率乘积说明",
+          "baseline_interval": [
+            312.533333333,
+            348.033333333
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        },
+        {
+          "id": "next_lesson",
+          "kind": "state",
+          "claim": "从已求导数走向导数符号与区间增长，不偷换成单点判区间",
+          "baseline_interval": [
+            312.533333333,
+            348.033333333
+          ],
+          "required_current_evidence": [
+            "state"
+          ]
+        }
+      ]
+    }
+  ],
+  "evidence_boundary": "Selected actual visual-v005. Full original teaching content retained; new movement goals separately declared. Independent pixel comparison pending.",
+  "additional_candidate_requirements": {
+    "baseline_claim": "New movement goals, not claimed as baseline movement",
+    "formula_transitions": [
+      {
+        "id": "name_inner",
+        "operation": "name",
+        "source": "(x^2+1) in the original composite",
+        "target": "u=x^2+1",
+        "purpose": "Keep the landed whole inner expression while naming it"
+      },
+      {
+        "id": "split_ratio",
+        "operation": "factor",
+        "source": "Delta y/Delta x and a new nonzero Delta u",
+        "target": "(Delta y/Delta u)(Delta u/Delta x)",
+        "purpose": "Insert the same intermediate increment in two distinct roles"
+      },
+      {
+        "id": "multiply_rates",
+        "operation": "multiply",
+        "source": "f'(u) and g'(x), at corresponding inputs",
+        "target": "y'=f'(u)g'(x)",
+        "purpose": "Assemble the two rates without inventing a general proof from nonzero increments"
+      },
+      {
+        "id": "example_substitution",
+        "operation": "substitute",
+        "source": "3u^2, u=x^2+1, and 2x",
+        "target": "3(x^2+1)^2 times 2x",
+        "purpose": "Substitute the whole inner expression then multiply the inner rate"
+      },
+      {
+        "id": "linear_increment",
+        "operation": "subtract",
+        "source": "a(x+Delta x)+b-(ax+b), expanded into ax+a Delta x+b-ax-b",
+        "target": "a Delta x",
+        "purpose": "Distribute both states, cancel the opposite ax and b pairs; move the surviving entire a Delta x without a whole-line morph"
+      },
+      {
+        "id": "linear_substitution",
+        "operation": "substitute",
+        "source": "ax+b and the a in Delta u=a Delta x",
+        "target": "f'(ax+b) times a",
+        "purpose": "Separate whole-input substitution from the inner rate; a=0 handled independently"
+      },
+      {
+        "id": "practice_substitution",
+        "operation": "substitute",
+        "source": "4u^3, u=3x-1, u'=3",
+        "target": "4(3x-1)^3 times 3",
+        "purpose": "Keep 3x-1 intact and bring the rate from its different source"
+      },
+      {
+        "id": "practice_collect",
+        "operation": "collect_constants",
+        "source": "4(3x-1)^3 times 3, with a reserved two-digit coefficient slot",
+        "target": "12(3x-1)^3 with the exact same lhs and entire factor glyph geometry",
+        "purpose": "Only 4, the multiplication sign, and the external 3 leave; only 12 enters. No whole-row or factor morph during finalization"
+      },
+      {
+        "id": "example_point_scope",
+        "operation": "bind",
+        "source": "u=g(x), y=f(u) and their general derivative",
+        "target": "u=x^2+1, y=u^3, x=1,u=2, Delta x=h before the exact increment identities",
+        "purpose": "Establish the specific functions and base point before numerical coefficients 2,12,6 appear"
+      },
+      {
+        "id": "example_variable_scope",
+        "operation": "change_scope",
+        "source": "The example at x=1,u=2 and its exact increments",
+        "target": "The same polynomial functions at any real x, then a separately labeled evaluation at x=1",
+        "purpose": "Clear the point-only scope before using variable x; do not generalize its numerical coefficients"
+      }
+    ],
+    "narration_changed": false,
+    "example_scope": "Bind functions and x=1,u=2 before exact numerical increment identities; clear them before variable x",
+    "collection": "Stable whole factor and lhs through late finalization and cleanup, not only an early middle frame; no simultaneous readable new 12 and old external factors",
+    "numeric_state_roles": {
+      "id": "numeric_state_transfer",
+      "operation": "stage_state",
+      "source": "Labeled base x0=1,u0=2,y0=8 and staged input change",
+      "target": "Ready new triple x=1.1,u=2.21,y=10.793861 with all three increments",
+      "purpose": "Do not assert pending or interpolated computation counters as one simultaneous functional state; preserve base history and staged propagation"
+    }
+  }
+}

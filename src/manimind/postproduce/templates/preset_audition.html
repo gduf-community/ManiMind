@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>中文预设音色试听</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f6f7f8;color:#202526;font:15px/1.55 system-ui,-apple-system,sans-serif;letter-spacing:0}main{max-width:1120px;margin:auto;padding:32px 24px 56px}h1{font-size:26px;margin:0 0 4px}h2{font-size:18px;margin:26px 0 12px}h1,h2,.meta,footer{overflow-wrap:anywhere}.meta{color:#626d71;font-size:13px}.description{margin-top:6px}.script{border-left:3px solid #30776b;padding:8px 18px;background:#fff;margin:22px 0;max-width:900px}.toolbar{display:flex;align-items:center;flex-wrap:wrap;gap:12px 20px;padding:14px 0;border-block:1px solid #dce1e3}button,select{font:inherit;padding:7px 12px;border:1px solid #bac6c8;border-radius:4px;background:#fff;color:inherit;cursor:pointer}button.primary{background:#256b5c;border-color:#256b5c;color:#fff}label{display:inline-flex;align-items:center;gap:7px}input{accent-color:#256b5c}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.voice{border:1px solid #d8dfe0;border-radius:6px;background:#fff;padding:15px;min-width:0}.voice:has(input:checked){border-color:#256b5c;background:#f2faf7}.voice.playing{outline:2px solid #9b4654;outline-offset:1px}.name{display:flex;gap:10px;align-items:center;justify-content:space-between;min-height:34px}.name h3{font-size:17px;margin:0;overflow-wrap:anywhere}.number{color:#9b4654;font-size:12px;margin-right:6px}audio{width:100%;height:42px;display:block;margin:12px 0}.bottom{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:13px}a{color:#256b5c}#selection{margin-left:auto;font-variant-numeric:tabular-nums}#now{min-height:24px;margin:14px 0;color:#9b4654;font-size:13px}footer{margin-top:28px;color:#626d71;font-size:13px}[hidden]{display:none!important}@media(max-width:850px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){main{padding:22px 16px 40px}.grid{grid-template-columns:minmax(0,1fr)}h1{font-size:23px}#selection{margin-left:0}}
+</style>
+<main>
+<h1>中文预设音色试听</h1>
+<div class="meta" id="subtitle"></div>
+<div class="meta" id="design-note" hidden>声线描述仅为设计目标，实际听感以试听为准。</div>
+<p class="script" id="script"></p>
+<div class="toolbar">
+<label>筛选 <select id="filter"><option value="all">全部音色</option><option value="minimal">仅极简女声</option><option value="design">仅设计声线</option><option value="fixed">仅固定预设</option><option value="女声">女声</option><option value="男声">男声</option><option value="dialect">方言口音</option><option value="picked">已选音色</option></select></label>
+<label><input type="checkbox" id="level" checked>统一试听音量</label>
+<button class="primary" id="sequence">连续试听</button><button id="stop">停止</button>
+<button id="export">导出选择</button><span id="selection">已选 0 款</span>
+</div>
+<div id="now" aria-live="polite"></div>
+<div id="groups"></div>
+<footer id="footer">原始 WAV、参数与来源收据均随包保留。试听选择不代表整片配音或商业声音授权已通过。</footer>
+</main>
+<script id="data" type="application/json">__AUDITION_DATA__</script>
+<script>
+const data=JSON.parse(document.getElementById('data').textContent);
+const defaultGroups=[
+ {id:'minimal',title:'VoiceDesign 极简女声',detail:''},
+ {id:'design',title:'VoiceDesign 设计声线',detail:''},
+ {id:'qwen',title:'Qwen3-TTS',detail:'1.7B · 5 款'},
+ {id:'kokoro',title:'Kokoro',detail:'82M v1.0 · 8 款'}
+];
+function groupFor(item){return item.group||(Number(item.id)<=5?'qwen':'kokoro')}
+function isDesign(item){return item.kind==='design'||groupFor(item)==='design'}
+function groupPriority(group){return group.priority??(group.id==='design'?1:2)}
+// Group views are derived once from this manifest; reloading invalidates them.
+const groupIds=new Set(data.candidates.map(groupFor));
+const groups=(data.groups??defaultGroups).filter(group=>groupIds.has(group.id));
+for(const id of groupIds)if(!groups.some(group=>group.id===id))groups.push(defaultGroups.find(group=>group.id===id)||{id,title:id,detail:''});
+// Equal priorities retain their manifest order through stable sorting.
+groups.sort((a,b)=>groupPriority(a)-groupPriority(b));
+const groupViews=new Map();
+for(const group of groups){
+ const section=document.createElement('section');section.dataset.group=group.id;
+ const heading=document.createElement('h2'),detail=document.createElement('span');detail.className='meta';detail.textContent=group.detail??'';heading.append(document.createTextNode(`${group.title} `),detail);
+ const grid=document.createElement('div');grid.className='grid';grid.id=group.id;
+ section.append(heading,grid);document.getElementById('groups').append(section);groupViews.set(group.id,{section,grid});
+}
+// Selection and queues are page-local; controls clear queues and reload clears all.
+const picked=new Set(), players=[], cards=[];let queue=[], queueIndex=-1;
+document.title=data.title??'中文预设音色试听';
+document.querySelector('h1').textContent=document.title;
+document.getElementById('subtitle').textContent=data.subtitle??`本地生成 · 同文 · ${data.candidates.length} 款`;
+if(data.footer!=null)document.getElementById('footer').textContent=data.footer;
+document.getElementById('design-note').hidden=!data.candidates.some(item=>isDesign(item)||item.description);
+document.getElementById('script').textContent=data.request.input;
+for(const item of groups.flatMap(group=>data.candidates.filter(item=>groupFor(item)===group.id))){
+ const card=document.createElement('article');card.className='voice';card.dataset.id=item.id;card.dataset.group=groupFor(item);
+ const heading=document.createElement('div');heading.className='name';
+ const name=document.createElement('h3'),number=document.createElement('span');number.className='number';number.textContent=item.id;name.append(number,document.createTextNode(item.voice));heading.append(name);
+ const meta=document.createElement('div');meta.className='meta';meta.textContent=`${item.gender} · ${item.dialect} · ${item.duration_seconds.toFixed(1)} 秒`;
+ const audio=document.createElement('audio');audio.controls=true;audio.preload='metadata';audio.src=item.listening;audio.setAttribute('aria-label',`${item.id} ${item.voice} 试听`);
+ const bottom=document.createElement('div');bottom.className='bottom';
+ const label=document.createElement('label'),check=document.createElement('input');check.type='checkbox';check.setAttribute('aria-label',`选择 ${item.voice}`);label.append(check,document.createTextNode('加入候选'));
+ check.onchange=()=>{stop();check.checked?picked.add(item.id):picked.delete(item.id);document.getElementById('selection').textContent=`已选 ${picked.size} 款`;filterCards()};
+ const link=document.createElement('a');link.href=item.raw;link.download=`${item.id}-${item.voice}.wav`;link.textContent='原始 WAV';bottom.append(label,link);
+ card.append(heading,meta);
+ if(item.description){const description=document.createElement('div');description.className='meta description';description.textContent=`声线目标：${item.description}`;card.append(description)}
+ card.append(audio,bottom);groupViews.get(groupFor(item)).grid.append(card);
+ audio.onplay=()=>{if(queue[queueIndex]!==audio){queue=[];queueIndex=-1}for(const other of players)if(other.audio!==audio)other.audio.pause();for(const entry of cards)entry.card.classList.remove('playing');card.classList.add('playing');document.getElementById('now').textContent=`正在试听 ${item.id} · ${item.voice}`};
+ audio.onpause=()=>card.classList.remove('playing');
+ audio.onended=()=>{card.classList.remove('playing');if(queue[queueIndex]===audio){queueIndex++;if(queueIndex<queue.length)play(queue[queueIndex]);else document.getElementById('now').textContent='连续试听结束'}};
+ audio.onerror=()=>{document.getElementById('now').textContent=`${item.id} 音频暂时无法播放，请打开对应的原始 WAV`};
+ players.push({audio,item,card});cards.push({card,item});
+}
+function filterCards(){
+ const v=document.getElementById('filter').value;
+ for(const {card,item}of cards)card.hidden=!(v==='all'||v===item.gender||v==='minimal'&&groupFor(item)==='minimal'||v==='design'&&isDesign(item)||v==='fixed'&&['qwen','kokoro'].includes(groupFor(item))||v==='dialect'&&item.dialect!=='普通话'||v==='picked'&&picked.has(item.id));
+ for(const {section,grid}of groupViews.values())section.hidden=![...grid.children].some(card=>!card.hidden);
+}
+function stop(){queue=[];queueIndex=-1;for(const{audio}of players){audio.pause();audio.currentTime=0}document.getElementById('now').textContent=''}
+function play(audio){audio.currentTime=0;audio.play().catch(()=>document.getElementById('now').textContent='请点击播放器开始试听')}
+document.getElementById('filter').onchange=()=>{stop();filterCards()};
+document.getElementById('stop').onclick=stop;
+document.getElementById('sequence').onclick=()=>{stop();queue=players.filter(({card})=>!card.hidden).map(p=>p.audio);if(queue.length){queueIndex=0;play(queue[0])}};
+document.getElementById('level').onchange=()=>{stop();const level=document.getElementById('level').checked;for(const{audio,item}of players)audio.src=level?item.listening:item.raw};
+document.getElementById('export').onclick=()=>{const blob=new Blob([JSON.stringify({selected:data.candidates.filter(i=>picked.has(i.id)).map(i=>({id:i.id,voice:i.voice,group:groupFor(i),...(i.description?{description:i.description}:{}),engine:i.engine,wav_sha256:i.wav_sha256})),scope:'audition_selection_not_final_voice_approval'},null,2)],{type:'application/json'});const a=document.createElement('a');const url=URL.createObjectURL(blob);a.href=url;a.download='voice-selection.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
+</script>
+</html>

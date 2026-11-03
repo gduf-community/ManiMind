@@ -1,0 +1,25 @@
+{
+  "writer": "repository-organization coordinator",
+  "consumers": [
+    "lead",
+    "maintainers",
+    "migration validator"
+  ],
+  "lifecycle": "Immutable snapshot for this migration batch; preserve alongside rollback copies",
+  "invalidation": "New native references or a source SHA/path change require another preflight",
+  "created_at": "2026-11-03T06:56:25.096123+00:00",
+  "source": "outputs/sol61-visual-first-20261024-v1/candidate.py",
+  "source_sha256": "ed72a1fc1e851740206cc8a87c2bac847d63f2b0d7ff660033e0ba09a8ef232a",
+  "fixture_sha256": "ed72a1fc1e851740206cc8a87c2bac847d63f2b0d7ff660033e0ba09a8ef232a",
+  "original_test": "archive/legacy/tests/test_projectile_formula_motion_full.py",
+  "original_test_sha256": "05be4e3fc18534923dff81a478b6bfebb0c9610e5c3e58a9ddc863e4e47f981a",
+  "successor_test": "tests/test_projectile_source_snapshot.py",
+  "preserved_test_functions": [
+    "test_vertical_authored_selectors_are_unambiguous_and_nonoverlapping",
+    "test_horizontal_distance_does_not_select_the_x_in_vx",
+    "test_final_substitution_carries_only_small_t_then_expands_at_its_destination",
+    "test_flight_geometry_retains_glyphs_instead_of_scene_restructured_wrappers",
+    "test_no_new_process_mark_ids_and_portable_landing_is_called_once"
+  ],
+  "scope": "Portable source regressions only; no rendering, media acceptance or new model result"
+}

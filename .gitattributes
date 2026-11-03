@@ -1,0 +1,3 @@
+# Preserve the original bytes recorded by migration and fixture receipts.
+archive/legacy/** -text
+tests/fixtures/** -text

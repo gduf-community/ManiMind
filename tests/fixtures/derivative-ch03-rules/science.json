@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "project_id": "math-derivative-ch03-rules-20261102",
+  "status": "author_model_not_independent_science_approval",
+  "facts": [
+    {
+      "id": "linearity",
+      "statement": "At a common differentiability point, (u±v)'=u'±v' and (cu)'=cu' for constant real c. Exact signed increment identities precede taking limits.",
+      "models": [
+        "linear_state"
+      ],
+      "conditions": [
+        "Both functions take the same input increment h",
+        "Quotients require h!=0"
+      ]
+    },
+    {
+      "id": "product_increment",
+      "statement": "Δ(uv)=vΔu+uΔv+ΔuΔv exactly; this includes signed increments.",
+      "models": [
+        "product_state"
+      ],
+      "conditions": [
+        "Area picture uses positive u,v,du,dv only; algebra covers other signs",
+        "Illustration u=2+x,v=1+x² at x=1"
+      ]
+    },
+    {
+      "id": "corner_limit",
+      "statement": "ΔuΔv/h=(Δu/h)Δv -> u' * 0 = 0 because differentiability implies continuity.",
+      "models": [
+        "product_quotient"
+      ],
+      "conditions": [
+        "Merely shrinking area is not enough: normalized area must tend to zero",
+        "Two-sided differentiability is assumed, even though positive h is drawn"
+      ]
+    },
+    {
+      "id": "product_rule",
+      "statement": "(uv)'=u'v+uv' at a common differentiability point.",
+      "models": [
+        "product_state",
+        "product_example"
+      ],
+      "conditions": [
+        "u,v,u',v' evaluated at same x",
+        "Sine example uses radians"
+      ]
+    },
+    {
+      "id": "quotient_increment",
+      "statement": "Δ(u/v)=[vΔu-uΔv]/[v(v+Δv)]. Original quotient requires v!=0 and v+Δv!=0.",
+      "models": [
+        "quotient_increment"
+      ],
+      "conditions": [
+        "Signed increments permitted",
+        "The uv cancellation is explicit in the scene"
+      ]
+    },
+    {
+      "id": "quotient_rule",
+      "statement": "(u/v)'=(u'v-uv')/v² provided both functions are differentiable and v!=0.",
+      "models": [
+        "quotient_derivative"
+      ],
+      "conditions": [
+        "Continuity of v keeps denominator nonzero in a sufficiently small neighborhood",
+        "v(v+Δv) tends to v²"
+      ]
+    },
+    {
+      "id": "cost_model",
+      "statement": "For real x>0 in a continuous approximation, C=x²+4 (hundred yuan), x in hundred items; A=C/x in yuan/item, A'=1-4/x² in (yuan/item)/(hundred items). Unique minimum A(2)=4 follows from A'<0 on (0,2), A'>0 on (2,infinity).",
+      "models": [
+        "average_cost_state",
+        "average_cost_quotient"
+      ],
+      "conditions": [
+        "Not a claim about a measured factory or discrete demand",
+        "x=0 invalid",
+        "A'=0 alone is not the minimum argument"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "OpenStax Calculus 1, 3.3",
+      "url": "https://openstax.org/books/calculus-volume-1/pages/3-3-differentiation-rules"
+    }
+  ],
+  "display_contract": {
+    "caption_safe_bottom_px": 96,
+    "formula_motion": "Historical rows remain fixed; ordered du,dv transfer to a new row, no permutation transform",
+    "dynamic_numbers": "Approximation glyph; full model values drive all geometry",
+    "timing": "Visual fractions only; actual WAV will require local timing review"
+  },
+  "writer": "01a199e9-7383-7a03-b45c-97d3d21bd9dd",
+  "consumers": [
+    "main coordinator",
+    "independent visual reviewer",
+    "independent narration reviewer",
+    "later speech planner"
+  ],
+  "lifecycle": "Author A chapter draft v001; not approval",
+  "invalidation": "Scene, model, helper, text, cue timing, context or profile changes require affected stages to be repeated",
+  "artifact_type": "test_fixture"
+}

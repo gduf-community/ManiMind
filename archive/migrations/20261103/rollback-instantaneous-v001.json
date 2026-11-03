@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "writer": "019eaf8b-9151-75e2-9db4-5ff834335577",
+  "consumers": ["maintainer", "migration validator", "resume coordinator"],
+  "lifecycle": "Correction to the 2026-11-03 current migration index; original batch receipts retained",
+  "invalidation": "Scene path, source bytes or retained consumers change",
+  "status": "restored_original_path_original_bytes",
+  "from": "archive/legacy/examples/instantaneous_velocity.py",
+  "to": "examples/instantaneous_velocity.py",
+  "sha256": "d05607d40892477b4f01a3fe28f1abb15b0baccb7d65c107ee5f1f426ea056f3",
+  "actual_consumers": ["src/manimind/postproduce/pilot.py:SCENE", "src/manimind/postproduce/full_lesson.py:Lesson.init"],
+  "original_failure": "test_full_lesson.py::test_init_freezes_script_and_components_without_executing_model: FileNotFoundError",
+  "focused_verification": "36 full_lesson and pilot tests passed after restoring the scene",
+  "shared_helper_modified": false,
+  "existing_media_modified": false,
+  "current_physical_moves": 153,
+  "original_plan_and_batch_receipts_modified": false
+}

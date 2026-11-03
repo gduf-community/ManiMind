@@ -1,0 +1,7 @@
+camera:
+  background_color: "#101216"
+  fps: 30
+tex:
+  template: "basic_ctex"
+text:
+  font: "PingFang SC"

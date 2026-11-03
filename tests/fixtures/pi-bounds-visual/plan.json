@@ -1,0 +1,737 @@
+{
+  "project_id": "pi-bounds-20261028",
+  "scene": "examples/pi_bounds_visual.py",
+  "scene_class": "PiBoundsLesson",
+  "title": "π不是背出来的：用内外多边形夹住圆周长",
+  "audience": "高中生；熟悉勾股、相似与三角不等式",
+  "prerequisites": [
+    "勾股定理",
+    "相似三角形",
+    "三角形两边之和大于第三边",
+    "圆心到弦中点的连线垂直于弦",
+    "圆的半径、直径、切线垂直半径"
+  ],
+  "target_inference": "用局部弦折长和削凸角解释两界的方向；能从同一半角几何图得到递推，以可验证区间确定五位舍入值",
+  "likely_misconception": "π的小数是预先输入的；任意嵌套轮廓周长均有大小关系；有限边数的轮廓已经等于圆",
+  "workflow_profile": "configs/visual-first-workflow-v3.1.json",
+  "revision_mode": "fresh",
+  "sources": [],
+  "duration": 226,
+  "fps": 30,
+  "facts": {
+    "radius": "r=1 u；u为任意固定长度单位；a、b、L、U均无量纲",
+    "definitions": {
+      "a": "内接正n边形半边/r",
+      "b": "内接正n边形边心距/r",
+      "pi": "C/(2r)",
+      "lower": "Ln=n*an",
+      "upper": "Un=n*an/bn"
+    },
+    "seed": {
+      "n": 6,
+      "a": "1/2",
+      "b": "sqrt(3)/2",
+      "lower": "3",
+      "upper": "2*sqrt(3)"
+    },
+    "recurrence": {
+      "a_2n": "sqrt((1-bn)/2)",
+      "b_2n": "sqrt((1+bn)/2)",
+      "identity": "an^2+bn^2=1"
+    },
+    "geometric_chain": [
+      "A、B为旧相邻顶点，H为AB中点，M为弧AB中点",
+      "BH=an，OH=bn，OM=OB=1，所以HM=1-bn",
+      "BM²=an²+(1-bn)²=1-bn²+1-2bn+bn²=2(1-bn)",
+      "K为BM中点，等腰三角形OBM使OK垂直BM",
+      "a2n=BK=BM/2；b2n=OK，由OK²+BK²=1得到两式；长度为正取正根"
+    ],
+    "circle_length_dependency": "沿用圆周长的通常几何意义及内接/外切正多边形夹逼定理；本片局部展示两界严格单调的理由，不重证任意多边形序列下弧长内禀性。Weisbart第2至4节给出严格化。",
+    "arithmetic": "纯Fraction有理区间；isqrt给60位十进制格点根的下端与上端，全部递推端点向外传播；输出下界向下、上界向上。不使用math.pi/sin/cos/tan求数值界。",
+    "rounding": "n=3072，七位向外舍入区间必须完整落入[3.141585,3.141595)；确认后五位四舍五入为3.14159，不声称π等于有限小数",
+    "polygon_counts": [
+      6,
+      12,
+      24,
+      48,
+      96
+    ],
+    "calculation_only_counts": [
+      192,
+      384,
+      768,
+      1536,
+      3072
+    ],
+    "finite_gap": "Un-Ln=nan*(1-bn)/bn>0；有限步严格夹逼，不宣称已与圆重合"
+  },
+  "source_dependencies": [
+    {
+      "id": "weisbart-2020",
+      "author": "David Weisbart",
+      "title": "Modernizing Archimedes' Construction of pi",
+      "url": "https://arxiv.org/abs/2009.06752",
+      "full_text": "https://arxiv.org/html/2009.06752v1",
+      "used": "第2.1节定义与命题2.1的三角不等式单调性；第2至4节夹逼/极限及圆周长内禀性的现代处理",
+      "scope": "主数学背景；片内具体点名、勾股半角链、布局和定向舍入实现由本片作者给出，不声称复刻古代原算法",
+      "checked": "2026-10-28"
+    },
+    {
+      "id": "harvard-proposition-1-study",
+      "url": "https://legacy-www.math.harvard.edu/archive/archimedes09/pdf/Measurement.of.the.Circle.pdf",
+      "used": "只核查来源性质，未作为数值算法依据",
+      "scope": "2009年命题1现代研究材料，不是命题3完整古代原文"
+    }
+  ],
+  "cues": [
+    {
+      "id": "ratio",
+      "duration": 16,
+      "heading": "π是圆周长与直径的比",
+      "visual": "同一个圆、真实六边形内外轮廓，定义C/(2r)与L<π<U",
+      "learning_purpose": "建立比值，不先显示π小数",
+      "anchors": [
+        {
+          "id": "ratio_ready",
+          "meaning": "ratio ready: 对应图形或式已到位"
+        }
+      ]
+    },
+    {
+      "id": "split",
+      "duration": 28,
+      "heading": "一条弦折成两段",
+      "visual": "固定A、B，H连续移到圆弧中点M；AH+HB变成AM+MB",
+      "learning_purpose": "三角不等式说明内界上升",
+      "anchors": [
+        {
+          "id": "chord_before",
+          "meaning": "chord before: 对应图形或式已到位"
+        },
+        {
+          "id": "chord_split_ready",
+          "meaning": "chord split ready: 对应图形或式已到位"
+        }
+      ]
+    },
+    {
+      "id": "shave",
+      "duration": 26,
+      "heading": "削去外切凸角",
+      "visual": "旧切线交于V；新切线PQ切去PV+VQ，留下其余两段",
+      "learning_purpose": "三角不等式说明外界下降",
+      "anchors": [
+        {
+          "id": "corner_before",
+          "meaning": "corner before: 对应图形或式已到位"
+        },
+        {
+          "id": "corner_cut_ready",
+          "meaning": "corner cut ready: 对应图形或式已到位"
+        }
+      ]
+    },
+    {
+      "id": "lengths",
+      "duration": 28,
+      "heading": "半边与边心距",
+      "visual": "OHB与OMT相似；半径1u、HB=a、OH=b，得到MT=a/b及归一周长",
+      "learning_purpose": "从实际长度推导na与na/b，不借未知π的三角函数值",
+      "anchors": [
+        {
+          "id": "similarity_ready",
+          "meaning": "similarity ready: 对应图形或式已到位"
+        },
+        {
+          "id": "bounds_formula_ready",
+          "meaning": "bounds formula ready: 对应图形或式已到位"
+        }
+      ]
+    },
+    {
+      "id": "hexagon",
+      "duration": 26,
+      "heading": "六边形给起点",
+      "visual": "六个等边三角形，半边a6=1/2，勾股求b6=√3/2",
+      "learning_purpose": "起始值来自几何",
+      "anchors": [
+        {
+          "id": "hexagon_ready",
+          "meaning": "hexagon ready: 对应图形或式已到位"
+        },
+        {
+          "id": "hexagon_seed_ready",
+          "meaning": "hexagon seed ready: 对应图形或式已到位"
+        }
+      ]
+    },
+    {
+      "id": "half",
+      "duration": 44,
+      "heading": "半角的完整几何链",
+      "visual": "保留O、A、B、H、M；BH与HM勾股求BM，展开消项，再引入中点K和OK垂直BM",
+      "learning_purpose": "显示旧a、b如何给出新a、b，而非只轮播边数",
+      "anchors": [
+        {
+          "id": "half_geometry_ready",
+          "meaning": "half geometry ready: 对应图形或式已到位"
+        },
+        {
+          "id": "pythagoras_ready",
+          "meaning": "pythagoras ready: 对应图形或式已到位"
+        },
+        {
+          "id": "half_side_ready",
+          "meaning": "half side ready: 对应图形或式已到位"
+        },
+        {
+          "id": "half_apothem_ready",
+          "meaning": "half apothem ready: 对应图形或式已到位"
+        }
+      ]
+    },
+    {
+      "id": "refine",
+      "duration": 28,
+      "heading": "内升外降与同一数轴",
+      "visual": "真实绘制n=6、12、24、48、96边；每态同步显示向外舍入区间及同一线性数轴端点",
+      "learning_purpose": "把几何与同一数值区间闭合；窄到亚像素时依靠明确数值",
+      "anchors": [
+        {
+          "id": "polygon_6_ready",
+          "meaning": "polygon 6 ready: 对应图形或式已到位"
+        },
+        {
+          "id": "polygon_12_ready",
+          "meaning": "polygon 12 ready: 对应图形或式已到位"
+        },
+        {
+          "id": "polygon_24_ready",
+          "meaning": "polygon 24 ready: 对应图形或式已到位"
+        },
+        {
+          "id": "polygon_48_ready",
+          "meaning": "polygon 48 ready: 对应图形或式已到位"
+        },
+        {
+          "id": "polygon_96_ready",
+          "meaning": "polygon 96 ready: 对应图形或式已到位"
+        }
+      ]
+    },
+    {
+      "id": "decimal",
+      "duration": 30,
+      "heading": "计算表与五位四舍五入",
+      "visual": "不放多边形；独立计算表列192到3072边的上下界，七位向外舍入，显示五位舍入单元",
+      "learning_purpose": "有限夹逼足以确定舍入值，但不等于圆",
+      "anchors": [
+        {
+          "id": "calculation_table_ready",
+          "meaning": "calculation table ready: 对应图形或式已到位"
+        },
+        {
+          "id": "rounding_cell_ready",
+          "meaning": "rounding cell ready: 对应图形或式已到位"
+        },
+        {
+          "id": "finite_gap_ready",
+          "meaning": "finite gap ready: 对应图形或式已到位"
+        }
+      ]
+    }
+  ],
+  "focus_intents": [
+    {
+      "id": "ratio_meaning",
+      "cue": "ratio",
+      "claim": "C/(2r)与内接、外切周长的比",
+      "visible_evidence": "同一圆的两个真实六边形与定义式",
+      "kind": "deduction"
+    },
+    {
+      "id": "chord_before",
+      "cue": "split",
+      "claim": "旧边AB等于AH+HB",
+      "visible_evidence": "H在AB上；旧边分成两条共线线段",
+      "kind": "deduction"
+    },
+    {
+      "id": "chord_growth",
+      "cue": "split",
+      "claim": "AM+MB>AB，所有旧边如此细分所以L2n>Ln",
+      "visible_evidence": "固定A、B，折点连续从H移到M，三角不等式与内界式",
+      "kind": "deduction"
+    },
+    {
+      "id": "corner_triangle",
+      "cue": "shave",
+      "claim": "PV+VQ>PQ",
+      "visible_evidence": "两旧切线段交于V，新切线穿过P、Q，与圆相切",
+      "kind": "deduction"
+    },
+    {
+      "id": "corner_shrink",
+      "cue": "shave",
+      "claim": "删除凸角缩短外界",
+      "visible_evidence": "折点V移动到PQ中点；两条保留边段不变；外界式",
+      "kind": "deduction"
+    },
+    {
+      "id": "side_similarity",
+      "cue": "lengths",
+      "claim": "a²+b²=1，外切半边=a/b",
+      "visible_evidence": "OHB、OMT共享O角、两处直角，半径1u与长度a、b",
+      "kind": "deduction"
+    },
+    {
+      "id": "normalized_bounds",
+      "cue": "lengths",
+      "claim": "每边两半，n条边，再除以直径2u，得到Ln=na与Un=na/b",
+      "visible_evidence": "相似三角形及两条实际周长式和归一化式持续同屏",
+      "kind": "deduction"
+    },
+    {
+      "id": "hexagon_side",
+      "cue": "hexagon",
+      "claim": "六边形边长等于半径，所以a6=1/2",
+      "visible_evidence": "六条半径分成等边三角形",
+      "kind": "deduction"
+    },
+    {
+      "id": "hexagon_seed",
+      "cue": "hexagon",
+      "claim": "b6=√3/2，初界3<π<2√3",
+      "visible_evidence": "同图与勾股代入、中间分数和根式",
+      "kind": "deduction"
+    },
+    {
+      "id": "half_geometry",
+      "cue": "half",
+      "claim": "M是弧AB中点，H是旧弦中点；HM=1-bn",
+      "visible_evidence": "旧AB、圆弧、O到M、H位置及长度对应",
+      "kind": "deduction"
+    },
+    {
+      "id": "half_pythagoras",
+      "cue": "half",
+      "claim": "BM²=an²+(1-bn)²",
+      "visible_evidence": "BH、HM垂直，BM成为新弦；勾股等式",
+      "kind": "deduction"
+    },
+    {
+      "id": "half_substitution",
+      "cue": "half",
+      "claim": "代入an²=1-bn²，展开平方后消项",
+      "visible_evidence": "中间展开式与所代恒等式",
+      "kind": "deduction"
+    },
+    {
+      "id": "half_side",
+      "cue": "half",
+      "claim": "BM²=2(1-bn)，新半边a2n=BM/2",
+      "visible_evidence": "保留BM，K为中点；BK=KM与新半边平方式",
+      "kind": "deduction"
+    },
+    {
+      "id": "half_apothem",
+      "cue": "half",
+      "claim": "新边心距OK=b2n；b2n²=(1+bn)/2",
+      "visible_evidence": "K处直角、OK、等腰三角形中点关系与完整勾股代入",
+      "kind": "deduction"
+    },
+    {
+      "id": "interval_6",
+      "cue": "refine",
+      "claim": "真实6边轮廓对应当前上下界",
+      "visible_evidence": "上下界、线性数轴区间、边数与真实轮廓同时出现",
+      "kind": "deduction"
+    },
+    {
+      "id": "interval_12",
+      "cue": "refine",
+      "claim": "真实12边轮廓对应当前上下界",
+      "visible_evidence": "上下界、线性数轴区间、边数与真实轮廓同时出现",
+      "kind": "deduction"
+    },
+    {
+      "id": "interval_24",
+      "cue": "refine",
+      "claim": "真实24边轮廓对应当前上下界",
+      "visible_evidence": "上下界、线性数轴区间、边数与真实轮廓同时出现",
+      "kind": "deduction"
+    },
+    {
+      "id": "interval_48",
+      "cue": "refine",
+      "claim": "真实48边轮廓对应当前上下界",
+      "visible_evidence": "上下界、线性数轴区间、边数与真实轮廓同时出现",
+      "kind": "deduction"
+    },
+    {
+      "id": "interval_96",
+      "cue": "refine",
+      "claim": "真实96边轮廓对应当前上下界",
+      "visible_evidence": "上下界、线性数轴区间、边数与真实轮廓同时出现",
+      "kind": "deduction"
+    },
+    {
+      "id": "calculation_table",
+      "cue": "decimal",
+      "claim": "同一递推继续算到3072边",
+      "visible_evidence": "独立计算表，不附带低边数轮廓",
+      "kind": "deduction"
+    },
+    {
+      "id": "rounding_cell",
+      "cue": "decimal",
+      "claim": "整个七位向外舍入区间落入五位小数3.14159的舍入单元",
+      "visible_evidence": "上下界与[3.141585,3.141595)及舍入结果",
+      "kind": "deduction"
+    },
+    {
+      "id": "finite_gap",
+      "cue": "decimal",
+      "claim": "有限多边形不等于圆；差Un-Ln为正",
+      "visible_evidence": "严格不等式，正差公式与继续细分的机制",
+      "kind": "deduction"
+    }
+  ],
+  "review_times": [
+    0,
+    2,
+    8,
+    15.7,
+    18,
+    21,
+    23,
+    25,
+    31,
+    43,
+    46,
+    51,
+    53,
+    55,
+    62,
+    69,
+    72,
+    81,
+    87,
+    93,
+    97,
+    100,
+    106,
+    112,
+    120,
+    126,
+    132,
+    135,
+    140,
+    145,
+    147,
+    151,
+    155,
+    159,
+    165,
+    169,
+    172,
+    176,
+    180,
+    185,
+    190,
+    195,
+    198,
+    203,
+    207,
+    210,
+    216,
+    218,
+    222,
+    225.7
+  ],
+  "subtitle_reservation": {
+    "frame": "1920x1080; native frame height 8",
+    "pixel_y_min": 984,
+    "scene_content_min_y": -3.15,
+    "policy": "源场景不生成字幕；y984以下只留给主控后置的一套字幕，不附默认外挂机制"
+  },
+  "authorship": "supervised_math_author",
+  "production_boundary": {
+    "status": "source_frozen_pending_lead_render_and_independent_review",
+    "audio": "none",
+    "narration": "draft_intent_only",
+    "rendered": false,
+    "reviewed": false,
+    "published": false,
+    "independent_review_required": true,
+    "no_ssh": true,
+    "no_legacy_outputs": true
+  },
+  "state_contracts": [
+    {
+      "state": "plan/facts/cues/source_dependencies",
+      "writer": "本题数学作者；后续主控版本化",
+      "consumers": [
+        "原生渲染入口",
+        "独立数学/视觉审核",
+        "主控"
+      ],
+      "lifecycle": "本新项目长期内容；不是单轮审核记录",
+      "invalidation": "数学、源码、profile、时长、来源变更使下游绑定失效"
+    },
+    {
+      "state": "narration-draft-v001",
+      "writer": "本题数学作者",
+      "consumers": [
+        "主控后写稿",
+        "独立讲稿审核"
+      ],
+      "lifecycle": "预留语言意图；静音真实像素批准后才可安装正式稿",
+      "invalidation": "任一指代、画面或焦点变化须按真实focus重写复核；没有声音排程许可"
+    },
+    {
+      "state": "scene-local geometry/rational intervals",
+      "writer": "PiBoundsLesson与纯计算函数",
+      "consumers": [
+        "当前原生动画",
+        "离线数学/native测试"
+      ],
+      "lifecycle": "每次construct与函数调用；各cue切换清除旧图，数值由种子重建",
+      "invalidation": "源码、参数或原生API改变需重算；不作为协作记忆"
+    },
+    {
+      "state": "fixture/native expectations",
+      "writer": "本题作者测试",
+      "consumers": [
+        "pytest",
+        "主控"
+      ],
+      "lifecycle": "可提交的便携测试输入；独立于ignored runtime/outputs",
+      "invalidation": "源码、计划或native实现变化须重新验证；绝不充当像素批准"
+    }
+  ],
+  "native_clock_check": {
+    "status": "native_interpolation_only_no_render",
+    "duration": 226,
+    "frames": 6780,
+    "fps": 30,
+    "fixture": "tests/fixtures/pi-bounds-visual/native-clock.json",
+    "actual_focus_windows": [
+      {
+        "id": "ratio_meaning",
+        "start": 1.8,
+        "end": 15.8
+      },
+      {
+        "id": "chord_before",
+        "start": 17.6,
+        "end": 21
+      },
+      {
+        "id": "chord_growth",
+        "start": 25.6,
+        "end": 43.8
+      },
+      {
+        "id": "corner_triangle",
+        "start": 45.6,
+        "end": 51
+      },
+      {
+        "id": "corner_shrink",
+        "start": 55.6,
+        "end": 69.8
+      },
+      {
+        "id": "side_similarity",
+        "start": 72.2,
+        "end": 86
+      },
+      {
+        "id": "normalized_bounds",
+        "start": 86.6,
+        "end": 97.8
+      },
+      {
+        "id": "hexagon_side",
+        "start": 99.6,
+        "end": 107
+      },
+      {
+        "id": "hexagon_seed",
+        "start": 107.6,
+        "end": 123.8
+      },
+      {
+        "id": "half_geometry",
+        "start": 125.6,
+        "end": 132
+      },
+      {
+        "id": "half_pythagoras",
+        "start": 133.6,
+        "end": 140
+      },
+      {
+        "id": "half_substitution",
+        "start": 142,
+        "end": 146
+      },
+      {
+        "id": "half_side",
+        "start": 148,
+        "end": 156
+      },
+      {
+        "id": "half_apothem",
+        "start": 157,
+        "end": 167.8
+      },
+      {
+        "id": "interval_6",
+        "start": 171.6,
+        "end": 175.4
+      },
+      {
+        "id": "interval_12",
+        "start": 176.4,
+        "end": 180
+      },
+      {
+        "id": "interval_24",
+        "start": 181,
+        "end": 184.6
+      },
+      {
+        "id": "interval_48",
+        "start": 185.6,
+        "end": 189.2
+      },
+      {
+        "id": "interval_96",
+        "start": 190.2,
+        "end": 193.8
+      },
+      {
+        "id": "calculation_table",
+        "start": 200.6,
+        "end": 207
+      },
+      {
+        "id": "rounding_cell",
+        "start": 207.6,
+        "end": 217
+      },
+      {
+        "id": "finite_gap",
+        "start": 218,
+        "end": 225.8
+      }
+    ],
+    "actual_visual_events": [
+      {
+        "id": "ratio_ready",
+        "time": 1.8
+      },
+      {
+        "id": "chord_before",
+        "time": 17.6
+      },
+      {
+        "id": "chord_split_ready",
+        "time": 25.6
+      },
+      {
+        "id": "corner_before",
+        "time": 45.6
+      },
+      {
+        "id": "corner_cut_ready",
+        "time": 55.6
+      },
+      {
+        "id": "similarity_ready",
+        "time": 72.2
+      },
+      {
+        "id": "bounds_formula_ready",
+        "time": 86.6
+      },
+      {
+        "id": "hexagon_ready",
+        "time": 99.6
+      },
+      {
+        "id": "hexagon_seed_ready",
+        "time": 107.6
+      },
+      {
+        "id": "half_geometry_ready",
+        "time": 125.6
+      },
+      {
+        "id": "pythagoras_ready",
+        "time": 133.6
+      },
+      {
+        "id": "half_side_ready",
+        "time": 148
+      },
+      {
+        "id": "half_apothem_ready",
+        "time": 157
+      },
+      {
+        "id": "polygon_6_ready",
+        "time": 171.6
+      },
+      {
+        "id": "polygon_12_ready",
+        "time": 176.4
+      },
+      {
+        "id": "polygon_24_ready",
+        "time": 181
+      },
+      {
+        "id": "polygon_48_ready",
+        "time": 185.6
+      },
+      {
+        "id": "polygon_96_ready",
+        "time": 190.2
+      },
+      {
+        "id": "calculation_table_ready",
+        "time": 200.6
+      },
+      {
+        "id": "rounding_cell_ready",
+        "time": 207.6
+      },
+      {
+        "id": "finite_gap_ready",
+        "time": 218
+      }
+    ],
+    "limitation": "占位字形；不是实际像素、布局通过或独立审核",
+    "writer": "共用lesson_native_harness实跑，经本题作者归档",
+    "consumers": [
+      "pytest",
+      "主控真实渲染前核对"
+    ],
+    "lifecycle": "此源码与计划的native测试结果",
+    "invalidation": "源码、cue、时序、profile或原生运行时变化需重跑；不批准后处理"
+  },
+  "handoff": {
+    "allowed_next": "主控真实静音渲染，再独立首看；视觉通过后按实测focus写正式稿",
+    "author_performed": "仅独占源码、计划、草稿意图、数学和native插值测试",
+    "known_risks": [
+      "native占位不验证真实中文/TeX包围盒、遮挡与字幕边界",
+      "96边轮廓及数轴区间接近像素分辨率，需真实画面检查；精确值用数值读出",
+      "半角图H、M、K邻近，需独立审核实际字形与留白",
+      "未生成声音，整句能否放入focus尚未知"
+    ],
+    "no_self_approval": true
+  }
+}

@@ -1,0 +1,411 @@
+{
+  "evidence_type": "Native 30fps placeholder geometry and clock; no GL, pixels or approval",
+  "duration": 210,
+  "frames": 6300,
+  "chapters": [
+    {
+      "id": "transform",
+      "start": 0,
+      "end": 26
+    },
+    {
+      "id": "directions",
+      "start": 26,
+      "end": 48
+    },
+    {
+      "id": "equations",
+      "start": 48,
+      "end": 74
+    },
+    {
+      "id": "equal",
+      "start": 74,
+      "end": 98
+    },
+    {
+      "id": "other",
+      "start": 98,
+      "end": 124
+    },
+    {
+      "id": "decompose",
+      "start": 124,
+      "end": 164
+    },
+    {
+      "id": "rotation",
+      "start": 164,
+      "end": 190
+    },
+    {
+      "id": "summary",
+      "start": 190,
+      "end": 210
+    }
+  ],
+  "events": [
+    {
+      "id": "map_ready",
+      "time": 3
+    },
+    {
+      "id": "plane_transformed",
+      "time": 16
+    },
+    {
+      "id": "turn_ready",
+      "time": 21
+    },
+    {
+      "id": "definition_ready",
+      "time": 30
+    },
+    {
+      "id": "candidates_ready",
+      "time": 41
+    },
+    {
+      "id": "vector_ready",
+      "time": 51
+    },
+    {
+      "id": "components_ready",
+      "time": 56
+    },
+    {
+      "id": "subtract_ready",
+      "time": 65
+    },
+    {
+      "id": "factor_ready",
+      "time": 71
+    },
+    {
+      "id": "equal_condition_ready",
+      "time": 77
+    },
+    {
+      "id": "equal_substitute_ready",
+      "time": 81
+    },
+    {
+      "id": "equal_combine_ready",
+      "time": 86
+    },
+    {
+      "id": "equal_value_ready",
+      "time": 91
+    },
+    {
+      "id": "plus_direction_ready",
+      "time": 95
+    },
+    {
+      "id": "other_value_ready",
+      "time": 101
+    },
+    {
+      "id": "other_substitute_ready",
+      "time": 106
+    },
+    {
+      "id": "other_reduce_ready",
+      "time": 112
+    },
+    {
+      "id": "other_direction_ready",
+      "time": 118
+    },
+    {
+      "id": "all_directions_ready",
+      "time": 122
+    },
+    {
+      "id": "decomposition_ready",
+      "time": 132
+    },
+    {
+      "id": "components_transformed",
+      "time": 147
+    },
+    {
+      "id": "recombined_ready",
+      "time": 151
+    },
+    {
+      "id": "direct_check_ready",
+      "time": 158
+    },
+    {
+      "id": "rotation_input_ready",
+      "time": 168
+    },
+    {
+      "id": "no_real_direction_ready",
+      "time": 179
+    },
+    {
+      "id": "summary_ready",
+      "time": 200
+    }
+  ],
+  "windows": [
+    {
+      "id": "matrix_map",
+      "start": 3,
+      "end": 8
+    },
+    {
+      "id": "whole_plane",
+      "start": 8,
+      "end": 20
+    },
+    {
+      "id": "general_turn",
+      "start": 21,
+      "end": 26
+    },
+    {
+      "id": "definition",
+      "start": 30,
+      "end": 34
+    },
+    {
+      "id": "candidate_lines",
+      "start": 34,
+      "end": 48
+    },
+    {
+      "id": "vector_equation",
+      "start": 51,
+      "end": 53
+    },
+    {
+      "id": "two_components",
+      "start": 56,
+      "end": 61
+    },
+    {
+      "id": "subtract",
+      "start": 65,
+      "end": 68
+    },
+    {
+      "id": "factor",
+      "start": 71,
+      "end": 74
+    },
+    {
+      "id": "equal_nonzero",
+      "start": 77,
+      "end": 80
+    },
+    {
+      "id": "equal_substitute",
+      "start": 81,
+      "end": 84
+    },
+    {
+      "id": "equal_combine",
+      "start": 86,
+      "end": 89
+    },
+    {
+      "id": "equal_value",
+      "start": 91,
+      "end": 94
+    },
+    {
+      "id": "plus_direction",
+      "start": 95,
+      "end": 98
+    },
+    {
+      "id": "other_value",
+      "start": 101,
+      "end": 105
+    },
+    {
+      "id": "other_substitute",
+      "start": 106,
+      "end": 109
+    },
+    {
+      "id": "other_reduce",
+      "start": 112,
+      "end": 115
+    },
+    {
+      "id": "other_direction",
+      "start": 118,
+      "end": 121
+    },
+    {
+      "id": "all_directions",
+      "start": 122,
+      "end": 124
+    },
+    {
+      "id": "decompose",
+      "start": 132,
+      "end": 137
+    },
+    {
+      "id": "independent_scaling",
+      "start": 138,
+      "end": 150
+    },
+    {
+      "id": "recombine",
+      "start": 151,
+      "end": 156
+    },
+    {
+      "id": "linearity_check",
+      "start": 158,
+      "end": 164
+    },
+    {
+      "id": "rotation_input",
+      "start": 168,
+      "end": 171
+    },
+    {
+      "id": "quarter_turn",
+      "start": 171,
+      "end": 178
+    },
+    {
+      "id": "no_real_direction",
+      "start": 179,
+      "end": 189
+    },
+    {
+      "id": "summary",
+      "start": 194,
+      "end": 210
+    }
+  ],
+  "symbol_transitions": [
+    {
+      "stage": "components",
+      "start": 53,
+      "end": 56,
+      "source": "A\\binom{x}{y}=\\lambda\\binom{x}{y}",
+      "target": "\\begin{aligned}2x+y&=\\lambda x\\\\x+2y&=\\lambda y\\end{aligned}",
+      "source_center": [
+        0,
+        0.85,
+        0
+      ],
+      "target_center": [
+        0,
+        -0.7,
+        0
+      ]
+    },
+    {
+      "stage": "subtract",
+      "start": 62,
+      "end": 65,
+      "source": "\\begin{aligned}2x+y&=\\lambda x\\\\x+2y&=\\lambda y\\end{aligned}",
+      "target": "x-y=\\lambda(x-y)",
+      "source_center": [
+        0,
+        -0.7,
+        0
+      ],
+      "target_center": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "stage": "factor",
+      "start": 68,
+      "end": 71,
+      "source": "x-y=\\lambda(x-y)",
+      "target": "(\\lambda-1)(x-y)=0",
+      "source_center": [
+        0,
+        1,
+        0
+      ],
+      "target_center": [
+        0,
+        -1.5,
+        0
+      ]
+    },
+    {
+      "stage": "equal_combine",
+      "start": 84,
+      "end": 86,
+      "source": "2x+x=\\lambda x",
+      "target": "3x=\\lambda x",
+      "source_center": [
+        0,
+        0.1,
+        0
+      ],
+      "target_center": [
+        0,
+        -1.25,
+        0
+      ]
+    },
+    {
+      "stage": "equal_value",
+      "start": 89,
+      "end": 91,
+      "source": "3x=\\lambda x",
+      "target": "\\lambda=3",
+      "source_center": [
+        0,
+        -1.25,
+        0
+      ],
+      "target_center": [
+        0,
+        0.05,
+        0
+      ]
+    },
+    {
+      "stage": "other_reduce",
+      "start": 109,
+      "end": 112,
+      "source": "2x+y=x",
+      "target": "x+y=0",
+      "source_center": [
+        0,
+        0.8,
+        0
+      ],
+      "target_center": [
+        0,
+        -0.6,
+        0
+      ]
+    },
+    {
+      "stage": "other_direction",
+      "start": 115,
+      "end": 118,
+      "source": "x+y=0",
+      "target": "y=-x",
+      "source_center": [
+        0,
+        -0.6,
+        0
+      ],
+      "target_center": [
+        0,
+        0.6,
+        0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "study_id": "workflow-deepseek-high-20261024",
+  "provider_config": "configs/deepseek-learning-high-20261024.json",
+  "policy": {
+    "production": "DeepSeek director, creator and independent reviewer; all high; no external candidate edits",
+    "versions": "Use the unchanged learning-workflow-v3 profile; freeze implementation before first production request",
+    "evaluation": "Same learning rubric, evidence density and independent publication gates as Sol v3",
+    "comparison": "One development sample; provider and reasoning level differ, so this is not an isolated model-only causal test",
+    "isolation": "Fresh project and role contexts; exclude old films, scripts, source, reviews, main conversation, memory and outside editorial suggestions",
+    "accounting": "Keep every request, failure, raw usage and production wall time; unknown usage is not zero cost"
+  },
+  "cases": [
+    {
+      "id": "projectile",
+      "split": "development",
+      "brief": {
+        "audience": "已接触速度与重力的高中学生",
+        "goal": "解释同高度水平抛出、忽略空气阻力时，横向初速度改变射程但不改变落地时间，并能预测改变高度后的结果。",
+        "suggested_duration_seconds": [90, 150],
+        "facts": {"model": "质点、均匀重力场、无空气阻力、初始竖直速度为零；比较横速时初始高度相同", "coordinates": "x=vx*t, y=h-g*t*t/2, ground y=0, y axis upwards", "landing_time": "T=sqrt(2*h/g)", "range": "R=vx*T", "teaching_g": 10},
+        "guidance": "原创表达，独立选择例子、叙事与画面，不接受旧片、旧讲稿、分镜或逐片修改意见。",
+        "review_standards": ["科学与画面一致，条件清楚", "因果有画面或推导依据，不只宣告结论", "观众可辨认关键过程与前后对应", "字幕与动作不产生意义矛盾", "视觉清楚且精简，完整连续"]
+      }
+    }
+  ]
+}

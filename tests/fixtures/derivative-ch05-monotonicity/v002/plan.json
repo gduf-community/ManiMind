@@ -1,0 +1,605 @@
+{
+  "schema_version": 1,
+  "project_id": "math-derivative-ch05-monotonicity-20261102",
+  "author_agent": "01a199e9-73ab-7700-8a9f-cd7b5541b0ad",
+  "author_context": "01a199e9-73ab-7700-8a9f-cd7b5541b0ad",
+  "title": "导数05：导数与单调性",
+  "workflow_profile": "configs/visual-first-workflow-v4.2-unit.json",
+  "revision_mode": "revision",
+  "scene": "examples/derivative_ch05_monotonicity_v002.py",
+  "scene_class": "DerivativeMonotonicityLessonV002",
+  "duration": 396,
+  "fps": 30,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "subtitle_reserve": {
+    "bottom_px": 96,
+    "pixel_top": 984,
+    "scene_content_bottom_min": -3.1
+  },
+  "cues": [
+    {
+      "id": "opening",
+      "duration": 24,
+      "heading": "导数与单调性",
+      "visual": "承接已经会求导，给x³-3x与向右走时的增长问题，不重讲差商。",
+      "learning_purpose": "定位从导数到区间增长的新理解。",
+      "anchors": [
+        {
+          "id": "monotonicity_title_ready",
+          "meaning": "标题已出现"
+        },
+        {
+          "id": "monotonicity_question_ready",
+          "meaning": "函数及增长问题可读"
+        }
+      ]
+    },
+    {
+      "id": "same-x",
+      "duration": 42,
+      "heading": "两张图，同一个输入",
+      "visual": "上方函数曲线与切线，下方导数曲线；共用x映射与贯穿光标，旁侧分别显示x、f(x)、f'(x)。",
+      "learning_purpose": "横坐标一致但纵坐标意义不同。",
+      "anchors": [
+        {
+          "id": "linked_axes_ready",
+          "meaning": "两种轴义、曲线、同源点与数值已出现"
+        },
+        {
+          "id": "shared_x_ready",
+          "meaning": "共同横坐标说明可读，随后开始运动"
+        },
+        {
+          "id": "shared_x_motion_complete",
+          "meaning": "两图同源x运动完成"
+        }
+      ]
+    },
+    {
+      "id": "sweep",
+      "duration": 70,
+      "heading": "沿着三个区间走",
+      "visual": "x从-2连续走到-1、1、2；同源点、切线和导数点逐帧更新，边界分别停留。",
+      "learning_purpose": "正导数对应函数上升、负导数对应下降；±1处切线水平，仅由整个区间判增长。",
+      "anchors": [
+        {
+          "id": "sweep_start_ready",
+          "meaning": "三联动起点已出现"
+        },
+        {
+          "id": "left_boundary_reached",
+          "meaning": "到-1，切线水平且导数点到0"
+        },
+        {
+          "id": "right_boundary_reached",
+          "meaning": "到1，切线水平且导数点到0"
+        },
+        {
+          "id": "three_intervals_traversed",
+          "meaning": "三个区间的运动完成"
+        }
+      ]
+    },
+    {
+      "id": "signs",
+      "duration": 42,
+      "heading": "把符号放在区间上",
+      "visual": "从3(x-1)(x+1)解两个零点，数轴左中右依次显现正负正与增减增。",
+      "learning_purpose": "从因子符号覆盖整个实数区间，不以有限屏幕取样代替全域分析。",
+      "anchors": [
+        {
+          "id": "derivative_roots_ready",
+          "meaning": "±1两个根已出现"
+        },
+        {
+          "id": "left_sign_ready",
+          "meaning": "左侧正号与增已出现"
+        },
+        {
+          "id": "middle_sign_ready",
+          "meaning": "中间负号与减已出现"
+        },
+        {
+          "id": "right_sign_ready",
+          "meaning": "右侧正号与增已出现"
+        },
+        {
+          "id": "sign_chart_complete",
+          "meaning": "全实数的三个开区间可读"
+        }
+      ]
+    },
+    {
+      "id": "interval",
+      "duration": 66,
+      "heading": "为什么要看整个区间",
+      "visual": "示例中固定a=-2，移动b，再把切点移动到与两点连线平行的中值定理见证c；退去图后显示对任意区间两点的条件和关系。",
+      "learning_purpose": "把处处导数同号连接到任意两点高低关系；单点信息不能替代区间条件。",
+      "anchors": [
+        {
+          "id": "interval_pair_ready",
+          "meaning": "区间内两点与连线已出现"
+        },
+        {
+          "id": "interval_pair_complete",
+          "meaning": "b向右且函数值上升的运动完成"
+        },
+        {
+          "id": "secant_witness_ready",
+          "meaning": "切线与两点连线平行的c已到位"
+        },
+        {
+          "id": "interval_condition_ready",
+          "meaning": "区间可导条件与中值定理关系已出现"
+        },
+        {
+          "id": "interval_increasing_ready",
+          "meaning": "任意a<b推出f(a)<f(b)已出现"
+        },
+        {
+          "id": "interval_decreasing_ready",
+          "meaning": "负号对应严格递减的条件结论可读"
+        }
+      ]
+    },
+    {
+      "id": "zero-point",
+      "duration": 50,
+      "heading": "水平切线与继续增长",
+      "visual": "x³的点先走到0，零点水平切线随后出现；再向右走；最后显示任意两点立方差为正。",
+      "learning_purpose": "f'(0)=0与全实数严格递增共存；不把单点零导数理解为停增长区间或必为极值。",
+      "anchors": [
+        {
+          "id": "cube_graph_ready",
+          "meaning": "x³图与导数式已出现"
+        },
+        {
+          "id": "cube_zero_tangent_ready",
+          "meaning": "原点和水平切线及导数0已出现"
+        },
+        {
+          "id": "cube_crossed_zero",
+          "meaning": "点经过0后继续向右上方的过程已完成"
+        },
+        {
+          "id": "cube_strict_increase_ready",
+          "meaning": "任意两点的代数正差已出现"
+        }
+      ]
+    },
+    {
+      "id": "disconnected-domain",
+      "duration": 72,
+      "heading": "定义域断开时，先分区间",
+      "visual": "分开绘制q=-1/x两支，标0处无定义；先左点-2到-1，后右点0.5到1，均向右升高；保留A=(-1,1)、B=(1,-1)比较输入与输出反序，再说明[-1,1]缺少0处定义，不能跨断点调用中值定理。",
+      "learning_purpose": "以断点两侧具体输入输出解释各支导数同正，仍不能跨断点合并判断递增。",
+      "anchors": [
+        {
+          "id": "disconnected_model_ready",
+          "meaning": "函数、正导数与断开的定义域可读"
+        },
+        {
+          "id": "disconnected_branches_ready",
+          "meaning": "两条分支及0无定义标记已出现"
+        },
+        {
+          "id": "branch_left_start_ready",
+          "meaning": "左支起点(-2,0.5)可读"
+        },
+        {
+          "id": "branch_left_complete",
+          "meaning": "左支向右升至(-1,1)完成"
+        },
+        {
+          "id": "branch_right_start_ready",
+          "meaning": "右支起点(0.5,-2)可读"
+        },
+        {
+          "id": "branch_right_complete",
+          "meaning": "右支向右升至(1,-1)完成"
+        },
+        {
+          "id": "cross_gap_comparison_ready",
+          "meaning": "-1<1但q(-1)=1>q(1)=-1与两点可读"
+        },
+        {
+          "id": "gap_interval_condition_ready",
+          "meaning": "[-1,1]含未定义的0，区间条件未满足的说明已出现"
+        },
+        {
+          "id": "separate_intervals_ready",
+          "meaning": "分别递增且不能跨0合并的结论已出现"
+        }
+      ]
+    },
+    {
+      "id": "handoff",
+      "duration": 30,
+      "heading": "用区间读增长",
+      "visual": "明确整个区间可导和符号一致的前提，再留零导数位置是否改变增减的问题。",
+      "learning_purpose": "本课闭合，给后课极值留下问题，不提前教完整极值判定。",
+      "anchors": [
+        {
+          "id": "monotonicity_summary_ready",
+          "meaning": "前提及增减联系已出现"
+        },
+        {
+          "id": "extrema_handoff_ready",
+          "meaning": "后课问题已出现"
+        }
+      ]
+    }
+  ],
+  "focus_intents": [
+    {
+      "id": "monotonicity_opening",
+      "cue": "opening",
+      "claim": "从已会求导转向区间增长"
+    },
+    {
+      "id": "axes_meanings",
+      "cue": "same-x",
+      "claim": "上图纵坐标函数值，下图纵坐标导数值"
+    },
+    {
+      "id": "same_x_motion",
+      "cue": "same-x",
+      "claim": "同一x逐帧驱动三种表示"
+    },
+    {
+      "id": "same_x_result",
+      "cue": "same-x",
+      "claim": "同一输入完成后的两种不同高度"
+    },
+    {
+      "id": "left_interval_motion",
+      "cue": "sweep",
+      "claim": "走过导数为正的左侧，到-1为零"
+    },
+    {
+      "id": "minus_one_horizontal",
+      "cue": "sweep",
+      "claim": "-1处水平切线"
+    },
+    {
+      "id": "middle_interval_motion",
+      "cue": "sweep",
+      "claim": "走过负导数区间，到1为零"
+    },
+    {
+      "id": "plus_one_horizontal",
+      "cue": "sweep",
+      "claim": "1处水平切线"
+    },
+    {
+      "id": "right_interval_motion",
+      "cue": "sweep",
+      "claim": "导数为正时函数再次增长"
+    },
+    {
+      "id": "sweep_result",
+      "cue": "sweep",
+      "claim": "三段运动完成后仍保持同源取值"
+    },
+    {
+      "id": "sign_boundaries",
+      "cue": "signs",
+      "claim": "根把实数轴分成三个开区间"
+    },
+    {
+      "id": "left_sign",
+      "cue": "signs",
+      "claim": "两个因子同负，积正"
+    },
+    {
+      "id": "middle_sign",
+      "cue": "signs",
+      "claim": "两个因子异号，积负"
+    },
+    {
+      "id": "right_sign",
+      "cue": "signs",
+      "claim": "两个因子同正，积正"
+    },
+    {
+      "id": "whole_sign_chart",
+      "cue": "signs",
+      "claim": "三个实数区间上的完整正负正分布"
+    },
+    {
+      "id": "interval_pair_motion",
+      "cue": "interval",
+      "claim": "同一区间中右点移动到更高函数值"
+    },
+    {
+      "id": "interval_pair_result",
+      "cue": "interval",
+      "claim": "区间内两点的高低关系"
+    },
+    {
+      "id": "secant_witness_motion",
+      "cue": "interval",
+      "claim": "切点移动到两点斜率对应的c"
+    },
+    {
+      "id": "secant_witness_result",
+      "cue": "interval",
+      "claim": "实际c处的切线与连线平行"
+    },
+    {
+      "id": "interval_theorem",
+      "cue": "interval",
+      "claim": "开区间可导且处处同号，通过中值定理推出任意两点的次序"
+    },
+    {
+      "id": "interval_decreasing",
+      "cue": "interval",
+      "claim": "处处负导数时任意右点更低"
+    },
+    {
+      "id": "cube_to_zero",
+      "cue": "zero-point",
+      "claim": "x³上的点靠近原点仍上升"
+    },
+    {
+      "id": "cube_zero_state",
+      "cue": "zero-point",
+      "claim": "原点导数0和水平切线"
+    },
+    {
+      "id": "cube_after_zero",
+      "cue": "zero-point",
+      "claim": "离开原点后继续上升的实际运动"
+    },
+    {
+      "id": "cube_interval_reason",
+      "cue": "zero-point",
+      "claim": "任意a<b的立方差严格正"
+    },
+    {
+      "id": "monotonicity_summary",
+      "cue": "handoff",
+      "claim": "符号与区间条件一起使用"
+    },
+    {
+      "id": "monotonicity_to_extrema",
+      "cue": "handoff",
+      "claim": "把零导数与增减转向留给后课"
+    },
+    {
+      "id": "disconnected_domain",
+      "cue": "disconnected-domain",
+      "claim": "定义域两段，0没有函数值"
+    },
+    {
+      "id": "branch_left_motion",
+      "cue": "disconnected-domain",
+      "claim": "左支内部向右升高"
+    },
+    {
+      "id": "branch_right_motion",
+      "cue": "disconnected-domain",
+      "claim": "右支内部向右升高，未跨0运动"
+    },
+    {
+      "id": "cross_gap_comparison",
+      "cue": "disconnected-domain",
+      "claim": "跨断点输入增大但输出反序"
+    },
+    {
+      "id": "gap_interval_condition",
+      "cue": "disconnected-domain",
+      "claim": "两输入间含未定义点，不能用中值定理连接"
+    },
+    {
+      "id": "separate_intervals",
+      "cue": "disconnected-domain",
+      "claim": "分别递增不等于断开定义域整体递增"
+    }
+  ],
+  "review_times": [
+    4,
+    9,
+    16,
+    23,
+    27,
+    33,
+    40,
+    45,
+    52,
+    58,
+    65,
+    72,
+    78,
+    85,
+    90,
+    93,
+    95,
+    96,
+    100,
+    106,
+    112,
+    118,
+    123,
+    129,
+    134,
+    141,
+    147,
+    154,
+    160,
+    166,
+    173,
+    177,
+    184,
+    193,
+    200,
+    207,
+    211,
+    214,
+    217,
+    220,
+    223,
+    227,
+    230,
+    234,
+    239,
+    243,
+    248,
+    258,
+    263,
+    266,
+    269,
+    275,
+    280,
+    284,
+    289,
+    293,
+    301.2,
+    305.5,
+    310,
+    312.7,
+    318,
+    322.1,
+    323.5,
+    325,
+    329,
+    334.3,
+    337.2,
+    340.1,
+    344,
+    348.7,
+    354,
+    358.8,
+    363.5,
+    365,
+    372,
+    380,
+    389,
+    394
+  ],
+  "state_contracts": [
+    {
+      "name": "scene_trackers_and_samples",
+      "writer": "01a199e9-73ab-7700-8a9f-cd7b5541b0ad",
+      "consumers": [
+        "main",
+        "independent visual reviewer",
+        "timing reviewer"
+      ],
+      "lifecycle": "One exact scene execution; only actual runtime emits samples and windows",
+      "invalidation": "Any scene/helper/model/plan/profile/context/font/timing change"
+    },
+    {
+      "name": "versioned_plan_facts_and_narration",
+      "writer": "01a199e9-73ab-7700-8a9f-cd7b5541b0ad",
+      "consumers": [
+        "main installer",
+        "renderer",
+        "independent reviewer",
+        "future meaning-unit speech planner"
+      ],
+      "lifecycle": "v002 author draft for this lesson; not an approval or acoustic record",
+      "invalidation": "Changed mathematics, wording, references, shared helper, course context or visual source requires a new revision"
+    },
+    {
+      "name": "linked_graph_tracker",
+      "writer": "DerivativeMonotonicityLesson.plots native updater",
+      "consumers": [
+        "function point",
+        "screen-scaled tangent",
+        "derivative point",
+        "common x cursor",
+        "separate numeric readouts",
+        "actual motion journal"
+      ],
+      "lifecycle": "One cue-local tracker shared by all geometry; stopped before a plot transition",
+      "invalidation": "Changed input/model/axis map/tangent scale/scene/helper/cue; samples are not visibility approval"
+    },
+    {
+      "name": "mean_value_witness",
+      "writer": "secant_witness pure function and interval cue",
+      "consumers": [
+        "native tangent driver",
+        "mathematics tests",
+        "independent science reviewer"
+      ],
+      "lifecycle": "Only the displayed a<b<-1 pair; secant freezes before x moves to c",
+      "invalidation": "Any changed pair, function, formula or visual mapping"
+    },
+    {
+      "name": "reciprocal_branch_trackers",
+      "writer": "01a199e9-73ab-7700-8a9f-cd7b5541b0ad",
+      "consumers": [
+        "branch dots",
+        "numeric readouts",
+        "actual motion journal",
+        "independent reviewer"
+      ],
+      "lifecycle": "Cue-local left tracker stays [-2,-1], right stays [0.5,1]. Drivers attach after visible starts and clear before readouts disappear; never cross zero.",
+      "invalidation": "Function/domain/endpoints/axis map/source/helper/cue/wording change"
+    },
+    {
+      "name": "cross_gap_pair",
+      "writer": "01a199e9-73ab-7700-8a9f-cd7b5541b0ad",
+      "consumers": [
+        "A/B exact labels",
+        "comparison",
+        "interval-condition text",
+        "future speech references"
+      ],
+      "lifecycle": "After both branch motions; held to cue end; removed at next begin_chapter",
+      "invalidation": "Changed compared inputs/outputs/domain or displayed geometry"
+    }
+  ],
+  "production_boundary": {
+    "status": "author_source_draft_not_rendered",
+    "rendered": false,
+    "visual_approved": false,
+    "narration_approved": false,
+    "audio_generated": false,
+    "acoustic_alignment_performed": false,
+    "independent_review_required": true,
+    "published": false
+  },
+  "audience": "已学高中常见函数、斜率与基本代数运算，尚未系统学习导数的学生",
+  "prior_knowledge": [
+    {
+      "lesson_id": "M02-02",
+      "assumed_exit": "函数表达式、图像与点坐标对应"
+    },
+    {
+      "lesson_id": "M03-04",
+      "assumed_exit": "对数函数与运算法则的定义域和底数条件"
+    },
+    {
+      "lesson_id": "M04-05",
+      "assumed_exit": "同角与和差公式，以及它们联系的单位圆正弦余弦"
+    },
+    {
+      "lesson_id": "M09-01",
+      "assumed_exit": "有向增量与直线斜率"
+    },
+    {
+      "lesson_id": "M01-01",
+      "assumed_exit": "展开、因式分解及非零约分"
+    }
+  ],
+  "understanding_goals": [
+    "某点的斜率是局部信息；在一个完整区间内保持同一符号，才支持这个区间的整体增减判断"
+  ],
+  "revision_change": {
+    "finding_id": "CH05-VIS-001",
+    "baseline_seconds": 324,
+    "added_seconds": 72,
+    "total_seconds": 396,
+    "preserved_cues": "Seven baseline cue methods unchanged; first 294 seconds unchanged, last 30 seconds shifted +72",
+    "status": "source_only_independent_visual_and_regression_reviews_pending"
+  },
+  "artifact_type": "test_fixture",
+  "status": "test_only_not_production_or_approved",
+  "revision_contract": "test-only-contract.json",
+  "revision_review": "test-only-pending-comparison.json"
+}

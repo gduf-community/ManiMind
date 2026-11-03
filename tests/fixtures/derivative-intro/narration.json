@@ -1,0 +1,51 @@
+{
+  "schema_version": 3,
+  "source_contract": "continuous-meaning-units-v1",
+  "artifact_type": "test_fixture",
+  "status": "test_only_not_production_or_approved",
+  "fixture_scope": "Original unapproved meaning-unit text and references for schema/native-focus tests only; no speech or review evidence.",
+  "author_agent": "01a1976b-d4e1-7161-a92f-0e5d6e5ab5ca",
+  "author_context": "01a1976b-d4e1-7161-a92f-0e5d6e5ab5ca",
+  "units": [
+    {"id": "intro", "cue": "opening", "text": "曲线的陡缓沿途在变。今天，我们来找曲线上一个点附近的变化率。就从熟悉的平方函数开始，把目光放在横坐标为二的这个点。", "references": [
+      {"id": "title", "focus": "opening_question", "text": "曲线的陡缓沿途在变。今天，我们来找曲线上一个点附近的变化率。"},
+      {"id": "point", "focus": "opening_point", "text": "就从熟悉的平方函数开始，把目光放在横坐标为二的这个点。"}
+    ]},
+    {"id": "interval", "cue": "average", "text": "固定P，取Q的横坐标为二加h。现在h等于一。横向增加一，纵向就从四增加到九，多了五。纵向增量除以横向增量，得到五。这是区间平均变化率，也是割线斜率。", "references": [
+      {"id": "points", "focus": "interval_points", "text": "固定P，取Q的横坐标为二加h。现在h等于一。"},
+      {"id": "increments", "focus": "signed_increments", "text": "横向增加一，纵向就从四增加到九，多了五。"},
+      {"id": "quotient", "focus": "average_quotient", "text": "纵向增量除以横向增量，得到五。这是区间平均变化率，也是割线斜率。"}
+    ]},
+    {"id": "approaching", "cue": "approach", "text": "现在让P留在原处，用h记录Q离它有多远。Q沿曲线向P靠近，横向、纵向的增量一起缩小，连接两点的割线也在转动。右边的比值从五降到四点一，再靠近一些，变成四点零二。区间越来越短，平均变化率越来越接近四。为什么会是这个数？", "references": [
+      {"id": "setup", "focus": "approach_setup", "text": "现在让P留在原处，用h记录Q离它有多远。"},
+      {"id": "motion", "focus": "right_approach", "text": "Q沿曲线向P靠近，横向、纵向的增量一起缩小，连接两点的割线也在转动。右边的比值从五降到四点一，再靠近一些，变成四点零二。"},
+      {"id": "near", "focus": "near_rate", "text": "区间越来越短，平均变化率越来越接近四。为什么会是这个数？"}
+    ]},
+    {"id": "algebra_reason", "cue": "algebra", "text": "把平方函数代进同一个差商，分子是二加h的平方，再减四。展开以后，得到四、四h和h平方，最后减四。两个常数相消，留下四h加h平方。提取公因式h，分子就成了h乘四加h。P、Q仍是两个点，h不等于零，分子分母的h可以约去。于是，每条这样的割线，斜率都等于四加h。", "references": [
+      {"id": "substitute", "focus": "quotient_substitution", "text": "把平方函数代进同一个差商，分子是二加h的平方，再减四。"},
+      {"id": "expand", "focus": "expanded_terms", "text": "展开以后，得到四、四h和h平方，最后减四。"},
+      {"id": "combine", "focus": "combined_terms", "text": "两个常数相消，留下四h加h平方。"},
+      {"id": "factor", "focus": "factored_h", "text": "提取公因式h，分子就成了h乘四加h。"},
+      {"id": "cancel", "focus": "nonzero_cancel", "text": "P、Q仍是两个点，h不等于零，分子分母的h可以约去。"},
+      {"id": "simple", "focus": "simplified_rate", "text": "于是，每条这样的割线，斜率都等于四加h。"}
+    ]},
+    {"id": "both_directions", "cue": "both_sides", "text": "左边的Q对应负h，纵向增量也为负，斜率仍为正。两侧一起靠近，右边的斜率从四的上方下降，左边的从四的下方上升。差商离四的距离正好是h的绝对值，h趋近零，两侧就都趋近四。", "references": [
+      {"id": "signs", "focus": "two_sided_start", "text": "左边的Q对应负h，纵向增量也为负，斜率仍为正。"},
+      {"id": "moving", "focus": "two_sided_motion", "text": "两侧一起靠近，右边的斜率从四的上方下降，左边的从四的下方上升。"},
+      {"id": "reason", "focus": "common_four", "text": "差商离四的距离正好是h的绝对值，h趋近零，两侧就都趋近四。"}
+    ]},
+    {"id": "name_derivative", "cue": "definition", "text": "这个共同趋近的值叫作函数在二处的导数，记作f撇二，等于四。f二记录高度，f撇二记录这里的变化率。把位置写成a，在a附近有定义，差商从两侧趋近同一个有限值时，就用这个极限定义f撇a。", "references": [
+      {"id": "value", "focus": "derivative_at_two", "text": "这个共同趋近的值叫作函数在二处的导数，记作f撇二，等于四。f二记录高度，f撇二记录这里的变化率。"},
+      {"id": "pattern", "focus": "definition_pattern", "text": "把位置写成a，在a附近有定义，差商从两侧趋近同一个有限值时，就用这个极限定义f撇a。"}
+    ]},
+    {"id": "use_nearby", "cue": "tangent_prediction", "text": "把P附近的坐标放大，刚才割线趋近的方向，给出了P处的切线，斜率就是四。沿着切线，输入增加h，输出就增加四h。让h从零点四减小到零点一，切线的预测值和真实曲线值越靠越近。预测四点四，真值四点四一；多出的零点零一，正好是h平方。", "references": [
+      {"id": "tangent", "focus": "tangent_geometry", "text": "把P附近的坐标放大，刚才割线趋近的方向，给出了P处的切线，斜率就是四。"},
+      {"id": "prediction", "focus": "local_prediction", "text": "沿着切线，输入增加h，输出就增加四h。让h从零点四减小到零点一，切线的预测值和真实曲线值越靠越近。"},
+      {"id": "remainder", "focus": "prediction_remainder", "text": "预测四点四，真值四点四一；多出的零点零一，正好是h平方。"}
+    ]},
+    {"id": "handoff", "cue": "closing", "text": "平均变化率的极限给出本点导数，也连接着切线和附近的变化。把二换成任意的a，导数怎样随位置改变？下一课继续。", "references": [
+      {"id": "summary", "focus": "local_summary", "text": "平均变化率的极限给出本点导数，也连接着切线和附近的变化。"},
+      {"id": "next", "focus": "next_position", "text": "把二换成任意的a，导数怎样随位置改变？下一课继续。"}
+    ]}
+  ]
+}

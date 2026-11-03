@@ -1,0 +1,553 @@
+{
+  "status": "not_reviewed",
+  "writer": "01a19acd-e149-74d0-8a5d-975a3adf45f4",
+  "consumers": [
+    "main",
+    "native tests",
+    "independent reviewers"
+  ],
+  "lifecycle": "Old source/receipt/core/original speech protection; no old write license",
+  "invalidation": "Bound input/source/clock/model/wording/feedback or authorization changes",
+  "protected_inputs": [
+    {
+      "path": "runtime/projects/math-derivative-ch08-optimization-20261102/narration-draft-v002.json",
+      "sha256": "4c6b9cdbe62f97d03fb11b779d67065d655eb0f5357301427cb5dffd97b31015"
+    },
+    {
+      "path": "runtime/projects/math-derivative-ch08-optimization-20261102/narration-v002.json",
+      "sha256": "9703633ed8b7762778f132733b957a801c14f9b4d2e35d6e49f53b5cc87550df"
+    },
+    {
+      "path": "runtime/projects/math-derivative-ch08-optimization-20261102/plan-v003.json",
+      "sha256": "9caae98114790f4433f9e9325c4df7e704b1a2ee7d62c95d23b84e33bfb92a61"
+    },
+    {
+      "path": "runtime/projects/math-derivative-ch08-optimization-20261102/scene-draft-plan-v003.json",
+      "sha256": "605761f426648680656b510211f49f76a65d356ecacccea638d310bb7ccdeac4"
+    },
+    {
+      "path": "runtime/projects/math-derivative-ch08-optimization-20261102/scientific-brief-v001.json",
+      "sha256": "a230cfe857a8b1b6cee8ab1b5f119ba9bf0a5f971f4f88e281837659b4152c3a"
+    },
+    {
+      "path": "runtime/projects/math-derivative-ch08-optimization-20261102/math-facts-v001.json",
+      "sha256": "45928d4f9ba2bfac740ca4204de3f0ff925b1378d6fb41d0099250897e0aa398"
+    },
+    {
+      "path": "runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch08-optimization-20261102/speech-plan-v002.json",
+      "sha256": "3e7e3c3e0c006330f699fb964d26e9d8a3952263bacbc35801f27b471052bdac"
+    },
+    {
+      "path": "runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch08-optimization-20261102/timings-v001.json",
+      "sha256": "34a6e44f5ceba10d031bb98fcedcabede14d90fa2c90f4bfb8bc832642c8aee8"
+    },
+    {
+      "path": "runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch08-optimization-20261102/review/audio-v003.json",
+      "sha256": "865ae3a7d9d49aee7f4532a456152e821f64cb1cdacd4e4212d657c871b99b67"
+    },
+    {
+      "path": "outputs/math-derivative-ch08-optimization-20261102/visual-v003/render.json",
+      "sha256": "f42e11fb15ab9fc67ce9dbeb590d0bfc82ec7a73f1a8ef5318bf88571e50fc31"
+    },
+    {
+      "path": "outputs/math-derivative-ch08-optimization-20261102/visual-v003/plan.json",
+      "sha256": "9caae98114790f4433f9e9325c4df7e704b1a2ee7d62c95d23b84e33bfb92a61"
+    },
+    {
+      "path": "outputs/math-derivative-ch08-optimization-20261102/visual-v003/timeline.json",
+      "sha256": "7a5819eb1aa508a2651f0b134a34fbb2edb1dab695f17641afce8c6e35545200"
+    },
+    {
+      "path": "outputs/math-derivative-ch08-optimization-20261102/visual-v003/review-input.json",
+      "sha256": "43b845f09614750fc2bd5ec697c8c74a7eb708b0369936957e0a526c8d6a0b97"
+    },
+    {
+      "path": "outputs/math-derivative-ch08-optimization-20261102/visual-v003/focus-events.json",
+      "sha256": "76a89436988c4838ef70bc6b9a5bddc6a6fed631033a344c6ca056da47a226c1"
+    },
+    {
+      "path": "outputs/math-derivative-ch08-optimization-20261102/visual-v003/chapter-motion.json",
+      "sha256": "c96f048509e3ae2c589b631f8e1b53108bf5ba73d3f86f831fc5e05286aebc16"
+    },
+    {
+      "path": "outputs/math-derivative-ch08-optimization-20261102/visual-v003/visual-events.json",
+      "sha256": "d4aff4d1bfdcaefb8bf1d653704004fe1b92ed515f4229d400a5cde909149d1f"
+    },
+    {
+      "path": "outputs/math-derivative-ch08-optimization-20261102/visual-v003/manim/media/manimgl/understanding.mp4",
+      "sha256": "fdc2581360151e401c44605bf56a001117888acfabf97c4135018267ebed101a"
+    },
+    {
+      "path": "examples/derivative_ch08_optimization_v003.py",
+      "sha256": "e304b519340c31a771b6b24bb84094049f197c46a26ecd642c24a45e80d20a34"
+    },
+    {
+      "path": "configs/visual-first-workflow-v4.2-unit.json",
+      "sha256": "3e8d21dc86df3276e734d82108f1aab953bd2a785d802fda7df524df1f782857"
+    },
+    {
+      "path": "src/manimind/postproduce/understanding_render.py",
+      "sha256": "38c5daa7d1584c0196fee92cb01b4d5c84c62cab45198414c3296c1b24cf4fd1"
+    },
+    {
+      "path": "src/manimind/postproduce/formula_film.py",
+      "sha256": "be0550d47b91bbe6111c7f2df2d90216fc3fd548247c1f03fd112b3c2be105be"
+    },
+    {
+      "path": "src/manimind/render/manim_renderer.py",
+      "sha256": "80a97ee2969b2b75c417a3cbf9f75a17e30d1999d8ca0936657d5be6d9ef22c4"
+    },
+    {
+      "path": "src/manimind/experiments/understanding_support.py",
+      "sha256": "ab423add671dd567a2b6b07bd06207573cce802be359537f07eac447d4f5d542"
+    },
+    {
+      "path": "src/manimind/experiments/visual_first_support.py",
+      "sha256": "fb879f1b53a195cea95a2cc4a1f1ca72b4dc0d98ed7e27f6696ae3897e110e08"
+    },
+    {
+      "path": "src/manimind/experiments/visual_first_data.py",
+      "sha256": "27fef6125910067ffbbd58da3b527fe9d5ded9613f143e1ad3988edd8eaad4b0"
+    },
+    {
+      "path": "src/manimind/experiments/freeform_support.py",
+      "sha256": "28b37dc707e7e07b719c3f3cf18ba10c4db18ae8adda7b8f102aba7f90ca4967"
+    },
+    {
+      "path": "src/manimind/components/typography.py",
+      "sha256": "1cdcfcfb2ab675fb7b1940cb242c7c241a14932886d16b78ac5001039873ef48"
+    },
+    {
+      "path": "src/manimind/components/formula_motion.py",
+      "sha256": "47c0dfcfe5e4f7801f6bee5a465e203c1795bc9a800eb53a3b91c9a72f2a4914"
+    },
+    {
+      "path": "src/manimind/review/semantic_focus.py",
+      "sha256": "83184519b434e65d341537ff3473157f1ce6b51629f01d029dc0eb1b4d4e9a34"
+    },
+    {
+      "path": "examples/derivative_chapter_shared.py",
+      "sha256": "ed9bb7ece0f273c72fc4db744200e7a3a96e51ad54e258861305140e9d0c17ae"
+    },
+    {
+      "path": "docs/course-unit-workflow.md",
+      "sha256": "4b2f4cf5c09ee58b549ec1a4743aa9e9595570d80152b5500d92bae1ea6d176f"
+    },
+    {
+      "path": "runtime/projects/math-derivative-ch08-optimization-20261102/context-v001.json",
+      "sha256": "d453a1098fd7bce7677b1fde2b12390962e05c8b46afe74b59d6ca7ec0f9d46e"
+    },
+    {
+      "path": "runtime/projects/math-derivative-chapter-20261102/unit-v001.json",
+      "sha256": "92ff0671190a00dd199c5b9f9db0996cea358cd86a8a5d783b09d7d8702a4926"
+    },
+    {
+      "path": "docs/curricula/high-school-mathematics-v0.1.csv",
+      "sha256": "544e548fe645f0b1c553e26fa2ea16c0dc8f24784e19da046416d0579fbbc83d"
+    },
+    {
+      "path": "src/manimind/curriculum.py",
+      "sha256": "6a51aaa5dd796a5d7d21e05988058ecb9dcffe5659cceaa961201fae2d81d26d"
+    },
+    {
+      "path": "runtime/projects/math-derivative-ch08-optimization-20261102/draft-plan-v001.json",
+      "sha256": "8e86f4c7f49424829ea46c2e669301909c3d5def318612e5d0d5b6dc09eddd73"
+    },
+    {
+      "path": "examples/derivative_ch08_optimization.py",
+      "sha256": "0270067699a19a2ff5ae993669986cbbaef126b754b379fa29a0a1da494ce9e1"
+    },
+    {
+      "path": "runtime/projects/math-derivative-ch08-optimization-20261102/content-regression-contract-v003.json",
+      "sha256": "bfae9d910007bdca0d92164175093705136dee0bf289bd07e78f97fe1aa5c3bc"
+    },
+    {
+      "path": "src/manimind/review/content_regression.py",
+      "sha256": "272a8918eb48dddce0f93a07ac01e333134747c33fcfd01ef0834dd5956f83f8"
+    },
+    {
+      "path": "runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch08-optimization-20261102/speech/ch08-opening.wav",
+      "sha256": "756c46a444a995ba24ba86beeb0045a4bcd75fd9a430530e76814d0f881f2bfd"
+    },
+    {
+      "path": "runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch08-optimization-20261102/speech/ch08-cut.wav",
+      "sha256": "0dbd05b8ca6bb25a04c11abf0499981f4eecae484e4500c804154264aaa66ee5"
+    },
+    {
+      "path": "runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch08-optimization-20261102/speech/ch08-fold.wav",
+      "sha256": "c9a8a7548bfc56af93e86031c8c08d94004cee6402fadbb0088391edab8c1e00"
+    },
+    {
+      "path": "runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch08-optimization-20261102/speech/ch08-objective.wav",
+      "sha256": "ab81deca8656a03a9b131018428422791abf492bee3db6a0cf5e7722db5adf41"
+    },
+    {
+      "path": "runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch08-optimization-20261102/speech/ch08-optimize.wav",
+      "sha256": "9624b617d0e861f272416d6ac2a02b617d1f485cab4cf52ccd16f442da005cf2"
+    },
+    {
+      "path": "runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch08-optimization-20261102/speech/ch08-boundary.wav",
+      "sha256": "f15dbe075445720f111fc2d042a14ce9e0a6c620862ee2aa8c3b06056d4790f6"
+    },
+    {
+      "path": "runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch08-optimization-20261102/speech/ch08-constraint.wav",
+      "sha256": "0e9db0f28b6e9e45309915d29701f53c8cb4f933796bb0fcbd905c775679ba64"
+    },
+    {
+      "path": "runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch08-optimization-20261102/speech/ch08-closing.wav",
+      "sha256": "6ba0f27afaa1c57d1a5af501fbb4023ac0dbd5861ef004ce292cbd0be9638b4f"
+    }
+  ],
+  "external_no_write_guards": [
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/examples/derivative_ch04_chain_v003.py",
+      "sha256": "fe87a529e7af7350d1c9eef69c86945e604ad87f662c9feecf6ae2f62bd5c025"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/projects/math-derivative-ch04-chain-20261102/scene-draft-plan-v003.json",
+      "sha256": "d96b22bd2063bdeeb2e6aac8220641cb94cd98e7fd6e1f9c0012e001509df523"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/projects/math-derivative-ch04-chain-20261102/content-regression-contract-v003.json",
+      "sha256": "998719bad578487628cecf3b3adf943a03ac405c9419d0bc397d8f2f5f88256b"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/tests/test_derivative_ch04_chain_v003.py",
+      "sha256": "f3dcb5678150e6989435b43e8c116bcc652f3904ead48be9cdcb611c04c8b90c"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/tests/fixtures/derivative-ch04-chain-v003/baseline-lock.json",
+      "sha256": "32723437b451a02c9b63152565a3acaca69221042ddc643ae4800bf2e77bf148"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/tests/fixtures/derivative-ch04-chain-v003/contract.json",
+      "sha256": "998719bad578487628cecf3b3adf943a03ac405c9419d0bc397d8f2f5f88256b"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/tests/fixtures/derivative-ch04-chain-v003/narration.json",
+      "sha256": "284bdccbbfe3344453344a0c62cea2728d34f9ae798f49540eb657dd97cb4440"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/tests/fixtures/derivative-ch04-chain-v003/plan.json",
+      "sha256": "d96b22bd2063bdeeb2e6aac8220641cb94cd98e7fd6e1f9c0012e001509df523"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/tests/fixtures/derivative-ch04-chain-v003/timings.json",
+      "sha256": "a278aae550c500987ee9b9a7b8ac89cdee36927c4367befc342cfb6a5d19ca1c"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/tests/fixtures/derivative-ch04-chain-v003/transport.json",
+      "sha256": "c4a4d7daa4fcee58161d8f6ccba337d644e98b528b5bf0d79864e46dbaf29903"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-audio-retime-author-04/prepare_v003.py",
+      "sha256": "fe869a8e26374db4558331dedf7f606c9fdca65b801ec205ad133f3d7c8bd359"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-audio-retime-author-04/validate_native_v003.py",
+      "sha256": "257018d106dc7806242f57b910880045280e29ae4ace73f76fb031cb747d83b5"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-audio-retime-author-04/freeze_handoff.py",
+      "sha256": "b6b943d750b6efe4c46065c6ec84c20d82ca2e1356816dd98e3d05067b503572"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-audio-retime-author-04/production-verification-v001.json",
+      "sha256": "3635187a8c9b5404d07b54ca610ab98483e6108f91034f6e56b755ac784cff53"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-audio-retime-author-04/input-lock-v001.json",
+      "sha256": "32723437b451a02c9b63152565a3acaca69221042ddc643ae4800bf2e77bf148"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-audio-retime-author-04/native-focus-v002.json",
+      "sha256": "f50d2bd56ad69e17e57ad228f6cd2b8a924e54824d1e71fc29b010416321bfd7"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-audio-retime-author-04/native-motion-v002.json",
+      "sha256": "22617c50c672c6942d514596ecae8a2586f053d2d260ffb2572508bb930bf741"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-audio-retime-author-04/native-feasibility-v002.json",
+      "sha256": "d3af972b49f0dd0b0475e6dd3aac8d35e5f09a11aafb118c5309b77f04ac61d5"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-audio-retime-author-04/native-reference-map-v002.json",
+      "sha256": "652876d37e919f59b705c39b9c83ee13ab9e589de906e9a02a8131dc7f176ed2"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-audio-retime-author-04/tests-v003.xml",
+      "sha256": "ff35022ba92ecb26634b8611be2fdb0ce6445c40d3d4d189f7bf171bd0028f08"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/examples/derivative_ch06_extrema_v003.py",
+      "sha256": "93685646884b6a4e2cd6fb26baf3baee07a6dc07ec375611dae0ba9b6edc324b"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/projects/math-derivative-ch06-extrema-20261102/scene-draft-plan-v003.json",
+      "sha256": "9d1b2e73870f2fd72abc6390ba0a747608f0d56f98acc6350a342f2bf92cfca5"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/projects/math-derivative-ch06-extrema-20261102/content-regression-contract-v003.json",
+      "sha256": "c0541e71bf11dc57fadf28df3273bf7faaa1bc79dc5561c85f2458e9ee1d9f22"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/tests/test_derivative_ch06_extrema_v003.py",
+      "sha256": "e02f6cb7be7cb2cf199888c55c08db8630fcb4942fec83a4a718846ac4850b90"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/tests/fixtures/derivative-ch06-extrema-v003/baseline-lock.json",
+      "sha256": "de5d4593d7178928eb877563b73288498f681de24120e59836ea46c896f2234d"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/tests/fixtures/derivative-ch06-extrema-v003/contract.json",
+      "sha256": "c0541e71bf11dc57fadf28df3273bf7faaa1bc79dc5561c85f2458e9ee1d9f22"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/tests/fixtures/derivative-ch06-extrema-v003/narration.json",
+      "sha256": "8315f4edd875258f9f2842171e21de010fe1c1c261dd832daee4bb77742fcb57"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/tests/fixtures/derivative-ch06-extrema-v003/plan.json",
+      "sha256": "9d1b2e73870f2fd72abc6390ba0a747608f0d56f98acc6350a342f2bf92cfca5"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/tests/fixtures/derivative-ch06-extrema-v003/timings.json",
+      "sha256": "d551ff1241276f5b61a026ac982b0e1ff55d160ae9220fc6572d51f57edc08ab"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/tests/fixtures/derivative-ch06-extrema-v003/transport.json",
+      "sha256": "8c15f920bd889422d71fb830888556db905d1a4831ff4eb8896599f8aeebfe0a"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-audio-retime-author-06/prepare_v003.py",
+      "sha256": "8da6704ae120a8763bd07e98bebdec1f2408f1e0f1cf247b9a4be1bce802bdf5"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-audio-retime-author-06/validate_and_freeze_v003.py",
+      "sha256": "7016bd01afeabd57c56c74163536ef97be193e6e6fd6194b5f69ff0fccefc25a"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-audio-retime-author-06/input-lock-v001.json",
+      "sha256": "de5d4593d7178928eb877563b73288498f681de24120e59836ea46c896f2234d"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-audio-retime-author-06/production-verification-v001.json",
+      "sha256": "76be09162841c5d7dced0c676a5303dcd05ae546b6640ca4f082872b3b44a048"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-audio-retime-author-06/native-focus-v001.json",
+      "sha256": "b8076b8f2e11d5911c88262000c8d5ae9068e31912b0e9bec19082fcbbf9c2e3"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-audio-retime-author-06/native-motion-v001.json",
+      "sha256": "a1c8561e8ea4d753f6e0c0d93ca5093a557254b994b013720bd888cd1d820dee"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-audio-retime-author-06/native-reference-map-v001.json",
+      "sha256": "15206f48441a65ffe3445861b9d1b3fafd08d09f175db2eb9a19fc544f0f5886"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-audio-retime-author-06/native-feasibility-v001.json",
+      "sha256": "730b8d6ad621d5a1672e768f138d0a14152209dbea7f0132dffd3aa29ab0dda6"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-audio-retime-author-06/tests-v001.xml",
+      "sha256": "b670754147bd79da2caaab130f7fa2ed0e67e44f20fb8a93d25a5d03f0f9e693"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-audio-retime-author-06/tests-v002.xml",
+      "sha256": "fdd7d55f6bb9e5e78dafe2deec8e7acccd35b483ec445a78d84f9da9800ae030"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/examples/derivative_ch08_optimization_v003.py",
+      "sha256": "e304b519340c31a771b6b24bb84094049f197c46a26ecd642c24a45e80d20a34"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/projects/math-derivative-ch08-optimization-20261102/scene-draft-plan-v003.json",
+      "sha256": "605761f426648680656b510211f49f76a65d356ecacccea638d310bb7ccdeac4"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/projects/math-derivative-ch08-optimization-20261102/content-regression-contract-v003.json",
+      "sha256": "bfae9d910007bdca0d92164175093705136dee0bf289bd07e78f97fe1aa5c3bc"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/tests/test_derivative_ch08_optimization_v003.py",
+      "sha256": "49724da50f391c9a55bb287108c07fdb0ba70192f11052e7baa17207e5c30cef"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/tests/fixtures/derivative-ch08-optimization-v003/baseline-lock.json",
+      "sha256": "8d811a4a75700154ea17001686648aad124aad22f56d5bee98ff0b621c625317"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/tests/fixtures/derivative-ch08-optimization-v003/contract.json",
+      "sha256": "bfae9d910007bdca0d92164175093705136dee0bf289bd07e78f97fe1aa5c3bc"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/tests/fixtures/derivative-ch08-optimization-v003/narration.json",
+      "sha256": "4c6b9cdbe62f97d03fb11b779d67065d655eb0f5357301427cb5dffd97b31015"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/tests/fixtures/derivative-ch08-optimization-v003/plan.json",
+      "sha256": "605761f426648680656b510211f49f76a65d356ecacccea638d310bb7ccdeac4"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/tests/fixtures/derivative-ch08-optimization-v003/timings.json",
+      "sha256": "88190e354cf248a87517a881b3ca6f0d98d02704687a60ad1ae5f14efef0d8a5"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/tests/fixtures/derivative-ch08-optimization-v003/transport.json",
+      "sha256": "bbbbfd5e695034a1700a0ef37a6b452121ac51b4b4862161d637c8dfed3f2715"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-audio-retime-author-08/baseline-study-v001.json",
+      "sha256": "1c824b7c5c5f9e0d1bd29f8d2fed3fe9e5f01e4bf536f6a0d5177d53a35af0de"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-audio-retime-author-08/prepare_v003.py",
+      "sha256": "377aa1629c41826fb97d672e2e5bf0b37d92bab3d35442eb8fbfc0d24d4b12a3"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-audio-retime-author-08/validate_and_freeze_v003.py",
+      "sha256": "5ff1b4d97d3b832fa295fda095ba0d504a62ef2e9cbb977c4ec177068773f30d"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-audio-retime-author-08/input-lock-v001.json",
+      "sha256": "8d811a4a75700154ea17001686648aad124aad22f56d5bee98ff0b621c625317"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-audio-retime-author-08/production-verification-v001.json",
+      "sha256": "2984391f3ab00ca3e640318351b854d9c71e615335028f61be3b0e0b8be95c0e"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-audio-retime-author-08/native-focus-v001.json",
+      "sha256": "fc458ec2eb935ce8f0b59d875dad329c038543708c158cb82314011d14811e14"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-audio-retime-author-08/native-motion-v001.json",
+      "sha256": "915764ada5f035e4770e32378caefe0863b2d38e487e99caebe956231f4b78c5"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-audio-retime-author-08/native-reference-map-v001.json",
+      "sha256": "d988ac7998f06662f2c12ca61be0d51bef23b3b5ac6f34b359287c14aee5cd78"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-audio-retime-author-08/native-feasibility-v001.json",
+      "sha256": "79aac8d45d0b61aacf2f67610b872d04505e91a76bd6018b4b7cbe936a624e8c"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-audio-retime-author-08/tests-v001.xml",
+      "sha256": "56966424f206807ced27835a7391e8bd2cf913705b86056c025c21c3dd9813e1"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-audio-retime-author-08/native-attempt-v001.json",
+      "sha256": "a9b55e0b1e26e1579ee7f69cb1c327e447e18801ec9cfbcfed54060714aee35a"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/examples/derivative_ch06_extrema_v004.py",
+      "sha256": "7050c2000b366203ae1491cca83fe97872436b2f6ca45f9cc164ee4a0c898cf8"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/projects/math-derivative-ch06-extrema-20261102/scene-draft-plan-v004.json",
+      "sha256": "f2f32d7b827e9f4be8e1467490259efeb0b34ac8449de05e9815168e02d75e8a"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/projects/math-derivative-ch06-extrema-20261102/content-regression-contract-v004.json",
+      "sha256": "eee3c36934a2e1a89ce7cea5e4f95b8a3c49374a49c800b0aeb1471515bd512c"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/tests/test_derivative_ch06_extrema_v004.py",
+      "sha256": "d3eefa07d9690b86ecd185f06803187b11251ca1c275cbf2786953fceb9473bf"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/tests/fixtures/derivative-ch06-extrema-v004/baseline-lock.json",
+      "sha256": "10f139ea4b004ae97d045d8318a29a7f82974e86d630d2246510aa65f5475b0f"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/tests/fixtures/derivative-ch06-extrema-v004/contract.json",
+      "sha256": "eee3c36934a2e1a89ce7cea5e4f95b8a3c49374a49c800b0aeb1471515bd512c"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/tests/fixtures/derivative-ch06-extrema-v004/narration.json",
+      "sha256": "8315f4edd875258f9f2842171e21de010fe1c1c261dd832daee4bb77742fcb57"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/tests/fixtures/derivative-ch06-extrema-v004/plan.json",
+      "sha256": "f2f32d7b827e9f4be8e1467490259efeb0b34ac8449de05e9815168e02d75e8a"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/tests/fixtures/derivative-ch06-extrema-v004/previous-contract.json",
+      "sha256": "c0541e71bf11dc57fadf28df3273bf7faaa1bc79dc5561c85f2458e9ee1d9f22"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/tests/fixtures/derivative-ch06-extrema-v004/previous-plan.json",
+      "sha256": "9d1b2e73870f2fd72abc6390ba0a747608f0d56f98acc6350a342f2bf92cfca5"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/tests/fixtures/derivative-ch06-extrema-v004/timings.json",
+      "sha256": "b0e10a7c6a4c2e54399591eb2283c9b3af46475f3dac32ac75eeaf92049ee855"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/tests/fixtures/derivative-ch06-extrema-v004/transport.json",
+      "sha256": "2ab5df9bae56e91859b03df96686c13547eccc3c8928b34300df96b669273c59"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-ch06-proof-revision/prepare_v004.py",
+      "sha256": "89313460207ae50820718994e70b9d6f0e67b712ef60afbee8b7d6ed7213d51b"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-ch06-proof-revision/validate_and_freeze_v004.py",
+      "sha256": "13430be6ad0b461b9e2a76f71afbe94cb58c4a8de3e97704a24b1adf2cc42de6"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-ch06-proof-revision/feedback-study-v001.json",
+      "sha256": "259ca8b68c42d939d5e8585dffb963f137cf3cc1c7f387f731927712bb918994"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-ch06-proof-revision/input-lock-v001.json",
+      "sha256": "10f139ea4b004ae97d045d8318a29a7f82974e86d630d2246510aa65f5475b0f"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-ch06-proof-revision/production-verification-v001.json",
+      "sha256": "9bbbd6690f7201464b2f5107925a6cb14565ace15ce289e4a72af393d873e66e"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-ch06-proof-revision/native-focus-v001.json",
+      "sha256": "1f25b9b91650207e3adc80acce4b23b2fca0bd99dea6a841e08564e186d08a93"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-ch06-proof-revision/native-motion-v001.json",
+      "sha256": "1bdba39189db8c562781fee031091fec4acf2144fdaf5a977bc0109dc7af6133"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-ch06-proof-revision/native-reference-map-v001.json",
+      "sha256": "28d527657b08eafcf62252e6ae9e434c307b1eb526fba7eeef4736e5faef5f44"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-ch06-proof-revision/native-feasibility-v001.json",
+      "sha256": "b9356f14f20ad9f779d12995f39e509f5dcbaaa1c0310c82e7279c3ec8686e3d"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-ch06-proof-revision/tests-v001.xml",
+      "sha256": "515d27bdd5f5e51c43697d4f0f9e3916db8cf3a5f7db516f124849afc6fe9756"
+    }
+  ],
+  "external_handoffs": [
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-audio-retime-author-04/handoff-v001.json",
+      "sha256": "9e2a789da7e2bd41705e136e6c76cf0ce55795fa66812c1f516755f6299ebf66"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-audio-retime-author-06/handoff-v001.json",
+      "sha256": "7b5e18c1ae70b8533ea0d62c934facf9952258559cd37080e459fafc1c128cb1"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-audio-retime-author-08/handoff-v001.json",
+      "sha256": "e81a280cc49b30f2b3dd06819d603c32a6c980b06bc86a53e16768f5a2441313"
+    },
+    {
+      "path": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-ch06-proof-revision/handoff-v001.json",
+      "sha256": "77064a4f872986c43a9e8e0d6cff86ca98b8da37b9536639589dfbcda4061563"
+    }
+  ]
+}

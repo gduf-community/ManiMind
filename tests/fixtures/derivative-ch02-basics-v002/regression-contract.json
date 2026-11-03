@@ -1,0 +1,323 @@
+{
+  "schema_version": 1,
+  "project_id": "math-derivative-ch02-basics-20261102",
+  "assets": {
+    "visual_v001": {
+      "path": "outputs/math-derivative-ch02-basics-20261102/visual-v001/manim/media/manimgl/understanding.mp4",
+      "sha256": "ddb26caa018afd09eb9feb1dfed2918e05ffc49139f89f7db36d7970d419622f",
+      "duration": 452
+    }
+  },
+  "units": [
+    {
+      "id": "opening",
+      "asset": "visual_v001",
+      "function": "从一个点的导数进入整条导函数",
+      "baseline_interval": [
+        0,
+        18
+      ],
+      "features": [
+        {
+          "id": "title_bridge",
+          "kind": "state",
+          "claim": "本课标题、首课f'(2)=4与换位置求斜率的问题形成自然引入"
+        }
+      ]
+    },
+    {
+      "id": "general",
+      "asset": "visual_v001",
+      "function": "区分自变量、函数值与导数值",
+      "baseline_interval": [
+        18,
+        70
+      ],
+      "features": [
+        {
+          "id": "nonzero_square_algebra",
+          "kind": "process",
+          "claim": "任意a的非零h差商展开约分并趋近2a，保留可追踪的历史行"
+        },
+        {
+          "id": "derivative_function",
+          "kind": "state",
+          "claim": "f'(a)=2a成为f'(x)=2x；函数值和导数值含义分开"
+        },
+        {
+          "id": "linked_slope_map",
+          "kind": "process",
+          "claim": "同一a使原曲线点、切线方向、导函数同横坐标高度和近似读数连续联动；负、零、正斜率都有依据"
+        }
+      ]
+    },
+    {
+      "id": "constant",
+      "asset": "visual_v001",
+      "function": "高度可以非零但变化率为零",
+      "baseline_interval": [
+        70,
+        92
+      ],
+      "features": [
+        {
+          "id": "constant_definition",
+          "kind": "state",
+          "claim": "(c-c)/h=0且h非零说明常数导数为零"
+        },
+        {
+          "id": "height_not_slope",
+          "kind": "process",
+          "claim": "非零常数高度不变，移动点的切线始终水平，导函数点始终高度零"
+        }
+      ]
+    },
+    {
+      "id": "identity",
+      "asset": "visual_v001",
+      "function": "定义法获得(x)'=1并联系恒定切线斜率",
+      "baseline_interval": [
+        92,
+        110
+      ],
+      "features": [
+        {
+          "id": "identity_definition",
+          "kind": "state",
+          "claim": "((x+h)-x)/h=h/h=1且h非零"
+        },
+        {
+          "id": "identity_map",
+          "kind": "process",
+          "claim": "一次函数任意位置的斜率为一，右图高度为一"
+        }
+      ]
+    },
+    {
+      "id": "power",
+      "asset": "visual_v001",
+      "function": "从增量展开看一次项留下，限定规则定义域",
+      "baseline_interval": [
+        110,
+        178
+      ],
+      "features": [
+        {
+          "id": "cubic_expansion",
+          "kind": "process",
+          "claim": "三次差商先保留完整展开分子，再除h，含h项趋零后留下3x²"
+        },
+        {
+          "id": "power_domains",
+          "kind": "state",
+          "claim": "正整数幂全实数、零次常数支、负整数排零、实数幂x>0安全域与端点另查"
+        },
+        {
+          "id": "cubic_shape_slope",
+          "kind": "process",
+          "claim": "三次曲线在负侧、零点、正侧的切线和3x²图及近似读数一致"
+        }
+      ]
+    },
+    {
+      "id": "reciprocal",
+      "asset": "visual_v001",
+      "function": "负导数、零点禁区与不跨断点的运动",
+      "baseline_interval": [
+        178,
+        224
+      ],
+      "features": [
+        {
+          "id": "reciprocal_common_denominator",
+          "kind": "process",
+          "claim": "原倒数差商通分到x-(x+h)=-h，再约非零h并取极限到-1/x²"
+        },
+        {
+          "id": "reciprocal_legal_domain",
+          "kind": "state",
+          "claim": "x、h和x+h的非零条件；原函数在零处无值且无导数"
+        },
+        {
+          "id": "reciprocal_separate_branches",
+          "kind": "process",
+          "claim": "负、正半轴分别移动且不跨断点；两支斜率为负，近零更陡、远零更平的图数关系仍可观察"
+        }
+      ]
+    },
+    {
+      "id": "root",
+      "asset": "visual_v001",
+      "function": "原函数定义域与有限导数定义域不同",
+      "baseline_interval": [
+        224,
+        268
+      ],
+      "features": [
+        {
+          "id": "root_conjugate",
+          "kind": "process",
+          "claim": "平方根原差商同乘共轭，平方差化出h再约分并取1/(2√x)"
+        },
+        {
+          "id": "root_endpoint_domain",
+          "kind": "state",
+          "claim": "原函数x≥0、有限导数x>0；x=0无有限右斜率极限；非零h与x+h≥0条件"
+        },
+        {
+          "id": "root_slope_map",
+          "kind": "process",
+          "claim": "正半轴上根号曲线上升而切线变平，正的导函数高度递减，近似读数一致"
+        }
+      ]
+    },
+    {
+      "id": "exponential",
+      "asset": "visual_v001",
+      "function": "区分一般指数和e底指数的斜率关系",
+      "baseline_interval": [
+        268,
+        312
+      ],
+      "features": [
+        {
+          "id": "exp_standard_limit",
+          "kind": "process",
+          "claim": "差商提出a^x，调用明确标注的标准极限ln a，区分一般底与e底"
+        },
+        {
+          "id": "exp_domain_sign",
+          "kind": "state",
+          "claim": "a>0、x为实数；a=1为常数；0<a<1斜率负；不冒称完整证明标准极限"
+        },
+        {
+          "id": "exp_value_slope",
+          "kind": "process",
+          "claim": "e^x原图函数值与导函数斜率同数值、同形状，同状态图数联动"
+        }
+      ]
+    },
+    {
+      "id": "logarithm",
+      "asset": "visual_v001",
+      "function": "建立递增变缓与倒数斜率、换底系数",
+      "baseline_interval": [
+        312,
+        358
+      ],
+      "features": [
+        {
+          "id": "log_graph_slope",
+          "kind": "process",
+          "claim": "ln x递增变缓、切线斜率为正且递减，与1/x同横坐标高度及近似读数联动"
+        },
+        {
+          "id": "log_family_domains",
+          "kind": "state",
+          "claim": "ln x导数1/x，一般底导数1/(x ln a)；x>0、a>0且a≠1，底大于1递增、底在0与1之间递减；修补缺桥而不删除这些结论"
+        }
+      ]
+    },
+    {
+      "id": "sine",
+      "asset": "visual_v001",
+      "function": "从斜率正负和峰谷联系到cos而非背表",
+      "baseline_interval": [
+        358,
+        402
+      ],
+      "features": [
+        {
+          "id": "sine_standard_limits",
+          "kind": "state",
+          "claim": "正弦和角差商及两个弧度标准极限明确调用，不以示意图冒充极限证明"
+        },
+        {
+          "id": "sine_cycle",
+          "kind": "process",
+          "claim": "一周中上穿、峰顶水平、下穿及继续一周，与cos高度和近似斜率读数对应"
+        },
+        {
+          "id": "sine_domain_radians",
+          "kind": "state",
+          "claim": "(sin x)'=cos x；实数域、弧度条件"
+        }
+      ]
+    },
+    {
+      "id": "cosine",
+      "asset": "visual_v001",
+      "function": "解释负号对应下降半周与上升半周",
+      "baseline_interval": [
+        402,
+        434
+      ],
+      "features": [
+        {
+          "id": "cosine_cycle",
+          "kind": "process",
+          "claim": "从峰顶下降、谷底水平再上升的一周，与-sin x斜率正负及近似读数对应"
+        },
+        {
+          "id": "cosine_domain_sign",
+          "kind": "state",
+          "claim": "(cos x)'=-sin x；实数域、弧度条件；两个半周的导数符号说明"
+        }
+      ]
+    },
+    {
+      "id": "closing",
+      "asset": "visual_v001",
+      "function": "为组合函数求导留下真实问题",
+      "baseline_interval": [
+        434,
+        452
+      ],
+      "features": [
+        {
+          "id": "summary_handoff",
+          "kind": "state",
+          "claim": "导函数记录每个位置的斜率，公式带适用条件，乘积和商留作下一课真实问题"
+        }
+      ]
+    }
+  ],
+  "inventory_basis": {
+    "review": "runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch02-basics-20261102/review/visual-v001.json",
+    "status": "Baseline functional inventory from frozen source/plan and original independent visual observations; not a new author pixel review",
+    "baseline_probe": {
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1",
+      "frames": 13560,
+      "duration": 452,
+      "streams": [
+        "video"
+      ]
+    }
+  },
+  "correction_targets": [
+    {
+      "id": "log_variables_before_increments",
+      "blocker": "V02-LOG-BRIDGE",
+      "required": "Define y and its associated increments first; derive the exact exponential increment relation before passing to the inverse quotient limit."
+    },
+    {
+      "id": "fixed_base_coefficient",
+      "blocker": "V02-LOG-BRIDGE",
+      "required": "Show the same fixed coefficient in both changed and original logarithm values, subtract, divide by the common input increment, then take the limit."
+    }
+  ],
+  "preservation_policy": "Protect teaching functions, not old layout, ornament, cue seconds or a fixed number of objects. Invalid v001 reasoning order is a correction target, not an effective explanation to retain.",
+  "comparison_requirements": "An independent comparator, distinct from blind first-look and all authors, must inspect current actual before/during/after frames for every process; no scores compensate for missing items.",
+  "writer": "01a199e9-7383-7a03-b45c-97d3d21bd9dd",
+  "consumers": [
+    "main coordinator",
+    "independent blind visual reviewer",
+    "separate content regression reviewer",
+    "later narration reviewer"
+  ],
+  "lifecycle": "Author A ch02 v002 frozen candidate; no review authority",
+  "invalidation": "Any bound source, model, plan, text, helper, context, baseline media or contract change invalidates affected tests and all dependent reviews",
+  "artifact_type": "test_fixture"
+}

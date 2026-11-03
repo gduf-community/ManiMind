@@ -1,0 +1,790 @@
+{
+  "schema_version": 1,
+  "project_id": "math-derivative-ch07-extremes-20261102",
+  "status": "not_reviewed",
+  "writer": "01a19ab5-b2d3-7003-a784-edeeaecdbc23",
+  "consumers": [
+    "main coordinator",
+    "independent blind visual reviewer",
+    "separate content regression reviewer",
+    "audio timing reviewer"
+  ],
+  "lifecycle": "Chapter 07 v003 author candidate only; no review or release authority",
+  "invalidation": "Bound source, baseline media, plan, narration, transport, original WAV/receipt or production timing changes invalidate derived data",
+  "author_agent": "01a19ab5-b2d3-7003-a784-edeeaecdbc23",
+  "author_context": "01a19ab5-b2d3-7003-a784-edeeaecdbc23",
+  "baseline_selection": "Actual complete reviewed 276-second visual-v001; author selected functions from decoded baseline frames and source together",
+  "assets": {
+    "visual_v001": {
+      "path": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/manim/media/manimgl/understanding.mp4",
+      "sha256": "cc18b7041cc3cbb16a1ae6ec7ba99f94456ca6fa9bc496563ab92adc4dfe2349",
+      "duration": 276
+    }
+  },
+  "scope": "Only actual visible teaching functions; internal numeric tracker endpoints are mathematical invariants, not additional visible baseline features",
+  "evidence_status": "Author-selected baseline inventory, not an independent regression finding; current actual pixels and process triplets remain required",
+  "units": [
+    {
+      "id": "opening",
+      "asset": "visual_v001",
+      "function": "从附近比较进入完整闭区间问题",
+      "baseline_interval": [
+        0,
+        24
+      ],
+      "features": [
+        {
+          "id": "same-function-closed-range",
+          "kind": "state",
+          "claim": "图上保留同一抛物线f(x)=(x-1)²、x∈[0,3]和两个实心端点，明确全课函数与当前范围",
+          "baseline_interval": [
+            3.6,
+            24
+          ],
+          "baseline_samples": [
+            {
+              "time": 4.501,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_4_501.jpg",
+              "frame_sha256": "d6172fcc2e6fc24cb4e993b6b26acd913543b221841724e0c85fb0b124683aff",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            },
+            {
+              "time": 13.965,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_13_965.jpg",
+              "frame_sha256": "a50255e251cb0706dfac11cac9992852c1ada99f45bdd9bb8a9bd98dc2eae350",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            }
+          ],
+          "candidate_focus_ids": [
+            "closed_problem"
+          ]
+        },
+        {
+          "id": "boundary-participates",
+          "kind": "state",
+          "claim": "完整限制曲线旁明确写出整个区间比较与边界也在范围内，端点不因不是内点而被排除",
+          "baseline_interval": [
+            17.266667,
+            24
+          ],
+          "baseline_samples": [
+            {
+              "time": 17.805,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_17_805.jpg",
+              "frame_sha256": "66b89e3099b40258ba331803698a84a8d8d2267bfcb8beb9da996daaab7a0dae",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            },
+            {
+              "time": 23.461,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_23_461.jpg",
+              "frame_sha256": "66b89e3099b40258ba331803698a84a8d8d2267bfcb8beb9da996daaab7a0dae",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            }
+          ],
+          "candidate_focus_ids": [
+            "whole_comparison"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "candidates",
+      "asset": "visual_v001",
+      "function": "内部必要条件与边界候选分开",
+      "baseline_interval": [
+        24,
+        72
+      ],
+      "features": [
+        {
+          "id": "interior-stationary-condition",
+          "kind": "state",
+          "claim": "f'(x)=2(x-1)与f'(x)=0⇒x=1同屏连接内部驻点筛选，不把零导数写成充分条件",
+          "baseline_interval": [
+            29.766667,
+            72
+          ],
+          "baseline_samples": [
+            {
+              "time": 30.495,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_30_495.jpg",
+              "frame_sha256": "1e2ede65a9df0892429f8e10fdaf3451de7557cea8319170c7a5b39bdb00b02a",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            },
+            {
+              "time": 38.139,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_38_139.jpg",
+              "frame_sha256": "5d1d0cc912bdf8f574c004e3ef49fdcd3153b6e689b975865fda0996fd044cd1",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            }
+          ],
+          "candidate_focus_ids": [
+            "interior_candidate"
+          ]
+        },
+        {
+          "id": "endpoints-plus-interior",
+          "kind": "state",
+          "claim": "曲线上圈出0、1、3，旁列端点0、3和内部驻点1，两类位置共同组成候选",
+          "baseline_interval": [
+            43.666667,
+            72
+          ],
+          "baseline_samples": [
+            {
+              "time": 44.859,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_44_859.jpg",
+              "frame_sha256": "92e320785b19afabc2a8193001d55ac5727043d8b48f09288a107f2c78557adc",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            },
+            {
+              "time": 57.375,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_57_375.jpg",
+              "frame_sha256": "8d77636d8f39ce275e08ad901c651a4de2c4a77baaf478a49fc363e0662dacea",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            }
+          ],
+          "candidate_focus_ids": [
+            "all_candidates"
+          ]
+        },
+        {
+          "id": "differentiable-example-reason",
+          "kind": "state",
+          "claim": "候选圈与处处可导、内部极值必在驻点的限定文字并存，候选完整性只依本例条件说明",
+          "baseline_interval": [
+            62.866667,
+            72
+          ],
+          "baseline_samples": [
+            {
+              "time": 63.597,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_63_597.jpg",
+              "frame_sha256": "a107e6130b3897252daa7835753bddc44c007367c59ec8f8f10bcb03a0254f3d",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            },
+            {
+              "time": 71.269,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_71_269.jpg",
+              "frame_sha256": "f1c37e4d961f01ca68a8d3ddc851e0253dbe7aac4f32893b23033f7407c6354b",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            }
+          ],
+          "candidate_focus_ids": [
+            "candidate_reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "compare",
+      "asset": "visual_v001",
+      "function": "代入原函数并把数值与曲线点联系",
+      "baseline_interval": [
+        72,
+        110
+      ],
+      "features": [
+        {
+          "id": "rows-linked-to-curve-points",
+          "kind": "process",
+          "claim": "x与f(x)分列，(0,1)、(1,0)、(3,4)三行及曲线对应点逐次显现，不只给最终答案",
+          "baseline_interval": [
+            76.8,
+            95.049
+          ],
+          "baseline_samples": [
+            {
+              "time": 76.8,
+              "phase": "before",
+              "frame": "tests/fixtures/derivative-ch07-extremes-v003/baseline-frames/frame_76.800.jpg",
+              "frame_sha256": "90348d22db9e0b051da517de550f2bd4e21304a31a8ed72ff88300c6124f8277",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            },
+            {
+              "time": 85.0,
+              "phase": "during",
+              "frame": "tests/fixtures/derivative-ch07-extremes-v003/baseline-frames/frame_85.000.jpg",
+              "frame_sha256": "3ed45999be8d0df614c9fdcebd63c959ee12332814ee0ffafc991be4f2e55878",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            },
+            {
+              "time": 89.617,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_89_617.jpg",
+              "frame_sha256": "8234b0d5b74254db6a67360baa6d61514a58f40a3e55cb5e7724f64153791566",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            }
+          ],
+          "candidate_focus_ids": [
+            "candidate_values"
+          ]
+        },
+        {
+          "id": "compare-function-values",
+          "kind": "state",
+          "claim": "表格右列清晰是函数值1、0、4，左列是位置0、1、3；不是比较导数值或横坐标大小",
+          "baseline_interval": [
+            89.1,
+            110
+          ],
+          "baseline_samples": [
+            {
+              "time": 89.617,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_89_617.jpg",
+              "frame_sha256": "8234b0d5b74254db6a67360baa6d61514a58f40a3e55cb5e7724f64153791566",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            },
+            {
+              "time": 95.049,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_95_049.jpg",
+              "frame_sha256": "96f7e6db25ea2947db7ad1d6424153dd19fa14cf626ad58951871084a51784d2",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            }
+          ],
+          "candidate_focus_ids": [
+            "candidate_values"
+          ]
+        },
+        {
+          "id": "interior-minimum-boundary-maximum",
+          "kind": "state",
+          "claim": "保留min f=0(x=1)、max f=4(x=3)与对应图点，最高点来自边界而非内部驻点",
+          "baseline_interval": [
+            99.366667,
+            110
+          ],
+          "baseline_samples": [
+            {
+              "time": 100.217,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_100_217.jpg",
+              "frame_sha256": "3a302e6ea26d0dde877adcf73843703b8239952da948ecd055a14e45ee7d2459",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            },
+            {
+              "time": 109.149,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_109_149.jpg",
+              "frame_sha256": "a8fcebcd29fdb850c6883b030348cc8f1ff1ca4c8b622bf7dd76289919f0a7d5",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            }
+          ],
+          "candidate_focus_ids": [
+            "closed_extremes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "parameter",
+      "asset": "visual_v001",
+      "function": "同函数改变闭区间右边界并比较候选",
+      "baseline_interval": [
+        110,
+        168
+      ],
+      "features": [
+        {
+          "id": "current-bright-domain-faint-reference",
+          "kind": "state",
+          "claim": "x∈[0,b]、1≤b≤3可读；亮曲段、移动端点和竖线表示当前范围，暗全曲线只作参照",
+          "baseline_interval": [
+            120.44,
+            168
+          ],
+          "baseline_samples": [
+            {
+              "time": 121.6,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_121_6.jpg",
+              "frame_sha256": "da59d72b9d17e913b0c9fb6015bf271b2b491aff736b9f1c8f7cd074d7d0c451",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            },
+            {
+              "time": 162.2,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_162_2.jpg",
+              "frame_sha256": "41e9fe0e4a01ac03eda31e43c585c2c0177396e404d5d407782fe03b1643d301",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            }
+          ],
+          "candidate_focus_ids": [
+            "parameter_left_wins",
+            "parameter_right_wins"
+          ]
+        },
+        {
+          "id": "linked-endpoint-and-readouts",
+          "kind": "process",
+          "claim": "b与f(b)读数随亮曲段端点连续变化，固定f(0)=1、f(1)=0仍可读；右端低于左端时左端取最大",
+          "baseline_interval": [
+            121.6,
+            131.5
+          ],
+          "baseline_samples": [
+            {
+              "time": 121.6,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_121_6.jpg",
+              "frame_sha256": "da59d72b9d17e913b0c9fb6015bf271b2b491aff736b9f1c8f7cd074d7d0c451",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            },
+            {
+              "time": 127.4,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_127_4.jpg",
+              "frame_sha256": "8217be96292939066c869cc4a91e42c8e7d76e2354964c068354dee71ceffd49",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            },
+            {
+              "time": 131.5,
+              "phase": "after",
+              "frame": "tests/fixtures/derivative-ch07-extremes-v003/baseline-frames/frame_131.500.jpg",
+              "frame_sha256": "0e5ea415edd5dcf4d2b96c242f6a928c90f00d8dfe8cf083a324d4d32b4ca8d8",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            }
+          ],
+          "candidate_focus_ids": [
+            "parameter_left_wins"
+          ]
+        },
+        {
+          "id": "right-value-approaches-tie",
+          "kind": "process",
+          "claim": "右端沿同一抛物线上升，b读数接近2而f(b)读数接近1；左右端高度随后相等",
+          "baseline_interval": [
+            133.2,
+            142.409
+          ],
+          "baseline_samples": [
+            {
+              "time": 133.2,
+              "phase": "before",
+              "frame": "tests/fixtures/derivative-ch07-extremes-v003/baseline-frames/frame_133.200.jpg",
+              "frame_sha256": "26096a368cf0cf916e49e38bf5f1326dbe1d1aad6a09c866361e53a20350e525",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            },
+            {
+              "time": 136.1,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_136_1.jpg",
+              "frame_sha256": "d4f0f40dfe3b11a54134ca4cff4c95014ffd4eaddc80aef9b950cbd7898139f6",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            },
+            {
+              "time": 142.409,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_142_409.jpg",
+              "frame_sha256": "125d7e807cb286a796471fc461bc998e193c2a02227f08536a980dba73df5b2c",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            }
+          ],
+          "candidate_focus_ids": [
+            "parameter_to_tie",
+            "parameter_tie"
+          ]
+        },
+        {
+          "id": "one-max-value-two-positions",
+          "kind": "state",
+          "claim": "b=2、f(b)=1与两端同高文字及图形共同可读；最大值数值为1，取得位置为0和2，内部最小仍为0",
+          "baseline_interval": [
+            141.9,
+            148.266667
+          ],
+          "baseline_samples": [
+            {
+              "time": 142.409,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_142_409.jpg",
+              "frame_sha256": "125d7e807cb286a796471fc461bc998e193c2a02227f08536a980dba73df5b2c",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            },
+            {
+              "time": 147.757,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_147_757.jpg",
+              "frame_sha256": "125d7e807cb286a796471fc461bc998e193c2a02227f08536a980dba73df5b2c",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            }
+          ],
+          "candidate_focus_ids": [
+            "parameter_tie"
+          ]
+        },
+        {
+          "id": "right-end-overtakes-left",
+          "kind": "process",
+          "claim": "从b=2两端同高，继续增长的亮曲段与右端读数越过左端高度，最终右端更高",
+          "baseline_interval": [
+            147.757,
+            161.069
+          ],
+          "baseline_samples": [
+            {
+              "time": 147.757,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_147_757.jpg",
+              "frame_sha256": "125d7e807cb286a796471fc461bc998e193c2a02227f08536a980dba73df5b2c",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            },
+            {
+              "time": 154.083,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_154_083.jpg",
+              "frame_sha256": "859875fd0ad641e4bc4f547851cc2dea67a4bfdf474a80bbc3a654ad8c78fb5d",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            },
+            {
+              "time": 161.069,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_161_069.jpg",
+              "frame_sha256": "41e9fe0e4a01ac03eda31e43c585c2c0177396e404d5d407782fe03b1643d301",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            }
+          ],
+          "candidate_focus_ids": [
+            "parameter_tie",
+            "parameter_right_overtakes",
+            "parameter_right_wins"
+          ]
+        },
+        {
+          "id": "same-model-new-winner",
+          "kind": "state",
+          "claim": "b=3.00与f(b)=4.00、f(0)=1、f(1)=0及右端取最大文字可见；改变范围而非更换函数",
+          "baseline_interval": [
+            160.466667,
+            168
+          ],
+          "baseline_samples": [
+            {
+              "time": 161.069,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_161_069.jpg",
+              "frame_sha256": "41e9fe0e4a01ac03eda31e43c585c2c0177396e404d5d407782fe03b1643d301",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            },
+            {
+              "time": 167.397,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_167_397.jpg",
+              "frame_sha256": "03b7396170b801590d8bbced04a91dcf717639632d975420fd870f694dd137ce",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            }
+          ],
+          "candidate_focus_ids": [
+            "parameter_right_wins"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conditions",
+      "asset": "visual_v001",
+      "function": "存在保证与搜索理由分层",
+      "baseline_interval": [
+        168,
+        206
+      ],
+      "features": [
+        {
+          "id": "continuous-finite-closed",
+          "kind": "state",
+          "claim": "连续、有限闭区间与不断开的曲线和实心端点对应，条件完整呈现",
+          "baseline_interval": [
+            173.7,
+            206
+          ],
+          "baseline_samples": [
+            {
+              "time": 174.735,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_174_735.jpg",
+              "frame_sha256": "306394581fbaa28bd45b736d584661110132f0621e3c5d0fac3e309d98f5e38f",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            },
+            {
+              "time": 185.599,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_185_599.jpg",
+              "frame_sha256": "32c31ff1db89b825806243e8e6835c81ba7d4b930d99e7769a1ee34f046cc93b",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            }
+          ],
+          "candidate_focus_ids": [
+            "existence_conditions"
+          ]
+        },
+        {
+          "id": "existence-versus-search",
+          "kind": "state",
+          "claim": "保证最大值最小值都能取到，与本例比较端点和内部驻点的值分行陈述，不把存在性当作位置算法",
+          "baseline_interval": [
+            190.033333,
+            206
+          ],
+          "baseline_samples": [
+            {
+              "time": 191.311,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_191_311.jpg",
+              "frame_sha256": "0db6aedd0fd1e86122edbab54c17dc8a5ee8be112b2251ee6d3f796ad0cb29e5",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            },
+            {
+              "time": 204.723,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_204_723.jpg",
+              "frame_sha256": "31350478a78d532c556988aa6cecf4ea8db15b3445af91967d6f4d6a5bd51c88",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            }
+          ],
+          "candidate_focus_ids": [
+            "existence_and_search"
+          ]
+        },
+        {
+          "id": "nondifferentiable-candidates-caption",
+          "kind": "state",
+          "claim": "实际可见文字提醒若内部不可导，还需检查那些位置；本例未展示尖点曲线，不能声称已有尖点数值示例",
+          "baseline_interval": [
+            190.033333,
+            206
+          ],
+          "baseline_samples": [
+            {
+              "time": 194.6,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_194_6.jpg",
+              "frame_sha256": "c77307fade1ebb5674e943aea589db2fd0d59eb9d3dadaf4a5987bbab2dc8007",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            },
+            {
+              "time": 204.723,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_204_723.jpg",
+              "frame_sha256": "31350478a78d532c556988aa6cecf4ea8db15b3445af91967d6f4d6a5bd51c88",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            }
+          ],
+          "candidate_focus_ids": [
+            "existence_and_search"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "open-interval",
+      "asset": "visual_v001",
+      "function": "同函数去掉端点与不可达上确界",
+      "baseline_interval": [
+        206,
+        252
+      ],
+      "features": [
+        {
+          "id": "hollow-excluded-endpoints",
+          "kind": "state",
+          "claim": "同一f(x)=(x-1)²改为x∈(0,3)，两个空心端点与不属于区间说明可读",
+          "baseline_interval": [
+            211.533333,
+            252
+          ],
+          "baseline_samples": [
+            {
+              "time": 212.379,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_212_379.jpg",
+              "frame_sha256": "609062697d8638470062924378afd8d0ff8bf0bb2a3fdca3a95df4b75e658bcd",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            },
+            {
+              "time": 221.255,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_221_255.jpg",
+              "frame_sha256": "37d93514623ac9d4623f4326ec3de5f2b93826181e24ca2209a5a16ad9e15d13",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            }
+          ],
+          "candidate_focus_ids": [
+            "open_minimum_retained"
+          ]
+        },
+        {
+          "id": "interior-minimum-survives",
+          "kind": "state",
+          "claim": "开区间内顶点仍是实心点，min f=0(x=1)继续可读，去掉端点并未去掉最小值位置",
+          "baseline_interval": [
+            211.533333,
+            252
+          ],
+          "baseline_samples": [
+            {
+              "time": 214.28,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_214_28.jpg",
+              "frame_sha256": "f8ce66a3e1b222230263099f555ce6c585eab8e8ce07f921f3eddd61487b8ac5",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            },
+            {
+              "time": 247.4,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_247_4.jpg",
+              "frame_sha256": "f91d71a1056e7a2c460fd51e0c095741e95da172dff60e0eb3904843451e3bcb",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            }
+          ],
+          "candidate_focus_ids": [
+            "open_minimum_retained",
+            "unattained_supremum"
+          ]
+        },
+        {
+          "id": "approach-without-attainment",
+          "kind": "process",
+          "claim": "内部亮点沿曲线向右端靠近、f(x)动态读数升高；末态读数3.960仍小于4，右端保持空心。画面未显示移动点的精确x读数，不声称观众看见x=2.99",
+          "baseline_interval": [
+            221.255,
+            240.991
+          ],
+          "baseline_samples": [
+            {
+              "time": 221.255,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_221_255.jpg",
+              "frame_sha256": "37d93514623ac9d4623f4326ec3de5f2b93826181e24ca2209a5a16ad9e15d13",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            },
+            {
+              "time": 230.617,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_230_617.jpg",
+              "frame_sha256": "40201563d2c005c66806b3892d5e2b841d368771657ff0269e56b8e0f5afddfe",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            },
+            {
+              "time": 240.991,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_240_991.jpg",
+              "frame_sha256": "fba7a428d7cc1910cf2cd903a0f8582d92a055b7cd50a2258c6c6ed32b646e4b",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            }
+          ],
+          "candidate_focus_ids": [
+            "open_approach",
+            "unattained_supremum"
+          ]
+        },
+        {
+          "id": "supremum-not-maximum",
+          "kind": "state",
+          "claim": "x→3⁻、f(x)→4与上确界4、无最大值、最小值仍为0共同呈现，区分趋近上界与定义域内可达最值",
+          "baseline_interval": [
+            240.033333,
+            252
+          ],
+          "baseline_samples": [
+            {
+              "time": 240.991,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_240_991.jpg",
+              "frame_sha256": "fba7a428d7cc1910cf2cd903a0f8582d92a055b7cd50a2258c6c6ed32b646e4b",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            },
+            {
+              "time": 251.043,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_251_043.jpg",
+              "frame_sha256": "f91d71a1056e7a2c460fd51e0c095741e95da172dff60e0eb3904843451e3bcb",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            }
+          ],
+          "candidate_focus_ids": [
+            "unattained_supremum"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "closing",
+      "asset": "visual_v001",
+      "function": "范围候选函数值与实际模型衔接",
+      "baseline_interval": [
+        252,
+        276
+      ],
+      "features": [
+        {
+          "id": "range-candidates-values-attainability",
+          "kind": "state",
+          "claim": "先定范围再找候选比较值，闭区间min0/max4与开区间min0/sup4并列，上界能否取到回到定义域",
+          "baseline_interval": [
+            255.6,
+            276
+          ],
+          "baseline_samples": [
+            {
+              "time": 256.579,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_256_579.jpg",
+              "frame_sha256": "a83238114d365e8c66f21ff2596f8d811d62bfd0120e42caf700aa12d793fa92",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            },
+            {
+              "time": 266.855,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_266_855.jpg",
+              "frame_sha256": "e0b4c9d1fae0556a4aa1e7ed719d44254b7bc46573fd1dfc9ab30c0acc509fd0",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            }
+          ],
+          "candidate_focus_ids": [
+            "interval_method"
+          ]
+        },
+        {
+          "id": "next-modeling-feasible-dimensions",
+          "kind": "state",
+          "claim": "实际可见的下一课桥梁是把实际尺寸变成可比较的函数；不声称基线已展示纸盒几何、体积推导或可行域数值",
+          "baseline_interval": [
+            270.233333,
+            276
+          ],
+          "baseline_samples": [
+            {
+              "time": 271.2,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_271_2.jpg",
+              "frame_sha256": "ed527683e1fb03043bbe994952839104bfee189faf656da370a8d114a4cead3d",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            },
+            {
+              "time": 275.539,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames/frame_275_539.jpg",
+              "frame_sha256": "689070a8be973163315f98e71b7b2679dc20eeffb3805399272e5a44773b618a",
+              "origin": "Decoded selected actual v001 baseline video, not current v003 media"
+            }
+          ],
+          "candidate_focus_ids": [
+            "modeling_bridge"
+          ]
+        }
+      ]
+    }
+  ]
+}

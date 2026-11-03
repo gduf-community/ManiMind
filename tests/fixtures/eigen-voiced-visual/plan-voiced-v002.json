@@ -1,0 +1,637 @@
+{
+  "project_id": "eigen-directions-20261028",
+  "title": "特征向量：矩阵变换中的不变方向",
+  "workflow_profile": "configs/visual-first-workflow-v3.1.json",
+  "revision_mode": "revision",
+  "scene": "examples/eigen_voiced_visual.py",
+  "scene_class": "EigenDirectionsVoicedLesson",
+  "duration": 254,
+  "fps": 30,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "subtitle_reserve": {
+    "pixel_top": 984,
+    "scene_y_max_for_bottom": -3.288888889
+  },
+  "audience": "大学线性代数初学者",
+  "prior_knowledge": [
+    "二维向量与坐标",
+    "二维矩阵乘法"
+  ],
+  "understanding_goals": [
+    "解释Av=λv与非零条件，区分同一直线和长度不变",
+    "从两分量方程完整求出本例全部特征方向和特征值",
+    "用两个方向的分解解释一般向量的真实变换",
+    "解释90度旋转为何无非零实特征方向"
+  ],
+  "sources": [
+    "examples/eigen_visual.py",
+    "src/manimind/components/catalog.py"
+  ],
+  "source_references": [
+    {
+      "id": "mit-18-06sc-eigen",
+      "title": "MIT OpenCourseWare 18.06SC Linear Algebra, Eigenvalues and Eigenvectors",
+      "url": "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/pages/least-squares-determinants-and-eigenvalues/eigenvalues-and-eigenvectors/",
+      "accessed": "2026-10-28",
+      "use": "定义与课程范围参考；具体非对角矩阵、分情况推导、网格和构图由作者独立设计，不复制课程视频或图形"
+    }
+  ],
+  "mathematical_facts": [
+    {
+      "id": "map",
+      "statement": "A=[[2,1],[1,2]]；A(x,y)=(2x+y,x+2y)。A_t=(1-t)I+tA，特征方向(1,1)乘1+2t，(1,-1)乘1。",
+      "conditions": "实二维向量，t从0到1；固定坐标轴，同一单位尺度。",
+      "basis": "直接矩阵乘法与插值恒等式"
+    },
+    {
+      "id": "definition",
+      "statement": "Av=λv，v≠0。变换后仍在原向量所在直线上；λ为这条直线上的倍数，不要求正，也不要求长度不变。",
+      "conditions": "本片讨论实特征向量与实特征值；零向量虽满足等式但没有方向，不是特征向量。",
+      "basis": "MIT课程定义，补全标准非零条件"
+    },
+    {
+      "id": "solve",
+      "statement": "2x+y=λx，x+2y=λy；相减得x-y=λ(x-y)，即(λ-1)(x-y)=0。若x=y，非零使x≠0，代入得3x=λx，所以λ=3、v=x(1,1)。若x≠y，则λ=1，代入得x+y=0，所以v=x(1,-1)、x≠0。两种情况穷尽所有非零向量。",
+      "conditions": "不除以可能为零的x-y；只在分支中除以明确非零的量。",
+      "basis": "作者完整代数推演"
+    },
+    {
+      "id": "decomposition",
+      "statement": "c1=(x+y)/2，c2=(x-y)/2；u=c1(1,1)+c2(1,-1)，Au=3c1(1,1)+c2(1,-1)。u=(1.5,0.5)时c1=1、c2=0.5，Au=(3.5,2.5)。",
+      "conditions": "系数可为任意实数；示例两分量非零，几何同一A_t驱动并始终与直接A_tu相等。",
+      "basis": "线性性与直接计算"
+    },
+    {
+      "id": "rotation",
+      "statement": "R=[[0,-1],[1,0]]，Rv=(-y,x)，v·Rv=0。非零实向量旋转90度仍非零，与原向量垂直而不平行，故无实特征方向。",
+      "conditions": "结论限定实数范围，不推出所有矩阵都有实特征方向或都能实对角化。",
+      "basis": "作者旋转与点积恒等式"
+    }
+  ],
+  "cues": [
+    {
+      "id": "transform",
+      "duration": 29,
+      "heading": "整个平面一起变换",
+      "visual": "固定坐标轴；有限窗口内每条网格线与四支向量都由同一 A_t=(1-t)I+tA 驱动，红色基向量(1,0)到(2,1)。",
+      "learning_purpose": "用真实矩阵作用建立一般方向会转向的观察。",
+      "anchors": [
+        {
+          "id": "map_ready",
+          "meaning": "矩阵、映射和初始网格可见"
+        },
+        {
+          "id": "plane_transformed",
+          "meaning": "t=1，网格与所有端点到达真实A像"
+        },
+        {
+          "id": "turn_ready",
+          "meaning": "一般向量的转向与坐标结果可见"
+        }
+      ]
+    },
+    {
+      "id": "directions",
+      "duration": 28,
+      "heading": "保留哪条直线",
+      "visual": "固定参考直线y=x与y=-x；重复同一全网格变换，绿黄向量留在线上，普通向量转向；定义Av=λv，v≠0。",
+      "learning_purpose": "区分保持所在直线与长度不变；不限制λ正负。",
+      "anchors": [
+        {
+          "id": "definition_ready",
+          "meaning": "定义、非零条件与两条候选参考线可见"
+        },
+        {
+          "id": "candidates_ready",
+          "meaning": "两条候选线的像仍落在原线上"
+        }
+      ]
+    },
+    {
+      "id": "equations",
+      "duration": 34,
+      "heading": "定义化为两分量",
+      "visual": "大字向量定义到两分量，再两式相减、移项提取，得到(λ-1)(x-y)=0。不同垂直通道容纳符号移动，每步落定留读。",
+      "learning_purpose": "用可读代数解释寻找方向，不以已知结果替代推理。",
+      "anchors": [
+        {
+          "id": "vector_ready",
+          "meaning": "一般非零向量方程可见"
+        },
+        {
+          "id": "components_ready",
+          "meaning": "2x+y=λx与x+2y=λy同时可见"
+        },
+        {
+          "id": "subtract_ready",
+          "meaning": "两式相减得到x-y=λ(x-y)"
+        },
+        {
+          "id": "factor_ready",
+          "meaning": "移项因式分解落定"
+        }
+      ]
+    },
+    {
+      "id": "equal",
+      "duration": 34,
+      "heading": "两个分量相等",
+      "visual": "保留乘积为零条件；x=y与非零共同推出x≠0；第一分量代入得2x+x=λx，再3x=λx，最后λ=3与v=x(1,1)。",
+      "learning_purpose": "非零条件为除去x提供理由，得到一整条方向而非单个向量。",
+      "anchors": [
+        {
+          "id": "equal_condition_ready",
+          "meaning": "x=y与非零推出x非零"
+        },
+        {
+          "id": "equal_substitute_ready",
+          "meaning": "第一分量代入y=x"
+        },
+        {
+          "id": "equal_combine_ready",
+          "meaning": "3x=λx落定"
+        },
+        {
+          "id": "equal_value_ready",
+          "meaning": "λ=3落定"
+        },
+        {
+          "id": "plus_direction_ready",
+          "meaning": "全部非零倍数x(1,1)可见"
+        }
+      ]
+    },
+    {
+      "id": "other",
+      "duration": 35,
+      "heading": "两个分量不相等",
+      "visual": "乘积为零且x-y非零，先得λ=1；代入第一式2x+y=x，移项x+y=0，再y=-x；非零方向v=x(1,-1)。",
+      "learning_purpose": "覆盖另一种情况并说明两种情况穷尽全部非零向量。",
+      "anchors": [
+        {
+          "id": "other_value_ready",
+          "meaning": "x≠y使λ=1"
+        },
+        {
+          "id": "other_substitute_ready",
+          "meaning": "λ=1代入第一分量"
+        },
+        {
+          "id": "other_reduce_ready",
+          "meaning": "x+y=0落定"
+        },
+        {
+          "id": "other_direction_ready",
+          "meaning": "y=-x落定"
+        },
+        {
+          "id": "all_directions_ready",
+          "meaning": "非零倍数与穷尽条件可读"
+        }
+      ]
+    },
+    {
+      "id": "decompose",
+      "duration": 46,
+      "heading": "按两个方向分解",
+      "visual": "一般u=c1(1,1)+c2(1,-1)，给出系数；例u=(1.5,0.5)首尾相接。A_t同步驱动两分量、合向量与直接计算端点；终态Au=(3.5,2.5)和直接矩阵乘法一致。",
+      "learning_purpose": "解释不变方向如何帮助计算一般向量，避免把普通向量当标量伸缩。",
+      "anchors": [
+        {
+          "id": "decomposition_ready",
+          "meaning": "分解、系数、首尾相接的例子可见"
+        },
+        {
+          "id": "components_transformed",
+          "meaning": "t=1，第一分量乘3，第二分量乘1"
+        },
+        {
+          "id": "recombined_ready",
+          "meaning": "重组坐标与同一位置的直接像端点"
+        },
+        {
+          "id": "direct_check_ready",
+          "meaning": "直接矩阵乘法验证同一Au"
+        }
+      ]
+    },
+    {
+      "id": "rotation",
+      "duration": 28,
+      "heading": "实数范围的反例",
+      "visual": "固定原直线，非零箭头真实逆时针旋转90°，矩阵R映射(x,y)到(-y,x)。点积恒零支持垂直；非零向量转直角不可能仍在原直线上。",
+      "learning_purpose": "不把本例两个实方向推广成所有矩阵都能实对角化。",
+      "anchors": [
+        {
+          "id": "rotation_input_ready",
+          "meaning": "实数范围、非零条件、旋转矩阵和初态"
+        },
+        {
+          "id": "no_real_direction_ready",
+          "meaning": "直角终态、点积恒等式与不平行结论可见"
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "duration": 20,
+      "heading": "回到同一变换",
+      "visual": "再以固定坐标轴播放完整网格变换，左右对照Av=λv以及A(1,1)=3(1,1)、A(1,-1)=(1,-1)。",
+      "learning_purpose": "特征值描述原直线上的倍数，普通方向不享有同一标量公式。",
+      "anchors": [
+        {
+          "id": "summary_ready",
+          "meaning": "全平面终态与两对特征关系可见"
+        }
+      ]
+    }
+  ],
+  "focus_intents": [
+    {
+      "id": "matrix_map",
+      "cue": "transform",
+      "claim": "矩阵乘法给出每个点的真实像。"
+    },
+    {
+      "id": "whole_plane",
+      "cue": "transform",
+      "claim": "同一A_t驱动全部网格和基向量，固定坐标轴不变。"
+    },
+    {
+      "id": "general_turn",
+      "cue": "transform",
+      "claim": "(1,0)到(2,1)，不在原直线上。"
+    },
+    {
+      "id": "definition",
+      "cue": "directions",
+      "claim": "Av=λv，v≠0，描述仍在原向量所在直线。"
+    },
+    {
+      "id": "candidate_lines",
+      "cue": "directions",
+      "claim": "两条候选直线在真实平面变换中保持。"
+    },
+    {
+      "id": "vector_equation",
+      "cue": "equations",
+      "claim": "未知向量(x,y)非零。"
+    },
+    {
+      "id": "two_components",
+      "cue": "equations",
+      "claim": "矩阵方程等价于两分量同时满足。"
+    },
+    {
+      "id": "subtract",
+      "cue": "equations",
+      "claim": "上式减下式，得到x-y=λ(x-y)。"
+    },
+    {
+      "id": "factor",
+      "cue": "equations",
+      "claim": "移项得到(λ-1)(x-y)=0。"
+    },
+    {
+      "id": "equal_nonzero",
+      "cue": "equal",
+      "claim": "x=y时非零向量保证x≠0。"
+    },
+    {
+      "id": "equal_substitute",
+      "cue": "equal",
+      "claim": "把y=x代入第一分量。"
+    },
+    {
+      "id": "equal_combine",
+      "cue": "equal",
+      "claim": "合并同类项得到3x=λx。"
+    },
+    {
+      "id": "equal_value",
+      "cue": "equal",
+      "claim": "x≠0，因此λ=3。"
+    },
+    {
+      "id": "plus_direction",
+      "cue": "equal",
+      "claim": "所有x(1,1)，x≠0。"
+    },
+    {
+      "id": "other_value",
+      "cue": "other",
+      "claim": "x≠y，由乘积为零得到λ=1。"
+    },
+    {
+      "id": "other_substitute",
+      "cue": "other",
+      "claim": "λ=1代入第一分量。"
+    },
+    {
+      "id": "other_reduce",
+      "cue": "other",
+      "claim": "移项得到x+y=0。"
+    },
+    {
+      "id": "other_direction",
+      "cue": "other",
+      "claim": "y=-x。"
+    },
+    {
+      "id": "all_directions",
+      "cue": "other",
+      "claim": "第二方向的非零倍数以及穷尽的两种情况。"
+    },
+    {
+      "id": "decompose",
+      "cue": "decompose",
+      "claim": "两个特征方向首尾相接等于原向量。"
+    },
+    {
+      "id": "independent_scaling",
+      "cue": "decompose",
+      "claim": "共同A_t下第一分量乘1+2t，第二分量乘1；合向量等于直接A_tu。"
+    },
+    {
+      "id": "recombine",
+      "cue": "decompose",
+      "claim": "终态分量(3,3)加(0.5,-0.5)等于(3.5,2.5)。"
+    },
+    {
+      "id": "linearity_check",
+      "cue": "decompose",
+      "claim": "直接Au等于特征分量变换后的重组。"
+    },
+    {
+      "id": "rotation_input",
+      "cue": "rotation",
+      "claim": "实二维向量接受90度旋转。"
+    },
+    {
+      "id": "quarter_turn",
+      "cue": "rotation",
+      "claim": "同一向量真实旋转到垂直方向。"
+    },
+    {
+      "id": "no_real_direction",
+      "cue": "rotation",
+      "claim": "对任一非零实向量，90度旋转与原向量垂直，不可能平行。"
+    },
+    {
+      "id": "summary",
+      "cue": "summary",
+      "claim": "本例的两个方向对应3和1；定义不要求长度不变。"
+    }
+  ],
+  "review_times": [
+    1,
+    3,
+    6.5,
+    10,
+    14,
+    16,
+    18,
+    23,
+    26,
+    27.8,
+    32,
+    38,
+    43,
+    47,
+    50,
+    56,
+    60,
+    62.5,
+    65,
+    66,
+    66.5,
+    67.5,
+    68,
+    69,
+    70.5,
+    74,
+    75.5,
+    76,
+    77,
+    78.167,
+    80.5,
+    81.667,
+    84,
+    85.5,
+    86,
+    87,
+    87.667,
+    89,
+    89.667,
+    94,
+    97.5,
+    102,
+    104,
+    106,
+    107,
+    108,
+    109,
+    109.5,
+    111,
+    112,
+    113,
+    115.5,
+    116.333,
+    121,
+    122,
+    126,
+    131.5,
+    135,
+    137.5,
+    139,
+    140.5,
+    141,
+    142,
+    144,
+    144.667,
+    146,
+    147,
+    147.5,
+    149,
+    150.5,
+    152,
+    156.5,
+    164,
+    169.6,
+    172,
+    176,
+    179,
+    183,
+    187,
+    190,
+    193,
+    194.8,
+    199.333,
+    202,
+    204.667,
+    210,
+    212.5,
+    217,
+    218.5,
+    220,
+    224,
+    228,
+    229,
+    233,
+    238,
+    242,
+    246,
+    251,
+    253
+  ],
+  "authorship": "supervised_local_reading_extension_eigen_voiced_v002",
+  "production_boundary": {
+    "status": "native_verified_source_frozen_for_lead_render_and_independent_reviews",
+    "rendered": false,
+    "visual_approved": false,
+    "content_regression_approved": false,
+    "narration_approved": false,
+    "audio_generated": false,
+    "independent_review_required": true,
+    "narration": "All 27 original segments and complete existing WAVs frozen unchanged; old approval does not approve v002 bindings",
+    "execution": "Author performs native placeholder tests only; lead renders, separate reviewers inspect blind pixels and content regression, then revalidate narration/full-WAV alignment and listening. No author render, TTS, SSH, approval or release."
+  },
+  "state_contracts": [
+    {
+      "state": "runtime/projects/eigen-directions-20261028/plan-voiced-v002.json / revision-contract-voiced-v002.json / examples/eigen_voiced_visual.py",
+      "writer": "eigen voiced revision author; lead owns next stage",
+      "consumers": [
+        "native renderer",
+        "independent blind reviewer",
+        "separate content-regression reviewer",
+        "release gate"
+      ],
+      "lifecycle": "Long-term case-local v002 source, timing intent and pre-render baseline inventory; not a general workflow change",
+      "invalidation": "Baseline source, WAV PCM, plan, contract, focus, typography or profile change invalidates dependent render, alignment and reviews"
+    },
+    {
+      "state": "tests/fixtures/eigen-voiced-visual/",
+      "writer": "eigen voiced revision author using verified WAV headers, receipts and actual native placeholder execution",
+      "consumers": [
+        "offline native tests",
+        "lead"
+      ],
+      "lifecycle": "Versioned media-independent inputs and measured observations, no approval authority",
+      "invalidation": "Bound source, plan, speech, native API or timing change requires explicit new measurement"
+    },
+    {
+      "state": "READ_DURATIONS / CUE_DURATIONS",
+      "writer": "eigen voiced revision author from the 27 verified full WAV durations",
+      "consumers": [
+        "EigenDirectionsVoicedLesson.read",
+        "EigenDirectionsVoicedLesson.construct",
+        "native tests"
+      ],
+      "lifecycle": "Case-local intent for this v002; base module globals never mutated",
+      "invalidation": "Baseline read durations, focus identities or audio lengths change; recompute budgets and repeat native tests"
+    },
+    {
+      "state": "motion_samples / symbol_transitions / chapter_times / focus",
+      "writer": "inherited scene methods and actual native execution",
+      "consumers": [
+        "native test helper",
+        "lead",
+        "independent reviewer",
+        "audio scheduler"
+      ],
+      "lifecycle": "Per-scene memory; original updater lifecycle and teardown retained; disposed at scene end",
+      "invalidation": "Source, plan, runtime, typography or timing change; logs are not pixels"
+    },
+    {
+      "state": "future outputs/eigen-directions-20261028/v002/",
+      "writer": "lead renderer only",
+      "consumers": [
+        "independent blind reviewer",
+        "separate content-regression reviewer",
+        "narration and audio validation"
+      ],
+      "lifecycle": "One versioned render with clocks, events, focus and source bindings; old raw/failed media retained",
+      "invalidation": "Bound code, baseline, contract, plan, font, profile or media change"
+    },
+    {
+      "state": "runtime/sessions/knowledge-trio-voice-20261028/review-eigen-regression-v002.json",
+      "writer": "independent content-regression reviewer only, never this author",
+      "consumers": [
+        "lead",
+        "formal narration gate",
+        "release gate"
+      ],
+      "lifecycle": "Session-scoped actual old/new pixels, separate from blind v002 reviewer context",
+      "invalidation": "Contract, baseline, current media, source, plan or any binding change; never inherited from v001"
+    }
+  ],
+  "revision_contract": "runtime/projects/eigen-directions-20261028/revision-contract-voiced-v002.json",
+  "revision_review": "runtime/sessions/knowledge-trio-voice-20261028/review-eigen-regression-v002.json",
+  "reading_extension": {
+    "baseline_source": "examples/eigen_visual.py",
+    "baseline_source_sha256": "9b28098232167167d994e346f6ea2ad61172936de0244d17f8d9acb7d0b5f2e1",
+    "baseline_duration": 210,
+    "measured_speech_fixture": "tests/fixtures/eigen-voiced-visual/measured-speech-v001.json",
+    "original_speech_plan": "runtime/projects/eigen-directions-20261028/tts-plan-v001.json",
+    "original_narration": "outputs/eigen-directions-20261028/v001/narration/plan-v002.json",
+    "policy": "Only read: max(original seconds, ceil(full measured WAV seconds + 0.5)). Movement focus windows and all native run_time values unchanged. No text-length estimates.",
+    "safety_seconds": 0.5,
+    "round_up_seconds": 1,
+    "extended_read_count": 17,
+    "expected_duration": 254,
+    "expected_frames": 7620,
+    "audio_status": "27 existing WAVs inspected against receipts; untouched, not newly generated or listening-approved",
+    "review_status": "awaiting lead render and independent blind/content-regression review",
+    "native_validation": {
+      "duration": 254,
+      "frames": 7620,
+      "chapters": [
+        {
+          "id": "transform",
+          "start": 0,
+          "end": 29
+        },
+        {
+          "id": "directions",
+          "start": 29,
+          "end": 57
+        },
+        {
+          "id": "equations",
+          "start": 57,
+          "end": 91
+        },
+        {
+          "id": "equal",
+          "start": 91,
+          "end": 125
+        },
+        {
+          "id": "other",
+          "start": 125,
+          "end": 160
+        },
+        {
+          "id": "decompose",
+          "start": 160,
+          "end": 206
+        },
+        {
+          "id": "rotation",
+          "start": 206,
+          "end": 234
+        },
+        {
+          "id": "summary",
+          "start": 234,
+          "end": 254
+        }
+      ],
+      "evidence_type": "Native 30fps placeholder geometry and clock; no GL, pixels or approval",
+      "contract": "tests/fixtures/eigen-voiced-visual/native-clock-contract.json"
+    }
+  }
+}

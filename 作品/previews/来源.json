@@ -1,0 +1,52 @@
+{
+  "writer": "repository-organization coordinator",
+  "consumers": [
+    "lead",
+    "maintainers",
+    "migration validator"
+  ],
+  "lifecycle": "Immutable snapshot for this migration batch; preserve alongside rollback copies",
+  "invalidation": "New native references or a source SHA/path change require another preflight",
+  "created_at": "2026-11-03T06:56:24.819365+00:00",
+  "previews": [
+    {
+      "path": "作品/previews/导数入门-修订预览.png",
+      "sha256": "bacd4121e751830422a40ec0cb2165aaf7e94f597eb30a1a48d4035092ee193e",
+      "source_relative_to": "Desktop",
+      "source": "01-知识动画/02-展示与对比/导数动效修订-20261103/01-导数入门-从平均变化率到导数-变量动效修订版.mp4",
+      "source_sha256": "30c321299ca2fba9897791f8c98285b55824f88b5c138acf6f89443129d7293a",
+      "frame_time": 24.7,
+      "clip_interval": null,
+      "native_delivery": {
+        "path": "outputs/math-derivative-intro-20261101/captioned-v010/delivery.json",
+        "sha256": "f18846b57b446887101777c19b866c3d4298029906d4936b30acf8726c4aef1b"
+      },
+      "operation": "CPU FFmpeg extraction/scale; no native media modification"
+    },
+    {
+      "path": "作品/previews/导数入门-公式构建.gif",
+      "sha256": "4359e020e6b47dcd786571bf2af9c7aa45cca83f2128a5bf3cdc71756312d508",
+      "source_relative_to": "Desktop",
+      "source": "01-知识动画/02-展示与对比/导数动效修订-20261103/01-导数入门-从平均变化率到导数-变量动效修订版.mp4",
+      "source_sha256": "30c321299ca2fba9897791f8c98285b55824f88b5c138acf6f89443129d7293a",
+      "frame_time": null,
+      "clip_interval": [
+        22.9,
+        26.4
+      ],
+      "native_delivery": {
+        "path": "outputs/math-derivative-intro-20261101/captioned-v010/delivery.json",
+        "sha256": "f18846b57b446887101777c19b866c3d4298029906d4936b30acf8726c4aef1b"
+      },
+      "operation": "CPU FFmpeg extraction/scale; no native media modification"
+    },
+    {
+      "path": "作品/previews/导数课程-已有版.png",
+      "sha256": "c2c14d28d0e07913ce8ebf1c3e314b4d26078c48d5d9fe8a53ed8731d3f873f8",
+      "frame_time": 62,
+      "source_relative_to": "Desktop",
+      "source": "01-知识动画/01-当前成片/高中数学-导数整章-配音字幕版-20261103/01-从平均变化率到导数.mp4",
+      "edition": "original_20261103_not_revision_cover"
+    }
+  ]
+}

@@ -31,12 +31,30 @@ function Get-ToolStatus {
     }
 }
 
+function Get-ManimGLStatus {
+    param([string]$WorkspaceRoot)
+
+    $localPath = Join-Path $WorkspaceRoot "manimgl_env\Scripts\manimgl.exe"
+    if (Test-Path -LiteralPath $localPath) {
+        return [ordered]@{
+            name = "manimgl"
+            required = $true
+            available = $true
+            path = $localPath
+        }
+    }
+    return Get-ToolStatus -Name "manimgl" -Required $true
+}
+
 $tools = @(
     (Get-ToolStatus -Name "node" -Required $true),
     (Get-ToolStatus -Name "python" -Required $true),
     (Get-ToolStatus -Name "bun" -Required $false),
     (Get-ToolStatus -Name "ffmpeg" -Required $true),
-    (Get-ToolStatus -Name "manim" -Required $true)
+    (Get-ToolStatus -Name "xelatex" -Required $true),
+    (Get-ToolStatus -Name "dvisvgm" -Required $true),
+    (Get-ManimGLStatus -WorkspaceRoot $Root),
+    (Get-ToolStatus -Name "manim" -Required $false)
 )
 
 $missingRequired = @($tools | Where-Object { -not $_.available -and $_.required } | ForEach-Object { $_.name })

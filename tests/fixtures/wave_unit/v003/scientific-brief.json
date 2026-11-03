@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "unit_id": "wave-unit-20261028",
+  "author_role": "Manim author, not reviewer or publisher",
+  "author_agent": "01a1817c-7136-79a3-9ca8-6b508ab35228",
+  "writer": "01a1817c-7136-79a3-9ca8-6b508ab35228",
+  "scope": "机械波形成传播、时空读图和两个脉冲的线性叠加；P07-04、P07-05、P07-06部分覆盖",
+  "excluded": ["稳定干涉的条件和节点分布的正式推导", "多普勒效应", "衍射及P07-08", "反射与透射", "完整波动方程推导", "实际实验及学生掌握验收"],
+  "model_file": "examples/wave_unit_model.py",
+  "coordinates": {"x": "介质的平衡位置，单位m；本小振幅横向线性模型保持不变", "y": "横向有符号位移，单位cm", "t": "物理秒；动画推进1s对应物理1s，阅读hold冻结时钟与所有运动", "screen": "横纵轴分别标单位，显示比例不同；不是绳形斜率的等比例测量"},
+  "parameters": {"amplitude_cm": 1, "wavelength_m": 4, "period_s": 4, "speed_m_s": 1, "pulse_half_width_m": 1.3, "pulse_initial_centers_m": [2, 8], "pulse_collision_s": 3},
+  "assumptions": [
+    "绷紧、均匀长绳上的小幅横向运动，张力与线密度视为常量，采用线性、无色散、无耗散传播模型。画面没有真实绳端，观察区间没有边界反射。",
+    "形成阶段由左端平滑驱动；局部作用传递是物理前提，延迟解展示其传播结果，不将预设函数当成独立实验或逐质点受力积分。",
+    "稳态简谐行波与启动解来自同一个源函数的稳态部分；不把起波前沿的包络边界当波峰或波长。",
+    "叠加只用于相同介质中的同方向横向位移分量。不同位置、不同时间的数据不能直接当同处合位移；位移线性相加，不宣称能量或振幅大小简单相加。"
+  ],
+  "facts": [
+    {"id": "harmonic", "statement": "y(x,t)=A cos(2π(t/T-x/λ))，A=1cm，T=4s，λ=4m，v=1m/s。y(x+vΔt,t+Δt)=y(x,t)，所以相位向+x传播。", "basis": "OpenStax 16.2，作者自选相位与参数", "code": "harmonic; wave_speed; crest_position"},
+    {"id": "causal", "statement": "f(s)=0(s≤0)，s>0时 f(s)=A S(min(s/1s,1))cos(2πs/T)，S(u)=10u³-15u⁴+6u⁵；形成解y(x,t)=f(t-x/v)，x≥0。S两端一、二阶导数为零，启动无位移跃变；延迟超过1s后等于同参数稳态行波。", "basis": "作者设计的光滑边界驱动与一维右行延迟解，不是受力实验", "code": "smooth_start; source_displacement; forming_wave"},
+    {"id": "identity", "statement": "黄色点标记平衡位置x=4m的同一个介质质点，只改变y；绿环标记同一波峰，其横坐标按x_c(t)=x_c(t0)+v(t-t0)前进。", "basis": "OpenStax 16.1及16.2；本模型的对象身份约定", "code": "particle_state; crest_position"},
+    {"id": "delay", "statement": "y(4m,8.5s)=y(2m,6.5s)=sqrt(2)/2 cm；相隔2m的后一处晚2s取得同一振动状态，不是质点从x=2迁移到x=4。", "basis": "直接代入同一forming_wave函数", "code": "forming_wave"},
+    {"id": "slices", "statement": "冻结t0得到y-x空间快照；固定x0得到y-t时间记录。两图纵轴都是位移，横轴的对象与单位不同；外观相似不能替代读轴。", "basis": "OpenStax 16.2，作者由同一函数取切片", "code": "spatial_snapshot; temporal_record"},
+    {"id": "scales", "statement": "相邻同相位位置差λ；同点重复同一运动状态的最短正时间T。相邻波峰到波谷为λ/2，不是λ；只见同高度未必同相位。一个周期同一波峰前进λ，所以v=λ/T，单位m/s，非介质质点的横向速度。", "basis": "OpenStax 16.1及16.2", "code": "harmonic; harmonic_velocity; crest_position"},
+    {"id": "direction", "statement": "右行波y(x,t+Δt)=y(x-vΔt,t)。t=0时x=5m处y=0，t=0.5s时y=sqrt(2)/2cm；左侧较高形状接替而使该固定质点上升。", "basis": "由harmonic恒等式及实际代入，不从单张未知传播方向快照猜时间运动", "code": "harmonic; harmonic_velocity"},
+    {"id": "pulses", "statement": "B(z)=(1-(z/w)²)³ (|z|<w)，否则0，w=1.3m；y1=A B(x-(2+vt))，y2=b A B(x-(8-vt))，y=y1+y2，b分别为1、-1、-0.5。脉冲为C²紧支撑函数，各自按恒定方向平移，不在相遇后交换公式或反弹。", "basis": "OpenStax 16.2及16.5的线性行波与叠加；作者原创脉冲形状", "code": "pulse_shape; pulse_centers; pulse_state"},
+    {"id": "collision", "statement": "t=3s时两中心都在x=5m；b=1时峰值2cm；b=-1时所有x的瞬时位移为0；b=-0.5时合脉冲为原正脉冲一半，高0.5cm。t=6s时正脉冲中心8m，另一脉冲中心2m，各自形状/符号/幅度不变。", "basis": "同一pulse_state纯函数的精确代入", "code": "pulse_state"},
+    {"id": "zero_not_rest", "statement": "b=-1且t=3s时y=0，但∂y/∂t=-2vA B'(x-5)在脉冲内部多数位置非零；x=5的对称中心恰为零。画面在x=4.5和5.5画实际计算的速度方向，随后继续同一时钟使两脉冲分离。", "basis": "作者由同一行波函数求导；位移不等于速度或能量，未开展能量密度推导", "code": "pulse_gradient; pulse_state"}
+  ],
+  "source_references": [
+    {"id": "openstax-16-1", "title": "University Physics Volume 1, 16.1 Traveling Waves", "url": "https://openstax.org/books/university-physics-volume-1/pages/16-1-traveling-waves", "accessed": "2026-10-28", "use": "介质与扰动传播的区别；自写讲解和图形，不复制书中图文"},
+    {"id": "openstax-16-2", "title": "University Physics Volume 1, 16.2 Mathematics of Waves", "url": "https://openstax.org/books/university-physics-volume-1/pages/16-2-mathematics-of-waves", "accessed": "2026-10-28", "use": "行波函数、两类速度和v=λ/T；模型参数、光滑启动与脉冲函数由作者选定"},
+    {"id": "openstax-16-5", "title": "University Physics Volume 1, 16.5 Interference of Waves", "url": "https://openstax.org/books/university-physics-volume-1/pages/16-5-interference-of-waves", "accessed": "2026-10-28", "use": "线性叠加与相长相消的条件；仅采用脉冲部分，不冒充完整干涉课程覆盖"}
+  ],
+  "state_contracts": [
+    {"state": "examples/wave_unit_model.py / scientific-brief.json / teaching-design.md", "writer": "Manim author", "consumers": ["three scenes", "pure tests", "lead", "independent reviewer"], "lifecycle": "本单元版本长期模型与教学事实，不包含创作日志", "invalidation": "模型、受众、范围、课程context或科学条件变化后重新核对，三课共享源码变化使全部下游渲染证据失效"},
+    {"state": "per-lesson plan.json / narration-draft-v001.json", "writer": "Manim author; lead接管渲染与后续", "consumers": ["understanding_render", "narrator", "independent reviewer"], "lifecycle": "长期教案与未批准的schema3意群草稿", "invalidation": "源码、模型、context、profile、节奏或讲稿变化；草稿不是批准，不据字数估计声画通过"},
+    {"state": "drivers / motion_samples / chapter_times / focus_begin-end", "writer": "实际UnderstandingScene执行", "consumers": ["scene teardown", "independent reviewer"], "lifecycle": "每次场景内存；逐cue清除updater，结束写入独立输出目录的wave-motion.json和原生focus/visual-events.json", "invalidation": "任何来源或执行环境变化；干跑只核对契约，不是实测渲染或像素证据"},
+    {"state": "source-freeze-v001.json", "writer": "Manim author at handoff", "consumers": ["lead", "independent reviewer"], "lifecycle": "三课一次性源码交接版本的哈希清单，不是发布状态", "invalidation": "任一绑定文件变化后作废，若需返工须由主Agent统一重渲染受影响三课"}
+  ],
+  "approval_boundary": "未渲染、未生成声音、未独立审核；科学摘要和测试通过不等于画面可读或学生理解"
+}

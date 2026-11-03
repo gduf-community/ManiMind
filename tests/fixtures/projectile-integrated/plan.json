@@ -1,0 +1,781 @@
+{
+  "schema_version": 1,
+  "project_id": "projectile-integrated-20261027",
+  "title": "同一段下落，不同的水平旅程：完整推导融合版",
+  "scene": "examples/projectile_integrated.py",
+  "scene_class": "IntegratedLesson",
+  "workflow_profile": "configs/visual-first-workflow-v3.json",
+  "revision_mode": "revision",
+  "revision_contract": "runtime/projects/projectile-integrated-20261027/revision-contract.json",
+  "revision_review": "runtime/sessions/projectile-integrated-20261027/review-regression-v001.json",
+  "audience": "已接触匀加速直线运动的高中生",
+  "prerequisites": [
+    "位移、速度、加速度",
+    "简单代数与平方根"
+  ],
+  "target_inference": "同初态竖直过程确定落地时间，横速只影响同时间内位移；高度经平方根时间关系影响射程。",
+  "likely_misconception": "以为横速分走下落速度；以为第二秒再落5米或四倍高度要四倍时间。",
+  "facts": {
+    "assumptions": [
+      "质点",
+      "无空气阻力",
+      "匀强重力",
+      "竖直初速度为零",
+      "水平地面",
+      "h>0",
+      "g>0"
+    ],
+    "g_m_s2": 10,
+    "upward_positive": true,
+    "equations": {
+      "general": "yi(t)=yi0+vyi0*t+ay*t^2/2",
+      "vertical": "y=h-g*t^2/2",
+      "vertical_velocity": "vy=-g*t",
+      "horizontal": "x=vx*t",
+      "landing": "T=sqrt(2h/g), T>0",
+      "range": "R=vx*T=vx*sqrt(2h/g)"
+    },
+    "cases": [
+      {
+        "h_m": 5,
+        "vx_m_s": 4,
+        "T_s": 1,
+        "R_m": 4
+      },
+      {
+        "h_m": 5,
+        "vx_m_s": 8,
+        "T_s": 1,
+        "R_m": 8
+      },
+      {
+        "h_m": 20,
+        "vx_m_s": 4,
+        "T_s": 2,
+        "R_m": 8
+      },
+      {
+        "h_m": 45,
+        "vx_m_s": 4,
+        "T_s": 3,
+        "R_m": 12
+      }
+    ],
+    "equal_second_drops_m": [
+      5,
+      15
+    ],
+    "vertical_velocities_m_s": [
+      0,
+      -10,
+      -20
+    ],
+    "contact_velocity": "Incoming ideal-model value, not an impact or rebound model.",
+    "evidence_boundary": "模型演示与演绎，不是独立物理实验，也不是学生理解效果证据。"
+  },
+  "sources": [
+    "examples/projectile_integrated.py",
+    "examples/projectile_formula_motion_full.py",
+    "examples/projectile_formula_motion.py",
+    "examples/projectile_understanding.py",
+    "outputs/sol61-visual-first-20261024-v1/candidate.py",
+    "src/manimind/postproduce/pilot.py",
+    "src/manimind/postproduce/preset_audition.py",
+    "src/manimind/components/formula_motion.py",
+    "src/manimind/components/typography.py",
+    "src/manimind/experiments/understanding_support.py",
+    "src/manimind/experiments/visual_first_support.py",
+    "src/manimind/experiments/visual_first_data.py",
+    "src/manimind/experiments/freeform_support.py",
+    "manimgl.yml"
+  ],
+  "baseline_plan": "outputs/projectile-formula-film-20261026/v004/plan.json",
+  "baseline_frames": "outputs/projectile-formula-film-20261026/v004/frames",
+  "duration": 194,
+  "fps": 30,
+  "cue_boundaries": [
+    0,
+    18,
+    38,
+    60,
+    80,
+    96,
+    120,
+    168,
+    182,
+    194
+  ],
+  "legacy_cue_boundaries": [
+    0,
+    18,
+    38,
+    58,
+    74,
+    102,
+    114
+  ],
+  "motion_files": [
+    "full-formula-motion.json",
+    "motion-samples.json"
+  ],
+  "cues": [
+    {
+      "id": "opening",
+      "duration": 18,
+      "heading": "横速改变了什么",
+      "visual": "同高5米，两球4/8米每秒共同释放；显示模型条件、慢放运动、落地时间与射程。",
+      "learning_purpose": "先观测同时落地与不同射程。",
+      "anchors": [
+        {
+          "id": "launch_conditions_visible",
+          "meaning": "质点、匀强重力、无空气阻力、竖直初速零及坐标方向真实可见"
+        },
+        {
+          "id": "first_equal_height_visible",
+          "meaning": "运动到半秒，两球等高"
+        },
+        {
+          "id": "first_simultaneous_landing",
+          "meaning": "物理一秒两球落地"
+        },
+        {
+          "id": "first_ranges_visible",
+          "meaning": "共同T=1秒及4/8米射程显示"
+        }
+      ]
+    },
+    {
+      "id": "vertical",
+      "duration": 20,
+      "heading": "从一般竖直方程到相同位置",
+      "visual": "完整继承一般式、代同初态、消去零项、竖直投影回放与y1=y2；保留语义符号运动。",
+      "learning_purpose": "由明确的初始条件推得相同竖直过程。",
+      "anchors": [
+        {
+          "id": "equal_gravity_visible",
+          "meaning": "共同向下重力与初始竖直速度零"
+        },
+        {
+          "id": "vertical_projections_coincide",
+          "meaning": "半秒竖直投影重合"
+        },
+        {
+          "id": "shared_vertical_motion_complete",
+          "meaning": "相同右式推得y1(t)=y2(t)"
+        }
+      ]
+    },
+    {
+      "id": "recombine",
+      "duration": 22,
+      "heading": "把共同竖直位置逐层接上水平位移",
+      "visual": "原坐标/颜色中依次构建0.25/0.50/0.75/1.00秒位置；固定每片y再展开至4t/8t；旧片降对比。",
+      "learning_purpose": "明确位置分解不是实际运动或水平加速。",
+      "anchors": [
+        {
+          "id": "position_decomposition_ready",
+          "meaning": "向上y轴和位置分解说明可读"
+        },
+        {
+          "id": "slice_025_ready",
+          "meaning": "0.25秒片展开到位"
+        },
+        {
+          "id": "slice_050_ready",
+          "meaning": "0.50秒片展开到位"
+        },
+        {
+          "id": "slice_075_ready",
+          "meaning": "0.75秒片展开到位"
+        },
+        {
+          "id": "slice_100_ready",
+          "meaning": "1.00秒片展开到位"
+        },
+        {
+          "id": "shared_time_slices_ready",
+          "meaning": "四层位置可对照"
+        }
+      ]
+    },
+    {
+      "id": "landing",
+      "duration": 20,
+      "heading": "完整求出落地时间",
+      "visual": "复用portable landing：y=h-gt²/2→0=h-gT²/2→gT²/2=h→gT²=2h→T²=2h/g→正根；完整项/2/g走已验证避让路径。",
+      "learning_purpose": "把实际落地条件与完整代数求解相连，不只展示终态。",
+      "anchors": [
+        {
+          "id": "vertical_equation_linked",
+          "meaning": "位置式与共同竖直投影联系"
+        },
+        {
+          "id": "ground_condition_applied",
+          "meaning": "y=0且t=T代入"
+        },
+        {
+          "id": "term_relocated",
+          "meaning": "完整分式移项到位"
+        },
+        {
+          "id": "height_doubled",
+          "meaning": "乘2到位"
+        },
+        {
+          "id": "square_time_isolated",
+          "meaning": "除g到位"
+        },
+        {
+          "id": "landing_time_derived",
+          "meaning": "T正根与前提可见"
+        }
+      ]
+    },
+    {
+      "id": "horizontal",
+      "duration": 16,
+      "heading": "射程代入与移动标尺",
+      "visual": "完整继承x=vxt→R=vxT、4/8米每秒乘共同1秒、单位消去和4米尺搬移核验。",
+      "learning_purpose": "射程两倍不仅是宣布结果，有乘法及几何证据。",
+      "anchors": [
+        {
+          "id": "horizontal_projections_landed",
+          "meaning": "水平投影落地"
+        },
+        {
+          "id": "range_products_visible",
+          "meaning": "两条带单位乘积到位"
+        },
+        {
+          "id": "double_range_measured",
+          "meaning": "4米尺搬移完成，两倍射程被核验"
+        }
+      ]
+    },
+    {
+      "id": "height_steps",
+      "duration": 24,
+      "heading": "速度增长与两段下落",
+      "visual": "同一向上y尺度，20米高从零竖直速度下落；真实模型时间驱动vy=-10t、渐长向下速度箭头和两位小数读数；保留5米及额外15米。",
+      "learning_purpose": "不是恒定重力箭头：第二秒更远是因为速度继续增长。",
+      "anchors": [
+        {
+          "id": "upward_velocity_scale_ready",
+          "meaning": "向上为正及速度非重力说明可见"
+        },
+        {
+          "id": "first_second_ready",
+          "meaning": "第一秒5米及vy=-10米每秒"
+        },
+        {
+          "id": "second_second_ready",
+          "meaning": "第二秒额外15米及vy=-20米每秒"
+        },
+        {
+          "id": "unequal_second_drops_compared",
+          "meaning": "两段同尺度长度和总20米比较"
+        }
+      ]
+    },
+    {
+      "id": "height",
+      "duration": 48,
+      "heading": "先看完整落地，再逐步推导缩放",
+      "visual": "旧5/20米同横速落地全程保留；完整结果先保持5秒再缩图；七个变换各1.4秒运动与1.2秒辨认，h'=4h→拆sqrt4→2T→代回R'→2R。",
+      "learning_purpose": "完整观测后才总结；真实增时用于符号路径和逐步辨认。",
+      "anchors": [
+        {
+          "id": "height_prediction_ready",
+          "meaning": "只预测四倍高度，不预先给结论"
+        },
+        {
+          "id": "low_ball_landed_high_ball_flying",
+          "meaning": "低球已落地，高球仍在飞"
+        },
+        {
+          "id": "high_ball_landed",
+          "meaning": "两球完整落地，T1/2秒、R4/8米全尺寸"
+        },
+        {
+          "id": "both_landings_full_size_held",
+          "meaning": "全尺寸落地结果已实际保持5秒"
+        },
+        {
+          "id": "height_substitution_ready",
+          "meaning": "把4h代入新时间根式"
+        },
+        {
+          "id": "root_split_ready",
+          "meaning": "拆出sqrt4"
+        },
+        {
+          "id": "root_four_evaluated_ready",
+          "meaning": "sqrt4化为2"
+        },
+        {
+          "id": "original_time_identified_ready",
+          "meaning": "原根式识别为T"
+        },
+        {
+          "id": "range_time_substitution_ready",
+          "meaning": "将2T代回射程"
+        },
+        {
+          "id": "range_factor_extracted_ready",
+          "meaning": "把2从乘积提出来"
+        },
+        {
+          "id": "original_range_identified_ready",
+          "meaning": "识别vxT=R"
+        },
+        {
+          "id": "height_scaling_verified",
+          "meaning": "T'=2T与R'=2R完整保持"
+        }
+      ]
+    },
+    {
+      "id": "transfer",
+      "duration": 14,
+      "heading": "换个高度检验同一机制",
+      "visual": "45米同横速预测，留白2秒再显示根式数值核验T3秒、R12米；不占用旧步骤时间。",
+      "learning_purpose": "用相同机制迁移，不冒充学生理解实测。",
+      "anchors": [
+        {
+          "id": "ninefold_question_ready",
+          "meaning": "新例问题无答案"
+        },
+        {
+          "id": "prediction_pause_started",
+          "meaning": "开始无旁白预测留白"
+        },
+        {
+          "id": "ninefold_answer_ready",
+          "meaning": "根式与单位数值结果到位"
+        }
+      ]
+    },
+    {
+      "id": "conclusion",
+      "duration": 12,
+      "heading": "把关系连起来",
+      "visual": "旧总结完整保留：高度经T影响射程；小T避让归位，固定R/= /vx原位展开根式成R=vx sqrt(2h/g)。",
+      "learning_purpose": "保留公式依赖和符号身份，不让根式穿过vx。",
+      "anchors": [
+        {
+          "id": "fixed_height_relation_highlighted",
+          "meaning": "同高改横速只改射程"
+        },
+        {
+          "id": "height_relation_highlighted",
+          "meaning": "同横速高度经时间影响射程"
+        },
+        {
+          "id": "final_relations_visible",
+          "meaning": "完整射程根式到位并保持"
+        }
+      ]
+    }
+  ],
+  "derivations": [
+    {
+      "id": "shared_vertical",
+      "interval": [
+        18,
+        38
+      ],
+      "preservation": "FullFormulaLesson._vertical unchanged; all four states and symbol identity retained"
+    },
+    {
+      "id": "landing_time",
+      "interval": [
+        60,
+        80
+      ],
+      "preservation": "Portable landing plays all six states and complete-term/factor/gravity paths, with actual start=60"
+    },
+    {
+      "id": "range",
+      "interval": [
+        80,
+        96
+      ],
+      "preservation": "Full horizontal derivation, units and moving ruler retained"
+    },
+    {
+      "id": "height_scaling",
+      "interval": [
+        120,
+        168
+      ],
+      "preservation": "Full flights; five-second full-size results; seven 1.4-second transformations each followed by 1.2-second reading interval"
+    },
+    {
+      "id": "combine_relations",
+      "interval": [
+        182,
+        194
+      ],
+      "preservation": "Single-T corridor and in-place root expansion retained"
+    }
+  ],
+  "focus_intents": [
+    {
+      "id": "launch_question",
+      "claim": "同高水平抛出，横速不同是否改变落地时间；必要模型条件真实可见。",
+      "visible_evidence": "Runtime focus_begin/end delimit the actual authored state or animated chain; independent pixels must verify visibility.",
+      "kind": "deduction"
+    },
+    {
+      "id": "same_height_motion",
+      "claim": "共享时钟中两球同时运动并落地。",
+      "visible_evidence": "Runtime focus_begin/end delimit the actual authored state or animated chain; independent pixels must verify visibility.",
+      "kind": "deduction"
+    },
+    {
+      "id": "same_height_result",
+      "claim": "同为一秒落地，射程为四米与八米。",
+      "visible_evidence": "Runtime focus_begin/end delimit the actual authored state or animated chain; independent pixels must verify visibility.",
+      "kind": "deduction"
+    },
+    {
+      "id": "shared_vertical_conditions",
+      "claim": "两球竖直初速度零、加速度同为-g。",
+      "visible_evidence": "Runtime focus_begin/end delimit the actual authored state or animated chain; independent pixels must verify visibility.",
+      "kind": "deduction"
+    },
+    {
+      "id": "vertical_equations",
+      "claim": "两条一般式代入相同初态并消去零项，符号对应连续。",
+      "visible_evidence": "Runtime focus_begin/end delimit the actual authored state or animated chain; independent pixels must verify visibility.",
+      "kind": "deduction"
+    },
+    {
+      "id": "equal_vertical_result",
+      "claim": "两个相同右式给出相同竖直位置。",
+      "visible_evidence": "Runtime focus_begin/end delimit the actual authored state or animated chain; independent pixels must verify visibility.",
+      "kind": "deduction"
+    },
+    {
+      "id": "position_decomposition",
+      "claim": "横向展开是在分解位置，不是实际运动。",
+      "visible_evidence": "Runtime focus_begin/end delimit the actual authored state or animated chain; independent pixels must verify visibility.",
+      "kind": "deduction"
+    },
+    {
+      "id": "shared_time_slices",
+      "claim": "逐层共同y加不同4t/8t位移，展开时每层高度不变。",
+      "visible_evidence": "Runtime focus_begin/end delimit the actual authored state or animated chain; independent pixels must verify visibility.",
+      "kind": "deduction"
+    },
+    {
+      "id": "vertical_position_law",
+      "claim": "竖直位置式和共同投影对应。",
+      "visible_evidence": "Runtime focus_begin/end delimit the actual authored state or animated chain; independent pixels must verify visibility.",
+      "kind": "deduction"
+    },
+    {
+      "id": "landing_algebra",
+      "claim": "落地条件后依次移项、乘2、除g，路径可追踪。",
+      "visible_evidence": "Runtime focus_begin/end delimit the actual authored state or animated chain; independent pixels must verify visibility.",
+      "kind": "deduction"
+    },
+    {
+      "id": "positive_landing_time",
+      "claim": "正的落地时间为sqrt(2h/g)，条件h、g、T均为正。",
+      "visible_evidence": "Runtime focus_begin/end delimit the actual authored state or animated chain; independent pixels must verify visibility.",
+      "kind": "deduction"
+    },
+    {
+      "id": "range_products",
+      "claim": "4/8米每秒乘1秒，单位消去，移动4米尺检验。",
+      "visible_evidence": "Runtime focus_begin/end delimit the actual authored state or animated chain; independent pixels must verify visibility.",
+      "kind": "deduction"
+    },
+    {
+      "id": "double_range_result",
+      "claim": "同时间使两倍横速对应两倍射程。",
+      "visible_evidence": "Runtime focus_begin/end delimit the actual authored state or animated chain; independent pixels must verify visibility.",
+      "kind": "deduction"
+    },
+    {
+      "id": "velocity_growth",
+      "claim": "第一秒向下速度从零增加，非恒定g箭头。",
+      "visible_evidence": "Runtime focus_begin/end delimit the actual authored state or animated chain; independent pixels must verify visibility.",
+      "kind": "deduction"
+    },
+    {
+      "id": "first_second",
+      "claim": "第一秒落下5米，vy=-10米每秒。",
+      "visible_evidence": "Runtime focus_begin/end delimit the actual authored state or animated chain; independent pixels must verify visibility.",
+      "kind": "deduction"
+    },
+    {
+      "id": "second_velocity_growth",
+      "claim": "第二秒竖直速度继续变负，箭头继续增长。",
+      "visible_evidence": "Runtime focus_begin/end delimit the actual authored state or animated chain; independent pixels must verify visibility.",
+      "kind": "deduction"
+    },
+    {
+      "id": "second_second",
+      "claim": "第二秒额外15米，总20米；vy=-20米每秒。",
+      "visible_evidence": "Runtime focus_begin/end delimit the actual authored state or animated chain; independent pixels must verify visibility.",
+      "kind": "deduction"
+    },
+    {
+      "id": "height_prediction",
+      "claim": "同横速、5米和20米同尺度比较，结果未提前给出。",
+      "visible_evidence": "Runtime focus_begin/end delimit the actual authored state or animated chain; independent pixels must verify visibility.",
+      "kind": "deduction"
+    },
+    {
+      "id": "low_landing_observation",
+      "claim": "低球1秒落地，高球同一时刻仍在15米高度。",
+      "visible_evidence": "Runtime focus_begin/end delimit the actual authored state or animated chain; independent pixels must verify visibility.",
+      "kind": "deduction"
+    },
+    {
+      "id": "both_landing_observation",
+      "claim": "高球2秒落地，完整保留1/2秒和4/8米结果五秒。",
+      "visible_evidence": "Runtime focus_begin/end delimit the actual authored state or animated chain; independent pixels must verify visibility.",
+      "kind": "deduction"
+    },
+    {
+      "id": "height_scaling_chain",
+      "claim": "h'=4h及新时间、射程一般式在观测后才引入。",
+      "visible_evidence": "Runtime focus_begin/end delimit the actual authored state or animated chain; independent pixels must verify visibility.",
+      "kind": "deduction"
+    },
+    {
+      "id": "height_substitution",
+      "claim": "把4h代入根式。",
+      "visible_evidence": "Runtime focus_begin/end delimit the actual authored state or animated chain; independent pixels must verify visibility.",
+      "kind": "deduction"
+    },
+    {
+      "id": "root_split",
+      "claim": "分离sqrt4与原根式。",
+      "visible_evidence": "Runtime focus_begin/end delimit the actual authored state or animated chain; independent pixels must verify visibility.",
+      "kind": "deduction"
+    },
+    {
+      "id": "root_four_evaluated",
+      "claim": "sqrt4=2。",
+      "visible_evidence": "Runtime focus_begin/end delimit the actual authored state or animated chain; independent pixels must verify visibility.",
+      "kind": "deduction"
+    },
+    {
+      "id": "original_time_identified",
+      "claim": "辨认原根式为T。",
+      "visible_evidence": "Runtime focus_begin/end delimit the actual authored state or animated chain; independent pixels must verify visibility.",
+      "kind": "deduction"
+    },
+    {
+      "id": "range_time_substitution",
+      "claim": "将2T代入R'=vxT'。",
+      "visible_evidence": "Runtime focus_begin/end delimit the actual authored state or animated chain; independent pixels must verify visibility.",
+      "kind": "deduction"
+    },
+    {
+      "id": "range_factor_extracted",
+      "claim": "将系数2提到vxT前。",
+      "visible_evidence": "Runtime focus_begin/end delimit the actual authored state or animated chain; independent pixels must verify visibility.",
+      "kind": "deduction"
+    },
+    {
+      "id": "original_range_identified",
+      "claim": "辨认vxT为R。",
+      "visible_evidence": "Runtime focus_begin/end delimit the actual authored state or animated chain; independent pixels must verify visibility.",
+      "kind": "deduction"
+    },
+    {
+      "id": "height_scaling_result",
+      "claim": "保持T'=2T和R'=2R与已观测结果联系。",
+      "visible_evidence": "Runtime focus_begin/end delimit the actual authored state or animated chain; independent pixels must verify visibility.",
+      "kind": "deduction"
+    },
+    {
+      "id": "ninefold_prediction",
+      "claim": "45米、横速不变，时间与射程未知。",
+      "visible_evidence": "Runtime focus_begin/end delimit the actual authored state or animated chain; independent pixels must verify visibility.",
+      "kind": "deduction"
+    },
+    {
+      "id": "prediction_space",
+      "claim": "问题保持，无旁白、无倒计时、无答案。",
+      "visible_evidence": "Runtime focus_begin/end delimit the actual authored state or animated chain; independent pixels must verify visibility.",
+      "kind": "prediction"
+    },
+    {
+      "id": "ninefold_check",
+      "claim": "用完整数值根式核对3秒和12米。",
+      "visible_evidence": "Runtime focus_begin/end delimit the actual authored state or animated chain; independent pixels must verify visibility.",
+      "kind": "deduction"
+    },
+    {
+      "id": "fixed_height_summary",
+      "claim": "固定高度时横速影响射程。",
+      "visible_evidence": "Runtime focus_begin/end delimit the actual authored state or animated chain; independent pixels must verify visibility.",
+      "kind": "deduction"
+    },
+    {
+      "id": "height_summary",
+      "claim": "固定横速时高度先决定T，再影响R。",
+      "visible_evidence": "Runtime focus_begin/end delimit the actual authored state or animated chain; independent pixels must verify visibility.",
+      "kind": "deduction"
+    },
+    {
+      "id": "combined_range_result",
+      "claim": "T避让归位后在原槽展开为完整根式，vx不被穿过。",
+      "visible_evidence": "Runtime focus_begin/end delimit the actual authored state or animated chain; independent pixels must verify visibility.",
+      "kind": "deduction"
+    }
+  ],
+  "review_times": [
+    0,
+    0.9,
+    4.5,
+    7,
+    11.5,
+    17.8,
+    18,
+    23.7,
+    24.4,
+    25,
+    30.7,
+    37.8,
+    38,
+    41,
+    43,
+    46,
+    49.5,
+    53,
+    57,
+    59.8,
+    60,
+    62.4,
+    68,
+    69.3,
+    70.2,
+    71.2,
+    73,
+    79.8,
+    80,
+    85.6,
+    87,
+    90,
+    95.8,
+    96,
+    98,
+    102,
+    106,
+    110.6,
+    115,
+    119.8,
+    120,
+    121,
+    129,
+    131,
+    136.4,
+    138.9,
+    141.3,
+    142.4,
+    145,
+    148,
+    151,
+    154,
+    157,
+    160,
+    164,
+    167.8,
+    168,
+    168.6,
+    173,
+    175.6,
+    181.8,
+    182,
+    184.5,
+    187.9,
+    190.7,
+    191.1,
+    191.4,
+    191.7,
+    193.8
+  ],
+  "authorship": "supervised",
+  "production_boundary": {
+    "status": "source_and_intent_only_await_actual_render_and_independent_review",
+    "audio": "none",
+    "subtitles": "none",
+    "bgm": "none",
+    "independent_review_required": true,
+    "content_regression_required": true,
+    "not_model_isolation_comparison": true
+  },
+  "context_lifecycle": {
+    "writer": "supervised visual creator",
+    "consumers": [
+      "understanding renderer",
+      "independent visual reviewer",
+      "independent regression reviewer",
+      "lead narration scheduler"
+    ],
+    "lifecycle": "This project's versioned visual plan; no approval inherited from baselines",
+    "invalidation": "Any science, source, helper, plan, profile, contract, timing or media change requires fresh matching review"
+  },
+  "state_contracts": [
+    {
+      "state": "legacy clock offset and extra",
+      "writer": "IntegratedLesson._legacy_chapter and height transition hooks",
+      "consumers": [
+        "until"
+      ],
+      "lifecycle": "One legacy chapter; cleared at return",
+      "invalidation": "Next chapter or timing change"
+    },
+    {
+      "state": "formula geometry and motion evidence",
+      "writer": "actual scene and portable landing samplers",
+      "consumers": [
+        "independent formula/pixel reviewer"
+      ],
+      "lifecycle": "Exact render only",
+      "invalidation": "Any source, TeX, timing, plan or media change"
+    },
+    {
+      "state": "focus and marks",
+      "writer": "actual VisualLessonScene and UnderstandingScene runtime",
+      "consumers": [
+        "independent reviewer",
+        "later narrator"
+      ],
+      "lifecycle": "Exact render only",
+      "invalidation": "Any visual or timing change"
+    },
+    {
+      "state": "narration draft",
+      "writer": "supervised creator",
+      "consumers": [
+        "lead after visual and regression approvals"
+      ],
+      "lifecycle": "Temporary semantic intent stored separately from installed narration",
+      "invalidation": "Any focus, visual, science, text, timing or review change"
+    },
+    {
+      "state": "chapter identity/start, height-step cursor, opening condition group and current reading-focus identity",
+      "writer": "IntegratedLesson setup/chapter/standard/read methods",
+      "consumers": [
+        "chapter hooks",
+        "scene graph",
+        "focus recorder"
+      ],
+      "lifecycle": "Transient scene state; chapter identity and cursor replaced at the next relevant chapter; condition group removed before flight; focus closed before transition",
+      "invalidation": "New scene instance, chapter transition, source or timing change"
+    }
+  ],
+  "handoff": {
+    "narration": "Do not install narration-draft.json as formal narration before independent visual and content-regression approval; use actual focus windows and complete WAV durations later.",
+    "clock": "No get_time override; only legacy absolute wait targets translated. Landing uses its actual global start once.",
+    "release": "Lead only; no complete film, speech generation, API, SSH, git commit or publication by this author."
+  }
+}

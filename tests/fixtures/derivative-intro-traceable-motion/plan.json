@@ -1,0 +1,711 @@
+{
+  "project_id": "math-derivative-intro-20261101",
+  "unit_id": "math-derivative-unit-20261101",
+  "author_agent": "01a19f5e-8709-7490-9ea2-091eac2db5ef",
+  "author_context": "01a19f5e-8709-7490-9ea2-091eac2db5ef",
+  "status": "v008_source_origin_transfers_candidate_not_approved",
+  "title": "导数入门：曲线上，一个点有多陡",
+  "scene": "examples/derivative_intro_traceable_motion.py",
+  "scene_class": "DerivativeIntroTraceableMotionLesson",
+  "workflow_profile": "configs/visual-first-workflow-v4.3-unit.json",
+  "lesson_context": "runtime/projects/math-derivative-intro-20261101/context-v001.json",
+  "revision_mode": "revision",
+  "revision_contract": "runtime/projects/math-derivative-intro-20261101/revision-contract-v008.json",
+  "revision_review": "runtime/sessions/math-derivative-intro-motion-revision-20261103/review/content-regression-v008.json",
+  "revision_note": "Retain the current v007 teaching content and original audio/text clock; add visible source-origin semantic transfers. v007 first quotient had no such transfer.",
+  "narration_draft": "runtime/projects/math-derivative-intro-20261101/narration-draft-v003.json",
+  "visual_design": "runtime/projects/math-derivative-intro-20261101/revision-contract-v008.json",
+  "sources": [
+    "examples/derivative_intro_final.py",
+    "examples/derivative_intro_voiced.py",
+    "examples/derivative_intro_audio_aligned.py",
+    "examples/derivative_intro_delivery.py",
+    "examples/derivative_intro_refined.py",
+    "examples/derivative_intro_visual.py",
+    "runtime/projects/math-derivative-intro-20261101/narration-draft-v003.json",
+    "runtime/projects/math-derivative-intro-20261101/context-v001.json",
+    "runtime/sessions/math-derivative-intro-20261101/forced-timings-v003.json",
+    "runtime/sessions/math-derivative-intro-20261101/speech-plan-v003.json",
+    "runtime/projects/math-derivative-unit-20261101/unit.json",
+    "docs/curricula/high-school-mathematics-v0.1.csv",
+    "src/manimind/curriculum.py",
+    "runtime/projects/math-derivative-unit-20261101/course-context-plan.json",
+    "docs/formula-motion.md",
+    "docs/formula-continuity.md",
+    "src/manimind/postproduce/traceable_film.py",
+    "runtime/projects/math-derivative-intro-20261101/revision-contract-v008.json",
+    "runtime/projects/math-derivative-intro-20261101/scene-draft-plan-v008.json"
+  ],
+  "duration": 228,
+  "fps": 30,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "subtitle_reserve": {
+    "pixel_top": 984,
+    "scene_y_max_for_bottom": -3.288888889,
+    "author_content_min_y": -3.05
+  },
+  "cues": [
+    {
+      "id": "opening",
+      "duration": 15,
+      "heading": "导数入门",
+      "visual": "继承完整标题、自然问题和固定P=(2,4)的曲线引入。",
+      "learning_purpose": "接上斜率与二次函数，定位本点问题。",
+      "anchors": [
+        {
+          "id": "opening_title_ready",
+          "meaning": "标题和问题已显现"
+        },
+        {
+          "id": "opening_point_ready",
+          "meaning": "曲线、P和本点问题已出现"
+        }
+      ],
+      "stage_times": {
+        "0.10": 1.3333333333333333,
+        "0.46": 7,
+        "0.60": 7.6
+      }
+    },
+    {
+      "id": "average",
+      "duration": 21,
+      "heading": "先看一段区间",
+      "visual": "Original increment relations remain readable while their semantic copies travel into the two quotient forms; original completion anchor is retained.",
+      "learning_purpose": "建立区间平均变化率的图像和比值联系。",
+      "anchors": [
+        {
+          "id": "interval_points_ready",
+          "meaning": "P、Q及坐标已出现"
+        },
+        {
+          "id": "increments_ready",
+          "meaning": "增量线与公式均已出现"
+        },
+        {
+          "id": "average_quotient_ready",
+          "meaning": "差商、5与平均变化率已出现"
+        }
+      ],
+      "stage_times": {
+        "0.04": 0.4,
+        "0.08": 0.8,
+        "0.14": 1.3666666666666667,
+        "0.32": 5.9,
+        "0.38": 6.2,
+        "0.44": 6.5,
+        "0.64": 10.5,
+        "0.74": 11.2
+      }
+    },
+    {
+      "id": "approach",
+      "duration": 29,
+      "heading": "让Q沿曲线靠近P",
+      "visual": "继承一个h驱动Q、割线、增量线和读数，由1经0.1至0.02。",
+      "learning_purpose": "连续追踪几何变化与差商趋稳。",
+      "anchors": [
+        {
+          "id": "approach_setup_ready",
+          "meaning": "固定P、活动Q和读数已出现"
+        },
+        {
+          "id": "approach_motion_mid",
+          "meaning": "h=0.1、差商4.1的真实运动终点"
+        },
+        {
+          "id": "approach_near_ready",
+          "meaning": "h=0.02、差商4.02的真实运动终点"
+        }
+      ],
+      "stage_times": {
+        "0.04": 0.4,
+        "0.08": 0.9,
+        "0.12": 1.5,
+        "0.24": 7.5,
+        "0.52": 16.8,
+        "0.58": 18,
+        "0.80": 19.333333333333332
+      }
+    },
+    {
+      "id": "algebra",
+      "duration": 40,
+      "heading": "差商为什么接近4",
+      "visual": "Five retained equality-linked rows. Surviving semantic terms depart visibly from the actual current equation; new terms are introduced without false glyph identity.",
+      "learning_purpose": "连续追踪展开、合并、提因式及非零约分，完整旧式和新式可持续对照。",
+      "anchors": [
+        {
+          "id": "substitution_ready",
+          "meaning": "具体差商及伴随图已出现"
+        },
+        {
+          "id": "expanded_ready",
+          "meaning": "展开式在固定行完整组装"
+        },
+        {
+          "id": "combined_ready",
+          "meaning": "合并式在固定行完整组装"
+        },
+        {
+          "id": "factored_ready",
+          "meaning": "提因式在固定行完整组装"
+        },
+        {
+          "id": "cancellation_condition_ready",
+          "meaning": "h≠0、两处待约h和划线已出现"
+        },
+        {
+          "id": "simplified_ready",
+          "meaning": "4+h在固定行完整组装"
+        }
+      ],
+      "stage_times": {
+        "0.04": 0.3,
+        "0.08": 0.8,
+        "0.10": 1.3333333333333333,
+        "0.20": 4.5,
+        "0.26": 7.9,
+        "0.36": 12.8,
+        "0.42": 14.6,
+        "0.51": 17.1,
+        "0.58": 19.9,
+        "0.68": 21.9,
+        "0.73": 22.5,
+        "0.83": 26.8,
+        "0.89": 29.2
+      }
+    },
+    {
+      "id": "both_sides",
+      "duration": 25,
+      "heading": "两边靠近，同一个数",
+      "visual": "继承左右Q与割线、正负h与Δy、双侧斜率及绝对误差关系。",
+      "learning_purpose": "以有向增量和任意小h的代数理由解释共同趋近4。",
+      "anchors": [
+        {
+          "id": "two_sides_ready",
+          "meaning": "双侧点、割线与有向读数已出现"
+        },
+        {
+          "id": "two_sides_mid",
+          "meaning": "半径0.1、斜率4.1与3.9"
+        },
+        {
+          "id": "two_sides_near",
+          "meaning": "半径0.02、斜率4.02与3.98"
+        },
+        {
+          "id": "common_limit_ready",
+          "meaning": "双侧趋近及差距关系已出现"
+        }
+      ],
+      "stage_times": {
+        "0.04": 0.4,
+        "0.08": 0.9,
+        "0.12": 1.4666666666666666,
+        "0.34": 6.6,
+        "0.55": 10.3,
+        "reason_motion_start": 12.8,
+        "0.78": 13.25,
+        "0.72": 17.8
+      }
+    },
+    {
+      "id": "definition",
+      "duration": 52,
+      "heading": "零点取值与附近趋近",
+      "visual": "Preserve the complete zero-value/nearby-limit bridge and height/rate distinction. Specific position and h roles visibly travel into the lower general definition, retaining both formulas and the finite two-sided condition.",
+      "learning_purpose": "直接解释原式零点无定义和极限存在如何并存，再建立导数定义。",
+      "anchors": [
+        {
+          "id": "raw_difference_quotient_ready",
+          "meaning": "左侧原始差商已出现"
+        },
+        {
+          "id": "zero_input_undefined_ready",
+          "meaning": "原式取h=0得到0/0及无定义文字已出现"
+        },
+        {
+          "id": "nearby_nonzero_ready",
+          "meaning": "右侧非零化简式与两侧读数已出现"
+        },
+        {
+          "id": "nonzero_near_limit",
+          "meaning": "非零h实际运动到±0.01，差商4.01和3.99"
+        },
+        {
+          "id": "zero_limit_comparison_ready",
+          "meaning": "原式零点无定义与附近极限4的直接对照已出现"
+        },
+        {
+          "id": "derivative_value_ready",
+          "meaning": "f'(2)极限式、函数值和变化率区分已出现"
+        },
+        {
+          "id": "definition_pattern_ready",
+          "meaning": "一般定义在固定下行完整出现，旁有本点公式和有限双侧条件"
+        }
+      ],
+      "stage_times": {
+        "0.04": 0.4,
+        "0.08": 0.95,
+        "0.12": 1.3,
+        "0.18": 3.7,
+        "0.30": 8.7,
+        "0.36": 9.2,
+        "0.54": 15.6,
+        "0.58": 17.15,
+        "0.62": 22.5,
+        "0.66": 23.1,
+        "0.68": 23.5,
+        "0.72": 24,
+        "0.80": 35.2,
+        "0.88": 36.6,
+        "0.90": 37.1
+      }
+    },
+    {
+      "id": "tangent_prediction",
+      "duration": 30,
+      "heading": "4怎样描述P附近",
+      "visual": "继承真实坐标的局部放大、切线与曲线点的共同h运动、预测与真值读数及精确h²余项。",
+      "learning_purpose": "保留导数的局部预测用途与近似误差解释。",
+      "anchors": [
+        {
+          "id": "tangent_ready",
+          "meaning": "局部曲线、P和切线已出现"
+        },
+        {
+          "id": "prediction_setup_ready",
+          "meaning": "曲线值、预测点和误差段已出现"
+        },
+        {
+          "id": "prediction_small_ready",
+          "meaning": "h=0.1，预测4.400、曲线4.410"
+        },
+        {
+          "id": "remainder_ready",
+          "meaning": "精确展开及h²=0.01已出现"
+        }
+      ],
+      "stage_times": {
+        "0.04": 0.4,
+        "0.08": 0.9,
+        "0.12": 1.2666666666666666,
+        "0.32": 7.9,
+        "0.42": 8.95,
+        "motion_start": 15.3,
+        "0.72": 16.25,
+        "0.78": 19.85,
+        "0.80": 20.55
+      }
+    },
+    {
+      "id": "closing",
+      "duration": 16,
+      "heading": "从一个点，到每一个位置",
+      "visual": "继承本点导数、切线和局部预测的收束，提出一般位置a的问题。",
+      "learning_purpose": "回应本课并衔接M12-03。",
+      "anchors": [
+        {
+          "id": "lesson_summary_ready",
+          "meaning": "本点导数的联系已出现"
+        },
+        {
+          "id": "next_position_question_ready",
+          "meaning": "一般位置a的问题已出现"
+        }
+      ],
+      "stage_times": {
+        "0.04": 0.4,
+        "0.08": 0.85,
+        "0.14": 1.3,
+        "0.53": 6.6,
+        "0.62": 7.2
+      }
+    }
+  ],
+  "focus_intents": [
+    {
+      "id": "opening_question",
+      "cue": "opening"
+    },
+    {
+      "id": "opening_point",
+      "cue": "opening"
+    },
+    {
+      "id": "interval_points",
+      "cue": "average"
+    },
+    {
+      "id": "signed_increments",
+      "cue": "average"
+    },
+    {
+      "id": "average_quotient",
+      "cue": "average"
+    },
+    {
+      "id": "approach_setup",
+      "cue": "approach"
+    },
+    {
+      "id": "right_approach",
+      "cue": "approach"
+    },
+    {
+      "id": "near_rate",
+      "cue": "approach"
+    },
+    {
+      "id": "quotient_substitution",
+      "cue": "algebra"
+    },
+    {
+      "id": "expanded_terms",
+      "cue": "algebra"
+    },
+    {
+      "id": "combined_terms",
+      "cue": "algebra"
+    },
+    {
+      "id": "factored_h",
+      "cue": "algebra"
+    },
+    {
+      "id": "nonzero_cancel",
+      "cue": "algebra"
+    },
+    {
+      "id": "simplified_rate",
+      "cue": "algebra"
+    },
+    {
+      "id": "two_sided_start",
+      "cue": "both_sides"
+    },
+    {
+      "id": "two_sided_motion",
+      "cue": "both_sides"
+    },
+    {
+      "id": "common_four",
+      "cue": "both_sides"
+    },
+    {
+      "id": "raw_zero_input",
+      "cue": "definition"
+    },
+    {
+      "id": "zero_undefined",
+      "cue": "definition"
+    },
+    {
+      "id": "nonzero_neighborhood",
+      "cue": "definition"
+    },
+    {
+      "id": "zero_value_vs_limit",
+      "cue": "definition"
+    },
+    {
+      "id": "derivative_at_two",
+      "cue": "definition"
+    },
+    {
+      "id": "definition_pattern",
+      "cue": "definition"
+    },
+    {
+      "id": "tangent_geometry",
+      "cue": "tangent_prediction"
+    },
+    {
+      "id": "local_prediction",
+      "cue": "tangent_prediction"
+    },
+    {
+      "id": "prediction_remainder",
+      "cue": "tangent_prediction"
+    },
+    {
+      "id": "local_summary",
+      "cue": "closing"
+    },
+    {
+      "id": "next_position",
+      "cue": "closing"
+    }
+  ],
+  "review_times": [
+    2.25,
+    6,
+    10.5,
+    13.5,
+    18.15,
+    22.9,
+    23.2,
+    23.4,
+    23.5,
+    23.8,
+    24.0,
+    24.2,
+    24.4,
+    24.7,
+    24.9,
+    25.1,
+    25.3,
+    25.5,
+    25.7,
+    25.9,
+    26.1,
+    26.2,
+    26.4,
+    29.7,
+    33.9,
+    40.35,
+    47.6,
+    56.3,
+    62.1,
+    69.5,
+    69.8,
+    70.1,
+    70.2,
+    70.5,
+    70.52,
+    70.8,
+    70.928,
+    71,
+    71.1,
+    71.2,
+    71.4,
+    71.54,
+    71.8,
+    72.152,
+    72.2,
+    72.3,
+    72.5,
+    72.56,
+    72.6,
+    72.9,
+    77.8,
+    78,
+    78.1,
+    78.34,
+    78.4,
+    78.556,
+    78.7,
+    78.88,
+    79.0,
+    79.204,
+    79.3,
+    79.42,
+    79.6,
+    79.8,
+    81,
+    82.1,
+    82.3,
+    82.6,
+    82.9,
+    82.94,
+    83.1,
+    83.2,
+    83.276,
+    83.45,
+    83.5,
+    83.78,
+    83.8,
+    84.1,
+    84.2,
+    84.284,
+    84.4,
+    84.62,
+    84.7,
+    84.9,
+    85.1,
+    87.5,
+    91.8,
+    91.9,
+    92.1,
+    92.4,
+    92.52,
+    92.6,
+    92.7,
+    92.808,
+    93,
+    93.24,
+    93.3,
+    93.4,
+    93.6,
+    93.672,
+    93.9,
+    93.96,
+    94.2,
+    94.4,
+    98,
+    101,
+    108.75,
+    115,
+    122.5,
+    127.5,
+    133.7,
+    137.8,
+    139.2,
+    147.17000000000002,
+    150.8,
+    154,
+    165.2,
+    165.35,
+    165.4,
+    165.5,
+    165.6,
+    165.62,
+    165.7,
+    165.788,
+    165.9,
+    166.04,
+    166.1,
+    166.2,
+    166.292,
+    166.3,
+    166.37,
+    166.4,
+    166.46,
+    166.5,
+    166.6,
+    167.1,
+    169,
+    172,
+    174.4,
+    176.8,
+    180,
+    186.5,
+    190.97,
+    194,
+    196.7,
+    197.2,
+    197.4,
+    198.27,
+    199.2,
+    202.57,
+    203,
+    208.7,
+    209,
+    214.4,
+    218.4,
+    223.2,
+    226.4
+  ],
+  "production_boundary": {
+    "rendered": false,
+    "independent_review_required": true,
+    "visual_approved": false,
+    "narration_approved": false,
+    "audio_generated": false,
+    "audio_reuse": "Nine unchanged full v003 V01 WAVs; current estimated schedule to be reverified",
+    "content_regression": "required_not_performed",
+    "release": "not_authorized"
+  },
+  "state_contracts": [
+    {
+      "state": "v008 plan, baseline inventory and selected formula actions",
+      "writer": "01a19f5e-8709-7490-9ea2-091eac2db5ef",
+      "consumers": [
+        "renderer",
+        "independent reviewers",
+        "traceable_film gate"
+      ],
+      "lifecycle": "This candidate revision; no independent approval yet",
+      "invalidation": "Any source, plan, profile, baseline, text, timing or media change"
+    }
+  ],
+  "contributors": [
+    {
+      "agent": "01a1976b-d4e1-7161-a92f-0e5d6e5ab5ca",
+      "contribution": "Frozen upstream lesson and v005 stationary derivation"
+    }
+  ],
+  "course_context_status": "bound_by_main_to_verified_catalogue_context",
+  "scientific_brief": "runtime/projects/math-derivative-unit-20261101/course-context-plan.json",
+  "audience": "会读函数坐标和直线斜率、会展开平方及非零约分，尚未系统学习导数的高中学生",
+  "prior_knowledge": [
+    {
+      "lesson_id": "M02-02",
+      "assumed_exit": "能将函数表达式、坐标点及图像对应",
+      "if_unavailable": "首次出现P、Q时补足输入与输出对应，不在每一幕重讲函数定义"
+    },
+    {
+      "lesson_id": "M09-01",
+      "assumed_exit": "能用有向纵向增量除以横向增量求两点直线斜率",
+      "if_unavailable": "用P(2,4)、Q(3,9)先建立同图增量比值，再进入缩小区间"
+    },
+    {
+      "lesson_id": "M01-01",
+      "assumed_exit": "能展开平方并在因子非零时约分",
+      "if_unavailable": "保留展开、合并、提因式、非零约分的可见中间过程"
+    }
+  ],
+  "understanding_goals": [
+    "用有向输出增量/输入增量描述一段变化，它就是通过同两点的割线斜率；点的高度与变化率承担不同意义。",
+    "固定P并让Q从两侧靠近，观察的是非零区间的比值如何变化，不是把两个点直接重合后做0/0。",
+    "平方函数在x=2的所有非零小增量都给出4+h；差商距4恰为|h|，因此共同趋近值为4。",
+    "f'(2)=4描述该点附近的一阶变化；可作邻近预测，但并未把抛物线变成直线。"
+  ],
+  "formula_transitions": [
+    {
+      "id": "average_ratio",
+      "operation": "Form an output/input increment ratio",
+      "source": "Visible Delta-y and Delta-x increment relations",
+      "target": "Numerator Delta-y and denominator Delta-x of m",
+      "purpose": "Connect the same graph increments to their distinct quotient roles"
+    },
+    {
+      "id": "average_substitution",
+      "operation": "Substitute the already displayed increment expressions",
+      "source": "Delta-y=f(2+h)-4 and Delta-x=h",
+      "target": "m=[f(2+h)-4]/h=5",
+      "purpose": "Trace the actual output difference and input h from the retained increment equations"
+    },
+    {
+      "id": "expanded",
+      "operation": "Expand the square without inventing identity for newly produced terms",
+      "source": "[(2+h)^2-4]/h",
+      "target": "[4+4h+h^2-4]/h",
+      "purpose": "Track the input h and subtracted 4 while new expansion terms appear as new terms"
+    },
+    {
+      "id": "combined",
+      "operation": "Cancel the equal constant terms",
+      "source": "[4+4h+h^2-4]/h",
+      "target": "[4h+h^2]/h",
+      "purpose": "Retain complete history and transfer the surviving terms and denominator to the next equality"
+    },
+    {
+      "id": "factored",
+      "operation": "Factor the common numerator h",
+      "source": "[4h+h^2]/h",
+      "target": "h(4+h)/h",
+      "purpose": "Transfer the common h before the reordered coefficient and remaining h, avoiding simultaneous crossing"
+    },
+    {
+      "id": "simplified",
+      "operation": "Cancel the nonzero common factor",
+      "source": "h(4+h)/h with h!=0",
+      "target": "4+h",
+      "purpose": "Keep the nonzero condition and crossed factors readable while the surviving terms travel"
+    },
+    {
+      "id": "general_position",
+      "operation": "Promote the point-specific position to a general position",
+      "source": "f'(2)=lim[f(2+h)-f(2)]/h=4",
+      "target": "f'(a)=lim[f(a+h)-f(a)]/h",
+      "purpose": "Retain the specific definition and copy its position and h roles into the general definition"
+    }
+  ]
+}

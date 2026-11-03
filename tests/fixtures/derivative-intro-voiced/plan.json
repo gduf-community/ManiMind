@@ -1,0 +1,416 @@
+{
+  "title": "导数入门：曲线上，一个点有多陡",
+  "scene": "examples/derivative_intro_voiced.py",
+  "scene_class": "DerivativeIntroVoicedLesson",
+  "duration": 228,
+  "fps": 30,
+  "cues": [
+    {
+      "id": "opening",
+      "duration": 15,
+      "heading": "导数入门",
+      "visual": "继承完整标题、自然问题和固定P=(2,4)的曲线引入。",
+      "learning_purpose": "接上斜率与二次函数，定位本点问题。",
+      "anchors": [
+        {
+          "id": "opening_title_ready",
+          "meaning": "标题和问题已显现"
+        },
+        {
+          "id": "opening_point_ready",
+          "meaning": "曲线、P和本点问题已出现"
+        }
+      ],
+      "stage_times": {
+        "0.10": 1.3333333333333333,
+        "0.46": 7,
+        "0.60": 7.6
+      }
+    },
+    {
+      "id": "average",
+      "duration": 21,
+      "heading": "先看一段区间",
+      "visual": "继承同图P、Q、横纵增量及其差商，数值5与割线斜率对应。",
+      "learning_purpose": "建立区间平均变化率的图像和比值联系。",
+      "anchors": [
+        {
+          "id": "interval_points_ready",
+          "meaning": "P、Q及坐标已出现"
+        },
+        {
+          "id": "increments_ready",
+          "meaning": "增量线与公式均已出现"
+        },
+        {
+          "id": "average_quotient_ready",
+          "meaning": "差商、5与平均变化率已出现"
+        }
+      ],
+      "stage_times": {
+        "0.04": 0.4,
+        "0.08": 0.8,
+        "0.14": 1.3666666666666667,
+        "0.32": 5.9,
+        "0.38": 6.2,
+        "0.44": 6.5,
+        "0.64": 10.5,
+        "0.74": 11.2
+      }
+    },
+    {
+      "id": "approach",
+      "duration": 29,
+      "heading": "让Q沿曲线靠近P",
+      "visual": "继承一个h驱动Q、割线、增量线和读数，由1经0.1至0.02。",
+      "learning_purpose": "连续追踪几何变化与差商趋稳。",
+      "anchors": [
+        {
+          "id": "approach_setup_ready",
+          "meaning": "固定P、活动Q和读数已出现"
+        },
+        {
+          "id": "approach_motion_mid",
+          "meaning": "h=0.1、差商4.1的真实运动终点"
+        },
+        {
+          "id": "approach_near_ready",
+          "meaning": "h=0.02、差商4.02的真实运动终点"
+        }
+      ],
+      "stage_times": {
+        "0.04": 0.4,
+        "0.08": 0.9,
+        "0.12": 1.5,
+        "0.24": 7.5,
+        "0.52": 16.8,
+        "0.58": 18,
+        "0.80": 19.333333333333332
+      }
+    },
+    {
+      "id": "algebra",
+      "duration": 40,
+      "heading": "差商为什么接近4",
+      "visual": "保留所有原中间式及伴随增量图。旧式移到上行，复制的语义变量在分离的下行组装；新语法在变量到位后显现，完整新式出现后才撤旧式并归位。",
+      "learning_purpose": "保留展开、合并、提公因式与非零约分的理由，修复过程叠压。",
+      "anchors": [
+        {
+          "id": "substitution_ready",
+          "meaning": "具体差商及伴随图已出现"
+        },
+        {
+          "id": "expanded_ready",
+          "meaning": "展开式全部组装并归位"
+        },
+        {
+          "id": "combined_ready",
+          "meaning": "合并式全部组装并归位"
+        },
+        {
+          "id": "factored_ready",
+          "meaning": "提因式全部组装并归位"
+        },
+        {
+          "id": "cancellation_condition_ready",
+          "meaning": "h≠0、两处待约h和划线已出现"
+        },
+        {
+          "id": "simplified_ready",
+          "meaning": "4+h全部组装并归位"
+        }
+      ],
+      "stage_times": {
+        "0.04": 0.3,
+        "0.08": 0.8,
+        "0.10": 1.3333333333333333,
+        "0.20": 4.5,
+        "0.26": 7.9,
+        "0.36": 12.8,
+        "0.42": 14.6,
+        "0.51": 17.1,
+        "0.58": 19.9,
+        "0.68": 21.9,
+        "0.73": 22.5,
+        "0.83": 26.8,
+        "0.89": 29.2
+      }
+    },
+    {
+      "id": "both_sides",
+      "duration": 25,
+      "heading": "两边靠近，同一个数",
+      "visual": "继承左右Q与割线、正负h与Δy、双侧斜率及绝对误差关系。",
+      "learning_purpose": "以有向增量和任意小h的代数理由解释共同趋近4。",
+      "anchors": [
+        {
+          "id": "two_sides_ready",
+          "meaning": "双侧点、割线与有向读数已出现"
+        },
+        {
+          "id": "two_sides_mid",
+          "meaning": "半径0.1、斜率4.1与3.9"
+        },
+        {
+          "id": "two_sides_near",
+          "meaning": "半径0.02、斜率4.02与3.98"
+        },
+        {
+          "id": "common_limit_ready",
+          "meaning": "双侧趋近及差距关系已出现"
+        }
+      ],
+      "stage_times": {
+        "0.04": 0.4,
+        "0.08": 0.9,
+        "0.12": 1.4666666666666666,
+        "0.34": 6.6,
+        "0.55": 10.3,
+        "reason_motion_start": 12.8,
+        "0.78": 13.25,
+        "0.72": 17.8
+      }
+    },
+    {
+      "id": "definition",
+      "duration": 52,
+      "heading": "零点取值与附近趋近",
+      "visual": "先并列原差商的0/0与无定义状态、非零h时4+h的双侧数值运动及极限4；再命名f'(2)，保留高度区别，以分行分阶段语义变形推广到a。",
+      "learning_purpose": "直接解释原式零点无定义和极限存在如何并存，再建立导数定义。",
+      "anchors": [
+        {
+          "id": "raw_difference_quotient_ready",
+          "meaning": "左侧原始差商已出现"
+        },
+        {
+          "id": "zero_input_undefined_ready",
+          "meaning": "原式取h=0得到0/0及无定义文字已出现"
+        },
+        {
+          "id": "nearby_nonzero_ready",
+          "meaning": "右侧非零化简式与两侧读数已出现"
+        },
+        {
+          "id": "nonzero_near_limit",
+          "meaning": "非零h实际运动到±0.01，差商4.01和3.99"
+        },
+        {
+          "id": "zero_limit_comparison_ready",
+          "meaning": "原式零点无定义与附近极限4的直接对照已出现"
+        },
+        {
+          "id": "derivative_value_ready",
+          "meaning": "f'(2)极限式、函数值和变化率区分已出现"
+        },
+        {
+          "id": "definition_pattern_ready",
+          "meaning": "一般定义完整组装归位，有限双侧条件已出现"
+        }
+      ],
+      "stage_times": {
+        "0.04": 0.4,
+        "0.08": 0.95,
+        "0.12": 1.3,
+        "0.18": 3.7,
+        "0.30": 8.7,
+        "0.36": 9.2,
+        "0.54": 15.6,
+        "0.58": 17.15,
+        "0.62": 22.5,
+        "0.66": 23.1,
+        "0.68": 23.5,
+        "0.72": 24,
+        "0.80": 35.2,
+        "0.88": 36.6,
+        "0.90": 37.1
+      }
+    },
+    {
+      "id": "tangent_prediction",
+      "duration": 30,
+      "heading": "4怎样描述P附近",
+      "visual": "继承真实坐标的局部放大、切线与曲线点的共同h运动、预测与真值读数及精确h²余项。",
+      "learning_purpose": "保留导数的局部预测用途与近似误差解释。",
+      "anchors": [
+        {
+          "id": "tangent_ready",
+          "meaning": "局部曲线、P和切线已出现"
+        },
+        {
+          "id": "prediction_setup_ready",
+          "meaning": "曲线值、预测点和误差段已出现"
+        },
+        {
+          "id": "prediction_small_ready",
+          "meaning": "h=0.1，预测4.400、曲线4.410"
+        },
+        {
+          "id": "remainder_ready",
+          "meaning": "精确展开及h²=0.01已出现"
+        }
+      ],
+      "stage_times": {
+        "0.04": 0.4,
+        "0.08": 0.9,
+        "0.12": 1.2666666666666666,
+        "0.32": 7.9,
+        "0.42": 8.95,
+        "motion_start": 15.3,
+        "0.72": 16.25,
+        "0.78": 19.85,
+        "0.80": 20.55
+      }
+    },
+    {
+      "id": "closing",
+      "duration": 16,
+      "heading": "从一个点，到每一个位置",
+      "visual": "继承本点导数、切线和局部预测的收束，提出一般位置a的问题。",
+      "learning_purpose": "回应本课并衔接M12-03。",
+      "anchors": [
+        {
+          "id": "lesson_summary_ready",
+          "meaning": "本点导数的联系已出现"
+        },
+        {
+          "id": "next_position_question_ready",
+          "meaning": "一般位置a的问题已出现"
+        }
+      ],
+      "stage_times": {
+        "0.04": 0.4,
+        "0.08": 0.85,
+        "0.14": 1.3,
+        "0.53": 6.6,
+        "0.62": 7.2
+      }
+    }
+  ],
+  "focus_intents": [
+    {
+      "id": "opening_question",
+      "cue": "opening"
+    },
+    {
+      "id": "opening_point",
+      "cue": "opening"
+    },
+    {
+      "id": "interval_points",
+      "cue": "average"
+    },
+    {
+      "id": "signed_increments",
+      "cue": "average"
+    },
+    {
+      "id": "average_quotient",
+      "cue": "average"
+    },
+    {
+      "id": "approach_setup",
+      "cue": "approach"
+    },
+    {
+      "id": "right_approach",
+      "cue": "approach"
+    },
+    {
+      "id": "near_rate",
+      "cue": "approach"
+    },
+    {
+      "id": "quotient_substitution",
+      "cue": "algebra"
+    },
+    {
+      "id": "expanded_terms",
+      "cue": "algebra"
+    },
+    {
+      "id": "combined_terms",
+      "cue": "algebra"
+    },
+    {
+      "id": "factored_h",
+      "cue": "algebra"
+    },
+    {
+      "id": "nonzero_cancel",
+      "cue": "algebra"
+    },
+    {
+      "id": "simplified_rate",
+      "cue": "algebra"
+    },
+    {
+      "id": "two_sided_start",
+      "cue": "both_sides"
+    },
+    {
+      "id": "two_sided_motion",
+      "cue": "both_sides"
+    },
+    {
+      "id": "common_four",
+      "cue": "both_sides"
+    },
+    {
+      "id": "raw_zero_input",
+      "cue": "definition"
+    },
+    {
+      "id": "zero_undefined",
+      "cue": "definition"
+    },
+    {
+      "id": "nonzero_neighborhood",
+      "cue": "definition"
+    },
+    {
+      "id": "zero_value_vs_limit",
+      "cue": "definition"
+    },
+    {
+      "id": "derivative_at_two",
+      "cue": "definition"
+    },
+    {
+      "id": "definition_pattern",
+      "cue": "definition"
+    },
+    {
+      "id": "tangent_geometry",
+      "cue": "tangent_prediction"
+    },
+    {
+      "id": "local_prediction",
+      "cue": "tangent_prediction"
+    },
+    {
+      "id": "prediction_remainder",
+      "cue": "tangent_prediction"
+    },
+    {
+      "id": "local_summary",
+      "cue": "closing"
+    },
+    {
+      "id": "next_position",
+      "cue": "closing"
+    }
+  ],
+  "sources": [
+    "examples/derivative_intro_audio_aligned.py",
+    "examples/derivative_intro_delivery.py",
+    "examples/derivative_intro_refined.py",
+    "examples/derivative_intro_visual.py",
+    "runtime/projects/math-derivative-intro-20261101/visual-design-v004.json",
+    "runtime/projects/math-derivative-intro-20261101/narration-draft-v003.json",
+    "runtime/projects/math-derivative-intro-20261101/context-v001.json",
+    "runtime/sessions/math-derivative-intro-20261101/forced-timings-v003.json",
+    "runtime/sessions/math-derivative-intro-20261101/speech-plan-v003.json"
+  ],
+  "artifact_type": "test_fixture",
+  "status": "test_only_not_production_or_approved"
+}

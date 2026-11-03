@@ -1,0 +1,646 @@
+{
+  "duration": 301.5,
+  "fps": 30,
+  "frames": 9045,
+  "chapter_events": [
+    {
+      "time": 0,
+      "kind": "chapter_begin",
+      "chapter": "opening",
+      "old_start": 0,
+      "wait_offset": 0
+    },
+    {
+      "time": 18,
+      "kind": "chapter_end",
+      "chapter": "opening"
+    },
+    {
+      "time": 18,
+      "kind": "chapter_begin",
+      "chapter": "vertical",
+      "old_start": 18,
+      "wait_offset": 0
+    },
+    {
+      "time": 57.2,
+      "kind": "chapter_end",
+      "chapter": "vertical"
+    },
+    {
+      "time": 57.2,
+      "kind": "chapter_begin",
+      "chapter": "recombine"
+    },
+    {
+      "time": 69.2,
+      "kind": "chapter_end",
+      "chapter": "recombine"
+    },
+    {
+      "time": 69.2,
+      "kind": "chapter_begin",
+      "chapter": "landing"
+    },
+    {
+      "time": 108.7,
+      "kind": "chapter_end",
+      "chapter": "landing"
+    },
+    {
+      "time": 108.7,
+      "kind": "chapter_begin",
+      "chapter": "horizontal",
+      "old_start": 58,
+      "wait_offset": 50.7
+    },
+    {
+      "time": 121.7,
+      "kind": "chapter_end",
+      "chapter": "horizontal"
+    },
+    {
+      "time": 121.7,
+      "kind": "chapter_begin",
+      "chapter": "height_steps"
+    },
+    {
+      "time": 191.7,
+      "kind": "chapter_end",
+      "chapter": "height_steps"
+    },
+    {
+      "time": 191.7,
+      "kind": "chapter_begin",
+      "chapter": "height",
+      "old_start": 74,
+      "wait_offset": 117.69999999999999
+    },
+    {
+      "time": 259.3,
+      "kind": "chapter_end",
+      "chapter": "height"
+    },
+    {
+      "time": 259.3,
+      "kind": "chapter_begin",
+      "chapter": "transfer"
+    },
+    {
+      "time": 279.3,
+      "kind": "chapter_end",
+      "chapter": "transfer"
+    },
+    {
+      "time": 279.3,
+      "kind": "chapter_begin",
+      "chapter": "conclusion",
+      "old_start": 102,
+      "wait_offset": 177.3
+    },
+    {
+      "time": 301.5,
+      "kind": "chapter_end",
+      "chapter": "conclusion"
+    }
+  ],
+  "focus_windows": [
+    {
+      "id": "launch_question",
+      "start": 0.9,
+      "end": 4.7
+    },
+    {
+      "id": "same_height_motion",
+      "start": 5,
+      "end": 9
+    },
+    {
+      "id": "same_height_result",
+      "start": 11.033333333333333,
+      "end": 18
+    },
+    {
+      "id": "shared_vertical_conditions",
+      "start": 21.966666666666665,
+      "end": 26.3
+    },
+    {
+      "id": "vertical_general",
+      "start": 26.3,
+      "end": 30.9
+    },
+    {
+      "id": "vertical_initial_substitution",
+      "start": 30.9,
+      "end": 36.1
+    },
+    {
+      "id": "vertical_zero_removed",
+      "start": 36.1,
+      "end": 40.7
+    },
+    {
+      "id": "vertical_equal_positions",
+      "start": 45.7,
+      "end": 49.9
+    },
+    {
+      "id": "equal_vertical_result",
+      "start": 49.9,
+      "end": 57.2
+    },
+    {
+      "id": "synchronous_trails",
+      "start": 57.8,
+      "end": 65.2
+    },
+    {
+      "id": "equal_time_spacing",
+      "start": 65.2,
+      "end": 69
+    },
+    {
+      "id": "vertical_position_law",
+      "start": 71.6,
+      "end": 76.6
+    },
+    {
+      "id": "landing_ground_condition",
+      "start": 76.6,
+      "end": 81.4
+    },
+    {
+      "id": "landing_relocate",
+      "start": 81.83333333333333,
+      "end": 86.63333333333334
+    },
+    {
+      "id": "landing_multiply_two",
+      "start": 86.83333333333333,
+      "end": 91.03333333333333
+    },
+    {
+      "id": "landing_divide_gravity",
+      "start": 91.23333333333333,
+      "end": 95.63333333333334
+    },
+    {
+      "id": "landing_positive_root",
+      "start": 96.1,
+      "end": 101.7
+    },
+    {
+      "id": "positive_landing_time",
+      "start": 101.7,
+      "end": 103.1
+    },
+    {
+      "id": "landing_numeric_check",
+      "start": 103.1,
+      "end": 108.7
+    },
+    {
+      "id": "horizontal_range_law",
+      "start": 109.3,
+      "end": 113.7
+    },
+    {
+      "id": "horizontal_parallel_products",
+      "start": 113.7,
+      "end": 116.7
+    },
+    {
+      "id": "horizontal_parallel_units",
+      "start": 116.7,
+      "end": 121.7
+    },
+    {
+      "id": "constant_gravity",
+      "start": 122.3,
+      "end": 126.7
+    },
+    {
+      "id": "first_rate_growth",
+      "start": 126.7,
+      "end": 132.7
+    },
+    {
+      "id": "equal_speed_increments",
+      "start": 132.7,
+      "end": 135.7
+    },
+    {
+      "id": "second_rate_growth",
+      "start": 135.7,
+      "end": 141.7
+    },
+    {
+      "id": "growing_gaps",
+      "start": 141.7,
+      "end": 145.7
+    },
+    {
+      "id": "first_average_distance",
+      "start": 145.7,
+      "end": 157.7
+    },
+    {
+      "id": "second_average_distance",
+      "start": 157.7,
+      "end": 169.7
+    },
+    {
+      "id": "total_distance",
+      "start": 169.7,
+      "end": 175.7
+    },
+    {
+      "id": "triangle_distance_law",
+      "start": 175.7,
+      "end": 181.7
+    },
+    {
+      "id": "double_time_four_area",
+      "start": 181.7,
+      "end": 191.5
+    },
+    {
+      "id": "height_prediction",
+      "start": 192.7,
+      "end": 197.9
+    },
+    {
+      "id": "low_landing_observation",
+      "start": 202.7,
+      "end": 207.7
+    },
+    {
+      "id": "both_landing_observation",
+      "start": 213.1,
+      "end": 218.1
+    },
+    {
+      "id": "height_laws",
+      "start": 218.7,
+      "end": 223.7
+    },
+    {
+      "id": "height_substitution",
+      "start": 223.7,
+      "end": 227.9
+    },
+    {
+      "id": "root_split",
+      "start": 227.9,
+      "end": 232.1
+    },
+    {
+      "id": "root_four_evaluated",
+      "start": 232.1,
+      "end": 236.3
+    },
+    {
+      "id": "original_time_identified",
+      "start": 236.3,
+      "end": 240.5
+    },
+    {
+      "id": "range_time_substitution",
+      "start": 240.5,
+      "end": 244.7
+    },
+    {
+      "id": "range_factor_extracted",
+      "start": 244.7,
+      "end": 248.9
+    },
+    {
+      "id": "original_range_identified",
+      "start": 248.9,
+      "end": 253.1
+    },
+    {
+      "id": "height_scaling_result",
+      "start": 253.3,
+      "end": 259.3
+    },
+    {
+      "id": "ninefold_prediction",
+      "start": 259.9,
+      "end": 264.3
+    },
+    {
+      "id": "prediction_space",
+      "start": 264.3,
+      "end": 266.3
+    },
+    {
+      "id": "ninefold_time_check",
+      "start": 266.3,
+      "end": 271.3
+    },
+    {
+      "id": "ninefold_range_check",
+      "start": 271.3,
+      "end": 276.3
+    },
+    {
+      "id": "ninefold_check",
+      "start": 276.3,
+      "end": 279.3
+    },
+    {
+      "id": "fixed_height_summary",
+      "start": 281.8,
+      "end": 285.2
+    },
+    {
+      "id": "height_summary",
+      "start": 285.2,
+      "end": 286
+    },
+    {
+      "id": "final_time_correspondence",
+      "start": 286,
+      "end": 287.4
+    },
+    {
+      "id": "final_time_transport",
+      "start": 287.4,
+      "end": 291.6
+    },
+    {
+      "id": "final_radical_expansion",
+      "start": 291.6,
+      "end": 296.4
+    },
+    {
+      "id": "combined_range_result",
+      "start": 296.7,
+      "end": 301.5
+    }
+  ],
+  "visual_events": [
+    {
+      "id": "launch_conditions_visible",
+      "time": 0.9
+    },
+    {
+      "id": "first_equal_height_visible",
+      "time": 7
+    },
+    {
+      "id": "first_simultaneous_landing",
+      "time": 9.533333333333333
+    },
+    {
+      "id": "first_ranges_visible",
+      "time": 11.033333333333333
+    },
+    {
+      "id": "equal_gravity_visible",
+      "time": 21.966666666666665
+    },
+    {
+      "id": "vertical_projections_coincide",
+      "time": 26.033333333333335
+    },
+    {
+      "id": "vertical_general_ready",
+      "time": 26.7
+    },
+    {
+      "id": "vertical_initial_substitution_ready",
+      "time": 32.9
+    },
+    {
+      "id": "vertical_zero_removed_ready",
+      "time": 38.1
+    },
+    {
+      "id": "vertical_equal_positions_ready",
+      "time": 47.5
+    },
+    {
+      "id": "shared_vertical_motion_complete",
+      "time": 49.9
+    },
+    {
+      "id": "synchronous_motion_ready",
+      "time": 57.8
+    },
+    {
+      "id": "slice_025_ready",
+      "time": 60.7
+    },
+    {
+      "id": "slice_050_ready",
+      "time": 62.2
+    },
+    {
+      "id": "slice_075_ready",
+      "time": 63.7
+    },
+    {
+      "id": "slice_100_ready",
+      "time": 65.2
+    },
+    {
+      "id": "shared_time_slices_ready",
+      "time": 65.2
+    },
+    {
+      "id": "vertical_equation_linked",
+      "time": 71.6
+    },
+    {
+      "id": "landing_ground_condition_ready",
+      "time": 78.6
+    },
+    {
+      "id": "ground_condition_applied",
+      "time": 81.4
+    },
+    {
+      "id": "landing_relocate_ready",
+      "time": 83.83333333333333
+    },
+    {
+      "id": "term_relocated",
+      "time": 86.63333333333334
+    },
+    {
+      "id": "landing_multiply_two_ready",
+      "time": 88.43333333333334
+    },
+    {
+      "id": "height_doubled",
+      "time": 91.03333333333333
+    },
+    {
+      "id": "landing_divide_gravity_ready",
+      "time": 93.03333333333333
+    },
+    {
+      "id": "square_time_isolated",
+      "time": 95.63333333333334
+    },
+    {
+      "id": "landing_positive_root_ready",
+      "time": 98.3
+    },
+    {
+      "id": "landing_time_derived",
+      "time": 101.7
+    },
+    {
+      "id": "horizontal_range_law_ready",
+      "time": 111.5
+    },
+    {
+      "id": "horizontal_products_ready",
+      "time": 114.5
+    },
+    {
+      "id": "horizontal_units_ready",
+      "time": 118.7
+    },
+    {
+      "id": "fall_and_rate_ready",
+      "time": 122.3
+    },
+    {
+      "id": "first_rate_endpoint",
+      "time": 132.7
+    },
+    {
+      "id": "second_rate_endpoint",
+      "time": 141.7
+    },
+    {
+      "id": "first_average_distance_rectangle_ready",
+      "time": 148.3
+    },
+    {
+      "id": "first_average_distance_distance_ready",
+      "time": 151.5
+    },
+    {
+      "id": "second_average_distance_rectangle_ready",
+      "time": 160.3
+    },
+    {
+      "id": "second_average_distance_distance_ready",
+      "time": 163.5
+    },
+    {
+      "id": "two_interval_distances_ready",
+      "time": 170.3
+    },
+    {
+      "id": "triangle_distance_law_ready",
+      "time": 180.7
+    },
+    {
+      "id": "four_equal_areas_ready",
+      "time": 186.1
+    },
+    {
+      "id": "height_prediction_ready",
+      "time": 192.7
+    },
+    {
+      "id": "low_ball_landed_high_ball_flying",
+      "time": 202.7
+    },
+    {
+      "id": "high_ball_landed",
+      "time": 213.1
+    },
+    {
+      "id": "both_landings_full_size_held",
+      "time": 218.1
+    },
+    {
+      "id": "height_laws_ready",
+      "time": 219.5
+    },
+    {
+      "id": "height_substitution_ready",
+      "time": 225.5
+    },
+    {
+      "id": "root_split_ready",
+      "time": 229.7
+    },
+    {
+      "id": "root_four_evaluated_ready",
+      "time": 233.9
+    },
+    {
+      "id": "original_time_identified_ready",
+      "time": 238.1
+    },
+    {
+      "id": "range_time_substitution_ready",
+      "time": 242.3
+    },
+    {
+      "id": "range_factor_extracted_ready",
+      "time": 246.5
+    },
+    {
+      "id": "original_range_identified_ready",
+      "time": 250.7
+    },
+    {
+      "id": "height_scaling_verified",
+      "time": 253.3
+    },
+    {
+      "id": "ninefold_question_ready",
+      "time": 259.9
+    },
+    {
+      "id": "prediction_pause_started",
+      "time": 264.3
+    },
+    {
+      "id": "ninefold_time_check_ready",
+      "time": 267.1
+    },
+    {
+      "id": "ninefold_range_check_ready",
+      "time": 272.1
+    },
+    {
+      "id": "ninefold_answer_ready",
+      "time": 276.3
+    },
+    {
+      "id": "fixed_height_relation_highlighted",
+      "time": 281.8
+    },
+    {
+      "id": "height_relation_highlighted",
+      "time": 285.2
+    },
+    {
+      "id": "final_time_transport_ready",
+      "time": 289.2
+    },
+    {
+      "id": "final_radical_expansion_ready",
+      "time": 293.8
+    },
+    {
+      "id": "final_relations_visible",
+      "time": 296.7
+    }
+  ],
+  "nonlinear_sample_count": 2280,
+  "formula_sample_count": 4039,
+  "landing_sample_count": 1185,
+  "evidence_type": "native 30fps interpolation with mocked text/TeX geometry; no renderer or pixels"
+}

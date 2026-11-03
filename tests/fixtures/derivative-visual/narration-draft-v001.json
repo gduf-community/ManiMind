@@ -1,0 +1,21 @@
+{
+  "status": "post_visual_intent_only_not_installed_or_approved",
+  "instruction": "视觉优先。此稿只供后写旁白理解意图；实际静音像素独立通过后再重写和安装。未生成声音，不按4至5字每秒宣称能排下；可保留静读。",
+  "segments": [
+    {"id": "D01", "cue": "secant", "focus": "two_points", "text": "两个点连成的直线，有一个确定的斜率。"},
+    {"id": "D02", "cue": "secant", "focus": "average_rate", "text": "把纵向的增量除以横向的增量，就是这段区间的平均变化率。"},
+    {"id": "D03", "cue": "sides", "focus": "both_sides_approach", "text": "让第二个点从两边靠近。两条割线的方向越来越接近，斜率也都朝二走。每一步，两个点仍然不同。"},
+    {"id": "D04", "cue": "algebra", "focus": "substitute", "text": "把平方函数代进去，先不让两个点重合。"},
+    {"id": "D05", "cue": "algebra", "focus": "expand", "text": "平方展开以后，常数一和减去的一可以相消。"},
+    {"id": "D06", "cue": "algebra", "focus": "factor", "text": "提取公因子 h 后，分子写成 h 乘括号里的二加 h。"},
+    {"id": "D07", "cue": "algebra", "focus": "cancel_nonzero", "text": "h 还不等于零，所以上下这个公因子可以约掉。"},
+    {"id": "D08", "cue": "algebra", "focus": "simplify", "text": "于是，每一条割线的斜率，都精确等于二加 h。"},
+    {"id": "D09", "cue": "limit", "focus": "punctured_quotient", "text": "直接把 h 换成零，原来的商没有定义，图上这里留着一个洞。"},
+    {"id": "D10", "cue": "limit", "focus": "derivative_value", "text": "但我们问的是邻近斜率走向哪里。左右都走向二，这个共同的极限，就是在一处的导数。"},
+    {"id": "D11", "cue": "zoom", "focus": "common_scale", "text": "现在以这个点为中心，横纵增量同时除以同一个 s。"},
+    {"id": "D12", "cue": "zoom", "focus": "zoom_identity", "text": "换到新坐标，曲线仍然精确满足这个等式。"},
+    {"id": "D13", "cue": "zoom", "focus": "local_linearity", "text": "黄色直线始终是二倍 U。曲线多出的那一项，随 s 一起缩小。在固定的这片窗口里，误差越来越小，所以放大后越来越像这条直线。"},
+    {"id": "D14", "cue": "corner", "focus": "corner_disagreement", "text": "换成绝对值，右边斜率始终是一，左边始终是负一。点虽然靠在一起，方向却没有共同的极限，所以零处不可导。"},
+    {"id": "D15", "cue": "summary", "focus": "instantaneous_rate", "text": "在一附近，输出增量约是输入增量的两倍。导数二，说的就是这个比例。"}
+  ]
+}

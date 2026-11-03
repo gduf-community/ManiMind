@@ -1,0 +1,538 @@
+{
+  "schema_version": 1,
+  "project_id": "math-derivative-ch02-basics-20261102",
+  "title": "第02课 基本函数的导数",
+  "scene": "examples/derivative_ch02_basics.py",
+  "scene_class": "DerivativeBasicsLesson",
+  "duration": 452,
+  "fps": 30,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "workflow_profile": "configs/visual-first-workflow-v4.2-unit.json",
+  "narration_draft": "runtime/projects/math-derivative-ch02-basics-20261102/narration-draft-v001.json",
+  "author_agent": "01a199e9-7383-7a03-b45c-97d3d21bd9dd",
+  "author_context": "01a199e9-7383-7a03-b45c-97d3d21bd9dd",
+  "context": {
+    "role": "course_creator_a",
+    "prior_exit": "f'(2)=4; point derivative and tangent",
+    "unit_binding": "Main unit-v001 and chapter-brief-v002 read; context-v001 pending main binding",
+    "next": "sum, scalar, product and quotient rules",
+    "prerequisites": "assumed_not_tested",
+    "chapter_brief": "runtime/projects/math-derivative-chapter-20261102/chapter-brief-v002.json",
+    "unit": "runtime/projects/math-derivative-chapter-20261102/unit-v001.json"
+  },
+  "status": "draft_not_rendered_not_reviewed",
+  "cues": [
+    {
+      "id": "opening",
+      "duration": 18,
+      "heading": "基本函数的导数",
+      "visual": "首课的点导数与本课问题",
+      "learning_purpose": "从一个点的导数进入整条导函数",
+      "anchors": [
+        {
+          "id": "opening_bridge_ready",
+          "meaning": "首课平方函数在2处导数为4的固定式"
+        },
+        {
+          "id": "opening_question_ready",
+          "meaning": "换点之后斜率怎样改变的问题"
+        }
+      ]
+    },
+    {
+      "id": "general",
+      "duration": 52,
+      "heading": "从一个点，走向导函数",
+      "visual": "逐行差商推导；随后同步切线和斜率点",
+      "learning_purpose": "区分自变量、函数值与导数值",
+      "anchors": [
+        {
+          "id": "general_quotient_ready",
+          "meaning": "任意a处、h非零的平方差商及展开行"
+        },
+        {
+          "id": "general_limit_ready",
+          "meaning": "约去h后趋向2a的固定中间式"
+        },
+        {
+          "id": "general_function_ready",
+          "meaning": "从f'(a)=2a到f'(x)=2x的表示"
+        },
+        {
+          "id": "general_map_ready",
+          "meaning": "a从-2连续移到0再移到2的同步切线与导函数点"
+        },
+        {
+          "id": "general_map_result_ready",
+          "meaning": "停在a=2的切线和右图高度4及映射说明"
+        }
+      ]
+    },
+    {
+      "id": "constant",
+      "duration": 22,
+      "heading": "常数：高度不变，斜率为零",
+      "visual": "水平原函数与零导函数同步",
+      "learning_purpose": "高度可以非零但变化率为零",
+      "anchors": [
+        {
+          "id": "constant_map_ready",
+          "meaning": "沿常数曲线移动的点、水平切线与零高度点"
+        },
+        {
+          "id": "constant_increment_ready",
+          "meaning": "(c-c)/h=0及两幅水平图"
+        }
+      ]
+    },
+    {
+      "id": "identity",
+      "duration": 18,
+      "heading": "一次函数：每走一，升高一",
+      "visual": "定义差商约去h，随后x与常数1的同步图",
+      "learning_purpose": "定义法获得(x)'=1并联系恒定切线斜率",
+      "anchors": [
+        {
+          "id": "identity_quotient_ready",
+          "meaning": "一次函数的定义差商(x+h-x)/h=h/h=1，h≠0"
+        },
+        {
+          "id": "identity_map_ready",
+          "meaning": "y=x斜线上移动点、固定斜率切线和导函数y=1"
+        }
+      ]
+    },
+    {
+      "id": "power",
+      "duration": 68,
+      "heading": "幂函数：指数怎样进入斜率",
+      "visual": "三次差商展开与幂规则条件，再看x^3和3x²",
+      "learning_purpose": "从增量展开看一次项留下，限定规则定义域",
+      "anchors": [
+        {
+          "id": "power_cubic_expansion_ready",
+          "meaning": "三次差商与3x²h+3xh²+h³的完整分子行"
+        },
+        {
+          "id": "power_cubic_limit_ready",
+          "meaning": "除h得到3x²+3xh+h²并趋近3x²"
+        },
+        {
+          "id": "power_rule_domain_ready",
+          "meaning": "整数幂规则和实数幂安全使用域"
+        },
+        {
+          "id": "power_cubic_map_ready",
+          "meaning": "三次曲线和导函数3x²同步扫描"
+        }
+      ]
+    },
+    {
+      "id": "reciprocal",
+      "duration": 46,
+      "heading": "倒数：两支曲线，都在下降",
+      "visual": "倒数差商通分，分支内切线与负导函数",
+      "learning_purpose": "负导数、零点禁区与不跨断点的运动",
+      "anchors": [
+        {
+          "id": "reciprocal_quotient_ready",
+          "meaning": "倒数的原始差商与三个非零条件"
+        },
+        {
+          "id": "reciprocal_common_denominator_ready",
+          "meaning": "通分分子x-(x+h)=-h，分母hx(x+h)"
+        },
+        {
+          "id": "reciprocal_limit_ready",
+          "meaning": "-1/x²结果与x≠0"
+        },
+        {
+          "id": "reciprocal_negative_branch_ready",
+          "meaning": "负半轴内移动的切线与负斜率点"
+        },
+        {
+          "id": "reciprocal_positive_branch_ready",
+          "meaning": "正半轴内另一次移动；没有跨过断点"
+        }
+      ]
+    },
+    {
+      "id": "root",
+      "duration": 44,
+      "heading": "平方根：上升逐渐变缓",
+      "visual": "有理化差商、端点条件和双图同步",
+      "learning_purpose": "原函数定义域与有限导数定义域不同",
+      "anchors": [
+        {
+          "id": "root_rationalize_ready",
+          "meaning": "平方根原始差商与x>0,h≠0,x+h≥0条件"
+        },
+        {
+          "id": "root_conjugate_ready",
+          "meaning": "同乘共轭后分子(x+h)-x=h的中间行"
+        },
+        {
+          "id": "root_domain_ready",
+          "meaning": "x>0导数式及x=0边界说明"
+        },
+        {
+          "id": "root_map_ready",
+          "meaning": "正半轴上根号曲线的切线和下降的正导函数"
+        }
+      ]
+    },
+    {
+      "id": "exponential",
+      "duration": 44,
+      "heading": "指数：函数值乘上一个系数",
+      "visual": "指数差商提取a^x、标准极限及e^x同步双图",
+      "learning_purpose": "区分一般指数和e底指数的斜率关系",
+      "anchors": [
+        {
+          "id": "exp_factor_ready",
+          "meaning": "指数差商提取a^x的固定行"
+        },
+        {
+          "id": "exp_standard_limit_ready",
+          "meaning": "底a>0时的标准极限ln a"
+        },
+        {
+          "id": "exp_rule_ready",
+          "meaning": "一般指数、e底导数式及实数域"
+        },
+        {
+          "id": "exp_map_ready",
+          "meaning": "e^x点移动及同横坐标导函数点"
+        },
+        {
+          "id": "exp_compare_ready",
+          "meaning": "一般底数斜率符号说明与e底停态"
+        }
+      ]
+    },
+    {
+      "id": "logarithm",
+      "duration": 46,
+      "heading": "对数：从指数关系看斜率",
+      "visual": "ln图与1/x、反函数增量联系和换底条件",
+      "learning_purpose": "建立递增变缓与倒数斜率、换底系数",
+      "anchors": [
+        {
+          "id": "log_map_ready",
+          "meaning": "ln x切线及1/x导函数点沿正半轴同步移动"
+        },
+        {
+          "id": "log_inverse_ready",
+          "meaning": "当前双图与Δx≈xΔy的反函数增量关系"
+        },
+        {
+          "id": "log_base_ready",
+          "meaning": "指数反关系、换底式、一般对数导数及底条件"
+        }
+      ]
+    },
+    {
+      "id": "sine",
+      "duration": 44,
+      "heading": "正弦：高度和斜率错开四分之一周",
+      "visual": "正弦和角差商、弧度标准极限与sin/cos同步图",
+      "learning_purpose": "从斜率正负和峰谷联系到cos而非背表",
+      "anchors": [
+        {
+          "id": "sine_limits_ready",
+          "meaning": "和角差商及两个弧度标准极限"
+        },
+        {
+          "id": "sine_map_ready",
+          "meaning": "从0经过π/2、π到2π的同步切线与cos高度"
+        }
+      ]
+    },
+    {
+      "id": "cosine",
+      "duration": 32,
+      "heading": "余弦：斜率是负正弦",
+      "visual": "cos与-sin同步切线和符号区间",
+      "learning_purpose": "解释负号对应下降半周与上升半周",
+      "anchors": [
+        {
+          "id": "cosine_map_ready",
+          "meaning": "余弦从0连续扫过一周及-sin高度"
+        },
+        {
+          "id": "cosine_sign_ready",
+          "meaning": "最终双图与两个半周斜率符号"
+        }
+      ]
+    },
+    {
+      "id": "closing",
+      "duration": 18,
+      "heading": "把斜率当作新的函数",
+      "visual": "本课出口及乘积和商的问题",
+      "learning_purpose": "为组合函数求导留下真实问题",
+      "anchors": [
+        {
+          "id": "closing_summary_ready",
+          "meaning": "导函数记录位置到斜率的映射"
+        },
+        {
+          "id": "closing_combinations_ready",
+          "meaning": "x²sin x和x²/(x+1)待解决式"
+        }
+      ]
+    }
+  ],
+  "focus_intents": [
+    {
+      "id": "opening_bridge",
+      "cue": "opening",
+      "referent": "首课平方函数在2处导数为4的固定式"
+    },
+    {
+      "id": "opening_question",
+      "cue": "opening",
+      "referent": "换点之后斜率怎样改变的问题"
+    },
+    {
+      "id": "general_quotient",
+      "cue": "general",
+      "referent": "任意a处、h非零的平方差商及展开行"
+    },
+    {
+      "id": "general_limit",
+      "cue": "general",
+      "referent": "约去h后趋向2a的固定中间式"
+    },
+    {
+      "id": "general_function",
+      "cue": "general",
+      "referent": "从f'(a)=2a到f'(x)=2x的表示"
+    },
+    {
+      "id": "general_map",
+      "cue": "general",
+      "referent": "a从-2连续移到0再移到2的同步切线与导函数点"
+    },
+    {
+      "id": "general_map_result",
+      "cue": "general",
+      "referent": "停在a=2的切线和右图高度4及映射说明"
+    },
+    {
+      "id": "constant_map",
+      "cue": "constant",
+      "referent": "沿常数曲线移动的点、水平切线与零高度点"
+    },
+    {
+      "id": "constant_increment",
+      "cue": "constant",
+      "referent": "(c-c)/h=0及两幅水平图"
+    },
+    {
+      "id": "identity_quotient",
+      "cue": "identity",
+      "referent": "一次函数的定义差商(x+h-x)/h=h/h=1，h≠0"
+    },
+    {
+      "id": "identity_map",
+      "cue": "identity",
+      "referent": "y=x斜线上移动点、固定斜率切线和导函数y=1"
+    },
+    {
+      "id": "power_cubic_expansion",
+      "cue": "power",
+      "referent": "三次差商与3x²h+3xh²+h³的完整分子行"
+    },
+    {
+      "id": "power_cubic_limit",
+      "cue": "power",
+      "referent": "除h得到3x²+3xh+h²并趋近3x²"
+    },
+    {
+      "id": "power_rule_domain",
+      "cue": "power",
+      "referent": "整数幂规则和实数幂安全使用域"
+    },
+    {
+      "id": "power_cubic_map",
+      "cue": "power",
+      "referent": "三次曲线和导函数3x²同步扫描"
+    },
+    {
+      "id": "reciprocal_quotient",
+      "cue": "reciprocal",
+      "referent": "倒数的原始差商与三个非零条件"
+    },
+    {
+      "id": "reciprocal_common_denominator",
+      "cue": "reciprocal",
+      "referent": "通分分子x-(x+h)=-h，分母hx(x+h)"
+    },
+    {
+      "id": "reciprocal_limit",
+      "cue": "reciprocal",
+      "referent": "-1/x²结果与x≠0"
+    },
+    {
+      "id": "reciprocal_negative_branch",
+      "cue": "reciprocal",
+      "referent": "负半轴内移动的切线与负斜率点"
+    },
+    {
+      "id": "reciprocal_positive_branch",
+      "cue": "reciprocal",
+      "referent": "正半轴内另一次移动；没有跨过断点"
+    },
+    {
+      "id": "root_rationalize",
+      "cue": "root",
+      "referent": "平方根原始差商与x>0,h≠0,x+h≥0条件"
+    },
+    {
+      "id": "root_conjugate",
+      "cue": "root",
+      "referent": "同乘共轭后分子(x+h)-x=h的中间行"
+    },
+    {
+      "id": "root_domain",
+      "cue": "root",
+      "referent": "x>0导数式及x=0边界说明"
+    },
+    {
+      "id": "root_map",
+      "cue": "root",
+      "referent": "正半轴上根号曲线的切线和下降的正导函数"
+    },
+    {
+      "id": "exp_factor",
+      "cue": "exponential",
+      "referent": "指数差商提取a^x的固定行"
+    },
+    {
+      "id": "exp_standard_limit",
+      "cue": "exponential",
+      "referent": "底a>0时的标准极限ln a"
+    },
+    {
+      "id": "exp_rule",
+      "cue": "exponential",
+      "referent": "一般指数、e底导数式及实数域"
+    },
+    {
+      "id": "exp_map",
+      "cue": "exponential",
+      "referent": "e^x点移动及同横坐标导函数点"
+    },
+    {
+      "id": "exp_compare",
+      "cue": "exponential",
+      "referent": "一般底数斜率符号说明与e底停态"
+    },
+    {
+      "id": "log_map",
+      "cue": "logarithm",
+      "referent": "ln x切线及1/x导函数点沿正半轴同步移动"
+    },
+    {
+      "id": "log_inverse",
+      "cue": "logarithm",
+      "referent": "当前双图与Δx≈xΔy的反函数增量关系"
+    },
+    {
+      "id": "log_base",
+      "cue": "logarithm",
+      "referent": "指数反关系、换底式、一般对数导数及底条件"
+    },
+    {
+      "id": "sine_limits",
+      "cue": "sine",
+      "referent": "和角差商及两个弧度标准极限"
+    },
+    {
+      "id": "sine_map",
+      "cue": "sine",
+      "referent": "从0经过π/2、π到2π的同步切线与cos高度"
+    },
+    {
+      "id": "cosine_map",
+      "cue": "cosine",
+      "referent": "余弦从0连续扫过一周及-sin高度"
+    },
+    {
+      "id": "cosine_sign",
+      "cue": "cosine",
+      "referent": "最终双图与两个半周斜率符号"
+    },
+    {
+      "id": "closing_summary",
+      "cue": "closing",
+      "referent": "导函数记录位置到斜率的映射"
+    },
+    {
+      "id": "closing_combinations",
+      "cue": "closing",
+      "referent": "x²sin x和x²/(x+1)待解决式"
+    }
+  ],
+  "review_times": [
+    3.6,
+    9,
+    14.4,
+    28.4,
+    44,
+    59.6,
+    74.4,
+    81,
+    87.6,
+    95.6,
+    101,
+    106.4,
+    123.6,
+    144,
+    164.4,
+    187.2,
+    201,
+    214.8,
+    232.8,
+    246,
+    259.2,
+    276.8,
+    290,
+    303.2,
+    321.2,
+    335,
+    348.8,
+    366.8,
+    380,
+    393.2,
+    408.4,
+    418,
+    427.6,
+    437.6,
+    443,
+    448.4
+  ],
+  "sources": [
+    "examples/derivative_chapter_shared.py",
+    "runtime/projects/math-derivative-ch02-basics-20261102/science-facts-v001.json",
+    "runtime/projects/math-derivative-ch02-basics-20261102/scientific-brief-v001.json",
+    "runtime/projects/math-derivative-chapter-20261102/chapter-brief-v002.json",
+    "runtime/projects/math-derivative-chapter-20261102/unit-v001.json"
+  ],
+  "writer": "01a199e9-7383-7a03-b45c-97d3d21bd9dd",
+  "consumers": [
+    "main coordinator",
+    "independent visual reviewer",
+    "independent narration reviewer",
+    "later speech planner"
+  ],
+  "lifecycle": "Author A chapter draft v001; not approval",
+  "invalidation": "Scene, model, helper, text, cue timing, context or profile changes require affected stages to be repeated",
+  "revision_mode": "fresh",
+  "scientific_brief": "runtime/projects/math-derivative-ch02-basics-20261102/scientific-brief-v001.json",
+  "artifact_type": "test_fixture"
+}

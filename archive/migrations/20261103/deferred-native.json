@@ -1,0 +1,3116 @@
+{
+  "writer": "repository-organization coordinator",
+  "consumers": [
+    "lead",
+    "maintainers",
+    "migration validator"
+  ],
+  "lifecycle": "Immutable snapshot for this migration batch; preserve alongside rollback copies",
+  "invalidation": "New native references or a source SHA/path change require another preflight",
+  "created_at": "2026-11-03T06:56:24.816930+00:00",
+  "scope": "Concrete frozen source inventory; not permission to move or archive active versions",
+  "entries": [
+    {
+      "old": "docs/understanding-workflow.md",
+      "proposed_new": "ai/reference/understanding-workflow.md",
+      "source_sha256": "60402f214cbf2070c70bffde4dc15980d5bca8c35a44c06558d5eed12c51d529",
+      "status": "active_frozen_not_moved",
+      "reason": "native_dependency_closure"
+    },
+    {
+      "old": "docs/remote-speech.md",
+      "proposed_new": "ai/reference/remote-speech.md",
+      "source_sha256": "d9def46a645407efbf4464ebbeecc5567f926d1247b97fdcbd3d3c86585f25f7",
+      "status": "active_frozen_not_moved",
+      "reason": "native_dependency_closure"
+    }
+  ],
+  "source_inventory": [
+    {
+      "path": "examples/derivative_ch02_basics.py",
+      "sha256": "0aaa235b5356293dd5ba78d2da027aac45d43bc8d28f7ca1bd194792e9995c66",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch02_basics_v002.py",
+      "sha256": "677268343973d59433a6ca80c6e68bff8e1605f7c930d13c7b7bf614e6ba31ed",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch02_basics_v004.py",
+      "sha256": "6babd292c64a7228b67a0509a3d981de3ab6c913ccabf69d20e1ce0841f94e21",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch02_basics_v005.py",
+      "sha256": "53e0cc7844ed69d0814080acd24960b783a37430228c3a056dc8bb93f892f409",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch02_traceable.py",
+      "sha256": "ff3a28b5c872a6136114b74594708fd8c7a64aa1414dcc901e8eab880fccccb8",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch02_traceable_v010.py",
+      "sha256": "22663690219a785c4f2ade04fca0bc77f7df9ff7ad45b31d474089ff9d71f12e",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch02_traceable_v011.py",
+      "sha256": "7f693c24b2af1ee0ba16695b9a99031b93337166ad53bde62fe71bdf75d8e533",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch02_traceable_v012.py",
+      "sha256": "00c64b6affd1678a44b4d54872919ebd341758ac8cb93e438c462b555652494a",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch03_rules.py",
+      "sha256": "ae394669b4012d44968c4538dbb1ce42ad9b6181fe510430529cd88e0de7557c",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch03_rules_v004.py",
+      "sha256": "8b9892fc1c8a276f577521c47a0c3d99867307195ccf2af94006dbc8dd0f3332",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch03_traceable.py",
+      "sha256": "2a91f85d8aed0ba0920c743625abd3fcd147700995e806110cea2e8c63ddd451",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch03_traceable_v010.py",
+      "sha256": "0a9505fd52c5a0ff885b2177602df3283629ef10de6f700c7bc11b889ae9e67d",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch03_traceable_v011.py",
+      "sha256": "1f54dbf392782a8396df9bc2ac8a99b33d5f24f4a24415e19570f6a9788c46f1",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch04_chain.py",
+      "sha256": "f3c9693c712dff55ff9f7bc76276e36f1ee8143ef0d95fc573128beb49dc2b19",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch04_chain_v003.py",
+      "sha256": "fe87a529e7af7350d1c9eef69c86945e604ad87f662c9feecf6ae2f62bd5c025",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch04_chain_v004.py",
+      "sha256": "0cd70576810b0c435e55430962cfb8427dbfd34a913368ae8322bd2a84e688d6",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch04_chain_v005.py",
+      "sha256": "fedc768f68daed6e85aebbc1a4f34cb47324274cededc642d240cc2fd4fdf381",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch04_traceable.py",
+      "sha256": "a9d48d0cad746577d01509201441639c3ba3add4ac35a195eb72b9d4fbbd8d9e",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch04_traceable_v007.py",
+      "sha256": "5481e2c2bead72a4032ff27b6a02005f9e071b9ddc9dcf3ed75b22b2ce01112d",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch04_traceable_v008.py",
+      "sha256": "1485b6a2f0b718ceff488c61fcf586e48f2e9e906fc2142ff7718918fa59c4c3",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch04_traceable_v009.py",
+      "sha256": "ca0992dd007432c39ae87e8cfc5fd796f109cb23be920368c974deed5c25f997",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch04_traceable_v010.py",
+      "sha256": "bbf7ee381755e69623d97b2f2988fd349528aa617c23237b30f35e2f547a6383",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch04_traceable_v011.py",
+      "sha256": "0e06aec801495bf140f972bddfc3427744965bc1e0e07e41a5366f4437783bbc",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch04_traceable_v012.py",
+      "sha256": "69ee59aa666ae8cb59c03b5db595211868fd60d0f8036f1266623260f82adbc5",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch04_traceable_v013.py",
+      "sha256": "693b51e3ecb3f558302ffdef5ec21adb531ff4aab1f2e474e07d93529157a446",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch05_monotonicity.py",
+      "sha256": "ffd0c30f33afd8f6fb8a68f8bf4e58f371d1a0ee7d7b6415f70063e1fd8240c2",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch05_monotonicity_v002.py",
+      "sha256": "c3785c58c165a168ff6db98803efeb833c8e70e8c770b50912a32484bd9a294f",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch05_monotonicity_v004.py",
+      "sha256": "64c3fbe78baaf6ba7e72a33088427331f53c3b22d1e61036c1fd4245a3614f2a",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch05_traceable.py",
+      "sha256": "6f1e552f40ab0cc16e5b55ef70454a3b59381aaa193c1e9b53f16b9e228b5edf",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch05_traceable_v006.py",
+      "sha256": "511d8947013e2d5e7bc66f4db35721fe446ad6eab809b142b52d5a53e830cc7c",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch06_extrema.py",
+      "sha256": "bc2792f17714582303ab9a220070cd957c7ed46f6b76ddfdaaad1e1cebf5df26",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch06_extrema_v003.py",
+      "sha256": "93685646884b6a4e2cd6fb26baf3baee07a6dc07ec375611dae0ba9b6edc324b",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch06_extrema_v004.py",
+      "sha256": "7050c2000b366203ae1491cca83fe97872436b2f6ca45f9cc164ee4a0c898cf8",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch06_traceable.py",
+      "sha256": "69816972af2ed9e41b15ece2c2f5185126bccfecb95fa1644f2682ac143bef52",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch06_traceable_v006.py",
+      "sha256": "6caaa0cf6de462b0bfbdd3c072b598c33576839adedb6e70859711b9b3150c67",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch06_traceable_v007.py",
+      "sha256": "179d611144324f716a90e2349ec3b1e863edd77b6696e75ca008e40a59c5456f",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch07_extremes.py",
+      "sha256": "8da5adf5a9c706c6d1c4a9aad536d08bbf138876beaaca6d9fe406303768c9f0",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch07_extremes_v003.py",
+      "sha256": "61812d3e9114e76bbcb89fa95d7a8970fbc1b94b16e6c3c6017ec3127d0b66d6",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch07_extremes_v004.py",
+      "sha256": "9719ead6d2ac9e50e72e6c3500cee9e24d4b1bb0350870c2d444a58267dd0d24",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch07_traceable.py",
+      "sha256": "0b4c6b25960db72410a4228265d867ba821fad78c54b452d25230af88953f241",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch07_traceable_v006.py",
+      "sha256": "7cfcefe0d6d8b83d616a016c357efd89fee5801bd9973124b12aecebf4579684",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch07_traceable_v007.py",
+      "sha256": "65c8ee0fc610a56cde843c6895a4ca161c08da2ba69cdde90958c5b08182cb74",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch08_optimization.py",
+      "sha256": "0270067699a19a2ff5ae993669986cbbaef126b754b379fa29a0a1da494ce9e1",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch08_optimization_v003.py",
+      "sha256": "e304b519340c31a771b6b24bb84094049f197c46a26ecd642c24a45e80d20a34",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch08_optimization_v004.py",
+      "sha256": "abb8c529f3240cc5dd49d817a9fe2ca2c07398d7f249959e8a34a825bd56c333",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch08_traceable.py",
+      "sha256": "ead406137b4af9b627dd483508ef1dba4601ff80c0d4b71edd76a20d1da145e1",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_ch08_traceable_v009.py",
+      "sha256": "30a4f91958bed0b590563adadcdc6a8090d05680df5dbfa3b41a2ab58c2667d5",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_chapter_shared.py",
+      "sha256": "ed9bb7ece0f273c72fc4db744200e7a3a96e51ad54e258861305140e9d0c17ae",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_intro_audio_aligned.py",
+      "sha256": "7449521653b1cf689d345e9c48d902510d8c9e82a360bea755de15466cab6db1",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_intro_clean_motion.py",
+      "sha256": "3aa23904dd58ab4220babc1c11972ce1c6011b23170eb87821fdfed87e35d63f",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_intro_delivery.py",
+      "sha256": "7b02b6826a7e06777c88e7c4484538d4e177fe4accf99140fe6efc30cf769b9b",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_intro_final.py",
+      "sha256": "38aeb0d017f1d563d4044b54349cc82ee73b1eff9acd188d68b446e8eca3356e",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_intro_refined.py",
+      "sha256": "4145086806346a7e2ebeaf72d70966b109e2f89ec707559f1193eefda55dd940",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_intro_routed_motion.py",
+      "sha256": "da855ba35c9bac8a6a8e0e05661fc4767f8c41f39128c1a31a797d835b05a3af",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_intro_traceable_motion.py",
+      "sha256": "3a8a8b1fb683766b81e1b5c1352817196c43141fa094ce1f0baa41b98c4a1b78",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_intro_traceable_motion_v009.py",
+      "sha256": "897a9b7443ae396017d75e1a1ef59f4844848f29c0bfcf7f535848c4acd3185d",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_intro_traceable_motion_v010.py",
+      "sha256": "b3d5683d338da76e79e1a47e10b50e732804be52040a4e2b7a7b0a2fa99b6935",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_intro_visual.py",
+      "sha256": "f7d4ce6def4229ea92afefaba09025717c3036d86d4aa3ea4bc0aec9f7364815",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_intro_voiced.py",
+      "sha256": "362312fb1f25cff477dfec0ef36652d16b2b2b2aae4bf604226a598b2d7a9073",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "examples/derivative_visual.py",
+      "sha256": "ab1ac8796891214b0691c85e6c8eb724a8c69f5934883ac87c08d911bbe785ba",
+      "status": "active_frozen_not_moved",
+      "protection": "examples/derivative_"
+    },
+    {
+      "path": "configs/visual-first-workflow-v1.json",
+      "sha256": "f4d93e39cb78ab1880f5741ba3041e9316a2b0d93a35b233197c58d136bb7641",
+      "status": "active_frozen_not_moved",
+      "protection": "configs/visual-first-workflow"
+    },
+    {
+      "path": "configs/visual-first-workflow-v2.json",
+      "sha256": "0dd839ceae2c10bbe35d36dc20563a6f4d42d210612a39e0ba7e0c5fb6b37d1c",
+      "status": "active_frozen_not_moved",
+      "protection": "configs/visual-first-workflow"
+    },
+    {
+      "path": "configs/visual-first-workflow-v3.1.json",
+      "sha256": "ce4e9f23bd0d60b77123d76cbc5c41ffdd0d48fa2eaeac544f73e77784a44de6",
+      "status": "active_frozen_not_moved",
+      "protection": "configs/visual-first-workflow"
+    },
+    {
+      "path": "configs/visual-first-workflow-v3.json",
+      "sha256": "29ccf042bb155c26118dd6970ad1db1d681b567151e795482f123b0a9dffe366",
+      "status": "active_frozen_not_moved",
+      "protection": "configs/visual-first-workflow"
+    },
+    {
+      "path": "configs/visual-first-workflow-v4-unit.json",
+      "sha256": "ae00dd9f63190a29f4745c54bfd83d2ae36468d459f456509907edefa095adfd",
+      "status": "active_frozen_not_moved",
+      "protection": "configs/visual-first-workflow"
+    },
+    {
+      "path": "configs/visual-first-workflow-v4.1-unit.json",
+      "sha256": "274474e4fd9297a318b8ff2c5e131df99fbc716e6c851d056832320cf4efcb28",
+      "status": "active_frozen_not_moved",
+      "protection": "configs/visual-first-workflow"
+    },
+    {
+      "path": "configs/visual-first-workflow-v4.2-unit.json",
+      "sha256": "3e8d21dc86df3276e734d82108f1aab953bd2a785d802fda7df524df1f782857",
+      "status": "active_frozen_not_moved",
+      "protection": "configs/visual-first-workflow"
+    },
+    {
+      "path": "configs/visual-first-workflow-v4.3-unit.json",
+      "sha256": "6d7feb658f86358e72c26c4f8a2df403724dea4e03ff9cfbd0fc4486402af7e9",
+      "status": "active_frozen_not_moved",
+      "protection": "configs/visual-first-workflow"
+    },
+    {
+      "path": "configs/visual-first-workflow-v4.3.1-unit.json",
+      "sha256": "3319a9397429993d8ec17b35dd225e0f68498d31faed33d902676465c0e6376f",
+      "status": "active_frozen_not_moved",
+      "protection": "configs/visual-first-workflow"
+    },
+    {
+      "path": "src/manimind/components/__init__.py",
+      "sha256": "b0c8b8e142b49098955118e5797249b1b32473bdef37de532a086066bab89254",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/components/"
+    },
+    {
+      "path": "src/manimind/components/catalog.py",
+      "sha256": "2bf2def6c94397613d247ad2cb7e4859c4116eb62c5c44755f7cf63450ec7bb0",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/components/"
+    },
+    {
+      "path": "src/manimind/components/expressions.py",
+      "sha256": "812ca10c0310415de972781220d74b1c31c4ff347bf068a24a272fa87a7bc07e",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/components/"
+    },
+    {
+      "path": "src/manimind/components/formula_motion.py",
+      "sha256": "47c0dfcfe5e4f7801f6bee5a465e203c1795bc9a800eb53a3b91c9a72f2a4914",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/components/"
+    },
+    {
+      "path": "src/manimind/components/formula_transfer.py",
+      "sha256": "f67523e6d0571f6b782cd38be9a489e26919bc37ee621a32c3b4bd66b5cb78b7",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/components/"
+    },
+    {
+      "path": "src/manimind/components/pipeline.py",
+      "sha256": "82bc29ef2aecffe35e2326d5ba2ca99b9a43f826a01af2baba0ee2d694e3e9c2",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/components/"
+    },
+    {
+      "path": "src/manimind/components/plan.py",
+      "sha256": "11567f413c04a44ba7447f3411701bf6658e06511126667e21eaa62b832997f7",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/components/"
+    },
+    {
+      "path": "src/manimind/components/renderer.py",
+      "sha256": "56f43de33a5275daafdeb7da0dfa16312a5bb9a269743669fb43656fce21c44d",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/components/"
+    },
+    {
+      "path": "src/manimind/components/typography.py",
+      "sha256": "1cdcfcfb2ab675fb7b1940cb242c7c241a14932886d16b78ac5001039873ef48",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/components/"
+    },
+    {
+      "path": "src/manimind/curriculum.py",
+      "sha256": "6a51aaa5dd796a5d7d21e05988058ecb9dcffe5659cceaa961201fae2d81d26d",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/curriculum.py"
+    },
+    {
+      "path": "src/manimind/experiments/__init__.py",
+      "sha256": "3399e993c1246ae0ab2bfa64e60643e26e86cce061704dadd232bfa52505a762",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/experiments/"
+    },
+    {
+      "path": "src/manimind/experiments/chapter_workflow.py",
+      "sha256": "54fc8e7b8069ed79da82b8264f4c38cf2b0d5a16240a95db10fd2e7cbf2147cc",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/experiments/"
+    },
+    {
+      "path": "src/manimind/experiments/codex_cli_team.py",
+      "sha256": "7da7a77ab70107c186bdeb8c3e033aabadb31ba72beff05b02300a5ddbb13516",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/experiments/"
+    },
+    {
+      "path": "src/manimind/experiments/freeform_agent.py",
+      "sha256": "d0fc37dac339dbbd73889695bc29a56fa32f5987f75b7501e92b9baf20607979",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/experiments/"
+    },
+    {
+      "path": "src/manimind/experiments/freeform_isolated.py",
+      "sha256": "1b0aec7b0667158ab87f450b1598faa199fa77cdfdb8158391ba8a7103829e23",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/experiments/"
+    },
+    {
+      "path": "src/manimind/experiments/freeform_max_effort.py",
+      "sha256": "5e1109e3e6c61037b3b652bf08aa02c32b53ded7c45301c53efb740c5428fb76",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/experiments/"
+    },
+    {
+      "path": "src/manimind/experiments/freeform_review_cycle.py",
+      "sha256": "9071cc33c17d8fc89604086f93e8ea10bbe9e2370f5306dc02b01b592cc3e7d3",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/experiments/"
+    },
+    {
+      "path": "src/manimind/experiments/freeform_review_retry.py",
+      "sha256": "d4e09f5b9f0e8d3f9f5f4cf685dab547a3791049a12e0afceb638ff9c3bce5e8",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/experiments/"
+    },
+    {
+      "path": "src/manimind/experiments/freeform_support.py",
+      "sha256": "28b37dc707e7e07b719c3f3cf18ba10c4db18ae8adda7b8f102aba7f90ca4967",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/experiments/"
+    },
+    {
+      "path": "src/manimind/experiments/freeform_team.py",
+      "sha256": "0784391140ee205bd8d5cbbbfdc3a77d86e06e6ece0493e8d7d6f7828097e00b",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/experiments/"
+    },
+    {
+      "path": "src/manimind/experiments/guarded_scene.py",
+      "sha256": "778a6535a27814fa45198053c79b4df22423922e7eb2bd0a4174267e8bd05128",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/experiments/"
+    },
+    {
+      "path": "src/manimind/experiments/layout_guard.py",
+      "sha256": "cabe94500ca6c9696153d7476ca858fe4b08fa87f20e46a8d37113f224280197",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/experiments/"
+    },
+    {
+      "path": "src/manimind/experiments/learning_runtime.py",
+      "sha256": "3e98ad4676f7aae17b13b32a841fb0aeb149e2b0002151bf7493a5d671e3724b",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/experiments/"
+    },
+    {
+      "path": "src/manimind/experiments/learning_workflow.py",
+      "sha256": "6a0bb3263b81465fbc75fe3817abfa3a9f337db61dc1f1880d8551de7077333f",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/experiments/"
+    },
+    {
+      "path": "src/manimind/experiments/model_benchmark.py",
+      "sha256": "7cab74a794a56e3a4ca00a8eb33bdd75bc04a07b39f93854767cabdb90c908e2",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/experiments/"
+    },
+    {
+      "path": "src/manimind/experiments/scene_support.py",
+      "sha256": "4d1202a224543e446d37da4ec33ffdbd9b468168e06474e7a7b687eccd5ec01d",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/experiments/"
+    },
+    {
+      "path": "src/manimind/experiments/sol_learning_workflow.py",
+      "sha256": "bfc2fc94d8e8b81156200a6df1d443a5bf35396231469058c59ec36f67310dbf",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/experiments/"
+    },
+    {
+      "path": "src/manimind/experiments/sol_visual_first.py",
+      "sha256": "f05e269392b4e876e1fc450b16d7c6d61f99f6eeb7743a668582f80b0e382deb",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/experiments/"
+    },
+    {
+      "path": "src/manimind/experiments/subscription_quota.py",
+      "sha256": "2e17b195777b4074b4840bf56d146a2109f2c62a4c08a930484abc8b8a050beb",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/experiments/"
+    },
+    {
+      "path": "src/manimind/experiments/understanding_support.py",
+      "sha256": "ab423add671dd567a2b6b07bd06207573cce802be359537f07eac447d4f5d542",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/experiments/"
+    },
+    {
+      "path": "src/manimind/experiments/visual_first_data.py",
+      "sha256": "27fef6125910067ffbbd58da3b527fe9d5ded9613f143e1ad3988edd8eaad4b0",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/experiments/"
+    },
+    {
+      "path": "src/manimind/experiments/visual_first_support.py",
+      "sha256": "fb879f1b53a195cea95a2cc4a1f1ca72b4dc0d98ed7e27f6696ae3897e110e08",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/experiments/"
+    },
+    {
+      "path": "src/manimind/postproduce/__init__.py",
+      "sha256": "a352fc30fa74ff95c72a5e2d05d073dcba0ec79274c815c2c798f878360dc221",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/postproduce/"
+    },
+    {
+      "path": "src/manimind/postproduce/assembler.py",
+      "sha256": "f9e168f0a7687d34341a5c8065e87d15148102246744efa88341387767e8e902",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/postproduce/"
+    },
+    {
+      "path": "src/manimind/postproduce/chapter_package.py",
+      "sha256": "67a5d1d489bdf8c91b98692b2bca2d5db1f8e75046d432537ca557625f15a784",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/postproduce/"
+    },
+    {
+      "path": "src/manimind/postproduce/chapter_package_clock.py",
+      "sha256": "b0d68cb72ee22a3cec11358baf605cec7bdf158be65bdc7530d43368b567597a",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/postproduce/"
+    },
+    {
+      "path": "src/manimind/postproduce/cosyvoice_audition.py",
+      "sha256": "7895357e9d1470c8649802361f45c63459b786eb26545d461880b1e48af3f4d4",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/postproduce/"
+    },
+    {
+      "path": "src/manimind/postproduce/flexible_voxcpm.py",
+      "sha256": "dec1e3a19eed4a06caaa6bf78743cee088af04896ee6c7148a983436bdbbc5cc",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/postproduce/"
+    },
+    {
+      "path": "src/manimind/postproduce/focus_captions.py",
+      "sha256": "69bb5bb08e03db02508cbebd038b14f655b04d35e98f7171c44abc5a3f3a490e",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/postproduce/"
+    },
+    {
+      "path": "src/manimind/postproduce/formula_film.py",
+      "sha256": "be0550d47b91bbe6111c7f2df2d90216fc3fd548247c1f03fd112b3c2be105be",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/postproduce/"
+    },
+    {
+      "path": "src/manimind/postproduce/formula_refinement.py",
+      "sha256": "f47b5c1272fb69cf3d90866763559e47182cee356a91f51afeda3ad92edbaa06",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/postproduce/"
+    },
+    {
+      "path": "src/manimind/postproduce/freeform_pilot.py",
+      "sha256": "4e767fd9dfb93f10ec708ca069f57c7d781e8c0ff80faea821786ff7a674530f",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/postproduce/"
+    },
+    {
+      "path": "src/manimind/postproduce/full_lesson.py",
+      "sha256": "a79439c5751da1fc05fa1c3be52a5b6fe747e560e5dcfdcc328b65f52e605b51",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/postproduce/"
+    },
+    {
+      "path": "src/manimind/postproduce/lesson_opening.py",
+      "sha256": "05f941159c163ca73a6220327a1e60b7affde4045cb45f7cf6834ca40f9bf729",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/postproduce/"
+    },
+    {
+      "path": "src/manimind/postproduce/phrase_alignment.py",
+      "sha256": "00c5a5452d3103262323f421865b308253c16f57caeae6b763a680deb56a5519",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/postproduce/"
+    },
+    {
+      "path": "src/manimind/postproduce/pilot.py",
+      "sha256": "2935550e3a7f98ea58a5643a2593d3483be81cd5d1652deec93afbd345b66faf",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/postproduce/"
+    },
+    {
+      "path": "src/manimind/postproduce/playback_package.py",
+      "sha256": "1544c7219892ae2e6e4cd316b9ea1927dd70a5bf855d1a1c3ea6dd548a17daf1",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/postproduce/"
+    },
+    {
+      "path": "src/manimind/postproduce/preset_audition.py",
+      "sha256": "7886bb1fab2d0d51c6f394ef7de1ddd9b4d349e82c2f46c5413bb302a171df9e",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/postproduce/"
+    },
+    {
+      "path": "src/manimind/postproduce/qwen_service.py",
+      "sha256": "555ee3544a45e2ab090d974e1f3c0f3cfb04db7eb0450b89f7f570d3e576ec93",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/postproduce/"
+    },
+    {
+      "path": "src/manimind/postproduce/remote_speech.py",
+      "sha256": "0fa0d66365b546d4694da959f0cde29fd2cff7f8e630bd9a124e6ab47d66f051",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/postproduce/"
+    },
+    {
+      "path": "src/manimind/postproduce/subtitles.py",
+      "sha256": "9f33df04bdf6942c2f230145fbd1744bd6c239c77fdbf1c4043cff313df4cc44",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/postproduce/"
+    },
+    {
+      "path": "src/manimind/postproduce/traceable_film.py",
+      "sha256": "bb6294833836b42f0ccd90af4aa61ca6ca229bf4c25e8dbfc208f6079809cdb6",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/postproduce/"
+    },
+    {
+      "path": "src/manimind/postproduce/traceable_film_v2.py",
+      "sha256": "858e11489a9fa624228b484e64dc941280232d7e089581ea58dac0e83461c53d",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/postproduce/"
+    },
+    {
+      "path": "src/manimind/postproduce/traceable_film_v3.py",
+      "sha256": "34d6a74d7b4b3c8263425e5e33711946b4fbfa05d996dac3767f18f6abbd5ae9",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/postproduce/"
+    },
+    {
+      "path": "src/manimind/postproduce/understanding_film.py",
+      "sha256": "9ae3b677ccb96d9fe294a58695c78a7bfcf289418977cb482f1c6e4cbb091f5c",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/postproduce/"
+    },
+    {
+      "path": "src/manimind/postproduce/understanding_render.py",
+      "sha256": "38c5daa7d1584c0196fee92cb01b4d5c84c62cab45198414c3296c1b24cf4fd1",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/postproduce/"
+    },
+    {
+      "path": "src/manimind/postproduce/unit_film.py",
+      "sha256": "b51833bbe8728fd04298c8dad9baa9839173a7d2c52094550c3613a65cafbe25",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/postproduce/"
+    },
+    {
+      "path": "src/manimind/postproduce/visual_narration.py",
+      "sha256": "99e396c291ed0e8653ff5426269289f460d0ca44e5c529304690e980c0de58c9",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/postproduce/"
+    },
+    {
+      "path": "src/manimind/postproduce/voicedesign_audition.py",
+      "sha256": "e9f55b0ca2eca97d6e66eb6ae2a855b8bf0cc23150d36426140721e707000ea6",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/postproduce/"
+    },
+    {
+      "path": "src/manimind/postproduce/voiceover.py",
+      "sha256": "6f32b2d0c74e9f0a0d11274e435beb3c819045085daac36c1af38f8640f870fd",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/postproduce/"
+    },
+    {
+      "path": "src/manimind/postproduce/voxcpm_audition.py",
+      "sha256": "10766c863d5f6f1f7c4dd337e9f0ca267ce9198bac1f8bbe6d2e80b4a0d567fc",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/postproduce/"
+    },
+    {
+      "path": "src/manimind/postproduce/voxcpm_narration.py",
+      "sha256": "cb59ed7741cc49878fa30fdc97d6f89d2b08ccdaadfa070ceb521867a6970666",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/postproduce/"
+    },
+    {
+      "path": "src/manimind/postproduce/voxcpm_package.py",
+      "sha256": "305fccbb3971a223f733f398be28a118530d1cf191e2c2d41c2be4c43ec5131f",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/postproduce/"
+    },
+    {
+      "path": "src/manimind/postproduce/word_captions.py",
+      "sha256": "9c490acd3dc7c72cf3f777c1173d20417d74a0d2b04009b74ec84ae1603ea20b",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/postproduce/"
+    },
+    {
+      "path": "src/manimind/render/__init__.py",
+      "sha256": "6afba65b99b2301534c175169733609bbec2cb35d15cdf45c72fbea98ee72fd4",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/render/"
+    },
+    {
+      "path": "src/manimind/render/manim_renderer.py",
+      "sha256": "80a97ee2969b2b75c417a3cbf9f75a17e30d1999d8ca0936657d5be6d9ef22c4",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/render/"
+    },
+    {
+      "path": "src/manimind/review/__init__.py",
+      "sha256": "23b9fca85c241ab541aead790a4ff9b33951393daa6e109286c04e10c49f0178",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/review/"
+    },
+    {
+      "path": "src/manimind/review/content_regression.py",
+      "sha256": "272a8918eb48dddce0f93a07ac01e333134747c33fcfd01ef0834dd5956f83f8",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/review/"
+    },
+    {
+      "path": "src/manimind/review/formula_visual_binding.py",
+      "sha256": "6e38a2a2cc29f83274a647f1bc226653146ce5d066ddf5592975741b111ea82e",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/review/"
+    },
+    {
+      "path": "src/manimind/review/frame_quality.py",
+      "sha256": "671e2b72ba8a534cb5fc62bbfdc0ef9f8d45027dc592136a110d97458c0a6b3b",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/review/"
+    },
+    {
+      "path": "src/manimind/review/learning_quality.py",
+      "sha256": "4cbebe0c32d61a4622ffd48ea1abfc942793635fb1c83a7a78abfa7922be60b7",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/review/"
+    },
+    {
+      "path": "src/manimind/review/manim_code_quality.py",
+      "sha256": "5c4a8c4c7c93a351d35ba8e495b6e612bf51d0ef16e7f009ae8a96e2db9c8a72",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/review/"
+    },
+    {
+      "path": "src/manimind/review/meaning_units.py",
+      "sha256": "3ffbe767c2b29aec4872101399775ec9a4240a66f8a3801f4fd808b73f958a98",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/review/"
+    },
+    {
+      "path": "src/manimind/review/motion_quality.py",
+      "sha256": "35f210b2a03946db9390775e9d70c683a5884a36ce2bca8f5c36f5c1b625ee29",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/review/"
+    },
+    {
+      "path": "src/manimind/review/quality_audit.py",
+      "sha256": "d3bbf639eea2733c1f22f84282f4f842dc952769e2eccee41bf8eb5ed0e993a4",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/review/"
+    },
+    {
+      "path": "src/manimind/review/render_evidence.py",
+      "sha256": "46af2f78852df3cb19f3b3d54330595bd135c70402841bc995ac84ccf6797ad9",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/review/"
+    },
+    {
+      "path": "src/manimind/review/semantic_colors.py",
+      "sha256": "08d2524fc8a461275932ec8f8af419dd64b5288e3e18b3726b2d5b27ec031945",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/review/"
+    },
+    {
+      "path": "src/manimind/review/semantic_focus.py",
+      "sha256": "83184519b434e65d341537ff3473157f1ce6b51629f01d029dc0eb1b4d4e9a34",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/review/"
+    },
+    {
+      "path": "src/manimind/review/understanding_quality.py",
+      "sha256": "b7419eae7172b67ad3fdcf758852930a98add60a3d649485143f72ca3b123621",
+      "status": "active_frozen_not_moved",
+      "protection": "src/manimind/review/"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-basics/narration.json",
+      "sha256": "230e5bdd53bf908c00627e79f3005a9b2d5f7617914552a3b0abe330786efbc7",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-basics/plan.json",
+      "sha256": "dc5d96bb555006eba0ca5ca42c1adbbed533c5a876e194808e8c6360e195e5dd",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-basics/science.json",
+      "sha256": "53fbfda579a38e0cc9b0db232a865456e6ab5881cdd7c531a1e1b977772bb822",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-basics-v002/baseline-lock.json",
+      "sha256": "500df7b24d878e81a2bc387fba83a54d0e22d2170ad052ffae8078d47061c168",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-basics-v002/narration.json",
+      "sha256": "4d53c7fb1be88de40f392982080cbb2e347e4d13139dbbce45a6d2865b51039f",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-basics-v002/plan.json",
+      "sha256": "e95ee6fea19a4a323cc21c03ea7fcfabe3d1fc3df51f230e870a11fa7d01cf64",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-basics-v002/regression-contract.json",
+      "sha256": "e20f8ce86968b244c4c2231b0e923a87823215933f69bd02d4405146e27a76b3",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-basics-v002/science.json",
+      "sha256": "bec20dca7996a4e597a0404565212262a2809301e4edcf974439e6514b92edd0",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-basics-v004/baseline-lock.json",
+      "sha256": "42ab5c58b160a6d93fa9bfb4917b18a63941997230abe35d62fbd0dbcb0d823d",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-basics-v004/contract.json",
+      "sha256": "e2971f4554edc15e926515dd879b3e9ae29b1c913569684fc3c3bb5042d94113",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-basics-v004/narration.json",
+      "sha256": "851f166e19b45591989432a9a2c11d744aa52800774ceee24cd112efad792065",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-basics-v004/plan.json",
+      "sha256": "e9da16e13b0d47e93ae186ff37593ef9898a5f0ab73046eeeb1f62cc575c5194",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-basics-v004/timings.json",
+      "sha256": "98a1a6148271b68445f3848eb6de931474c9eb5795fcf3cd9c0fed5e7daea436",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-basics-v005/baseline-lock.json",
+      "sha256": "9045aa993f41d260db50e90cb1fe82c02e54f8df747885709040247becbe6fa8",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-basics-v005/contract.json",
+      "sha256": "cc7488f283902af3f8e6507fd4abe5fa72c287493bf176626ead9d929ae75d49",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-basics-v005/plan.json",
+      "sha256": "2b742f57699421aca31eed66352ebd47cf67b67e6d3cce65f0ea3c3d06b2f216",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-traceable/contract-draft.json",
+      "sha256": "74ab742e2a65d69dded6d8a2cb073bbfe2d5b8488b527e4f4ed18749d1d25e3c",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-traceable/diagnostic-pre-v009/contract-draft.json",
+      "sha256": "2e723b2d866cf053192cd8fdfb443114e5077ecbf969284b99b0c8b0302ae57a",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-traceable/diagnostic-pre-v009/plan-draft.json",
+      "sha256": "7f73919982f6455269a39b09435f5405da091e28edbc2d7f8fb7e1568bfcaf3a",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-traceable/narration.json",
+      "sha256": "302634aeba60ae0a1a4a268c6638f0bdd987d11f6ecb4fbe7dce8f3ec4ac0950",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-traceable/plan-draft.json",
+      "sha256": "c0eb74de5c988d1eda20e5bb92356a196277677507d9d09701ae8496aaa18c40",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-traceable/timings.json",
+      "sha256": "98d1d802b11cfa7bdbd2430ccb876d1b9cf00de36cda426a290ccee6224e81cb",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-traceable-v010/contract-draft.json",
+      "sha256": "0f8f6523f7bbe1be8bc87612f9744cf70bf8f4c6b683a57b385ba3276b12aa2b",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-traceable-v010/narration.json",
+      "sha256": "302634aeba60ae0a1a4a268c6638f0bdd987d11f6ecb4fbe7dce8f3ec4ac0950",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-traceable-v010/plan-draft.json",
+      "sha256": "dadf770d0891a1b3ac0a51a6c63c60aea6bc3cf18c7db2740211bb5e465ac8a6",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-traceable-v010/timings.json",
+      "sha256": "98d1d802b11cfa7bdbd2430ccb876d1b9cf00de36cda426a290ccee6224e81cb",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-traceable-v011/contract-draft.json",
+      "sha256": "420c81bef9b9d084effb6ccac818ab4c34cf26571a49ef9be8946bc64acaf755",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-traceable-v011/narration.json",
+      "sha256": "302634aeba60ae0a1a4a268c6638f0bdd987d11f6ecb4fbe7dce8f3ec4ac0950",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-traceable-v011/plan-draft.json",
+      "sha256": "4ddc4a23ff71a295a829a5304862de31bf467380d847b055bb6b8d9bd006019e",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-traceable-v011/timings.json",
+      "sha256": "98d1d802b11cfa7bdbd2430ccb876d1b9cf00de36cda426a290ccee6224e81cb",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-traceable-v012/contract-draft.json",
+      "sha256": "4bace4ac619115d47dab95f047a161043b2ba87772e8d28c6c1c4c0e245e3685",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-traceable-v012/narration.json",
+      "sha256": "302634aeba60ae0a1a4a268c6638f0bdd987d11f6ecb4fbe7dce8f3ec4ac0950",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-traceable-v012/plan-draft.json",
+      "sha256": "042f3e6b9f6c4f3b2c85ea3d40f99d6b61e54d4f802843ade2c9757524a2ec5e",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-traceable-v012/timings.json",
+      "sha256": "98d1d802b11cfa7bdbd2430ccb876d1b9cf00de36cda426a290ccee6224e81cb",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-traceable-v013/contract-draft.json",
+      "sha256": "633e972cd884ce91328e5dcfe4b708b22305f5616719e2cfe097702b63d549f3",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-traceable-v013/narration.json",
+      "sha256": "302634aeba60ae0a1a4a268c6638f0bdd987d11f6ecb4fbe7dce8f3ec4ac0950",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-traceable-v013/plan-draft.json",
+      "sha256": "f4de3264ac9085053df1714bfc1b609234151d2bfa5b0c28e2ff997275b237eb",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch02-traceable-v013/timings.json",
+      "sha256": "98d1d802b11cfa7bdbd2430ccb876d1b9cf00de36cda426a290ccee6224e81cb",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch03-rules/narration.json",
+      "sha256": "cd0023c6e2d1b655d633c565f51528f642d3c22742057450e3c5b418de8f3140",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch03-rules/plan.json",
+      "sha256": "6a8a4eec31d9bca1f3d760b21f1698b398e52f6f7528219d394b2f9f13bf8743",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch03-rules/science.json",
+      "sha256": "c8faa8d81f242b6690ff6a09348f13f9529b510565d76b3c47f21a755ff119d6",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch03-rules-v004/baseline-lock.json",
+      "sha256": "9187e62347082d674dc0a378ac55294a8d80c7f19c735ebcefb4e5509bd7eaa1",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch03-rules-v004/contract.json",
+      "sha256": "cf88683e60acde1c16878aca191000f9b32f960069f81627ecd6b0fd156fb129",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch03-rules-v004/narration.json",
+      "sha256": "c540e2ac17491ac037107cea03476956ca44c735731fd3dca1ef11ecff2e39f0",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch03-rules-v004/plan.json",
+      "sha256": "1ccb3d8f50ba77d0462b482dab5953fbe63bc487be6153798515fde02e2c870a",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch03-rules-v004/timings.json",
+      "sha256": "069769efac971d1870cfe134fa49a964151d28507474e0cfbe0b9ba9a4bba404",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch03-rules-v005/contract.json",
+      "sha256": "8cdf1f3d935cb50143114bf7ea2fafbcdf2cee745aa6d1a091213f4dc50d3218",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch03-rules-v005/plan.json",
+      "sha256": "bfd839d9018873a2695a32740a89729b3f92d85b35c20408ae9ce3a996e0f171",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch03-rules-v005/previous-contract.json",
+      "sha256": "cf88683e60acde1c16878aca191000f9b32f960069f81627ecd6b0fd156fb129",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch03-rules-v005/previous-plan.json",
+      "sha256": "1ccb3d8f50ba77d0462b482dab5953fbe63bc487be6153798515fde02e2c870a",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch03-rules-v006/contract.json",
+      "sha256": "fee9372c01d7ea65838b695e80f2452b522e470b52192495887ab68eaffd8f27",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch03-rules-v006/plan.json",
+      "sha256": "4b690a30f5def25765885b956d70d9c5717bcc555d677ae0c6cdc4f64e7283d7",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch03-rules-v006/previous-contract.json",
+      "sha256": "8cdf1f3d935cb50143114bf7ea2fafbcdf2cee745aa6d1a091213f4dc50d3218",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch03-rules-v006/previous-plan.json",
+      "sha256": "bfd839d9018873a2695a32740a89729b3f92d85b35c20408ae9ce3a996e0f171",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch03-traceable/contract-draft.json",
+      "sha256": "aa78dcd89858f74e2b99618c28d99c139af041d480fe7113061c83578455210f",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch03-traceable/diagnostic-pre-v011/contract-draft.json",
+      "sha256": "1895debe631148adfb843f64510d250e894d97a8888aaa1700187a3be34d36a3",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch03-traceable/diagnostic-pre-v011/plan-draft.json",
+      "sha256": "ffdf9db0e14a51a996d7a5b3b62cd02ac4a00f59eb95b99aa26c22e4fff691b2",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch03-traceable/diagnostic-v009/contract-draft.json",
+      "sha256": "31cd6436898f076178b2f2315bd3d60d39d6aaaa106e28af071e71e3a2ce46da",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch03-traceable/diagnostic-v009/plan-draft.json",
+      "sha256": "dc11fdd5dc4dd473d0cb0a984cbc4adfef365844df3fae0e14287c7098493d7d",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch03-traceable/narration.json",
+      "sha256": "b646fd7f2059062eecfc05c69623056440895007d92c6f2ce516ef2e5c2ce147",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch03-traceable/plan-draft.json",
+      "sha256": "816d5ca36673ef8de059f2dd30ab5efee4d68b8152988199ca6a3d0b7a4425b0",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch03-traceable/timings.json",
+      "sha256": "ab2c7f913a9e200ab8b2e90be272851ce025dc7985fb31ea0dcf2fd610f754d7",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch03-traceable-v010/contract-draft.json",
+      "sha256": "a70cf3069f7389a536fe71010c9db7e0c337cc559c399036682562bb36a1f36e",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch03-traceable-v010/narration.json",
+      "sha256": "b646fd7f2059062eecfc05c69623056440895007d92c6f2ce516ef2e5c2ce147",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch03-traceable-v010/plan-draft.json",
+      "sha256": "0eb62632a04ceef2eacf2a5c4bb68e68dc192a7cfcc9c855ac244101237b2786",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch03-traceable-v010/timings.json",
+      "sha256": "ab2c7f913a9e200ab8b2e90be272851ce025dc7985fb31ea0dcf2fd610f754d7",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch03-traceable-v011/contract-draft.json",
+      "sha256": "428b73f0de92c0ba2fe0bbe385c69492ac0705574917590377d7b3b6eae6c2f4",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch03-traceable-v011/narration.json",
+      "sha256": "b646fd7f2059062eecfc05c69623056440895007d92c6f2ce516ef2e5c2ce147",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch03-traceable-v011/plan-draft.json",
+      "sha256": "143ef8648e5eb054bf1d36734b1344b68c3cf07683c5dacebbbc21c07d28deef",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch03-traceable-v011/timings.json",
+      "sha256": "ab2c7f913a9e200ab8b2e90be272851ce025dc7985fb31ea0dcf2fd610f754d7",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-chain/mathematics-v001.json",
+      "sha256": "e8b8ecb7b96c41ec85db4786a751e2593a4f654746e87d5852cd98bd382b68db",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-chain/narration-v001.json",
+      "sha256": "79c2e41352ad6042bec0309e766faa5c1aac768b6baaab0fdb5b88a4330f0755",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-chain/plan-v001.json",
+      "sha256": "88c45c3de7a702c0d68d88c86defd84e4b6c0edf56d7704e8e4949ddac53a358",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-chain-v003/baseline-lock.json",
+      "sha256": "32723437b451a02c9b63152565a3acaca69221042ddc643ae4800bf2e77bf148",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-chain-v003/contract.json",
+      "sha256": "998719bad578487628cecf3b3adf943a03ac405c9419d0bc397d8f2f5f88256b",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-chain-v003/narration.json",
+      "sha256": "284bdccbbfe3344453344a0c62cea2728d34f9ae798f49540eb657dd97cb4440",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-chain-v003/plan.json",
+      "sha256": "d96b22bd2063bdeeb2e6aac8220641cb94cd98e7fd6e1f9c0012e001509df523",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-chain-v003/timings.json",
+      "sha256": "a278aae550c500987ee9b9a7b8ac89cdee36927c4367befc342cfb6a5d19ca1c",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-chain-v003/transport.json",
+      "sha256": "c4a4d7daa4fcee58161d8f6ccba337d644e98b528b5bf0d79864e46dbaf29903",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-traceable/baseline-lock.json",
+      "sha256": "1ea1b381059230caa68279cd1db08bc40ea3b4793fda512cf2d689c38e04dfea",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-traceable/contract.json",
+      "sha256": "d45f53b8cd25652c62b23edcca55135c52a5a1adf51329576a6b7ed5c1a674be",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-traceable/final-plan.json",
+      "sha256": "ea343532e7a739c805fdd4ed39f0ad996b32d244850a620772792927ea977332",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-traceable/narration.json",
+      "sha256": "8293490e8fb0e740b44852ae570bb1f4398693dfaead336063025d57632b825c",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-traceable/plan.json",
+      "sha256": "2fdba0eeb202e3aa9e1bf0025bd25b75188fa669b04e868184ae1e9e7c46f9d7",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-traceable/timings.json",
+      "sha256": "8bd927a77e7139604861d3f629f14c007ae126acac60e9e4859cc07f4cd98212",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-traceable-v007/narration.json",
+      "sha256": "8293490e8fb0e740b44852ae570bb1f4398693dfaead336063025d57632b825c",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-traceable-v007/plan.json",
+      "sha256": "09a28fadd66c7649114455a5e0c42c15ebdd7cddcf5123808ee72068cd20cbc8",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-traceable-v007/timings.json",
+      "sha256": "8bd927a77e7139604861d3f629f14c007ae126acac60e9e4859cc07f4cd98212",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-traceable-v008/narration.json",
+      "sha256": "8293490e8fb0e740b44852ae570bb1f4398693dfaead336063025d57632b825c",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-traceable-v008/plan.json",
+      "sha256": "0668fac2c293fe89c820aa72b67746a0cfae5b498c96857b8d9b82ee56ab569c",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-traceable-v008/timings.json",
+      "sha256": "8bd927a77e7139604861d3f629f14c007ae126acac60e9e4859cc07f4cd98212",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-traceable-v009/plan.json",
+      "sha256": "f5ae001bf846d788f8acaf6e1cb39b61267ec3fc29536e5e41fac3db97ae24dd",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-traceable-v010/contract.json",
+      "sha256": "0698cfe8f7965ddb3d6f9560ef7a4316c38ae333c2e177edb1602ea054f4e59e",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-traceable-v010/narration.json",
+      "sha256": "8293490e8fb0e740b44852ae570bb1f4398693dfaead336063025d57632b825c",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-traceable-v010/plan.json",
+      "sha256": "3bef740e8a14c03354e330b1f20512130c1d3a17776c90c3913b055f5befbeb2",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-traceable-v010/timings.json",
+      "sha256": "8bd927a77e7139604861d3f629f14c007ae126acac60e9e4859cc07f4cd98212",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-traceable-v011/contract.json",
+      "sha256": "392638fa12bf6c914e5c639af7c25a7152c191f3e513595d9774c7d363290366",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-traceable-v011/final-plan.json",
+      "sha256": "ec30788f896fa644be3e98e7ceacee86377b7a43e86cf493bd49909a1eca8871",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-traceable-v011/narration.json",
+      "sha256": "8293490e8fb0e740b44852ae570bb1f4398693dfaead336063025d57632b825c",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-traceable-v011/plan.json",
+      "sha256": "c9ebc26ce94bcf49f8638b83bca753cb3133205c0bc50de7377042af174faea2",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-traceable-v011/timings.json",
+      "sha256": "8bd927a77e7139604861d3f629f14c007ae126acac60e9e4859cc07f4cd98212",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-traceable-v012/contract.json",
+      "sha256": "04fb65ddcce5345510c860febec6d687c52bf0b38181b0436010a8480795b454",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-traceable-v012/narration.json",
+      "sha256": "8293490e8fb0e740b44852ae570bb1f4398693dfaead336063025d57632b825c",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-traceable-v012/plan.json",
+      "sha256": "03f403eda4b9bb1e4eda7dfeab8d6acc5294d48184ed1cd0a946f53e2794edbd",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-traceable-v012/timings.json",
+      "sha256": "8bd927a77e7139604861d3f629f14c007ae126acac60e9e4859cc07f4cd98212",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-traceable-v013/contract.json",
+      "sha256": "aa939f0805a9578d4a93c2b80a6ebeea67e05fe180a6a5516aa4615898526091",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-traceable-v013/narration.json",
+      "sha256": "8293490e8fb0e740b44852ae570bb1f4398693dfaead336063025d57632b825c",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-traceable-v013/plan.json",
+      "sha256": "f16d55f02003bba4f58891935e08ef7855bbf4ae6748381808262776d8b68595",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-traceable-v013/probe-plan.json",
+      "sha256": "730e53cd8dd4c94e16a6f0dab19f4cbf0effe362b3f28a66303a356f21b61207",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch04-traceable-v013/timings.json",
+      "sha256": "8bd927a77e7139604861d3f629f14c007ae126acac60e9e4859cc07f4cd98212",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch05-monotonicity/mathematics-v001.json",
+      "sha256": "49a9728c6f4272f8f0ebc3514ba72dfd241f971b98a46b140c35444459a4500b",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch05-monotonicity/narration-v001.json",
+      "sha256": "9f81c0c4565489b32236514d6f33799e11ba5f28072203db6291ee523c8a77c2",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch05-monotonicity/plan-v001.json",
+      "sha256": "ec62838e55998dd4780a93645c4b2dfeef633d49e9552c2327e07cf2839af848",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch05-monotonicity/v002/content-regression-contract.json",
+      "sha256": "847e41011a7ece220d785c2d84e7ee1fe25952aaa4ecef03a7004e310c6403a2",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch05-monotonicity/v002/mathematics.json",
+      "sha256": "1ccbcf659567487d208f3d9ed9fb46ad0dca2c1a14322153abcfdf1263799596",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch05-monotonicity/v002/narration.json",
+      "sha256": "997136c2866e70f49ab5cf505215a7c47731c3b3a29e9dda9232b74da7a0645e",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch05-monotonicity/v002/plan.json",
+      "sha256": "0e423c2a582d163b916cb6964a656cbde2c1a289b79835ed03637515b8bbac36",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch05-monotonicity-v004/baseline-lock.json",
+      "sha256": "ee1a236107583ef583324291f7aef0ac1fbd6e8fafdfd08043031e28faaa0098",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch05-monotonicity-v004/contract.json",
+      "sha256": "0c8296bb0a68ee068e3846010d78220008eef847f2c97fd40e72e5797e726670",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch05-monotonicity-v004/narration.json",
+      "sha256": "cd855c27b4804fdc13e73596a5ee1a911f5ca5d831990ff48a501585dd69c150",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch05-monotonicity-v004/plan.json",
+      "sha256": "427133e0424e4fdeb39e349edd776d967f2eb0e9e98067887da9b6ac68095b10",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch05-monotonicity-v004/timings.json",
+      "sha256": "58019dfc06625bfe4a78260211d6d87e79ac61716e18b91c0749314a2e7c6831",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch05-traceable/baseline-narration.json",
+      "sha256": "ec026d3434d2075e9387a96a7909a07e7378a7a9a2dcd56f6ce8012f10cf09b7",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch05-traceable/baseline-plan.json",
+      "sha256": "0a6482c1726f0218a448f2b420a3ea3d96401db8f621c9d8db73423a35ff58fc",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch05-traceable/contract.json",
+      "sha256": "50bf48efe709a3e9c1f2164cb6a21c36bcfdf7a52c9a09c8bfbc02e2857e6e37",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch05-traceable/narration.json",
+      "sha256": "ab3ae5985bdb42b25ecea90c2d5c1a4730a765a1c042ca677fab25407052335a",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch05-traceable/plan.json",
+      "sha256": "9b8652d5c28429668fd005f5ce4057123ecfe2923e03b7b196dafc3a0cdd998d",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch05-traceable/timings.json",
+      "sha256": "58019dfc06625bfe4a78260211d6d87e79ac61716e18b91c0749314a2e7c6831",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch05-traceable-v006/baseline-narration.json",
+      "sha256": "19b380adfda13f813bd618c14c6db9e88f7452f73d2875f2044b96eb78223e4a",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch05-traceable-v006/baseline-plan.json",
+      "sha256": "ad9fa75618628f2e2a13028de5b835c5ebdfbed0fb4b301da39b492ca67fc044",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch05-traceable-v006/contract.json",
+      "sha256": "a15bceb9cb9b0d28969394132334a9e1fdc90132d89c2347b25f3e7a45b6c49a",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch05-traceable-v006/narration.json",
+      "sha256": "3c09b2528ff2017c329acf5f1bf979db1060819ba6aadfbd6acecd9abd9be02a",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch05-traceable-v006/plan.json",
+      "sha256": "e86c0553f0b6477a2d82dc76e3dcd67bb1f24cf750e3db8fdaa8cf8c13b92baa",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch05-traceable-v006/timings.json",
+      "sha256": "1ca670e727d124af2268fa5e3159ea7879b1e528aedc95a2686e7fda4ace7a4a",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-extrema/model-v001.json",
+      "sha256": "c5eb517bab9962762eb3bc96f1fbdf968d3ee15444ccca137c43c04b9aa16588",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-extrema/narration-v001.json",
+      "sha256": "417ea5082e3b650476290b48e44296c771ae3235f9001203304d8d9021760838",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-extrema/plan-v001.json",
+      "sha256": "b373e80a2b4a3e09d2d86ca5e9f7b6fb20a6868be2c800e1c314b58a8f02127e",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-extrema-v003/baseline-lock.json",
+      "sha256": "de5d4593d7178928eb877563b73288498f681de24120e59836ea46c896f2234d",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-extrema-v003/contract.json",
+      "sha256": "c0541e71bf11dc57fadf28df3273bf7faaa1bc79dc5561c85f2458e9ee1d9f22",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-extrema-v003/narration.json",
+      "sha256": "8315f4edd875258f9f2842171e21de010fe1c1c261dd832daee4bb77742fcb57",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-extrema-v003/plan.json",
+      "sha256": "9d1b2e73870f2fd72abc6390ba0a747608f0d56f98acc6350a342f2bf92cfca5",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-extrema-v003/timings.json",
+      "sha256": "d551ff1241276f5b61a026ac982b0e1ff55d160ae9220fc6572d51f57edc08ab",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-extrema-v003/transport.json",
+      "sha256": "8c15f920bd889422d71fb830888556db905d1a4831ff4eb8896599f8aeebfe0a",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-extrema-v004/baseline-lock.json",
+      "sha256": "10f139ea4b004ae97d045d8318a29a7f82974e86d630d2246510aa65f5475b0f",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-extrema-v004/contract.json",
+      "sha256": "eee3c36934a2e1a89ce7cea5e4f95b8a3c49374a49c800b0aeb1471515bd512c",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-extrema-v004/narration.json",
+      "sha256": "8315f4edd875258f9f2842171e21de010fe1c1c261dd832daee4bb77742fcb57",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-extrema-v004/plan.json",
+      "sha256": "f2f32d7b827e9f4be8e1467490259efeb0b34ac8449de05e9815168e02d75e8a",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-extrema-v004/previous-contract.json",
+      "sha256": "c0541e71bf11dc57fadf28df3273bf7faaa1bc79dc5561c85f2458e9ee1d9f22",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-extrema-v004/previous-plan.json",
+      "sha256": "9d1b2e73870f2fd72abc6390ba0a747608f0d56f98acc6350a342f2bf92cfca5",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-extrema-v004/timings.json",
+      "sha256": "b0e10a7c6a4c2e54399591eb2283c9b3af46475f3dac32ac75eeaf92049ee855",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-extrema-v004/transport.json",
+      "sha256": "2ab5df9bae56e91859b03df96686c13547eccc3c8928b34300df96b669273c59",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-traceable/baseline-narration.json",
+      "sha256": "3056ad1e5ea3656d6e945cac073ad5b95ef49f9d9b2fcb1dec9d3b1759e4319c",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-traceable/baseline-plan.json",
+      "sha256": "9fc3d1712a71628a95ba0d5df570e3e22bfd44ef91143eb177b52e70b2d8f59f",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-traceable/contract.json",
+      "sha256": "3e5c943dd8ff3206aced07f4a91b490fb0e25386f2f5614f01989e72714da710",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-traceable/narration.json",
+      "sha256": "f1b34b743150c040c524084fd8b6d7e3619a3953e3aad179db7040eec0ea0035",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-traceable/plan.json",
+      "sha256": "a0bae22580a9bc3331aa7191987a44459636035c191c453c791d2c6fd9628c6b",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-traceable/timings.json",
+      "sha256": "b0e10a7c6a4c2e54399591eb2283c9b3af46475f3dac32ac75eeaf92049ee855",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-traceable-v006/baseline-narration.json",
+      "sha256": "3056ad1e5ea3656d6e945cac073ad5b95ef49f9d9b2fcb1dec9d3b1759e4319c",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-traceable-v006/baseline-plan.json",
+      "sha256": "9fc3d1712a71628a95ba0d5df570e3e22bfd44ef91143eb177b52e70b2d8f59f",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-traceable-v006/contract.json",
+      "sha256": "47cb937877c61c7d964c655fa56594c348628d9f717287c0ff69d12676640918",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-traceable-v006/narration.json",
+      "sha256": "1ae73c4c3437742aac409fbee9fe789ce606f93c560bebbc905f7e967317130f",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-traceable-v006/plan.json",
+      "sha256": "6ef16c570f97b2bef9333a5dea55d81cbbb2048c04db5a5b330573f86f90bcf8",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-traceable-v006/previous-contract.json",
+      "sha256": "3e5c943dd8ff3206aced07f4a91b490fb0e25386f2f5614f01989e72714da710",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-traceable-v006/previous-plan.json",
+      "sha256": "a0bae22580a9bc3331aa7191987a44459636035c191c453c791d2c6fd9628c6b",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-traceable-v006/timings.json",
+      "sha256": "b0e10a7c6a4c2e54399591eb2283c9b3af46475f3dac32ac75eeaf92049ee855",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-traceable-v007/baseline-narration.json",
+      "sha256": "8315f4edd875258f9f2842171e21de010fe1c1c261dd832daee4bb77742fcb57",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-traceable-v007/baseline-plan.json",
+      "sha256": "d6cf0851a8bfd887c8b7ee2bf9c3ed683637dbfbc98cd13d29bc5199704d77d0",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-traceable-v007/contract.json",
+      "sha256": "7dccc913e984bf747a6afec3b34ed9e86f172e673f65f7cdda69a688a4c71bfa",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-traceable-v007/narration.json",
+      "sha256": "d976ebb9ad3fc72c5b978b9387df3e65e9106dd3169302fab824e25c45de4fcd",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-traceable-v007/plan.json",
+      "sha256": "4b46aef21474954dd67a9e5fa10f3c1deb4f3757cbd7a11a0680a7a576dda4a8",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-traceable-v007/previous-contract.json",
+      "sha256": "67923183868a702d91a190a0fb589988855f8e5afafd4ba82a28cda129505f55",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-traceable-v007/previous-plan.json",
+      "sha256": "2025ce3b29c41497f2b9afa5c270d350e060d3699dfa40eb9d13726372a16391",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch06-traceable-v007/timings.json",
+      "sha256": "c1353aa689ab4cdecd36256b01f28c346a4ce7fafb61e34815b4043eecca5a10",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch07-extremes/model-v001.json",
+      "sha256": "fdd252fa6f652ce0f21639d5f817da8e09b20a5eeca1c70c9aced18b47e509c2",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch07-extremes/narration-v001.json",
+      "sha256": "059b365a62fe8eb9561f90f0486f151f7e3dfa65edd328e0692bbadcc3a06e74",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch07-extremes/plan-v001.json",
+      "sha256": "4795b03d89f7db0387b87bed27d2674bdd46e1e0fec44427a140d44515141c1c",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch07-extremes-v003/baseline-focus.json",
+      "sha256": "46472652ffa64c03a1563e9ae430f812f61c0529966b66a6e77658feae0a3009",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch07-extremes-v003/baseline-lock.json",
+      "sha256": "239f183b64f7d0d88c6027a18539b9127dbd202268a2371093916e5390bf220f",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch07-extremes-v003/baseline-plan.json",
+      "sha256": "a8331eb300078b4ddf6fadf397d9cdf3f75f53710c04e8b7b7bc2290317f4ed6",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch07-extremes-v003/contract.json",
+      "sha256": "fe43c8e2cb4d99ced00923c1e2ac6a0518f86d591aeb7bc1699a0b70ebddc6bf",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch07-extremes-v003/narration.json",
+      "sha256": "e9b551988ef19f79a4621ed7267d9dbdbb40c322953a3c94747556befad3fa4e",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch07-extremes-v003/plan.json",
+      "sha256": "866170818ebcedab6fb3d7f9a1c3fa52dc4ed57d7f38c131a5d02af64fa7a8b0",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch07-extremes-v003/speech-plan.json",
+      "sha256": "f5fbb5967ca79654dcd16807ca514b6cea54c6fb1c060e026c9786246d55d276",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch07-extremes-v003/timings.json",
+      "sha256": "b3b310167b40d8b7515dd12c88429f5428e537c268167a372327f50f12463572",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch07-extremes-v004/baseline-focus.json",
+      "sha256": "e5c03611bf448c30f72bfe066896fb6ac23e6ae88e2314015f506555015418ee",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch07-extremes-v004/baseline-placement.json",
+      "sha256": "eda22995175ff1a1ad08bd7c2309d0b834a3048fc1abc1e513d1a63a80710379",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch07-extremes-v004/baseline-plan.json",
+      "sha256": "067dae0bf802ec9c0e8e834129b0eb666e74c844343a47108d82c792b7371261",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch07-extremes-v004/contract.json",
+      "sha256": "8ef26bcf9e1986aff5052376ff14a287273ff1238473525c71b79b730b3bdc75",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch07-extremes-v004/narration.json",
+      "sha256": "ebb6d28a64a5eb0749c4be05e57ffb5309c4e11857ad680f02881b247c0c4e54",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch07-extremes-v004/plan.json",
+      "sha256": "45c323803541e6bb31cf6367be7270b0c9d91d5d960c27dc2a0b1adaea477836",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch07-extremes-v004/speech-plan.json",
+      "sha256": "f5fbb5967ca79654dcd16807ca514b6cea54c6fb1c060e026c9786246d55d276",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch07-extremes-v004/timings.json",
+      "sha256": "b3b310167b40d8b7515dd12c88429f5428e537c268167a372327f50f12463572",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch07-traceable/baseline-narration.json",
+      "sha256": "ebb6d28a64a5eb0749c4be05e57ffb5309c4e11857ad680f02881b247c0c4e54",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch07-traceable/baseline-plan.json",
+      "sha256": "3e550b21eec88c95357116aaf42b293574f15f121d3a38dd7e17b6f514ffacc6",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch07-traceable/contract.json",
+      "sha256": "a2009fe01d1cdbafef30ae0622187411a0e9cd005e2f303907e2d70cfa55ff2e",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch07-traceable/narration.json",
+      "sha256": "8c17df0415ac1d68f97903e5f57770fa32d4c87646811befb5dc16a76f5b1eca",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch07-traceable/plan.json",
+      "sha256": "3d6ca1934c970dbd7408a7ee3b5435e4ef18787d26b2c52a47869443f6bc7f25",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch07-traceable/timings.json",
+      "sha256": "b3b310167b40d8b7515dd12c88429f5428e537c268167a372327f50f12463572",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch07-traceable-v006/baseline-narration.json",
+      "sha256": "d538ec61219728af49a58a060ddb0cea42339c0731b358527d617f35b994a4b0",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch07-traceable-v006/baseline-plan.json",
+      "sha256": "bb5af401c396242db05ebe389363176469b097f5c2a3a32dab9dd5f917aa9ed5",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch07-traceable-v006/contract.json",
+      "sha256": "27bea6e736a122ead926c86c3c4a36cc5bc383f7f67df9e4dc5e94729aa2afe1",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch07-traceable-v006/narration.json",
+      "sha256": "ffda5e5321d0c41b561bd196c6c24e66e5ae7cbbe4688fd0b539134201cd715d",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch07-traceable-v006/plan.json",
+      "sha256": "5766b409d825ff5880a5e02b375d16f2f58b0d04a2137419d68a95f23598557e",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch07-traceable-v006/timings.json",
+      "sha256": "87379bcce48970eb51045497a694874123b3a4d5d450d7098af8007ca48a9e3e",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch07-traceable-v007/baseline-narration.json",
+      "sha256": "d538ec61219728af49a58a060ddb0cea42339c0731b358527d617f35b994a4b0",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch07-traceable-v007/baseline-plan.json",
+      "sha256": "bb5af401c396242db05ebe389363176469b097f5c2a3a32dab9dd5f917aa9ed5",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch07-traceable-v007/contract.json",
+      "sha256": "b888669e15290c9eae2f6055ce00a0ee971b64e39ba298f5d70073f07aa7ea3d",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch07-traceable-v007/narration.json",
+      "sha256": "bccddfdaded53c8fcf73d0d5971b164413ba39118909e31879b71f756463008e",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch07-traceable-v007/plan.json",
+      "sha256": "9fffbafc74d6078226388f354aeeb851af7d72278601875c671270318d10b64d",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch07-traceable-v007/timings.json",
+      "sha256": "87379bcce48970eb51045497a694874123b3a4d5d450d7098af8007ca48a9e3e",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-optimization/model-v001.json",
+      "sha256": "45d6d2c9c0bd82822930080d71aac3d198892766eed29cd24692f4f48eb370a3",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-optimization/narration-v001.json",
+      "sha256": "d555d36300b9966bd5fb7a8c198c62ac33c560233a5b510a4bf6ecfcfc1ce919",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-optimization/plan-v001.json",
+      "sha256": "bc199f612511ad5807e09edd4d79c0716b1d446181ebe2ee0ad83b6fd4af9cbb",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-optimization-v003/baseline-lock.json",
+      "sha256": "8d811a4a75700154ea17001686648aad124aad22f56d5bee98ff0b621c625317",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-optimization-v003/contract.json",
+      "sha256": "bfae9d910007bdca0d92164175093705136dee0bf289bd07e78f97fe1aa5c3bc",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-optimization-v003/narration.json",
+      "sha256": "4c6b9cdbe62f97d03fb11b779d67065d655eb0f5357301427cb5dffd97b31015",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-optimization-v003/plan.json",
+      "sha256": "605761f426648680656b510211f49f76a65d356ecacccea638d310bb7ccdeac4",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-optimization-v003/timings.json",
+      "sha256": "88190e354cf248a87517a881b3ca6f0d98d02704687a60ad1ae5f14efef0d8a5",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-optimization-v003/transport.json",
+      "sha256": "bbbbfd5e695034a1700a0ef37a6b452121ac51b4b4862161d637c8dfed3f2715",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-optimization-v004/baseline-lock.json",
+      "sha256": "bb2b0e2458a65a1b7f30ae40202a24ee8b1be5a3931264f04ff93302898ba780",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-optimization-v004/contract.json",
+      "sha256": "8d7c4c4a92e1297a96adce04f0c21b3385010c1bc7ff58caac01a0c12b233e0b",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-optimization-v004/narration.json",
+      "sha256": "20df7dd356f15de47d6fd3465d25eb00748af9ee60275d563e438def53a2f3bc",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-optimization-v004/original-narration.json",
+      "sha256": "464193e1fae16056742b126dcae2a808ca053b4522b6a73c5dbf4c10536b7368",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-optimization-v004/plan.json",
+      "sha256": "a6f9d776293261baf280270f643df48df233ce556f27109f3670fa837dc032be",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-optimization-v004/previous-plan.json",
+      "sha256": "74e66c259374c6fa40f68b299be531923ab7a7aa600d10a9ca5cdc4d067df9ba",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-optimization-v004/timings.json",
+      "sha256": "f8a90291cc3307d4ad310de19176fe541e5942ee7bf46d0e1067cc41818f5c7a",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-optimization-v004/transport.json",
+      "sha256": "2889490ad964f8c23fe7a321750ba078edca75c2cc8e945b9878eeeeddbbb34c",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-traceable/baseline-narration.json",
+      "sha256": "20df7dd356f15de47d6fd3465d25eb00748af9ee60275d563e438def53a2f3bc",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-traceable/baseline-plan.json",
+      "sha256": "6a2d68f1684415ddad261c90e036e7e9aeb1632b60e40fbe3118470b800acbdb",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-traceable/contract.json",
+      "sha256": "54201f69eb4a714d1638ff59528b73953fb3666210a2b45846d42bc08ff093c1",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-traceable/narration.json",
+      "sha256": "4328163947ee648c561ecb31d512ccb3e35cb0c2c12b169d416eb4773846781e",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-traceable/plan.json",
+      "sha256": "a2429e319d21fb69e78b1cb5445c6bdd6462c2fb984d9b6dcec1e3db3054b23a",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-traceable/timings.json",
+      "sha256": "f8a90291cc3307d4ad310de19176fe541e5942ee7bf46d0e1067cc41818f5c7a",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-traceable-v006/baseline-narration.json",
+      "sha256": "08f66b947d575becc8e4a09266a06e3ac1d2679acbebec35c6525bbdbc8aa82b",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-traceable-v006/baseline-plan.json",
+      "sha256": "b68bd4d420ffd91fbf76870e283eadecbcd8d6834ce12cf41a4d213c170fe27f",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-traceable-v006/contract.json",
+      "sha256": "6f43e404cf02cce21ecff5330decdac1ecfb7e76ca1ecf74a8582e628fe83616",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-traceable-v006/narration.json",
+      "sha256": "58a9928700cd97376b34d7709dd2b7221de2519caf186561c053c8b11319d8f7",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-traceable-v006/plan.json",
+      "sha256": "3b5f4f3ead180e09704cee1bada54ab65662b7e0329bfa80eb3490b8a7a176f6",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-traceable-v006/timings.json",
+      "sha256": "5b5fc4d3f0a3e3625ca63ae59c214b065d556e5494764fb33533ab20293bd121",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-traceable-v007/baseline-narration.json",
+      "sha256": "08f66b947d575becc8e4a09266a06e3ac1d2679acbebec35c6525bbdbc8aa82b",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-traceable-v007/baseline-plan.json",
+      "sha256": "b68bd4d420ffd91fbf76870e283eadecbcd8d6834ce12cf41a4d213c170fe27f",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-traceable-v007/contract.json",
+      "sha256": "edd507964ebfd688775c546c41fd7e46ef4af141d5ab2abaec70ddffb9949a76",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-traceable-v007/narration.json",
+      "sha256": "5278941a3943ac30063660b48f20c5f98a405af738131e70dd57ab94b73c095a",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-traceable-v007/plan.json",
+      "sha256": "bbad55ef7a251faf26d9fd3e4b02c0b4487046b5970a1bb124e1fa0431c51d92",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-traceable-v007/timings.json",
+      "sha256": "5b5fc4d3f0a3e3625ca63ae59c214b065d556e5494764fb33533ab20293bd121",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-traceable-v008/baseline-narration.json",
+      "sha256": "08f66b947d575becc8e4a09266a06e3ac1d2679acbebec35c6525bbdbc8aa82b",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-traceable-v008/baseline-plan.json",
+      "sha256": "b68bd4d420ffd91fbf76870e283eadecbcd8d6834ce12cf41a4d213c170fe27f",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-traceable-v008/contract.json",
+      "sha256": "939a2f5e679de845a9819bfe16bc9d19f1ea0f1fa72cc542b4272fd8c3c680c8",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-traceable-v008/narration.json",
+      "sha256": "7c634c8c8424d5ae838b7f62872a641acfc812ecdcb2ae56fa9f01b26759065c",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-traceable-v008/plan.json",
+      "sha256": "ff9da337a9a91d9e3045aa122c4fd53debe8416cc6e5273dfcb7dc26c74668f7",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-traceable-v008/timings.json",
+      "sha256": "5b5fc4d3f0a3e3625ca63ae59c214b065d556e5494764fb33533ab20293bd121",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-traceable-v009/baseline-narration.json",
+      "sha256": "08f66b947d575becc8e4a09266a06e3ac1d2679acbebec35c6525bbdbc8aa82b",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-traceable-v009/baseline-plan.json",
+      "sha256": "b68bd4d420ffd91fbf76870e283eadecbcd8d6834ce12cf41a4d213c170fe27f",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-traceable-v009/contract.json",
+      "sha256": "b1d96f7501548aa7f92040be7f20a993418d388f4c886d6f38fd543d18a324e1",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-traceable-v009/narration.json",
+      "sha256": "88f9b4fecc6f2ead51c569b510dda93c280198ef2f56928c3ed7c6601c8ffee6",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-traceable-v009/plan.json",
+      "sha256": "ce762c5d88073d1c7f54335646be8ecae0d021ecd1e65271b43558666a6f187a",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-traceable-v009/timings.json",
+      "sha256": "5b5fc4d3f0a3e3625ca63ae59c214b065d556e5494764fb33533ab20293bd121",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-traceable-v009-module/baseline-narration.json",
+      "sha256": "08f66b947d575becc8e4a09266a06e3ac1d2679acbebec35c6525bbdbc8aa82b",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-traceable-v009-module/baseline-plan.json",
+      "sha256": "b68bd4d420ffd91fbf76870e283eadecbcd8d6834ce12cf41a4d213c170fe27f",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-traceable-v009-module/contract.json",
+      "sha256": "d0c22fb8c3d546463956023107ee9ad24d703874aff5c82f2546b8fe193c308f",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-traceable-v009-module/narration.json",
+      "sha256": "347ea1453a6e370ccdc5d5e74745fe8e4483804af0382399df1203031a2a2b09",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-traceable-v009-module/plan.json",
+      "sha256": "6eaf4e72fb3076d6924ed8eb2227a642e6a860d5998080ed5e3cfdd45a304f99",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-ch08-traceable-v009-module/timings.json",
+      "sha256": "5b5fc4d3f0a3e3625ca63ae59c214b065d556e5494764fb33533ab20293bd121",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-intro/design.json",
+      "sha256": "6cfc59759c77382c5fe04cb82bbe45c226a3e8b74c7adac56fffc028544f66b0",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-intro/narration.json",
+      "sha256": "405f797a95113b3579f486e7a2b2fb754540d56600bdf0b987c634be193650be",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-intro/plan.json",
+      "sha256": "d60bfaf22cacb98547b2080b62ddb707ba3cca0b3622a9e0a552344de5987a55",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-intro-clean-motion/README.md",
+      "sha256": "e9885dae7d8504a2800d399952835c2416b6aac75b7c4788f95b34eb46eff2ad",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-intro-clean-motion/design.json",
+      "sha256": "273108b99ce62cb56d0bf15309a65292da2c49547ea5e3fb5e928a7bea0114a8",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-intro-clean-motion/plan.json",
+      "sha256": "84933d4960d0ede6e7385f40f0900198475496183825b4e6c7ded9449124cc2d",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-intro-final/design.json",
+      "sha256": "483000dfee19bc67feb8bcaa60d831976c7560cd58b4afe27d782207fb9cac94",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-intro-final/plan.json",
+      "sha256": "6ae627afa62c2b79e797e5e864ddec022982bf2049709e5e02efe73dd37ab946",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-intro-refined/design.json",
+      "sha256": "4386b879a618ba2995e1e897eebbb6bdaaa40144fd325f4ac1a0e1ce17240a90",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-intro-refined/narration.json",
+      "sha256": "c70513c3dc5734b0e57a46b297d7d58d7de95828509913e1e58ff741c64e70f5",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-intro-refined/plan.json",
+      "sha256": "7745681381e89ec941b5ec3bcf7ff81a878eecb51a808bfd7df8f274b09b5ae3",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-intro-routed-motion/README.md",
+      "sha256": "5195d6742e8b312f9ba5afacd23cc756162fe113c6ba0b96a5050afba66d3115",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-intro-routed-motion/design.json",
+      "sha256": "e0873ce2eb54fa1ac24b87e9bbf38169bc0eb61ec92a913fc9aca78eb1a9b0d1",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-intro-routed-motion/plan.json",
+      "sha256": "922b94bedc571cf34bcb3d974aa9760a5f8f1a062e41191c0bb2596250389d72",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-intro-traceable-motion/contract.json",
+      "sha256": "442af05861c069c940c6c3b17305b6b6f2df60e46462b465c36ea1445cb45441",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-intro-traceable-motion/measured-timings.json",
+      "sha256": "4563ebb8a3fbc0fb006b681ce6bab8e10ee196abb14ab6fe35f4262a86a28523",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-intro-traceable-motion/narration.json",
+      "sha256": "a2788ca550fa11090344cce2360d9546ed72c0f4a3cc4e98907f2c3be86744af",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-intro-traceable-motion/plan.json",
+      "sha256": "c3d3ba45e9faa52a5a200d4604e68f26b061e34cd371cc8cd755df7a9eef19ac",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-intro-traceable-motion/v009/contract.json",
+      "sha256": "082272c2a4f43b01ac7ecfdb0e0431779a5096ecf7efe2df89454ea470da0db7",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-intro-traceable-motion/v009/plan.json",
+      "sha256": "4fd42f3610c3b7730f28ab9693f48736e97a04eb8a85b222870f1720577da728",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-intro-traceable-motion/v010/contract.json",
+      "sha256": "18d99ef2affec29a82438651668dc02334caf6d8a3757d04f22e4a97ca1327d3",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-intro-traceable-motion/v010/plan.json",
+      "sha256": "01bb5c3df3e5799d90f75f02c6b8c39053076a5de7e12d8b89b2290cc94a9954",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-intro-voiced/measured-timings.json",
+      "sha256": "9653a79bced21eff3c9c46c62a61e4da468b9c75904f71f10fa335fe0c21de3e",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-intro-voiced/narration.json",
+      "sha256": "185a78fcf5e1c3bce43dea942168714ba08b86394cf5a464c351537d87c51284",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-intro-voiced/plan.json",
+      "sha256": "5e634fcfe62c4c0e4edfefe93ec059052cc10a836d36423aa481f86bba57243e",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-visual/README.md",
+      "sha256": "bc13d196c4b874dbd4f8b998d94e96e80bcf277335722f1bb975d4e50d200db5",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-visual/narration-draft-v001.json",
+      "sha256": "7e2aae659cdfc3828b56e95f22ccc45bbd343f2646934b30c90b6cb03ca71ff4",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-visual/native-clock-contract.json",
+      "sha256": "3601e4b7f45de6cf02870fab155a9e2cb4b161796e2fc567643bdf97132da020",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/fixtures/derivative-visual/plan.json",
+      "sha256": "e8b4d615324ef9128365568ab0e37f895fae50f1026bd7d2fe40df8c0c8fd4ce",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/fixtures/derivative"
+    },
+    {
+      "path": "tests/test_chapter_package.py",
+      "sha256": "733b24033b80cfb5001d01e91f8176e0a462e780862a9a2ced707d523eff8889",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_chapter"
+    },
+    {
+      "path": "tests/test_chapter_package_clock.py",
+      "sha256": "d736e6493a5c3b05748bd4232e46db1ca4e16b84e981ea851cb1a58e28095d23",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_chapter"
+    },
+    {
+      "path": "tests/test_chapter_workflow.py",
+      "sha256": "8c3faba7451c5550f87dade75e61999371f75468c8d4973c399a5d49b24f02d7",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_chapter"
+    },
+    {
+      "path": "tests/test_derivative_ch02_basics.py",
+      "sha256": "b4a0cc9dfa9bd88d9b5d2996e8221e581ad5a9ca1e16fe36bd725e08687fdf9a",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch02_basics_v002.py",
+      "sha256": "50232964bc0ad62a0919ec92c8b097654ee6122be9e7f3654cd9d115b8509c11",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch02_basics_v004.py",
+      "sha256": "93bd725fea72db9ce98fa9688c108910213886951faed57bb7df7eb526ff7c50",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch02_basics_v005.py",
+      "sha256": "53d1e03b659a412e6ac70fa53126aa5bc30bd9cf1bec37558f96f26d0f25ad5d",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch02_traceable.py",
+      "sha256": "119868b36d2bfaa2f7ed7cfa490ec5a4bc700b8e3fb6df14af0751ef488c1387",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch02_traceable_v010.py",
+      "sha256": "fb2ab34554c66525aad0fe69b5b0de0b5b532163973f7171b5280e59f1fe46f9",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch02_traceable_v011.py",
+      "sha256": "0c4a6da2d4dd165b2ee3b43310494f83b82e8c734c9b53f8b72451971d5b183e",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch02_traceable_v012.py",
+      "sha256": "3c4e491531cde90ce90a54b573b855fc02584499442d0af60a305cdd14f957af",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch03_inventory_v005.py",
+      "sha256": "48509923548cb5939e42829d437aadb3c239e085745cfff9a47b3165e799f490",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch03_inventory_v006.py",
+      "sha256": "7379aea77291ceacaa3d05b0c27096e6d50777ab7ebbb1f12ed7dccee9d1d26d",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch03_rules.py",
+      "sha256": "5c5686b5dfb1a9a486ffbde77de592bf4e66fe4e4d237eacdf648eaa51bc847f",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch03_rules_v004.py",
+      "sha256": "c2c383e2a8e86a3bedb57d6e4706f2695d308882b8f67ac790c8ca6069a85653",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch03_traceable.py",
+      "sha256": "b2e8479ca2975898048a53d0bcd406da54b9a4c1aa96a92013b6afd7754cd62a",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch03_traceable_v010.py",
+      "sha256": "4f18f0c939e7f4133888c22bc9ef67395a7c3d59530d8dacbdc3bbeb70414f19",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch03_traceable_v011.py",
+      "sha256": "cce3442f8fe2b015945b826aa17e67374630dd43a2a6e5b71c88c560d4181584",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch04_chain.py",
+      "sha256": "df8d5a911aa1323e443dc9c88511c2179f7e0982fdaa86aa7e0c9fcdb3b2af0b",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch04_chain_v003.py",
+      "sha256": "f3dcb5678150e6989435b43e8c116bcc652f3904ead48be9cdcb611c04c8b90c",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch04_chain_v004.py",
+      "sha256": "4b1f6e43b53d2cdc475fa07215f7471770c6c29b731428c5ed5fc1f514219e10",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch04_chain_v005.py",
+      "sha256": "9d494ba2415b86fa2eac281566f6d0bc80c10f3a5f3d3e12be24a1ae8a2a864a",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch04_traceable.py",
+      "sha256": "d2453ce53001f3eea4cc545bc895fcdc71ead22c7a780e06955f019140018974",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch04_traceable_v007.py",
+      "sha256": "b7aaf8f50db917d9a3d7132ac98477e7731cebdc16fdc2a9b6837fc56701953f",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch04_traceable_v008.py",
+      "sha256": "8c3a381aab573d1edd204c93002cd58ef2c5ae66195234736c6f5ff67b89ef1d",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch04_traceable_v009.py",
+      "sha256": "8a3f4cbfdefee332dfdc4f071343b12198ad569c8134a62f0b7615c6eb80f136",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch04_traceable_v010.py",
+      "sha256": "761c6653589e7c39fa9e6f66890437934433b63142376c22a092cea755260e95",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch04_traceable_v011.py",
+      "sha256": "a37b4c66338e67567bec1bf72c4576fc72c0a6e4e80fcaf11f9f4e9b3369078b",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch04_traceable_v012.py",
+      "sha256": "1b3eeafe965313fda2c8da5eb939b58c1094aa0d9b80f4ead05dc43221fd0385",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch04_traceable_v013.py",
+      "sha256": "d5a692f70b1753ae9f1ed113ad0f480633f9a349945b8c8dd8cea2299a127179",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch05_monotonicity.py",
+      "sha256": "87ea9c70bc8c30eed3b41c87a648a121267f8c478bd3bf8c98bea52e17d3ff8f",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch05_monotonicity_v002.py",
+      "sha256": "2d9bd4a998527e8038842a93e7560b69a27cf55506a6945a1b5cfabb33153ca3",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch05_monotonicity_v004.py",
+      "sha256": "fd40f582714aca6ef249a1c068ae51414f44e630b56b569812907b9105ca72b1",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch05_traceable.py",
+      "sha256": "9f14c32ddc373cd744255b14fc878a1fc0699ebf81b4103cfee2122179c30e32",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch05_traceable_v006.py",
+      "sha256": "db0aae0cd1585e63ad92d5f9944b610729262f89889e237afeaaa8da1bee321d",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch06_extrema.py",
+      "sha256": "0fe3428198ddcb7ec968eda2e6e1ff03790c56a59a847406b01cce36d0e5b519",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch06_extrema_v003.py",
+      "sha256": "e02f6cb7be7cb2cf199888c55c08db8630fcb4942fec83a4a718846ac4850b90",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch06_extrema_v004.py",
+      "sha256": "d3eefa07d9690b86ecd185f06803187b11251ca1c275cbf2786953fceb9473bf",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch06_traceable.py",
+      "sha256": "82c48330a4337c793952c3d30eda6dab00c8e8c34ebb04adb99dddc6767caeb3",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch06_traceable_v006.py",
+      "sha256": "d79f9ae5c9e717b3b7e5bba1794069a2e4ede8eef9e737089546452f85502392",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch06_traceable_v007.py",
+      "sha256": "13822ddf652f5b5b08dda5bcf6e6faae20807ac15972770432564bc56f0393c2",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch07_extremes.py",
+      "sha256": "df375d9d343b352acdd940698761448edb87a6897902b7c440e5b28eb36c0371",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch07_extremes_v003.py",
+      "sha256": "dde55316e9c4e19c126bc43816146a7958de8312ff92bf5994eb6d3fa7ab2e96",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch07_extremes_v004.py",
+      "sha256": "fd2062a05742f25ccde239b13c06538a43fa06a50f173dababed091e02f86553",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch07_traceable.py",
+      "sha256": "f8739c4cf23d3ebf5bf2058493bc61433488f22e47298933654701de590cb448",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch07_traceable_v006.py",
+      "sha256": "b593c174568bfe28049118c914b5424507eff613db947b47b12c1778e7353b37",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch07_traceable_v007.py",
+      "sha256": "129e5db0d9d167e749e93967864f976f8ae0d3a637a57767539db6e193e9d82d",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch08_optimization.py",
+      "sha256": "aae4d6f1e3c11ace0216199b4fba765c303654421678026785288c91308edff0",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch08_optimization_v003.py",
+      "sha256": "49724da50f391c9a55bb287108c07fdb0ba70192f11052e7baa17207e5c30cef",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch08_optimization_v004.py",
+      "sha256": "76d4c45b8142b4e8f9481ed5335c1f493c2ba296ed6988b4ee6e2d05c86a30e5",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch08_traceable.py",
+      "sha256": "fa59196ada5cc89153bef94f8cd4a73727fd54fe28b5f358f8dfefd17aaec875",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_ch08_traceable_v009.py",
+      "sha256": "52a9ff830312866a0d30ffbb4bca65531e52cb241e30f85f88f67d661fbe1df4",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_intro_audio_aligned.py",
+      "sha256": "217c2a60d2a2428608771f51c2ca95a481dca787c82eaef9d7adeb6eb0b4f36a",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_intro_clean_motion.py",
+      "sha256": "53eea4228c178e94c120b43263e4aaf97abb61f15f587eb14784c981a08794ca",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_intro_delivery.py",
+      "sha256": "79c6fc437b701e657e99a5df69cb404e8c0d2469777c656c4a06a0615503f50a",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_intro_final.py",
+      "sha256": "2ec68418d405034cfbf34b871c7333e643c7eac375b485b7eb624ea8340c504f",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_intro_refined.py",
+      "sha256": "2992ffc2185082293d758421bb725290dbacfc82914b31f54eb3f04b19e14d66",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_intro_routed_motion.py",
+      "sha256": "d22b3923d8c6874f28125bff8cfcc5718ce5392bbbe6a41fa814e269622fa6e1",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_intro_traceable_motion.py",
+      "sha256": "033984c180dff64c0678e14dd8fe0c4b472e0c6bbfef0faf8536a31c407f0bf7",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_intro_traceable_motion_v010.py",
+      "sha256": "1f0611bd9ec42e45b9485fd8c5ced56dec390deaf686650880067496ff8dad23",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_intro_visual.py",
+      "sha256": "6fce8fcb5a92abf1a2e919fe37b30480efd974702d64f31574a84702001768dd",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_intro_voiced.py",
+      "sha256": "401e202e7c1e2d09dcb71e0976df7af3e4aa4319bc6719fc72f930d23df80625",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_derivative_visual.py",
+      "sha256": "8b30344f8dc6023dde867dc8d027bb8e972a6af4a81b56def52bf54d4db0bbb6",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_derivative"
+    },
+    {
+      "path": "tests/test_traceable_film.py",
+      "sha256": "5575dfc7368eb1d33a12f3efb77920df184ef5f9f8a905b28d14a903f7d4610c",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_traceable"
+    },
+    {
+      "path": "tests/test_traceable_film_v2.py",
+      "sha256": "df09627495e8c06bcddd5d634708b798c8f53fbf581877dd692d9e325fed81a0",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_traceable"
+    },
+    {
+      "path": "tests/test_traceable_film_v3.py",
+      "sha256": "ec78ce6cbd5e85ee09cbcc72bc46c1b695d17e28b50399578716301a30ca4976",
+      "status": "active_frozen_not_moved",
+      "protection": "tests/test_traceable"
+    },
+    {
+      "path": "docs/数学讲稿口述引导.md",
+      "sha256": "e93fe2dd4d02a1743ed6079151a299f02c54742963b59fb039fc921840925822",
+      "status": "active_frozen_not_moved"
+    },
+    {
+      "path": "docs/course-unit-workflow.md",
+      "sha256": "4b2f4cf5c09ee58b549ec1a4743aa9e9595570d80152b5500d92bae1ea6d176f",
+      "status": "active_frozen_not_moved"
+    },
+    {
+      "path": "docs/content-regression.md",
+      "sha256": "370cc001a99f293b85b842b5c22986bf83b1d883d4c2659d31f70c7382d30e35",
+      "status": "active_frozen_not_moved"
+    },
+    {
+      "path": "docs/formula-motion.md",
+      "sha256": "f5c93aa6a97ca28d1121044d77debcdb94fc6ff119097ef2171ee6df683eff15",
+      "status": "active_frozen_not_moved"
+    },
+    {
+      "path": "docs/formula-continuity.md",
+      "sha256": "ce13136847b41c8e5b639dd928d1201730af7b715ef118f76364535ab244541b",
+      "status": "active_frozen_not_moved"
+    },
+    {
+      "path": "docs/formula-continuity-v2.md",
+      "sha256": "ad0a8e4c82a4cfa93b743455b81cd6f0e56db3563301e730effb331a93ccff13",
+      "status": "active_frozen_not_moved"
+    },
+    {
+      "path": "docs/formula-continuity-v3.md",
+      "sha256": "d850608f6b231e2ca4dcef0be78833cd063945db705c5bd4c984b2ad86680571",
+      "status": "active_frozen_not_moved"
+    },
+    {
+      "path": "docs/公式动画创作引导.md",
+      "sha256": "ad4a3e72cbf2ea24414d4bd2c0d2e13760b18f79694aa9dc3758da40e59f4d12",
+      "status": "active_frozen_not_moved"
+    }
+  ],
+  "requires_lead_decision": [
+    "Release individual old versions and every native consumer before versioned import/path migration",
+    "Retain all audio, render, baseline and stage receipts at native paths"
+  ],
+  "local_private_not_opened_or_moved": [
+    ".env",
+    ".claude/settings.local.json",
+    "manimgl_env/"
+  ],
+  "local_scope_note": "Seven approved local historical roots have been renamed; current private configuration/environment remains outside migration scope"
+}

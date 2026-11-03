@@ -1,0 +1,154 @@
+{
+  "duration_seconds": 194,
+  "kind": "authored_handoff_inventory_not_actual_render_evidence",
+  "cues": [
+    {
+      "id": "opening",
+      "duration": 18,
+      "marks": [
+        "launch_conditions_visible",
+        "first_equal_height_visible",
+        "first_simultaneous_landing",
+        "first_ranges_visible"
+      ]
+    },
+    {
+      "id": "vertical",
+      "duration": 20,
+      "marks": [
+        "equal_gravity_visible",
+        "vertical_projections_coincide",
+        "shared_vertical_motion_complete"
+      ]
+    },
+    {
+      "id": "recombine",
+      "duration": 22,
+      "marks": [
+        "position_decomposition_ready",
+        "slice_025_ready",
+        "slice_050_ready",
+        "slice_075_ready",
+        "slice_100_ready",
+        "shared_time_slices_ready"
+      ]
+    },
+    {
+      "id": "landing",
+      "duration": 20,
+      "marks": [
+        "vertical_equation_linked",
+        "ground_condition_applied",
+        "term_relocated",
+        "height_doubled",
+        "square_time_isolated",
+        "landing_time_derived"
+      ]
+    },
+    {
+      "id": "horizontal",
+      "duration": 16,
+      "marks": [
+        "horizontal_projections_landed",
+        "range_products_visible",
+        "double_range_measured"
+      ]
+    },
+    {
+      "id": "height_steps",
+      "duration": 24,
+      "marks": [
+        "upward_velocity_scale_ready",
+        "first_second_ready",
+        "second_second_ready",
+        "unequal_second_drops_compared"
+      ]
+    },
+    {
+      "id": "height",
+      "duration": 48,
+      "marks": [
+        "height_prediction_ready",
+        "low_ball_landed_high_ball_flying",
+        "high_ball_landed",
+        "both_landings_full_size_held",
+        "height_substitution_ready",
+        "root_split_ready",
+        "root_four_evaluated_ready",
+        "original_time_identified_ready",
+        "range_time_substitution_ready",
+        "range_factor_extracted_ready",
+        "original_range_identified_ready",
+        "height_scaling_verified"
+      ]
+    },
+    {
+      "id": "transfer",
+      "duration": 14,
+      "marks": [
+        "ninefold_question_ready",
+        "prediction_pause_started",
+        "ninefold_answer_ready"
+      ]
+    },
+    {
+      "id": "conclusion",
+      "duration": 12,
+      "marks": [
+        "fixed_height_relation_highlighted",
+        "height_relation_highlighted",
+        "final_relations_visible"
+      ]
+    }
+  ],
+  "focus_ids": [
+    "launch_question",
+    "same_height_motion",
+    "same_height_result",
+    "shared_vertical_conditions",
+    "vertical_equations",
+    "equal_vertical_result",
+    "position_decomposition",
+    "shared_time_slices",
+    "vertical_position_law",
+    "landing_algebra",
+    "positive_landing_time",
+    "range_products",
+    "double_range_result",
+    "velocity_growth",
+    "first_second",
+    "second_velocity_growth",
+    "second_second",
+    "height_prediction",
+    "low_landing_observation",
+    "both_landing_observation",
+    "height_scaling_chain",
+    "height_substitution",
+    "root_split",
+    "root_four_evaluated",
+    "original_time_identified",
+    "range_time_substitution",
+    "range_factor_extracted",
+    "original_range_identified",
+    "height_scaling_result",
+    "ninefold_prediction",
+    "prediction_space",
+    "ninefold_check",
+    "fixed_height_summary",
+    "height_summary",
+    "combined_range_result"
+  ],
+  "evidence_files": [
+    "visual-events.json",
+    "focus-events.json",
+    "full-formula-motion.json",
+    "motion-samples.json"
+  ],
+  "writer": "supervised author",
+  "consumers": [
+    "lead renderer and reviewers",
+    "offline tests"
+  ],
+  "lifecycle": "This source/plan handoff",
+  "invalidation": "Any source, plan, cue, focus, mark or timing change"
+}

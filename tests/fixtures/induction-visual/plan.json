@@ -1,0 +1,565 @@
+{
+  "schema_version": 1,
+  "project_id": "induction-energy-20261028",
+  "title": "电磁感应：从电荷分离到机械能变电能",
+  "scene": "examples/induction_visual.py",
+  "scene_class": "InductionLesson",
+  "workflow_profile": "configs/visual-first-workflow-v3.1.json",
+  "revision_mode": "fresh",
+  "audience": "学过洛伦兹力与欧姆定律的高中生",
+  "prerequisites": [
+    "电荷正负与电场力方向",
+    "qvB（相互垂直时）",
+    "矩形面积",
+    "欧姆定律和焦耳功率"
+  ],
+  "target_inference": "同一运动过程经电荷分离、磁通变化和能量守恒得到一致的Blv；区分方向变化与功率平方增长。",
+  "likely_misconception": "只要在磁场中就有感应电流；楞次定律总是反对外磁场；把开路力平衡和闭路电流混为一谈；认为功率随速度线性。",
+  "facts": {
+    "geometry": "Rod vertical, velocity horizontal, uniform B into page; outward normal and CCW emf/current positive",
+    "open_rod": "Electrons pushed downward by magnetic force; top positive, bottom negative; separated-charge field downward, electric force on electrons upward. Open steady force magnitudes balance.",
+    "closed_loop": "Resistance concentrated in stationary R; rod/rail resistance and self-inductance neglected, prescribed constant velocity in each case.",
+    "B_T": 0.5,
+    "length_m": 2,
+    "resistance_ohm": 5,
+    "equations": [
+      "Phi_B=-B*l*x",
+      "emf=-DeltaPhi_B/Deltat=B*l*v for constant v",
+      "I=emf/R",
+      "F_magnetic_x=-B*l*I",
+      "P_external=B*l*I*v=emf*I=I^2*R=B^2*l^2*v^2/R"
+    ],
+    "cases": [
+      {
+        "v_m_s": 0,
+        "emf_V": 0,
+        "I_A": 0,
+        "F_external_N": 0,
+        "P_W": 0
+      },
+      {
+        "v_m_s": 3,
+        "emf_V": 3,
+        "I_A": 0.6,
+        "F_external_N": 0.6,
+        "P_W": 1.8
+      },
+      {
+        "v_m_s": -3,
+        "emf_V": -3,
+        "I_A": -0.6,
+        "F_external_N": -0.6,
+        "P_W": 1.8
+      },
+      {
+        "v_m_s": 6,
+        "emf_V": 6,
+        "I_A": 1.2,
+        "F_external_N": 1.2,
+        "P_W": 7.2
+      }
+    ]
+  },
+  "sources": [
+    "examples/induction_visual.py",
+    "src/manimind/components/catalog.py",
+    "src/manimind/postproduce/pilot.py",
+    "src/manimind/postproduce/preset_audition.py",
+    "manimgl.yml"
+  ],
+  "references": [
+    {
+      "title": "OpenStax College Physics 23.3 Motional Emf",
+      "url": "https://openstax.org/books/college-physics/pages/23-3-motional-emf"
+    }
+  ],
+  "duration": 240,
+  "fps": 30,
+  "cue_boundaries": [
+    0,
+    20,
+    58,
+    88,
+    138,
+    168,
+    208,
+    240
+  ],
+  "cues": [
+    {
+      "id": "opening",
+      "duration": 20,
+      "heading": "磁场不变，电流为什么变了？",
+      "visual": "同一导轨回路：停下、推动、再停下，磁场保持不变。",
+      "learning_purpose": "区分有磁场与磁通变化。",
+      "anchors": [
+        {
+          "id": "stationary_loop_visible",
+          "meaning": "stationary loop visible"
+        },
+        {
+          "id": "moving_current_visible",
+          "meaning": "moving current visible"
+        },
+        {
+          "id": "stopped_current_zero",
+          "meaning": "stopped current zero"
+        }
+      ]
+    },
+    {
+      "id": "separation",
+      "duration": 38,
+      "heading": "先看开路：电荷怎样分开",
+      "visual": "负电子受向下磁场力，端点电荷建立电场，电场力与磁场力平衡。",
+      "learning_purpose": "把极性和微观方向联系起来，明确这是开路稳态。",
+      "anchors": [
+        {
+          "id": "open_rod_visible",
+          "meaning": "open rod visible"
+        },
+        {
+          "id": "charge_separation_visible",
+          "meaning": "charge separation visible"
+        },
+        {
+          "id": "electric_restoring_force_visible",
+          "meaning": "electric restoring force visible"
+        },
+        {
+          "id": "open_force_balance_visible",
+          "meaning": "open force balance visible"
+        }
+      ]
+    },
+    {
+      "id": "voltage",
+      "duration": 30,
+      "heading": "电荷分离怎样变成两端电压",
+      "visual": "从力的大小平衡到E_s=vB，再用U=E_s l得到开路端电压。",
+      "learning_purpose": "保留约去电荷量、代入场强和单位。",
+      "anchors": [
+        {
+          "id": "force_balance_algebra",
+          "meaning": "force balance algebra"
+        },
+        {
+          "id": "electric_field_relation_visible",
+          "meaning": "electric field relation visible"
+        },
+        {
+          "id": "voltage_length_relation",
+          "meaning": "voltage length relation"
+        },
+        {
+          "id": "open_voltage_result",
+          "meaning": "open voltage result"
+        }
+      ]
+    },
+    {
+      "id": "flux",
+      "duration": 50,
+      "heading": "闭合回路：同一个结果，另一条路径",
+      "visual": "导体棒扫出矩形面积，带符号磁通变化代入法拉第定律。",
+      "learning_purpose": "看到面积变化率与Blv之间的联系。",
+      "anchors": [
+        {
+          "id": "closed_loop_visible",
+          "meaning": "closed loop visible"
+        },
+        {
+          "id": "swept_area_visible",
+          "meaning": "swept area visible"
+        },
+        {
+          "id": "swept_area_equation",
+          "meaning": "swept area equation"
+        },
+        {
+          "id": "signed_flux_change",
+          "meaning": "signed flux change"
+        },
+        {
+          "id": "faraday_substitution_visible",
+          "meaning": "faraday substitution visible"
+        },
+        {
+          "id": "motional_emf_visible",
+          "meaning": "motional emf visible"
+        }
+      ]
+    },
+    {
+      "id": "direction",
+      "duration": 30,
+      "heading": "电流方向，来自对变化的阻碍",
+      "visual": "右移增加入纸磁通、停止磁通不变、左移减少入纸磁通，箭头与电流正负一起更新。",
+      "learning_purpose": "楞次定律针对变化，不是反对磁场本身。",
+      "anchors": [
+        {
+          "id": "lenz_outward_visible",
+          "meaning": "lenz outward visible"
+        },
+        {
+          "id": "stationary_flux_visible",
+          "meaning": "stationary flux visible"
+        },
+        {
+          "id": "reverse_current_visible",
+          "meaning": "reverse current visible"
+        }
+      ]
+    },
+    {
+      "id": "energy",
+      "duration": 40,
+      "heading": "电能从哪里来？",
+      "visual": "显示外力与安培力相反，代入功率后连接机械输入和电阻发热。",
+      "learning_purpose": "电能来自外力做功，看到功率等式。",
+      "anchors": [
+        {
+          "id": "opposing_mechanical_forces",
+          "meaning": "opposing mechanical forces"
+        },
+        {
+          "id": "drag_force_relation",
+          "meaning": "drag force relation"
+        },
+        {
+          "id": "mechanical_power_visible",
+          "meaning": "mechanical power visible"
+        },
+        {
+          "id": "magnetic_force_power_substitution",
+          "meaning": "magnetic force power substitution"
+        },
+        {
+          "id": "energy_conservation_visible",
+          "meaning": "energy conservation visible"
+        }
+      ]
+    },
+    {
+      "id": "prediction",
+      "duration": 32,
+      "heading": "推得更快，外力功率增加多少？",
+      "visual": "用电流代入P=I²R，保留乘积/约分到速度平方，再预测速度翻倍的功率。",
+      "learning_purpose": "区分电流线性倍增与功率平方倍增。",
+      "anchors": [
+        {
+          "id": "power_substitution_ready",
+          "meaning": "power substitution ready"
+        },
+        {
+          "id": "squared_current_substitution",
+          "meaning": "squared current substitution"
+        },
+        {
+          "id": "quadratic_power_law_visible",
+          "meaning": "quadratic power law visible"
+        },
+        {
+          "id": "power_prediction_visible",
+          "meaning": "power prediction visible"
+        },
+        {
+          "id": "doubled_current_visible",
+          "meaning": "doubled current visible"
+        },
+        {
+          "id": "quadrupled_power_visible",
+          "meaning": "quadrupled power visible"
+        }
+      ]
+    }
+  ],
+  "focus_intents": [
+    {
+      "id": "stationary_question",
+      "cue": "opening",
+      "claim": "磁场一直在，电流为何变了？",
+      "kind": "deduction",
+      "visible_evidence": "Actual native focus events and real frames; annotation alone is not proof."
+    },
+    {
+      "id": "moving_loop",
+      "cue": "opening",
+      "claim": "推杆，回路有电流；停下会怎样？",
+      "kind": "deduction",
+      "visible_evidence": "Actual native focus events and real frames; annotation alone is not proof."
+    },
+    {
+      "id": "stopped_result",
+      "cue": "opening",
+      "claim": "停下，电流归零。",
+      "kind": "deduction",
+      "visible_evidence": "Actual native focus events and real frames; annotation alone is not proof."
+    },
+    {
+      "id": "open_rod_and_electron",
+      "cue": "separation",
+      "claim": "先看开路导体棒里的电子。",
+      "kind": "deduction",
+      "visible_evidence": "Actual native focus events and real frames; annotation alone is not proof."
+    },
+    {
+      "id": "electron_deflection",
+      "cue": "separation",
+      "claim": "电子受磁场力向下偏，下端多电子，上端缺电子。",
+      "kind": "deduction",
+      "visible_evidence": "Actual native focus events and real frames; annotation alone is not proof."
+    },
+    {
+      "id": "electric_balance",
+      "cue": "separation",
+      "claim": "分开的电荷建立向下的电场，电场力把电子往上拉。",
+      "kind": "deduction",
+      "visible_evidence": "Actual native focus events and real frames; annotation alone is not proof."
+    },
+    {
+      "id": "open_force_balance",
+      "cue": "separation",
+      "claim": "达到稳态时，两种力大小相等。",
+      "kind": "deduction",
+      "visible_evidence": "Actual native focus events and real frames; annotation alone is not proof."
+    },
+    {
+      "id": "force_balance_before_cancel",
+      "cue": "voltage",
+      "claim": "两种力大小相等。",
+      "kind": "deduction",
+      "visible_evidence": "Actual native focus events and real frames; annotation alone is not proof."
+    },
+    {
+      "id": "field_relation",
+      "cue": "voltage",
+      "claim": "两边约去电荷量。",
+      "kind": "deduction",
+      "visible_evidence": "Actual native focus events and real frames; annotation alone is not proof."
+    },
+    {
+      "id": "voltage_from_field",
+      "cue": "voltage",
+      "claim": "电场强度乘棒长，就是两端电压。",
+      "kind": "deduction",
+      "visible_evidence": "Actual native focus events and real frames; annotation alone is not proof."
+    },
+    {
+      "id": "open_voltage_result_hold",
+      "cue": "voltage",
+      "claim": "代入电场强度，得到棒的开路电压。",
+      "kind": "deduction",
+      "visible_evidence": "Actual native focus events and real frames; annotation alone is not proof."
+    },
+    {
+      "id": "closed_current",
+      "cue": "flux",
+      "claim": "接通回路，两端电压推动电流。",
+      "kind": "deduction",
+      "visible_evidence": "Actual native focus events and real frames; annotation alone is not proof."
+    },
+    {
+      "id": "swept_area_motion",
+      "cue": "flux",
+      "claim": "棒走过一段距离，扫出一个长方形。",
+      "kind": "deduction",
+      "visible_evidence": "Actual native focus events and real frames; annotation alone is not proof."
+    },
+    {
+      "id": "swept_area_relation",
+      "cue": "flux",
+      "claim": "新增面积是棒长乘这段位移。",
+      "kind": "deduction",
+      "visible_evidence": "Actual native focus events and real frames; annotation alone is not proof."
+    },
+    {
+      "id": "signed_flux_relation",
+      "cue": "flux",
+      "claim": "磁场向纸内，磁通变化取负号。",
+      "kind": "deduction",
+      "visible_evidence": "Actual native focus events and real frames; annotation alone is not proof."
+    },
+    {
+      "id": "faraday_substitution",
+      "cue": "flux",
+      "claim": "电动势等于磁通变化率的负值。",
+      "kind": "deduction",
+      "visible_evidence": "Actual native focus events and real frames; annotation alone is not proof."
+    },
+    {
+      "id": "motional_emf_relation",
+      "cue": "flux",
+      "claim": "位移除以时间就是速度，又得到相同的电动势。",
+      "kind": "deduction",
+      "visible_evidence": "Actual native focus events and real frames; annotation alone is not proof."
+    },
+    {
+      "id": "lenz_increasing",
+      "cue": "direction",
+      "claim": "入纸磁通增加，感应磁场朝纸外，电流逆时针。",
+      "kind": "deduction",
+      "visible_evidence": "Actual native focus events and real frames; annotation alone is not proof."
+    },
+    {
+      "id": "stationary_flux",
+      "cue": "direction",
+      "claim": "停住后，磁通不再变，电流归零。",
+      "kind": "deduction",
+      "visible_evidence": "Actual native focus events and real frames; annotation alone is not proof."
+    },
+    {
+      "id": "lenz_decreasing",
+      "cue": "direction",
+      "claim": "反向拉，入纸磁通减少，感应磁场与电流都反向。",
+      "kind": "deduction",
+      "visible_evidence": "Actual native focus events and real frames; annotation alone is not proof."
+    },
+    {
+      "id": "mechanical_energy_source",
+      "cue": "energy",
+      "claim": "维持匀速推动，需要外力克服向左的安培力。",
+      "kind": "deduction",
+      "visible_evidence": "Actual native focus events and real frames; annotation alone is not proof."
+    },
+    {
+      "id": "force_relation",
+      "cue": "energy",
+      "claim": "电流越大，棒受到的安培力也越大。",
+      "kind": "deduction",
+      "visible_evidence": "Actual native focus events and real frames; annotation alone is not proof."
+    },
+    {
+      "id": "power_from_work",
+      "cue": "energy",
+      "claim": "外力乘运动速度，给出输入功率。",
+      "kind": "deduction",
+      "visible_evidence": "Actual native focus events and real frames; annotation alone is not proof."
+    },
+    {
+      "id": "power_product",
+      "cue": "energy",
+      "claim": "把安培力代入。",
+      "kind": "deduction",
+      "visible_evidence": "Actual native focus events and real frames; annotation alone is not proof."
+    },
+    {
+      "id": "mechanical_to_heat",
+      "cue": "energy",
+      "claim": "这份机械功率，恰好变成电阻的发热功率。",
+      "kind": "deduction",
+      "visible_evidence": "Actual native focus events and real frames; annotation alone is not proof."
+    },
+    {
+      "id": "power_current_relation",
+      "cue": "prediction",
+      "claim": "功率是电流平方乘电阻。",
+      "kind": "deduction",
+      "visible_evidence": "Actual native focus events and real frames; annotation alone is not proof."
+    },
+    {
+      "id": "squared_current_substitution",
+      "cue": "prediction",
+      "claim": "把电流式代进去。",
+      "kind": "deduction",
+      "visible_evidence": "Actual native focus events and real frames; annotation alone is not proof."
+    },
+    {
+      "id": "quadratic_power_law",
+      "cue": "prediction",
+      "claim": "功率与速度的平方成正比。",
+      "kind": "deduction",
+      "visible_evidence": "Actual native focus events and real frames; annotation alone is not proof."
+    },
+    {
+      "id": "power_prediction",
+      "cue": "prediction",
+      "claim": "速度翻倍，功率呢？",
+      "kind": "deduction",
+      "visible_evidence": "Actual native focus events and real frames; annotation alone is not proof."
+    },
+    {
+      "id": "current_doubles",
+      "cue": "prediction",
+      "claim": "电流翻倍。",
+      "kind": "deduction",
+      "visible_evidence": "Actual native focus events and real frames; annotation alone is not proof."
+    },
+    {
+      "id": "power_scaling_result",
+      "cue": "prediction",
+      "claim": "功率四倍，七点二瓦。",
+      "kind": "deduction",
+      "visible_evidence": "Actual native focus events and real frames; annotation alone is not proof."
+    }
+  ],
+  "review_times": [
+    2,
+    10,
+    17.8,
+    22.5,
+    31,
+    41,
+    50,
+    61,
+    67,
+    72,
+    80,
+    90.5,
+    99,
+    110,
+    116,
+    123,
+    130.5,
+    140,
+    148,
+    153,
+    158,
+    163,
+    170,
+    178,
+    187,
+    194,
+    201,
+    210.5,
+    216,
+    220,
+    223,
+    229,
+    232,
+    236,
+    239
+  ],
+  "state_contracts": [
+    {
+      "state": "Scene circuit geometry/current/area and live model samples",
+      "writer": "InductionLesson",
+      "consumers": [
+        "render",
+        "independent reviewer",
+        "native tests"
+      ],
+      "lifecycle": "Single actual scene execution",
+      "invalidation": "Source, plan, parameters or media change"
+    },
+    {
+      "state": "Scientific model summary and references",
+      "writer": "Supervised course coordinator",
+      "consumers": [
+        "author",
+        "science reviewer",
+        "narrator"
+      ],
+      "lifecycle": "This course topic/version",
+      "invalidation": "Assumption, sign convention or content change"
+    }
+  ],
+  "writer": "Supervised physics author/coordinator",
+  "consumers": [
+    "visual renderer",
+    "independent reviewer",
+    "post-visual narrator"
+  ],
+  "lifecycle": "This fresh course design",
+  "invalidation": "Scene, profile, science or timing change"
+}

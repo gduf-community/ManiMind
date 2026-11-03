@@ -22,21 +22,21 @@ def build_plan_user_message(
         "你是一个数学科普项目的协调 Agent。请基于研究总结和规划建议，生成讲解脚本和分镜表。",
         "",
         "## 镜头清单",
-        json.dumps(segments, ensure_ascii=False, indent=2),
+        json.dumps(default=str, obj=segments, ensure_ascii=False, indent=2),
     ]
 
     if research_summary:
         parts.extend([
             "",
             "## 研究总结",
-            json.dumps(research_summary, ensure_ascii=False, indent=2),
+            json.dumps(default=str, obj=research_summary, ensure_ascii=False, indent=2),
         ])
 
     if planner_suggestions:
         parts.extend([
             "",
             "## 规划建议",
-            json.dumps(planner_suggestions, ensure_ascii=False, indent=2),
+            json.dumps(default=str, obj=planner_suggestions, ensure_ascii=False, indent=2),
         ])
 
     parts.extend([
@@ -69,14 +69,14 @@ def build_dispatch_user_message(
         parts.extend([
             "",
             "## 分镜主表",
-            json.dumps(storyboard, ensure_ascii=False, indent=2),
+            json.dumps(default=str, obj=storyboard, ensure_ascii=False, indent=2),
         ])
 
     if segments:
         parts.extend([
             "",
             "## 原始镜头定义",
-            json.dumps(segments, ensure_ascii=False, indent=2),
+            json.dumps(default=str, obj=segments, ensure_ascii=False, indent=2),
         ])
 
     parts.extend([

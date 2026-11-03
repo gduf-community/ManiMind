@@ -1,0 +1,29 @@
+{
+  "status": "not_reviewed",
+  "writer": "01a19ab5-b2d3-7003-a784-edeeaecdbc23",
+  "consumers": [
+    "main coordinator",
+    "independent blind visual reviewer",
+    "separate content regression reviewer",
+    "audio timing reviewer"
+  ],
+  "lifecycle": "Chapter 03 v004 author candidate only; no review authority",
+  "invalidation": "Bound source, plan, baseline, narration, original speech/receipts or verified timing changes invalidate derived data",
+  "baseline_sha256": "8f457f542a058e7707b5779e92479b477c323f7666b5c16dfd906102d6909706",
+  "sources": [
+    {
+      "path": "examples/derivative_ch03_rules.py",
+      "sha256": "ae394669b4012d44968c4538dbb1ce42ad9b6181fe510430529cd88e0de7557c"
+    },
+    {
+      "path": "examples/derivative_chapter_shared.py",
+      "sha256": "ed9bb7ece0f273c72fc4db744200e7a3a96e51ad54e258861305140e9d0c17ae"
+    },
+    {
+      "path": "tests/lesson_native_harness.py",
+      "sha256": "369758767cb20889a637c03eed9ffba17e97e618972eb6c9667e6dac84fc4d18"
+    }
+  ],
+  "timings_sha256": "dd9f6a1fbaafef365bc20b857555d43626df8788755bc1a3b093b2f237f7f5e0",
+  "evidence_sha256": "6016cca6761fee78bdb70d937e93fc5286706dbc9da273fd48fc7094074e6ff3"
+}

@@ -1,0 +1,81 @@
+{
+  "artifact_type": "test_fixture",
+  "fixture_version": 1,
+  "status": "test_only_not_production_or_approved",
+  "writer": "01a199e9-7432-7052-96f7-6bd6eb2e63bb",
+  "consumers": [
+    "isolated chapter tests"
+  ],
+  "lifecycle": "Versioned v001 deterministic test input",
+  "invalidation": "Intentional design/model change requires explicit fixture revision",
+  "expected": {
+    "sheet_side_cm": 12,
+    "original": {
+      "x_cm": 2,
+      "dimensions_cm": [
+        8,
+        8,
+        2
+      ],
+      "volume_cm3": 128
+    },
+    "constrained": {
+      "minimum_height_cm": 3,
+      "x_cm": 3,
+      "dimensions_cm": [
+        6,
+        6,
+        3
+      ],
+      "volume_cm3": 108
+    },
+    "samples": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        100
+      ],
+      [
+        2,
+        128
+      ],
+      [
+        3,
+        108
+      ],
+      [
+        4,
+        64
+      ],
+      [
+        5,
+        20
+      ],
+      [
+        6,
+        0
+      ]
+    ],
+    "derivative_samples": [
+      [
+        1,
+        60
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        -36
+      ],
+      [
+        6,
+        0
+      ]
+    ]
+  }
+}

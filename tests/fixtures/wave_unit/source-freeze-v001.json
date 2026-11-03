@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "unit_id": "wave-unit-20261028",
+  "frozen_at_utc": "2026-10-28T08:23:24.169855+00:00",
+  "author_agent": "01a1817c-7136-79a3-9ca8-6b508ab35228",
+  "writer": "01a1817c-7136-79a3-9ca8-6b508ab35228",
+  "status": "frozen_for_lead_silent_render_not_reviewed",
+  "ready_for_silent_render": true,
+  "shared_scene": "examples/wave_unit_visual.py",
+  "shared_model": "examples/wave_unit_model.py",
+  "lessons": [
+    {
+      "project_id": "wave-formation-20261028",
+      "scene_class": "WaveFormationLesson",
+      "duration": 152,
+      "plan": "runtime/projects/wave-formation-20261028/plan.json",
+      "lesson_context": "runtime/projects/wave-formation-20261028/context-v003.json",
+      "narration_draft": "runtime/projects/wave-formation-20261028/narration-draft-v001.json"
+    },
+    {
+      "project_id": "wave-reading-20261028",
+      "scene_class": "WaveReadingLesson",
+      "duration": 182,
+      "plan": "runtime/projects/wave-reading-20261028/plan.json",
+      "lesson_context": "runtime/projects/wave-reading-20261028/context-v003.json",
+      "narration_draft": "runtime/projects/wave-reading-20261028/narration-draft-v001.json"
+    },
+    {
+      "project_id": "wave-superposition-20261028",
+      "scene_class": "WaveSuperpositionLesson",
+      "duration": 152,
+      "plan": "runtime/projects/wave-superposition-20261028/plan.json",
+      "lesson_context": "runtime/projects/wave-superposition-20261028/context-v003.json",
+      "narration_draft": "runtime/projects/wave-superposition-20261028/narration-draft-v001.json"
+    }
+  ],
+  "visual_input_sha256": {
+    "configs/visual-first-workflow-v4-unit.json": "ae00dd9f63190a29f4745c54bfd83d2ae36468d459f456509907edefa095adfd",
+    "docs/curricula/high-school-physics-v0.1.csv": "267c2219d83b8fc8cfd4e3bf845b4f2a4f035ca0e097cc6950601ba30306948b",
+    "examples/wave_unit_model.py": "a6752cb1db379c5e6be24f6421e52128e0242a649a572b18d529651f79c25fde",
+    "examples/wave_unit_visual.py": "d9238a31a74b849bead2e59876243705f129103296c8b41d18d0d1f91269544d",
+    "runtime/projects/wave-formation-20261028/context-v003.json": "ace6bca6cc9ba05529b3fa97c93c9d3205fd6d96d7a89b915a3eb2a156b6f88e",
+    "runtime/projects/wave-formation-20261028/plan.json": "e33f6d2615617412d8b40b3790e06a67af0f8090e7feabada09e6926c4f90187",
+    "runtime/projects/wave-reading-20261028/context-v003.json": "1556efcbeb01c427d54d19f55b8cf3b816df367db32916051671e7e8adf239ae",
+    "runtime/projects/wave-reading-20261028/plan.json": "6056ca82e821c9c610922d53530f69780440fcb1387db14bb8f5f2b19c5f26a7",
+    "runtime/projects/wave-superposition-20261028/context-v003.json": "6335d623a9257c753fdc0d0d04f6e4b675b0b1e567ed6477d4303403497b1961",
+    "runtime/projects/wave-superposition-20261028/plan.json": "c0f951a70b282fdf02433158dfd9077c6a606b21be490c22b0992790fdc4b44f",
+    "runtime/projects/wave-unit-20261028/scientific-brief.json": "43ef4ac26c3213b935174566c219fa0ffb828387c89c49230e97cb067236ecb6",
+    "runtime/projects/wave-unit-20261028/teaching-design.md": "0ecf0bc6f814cccf0821499359e522deb94c7eb4a49a9890c7be859989fcc260",
+    "runtime/projects/wave-unit-20261028/unit.json": "bfb02a0e9ccd5a032e8139f52c7582aa27d66827ad4f7beb1d04a64340f03443",
+    "src/manimind/components/catalog.py": "2bf2def6c94397613d247ad2cb7e4859c4116eb62c5c44755f7cf63450ec7bb0",
+    "src/manimind/components/formula_motion.py": "47c0dfcfe5e4f7801f6bee5a465e203c1795bc9a800eb53a3b91c9a72f2a4914",
+    "src/manimind/components/typography.py": "1cdcfcfb2ab675fb7b1940cb242c7c241a14932886d16b78ac5001039873ef48",
+    "src/manimind/curriculum.py": "6a51aaa5dd796a5d7d21e05988058ecb9dcffe5659cceaa961201fae2d81d26d",
+    "src/manimind/experiments/freeform_support.py": "28b37dc707e7e07b719c3f3cf18ba10c4db18ae8adda7b8f102aba7f90ca4967",
+    "src/manimind/experiments/understanding_support.py": "ab423add671dd567a2b6b07bd06207573cce802be359537f07eac447d4f5d542",
+    "src/manimind/experiments/visual_first_data.py": "27fef6125910067ffbbd58da3b527fe9d5ded9613f143e1ad3988edd8eaad4b0",
+    "src/manimind/experiments/visual_first_support.py": "fb879f1b53a195cea95a2cc4a1f1ca72b4dc0d98ed7e27f6696ae3897e110e08",
+    "src/manimind/postproduce/formula_film.py": "be0550d47b91bbe6111c7f2df2d90216fc3fd548247c1f03fd112b3c2be105be",
+    "src/manimind/postproduce/understanding_render.py": "38c5daa7d1584c0196fee92cb01b4d5c84c62cab45198414c3296c1b24cf4fd1",
+    "src/manimind/render/manim_renderer.py": "80a97ee2969b2b75c417a3cbf9f75a17e30d1999d8ca0936657d5be6d9ef22c4",
+    "src/manimind/review/semantic_focus.py": "83184519b434e65d341537ff3473157f1ce6b51629f01d029dc0eb1b4d4e9a34"
+  },
+  "narration_draft_sha256": {
+    "runtime/projects/wave-formation-20261028/narration-draft-v001.json": "069ebcd9a7f4b55ba2e032471a579707f7fcea519004a2ad7f4cb055fe722dcd",
+    "runtime/projects/wave-reading-20261028/narration-draft-v001.json": "56f11e02238f039a35381b846ca027d555bb6f81abdd39ebcabee9c743b5f17a",
+    "runtime/projects/wave-superposition-20261028/narration-draft-v001.json": "63f6677a44ab09b9c523d2d29a19f81d1d7c8c25eab526468fcd76aefe857448"
+  },
+  "verification": {
+    "latest_focused_test_count": 82,
+    "scope": "Pure model, simulated chapter clock, narration schema and current context verification; no real render, pixel or voice approval",
+    "portable_fixture_migration": "In progress outside all visual watched files"
+  },
+  "consumers": [
+    "lead renderer",
+    "independent reviewer"
+  ],
+  "lifecycle": "One shared-source handoff for all three lessons; author will not edit any bound visual file during lead rendering",
+  "invalidation": "Any bound source, model, plan, context, profile, fact, typography or runtime-file hash change invalidates this freeze; shared-source changes require coordinated rerendering, never a silent single-lesson edit",
+  "approval_boundary": "Author handoff only; independent Reviewer must differ from author_agent; no render/TTS/publication performed by author"
+}

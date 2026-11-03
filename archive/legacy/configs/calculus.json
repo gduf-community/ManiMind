@@ -1,0 +1,73 @@
+{
+  "project_id": "calculus-intro",
+  "title": "微积分的几何直觉",
+  "source_bundle": {
+    "paper_path": "inputs/papers/none.pdf",
+    "note_paths": [
+      "inputs/notes/calculus.md"
+    ],
+    "audience": "高中及大学一年级",
+    "style_refs": [
+      "先直觉后公式",
+      "偏明亮的科普视觉"
+    ]
+  },
+  "segments": [
+    {
+      "id": "seg-01",
+      "title": "什么是导数",
+      "goal": "从切线斜率理解瞬时变化率",
+      "narration": "导数不是先背公式，而是先看局部变化。以 f(x)=x^2 为例，割线斜率会随着观察窗口 h 缩小而稳定下来，最后变成某一点的切线斜率。",
+      "modality": "manim",
+      "formulas": [
+        "f(x) = x^2"
+      ],
+      "estimated_seconds": 25
+    },
+    {
+      "id": "seg-02",
+      "title": "极限思想",
+      "goal": "展示割线逼近切线的过程",
+      "narration": "极限关心的是一个过程是否稳定。我们让 h 从一变到零点五、零点二、零点零五，割线斜率一步步靠近目标值，于是变化过程被压缩成一个确定的瞬时斜率。",
+      "modality": "manim",
+      "formulas": [
+        "lim h->0 (f(x+h)-f(x))/h"
+      ],
+      "estimated_seconds": 30
+    },
+    {
+      "id": "seg-03",
+      "title": "牛顿法求零点",
+      "goal": "用切线迭代逼近函数零点",
+      "narration": "牛顿法把切线斜率变成可执行的迭代。从一个粗略猜测出发，先画出切线，再取它和 x 轴的交点作为下一次猜测；误差会在靠近零点时快速缩小。",
+      "modality": "manim",
+      "formulas": [
+        "f(x) = x^2 - 2"
+      ],
+      "estimated_seconds": 35
+    },
+    {
+      "id": "seg-04",
+      "title": "积分与面积",
+      "goal": "展示矩形累加逼近曲线下面积",
+      "narration": "积分是在做累加。我们先用宽矩形粗略估计曲线下面积，再把矩形切得更窄，锯齿误差逐渐消失；当宽度趋近零，矩形和就变成真正的积分。",
+      "modality": "manim",
+      "formulas": [
+        "f(x) = x^2",
+        "F(x) = x^3/3"
+      ],
+      "estimated_seconds": 30
+    },
+    {
+      "id": "seg-05",
+      "title": "微积分基本定理",
+      "goal": "展示导数和积分的互逆关系",
+      "narration": "微积分基本定理把两个视角接起来。面积函数 A(x) 记录从起点到 x 的累计面积；当 x 多走一个很小的 Δx，新增面积近似等于 f(x) 乘以 Δx，所以面积函数的变化率就是此刻的高度 f(x)。",
+      "modality": "manim",
+      "formulas": [
+        "d/dx integral f = f(x)"
+      ],
+      "estimated_seconds": 30
+    }
+  ]
+}

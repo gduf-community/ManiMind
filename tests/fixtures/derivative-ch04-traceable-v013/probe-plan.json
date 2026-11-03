@@ -1,0 +1,552 @@
+{
+  "schema_version": 1,
+  "project_id": "math-derivative-ch04-chain-20261102",
+  "author_agent": "01a19f6b-1725-7be3-a4d8-bf988a308b31",
+  "author_context": "01a19f6b-1725-7be3-a4d8-bf988a308b31",
+  "title": "导数04：链式法则",
+  "workflow_profile": "configs/visual-first-workflow-v4.3.1-unit.json",
+  "revision_mode": "revision",
+  "scene": "examples/derivative_ch04_traceable_v013.py",
+  "scene_class": "DerivativeChainStateProbeV013",
+  "duration": 39.5,
+  "fps": 30,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "subtitle_reserve": {
+    "bottom_px": 96,
+    "pixel_top": 984,
+    "scene_content_bottom_min": -3.1
+  },
+  "context": {
+    "status": "pending_main_unit_context_installation",
+    "owner": "main",
+    "prerequisites": [
+      "求导四则",
+      "幂函数求导",
+      "单变量导数"
+    ],
+    "next": "第05课导数符号与单调性",
+    "scope": "核心f(ax+b)及(3x-1)^4；保留(x²+1)^3作为一般链式支持；不讲多变量"
+  },
+  "narration_draft": "runtime/projects/math-derivative-ch04-chain-20261102/narration-draft-v002.json",
+  "scientific_brief": "runtime/projects/math-derivative-ch04-chain-20261102/scientific-brief-v001.json",
+  "sources": [
+    "examples/derivative_ch04_chain_v005.py",
+    "configs/visual-first-workflow-v4.2-unit.json",
+    "src/manimind/postproduce/understanding_render.py",
+    "src/manimind/postproduce/formula_film.py",
+    "src/manimind/render/manim_renderer.py",
+    "src/manimind/experiments/understanding_support.py",
+    "src/manimind/experiments/visual_first_support.py",
+    "src/manimind/experiments/visual_first_data.py",
+    "src/manimind/experiments/freeform_support.py",
+    "src/manimind/components/typography.py",
+    "src/manimind/components/formula_motion.py",
+    "src/manimind/review/semantic_focus.py",
+    "examples/derivative_chapter_shared.py",
+    "runtime/projects/math-derivative-ch04-chain-20261102/mathematical-facts-v001.json",
+    "docs/course-unit-workflow.md",
+    "runtime/projects/math-derivative-ch04-chain-20261102/context-v001.json",
+    "runtime/projects/math-derivative-chapter-20261102/unit-v001.json",
+    "docs/curricula/high-school-mathematics-v0.1.csv",
+    "src/manimind/curriculum.py",
+    "runtime/projects/math-derivative-ch04-chain-20261102/scientific-brief-v001.json",
+    "runtime/projects/math-derivative-ch04-chain-20261102/scene-draft-plan-v001.json",
+    "examples/derivative_ch04_chain.py",
+    "runtime/projects/math-derivative-ch04-chain-20261102/narration-draft-v002.json",
+    "runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch04-chain-20261102/speech-plan-v002.json",
+    "runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch04-chain-20261102/timings-v001.json",
+    "examples/derivative_ch04_chain_v003.py",
+    "runtime/projects/math-derivative-ch04-chain-20261102/scene-draft-plan-v003.json",
+    "examples/derivative_ch04_chain_v004.py",
+    "runtime/projects/math-derivative-ch04-chain-20261102/scene-draft-plan-v004.json",
+    "runtime/projects/math-derivative-ch04-chain-20261102/scene-draft-plan-v005.json",
+    "runtime/projects/math-derivative-ch04-chain-20261102/content-regression-contract-v005.json",
+    "src/manimind/review/content_regression.py",
+    "src/manimind/postproduce/traceable_film.py",
+    "src/manimind/postproduce/traceable_film_v2.py",
+    "src/manimind/postproduce/unit_film.py",
+    "docs/formula-continuity.md",
+    "docs/formula-continuity-v2.md",
+    "manimgl.yml",
+    "runtime/sessions/derivative-motion-revision-20261103/lesson04-author/prepare_v006.py",
+    "tests/test_derivative_ch04_traceable.py",
+    "runtime/sessions/derivative-motion-revision-20261103/lesson04-author/finalprepare_v007.py",
+    "src/manimind/postproduce/understanding_film.py",
+    "src/manimind/review/meaning_units.py",
+    "src/manimind/postproduce/pilot.py",
+    "src/manimind/postproduce/preset_audition.py",
+    "runtime/projects/math-derivative-ch04-chain-20261102/scene-draft-plan-v007.json",
+    "examples/derivative_ch04_traceable.py",
+    "runtime/sessions/derivative-motion-revision-20261103/lesson04-author/prepare_v008.py",
+    "tests/test_derivative_ch04_traceable_v007.py",
+    "runtime/projects/math-derivative-ch04-chain-20261102/scene-draft-plan-v008.json",
+    "examples/derivative_ch04_traceable_v007.py",
+    "runtime/sessions/derivative-motion-revision-20261103/lesson04-author/prepare_v009.py",
+    "tests/test_derivative_ch04_traceable_v008.py",
+    "runtime/projects/math-derivative-ch04-chain-20261102/scene-draft-plan-v009.json",
+    "examples/derivative_ch04_traceable_v008.py",
+    "runtime/sessions/derivative-motion-revision-20261103/lesson04-author/prepare_v010.py",
+    "tests/test_derivative_ch04_traceable_v009.py",
+    "runtime/projects/math-derivative-ch04-chain-20261102/scene-draft-plan-v010.json",
+    "examples/derivative_ch04_traceable_v009.py",
+    "runtime/sessions/derivative-motion-revision-20261103/lesson04-author/prepare_v011.py",
+    "tests/test_derivative_ch04_traceable_v010.py",
+    "docs/公式动画创作引导.md",
+    "docs/formula-continuity-v3.md",
+    "runtime/projects/math-derivative-ch04-chain-20261102/scene-draft-plan-v011.json",
+    "examples/derivative_ch04_traceable_v010.py",
+    "examples/derivative_ch04_traceable_v011.py",
+    "tests/test_derivative_ch04_traceable_v011.py",
+    "runtime/sessions/derivative-motion-revision-20261103/lesson04-author/prepare_v012.py",
+    "runtime/projects/math-derivative-ch04-chain-20261102/scene-draft-plan-v012.json",
+    "runtime/sessions/derivative-motion-revision-20261103/lesson04-author/finalprepare_v013.py",
+    "runtime/projects/math-derivative-ch04-chain-20261102/scene-draft-plan-v013.json",
+    "examples/derivative_ch04_traceable_v012.py",
+    "tests/test_derivative_ch04_traceable_v012.py",
+    "tests/lesson_native_harness.py",
+    "runtime/sessions/derivative-motion-revision-20261103/lesson04-author/prepare_v014.py",
+    "runtime/projects/math-derivative-ch04-chain-20261102/scene-draft-plan-v014.json",
+    "examples/derivative_ch04_traceable_v013.py",
+    "tests/test_derivative_ch04_traceable_v013.py",
+    "runtime/sessions/derivative-motion-revision-20261103/lesson04-author/prepare_v015.py",
+    "runtime/projects/math-derivative-ch04-chain-20261102/scene-draft-plan-v015.json"
+  ],
+  "cues": [
+    {
+      "id": "one-change",
+      "duration": 39.5,
+      "heading": "非线性内层拓展：依次传递",
+      "visual": "基点x0=1,u0=2,y0=8始终作固定对照；活动行只在对应计算阶段出现数值，并明确待算、计算中、已就绪；保留原逐级数值轨迹及增量。",
+      "learning_purpose": "追踪同一输入增量在两级计算中的依次传递，不把尚未完成的输出提前标完成。",
+      "anchors": [
+        {
+          "id": "change_base_ready",
+          "meaning": "初始三值已出现"
+        },
+        {
+          "id": "input_change_complete",
+          "meaning": "输入动画完成"
+        },
+        {
+          "id": "inner_change_complete",
+          "meaning": "中间量动画完成"
+        },
+        {
+          "id": "outer_change_complete",
+          "meaning": "输出动画完成"
+        },
+        {
+          "id": "chain_transfer_ready",
+          "meaning": "三个实际增量和传递结论可读"
+        },
+        {
+          "id": "change_history_roles_ready",
+          "meaning": "基点对照与活动行的状态角色已建立"
+        }
+      ],
+      "stage_times": {
+        "0.03": 0.3,
+        "0.06": 0.8,
+        "0.12": 2.5,
+        "0.28": 5.22,
+        "0.34": 5.88,
+        "0.37": 7.66,
+        "0.39": 8.3,
+        "0.51": 13.66,
+        "0.57": 14.32,
+        "0.60": 15.86,
+        "0.63": 16.52,
+        "0.74": 21.12,
+        "0.77": 22.86,
+        "0.80": 23.12,
+        "0.86": 23.3,
+        "1.00": 39.5,
+        "0.76": 22.3
+      },
+      "animation_starts": {
+        "0.28": 3.6,
+        "0.51": 12.12,
+        "0.74": 19.98,
+        "0.34": 5.48,
+        "0.57": 13.92,
+        "0.80": 22.9,
+        "0.86": 23.12,
+        "0.76": 21.9
+      }
+    }
+  ],
+  "focus_intents": [
+    {
+      "id": "input_change",
+      "cue": "one-change",
+      "claim": "输入正处于变化过程"
+    },
+    {
+      "id": "inner_change",
+      "cue": "one-change",
+      "claim": "u正随已改变的输入更新"
+    },
+    {
+      "id": "outer_change",
+      "cue": "one-change",
+      "claim": "输出正随已改变的u更新"
+    },
+    {
+      "id": "transfer_complete",
+      "cue": "one-change",
+      "claim": "同一增量已传过两层"
+    }
+  ],
+  "review_times": [
+    0.15,
+    0.55,
+    2.067,
+    2.3,
+    2.6,
+    2.913,
+    3.567,
+    4.41,
+    5.32,
+    5.447,
+    5.68,
+    5.98,
+    7.227,
+    7.46,
+    7.76,
+    7.867,
+    8.1,
+    8.4,
+    12.087,
+    12.89,
+    13.76,
+    13.887,
+    14.12,
+    14.42,
+    15.427,
+    15.66,
+    15.96,
+    16.087,
+    16.32,
+    16.62,
+    19.7,
+    19.947,
+    20.55,
+    21.22,
+    22.427,
+    22.66,
+    22.867,
+    22.96,
+    23.01,
+    23.087,
+    23.21,
+    23.22,
+    23.4,
+    39.3
+  ],
+  "state_contracts": [
+    {
+      "name": "scene_trackers_and_samples",
+      "writer": "01a199e9-73ab-7700-8a9f-cd7b5541b0ad",
+      "consumers": [
+        "main",
+        "independent visual reviewer",
+        "timing reviewer"
+      ],
+      "lifecycle": "One exact scene execution; only actual runtime emits samples and windows",
+      "invalidation": "Any scene/helper/model/plan/profile/context/font/timing change"
+    },
+    {
+      "name": "versioned_plan_facts_and_narration",
+      "writer": "01a199e9-73ab-7700-8a9f-cd7b5541b0ad",
+      "consumers": [
+        "main installer",
+        "renderer",
+        "independent reviewer",
+        "future meaning-unit speech planner"
+      ],
+      "lifecycle": "v001 author draft for this lesson; not an approval or acoustic record",
+      "invalidation": "Changed mathematics, wording, references, shared helper, course context or visual source requires a new revision"
+    },
+    {
+      "name": "render_local_drivers",
+      "writer": "DerivativeChainLesson.one_change",
+      "consumers": [
+        "three visible numbers",
+        "chapter-motion journal"
+      ],
+      "lifecycle": "Created after base state appears; cleared after outer transfer; removed at next cue",
+      "invalidation": "New scene execution or changed dependency/order/geometry"
+    },
+    {
+      "name": "v003_native_presentation_clock",
+      "writer": "01a19acd-e149-74d0-8a5d-975a3adf45f4",
+      "consumers": [
+        "main",
+        "native tests",
+        "independent reviewers"
+      ],
+      "lifecycle": "One v003 scene execution; emit actual native focuses/motion, never audio timestamps",
+      "invalidation": "Any bound input, source, cue clock, mathematics, geometry or authorization change"
+    },
+    {
+      "name": "explicit_formula_transfers",
+      "writer": "01a19f6b-1725-7be3-a4d8-bf988a308b31",
+      "consumers": [
+        "renderer",
+        "native tests",
+        "pixel reviewers"
+      ],
+      "lifecycle": "One construct; copies removed after arrival; target retained until cue exit",
+      "invalidation": "Any source/grouping/path/time or formula change"
+    },
+    {
+      "name": "scope_and_stationary_factor",
+      "writer": "01a19f6b-1725-7be3-a4d8-bf988a308b31",
+      "consumers": [
+        "native tests",
+        "render journal",
+        "independent reviewers"
+      ],
+      "lifecycle": "One rule/practice cue; point context removed before variable x, collection driver cleared after native cleanup",
+      "invalidation": "Functions/base point/glyph geometry/factor grouping/math clock or source changes"
+    },
+    {
+      "name": "one_change_calculation_roles",
+      "writer": "01a19f6b-1725-7be3-a4d8-bf988a308b31",
+      "consumers": [
+        "native tests",
+        "renderer",
+        "independent reviewers"
+      ],
+      "lifecycle": "One-change cue only: fixed base history, pending/working/ready counters, then cleared at next cue",
+      "invalidation": "Any role, source, geometry, timing or audio change"
+    }
+  ],
+  "production_boundary": {
+    "rendered": false,
+    "published": false,
+    "independent_review_required": true,
+    "audio_generated_by_this_author": false,
+    "listening_reviewed": false,
+    "student_understanding_tested": false
+  },
+  "lesson_context": "runtime/projects/math-derivative-ch04-chain-20261102/context-v001.json",
+  "audience": "已学高中常见函数、斜率与基本代数运算，尚未系统学习导数的学生",
+  "prior_knowledge": [
+    {
+      "lesson_id": "M02-02",
+      "assumed_exit": "函数表达式、图像与点坐标对应"
+    },
+    {
+      "lesson_id": "M03-04",
+      "assumed_exit": "对数函数与运算法则的定义域和底数条件"
+    },
+    {
+      "lesson_id": "M04-05",
+      "assumed_exit": "同角与和差公式，以及它们联系的单位圆正弦余弦"
+    },
+    {
+      "lesson_id": "M09-01",
+      "assumed_exit": "有向增量与直线斜率"
+    },
+    {
+      "lesson_id": "M01-01",
+      "assumed_exit": "展开、因式分解及非零约分"
+    }
+  ],
+  "understanding_goals": [
+    "x先改变中间量u=ax+b，u再影响y=f(u)；每单位x引起的y变化，要把两层变化率连接起来"
+  ],
+  "writer": "01a19f6b-1725-7be3-a4d8-bf988a308b31",
+  "consumers": [
+    "main",
+    "native tests",
+    "independent first-look reviewer",
+    "independent regression reviewer"
+  ],
+  "lifecycle": "Same v012 geometry; corrected diagnostic entry; no pixel or independent approval",
+  "invalidation": "Source, selected baseline, geometry, clock, narration, WAV or scope changes require a new version",
+  "status": "not_reviewed",
+  "contributors": [
+    {
+      "author_agent": "01a199e9-73ab-7700-8a9f-cd7b5541b0ad",
+      "author_context": "01a199e9-73ab-7700-8a9f-cd7b5541b0ad",
+      "contribution": "Original complete lesson mathematics, geometry, native stages and narration"
+    },
+    {
+      "author_agent": "019eaf8b-9151-75e2-9db4-5ff834335577",
+      "author_context": "019eaf8b-9151-75e2-9db4-5ff834335577",
+      "contribution": "Existing frozen v002 spoken-grouping repair; no narration edits by v003 author"
+    }
+  ],
+  "revision_contract": "runtime/projects/math-derivative-ch04-chain-20261102/content-regression-contract-v015.json",
+  "revision_review": "runtime/sessions/derivative-motion-revision-20261103/lesson04-author/regression-v013-render.json",
+  "narration_draft_sha256": "284bdccbbfe3344453344a0c62cea2728d34f9ae798f49540eb657dd97cb4440",
+  "intended_full_wav_placement": [
+    {
+      "id": "chain-u01",
+      "cue": "opening",
+      "intended_start": 2,
+      "duration_seconds": 21.6,
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch04-chain-20261102/speech/chain-u01.wav",
+      "wav_sha256": "2e23feec843898c97a02a31ffeee9c002f81a021d5c22dbe427e499f41d7ebdb",
+      "audio_trimmed": false,
+      "speed_changed": false,
+      "regenerated": false
+    },
+    {
+      "id": "chain-u02",
+      "cue": "two-stages",
+      "intended_start": 26.3,
+      "duration_seconds": 33.76,
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch04-chain-20261102/speech/chain-u02.wav",
+      "wav_sha256": "db97740972aecef1548550920bcaf1ec5793980fbc7d4438c28d782af96044a1",
+      "audio_trimmed": false,
+      "speed_changed": false,
+      "regenerated": false
+    },
+    {
+      "id": "chain-u03",
+      "cue": "one-change",
+      "intended_start": 62.766666666666666,
+      "duration_seconds": 36.8,
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch04-chain-20261102/speech/chain-u03.wav",
+      "wav_sha256": "ae4a2f6bfc35e86ea01a8243b873ed6abae159ffeabdc9c7a0d41feb41551b9f",
+      "audio_trimmed": false,
+      "speed_changed": false,
+      "regenerated": false
+    },
+    {
+      "id": "chain-u04",
+      "cue": "ratios",
+      "intended_start": 102.26666666666667,
+      "duration_seconds": 51.68,
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch04-chain-20261102/speech/chain-u04.wav",
+      "wav_sha256": "ff917ccd0777aa902182090d429677d036656a587b5de5d18785949030769750",
+      "audio_trimmed": false,
+      "speed_changed": false,
+      "regenerated": false
+    },
+    {
+      "id": "chain-u05",
+      "cue": "rule",
+      "intended_start": 156.66666666666666,
+      "duration_seconds": 69.44,
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch04-chain-20261102/speech/chain-u05.wav",
+      "wav_sha256": "0e7298fd2de8f8d893662fe88f82a874b53ba26d0fe58ee88a73e6f8ba6e7d2e",
+      "audio_trimmed": false,
+      "speed_changed": false,
+      "regenerated": false
+    },
+    {
+      "id": "chain-linear-unit",
+      "cue": "linear-inner",
+      "intended_start": 228.83333333333331,
+      "duration_seconds": 37.6,
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch04-chain-20261102/speech/chain-linear-unit.wav",
+      "wav_sha256": "833c3bd987787d4b29bf40ba8b4efba89e4b2e70a746a4f6cfbd62caa80bdd56",
+      "audio_trimmed": false,
+      "speed_changed": false,
+      "regenerated": false
+    },
+    {
+      "id": "chain-u06",
+      "cue": "practice",
+      "intended_start": 269.1333333333333,
+      "duration_seconds": 40.8,
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch04-chain-20261102/speech/chain-u06.wav",
+      "wav_sha256": "329d5fa8c41b47dc0fd434d8208ab4c394f537ba8be4817eacd1c6274c7d84c8",
+      "audio_trimmed": false,
+      "speed_changed": false,
+      "regenerated": false
+    },
+    {
+      "id": "chain-u07",
+      "cue": "handoff",
+      "intended_start": 314.5333333333333,
+      "duration_seconds": 32.8,
+      "wav": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch04-chain-20261102/speech/chain-u07.wav",
+      "wav_sha256": "aeb494ded2faeb78f107c65e6c4b9d670d9a7175031ead941e44777fab8069ac",
+      "audio_trimmed": false,
+      "speed_changed": false,
+      "regenerated": false
+    }
+  ],
+  "timing_basis": {
+    "plan": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch04-chain-20261102/speech-plan-v002.json",
+    "plan_sha256": "0420ec44e28bf817051c7973b0b31cb9ba41bd6aeb566ff00f3ed59114a3f2d5",
+    "timings": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102/math-derivative-ch04-chain-20261102/timings-v001.json",
+    "timings_sha256": "fb59a38780634d2614b91154be95e42128f3cca518a0856f57e694d91cbbb640",
+    "speech": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/math-derivative-chapter-20261102-voice/batches/6664c45ce3dc45eeae8a737c328849f8/math-derivative-ch04-chain-20261102/speech",
+    "production_evidence_sha256": "5bdd4e0ac657fe1a6dc861851e5993b32b85be37b5dbe8464fa70e75b88632c1",
+    "scope": "Production model estimates, not listening, exact phoneme synchronization or pixel approval"
+  },
+  "new_visual_support": {
+    "baseline": "visual-v005",
+    "narration_changed": false,
+    "scope": "Only traceable formula movement is new; nonlinear headings, early Delta y and root/log domains already belong to this baseline"
+  },
+  "formula_transitions": [
+    {
+      "id": "numeric_state_transfer",
+      "operation": "stage_state",
+      "source": "Labeled base x0=1,u0=2,y0=8 and staged input change",
+      "target": "Ready new triple x=1.1,u=2.21,y=10.793861 with all three increments",
+      "purpose": "Do not assert pending or interpolated computation counters as one simultaneous functional state; preserve base history and staged propagation"
+    }
+  ],
+  "transition_review_times": [
+    {
+      "id": "numeric_state_transfer",
+      "cue": "one-change",
+      "before": 2.913,
+      "during": 14.12,
+      "after": 22.427
+    }
+  ],
+  "final_preparation": {
+    "lossless_entrypoint": "manimind.postproduce.traceable_film_v3.prepare_evidence",
+    "evidence_output": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/derivative-motion-revision-20261103/lesson04-author/lossless-v013",
+    "rendered_output": "outputs/math-derivative-ch04-chain-20261102/visual-v013",
+    "v006_preliminary_inputs_retained": true,
+    "stable_core_confirmed_by_main": true,
+    "author_test_scope": "native clock and actual TeX selectors, not rendered pixels"
+  },
+  "correction_scope": [
+    "Only one-change: retain base triple as labeled history, hide pending numeric outputs from the active row, label computing vs ready results; retain the original tracker trajectories and full audio clock"
+  ],
+  "repair_request": {
+    "original_visual_review": "/Users/pengweitai/Projects/ManiMind/runtime/sessions/derivative-motion-revision-20261103/lesson04-author/visual-review-v011.json",
+    "original_visual_review_sha256": "34f61716f1a5fdf3d91501634d272c63e1940bcad04903dfb19c99299e01e447",
+    "finding": "B1 old/new/pending numerical state roles; R1 normal-speed reviewer coverage is a separate unresolved requirement",
+    "prior_decision": "revise, never inherited as approval",
+    "scope_excludes": "lesson08 and all frozen source/report/media"
+  },
+  "substage_review_times": [
+    {
+      "id": "numeric_input_pending",
+      "cue": "one-change",
+      "before": 2.913,
+      "during": 4.41,
+      "after": 5.68
+    },
+    {
+      "id": "numeric_inner_computation",
+      "cue": "one-change",
+      "before": 8.1,
+      "during": 12.89,
+      "after": 14.12
+    },
+    {
+      "id": "numeric_outer_computation",
+      "cue": "one-change",
+      "before": 16.087,
+      "during": 20.55,
+      "after": 22.427
+    }
+  ],
+  "debug_scope": "Actual one-change method and unchanged cue clock only; state role/geometry probe, not complete lesson acceptance"
+}

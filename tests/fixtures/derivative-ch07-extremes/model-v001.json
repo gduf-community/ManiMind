@@ -1,0 +1,79 @@
+{
+  "artifact_type": "test_fixture",
+  "fixture_version": 1,
+  "status": "test_only_not_production_or_approved",
+  "writer": "01a199e9-7432-7052-96f7-6bd6eb2e63bb",
+  "consumers": [
+    "isolated chapter tests"
+  ],
+  "lifecycle": "Versioned v001 deterministic test input",
+  "invalidation": "Intentional design/model change requires explicit fixture revision",
+  "expected": {
+    "closed": {
+      "interval": [
+        0,
+        3
+      ],
+      "candidates": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "minimum": 0,
+      "maximum": 4,
+      "argmin": [
+        1
+      ],
+      "argmax": [
+        3
+      ]
+    },
+    "parameters": [
+      [
+        1.25,
+        1,
+        [
+          0
+        ]
+      ],
+      [
+        2,
+        1,
+        [
+          0,
+          2
+        ]
+      ],
+      [
+        3,
+        4,
+        [
+          3
+        ]
+      ]
+    ],
+    "open": {
+      "interval": [
+        0,
+        3
+      ],
+      "infimum": 0,
+      "supremum": 4,
+      "minimum": 0,
+      "maximum": null,
+      "argmin": [
+        1
+      ],
+      "argmax": []
+    }
+  }
+}

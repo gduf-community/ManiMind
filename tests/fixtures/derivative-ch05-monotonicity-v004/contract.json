@@ -1,0 +1,807 @@
+{
+  "schema_version": 1,
+  "project_id": "math-derivative-ch05-monotonicity-20261102",
+  "status": "not_reviewed",
+  "writer": "01a19ab5-b2d3-7003-a784-edeeaecdbc23",
+  "consumers": [
+    "main coordinator",
+    "independent blind visual reviewer",
+    "separate content regression reviewer",
+    "audio timing reviewer"
+  ],
+  "lifecycle": "Chapter 05 v004 author candidate only; not approval",
+  "invalidation": "Any bound source, plan, baseline media, narration, original speech/receipt or production timing change invalidates derived data",
+  "author_agent": "01a19ab5-b2d3-7003-a784-edeeaecdbc23",
+  "author_context": "01a19ab5-b2d3-7003-a784-edeeaecdbc23",
+  "baseline_selection": "Complete actual 396-second visual-v002, including disconnected-domain bridge; not older 324-second v001",
+  "legacy_feature_count": 14,
+  "added_v002_feature_count": 6,
+  "assets": {
+    "visual_v002": {
+      "path": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/manim/media/manimgl/understanding.mp4",
+      "sha256": "133c162efefff0fb94f5111547144129be6c6573b8b973510faa47ea18a7a2ec",
+      "duration": 396
+    }
+  },
+  "scope": "All fourteen original functions plus all effective v002 disconnected-domain explanations; no deletion, changed math/geometry or audio processing",
+  "evidence_status": "Author baseline selection only; independent current actual-pixel comparison remains required",
+  "units": [
+    {
+      "id": "opening",
+      "asset": "visual_v002",
+      "function": "自然承接已会求导，明确函数及本课增长问题。",
+      "baseline_interval": [
+        0,
+        24
+      ],
+      "baseline_reference_times": [
+        4,
+        16,
+        23
+      ],
+      "features": [
+        {
+          "id": "title-to-question",
+          "kind": "process",
+          "claim": "先标题，再x³-3x及哪段升降的问题，不重讲差商。",
+          "baseline_interval": [
+            0,
+            24
+          ],
+          "baseline_samples": [
+            {
+              "time": 4,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_4.jpg",
+              "frame_sha256": "cc861cd0abe6096022184567d4086e5ac4af83af70ed063509a219845eba4c20"
+            },
+            {
+              "time": 12,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_12_0.jpg",
+              "frame_sha256": "ad22cb5c7e8244dd6461e74df3ea17edef7fd9c27650a7d54924a70105c78721"
+            },
+            {
+              "time": 19.2,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_19_2.jpg",
+              "frame_sha256": "aabb8b75e039bf19102bed022737c3620512bec2d9a2ad9e783b7905bfab641a"
+            }
+          ],
+          "candidate_focus_ids": [
+            "monotonicity_opening"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shared-input",
+      "asset": "visual_v002",
+      "function": "同一输入联动函数点、切线、导数点和数值，分清函数高度与导数值。",
+      "baseline_interval": [
+        24,
+        66
+      ],
+      "baseline_reference_times": [
+        40,
+        48,
+        58
+      ],
+      "features": [
+        {
+          "id": "common-x-motion",
+          "kind": "process",
+          "claim": "贯穿竖线及两图中的点共用x；切线与下方导数点随相同位置更新。",
+          "baseline_interval": [
+            34.5,
+            66
+          ],
+          "baseline_samples": [
+            {
+              "time": 42.375,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_42_375.jpg",
+              "frame_sha256": "a53714fe1ebd83328fbbd005c2360f9959dfa88cc4dc31289640c5e61b7cae9f"
+            },
+            {
+              "time": 48.367,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_48_367.jpg",
+              "frame_sha256": "188705ccb99d9a3cd3f0090b081fc943807dc7fed38e0ff9fcef26832b069bf0"
+            },
+            {
+              "time": 56.34,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_56_34.jpg",
+              "frame_sha256": "c8caa93d5bc8a73b87b13f8c99a405a0e444b27a4779abdcdeee8d055e10deda"
+            }
+          ],
+          "candidate_focus_ids": [
+            "axes_meanings",
+            "same_x_motion",
+            "same_x_result"
+          ]
+        },
+        {
+          "id": "different-y-meanings",
+          "kind": "state",
+          "claim": "上图纵坐标f(x)，下图f'(x)；轴义、颜色与单独数值读数可辨。",
+          "baseline_interval": [
+            34.5,
+            66
+          ],
+          "baseline_samples": [
+            {
+              "time": 37.02,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_37_02.jpg",
+              "frame_sha256": "68c20ed1e5f27330d7c3e0b1ac31063d16207244e587f367c8d0c3f51d17bfd3"
+            },
+            {
+              "time": 63.48,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_63_48.jpg",
+              "frame_sha256": "1c38e7450a8347375db66d5b34b3557dc358be31581d6757fc736c80ec4724d1"
+            }
+          ],
+          "candidate_focus_ids": [
+            "axes_meanings",
+            "same_x_result"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "first-sign-turn",
+      "asset": "visual_v002",
+      "function": "保留-1处从正到零到负及函数增到减的对应。",
+      "baseline_interval": [
+        66,
+        104
+      ],
+      "baseline_reference_times": [
+        89,
+        93,
+        97
+      ],
+      "features": [
+        {
+          "id": "positive-zero-negative",
+          "kind": "process",
+          "claim": "函数点先升，-1处切线水平，再下降；导数点同步过零。",
+          "baseline_interval": [
+            77.2,
+            104
+          ],
+          "baseline_samples": [
+            {
+              "time": 85,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_85.jpg",
+              "frame_sha256": "683a91cde0a62c9bef17bfa595b9f3a64fab3721dd90670105e45b0b639f7402"
+            },
+            {
+              "time": 92.95,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_92_95.jpg",
+              "frame_sha256": "97ba7cf17bfe1e76d2f0e4679a8c3b060a1233f9afd453fb066f3b8fe78bb213"
+            },
+            {
+              "time": 100,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_100.jpg",
+              "frame_sha256": "747ec7a39c6a3970504bd7396c057a7af4629c98d69336deb074ebc46df79d3e"
+            }
+          ],
+          "candidate_focus_ids": [
+            "left_interval_motion",
+            "minus_one_horizontal",
+            "middle_interval_motion"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "second-sign-turn",
+      "asset": "visual_v002",
+      "function": "保留1处负到零到正与函数由减转增的对应。",
+      "baseline_interval": [
+        104,
+        136
+      ],
+      "baseline_reference_times": [
+        111,
+        115,
+        119
+      ],
+      "features": [
+        {
+          "id": "negative-zero-positive",
+          "kind": "process",
+          "claim": "函数点先降，1处切线水平，再上升；导数点同步过零。",
+          "baseline_interval": [
+            104,
+            136
+          ],
+          "baseline_samples": [
+            {
+              "time": 106,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_106.jpg",
+              "frame_sha256": "48681e0be55a32b26508e721a4fd9308d1113c73474f91082f0983bce7ae2f0a"
+            },
+            {
+              "time": 114.65,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_114_65.jpg",
+              "frame_sha256": "aaa835e747b0bb01eaf04f35c4f6caaf161049420a710c1da9a97aa02bbb0c30"
+            },
+            {
+              "time": 123.75,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_123_75.jpg",
+              "frame_sha256": "eeea5bb3c3c46ef6c44a1cb90eb1d81d6c51d574a9d7163086750e321409f7f7"
+            }
+          ],
+          "candidate_focus_ids": [
+            "middle_interval_motion",
+            "plus_one_horizontal",
+            "right_interval_motion"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "factor-sign-reasons",
+      "asset": "visual_v002",
+      "function": "因式符号解释整个实数轴三段正负正，不用有限取样代替全段分析。",
+      "baseline_interval": [
+        136,
+        178
+      ],
+      "baseline_reference_times": [
+        141,
+        147,
+        157,
+        162.667,
+        167.717,
+        173
+      ],
+      "features": [
+        {
+          "id": "roots-and-factorization",
+          "kind": "state",
+          "claim": "导数3(x-1)(x+1)及-1、1零点把实数轴分段。",
+          "baseline_interval": [
+            147.333333,
+            178
+          ],
+          "baseline_samples": [
+            {
+              "time": 149.787,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_149_787.jpg",
+              "frame_sha256": "df28940857a7d43d8ab95c65dba431f735a8e752f4be6f51c6f5ff8aa7b4580c"
+            },
+            {
+              "time": 173,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_173.jpg",
+              "frame_sha256": "fb960b9db047cf3b5ebe7785e9b7fe9ba66d1f6987dea2be3aeeb84c51220622"
+            }
+          ],
+          "candidate_focus_ids": [
+            "sign_boundaries"
+          ]
+        },
+        {
+          "id": "three-interval-reasons",
+          "kind": "process",
+          "claim": "依次左段两负得正，中段异号得负，右段两正得正；相应增减增与三个开区间完整保留。",
+          "baseline_interval": [
+            147.333333,
+            178
+          ],
+          "baseline_samples": [
+            {
+              "time": 159.079,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_159_079.jpg",
+              "frame_sha256": "422c65bf2fc108937cd2ef6ba5fbf0d78b360aaf66e6c33affe9da85374ba5c6"
+            },
+            {
+              "time": 164.476,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_164_476.jpg",
+              "frame_sha256": "e48ee224d24344dc66e5889da9144f8b414d76f9727b06f77de95cbb5d3df9b3"
+            },
+            {
+              "time": 173.583,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_173_583.jpg",
+              "frame_sha256": "98bd9727467abe64c6ab81a1e92ff38be7c489d3ee707cb634a4aab23554b825"
+            }
+          ],
+          "candidate_focus_ids": [
+            "left_sign",
+            "middle_sign",
+            "right_sign",
+            "whole_sign_chart"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "secant-to-tangent",
+      "asset": "visual_v002",
+      "function": "先比较区间内两点，再寻找平行割线的内部切线。",
+      "baseline_interval": [
+        178,
+        216
+      ],
+      "baseline_reference_times": [
+        193,
+        201,
+        207,
+        208,
+        211,
+        215
+      ],
+      "features": [
+        {
+          "id": "moving-right-endpoint",
+          "kind": "process",
+          "claim": "固定a，右点b向右且升高，两点连线逐步形成正斜率割线。",
+          "baseline_interval": [
+            193.833333,
+            208.366667
+          ],
+          "baseline_samples": [
+            {
+              "time": 194.836,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_194_836.jpg",
+              "frame_sha256": "cc4e3ea5a74da50715655792a388c3e3c55b9610c907dbeac8668b3a720177a5"
+            },
+            {
+              "time": 200.1,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_200_1.jpg",
+              "frame_sha256": "e89ac63005de046dc7f8d635f0a0b666be928b181b608804f6f5d86772540f1a"
+            },
+            {
+              "time": 207.367,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_207_367.jpg",
+              "frame_sha256": "febf9cf9950571d0e7bddc2449d0f3c6e6888f65e3f395f8a63a314afa03baa4"
+            }
+          ],
+          "candidate_focus_ids": [
+            "interval_pair_motion",
+            "interval_pair_result"
+          ]
+        },
+        {
+          "id": "internal-parallel-tangent",
+          "kind": "process",
+          "claim": "保留两端点及割线，内部切点移动到c，最终切线平行于割线。",
+          "baseline_interval": [
+            208.207,
+            216
+          ],
+          "baseline_samples": [
+            {
+              "time": 208.207,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_208_207.jpg",
+              "frame_sha256": "0e292d849b7966c87e3bf281ff6ce0433a5eb14f567f124900b87ced0355c4e0"
+            },
+            {
+              "time": 211,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_211.jpg",
+              "frame_sha256": "7211477c2c9aecfe2c5363ef3f197facd6350e6ba3ccd5ddf88a740d93b6346c"
+            },
+            {
+              "time": 214.95,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_214_95.jpg",
+              "frame_sha256": "aa4975a88f41bce16f49bfc5da5e8b5879a68596b1a444d956af7ce45013ec46"
+            }
+          ],
+          "candidate_focus_ids": [
+            "secant_witness_motion",
+            "secant_witness_result"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "interval-theorem",
+      "asset": "visual_v002",
+      "function": "区间条件与中值定理连接到任意两点高低关系。",
+      "baseline_interval": [
+        216,
+        244
+      ],
+      "baseline_reference_times": [
+        223,
+        227,
+        237.928,
+        239
+      ],
+      "features": [
+        {
+          "id": "conditions-and-identity",
+          "kind": "state",
+          "claim": "整个开区间可导且处处f'>0，a<c<b，并有f(b)-f(a)=f'(c)(b-a)>0；可导蕴含所需连续性。",
+          "baseline_interval": [
+            222.866667,
+            244
+          ],
+          "baseline_samples": [
+            {
+              "time": 223,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_223.jpg",
+              "frame_sha256": "a1f76607c125a36e0f75ee3e2fc0a4a1085691b506341027e60a2932cede2c41"
+            },
+            {
+              "time": 234,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_234.jpg",
+              "frame_sha256": "46ecad1dba5f7197d055a2462532e269d5eb24ccb4456de7f5e64d99dccfefac"
+            }
+          ],
+          "candidate_focus_ids": [
+            "interval_theorem"
+          ]
+        },
+        {
+          "id": "arbitrary-pair-conclusion",
+          "kind": "process",
+          "claim": "由条件和中值定理推出任意a<b时f(a)<f(b)，再说明处处负导数时严格递减。",
+          "baseline_interval": [
+            222.866667,
+            244
+          ],
+          "baseline_samples": [
+            {
+              "time": 224.557,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_224_557.jpg",
+              "frame_sha256": "76650b8a13f1e822718c8adffa7e5900b76047d87512f7cfddf2147542704279"
+            },
+            {
+              "time": 230.8,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_230_8.jpg",
+              "frame_sha256": "98995892b46402ad10ce4979ede64fe96eb0d87329f4d0baa9b746a16f34ca2e"
+            },
+            {
+              "time": 240.7,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_240_7.jpg",
+              "frame_sha256": "149db4feeed252bfccce63b865aa71f43f48751e22d7595d1ee068018a8d1c78"
+            }
+          ],
+          "candidate_focus_ids": [
+            "interval_theorem",
+            "interval_decreasing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "isolated-zero",
+      "asset": "visual_v002",
+      "function": "x³实际经过原点仍上升，并用立方差支持全实数严格递增。",
+      "baseline_interval": [
+        244,
+        294
+      ],
+      "baseline_reference_times": [
+        257,
+        266,
+        278,
+        288.75
+      ],
+      "features": [
+        {
+          "id": "cross-zero-with-horizontal-tangent",
+          "kind": "process",
+          "claim": "点先靠近原点，在零导数和水平切线处停留，再继续向右上方。",
+          "baseline_interval": [
+            252,
+            278.5
+          ],
+          "baseline_samples": [
+            {
+              "time": 257,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_257_0.jpg",
+              "frame_sha256": "acfb6d6c71b4febe23fca4c4a9b02eb62abc0a143a6e60b214719111591baebd"
+            },
+            {
+              "time": 266,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_266.jpg",
+              "frame_sha256": "95e94a387e9cc391e7c1e67a92806b8f41e331fd4fb2eccd4bff30f399f39655"
+            },
+            {
+              "time": 275,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_275.jpg",
+              "frame_sha256": "ee32d3d9c3d692955edf35c85b31c72f3159d70761fa69827ec6d5817f4b1885"
+            }
+          ],
+          "candidate_focus_ids": [
+            "cube_to_zero",
+            "cube_zero_state",
+            "cube_after_zero"
+          ]
+        },
+        {
+          "id": "cube-difference-reason",
+          "kind": "state",
+          "claim": "保留b³-a³=(b-a)(a²+ab+b²)>0(a<b)与全实数严格递增的理由。",
+          "baseline_interval": [
+            283.5,
+            294
+          ],
+          "baseline_samples": [
+            {
+              "time": 284.34,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_284_34.jpg",
+              "frame_sha256": "c6d34cdeb7a0f4a03437794be272d27b61b7784bead90ec170de72b14f0c10f8"
+            },
+            {
+              "time": 293.16,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_293_16.jpg",
+              "frame_sha256": "3fc629e10ddcec4b071034879bcec11735e23dd925b45af37819b416ee255144"
+            }
+          ],
+          "candidate_focus_ids": [
+            "cube_interval_reason"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "disconnected-domain",
+      "asset": "visual_v002",
+      "baseline_interval": [
+        294,
+        366
+      ],
+      "function": "分别递增的两支与跨域反序比较，明确整个区间定义和可导条件的必要性",
+      "features": [
+        {
+          "id": "disconnected-model-domain",
+          "kind": "state",
+          "claim": "q(x)=-1/x、q'(x)=1/x²>0与D=(-∞,0)∪(0,+∞)；保留两支、零处空点和无定义说明",
+          "baseline_interval": [
+            305.533333,
+            366
+          ],
+          "baseline_samples": [
+            {
+              "time": 308.4,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_308_4.jpg",
+              "frame_sha256": "4547eaea42349b9387930fd73c144e473943376c1c54573d2832593609654163"
+            },
+            {
+              "time": 310.371,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_310_371.jpg",
+              "frame_sha256": "87f1c7d613d30b603fed69dd05aa3bfd7a22ebe469c915ae68b73af2258922f7"
+            }
+          ],
+          "candidate_focus_ids": [
+            "disconnected_domain"
+          ]
+        },
+        {
+          "id": "left-branch-increase",
+          "kind": "process",
+          "claim": "左支内部x从-2到-1，q从0.5到1；同一tracker驱动点及两项读数，始终不跨零",
+          "baseline_interval": [
+            312.733333,
+            323.5
+          ],
+          "baseline_samples": [
+            {
+              "time": 313.48,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_313_48.jpg",
+              "frame_sha256": "63b7648fbc58074ed8b76ce695fc7b9125700bb8833924659e6aaa83aa51fe08"
+            },
+            {
+              "time": 317.4,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_317_4.jpg",
+              "frame_sha256": "f090b912e29874255c4e81a587c7fb8529751ac5d67c80f02b9d62b0503f7433"
+            },
+            {
+              "time": 322.1,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_322_1.jpg",
+              "frame_sha256": "04af0a7ed90349573400e81cdfe6616e4260cd718e95488fb0e3b9429851aec2"
+            }
+          ],
+          "candidate_focus_ids": [
+            "branch_left_motion"
+          ]
+        },
+        {
+          "id": "right-branch-increase",
+          "kind": "process",
+          "claim": "右支另起x=0.5到1，q从-2到-1；独立正支内上升且不把两支连成跨零运动",
+          "baseline_interval": [
+            324.966667,
+            337.2
+          ],
+          "baseline_samples": [
+            {
+              "time": 325.716,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_325_716.jpg",
+              "frame_sha256": "435a447923aaeca63ec8b6a285c1db5bae8346efed5f557844d0c153817d6da3"
+            },
+            {
+              "time": 329.65,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_329_65.jpg",
+              "frame_sha256": "dc02b8ea64760432169f34d7949cff371f8c05830de796eea05a636dec363889"
+            },
+            {
+              "time": 335.767,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_335_767.jpg",
+              "frame_sha256": "1fa6dc7570bc12b9d7ae9a64d6edfc818ac6cfc499a392ff569e1847237f35a8"
+            }
+          ],
+          "candidate_focus_ids": [
+            "branch_right_motion"
+          ]
+        },
+        {
+          "id": "cross-gap-order-reversal",
+          "kind": "process",
+          "claim": "保留A=(-1,1)、B=(1,-1)，输入-1<1但q(-1)=1>q(1)=-1，说明两支正导数不足以推出断域整体递增",
+          "baseline_interval": [
+            337.2,
+            348.733333
+          ],
+          "baseline_samples": [
+            {
+              "time": 337.2,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_337_2.jpg",
+              "frame_sha256": "71918697e1d2eacaf86375ad69dea1a4da69af909ee6963559543be826a1b8cd"
+            },
+            {
+              "time": 340.1,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_340_1.jpg",
+              "frame_sha256": "36481a8f983702c67a54719a7ec1282aad7ae4db2fe06802198a4d20b0dc0430"
+            },
+            {
+              "time": 344,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_344.jpg",
+              "frame_sha256": "597f8a393a7797cf0bb8a3a8cde8d5537605a8e7fb8c3bda3b6cec72d4da0469"
+            }
+          ],
+          "candidate_focus_ids": [
+            "cross_gap_comparison"
+          ]
+        },
+        {
+          "id": "missing-whole-interval-condition",
+          "kind": "state",
+          "claim": "[-1,1]含0且q(0)无定义，函数未在整个区间定义，中值定理所需条件缺失",
+          "baseline_interval": [
+            348.733333,
+            366
+          ],
+          "baseline_samples": [
+            {
+              "time": 350.115,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_350_115.jpg",
+              "frame_sha256": "4f6047fecc765a6930e843739eda6123e76bb4b8c6fe816944ef66630fb06ea6"
+            },
+            {
+              "time": 354,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_354.jpg",
+              "frame_sha256": "c28486f0f2c4422efcbdf62ad32750d168c0a50d136d811b9c94a6c1c00c3eb0"
+            }
+          ],
+          "candidate_focus_ids": [
+            "gap_interval_condition"
+          ]
+        },
+        {
+          "id": "separate-intervals-not-merged",
+          "kind": "state",
+          "claim": "分别在(-∞,0)与(0,+∞)递增，不能跨未定义的零点合并判断",
+          "baseline_interval": [
+            358.8,
+            366
+          ],
+          "baseline_samples": [
+            {
+              "time": 361.163,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_361_163.jpg",
+              "frame_sha256": "d575f05d29b8129eea97718c59fe236097fa74f0f9e74929be0fcd92125c6321"
+            },
+            {
+              "time": 365.424,
+              "phase": "state",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_365_424.jpg",
+              "frame_sha256": "d575f05d29b8129eea97718c59fe236097fa74f0f9e74929be0fcd92125c6321"
+            }
+          ],
+          "candidate_focus_ids": [
+            "separate_intervals"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "closing-handoff",
+      "asset": "visual_v002",
+      "function": "区间总结及零导数是否改变增减的后课问题。",
+      "baseline_interval": [
+        366,
+        396
+      ],
+      "baseline_reference_times": [
+        372,
+        381.096,
+        391.95
+      ],
+      "features": [
+        {
+          "id": "summary-and-handoff",
+          "kind": "process",
+          "claim": "先给处处正负导数与增减的区间条件，再问零导数处增减一定改变吗，衔接极值课。",
+          "baseline_interval": [
+            366,
+            396
+          ],
+          "baseline_samples": [
+            {
+              "time": 372,
+              "phase": "before",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_372.jpg",
+              "frame_sha256": "aafeb627eccf0e7e557f3103e29c59e1de2ed822ba86fef9293bc4aaac1c0e85"
+            },
+            {
+              "time": 381.096,
+              "phase": "during",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_381_096.jpg",
+              "frame_sha256": "d11f15f4f453ee9df5f47b004671246fb9767cbf9778705a87a9298e0376641f"
+            },
+            {
+              "time": 391.95,
+              "phase": "after",
+              "frame": "outputs/math-derivative-ch05-monotonicity-20261102/visual-v002/frames/frame_391_95.jpg",
+              "frame_sha256": "b76ecf64a70aa635c09c63a6fa10834fe512749cf5e00ae5af9fa0d3470653dc"
+            }
+          ],
+          "candidate_focus_ids": [
+            "monotonicity_summary",
+            "monotonicity_to_extrema"
+          ]
+        }
+      ]
+    }
+  ]
+}

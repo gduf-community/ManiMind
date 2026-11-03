@@ -1,101 +1,62 @@
 # ManiMind
 
-ManiMind 是一个面向数学科普动画生产的多 Agent 编排项目。输入论文和笔记，输出可审核的讲解脚本、分镜、Manim 数学动画、HTML 科普片段，以及后续配音、字幕、剪辑拼接所需的结构化产物。
+ManiMind 是一个数学与物理知识动画项目。我们把课程问题、推理过程、图形和公式组织成可以观看、讨论和继续改进的一课，也维护制作动画所需的编排工具。
 
-仓库定位是“编排层”，不重写外部渲染引擎内部实现。
-`ClaudeCode/` 仅作为可选参考源码包，其可复用编排能力已抽取到 `src/manimind/`。
+## 从哪里开始
 
-## 当前架构要点
+- **看作品**：[已有成片](作品/成片/README.md)、[当前草稿](作品/草稿/README.md)、[历史版本](作品/历史版本/README.md)
+- **找课程**：[高中数学与物理目录](docs/curricula/README.md)，按先修关系、理解目标和课题安排制作
+- **做一课**：[制作流程](docs/开始制作.md)，从备课到动画、讲稿、配音和字幕
+- **参与项目**：[协作方式](docs/参与贡献.md)、[运行与开发](docs/运行与开发.md)
 
-1. 预启动阶段加载文档与配置，检测工具链，注册能力路径。
-2. 主 Agent 解析论文与笔记，产出研究总结、公式目录与项目状态。
-3. 协调 Agent 切分分镜并并发派发 HTML / Manim / SVG 子任务。
-4. 子 Agent 分别回写长期上下文和短期协作上下文。
-5. 审核 Agent 通过后，进入配音、字幕、剪辑拼接。
+## 作品与当前进展
 
-## 目录结构
+已有播放包包括导数及其应用八课、机械波小单元、平抛运动和三题知识动画。完整文件保存在本机 `~/Desktop/01-知识动画/`，版本、文件名和获取位置集中登记在[作品目录](作品/README.md)；组员可向维护者取得对应播放包。
 
-```text
-ManiMind/
-├─ AGENTS.md
-├─ README.md
-├─ docs/
-├─ configs/
-├─ scripts/
-├─ src/manimind/
-├─ tests/
-├─ resources/
-│  ├─ skills/html-animation/
-│  ├─ skills/manim/
-│  └─ references/hyperframes/
-├─ runtime/
-├─ outputs/
-└─ logs/
+导数八课当前围绕公式连续性返修。01、07 的配音字幕修订预览已交付，其余课逐课制作和审核。人工听审与学生试用待安排。已有 2026-11-03 原配音字幕整章版保持原样，整章新版随逐课交付汇总。
+
+下面展示新 01 修订预览的公式构建片段，完整视频及来源见[作品目录](作品/README.md)。
+
+![导数入门修订预览：公式构建](作品/previews/导数入门-公式构建.gif)
+
+## 如何做一课
+
+1. 从课程目录确定本课位置，明确学生已有基础和这次要理解的问题。
+2. 用实际对象、图形和公式展开推理，完成动画并实看整段过程。
+3. 由独立审核者看当前画面；返修已有作品时，同时比较有效内容的保留。
+4. 按画面写自然口语讲稿，生成完整意群配音，核对原声、动画与单套字幕。
+5. 将通过审核的版本整理成命名清楚的播放包，记录来源并更新作品索引。
+
+详细步骤见[做好一课](docs/开始制作.md)，文件名称与交付方式见[命名与交付](docs/命名与交付.md)。
+
+## 如何运行
+
+Python 3.11 及以上可以先运行编排内核与纯数据测试：
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -e ".[dev]"
+MANIMIND_DISABLE_DOTENV=1 python -m pytest -q tests/test_workflow.py tests/test_task_board.py
 ```
 
-## 初始化步骤
+macOS 动画环境使用 `bash scripts/setup-manimgl.sh` 准备，随后激活 `manimgl_env` 并运行 `python -m manimind.main doctor`。Windows 步骤及分层测试见[运行与开发](docs/运行与开发.md)。
 
-1. 初始化目录与占位文件：
+## 目录
 
-```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\init-workspace.ps1
-```
+| 位置 | 内容 |
+| --- | --- |
+| [作品/](作品/README.md) | 成片、草稿和历史版本的观看索引 |
+| [docs/](docs/README.md) | 给组员的制作、开发与课程资料 |
+| [ai/](ai/README.md) | Agent 规则、执行契约、审核细节与技术参考 |
+| [archive/](archive/README.md) | 历史说明、旧实验记录与迁移清单 |
+| `src/manimind/` | 编排、课程、渲染、审核和后处理代码 |
+| `examples/`、`configs/`、`tests/` | 场景源码、配置和测试 |
+| `runtime/`、`outputs/` | 本机制作计划、协作证据与版本媒体 |
+| `resources/` | 第三方精选资产及其来源、许可证 |
 
-2. 同步第三方精选资产（白名单）：
+## 一起参与
 
-```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\sync-thirdparty-assets.ps1
-```
+协作仓库：[gduf-community/ManiMind](https://github.com/gduf-community/ManiMind)。可以从补一份教案、指出一个具体画面问题、改善一段动画或补一个测试开始。先与负责人确认课次和文件范围，再提交修改与验证结果。
 
-源仓库不在项目根目录时，可显式传路径：
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\sync-thirdparty-assets.ps1 `
-  -HtmlSkillSource "<AI-Animation-Skill-main 路径>" `
-  -HyperframesSource "<hyperframes-main 路径>"
-```
-
-3. 检查依赖：
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\check-prerequisites.ps1
-```
-
-## 关键约束
-
-- 第三方资产统一放在 `resources/`，不再使用独立 `vendor/`。
-- 长期上下文只写 `runtime/projects/<project_id>/`。
-- 短期协作上下文只写 `runtime/sessions/<session_id>/`。
-- 审核未通过不得进入后处理。
-
-## 编排 CLI（新增）
-
-- `plan <manifest.json>`：生成标准项目计划。
-- `context-pack <manifest.json> <role_id> <stage>`：生成角色上下文包。
-- `context-pack ... --render-prompt-sections`：额外输出提示词分段渲染结果。
-- `task-update <manifest.json> <task_id> <status> <actor_role>`：按状态机推进任务。
-- `context-pack` 默认会阻断角色非法阶段请求；需要显式放行时使用 `--allow-disallowed-stage`。
-- 三个命令支持 `--session-id`，并会把状态与事件日志落盘到 `runtime/projects/<project_id>/` 与 `runtime/sessions/<session_id>/`。
-
-## Web API 骨架（新增）
-
-- 新增 `backend/` FastAPI 骨架，直接复用编排内核：
-  - `POST /api/projects/plan`
-  - `GET /api/projects/{project_id}/runtime`
-  - `POST /api/projects/tasks`
-  - `POST /api/projects/tasks/update`
-  - `POST /api/projects/context-pack`
-- 启动示例（安装 `api` 依赖后）：
-
-```powershell
-& 'C:\Users\84025\AppData\Local\Programs\Python\Python312\python.exe' -m pip install -e ".[api]"
-& 'C:\Users\84025\AppData\Local\Programs\Python\Python312\python.exe' -m uvicorn backend.main:app --reload
-```
-
-## 文档入口
-
-- [docs/README.md](/C:/Users/84025/Desktop/ManiMind/docs/README.md)
-- [docs/通用项目架构模板.md](/C:/Users/84025/Desktop/ManiMind/docs/通用项目架构模板.md)
-- [docs/上下文与状态设计.md](/C:/Users/84025/Desktop/ManiMind/docs/上下文与状态设计.md)
-- [docs/第三方整合.md](/C:/Users/84025/Desktop/ManiMind/docs/第三方整合.md)
-- [docs/ClaudeCode抽取清单.md](/C:/Users/84025/Desktop/ManiMind/docs/ClaudeCode抽取清单.md)
+工程细节从 [AI 与开发工具导航](ai/README.md)查阅；早期设计和实验资料保存在[历史归档](archive/README.md)。

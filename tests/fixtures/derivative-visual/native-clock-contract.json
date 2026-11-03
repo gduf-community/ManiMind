@@ -1,0 +1,225 @@
+{
+  "evidence_type": "native 30fps with text/TeX/number placeholders; no GL, pixels or approval",
+  "duration": 234,
+  "frames": 7020,
+  "chapters": [
+    {
+      "id": "secant",
+      "start": 0,
+      "end": 24
+    },
+    {
+      "id": "sides",
+      "start": 24,
+      "end": 52
+    },
+    {
+      "id": "algebra",
+      "start": 52,
+      "end": 116
+    },
+    {
+      "id": "limit",
+      "start": 116,
+      "end": 146
+    },
+    {
+      "id": "zoom",
+      "start": 146,
+      "end": 196
+    },
+    {
+      "id": "corner",
+      "start": 196,
+      "end": 222
+    },
+    {
+      "id": "summary",
+      "start": 222,
+      "end": 234
+    }
+  ],
+  "events": [
+    {
+      "id": "two_points_ready",
+      "time": 3
+    },
+    {
+      "id": "average_rate_ready",
+      "time": 12
+    },
+    {
+      "id": "both_sides_ready",
+      "time": 28
+    },
+    {
+      "id": "both_sides_near",
+      "time": 43
+    },
+    {
+      "id": "quotient_ready",
+      "time": 56
+    },
+    {
+      "id": "substitute_ready",
+      "time": 63
+    },
+    {
+      "id": "expand_ready",
+      "time": 72
+    },
+    {
+      "id": "reduce_ready",
+      "time": 82
+    },
+    {
+      "id": "factor_ready",
+      "time": 91
+    },
+    {
+      "id": "cancellation_ready",
+      "time": 100
+    },
+    {
+      "id": "simplify_ready",
+      "time": 108
+    },
+    {
+      "id": "hole_ready",
+      "time": 120
+    },
+    {
+      "id": "derivative_ready",
+      "time": 134
+    },
+    {
+      "id": "zoom_coordinates_ready",
+      "time": 150
+    },
+    {
+      "id": "zoom_substitution_ready",
+      "time": 157
+    },
+    {
+      "id": "zoom_identity_ready",
+      "time": 163
+    },
+    {
+      "id": "zoom_error_ready",
+      "time": 170
+    },
+    {
+      "id": "zoom_near_line",
+      "time": 186
+    },
+    {
+      "id": "corner_sides_ready",
+      "time": 200
+    },
+    {
+      "id": "corner_result_ready",
+      "time": 210
+    },
+    {
+      "id": "tangent_summary_ready",
+      "time": 226
+    }
+  ],
+  "windows": [
+    {
+      "id": "two_points",
+      "start": 3,
+      "end": 8
+    },
+    {
+      "id": "average_rate",
+      "start": 12,
+      "end": 22
+    },
+    {
+      "id": "both_sides_approach",
+      "start": 28,
+      "end": 50
+    },
+    {
+      "id": "quotient",
+      "start": 56,
+      "end": 60
+    },
+    {
+      "id": "substitute",
+      "start": 63,
+      "end": 68
+    },
+    {
+      "id": "expand",
+      "start": 72,
+      "end": 79
+    },
+    {
+      "id": "reduce",
+      "start": 82,
+      "end": 87
+    },
+    {
+      "id": "factor",
+      "start": 91,
+      "end": 98
+    },
+    {
+      "id": "cancel_nonzero",
+      "start": 100,
+      "end": 105
+    },
+    {
+      "id": "simplify",
+      "start": 108,
+      "end": 115
+    },
+    {
+      "id": "punctured_quotient",
+      "start": 120,
+      "end": 126
+    },
+    {
+      "id": "limit_approach",
+      "start": 126,
+      "end": 132
+    },
+    {
+      "id": "derivative_value",
+      "start": 134,
+      "end": 144
+    },
+    {
+      "id": "common_scale",
+      "start": 150,
+      "end": 156
+    },
+    {
+      "id": "zoom_substitution",
+      "start": 157,
+      "end": 161
+    },
+    {
+      "id": "zoom_identity",
+      "start": 163,
+      "end": 168
+    },
+    {
+      "id": "local_linearity",
+      "start": 170,
+      "end": 195
+    },
+    {
+      "id": "corner_disagreement",
+      "start": 200,
+      "end": 222
+    },
+    {
+      "id": "instantaneous_rate",
+      "start": 226,
+      "end": 234
+    }
+  ]
+}

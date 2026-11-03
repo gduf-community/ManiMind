@@ -1,0 +1,16 @@
+{
+  "artifact_type": "test_fixture",
+  "status": "test_only_not_production_or_approved",
+  "base_fixture": "../derivative-intro/narration.json",
+  "insert_before": "name_derivative",
+  "unit": {
+    "id": "zero_and_limit", "cue": "definition",
+    "text": "在原差商里，把h取零。分子和分母都变成零，原差商在这个输入上无定义。附近的h保持非零，两侧的商仍是四加h；h靠近零，商就靠近四。原式在零点无定义，附近的商共同趋近四。",
+    "references": [
+      {"id": "substitute_zero", "focus": "raw_zero_input", "text": "在原差商里，把h取零。"},
+      {"id": "undefined", "focus": "zero_undefined", "text": "分子和分母都变成零，原差商在这个输入上无定义。"},
+      {"id": "nearby", "focus": "nonzero_neighborhood", "text": "附近的h保持非零，两侧的商仍是四加h；h靠近零，商就靠近四。"},
+      {"id": "comparison", "focus": "zero_value_vs_limit", "text": "原式在零点无定义，附近的商共同趋近四。"}
+    ]
+  }
+}

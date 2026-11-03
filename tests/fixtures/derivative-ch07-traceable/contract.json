@@ -1,0 +1,290 @@
+{
+  "schema_version": 1,
+  "project_id": "math-derivative-ch07-extremes-20261102",
+  "units": [
+    {
+      "id": "opening",
+      "asset": "visual_v004",
+      "function": "从附近比较进入完整闭区间问题",
+      "baseline_interval": [
+        0,
+        29.5
+      ],
+      "features": [
+        {
+          "id": "same-function-closed-range",
+          "kind": "state",
+          "claim": "图上保留同一抛物线f(x)=(x-1)²、x∈[0,3]和两个实心端点，明确全课函数与当前范围"
+        },
+        {
+          "id": "boundary-participates",
+          "kind": "state",
+          "claim": "完整限制曲线旁明确写出整个区间比较与边界也在范围内，端点不因不是内点而被排除"
+        }
+      ]
+    },
+    {
+      "id": "candidates",
+      "asset": "visual_v004",
+      "function": "内部必要条件与边界候选分开",
+      "baseline_interval": [
+        29.5,
+        86.5
+      ],
+      "features": [
+        {
+          "id": "interior-stationary-condition",
+          "kind": "state",
+          "claim": "f'(x)=2(x-1)与f'(x)=0⇒x=1同屏连接内部驻点筛选，不把零导数写成充分条件"
+        },
+        {
+          "id": "endpoints-plus-interior",
+          "kind": "state",
+          "claim": "曲线上圈出0、1、3，旁列端点0、3和内部驻点1，两类位置共同组成候选"
+        },
+        {
+          "id": "differentiable-example-reason",
+          "kind": "state",
+          "claim": "候选圈与处处可导、内部极值必在驻点的限定文字并存，候选完整性只依本例条件说明"
+        }
+      ]
+    },
+    {
+      "id": "compare",
+      "asset": "visual_v004",
+      "function": "代入原函数并把数值与曲线点联系",
+      "baseline_interval": [
+        86.5,
+        124.9
+      ],
+      "features": [
+        {
+          "id": "rows-linked-to-curve-points",
+          "kind": "process",
+          "claim": "x与f(x)分列，(0,1)、(1,0)、(3,4)三行及曲线对应点逐次显现，不只给最终答案"
+        },
+        {
+          "id": "compare-function-values",
+          "kind": "state",
+          "claim": "表格右列清晰是函数值1、0、4，左列是位置0、1、3；不是比较导数值或横坐标大小"
+        },
+        {
+          "id": "interior-minimum-boundary-maximum",
+          "kind": "state",
+          "claim": "保留min f=0(x=1)、max f=4(x=3)与对应图点，最高点来自边界而非内部驻点"
+        }
+      ]
+    },
+    {
+      "id": "parameter",
+      "asset": "visual_v004",
+      "function": "同函数改变闭区间右边界并比较候选",
+      "baseline_interval": [
+        124.9,
+        189.10000000000002
+      ],
+      "features": [
+        {
+          "id": "current-bright-domain-faint-reference",
+          "kind": "state",
+          "claim": "x∈[0,b]、1≤b≤3可读；亮曲段、移动端点和竖线表示当前范围，暗全曲线只作参照"
+        },
+        {
+          "id": "linked-endpoint-and-readouts",
+          "kind": "process",
+          "claim": "b与f(b)读数随亮曲段端点连续变化，固定f(0)=1、f(1)=0仍可读；右端低于左端时左端取最大"
+        },
+        {
+          "id": "right-value-approaches-tie",
+          "kind": "process",
+          "claim": "右端沿同一抛物线上升，b读数接近2而f(b)读数接近1；左右端高度随后相等"
+        },
+        {
+          "id": "one-max-value-two-positions",
+          "kind": "state",
+          "claim": "b=2、f(b)=1与两端同高文字及图形共同可读；最大值数值为1，取得位置为0和2，内部最小仍为0"
+        },
+        {
+          "id": "right-end-overtakes-left",
+          "kind": "process",
+          "claim": "从b=2两端同高，继续增长的亮曲段与右端读数越过左端高度，最终右端更高"
+        },
+        {
+          "id": "same-model-new-winner",
+          "kind": "state",
+          "claim": "b=3.00与f(b)=4.00、f(0)=1、f(1)=0及右端取最大文字可见；改变范围而非更换函数"
+        }
+      ]
+    },
+    {
+      "id": "conditions",
+      "asset": "visual_v004",
+      "function": "存在保证与搜索理由分层",
+      "baseline_interval": [
+        189.10000000000002,
+        230.20000000000002
+      ],
+      "features": [
+        {
+          "id": "continuous-finite-closed",
+          "kind": "state",
+          "claim": "连续、有限闭区间与不断开的曲线和实心端点对应，条件完整呈现"
+        },
+        {
+          "id": "existence-versus-search",
+          "kind": "state",
+          "claim": "保证最大值最小值都能取到，与本例比较端点和内部驻点的值分行陈述，不把存在性当作位置算法"
+        },
+        {
+          "id": "nondifferentiable-candidates-caption",
+          "kind": "state",
+          "claim": "实际可见文字提醒若内部不可导，还需检查那些位置；本例未展示尖点曲线，不能声称已有尖点数值示例"
+        }
+      ]
+    },
+    {
+      "id": "open-interval",
+      "asset": "visual_v004",
+      "function": "同函数去掉端点与不可达上确界",
+      "baseline_interval": [
+        230.20000000000002,
+        287.8
+      ],
+      "features": [
+        {
+          "id": "hollow-excluded-endpoints",
+          "kind": "state",
+          "claim": "同一f(x)=(x-1)²改为x∈(0,3)，两个空心端点与不属于区间说明可读"
+        },
+        {
+          "id": "interior-minimum-survives",
+          "kind": "state",
+          "claim": "开区间内顶点仍是实心点，min f=0(x=1)继续可读，去掉端点并未去掉最小值位置"
+        },
+        {
+          "id": "approach-without-attainment",
+          "kind": "process",
+          "claim": "可见递增右支1<x<3、y=(x+3)/2与正差；亮点和函数值连续趋近右端，末态3.960<4。"
+        },
+        {
+          "id": "supremum-not-maximum",
+          "kind": "state",
+          "claim": "x→3⁻、f(x)→4与上确界4、无最大值、最小值仍为0共同呈现，区分趋近上界与定义域内可达最值"
+        },
+        {
+          "id": "v004-whole-domain-no-maximum",
+          "kind": "state",
+          "claim": "v004全域论证完整保留：0<x≤1时f(x)<1=f(2)；1<x<3时取x<y<3且f(x)<f(y)；全域0≤f(x)<4与趋近4共同说明上确界4、无最大值、最小值0仍可取。"
+        }
+      ]
+    },
+    {
+      "id": "closing",
+      "asset": "visual_v004",
+      "function": "范围候选函数值与实际模型衔接",
+      "baseline_interval": [
+        287.8,
+        322.2
+      ],
+      "features": [
+        {
+          "id": "range-candidates-values-attainability",
+          "kind": "state",
+          "claim": "先定范围再找候选比较值，闭区间min0/max4与开区间min0/sup4并列，上界能否取到回到定义域"
+        },
+        {
+          "id": "next-modeling-feasible-dimensions",
+          "kind": "state",
+          "claim": "实际可见的下一课桥梁是把实际尺寸变成可比较的函数；不声称基线已展示纸盒几何、体积推导或可行域数值"
+        }
+      ]
+    }
+  ],
+  "version": "v005",
+  "status": "not_reviewed",
+  "writer": "01a19f6b-174f-7431-a0fd-2adf59301a9e",
+  "consumers": [
+    "main",
+    "native tests",
+    "independent reviewers"
+  ],
+  "lifecycle": "CH07 v005 author candidate",
+  "invalidation": "Source, clock, plan, baseline or evidence changes",
+  "assets": {
+    "visual_v004": {
+      "path": "outputs/math-derivative-ch07-extremes-20261102/visual-v004/manim/media/manimgl/understanding.mp4",
+      "sha256": "ca722050e1998e5cee06563b6380eba2dc579aa7e93b3490abd46bce89f71b67",
+      "duration": 322.2
+    }
+  },
+  "baseline_selection": "Complete current visual-v004 including corrected right-branch quantifier AND whole-domain no-maximum proof",
+  "improvement_targets": [
+    {
+      "id": "stationary_candidate",
+      "operation": "copy_stationary_position",
+      "source": "f'(x)=0推出x=1中的1",
+      "target": "内部驻点候选1",
+      "purpose": "只调用必要条件，不写成充分条件"
+    },
+    {
+      "id": "endpoint_candidates",
+      "operation": "copy_domain_boundaries",
+      "source": "闭区间[0,3]的两个端点",
+      "target": "端点候选0与3",
+      "purpose": "边界来自定义域而非零导数"
+    },
+    {
+      "id": "substitution_zero",
+      "operation": "substitute_then_evaluate",
+      "source": "候选位置0与可见原函数(x-1)^2",
+      "target": "(0-1)^2=1再进入函数值列",
+      "purpose": "位置与函数值有不同角色"
+    },
+    {
+      "id": "substitution_one",
+      "operation": "substitute_then_evaluate",
+      "source": "候选位置1与同一原函数",
+      "target": "(1-1)^2=0再进入函数值列",
+      "purpose": "稳定保留前次计算，不整行morph"
+    },
+    {
+      "id": "substitution_three",
+      "operation": "substitute_then_evaluate",
+      "source": "候选位置3与同一原函数",
+      "target": "(3-1)^2=4再进入函数值列",
+      "purpose": "三次计算共同支撑比较"
+    },
+    {
+      "id": "minimum_value",
+      "operation": "select_value_column",
+      "source": "函数值列1,0,4中的0",
+      "target": "最小值0",
+      "purpose": "不把最小候选位置当作最小值"
+    },
+    {
+      "id": "minimum_location",
+      "operation": "attach_argmin",
+      "source": "左列同一行位置1",
+      "target": "取得最小值的位置x=1",
+      "purpose": "值与取得位置分次进入"
+    },
+    {
+      "id": "maximum_value",
+      "operation": "select_value_column",
+      "source": "函数值列1,0,4中的4",
+      "target": "最大值4",
+      "purpose": "最高点来自边界而非驻点"
+    },
+    {
+      "id": "maximum_location",
+      "operation": "attach_argmax",
+      "source": "左列同一行位置3",
+      "target": "取得最大值的位置x=3",
+      "purpose": "保留边界参与比较的理由"
+    }
+  ],
+  "evidence_limits": [
+    "Author inventory is not independent regression",
+    "New candidate/substitution motions are not claimed as old baseline capabilities"
+  ]
+}

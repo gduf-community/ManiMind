@@ -1,0 +1,98 @@
+{
+  "artifact_type": "test_fixture",
+  "status": "test_only_not_production_or_approved",
+  "model_version": "monotonicity-cubic-v001",
+  "samples": [
+    {
+      "x": -2,
+      "f": -2,
+      "df": 9,
+      "sign": 1
+    },
+    {
+      "x": -1,
+      "f": 2,
+      "df": 0,
+      "sign": 0
+    },
+    {
+      "x": 0,
+      "f": 0,
+      "df": -3,
+      "sign": -1
+    },
+    {
+      "x": 1,
+      "f": -2,
+      "df": 0,
+      "sign": 0
+    },
+    {
+      "x": 2,
+      "f": 2,
+      "df": 9,
+      "sign": 1
+    }
+  ],
+  "intervals": [
+    {
+      "left": -4,
+      "right": -1,
+      "sign": 1
+    },
+    {
+      "left": -1,
+      "right": 1,
+      "sign": -1
+    },
+    {
+      "left": 1,
+      "right": 4,
+      "sign": 1
+    }
+  ],
+  "mapping": {
+    "x_offset": -0.8,
+    "x_scale": 2,
+    "f_y_offset": 1.65,
+    "f_y_scale": 0.3,
+    "df_y_offset": -1.35,
+    "df_y_scale": 0.14
+  },
+  "cube_pairs": [
+    [
+      -2,
+      -1
+    ],
+    [
+      -1,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      -1,
+      1
+    ],
+    [
+      -0.01,
+      0.01
+    ]
+  ],
+  "witness_pairs": [
+    [
+      -2,
+      -1.15
+    ],
+    [
+      -3,
+      -2
+    ],
+    [
+      -1.5,
+      -1.1
+    ]
+  ]
+}
