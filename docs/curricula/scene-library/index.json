@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-04",
+  "writer": "课程负责人及教研维护者",
+  "consumers": ["组长", "教研", "动画作者", "独立审核者"],
+  "lifecycle": "跨制作轮次维护的编辑选题；各课程独立扩充，无数量上限",
+  "invalidation": "来源版本、受众先修、科学条件或出口任务改变时重审受影响教案；旧媒体批准沿用各自绑定",
+  "purpose": "editorial_selection_not_runtime_or_mastery_state",
+  "sources": "sources.csv",
+  "courses": [
+    {"id": "high-school-mathematics", "title": "高中数学", "prefix": "HM", "file": "high-school-mathematics.csv", "scope": "高中概念与教辅型迁移难点，课标和地方适用性由任课教师核准"},
+    {"id": "high-school-physics", "title": "高中物理", "prefix": "HP", "file": "high-school-physics.csv", "scope": "高中物理概念、典型过程与临界模型，指定教辅完整对应待核"},
+    {"id": "calculus", "title": "微积分", "prefix": "CA", "file": "calculus.csv", "scope": "一元、多元与进阶向量分析；不并入普通微分方程课程"},
+    {"id": "linear-algebra", "title": "线性代数", "prefix": "LA", "file": "linear-algebra.csv", "scope": "线性映射、子空间、特征结构与矩阵分解"},
+    {"id": "probability", "title": "概率论", "prefix": "PR", "file": "probability.csv", "scope": "概率机制、分布、极限定律及基础随机过程拓展"},
+    {"id": "mathematical-statistics", "title": "数理统计", "prefix": "ST", "file": "mathematical-statistics.csv", "scope": "估计、区间、检验、回归与贝叶斯推断"}
+  ],
+  "pilot_scenes": ["HM-003", "HP-006", "CA-010", "LA-013", "PR-012", "ST-008"],
+  "future_independent_courses": ["常微分方程", "离散数学", "数值分析", "复变函数"]
+}

@@ -12,10 +12,11 @@
 
 ## 课程与教研
 
-- [高中课程总目录](curricula/README.md)
-- [高中数学候选课题](curricula/high-school-mathematics-v0.1.csv)
-- [高中物理候选课题](curricula/high-school-physics-v0.1.csv)
-- [课题设计原则](curricula/lesson-design-v0.1.md)
+- [精选动画场景总表](curricula/scene-library/总目录.md)：高中两科与大学四门数学课程分别浏览
+- [场景备课与制作](curricula/scene-design-v0.2.md)
+- [全科知识地图](curricula/README.md#全科知识地图)：保留原先修与范围参照
+- [动画选题研究](research/animation-selection-20261104.md)：教材、教辅、可视化案例与验证方法
+- [原单元设计示例](curricula/lesson-design-v0.1.md)
 - [教学体系研究](research/teaching-system-20261028.md)
 - [公式动画创作引导](公式动画创作引导.md)
 
