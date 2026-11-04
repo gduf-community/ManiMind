@@ -99,6 +99,10 @@ def main():
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--previous-output", type=Path)
     args = parser.parse_args()
+    if args.output.exists():
+        previous_catalogue = json.loads(args.output.read_text(encoding="utf-8"))
+        if previous_catalogue.get("publication_scope", "").startswith("github_release"):
+            raise ValueError("Published catalogues require release reconciliation; write a separate local snapshot")
     result = build(args.desktop)
     if args.previous_output:
         previous = args.output.read_bytes()

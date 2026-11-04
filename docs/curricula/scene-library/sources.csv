@@ -1,0 +1,22 @@
+id,title,url,evidence_type,accessed,access_level,use_boundary
+T01,高中数学2025修订课标解读官方书目,https://xuanshu.hep.com.cn/front/h5Mobile/bookDetails?bookId=6a299900e119ac972940bbce,官方出版社,2026-11-04,简介与目录,确认版本及结构；不代替课标全文和地方适用性
+T02,高中物理2025修订课标简介,https://pmc.scnu.edu.cn/a/20251127/25.html,国家教材建设研究基地,2026-11-04,简介,确认版本及素养主线；未逐项对照全文
+B01,高考数学你真的掌握了吗套装书目,https://www.tup.tsinghua.edu.cn/booksCenter/book_05653802.html,官方出版社,2026-11-04,简介与书目,旧版2014出版；不当成2025第二版
+B02,高考数学你真的掌握了吗公开目录,https://www.tup.tsinghua.edu.cn/booksCenter/bookcatalog?id=05653802,官方出版社,2026-11-04,公开目录,目录定位仅表示专题存在；场景与出口题为本项目设计
+B03,新高掌平面几何与三角函数第二版,https://wqbook.wqxuetang.com/book/3263112,官方电子书平台,2026-11-04,书目简介,2025出版信息可核对；全文与目录未取得
+B04,新高掌官方配套视频目录,https://www.bilibili.com/video/BV1xR4y1x7WY?p=1,出版社官方账号,2026-11-04,搜索索引中的公开简介与选集,未逐段观看视频；不引用视频中的具体解法
+B05,基础题和中档题官方样章,https://www.tup.com.cn/upload/books/yz/099540-01.pdf,官方出版社,2026-11-04,搜索索引中的前言,提示中档迁移需求；不据此编造题号与全文结论
+B06,更高更快地解题高中物理上册书目,https://www.sanmin.com.tw/product/index/007956447,书店书目,2026-11-04,搜索索引书目；直接访问失败,仅确认候选书名作者ISBN；不是完整目录或技术依据
+B07,更高更快地解题主编的公开模型课程线索,https://www.bilibili.com/video/BV1QV411X7nD/,作者自述公开账号,2026-11-04,搜索索引中的简介与选集；直接访问失败,当前合集对应问鼎高考；不能充作更高更快全书目录
+R01,Animation can it facilitate,https://sites.stat.columbia.edu/gelman/graphics.course/animationijhcsproofs.pdf,作者论文公开校样,2026-11-04,PDF摘要与正文,解释设计原则与比较条件；不保证任意视频学习增益
+R02,PhET界面设计与学生访谈研究,https://phet.colorado.edu/publications/archive/Phet%20Interview%20Paper.htm,项目原始研究,2026-11-04,正文,交互仿真设计及访谈方法；线性视频另验
+R03,机械波学生理解研究,https://arxiv.org/abs/physics/0207092,作者论文,2026-11-04,摘要与出版信息,提示传播与叠加的模型混用；不推出本库已解决
+U01,MIT一元微积分18.01SC,https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/,大学课程,2026-11-04,课程目录,主题范围参考；非中国统一教学大纲
+U02,MIT多元微积分18.02SC,https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/,大学课程,2026-11-04,课程目录,多元与向量分析范围参考；分专业核准
+U03,MIT线性代数18.06SC,https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/,大学课程,2026-11-04,课程目录,主题范围与概念联系参考
+U04,Harvard概率论Stat110,https://stat110.hsites.harvard.edu/,大学课程,2026-11-04,课程主页,概率课程与作者开放教材入口；未读取云端教材全文
+U05,MIT数理统计18.650讲义目录,https://ocw.mit.edu/courses/18-650-statistics-for-applications-fall-2016/pages/lecture-slides/,大学课程,2026-11-04,讲义目录,估计检验回归与贝叶斯的课程范围参考
+V01,MIT Mathlets,https://mathlets.org/mathlets/,作者项目,2026-11-04,目录与部分说明页,借鉴联动表示；商业作品不直接复制非商用许可资产
+V02,Seeing Theory,https://seeing-theory.brown.edu/,作者项目,2026-11-04,主页与频率推断页,借鉴重复试验表示；已归档；具体素材复用另核许可
+V03,3Blue1Brown特征向量,https://www.3blue1brown.com/lessons/eigenvalues/,作者课程,2026-11-04,文字与图示说明,借鉴不变方向与先修组织；不用其素材替代原创
+V04,3Blue1Brown导数,https://www.3blue1brown.com/lessons/derivatives/,作者课程,2026-11-04,文字与图示说明,借鉴对象与表示连续联系；不是质量验收证据

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "status": "verified",
+  "public_url": "https://github.com/gduf-community/ManiMind/releases/tag/videos-20261104",
+  "release_id": 433511499,
+  "tag": "videos-20261104",
+  "verified_at": "2026-11-04T05:42:38.992030+00:00",
+  "asset_sha256": [
+    "30c321299ca2fba9897791f8c98285b55824f88b5c138acf6f89443129d7293a"
+  ],
+  "assets": [
+    {
+      "id": 708209919,
+      "name": "math-derivative-01-motion-revision-20261103.mp4",
+      "size_bytes": 8069170,
+      "sha256": "30c321299ca2fba9897791f8c98285b55824f88b5c138acf6f89443129d7293a",
+      "github_digest": "sha256:30c321299ca2fba9897791f8c98285b55824f88b5c138acf6f89443129d7293a",
+      "state": "uploaded",
+      "public_url": "https://github.com/gduf-community/ManiMind/releases/download/videos-20261104/math-derivative-01-motion-revision-20261103.mp4",
+      "anonymous_range_status": 206,
+      "bytes_checked": 64,
+      "mp4_header": "ftyp"
+    }
+  ],
+  "content_stage": "captioned_revision_preview_delivered",
+  "writer": "authorized publication operator",
+  "consumers": [
+    "viewers",
+    "maintainers",
+    "catalogue validator"
+  ],
+  "lifecycle": "Retained with this GitHub video edition",
+  "invalidation": "Release deletion or asset byte/name/URL changes require reconciliation",
+  "verification": "Local catalogue SHA256 matches GitHub asset digest; anonymous MP4 range download passed; no new content or listening approval"
+}
