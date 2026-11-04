@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "status": "verified",
+  "public_url": "https://github.com/gduf-community/ManiMind/releases/tag/videos-20261104",
+  "release_id": 433511499,
+  "tag": "videos-20261104",
+  "verified_at": "2026-11-04T05:42:38.992030+00:00",
+  "asset_sha256": [
+    "fd32e4cfc7ed27c4dad2b838921de9ea47aa5620edfa23c90b9aee32d24e298c"
+  ],
+  "assets": [
+    {
+      "id": 708380434,
+      "name": "projectile-20261027-01.mp4",
+      "size_bytes": 9417176,
+      "sha256": "fd32e4cfc7ed27c4dad2b838921de9ea47aa5620edfa23c90b9aee32d24e298c",
+      "github_digest": "sha256:fd32e4cfc7ed27c4dad2b838921de9ea47aa5620edfa23c90b9aee32d24e298c",
+      "state": "uploaded",
+      "public_url": "https://github.com/gduf-community/ManiMind/releases/download/videos-20261104/projectile-20261027-01.mp4",
+      "anonymous_range_status": 206,
+      "bytes_checked": 64,
+      "mp4_header": "ftyp"
+    }
+  ],
+  "content_stage": "existing_viewing_package",
+  "writer": "authorized publication operator",
+  "consumers": [
+    "viewers",
+    "maintainers",
+    "catalogue validator"
+  ],
+  "lifecycle": "Retained with this GitHub video edition",
+  "invalidation": "Release deletion or asset byte/name/URL changes require reconciliation",
+  "verification": "Local catalogue SHA256 matches GitHub asset digest; anonymous MP4 range download passed; no new content or listening approval"
+}

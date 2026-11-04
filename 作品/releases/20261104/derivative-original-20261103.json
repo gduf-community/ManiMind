@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "status": "verified",
+  "public_url": "https://github.com/gduf-community/ManiMind/releases/tag/videos-20261104",
+  "release_id": 433511499,
+  "tag": "videos-20261104",
+  "verified_at": "2026-11-04T05:42:38.992030+00:00",
+  "asset_sha256": [
+    "124def3d70956df2fd2b30c4d5c36ea60ff85f4e07aa3f7d8ae6e8363c8a95fc",
+    "30324022e8d7f80a281304e069368ea8b735ddae8517c4072c94ea21e358aa25",
+    "3238b318e4f13380a8a6da29236e5f1d75d13838e6244ede1250906855a4f426",
+    "69da97f2ba4a18d5877f878be3c672d31fdca920a9470f736d490d3eae3da505",
+    "8e449eec49dd254ba542cfc1483cc24b9dfdd48ae79299c15115eecada99d5a9",
+    "a79ba111acdcb697003d0db57dd0492af1da34d81f0d16721949a7238818079f",
+    "ae2529f838188a95d1ab4e24d9b5c1cd484b5b9744584cfa2fc7af5bb00a11ae",
+    "c2cc0a3d5d55393244acf8aecec1d04e76aa75d2de99510a0354c1f1204d2302",
+    "e6f68bafdbe6127355ad488f31c494b277bdbd65a47930bb5a221d86ec324060"
+  ],
+  "assets": [
+    {
+      "id": 708307581,
+      "name": "derivative-original-20261103-01.mp4",
+      "size_bytes": 109090882,
+      "sha256": "e6f68bafdbe6127355ad488f31c494b277bdbd65a47930bb5a221d86ec324060",
+      "github_digest": "sha256:e6f68bafdbe6127355ad488f31c494b277bdbd65a47930bb5a221d86ec324060",
+      "state": "uploaded",
+      "public_url": "https://github.com/gduf-community/ManiMind/releases/download/videos-20261104/derivative-original-20261103-01.mp4",
+      "anonymous_range_status": 206,
+      "bytes_checked": 64,
+      "mp4_header": "ftyp"
+    },
+    {
+      "id": 708332566,
+      "name": "derivative-original-20261103-02.mp4",
+      "size_bytes": 7911254,
+      "sha256": "3238b318e4f13380a8a6da29236e5f1d75d13838e6244ede1250906855a4f426",
+      "github_digest": "sha256:3238b318e4f13380a8a6da29236e5f1d75d13838e6244ede1250906855a4f426",
+      "state": "uploaded",
+      "public_url": "https://github.com/gduf-community/ManiMind/releases/download/videos-20261104/derivative-original-20261103-02.mp4",
+      "anonymous_range_status": 206,
+      "bytes_checked": 64,
+      "mp4_header": "ftyp"
+    },
+    {
+      "id": 708333644,
+      "name": "derivative-original-20261103-03.mp4",
+      "size_bytes": 23107400,
+      "sha256": "ae2529f838188a95d1ab4e24d9b5c1cd484b5b9744584cfa2fc7af5bb00a11ae",
+      "github_digest": "sha256:ae2529f838188a95d1ab4e24d9b5c1cd484b5b9744584cfa2fc7af5bb00a11ae",
+      "state": "uploaded",
+      "public_url": "https://github.com/gduf-community/ManiMind/releases/download/videos-20261104/derivative-original-20261103-03.mp4",
+      "anonymous_range_status": 206,
+      "bytes_checked": 64,
+      "mp4_header": "ftyp"
+    },
+    {
+      "id": 708340599,
+      "name": "derivative-original-20261103-04.mp4",
+      "size_bytes": 13824099,
+      "sha256": "30324022e8d7f80a281304e069368ea8b735ddae8517c4072c94ea21e358aa25",
+      "github_digest": "sha256:30324022e8d7f80a281304e069368ea8b735ddae8517c4072c94ea21e358aa25",
+      "state": "uploaded",
+      "public_url": "https://github.com/gduf-community/ManiMind/releases/download/videos-20261104/derivative-original-20261103-04.mp4",
+      "anonymous_range_status": 206,
+      "bytes_checked": 64,
+      "mp4_header": "ftyp"
+    },
+    {
+      "id": 708353611,
+      "name": "derivative-original-20261103-05.mp4",
+      "size_bytes": 11281135,
+      "sha256": "124def3d70956df2fd2b30c4d5c36ea60ff85f4e07aa3f7d8ae6e8363c8a95fc",
+      "github_digest": "sha256:124def3d70956df2fd2b30c4d5c36ea60ff85f4e07aa3f7d8ae6e8363c8a95fc",
+      "state": "uploaded",
+      "public_url": "https://github.com/gduf-community/ManiMind/releases/download/videos-20261104/derivative-original-20261103-05.mp4",
+      "anonymous_range_status": 206,
+      "bytes_checked": 64,
+      "mp4_header": "ftyp"
+    },
+    {
+      "id": 708356447,
+      "name": "derivative-original-20261103-06.mp4",
+      "size_bytes": 13493356,
+      "sha256": "a79ba111acdcb697003d0db57dd0492af1da34d81f0d16721949a7238818079f",
+      "github_digest": "sha256:a79ba111acdcb697003d0db57dd0492af1da34d81f0d16721949a7238818079f",
+      "state": "uploaded",
+      "public_url": "https://github.com/gduf-community/ManiMind/releases/download/videos-20261104/derivative-original-20261103-06.mp4",
+      "anonymous_range_status": 206,
+      "bytes_checked": 64,
+      "mp4_header": "ftyp"
+    },
+    {
+      "id": 708359045,
+      "name": "derivative-original-20261103-07.mp4",
+      "size_bytes": 11938504,
+      "sha256": "69da97f2ba4a18d5877f878be3c672d31fdca920a9470f736d490d3eae3da505",
+      "github_digest": "sha256:69da97f2ba4a18d5877f878be3c672d31fdca920a9470f736d490d3eae3da505",
+      "state": "uploaded",
+      "public_url": "https://github.com/gduf-community/ManiMind/releases/download/videos-20261104/derivative-original-20261103-07.mp4",
+      "anonymous_range_status": 206,
+      "bytes_checked": 64,
+      "mp4_header": "ftyp"
+    },
+    {
+      "id": 708361268,
+      "name": "derivative-original-20261103-08.mp4",
+      "size_bytes": 10881800,
+      "sha256": "8e449eec49dd254ba542cfc1483cc24b9dfdd48ae79299c15115eecada99d5a9",
+      "github_digest": "sha256:8e449eec49dd254ba542cfc1483cc24b9dfdd48ae79299c15115eecada99d5a9",
+      "state": "uploaded",
+      "public_url": "https://github.com/gduf-community/ManiMind/releases/download/videos-20261104/derivative-original-20261103-08.mp4",
+      "anonymous_range_status": 206,
+      "bytes_checked": 64,
+      "mp4_header": "ftyp"
+    },
+    {
+      "id": 708362683,
+      "name": "derivative-original-20261103-09.mp4",
+      "size_bytes": 14339239,
+      "sha256": "c2cc0a3d5d55393244acf8aecec1d04e76aa75d2de99510a0354c1f1204d2302",
+      "github_digest": "sha256:c2cc0a3d5d55393244acf8aecec1d04e76aa75d2de99510a0354c1f1204d2302",
+      "state": "uploaded",
+      "public_url": "https://github.com/gduf-community/ManiMind/releases/download/videos-20261104/derivative-original-20261103-09.mp4",
+      "anonymous_range_status": 206,
+      "bytes_checked": 64,
+      "mp4_header": "ftyp"
+    }
+  ],
+  "content_stage": "existing_original_edition",
+  "writer": "authorized publication operator",
+  "consumers": [
+    "viewers",
+    "maintainers",
+    "catalogue validator"
+  ],
+  "lifecycle": "Retained with this GitHub video edition",
+  "invalidation": "Release deletion or asset byte/name/URL changes require reconciliation",
+  "verification": "Local catalogue SHA256 matches GitHub asset digest; anonymous MP4 range download passed; no new content or listening approval"
+}

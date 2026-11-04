@@ -1,0 +1,332 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-11-03T05:56:21.796023+00:00",
+  "writer": "build_work_catalog local indexing tool",
+  "consumers": [
+    "viewers",
+    "lead",
+    "maintainers"
+  ],
+  "lifecycle": "Snapshot of existing viewing packages; retain with the named edition",
+  "invalidation": "Package filenames, bytes, source manifests or release status change requires a new catalog snapshot",
+  "media_operation": "read_only",
+  "entries": [
+    {
+      "id": "derivative-01-motion-revision-20261103",
+      "title": "导数入门：变量动效修订预览",
+      "stage": "captioned_revision_preview_delivered",
+      "location": {
+        "kind": "local_viewing_package",
+        "relative_to": "Desktop",
+        "path": "01-知识动画/02-展示与对比/导数动效修订-20261103"
+      },
+      "public_url": null,
+      "videos": [
+        {
+          "filename": "01-导数入门-从平均变化率到导数-变量动效修订版.mp4",
+          "sha256": "30c321299ca2fba9897791f8c98285b55824f88b5c138acf6f89443129d7293a",
+          "size_bytes": 8069170,
+          "manifest_match": false
+        }
+      ],
+      "source_manifests": [
+        {
+          "relative_to": "Desktop",
+          "path": "01-知识动画/02-展示与对比/导数动效修订-20261103/制作信息.json",
+          "sha256": "d21f1dca71a379aa7d436b11f29d58904d64dba7f64c2c881af9685db4049eda"
+        }
+      ],
+      "native_source_pointers": [
+        "outputs/math-derivative-intro-20261101/captioned-v010/delivery.json"
+      ],
+      "listening_review": "pending",
+      "verification": "Existing local bytes hashed; manifest compared where available; no new content approval",
+      "native_delivery": {
+        "path": "outputs/math-derivative-intro-20261101/captioned-v010/delivery.json",
+        "sha256": "f18846b57b446887101777c19b866c3d4298029906d4936b30acf8726c4aef1b"
+      },
+      "duration_seconds": 228.0,
+      "student_review": "pending",
+      "full_decode_passed": true
+    },
+    {
+      "id": "derivative-07-motion-revision-20261103",
+      "title": "闭区间最值：变量动效修订预览",
+      "stage": "captioned_revision_preview_delivered",
+      "location": {
+        "kind": "local_viewing_package",
+        "relative_to": "Desktop",
+        "path": "01-知识动画/02-展示与对比/导数动效修订-20261103"
+      },
+      "public_url": null,
+      "videos": [{
+        "filename": "07-闭区间最值-先找候选再比较-变量动效修订版.mp4",
+        "sha256": "f6dd9ff86c463579c231207309077034eb9dcd5e623b47436f9611ad8eabc0c4",
+        "size_bytes": 10946558,
+        "manifest_match": true
+      }],
+      "source_manifests": [{
+        "relative_to": "Desktop",
+        "path": "01-知识动画/02-展示与对比/导数动效修订-20261103/07-制作信息.json",
+        "sha256": "061170d2f90a25f838f0636babb53cb6b164fe926c4d605026b49c9ec3759ee8"
+      }],
+      "native_source_pointers": ["outputs/math-derivative-ch07-extremes-20261102/captioned-v007/delivery.json"],
+      "native_delivery": {
+        "path": "outputs/math-derivative-ch07-extremes-20261102/captioned-v007/delivery.json",
+        "sha256": "4442c3b5c33437ed8090bc28518f296ccb279f854d9f8b4619a4bd1bd334ce7c"
+      },
+      "duration_seconds": 322.2,
+      "verification": "Byte-identical to native delivery; complete decode and one video/audio stream verified",
+      "full_decode_passed": true,
+      "caption_status": "single_burned_set",
+      "listening_review": "pending",
+      "naturalness_review": "pending",
+      "pronunciation_review": "pending",
+      "student_review": "pending"
+    },
+    {
+      "id": "derivative-original-20261103",
+      "title": "导数及其应用",
+      "stage": "existing_original_edition",
+      "location": {
+        "kind": "local_viewing_package",
+        "relative_to": "Desktop",
+        "path": "01-知识动画/01-当前成片/高中数学-导数整章-配音字幕版-20261103"
+      },
+      "public_url": null,
+      "videos": [
+        {
+          "filename": "00-导数及其应用-整章合集.mp4",
+          "sha256": "e6f68bafdbe6127355ad488f31c494b277bdbd65a47930bb5a221d86ec324060",
+          "size_bytes": 109090882,
+          "manifest_match": true
+        },
+        {
+          "filename": "01-从平均变化率到导数.mp4",
+          "sha256": "3238b318e4f13380a8a6da29236e5f1d75d13838e6244ede1250906855a4f426",
+          "size_bytes": 7911254,
+          "manifest_match": true
+        },
+        {
+          "filename": "02-从点导数到基本导函数.mp4",
+          "sha256": "ae2529f838188a95d1ab4e24d9b5c1cd484b5b9744584cfa2fc7af5bb00a11ae",
+          "size_bytes": 23107400,
+          "manifest_match": true
+        },
+        {
+          "filename": "03-求导的四则运算法则.mp4",
+          "sha256": "30324022e8d7f80a281304e069368ea8b735ddae8517c4072c94ea21e358aa25",
+          "size_bytes": 13824099,
+          "manifest_match": true
+        },
+        {
+          "filename": "04-复合函数的变化怎样传递.mp4",
+          "sha256": "124def3d70956df2fd2b30c4d5c36ea60ff85f4e07aa3f7d8ae6e8363c8a95fc",
+          "size_bytes": 11281135,
+          "manifest_match": true
+        },
+        {
+          "filename": "05-由导数读函数的增减.mp4",
+          "sha256": "a79ba111acdcb697003d0db57dd0492af1da34d81f0d16721949a7238818079f",
+          "size_bytes": 13493356,
+          "manifest_match": true
+        },
+        {
+          "filename": "06-驻点与局部极值.mp4",
+          "sha256": "69da97f2ba4a18d5877f878be3c672d31fdca920a9470f736d490d3eae3da505",
+          "size_bytes": 11938504,
+          "manifest_match": true
+        },
+        {
+          "filename": "07-指定区间里的最大与最小.mp4",
+          "sha256": "8e449eec49dd254ba542cfc1483cc24b9dfdd48ae79299c15115eecada99d5a9",
+          "size_bytes": 10881800,
+          "manifest_match": true
+        },
+        {
+          "filename": "08-从裁纸做盒到最优体积.mp4",
+          "sha256": "c2cc0a3d5d55393244acf8aecec1d04e76aa75d2de99510a0354c1f1204d2302",
+          "size_bytes": 14339239,
+          "manifest_match": true
+        }
+      ],
+      "source_manifests": [
+        {
+          "relative_to": "Desktop",
+          "path": "01-知识动画/01-当前成片/高中数学-导数整章-配音字幕版-20261103/manifest.json",
+          "sha256": "db5ba5c54166a53be992f6f40305a00e8fc0ba13aeef395a67126887ba405a4e"
+        },
+        {
+          "relative_to": "Desktop",
+          "path": "01-知识动画/01-当前成片/高中数学-导数整章-配音字幕版-20261103/制作资料/原始发布清单.json",
+          "sha256": "297cdb0c36ca691bca2b31100928311c4d3cd638275288549e63395ba12cad47"
+        }
+      ],
+      "native_source_pointers": [
+        "outputs/math-derivative-ch02-basics-20261102/captioned-v006/delivery.json",
+        "outputs/math-derivative-ch02-basics-20261102/silent-v005/delivery.json",
+        "outputs/math-derivative-ch02-basics-20261102/visual-v005/plan.json",
+        "outputs/math-derivative-ch02-basics-20261102/voiced-v005/delivery.json",
+        "outputs/math-derivative-ch03-rules-20261102/captioned-v007/delivery.json",
+        "outputs/math-derivative-ch03-rules-20261102/silent-v007/delivery.json",
+        "outputs/math-derivative-ch03-rules-20261102/visual-v006/plan.json",
+        "outputs/math-derivative-ch03-rules-20261102/voiced-v007/delivery.json",
+        "outputs/math-derivative-ch04-chain-20261102/captioned-v005/delivery.json",
+        "outputs/math-derivative-ch04-chain-20261102/silent-v005/delivery.json",
+        "outputs/math-derivative-ch04-chain-20261102/visual-v005/plan.json",
+        "outputs/math-derivative-ch04-chain-20261102/voiced-v005/delivery.json",
+        "outputs/math-derivative-ch05-monotonicity-20261102/captioned-v004/delivery.json",
+        "outputs/math-derivative-ch05-monotonicity-20261102/silent-v004/delivery.json",
+        "outputs/math-derivative-ch05-monotonicity-20261102/visual-v004/plan.json",
+        "outputs/math-derivative-ch05-monotonicity-20261102/voiced-v004/delivery.json",
+        "outputs/math-derivative-ch06-extrema-20261102/captioned-v004/delivery.json",
+        "outputs/math-derivative-ch06-extrema-20261102/silent-v004/delivery.json",
+        "outputs/math-derivative-ch06-extrema-20261102/visual-v004/plan.json",
+        "outputs/math-derivative-ch06-extrema-20261102/voiced-v004/delivery.json",
+        "outputs/math-derivative-ch07-extremes-20261102/captioned-v004/delivery.json",
+        "outputs/math-derivative-ch07-extremes-20261102/silent-v004/delivery.json",
+        "outputs/math-derivative-ch07-extremes-20261102/visual-v004/plan.json",
+        "outputs/math-derivative-ch07-extremes-20261102/voiced-v004/delivery.json",
+        "outputs/math-derivative-ch08-optimization-20261102/captioned-v004/delivery.json",
+        "outputs/math-derivative-ch08-optimization-20261102/silent-v004/delivery.json",
+        "outputs/math-derivative-ch08-optimization-20261102/visual-v004/plan.json",
+        "outputs/math-derivative-ch08-optimization-20261102/voiced-v004/delivery.json",
+        "outputs/math-derivative-chapter-20261102/chapter-packages/package-v004/verified-lessons/01-math-derivative-intro-20261101/delivery.json",
+        "outputs/math-derivative-chapter-20261102/chapter-packages/package-v004/verified-lessons/02-math-derivative-ch02-basics-20261102/delivery.json",
+        "outputs/math-derivative-chapter-20261102/chapter-packages/package-v004/verified-lessons/03-math-derivative-ch03-rules-20261102/delivery.json",
+        "outputs/math-derivative-chapter-20261102/chapter-packages/package-v004/verified-lessons/04-math-derivative-ch04-chain-20261102/delivery.json",
+        "outputs/math-derivative-chapter-20261102/chapter-packages/package-v004/verified-lessons/05-math-derivative-ch05-monotonicity-20261102/delivery.json",
+        "outputs/math-derivative-chapter-20261102/chapter-packages/package-v004/verified-lessons/06-math-derivative-ch06-extrema-20261102/delivery.json",
+        "outputs/math-derivative-chapter-20261102/chapter-packages/package-v004/verified-lessons/07-math-derivative-ch07-extremes-20261102/delivery.json",
+        "outputs/math-derivative-chapter-20261102/chapter-packages/package-v004/verified-lessons/08-math-derivative-ch08-optimization-20261102/delivery.json",
+        "outputs/math-derivative-intro-20261101/captioned-v007/delivery.json",
+        "outputs/math-derivative-intro-20261101/silent-v007/delivery.json",
+        "outputs/math-derivative-intro-20261101/visual-v007/plan.json",
+        "outputs/math-derivative-intro-20261101/voiced-v007/delivery.json",
+        "runtime/projects/math-derivative-chapter-20261102/chapter-packages/package-v004/plan.json"
+      ],
+      "listening_review": "pending",
+      "verification": "Existing local bytes hashed; manifest compared where available; no new content approval"
+    },
+    {
+      "id": "waves-20261031",
+      "title": "机械波小单元",
+      "stage": "existing_viewing_package",
+      "location": {
+        "kind": "local_viewing_package",
+        "relative_to": "Desktop",
+        "path": "01-知识动画/01-当前成片/机械波小单元-完整版-20261031"
+      },
+      "public_url": null,
+      "videos": [
+        {
+          "filename": "01-传播与质点.mp4",
+          "sha256": "f5788cbfc2dcd20aa61114dbe328668fdef009ded6db5899e3df9d31249e8fc9",
+          "size_bytes": 6660088,
+          "manifest_match": false
+        },
+        {
+          "filename": "02-空间图与时间图.mp4",
+          "sha256": "ae14cde835c40297200e380ed4099465f8ac8074155aa6fd137b3ff5ce305d57",
+          "size_bytes": 9112996,
+          "manifest_match": false
+        },
+        {
+          "filename": "03-脉冲叠加.mp4",
+          "sha256": "f2f539027a1af28fe63fac7be4bf81cac8c20cd8d7d8ee5ef72a0a049246480b",
+          "size_bytes": 7275154,
+          "manifest_match": false
+        }
+      ],
+      "source_manifests": [
+        {
+          "relative_to": "Desktop",
+          "path": "01-知识动画/01-当前成片/机械波小单元-完整版-20261031/交付清单.json",
+          "sha256": "2fbc22394cb561b642b42b64a2c1d562b18795046eb6e5635d983b5fcfc83c1b"
+        }
+      ],
+      "native_source_pointers": [
+        "outputs/wave-openings-audio-aligned-20261031/formation-release-v001/delivery.json",
+        "outputs/wave-openings-audio-aligned-20261031/reading-release-v001/delivery.json",
+        "outputs/wave-openings-audio-aligned-20261031/superposition-release-v001/delivery.json"
+      ],
+      "listening_review": "pending",
+      "verification": "Existing local bytes hashed; manifest compared where available; no new content approval"
+    },
+    {
+      "id": "knowledge-trio-20261028",
+      "title": "三题知识动画",
+      "stage": "existing_viewing_package",
+      "location": {
+        "kind": "local_viewing_package",
+        "relative_to": "Desktop",
+        "path": "01-知识动画/01-当前成片/三题知识动画-配音字幕版-20261028"
+      },
+      "public_url": null,
+      "videos": [
+        {
+          "filename": "01-物理-电磁感应与能量.mp4",
+          "sha256": "df4dfc1e219bf78cf1b33d2631f58539b00e59b19275df1250b70ae335407447",
+          "size_bytes": 5498133,
+          "manifest_match": true
+        },
+        {
+          "filename": "02-数学-导数与局部线性.mp4",
+          "sha256": "e17fcb1509fe451857238f2b7cc27c2d4cdbbfe2e83086fc8926de4fa066f0ba",
+          "size_bytes": 5798483,
+          "manifest_match": true
+        },
+        {
+          "filename": "03-数学-特征向量与不变方向.mp4",
+          "sha256": "af96b8f3a96a44fe392d0a1c6c1ba748c6e7d471c207a8cb7a85ce0bd7e3ed4d",
+          "size_bytes": 8182761,
+          "manifest_match": true
+        }
+      ],
+      "source_manifests": [
+        {
+          "relative_to": "Desktop",
+          "path": "01-知识动画/01-当前成片/三题知识动画-配音字幕版-20261028/manifest.json",
+          "sha256": "5e71287bd6bd98732962f63f3bd3f96ba4527b6111c8680372b228149fb59bf0"
+        }
+      ],
+      "native_source_pointers": [],
+      "listening_review": "not_recorded",
+      "verification": "Existing local bytes hashed; manifest compared where available; no new content approval"
+    },
+    {
+      "id": "projectile-20261027",
+      "title": "平抛运动",
+      "stage": "existing_viewing_package",
+      "location": {
+        "kind": "local_viewing_package",
+        "relative_to": "Desktop",
+        "path": "01-知识动画/01-当前成片/平抛运动-非线性配音字幕版-20261027"
+      },
+      "public_url": null,
+      "videos": [
+        {
+          "filename": "平抛运动-非线性解释-完整配音字幕版.mp4",
+          "sha256": "fd32e4cfc7ed27c4dad2b838921de9ea47aa5620edfa23c90b9aee32d24e298c",
+          "size_bytes": 9417176,
+          "manifest_match": false
+        }
+      ],
+      "source_manifests": [],
+      "native_source_pointers": [],
+      "listening_review": "not_recorded",
+      "verification": "Existing local bytes hashed; manifest compared where available; no new content approval"
+    }
+  ],
+  "current_revision": {
+    "project": "derivative-eight-lessons",
+    "stage": "in_progress",
+    "lesson_01": "Captioned revision preview delivered; listening and student review pending",
+    "lesson_07": "Captioned revision preview delivered; listening, naturalness, pronunciation and student review pending",
+    "registration": "Lead creates and confirms new viewing package before registration",
+    "lesson_08": "v011 complete candidate and author selfcheck ready, independent re-review pending; rejected older candidates retained",
+    "lesson_08_state_source": "runtime/sessions/derivative-motion-revision-20261103/lesson08-author/handoff-v011.json"
+  },
+  "previous_catalog_sha256": "6430573f355126da7ae6ee4cdd8fd85dc093867a3937c3fcbf5e9b4152c8d835",
+  "publication_scope": "local_only_20261103"
+}

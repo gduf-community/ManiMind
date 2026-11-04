@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "status": "verified",
+  "public_url": "https://github.com/gduf-community/ManiMind/releases/tag/videos-20261104",
+  "release_id": 433511499,
+  "tag": "videos-20261104",
+  "verified_at": "2026-11-04T05:42:38.992030+00:00",
+  "asset_sha256": [
+    "af96b8f3a96a44fe392d0a1c6c1ba748c6e7d471c207a8cb7a85ce0bd7e3ed4d",
+    "df4dfc1e219bf78cf1b33d2631f58539b00e59b19275df1250b70ae335407447",
+    "e17fcb1509fe451857238f2b7cc27c2d4cdbbfe2e83086fc8926de4fa066f0ba"
+  ],
+  "assets": [
+    {
+      "id": 708377862,
+      "name": "knowledge-trio-20261028-01.mp4",
+      "size_bytes": 5498133,
+      "sha256": "df4dfc1e219bf78cf1b33d2631f58539b00e59b19275df1250b70ae335407447",
+      "github_digest": "sha256:df4dfc1e219bf78cf1b33d2631f58539b00e59b19275df1250b70ae335407447",
+      "state": "uploaded",
+      "public_url": "https://github.com/gduf-community/ManiMind/releases/download/videos-20261104/knowledge-trio-20261028-01.mp4",
+      "anonymous_range_status": 206,
+      "bytes_checked": 64,
+      "mp4_header": "ftyp"
+    },
+    {
+      "id": 708378745,
+      "name": "knowledge-trio-20261028-02.mp4",
+      "size_bytes": 5798483,
+      "sha256": "e17fcb1509fe451857238f2b7cc27c2d4cdbbfe2e83086fc8926de4fa066f0ba",
+      "github_digest": "sha256:e17fcb1509fe451857238f2b7cc27c2d4cdbbfe2e83086fc8926de4fa066f0ba",
+      "state": "uploaded",
+      "public_url": "https://github.com/gduf-community/ManiMind/releases/download/videos-20261104/knowledge-trio-20261028-02.mp4",
+      "anonymous_range_status": 206,
+      "bytes_checked": 64,
+      "mp4_header": "ftyp"
+    },
+    {
+      "id": 708379357,
+      "name": "knowledge-trio-20261028-03.mp4",
+      "size_bytes": 8182761,
+      "sha256": "af96b8f3a96a44fe392d0a1c6c1ba748c6e7d471c207a8cb7a85ce0bd7e3ed4d",
+      "github_digest": "sha256:af96b8f3a96a44fe392d0a1c6c1ba748c6e7d471c207a8cb7a85ce0bd7e3ed4d",
+      "state": "uploaded",
+      "public_url": "https://github.com/gduf-community/ManiMind/releases/download/videos-20261104/knowledge-trio-20261028-03.mp4",
+      "anonymous_range_status": 206,
+      "bytes_checked": 64,
+      "mp4_header": "ftyp"
+    }
+  ],
+  "content_stage": "existing_viewing_package",
+  "writer": "authorized publication operator",
+  "consumers": [
+    "viewers",
+    "maintainers",
+    "catalogue validator"
+  ],
+  "lifecycle": "Retained with this GitHub video edition",
+  "invalidation": "Release deletion or asset byte/name/URL changes require reconciliation",
+  "verification": "Local catalogue SHA256 matches GitHub asset digest; anonymous MP4 range download passed; no new content or listening approval"
+}

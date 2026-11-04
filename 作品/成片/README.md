@@ -1,41 +1,59 @@
-# 已有播放包
+# 已有成片与修订预览
 
-下表原有播放包位于本机 `~/Desktop/01-知识动画/01-当前成片/`，本轮分课修订预览位于 `02-展示与对比/导数动效修订-20261103/`。本页按真实交付登记，SHA 与原生来源记录在[机器可读目录](../目录.json)。
+[全部视频与版本说明](https://github.com/gduf-community/ManiMind/releases/tag/videos-20261104) · [逐条文件清单](../releases/20261104/README.md)
 
-| 作品 | 本机目录 | 内容与版本 |
-| --- | --- | --- |
-| 导数及其应用 | `高中数学-导数整章-配音字幕版-20261103/` | 原配音字幕版，八课及整章合集，人工听审待安排 |
-| 机械波小单元 | `机械波小单元-完整版-20261031/` | 传播与质点、空间图与时间图、脉冲叠加 |
-| 三题知识动画 | `三题知识动画-配音字幕版-20261028/` | 电磁感应、导数与局部线性、特征向量 |
-| 平抛运动 | `平抛运动-非线性配音字幕版-20261027/` | 非线性解释完整配音字幕版 |
+每条 MP4 都可从 GitHub 直接下载，完整配音字幕已在文件中。
 
-## 导数分课名称
+18 条完整配音字幕视频，合计约 287 MB。点击各片名下载 MP4。
 
-### 01 修订预览
+导数原整章版与第 01、07 课的变量动效修订预览分别保留。人工听审和学生试用待安排。
 
-新 01 为 228 秒的变量动效修订配音字幕预览，单套烧录字幕；原生来源为 `outputs/math-derivative-intro-20261101/captioned-v010/delivery.json`。独立字幕像素审核和完整解码已通过，人工听审与学生试用待安排。
+## 导数入门：变量动效修订预览
 
-本机位置：`~/Desktop/01-知识动画/02-展示与对比/导数动效修订-20261103/01-导数入门-从平均变化率到导数-变量动效修订版.mp4`。本次只登记主控已经创建的播放文件，原整章版继续保留。
+| 视频 | 大小 |
+| --- | ---: |
+| [01-导数入门-从平均变化率到导数-变量动效修订版.mp4](https://github.com/gduf-community/ManiMind/releases/download/videos-20261104/math-derivative-01-motion-revision-20261103.mp4) | 8.1 MB |
 
-![新 01 的公式构建画面](../previews/导数入门-修订预览.png)
+## 闭区间最值：变量动效修订预览
 
-### 07 修订预览
+| 视频 | 大小 |
+| --- | ---: |
+| [07-闭区间最值-先找候选再比较-变量动效修订版.mp4](https://github.com/gduf-community/ManiMind/releases/download/videos-20261104/derivative-07-motion-revision-20261103-01.mp4) | 10.9 MB |
 
-新 07 为 322.2 秒的配音字幕修订预览，单套烧录字幕，完整解码通过。原生来源为 `outputs/math-derivative-ch07-extremes-20261102/captioned-v007/delivery.json`。
+## 导数及其应用
 
-本机位置：`~/Desktop/01-知识动画/02-展示与对比/导数动效修订-20261103/07-闭区间最值-先找候选再比较-变量动效修订版.mp4`，同目录有 `07-制作信息.json`。
+| 视频 | 大小 |
+| --- | ---: |
+| [00-导数及其应用-整章合集.mp4](https://github.com/gduf-community/ManiMind/releases/download/videos-20261104/derivative-original-20261103-01.mp4) | 109.1 MB |
+| [01-从平均变化率到导数.mp4](https://github.com/gduf-community/ManiMind/releases/download/videos-20261104/derivative-original-20261103-02.mp4) | 7.9 MB |
+| [02-从点导数到基本导函数.mp4](https://github.com/gduf-community/ManiMind/releases/download/videos-20261104/derivative-original-20261103-03.mp4) | 23.1 MB |
+| [03-求导的四则运算法则.mp4](https://github.com/gduf-community/ManiMind/releases/download/videos-20261104/derivative-original-20261103-04.mp4) | 13.8 MB |
+| [04-复合函数的变化怎样传递.mp4](https://github.com/gduf-community/ManiMind/releases/download/videos-20261104/derivative-original-20261103-05.mp4) | 11.3 MB |
+| [05-由导数读函数的增减.mp4](https://github.com/gduf-community/ManiMind/releases/download/videos-20261104/derivative-original-20261103-06.mp4) | 13.5 MB |
+| [06-驻点与局部极值.mp4](https://github.com/gduf-community/ManiMind/releases/download/videos-20261104/derivative-original-20261103-07.mp4) | 11.9 MB |
+| [07-指定区间里的最大与最小.mp4](https://github.com/gduf-community/ManiMind/releases/download/videos-20261104/derivative-original-20261103-08.mp4) | 10.9 MB |
+| [08-从裁纸做盒到最优体积.mp4](https://github.com/gduf-community/ManiMind/releases/download/videos-20261104/derivative-original-20261103-09.mp4) | 14.3 MB |
 
-01、07 的人工听审、自然度、发音及学生测试均未进行；原整章版保持原样，其他分课继续返修。
+## 机械波小单元
 
-### 原整章版课目
+| 视频 | 大小 |
+| --- | ---: |
+| [01-传播与质点.mp4](https://github.com/gduf-community/ManiMind/releases/download/videos-20261104/waves-20261031-01.mp4) | 6.7 MB |
+| [02-空间图与时间图.mp4](https://github.com/gduf-community/ManiMind/releases/download/videos-20261104/waves-20261031-02.mp4) | 9.1 MB |
+| [03-脉冲叠加.mp4](https://github.com/gduf-community/ManiMind/releases/download/videos-20261104/waves-20261031-03.mp4) | 7.3 MB |
 
-1. 从平均变化率到导数
-2. 从点导数到基本导函数
-3. 求导的四则运算法则
-4. 复合函数的变化怎样传递
-5. 由导数读函数的增减
-6. 驻点与局部极值
-7. 指定区间里的最大与最小
-8. 从裁纸做盒到最优体积
+## 三题知识动画
 
-当前返修版的进度另见[草稿区](../草稿/README.md)。已有包在本轮整理中保持原字节与原名称。
+| 视频 | 大小 |
+| --- | ---: |
+| [01-物理-电磁感应与能量.mp4](https://github.com/gduf-community/ManiMind/releases/download/videos-20261104/knowledge-trio-20261028-01.mp4) | 5.5 MB |
+| [02-数学-导数与局部线性.mp4](https://github.com/gduf-community/ManiMind/releases/download/videos-20261104/knowledge-trio-20261028-02.mp4) | 5.8 MB |
+| [03-数学-特征向量与不变方向.mp4](https://github.com/gduf-community/ManiMind/releases/download/videos-20261104/knowledge-trio-20261028-03.mp4) | 8.2 MB |
+
+## 平抛运动
+
+| 视频 | 大小 |
+| --- | ---: |
+| [平抛运动-非线性解释-完整配音字幕版.mp4](https://github.com/gduf-community/ManiMind/releases/download/videos-20261104/projectile-20261027-01.mp4) | 9.4 MB |
+
+视频保持原字节与原制作版本；公开清单记录 SHA256、GitHub 附件与制作来源。
