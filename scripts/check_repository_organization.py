@@ -13,6 +13,7 @@ from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = "archive/migrations/20261103/manifest.json"
+FROZEN_INVENTORY = "archive/migrations/20261103/deferred-native.json"
 TEXT_SUFFIXES = {".md", ".py", ".json", ".txt", ".sh", ".ps1", ".yml", ".yaml", ".toml", ".cfg", ".csv", ".canvas"}
 
 
@@ -128,6 +129,31 @@ def stale_imports(root, migrations):
     return errors
 
 
+def frozen_source_errors(root):
+    """Compare the deferred-native source inventory against the working tree.
+
+    The inventory's own invalidation rule says a source SHA/path change needs another
+    preflight, so any drift is reported instead of silently accepted. Returns
+    ``(errors, checked)``; a tree without the inventory (e.g. a partial public copy)
+    returns ``([], 0)``.
+    """
+    path = Path(root) / FROZEN_INVENTORY
+    if not path.is_file():
+        return [], 0
+    errors, checked = [], 0
+    for row in json.loads(path.read_text(encoding="utf-8"))["source_inventory"]:
+        target, error = checked_target(root, row["path"])
+        if error:
+            errors.append({"path": row["path"], "type": error})
+        elif not target.is_file():
+            errors.append({"path": row["path"], "type": "missing_frozen_source"})
+        elif sha(target) != row["sha256"]:
+            errors.append({"path": row["path"], "type": "frozen_source_sha_changed"})
+        else:
+            checked += 1
+    return errors, checked
+
+
 def validate(root=ROOT, require_local=False):
     root = Path(root).resolve()
     manifest = json.loads((root / MANIFEST).read_text(encoding="utf-8"))
@@ -198,7 +224,10 @@ def validate(root=ROOT, require_local=False):
             if error or not target.is_file():
                 errors.append({"path": "docs/architecture.canvas", "target": node["file"], "type": error or "missing_canvas_file"})
     errors.extend(stale_imports(root, manifest["migrations"]))
+    frozen_errors, frozen_checked = frozen_source_errors(root)
+    errors.extend(frozen_errors)
     return {"success": not errors and not findings, "errors": errors, "public_safety_findings": findings,
+            "frozen_sources_checked": frozen_checked,
             "physical_moves": len(manifest["migrations"]), "active_documents": len(manifest["active_navigation"]),
             "public_files_scanned": len(manifest["public_files"]),
             "skipped_local_archives": skipped_local, "require_local": require_local,

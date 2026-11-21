@@ -19,6 +19,34 @@ def test_active_navigation_and_public_boundaries():
     assert result["public_safety_findings"] == []
 
 
+def test_frozen_native_sources_match_inventory():
+    errors, checked = check.frozen_source_errors(ROOT)
+    inventory = json.loads((ROOT / check.FROZEN_INVENTORY).read_text())["source_inventory"]
+    assert errors == []
+    assert checked == len(inventory) == 514
+
+
+def test_frozen_inventory_reports_drift_and_missing(tmp_path):
+    (tmp_path / "a.py").write_text("original")
+    (tmp_path / "b.py").write_text("kept")
+    rows = [{"path": "a.py", "sha256": check.sha(tmp_path / "a.py")},
+            {"path": "b.py", "sha256": check.sha(tmp_path / "b.py")},
+            {"path": "gone.py", "sha256": "0" * 64},
+            {"path": "../escape.py", "sha256": "0" * 64}]
+    inventory = tmp_path / check.FROZEN_INVENTORY
+    inventory.parent.mkdir(parents=True)
+    inventory.write_text(json.dumps({"source_inventory": rows}))
+    (tmp_path / "a.py").write_text("edited")
+    errors, checked = check.frozen_source_errors(tmp_path)
+    assert checked == 1
+    assert {(e["path"], e["type"]) for e in errors} == {
+        ("a.py", "frozen_source_sha_changed"),
+        ("gone.py", "missing_frozen_source"),
+        ("../escape.py", "migration_target_outside_root"),
+    }
+    assert check.frozen_source_errors(tmp_path / "absent") == ([], 0)
+
+
 def test_migration_records_are_real_and_unique():
     data = json.loads((ROOT / check.MANIFEST).read_text())
     rows = data["migrations"]
@@ -67,6 +95,9 @@ def test_public_tree_passes_without_ignored_local_archives(tmp_path):
                 files.add(path.relative_to(ROOT).as_posix())
     canvas = json.loads((ROOT / "docs/architecture.canvas").read_text())
     files.update(n["file"] for n in canvas["nodes"] if n.get("type") == "file")
+    # 冻结源码全部入库，公开克隆里同样存在
+    frozen = json.loads((ROOT / check.FROZEN_INVENTORY).read_text())["source_inventory"]
+    files.update(row["path"] for row in frozen)
     for rel in files:
         assert not rel.startswith("archive/local/")
         source = ROOT / rel
