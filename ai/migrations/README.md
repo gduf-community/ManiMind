@@ -30,3 +30,9 @@ derivative 示例与当前测试、postproduce/components/review/render/curricul
 ## 公开边界
 
 扫描只输出文件位置、行号和类型。带账号主机路径或网络信息的历史原文进入 `archive/local/`；环境、原始请求/日志、私有素材和迁移包沿用本机忽略边界。公共索引记录真实本机可获取位置，云端发布地址经主控核准后补入。
+
+## 2026-11-21 规则文档精简
+
+- 删除 29 个无人引用的 `docs/` 兼容跳转页（manifest 对应行 `compatibility_entry` 改为 false，并移出 `active_navigation`、`public_files`）。保留 9 个仍被引用的：`agent-data-protocol`（src 注释）、`lesson-opening`、`wave-openings-20261029`、`wave-positive-20261029`（冻结文档链接）、`强前置条件约束`、`focus-captions`、`knowledge-trio-20261028`、`model-benchmark`、`velocity-pilot`（本机 runtime 审核记录）。
+- `ai/AGENT_RULES.md`、`ai/contracts/强前置条件约束.md`、`ai/architecture/模块与状态详解.md` 内容修改后，manifest 只同步了这三行的 `current_sha256`；`source_sha256`、`moved_sha256` 与回退备份不变。
+- 新增 `ai/contracts/审核者规则卡.md` 进入现行导航；`tests/test_markdown_links.py` 检查现行 Markdown 相对链接。

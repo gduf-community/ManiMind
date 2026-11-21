@@ -21,7 +21,7 @@
       "safety_findings": [],
       "modification": "AI reference relocation/priority navigation",
       "rollback": "runtime/sessions/repository-organization-20261103/source-backup/docs/上下文与状态设计.md",
-      "compatibility_entry": true
+      "compatibility_entry": false
     },
     {
       "old": "docs/agent-data-protocol.md",
@@ -47,7 +47,7 @@
       "safety_findings": [],
       "modification": "AI reference relocation/priority navigation",
       "rollback": "runtime/sessions/repository-organization-20261103/source-backup/docs/第三方整合.md",
-      "compatibility_entry": true
+      "compatibility_entry": false
     },
     {
       "old": "docs/component-foundation.md",
@@ -60,7 +60,7 @@
       "safety_findings": [],
       "modification": "original_bytes_preserved",
       "rollback": "runtime/sessions/repository-organization-20261103/source-backup/docs/component-foundation.md",
-      "compatibility_entry": true
+      "compatibility_entry": false
     },
     {
       "old": "docs/visual-first-workflow.md",
@@ -73,7 +73,7 @@
       "safety_findings": [],
       "modification": "AI reference relocation/priority navigation",
       "rollback": "runtime/sessions/repository-organization-20261103/source-backup/docs/visual-first-workflow.md",
-      "compatibility_entry": true
+      "compatibility_entry": false
     },
     {
       "old": "docs/focus-captions.md",
@@ -112,7 +112,7 @@
       "safety_findings": [],
       "modification": "original_bytes_preserved",
       "rollback": "runtime/sessions/repository-organization-20261103/source-backup/docs/playback-package.md",
-      "compatibility_entry": true
+      "compatibility_entry": false
     },
     {
       "old": "docs/windows-5080-connection.md",
@@ -150,7 +150,7 @@
       ],
       "modification": "original_bytes_preserved",
       "rollback": "runtime/sessions/repository-organization-20261103/source-backup/docs/windows-5080-connection.md",
-      "compatibility_entry": true
+      "compatibility_entry": false
     },
     {
       "old": "docs/ClaudeCode抽取清单.md",
@@ -163,7 +163,7 @@
       "safety_findings": [],
       "modification": "original_bytes_preserved",
       "rollback": "runtime/sessions/repository-organization-20261103/source-backup/docs/ClaudeCode抽取清单.md",
-      "compatibility_entry": true
+      "compatibility_entry": false
     },
     {
       "old": "docs/Explorer-Planner-Coordinator实施计划.md",
@@ -176,7 +176,7 @@
       "safety_findings": [],
       "modification": "original_bytes_preserved",
       "rollback": "runtime/sessions/repository-organization-20261103/source-backup/docs/Explorer-Planner-Coordinator实施计划.md",
-      "compatibility_entry": true
+      "compatibility_entry": false
     },
     {
       "old": "docs/Phase 0 前置准备工作报告（先看这个！！）.md",
@@ -189,7 +189,7 @@
       "safety_findings": [],
       "modification": "original_bytes_preserved",
       "rollback": "runtime/sessions/repository-organization-20261103/source-backup/docs/Phase 0 前置准备工作报告（先看这个！！）.md",
-      "compatibility_entry": true
+      "compatibility_entry": false
     },
     {
       "old": "docs/phase-0-work-report.md",
@@ -202,7 +202,7 @@
       "safety_findings": [],
       "modification": "original_bytes_preserved",
       "rollback": "runtime/sessions/repository-organization-20261103/source-backup/docs/phase-0-work-report.md",
-      "compatibility_entry": true
+      "compatibility_entry": false
     },
     {
       "old": "docs/phase1-coordinator-report.md",
@@ -215,7 +215,7 @@
       "safety_findings": [],
       "modification": "original_bytes_preserved",
       "rollback": "runtime/sessions/repository-organization-20261103/source-backup/docs/phase1-coordinator-report.md",
-      "compatibility_entry": true
+      "compatibility_entry": false
     },
     {
       "old": "docs/初始化计划.md",
@@ -228,7 +228,7 @@
       "safety_findings": [],
       "modification": "original_bytes_preserved",
       "rollback": "runtime/sessions/repository-organization-20261103/source-backup/docs/初始化计划.md",
-      "compatibility_entry": true
+      "compatibility_entry": false
     },
     {
       "old": "docs/状态闭环与控制台路线.md",
@@ -241,7 +241,7 @@
       "safety_findings": [],
       "modification": "original_bytes_preserved",
       "rollback": "runtime/sessions/repository-organization-20261103/source-backup/docs/状态闭环与控制台路线.md",
-      "compatibility_entry": true
+      "compatibility_entry": false
     },
     {
       "old": "docs/代码审计.md",
@@ -254,7 +254,7 @@
       "safety_findings": [],
       "modification": "original_bytes_preserved",
       "rollback": "runtime/sessions/repository-organization-20261103/source-backup/docs/代码审计.md",
-      "compatibility_entry": true
+      "compatibility_entry": false
     },
     {
       "old": "docs/deepseek-autonomous.md",
@@ -267,7 +267,7 @@
       "safety_findings": [],
       "modification": "original_bytes_preserved",
       "rollback": "runtime/sessions/repository-organization-20261103/source-backup/docs/deepseek-autonomous.md",
-      "compatibility_entry": true
+      "compatibility_entry": false
     },
     {
       "old": "docs/deepseek-freeform.md",
@@ -280,7 +280,7 @@
       "safety_findings": [],
       "modification": "original_bytes_preserved",
       "rollback": "runtime/sessions/repository-organization-20261103/source-backup/docs/deepseek-freeform.md",
-      "compatibility_entry": true
+      "compatibility_entry": false
     },
     {
       "old": "docs/deepseek-max-effort.md",
@@ -293,7 +293,7 @@
       "safety_findings": [],
       "modification": "original_bytes_preserved",
       "rollback": "runtime/sessions/repository-organization-20261103/source-backup/docs/deepseek-max-effort.md",
-      "compatibility_entry": true
+      "compatibility_entry": false
     },
     {
       "old": "docs/deepseek-mimo-comparison.md",
@@ -306,7 +306,7 @@
       "safety_findings": [],
       "modification": "original_bytes_preserved",
       "rollback": "runtime/sessions/repository-organization-20261103/source-backup/docs/deepseek-mimo-comparison.md",
-      "compatibility_entry": true
+      "compatibility_entry": false
     },
     {
       "old": "docs/deepseek-review-cycle.md",
@@ -319,7 +319,7 @@
       "safety_findings": [],
       "modification": "original_bytes_preserved",
       "rollback": "runtime/sessions/repository-organization-20261103/source-backup/docs/deepseek-review-cycle.md",
-      "compatibility_entry": true
+      "compatibility_entry": false
     },
     {
       "old": "docs/deepseek-team.md",
@@ -332,7 +332,7 @@
       "safety_findings": [],
       "modification": "original_bytes_preserved",
       "rollback": "runtime/sessions/repository-organization-20261103/source-backup/docs/deepseek-team.md",
-      "compatibility_entry": true
+      "compatibility_entry": false
     },
     {
       "old": "docs/isolated-comparison.md",
@@ -345,7 +345,7 @@
       "safety_findings": [],
       "modification": "original_bytes_preserved",
       "rollback": "runtime/sessions/repository-organization-20261103/source-backup/docs/isolated-comparison.md",
-      "compatibility_entry": true
+      "compatibility_entry": false
     },
     {
       "old": "docs/model-benchmark.md",
@@ -371,7 +371,7 @@
       "safety_findings": [],
       "modification": "original_bytes_preserved",
       "rollback": "runtime/sessions/repository-organization-20261103/source-backup/docs/sol61-team.md",
-      "compatibility_entry": true
+      "compatibility_entry": false
     },
     {
       "old": "docs/learning-workflow.md",
@@ -384,7 +384,7 @@
       "safety_findings": [],
       "modification": "original_bytes_preserved",
       "rollback": "runtime/sessions/repository-organization-20261103/source-backup/docs/learning-workflow.md",
-      "compatibility_entry": true
+      "compatibility_entry": false
     },
     {
       "old": "docs/velocity-pilot.md",
@@ -410,7 +410,7 @@
       "safety_findings": [],
       "modification": "original_bytes_preserved",
       "rollback": "runtime/sessions/repository-organization-20261103/source-backup/docs/full-lesson.md",
-      "compatibility_entry": true
+      "compatibility_entry": false
     },
     {
       "old": "docs/projectile-story.md",
@@ -423,7 +423,7 @@
       "safety_findings": [],
       "modification": "original_bytes_preserved",
       "rollback": "runtime/sessions/repository-organization-20261103/source-backup/docs/projectile-story.md",
-      "compatibility_entry": true
+      "compatibility_entry": false
     },
     {
       "old": "docs/projectile-independence.md",
@@ -436,7 +436,7 @@
       "safety_findings": [],
       "modification": "original_bytes_preserved",
       "rollback": "runtime/sessions/repository-organization-20261103/source-backup/docs/projectile-independence.md",
-      "compatibility_entry": true
+      "compatibility_entry": false
     },
     {
       "old": "docs/knowledge-trio-20261028.md",
@@ -462,7 +462,7 @@
       "safety_findings": [],
       "modification": "original_bytes_preserved",
       "rollback": "runtime/sessions/repository-organization-20261103/source-backup/docs/knowledge-trio-voice-20261028.md",
-      "compatibility_entry": true
+      "compatibility_entry": false
     },
     {
       "old": "docs/wave-unit-trial-20261028.md",
@@ -475,7 +475,7 @@
       "safety_findings": [],
       "modification": "original_bytes_preserved",
       "rollback": "runtime/sessions/repository-organization-20261103/source-backup/docs/wave-unit-trial-20261028.md",
-      "compatibility_entry": true
+      "compatibility_entry": false
     },
     {
       "old": "docs/wave-openings-20261029.md",
@@ -514,7 +514,7 @@
       "safety_findings": [],
       "modification": "original_bytes_preserved",
       "rollback": "runtime/sessions/repository-organization-20261103/source-backup/docs/wave-audio-alignment-20261031.md",
-      "compatibility_entry": true
+      "compatibility_entry": false
     },
     {
       "old": "docs/canvas-dev/Obsidian Canvas AI驱动的项目架构洞察与生成引擎.md",
@@ -652,7 +652,7 @@
       "status": "physically_moved",
       "source_sha256": "59b9604aed4fabb0008d7e92c6dbccaf1b87e917e6a8f4587cc69814d2fc4791",
       "moved_sha256": "59b9604aed4fabb0008d7e92c6dbccaf1b87e917e6a8f4587cc69814d2fc4791",
-      "current_sha256": "8699a9118575fc6da5977ffa10167caac4275827ae2039865d35111a0bf06942",
+      "current_sha256": "26a037ff5e54d14a060278c1302cbab258dfaf80f64e229e5c5c05290b787165",
       "publication": "public_candidate",
       "safety_findings": [],
       "modification": "AI reference relocation/priority navigation",
@@ -665,7 +665,7 @@
       "status": "physically_moved",
       "source_sha256": "0570c5e0a2ba0d894f6976760a00fc14f39206b511fcda7c00a04563eb1cf88a",
       "moved_sha256": "0570c5e0a2ba0d894f6976760a00fc14f39206b511fcda7c00a04563eb1cf88a",
-      "current_sha256": "7eae04ea75ad9e14d0af3c1094a0551f4df661fdb0bf3d36f142e28e478389a6",
+      "current_sha256": "5694c50f19b75b4fb86781704a2dcb957642d3683020855e18de2a4503bcd805",
       "publication": "public_candidate",
       "safety_findings": [],
       "modification": "AI reference relocation/priority navigation",
@@ -691,7 +691,7 @@
       "status": "physically_moved",
       "source_sha256": "cd8c20eb784acca6e6a687736b98ebe25c08d296215c6cf074316e55708ddc91",
       "moved_sha256": "cd8c20eb784acca6e6a687736b98ebe25c08d296215c6cf074316e55708ddc91",
-      "current_sha256": "c8aad17145dfc839593316afe393907dfaae3df3c2fba727ecdba8d7306acf52",
+      "current_sha256": "26680b4f02e6459e76bb14c6c961f92b9e768ebab4c89e17f30c169a3fcfb3dc",
       "publication": "public_candidate",
       "safety_findings": [],
       "modification": "AI reference relocation/priority navigation",
@@ -2054,6 +2054,7 @@
     "ai/architecture/当前模块与历史源码.md",
     "ai/architecture/执行架构详解.md",
     "ai/architecture/模块与状态详解.md",
+    "ai/contracts/审核者规则卡.md",
     "ai/contracts/强前置条件约束.md",
     "ai/legacy-cli.md",
     "ai/local-services.md",
@@ -2071,9 +2072,6 @@
     "archive/README.md",
     "archive/legacy/README.md",
     "archive/legacy/backend/README.md",
-    "docs/ClaudeCode抽取清单.md",
-    "docs/Explorer-Planner-Coordinator实施计划.md",
-    "docs/Phase 0 前置准备工作报告（先看这个！！）.md",
     "docs/README.md",
     "docs/agent-data-protocol.md",
     "docs/canvas-dev/Obsidian Canvas AI驱动的项目架构洞察与生成引擎.md",
@@ -2082,44 +2080,18 @@
     "docs/canvas-dev/prompts/02-白板驱动编码.md",
     "docs/canvas-dev/prompts/03-白板同步检查.md",
     "docs/canvas-dev/workflow.md",
-    "docs/component-foundation.md",
-    "docs/deepseek-autonomous.md",
-    "docs/deepseek-freeform.md",
-    "docs/deepseek-max-effort.md",
-    "docs/deepseek-mimo-comparison.md",
-    "docs/deepseek-review-cycle.md",
-    "docs/deepseek-team.md",
     "docs/focus-captions.md",
-    "docs/full-lesson.md",
-    "docs/isolated-comparison.md",
     "docs/knowledge-trio-20261028.md",
-    "docs/knowledge-trio-voice-20261028.md",
-    "docs/learning-workflow.md",
     "docs/lesson-opening.md",
     "docs/model-benchmark.md",
-    "docs/phase-0-work-report.md",
-    "docs/phase1-coordinator-report.md",
-    "docs/playback-package.md",
-    "docs/projectile-independence.md",
-    "docs/projectile-story.md",
-    "docs/sol61-team.md",
     "docs/velocity-pilot.md",
-    "docs/visual-first-workflow.md",
-    "docs/wave-audio-alignment-20261031.md",
     "docs/wave-openings-20261029.md",
     "docs/wave-positive-20261029.md",
-    "docs/wave-unit-trial-20261028.md",
-    "docs/windows-5080-connection.md",
-    "docs/上下文与状态设计.md",
-    "docs/代码审计.md",
     "docs/代码组织.md",
-    "docs/初始化计划.md",
     "docs/参与贡献.md",
     "docs/命名与交付.md",
     "docs/开始制作.md",
     "docs/强前置条件约束.md",
-    "docs/状态闭环与控制台路线.md",
-    "docs/第三方整合.md",
     "docs/运行与开发.md",
     "docs/通用项目架构模板.md",
     "作品/README.md",
@@ -2136,6 +2108,7 @@
     "ai/architecture/当前模块与历史源码.md",
     "ai/architecture/执行架构详解.md",
     "ai/architecture/模块与状态详解.md",
+    "ai/contracts/审核者规则卡.md",
     "ai/contracts/强前置条件约束.md",
     "ai/legacy-cli.md",
     "ai/local-services.md",
@@ -2298,9 +2271,6 @@
     "archive/migrations/20261103/manifest.json",
     "archive/migrations/20261103/phase2-context-map.json",
     "configs/engineering-smoke.yml",
-    "docs/ClaudeCode抽取清单.md",
-    "docs/Explorer-Planner-Coordinator实施计划.md",
-    "docs/Phase 0 前置准备工作报告（先看这个！！）.md",
     "docs/README.md",
     "docs/agent-data-protocol.md",
     "docs/architecture.canvas",
@@ -2310,44 +2280,18 @@
     "docs/canvas-dev/prompts/02-白板驱动编码.md",
     "docs/canvas-dev/prompts/03-白板同步检查.md",
     "docs/canvas-dev/workflow.md",
-    "docs/component-foundation.md",
-    "docs/deepseek-autonomous.md",
-    "docs/deepseek-freeform.md",
-    "docs/deepseek-max-effort.md",
-    "docs/deepseek-mimo-comparison.md",
-    "docs/deepseek-review-cycle.md",
-    "docs/deepseek-team.md",
     "docs/focus-captions.md",
-    "docs/full-lesson.md",
-    "docs/isolated-comparison.md",
     "docs/knowledge-trio-20261028.md",
-    "docs/knowledge-trio-voice-20261028.md",
-    "docs/learning-workflow.md",
     "docs/lesson-opening.md",
     "docs/model-benchmark.md",
-    "docs/phase-0-work-report.md",
-    "docs/phase1-coordinator-report.md",
-    "docs/playback-package.md",
-    "docs/projectile-independence.md",
-    "docs/projectile-story.md",
-    "docs/sol61-team.md",
     "docs/velocity-pilot.md",
-    "docs/visual-first-workflow.md",
-    "docs/wave-audio-alignment-20261031.md",
     "docs/wave-openings-20261029.md",
     "docs/wave-positive-20261029.md",
-    "docs/wave-unit-trial-20261028.md",
-    "docs/windows-5080-connection.md",
-    "docs/上下文与状态设计.md",
-    "docs/代码审计.md",
     "docs/代码组织.md",
-    "docs/初始化计划.md",
     "docs/参与贡献.md",
     "docs/命名与交付.md",
     "docs/开始制作.md",
     "docs/强前置条件约束.md",
-    "docs/状态闭环与控制台路线.md",
-    "docs/第三方整合.md",
     "docs/运行与开发.md",
     "docs/通用项目架构模板.md",
     "scripts/build_work_catalog.py",

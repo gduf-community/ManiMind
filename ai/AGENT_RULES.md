@@ -4,13 +4,7 @@
 
 后续创作与交接参考 [跨题材自检](创作与交接自检.md)，按实际 stage schema 与本轮最后自检状态执行。
 
-## 文档优先级
-
-1. 当前任务、根目录 `AGENTS.md` 与当前文件
-2. `ai/contracts/强前置条件约束.md`
-3. `ai/architecture/执行架构详解.md`
-4. `ai/architecture/模块与状态详解.md`
-5. `ai/README.md` 中当前制作链的原生契约
+文档优先级见根目录 [AGENTS.md](../AGENTS.md)；独立审核任务改读[审核者规则卡](contracts/审核者规则卡.md)。
 
 ## 仓库边界
 
