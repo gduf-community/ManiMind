@@ -177,3 +177,30 @@ def test_utf8_bom_from_windows_editors_is_accepted(tmp_path):
     meta = folder / "投稿.json"
     meta.write_bytes(b"\xef\xbb\xbf" + meta.read_bytes())
     assert errors_of(folder) == []
+
+
+def test_pr_scope_splits_submissions_maintainer_files_and_outside():
+    changed = [f"{check.SUBMISSIONS}/{ID}/投稿.json", f"{check.SUBMISSIONS}/{ID}/截图/a.png",
+               f"{check.SUBMISSIONS}/经验库.md", f"{check.SUBMISSIONS}/_模板/投稿.json", "README.md"]
+    assert check.pr_scope(changed) == (
+        [ID], [f"{check.SUBMISSIONS}/_模板/投稿.json", f"{check.SUBMISSIONS}/经验库.md"], ["README.md"])
+
+
+def test_pr_warnings_cover_scope_and_ownership(tmp_path):
+    filled(tmp_path / check.SUBMISSIONS)
+    assert check.pr_warnings([ID], [], [], root=tmp_path, pr_author="SomeOne") == []
+    warnings = " ".join(check.pr_warnings([ID, "20261127-x-y"], ["作品/投稿/经验库.md"], ["src/a.py"],
+                                          root=tmp_path, pr_author="other"))
+    for expected in ("只放一个", "维护者", "src/a.py", "登记作者是 someone", "被删除"):
+        assert expected in warnings
+    assert check.pr_warnings([], [], ["src/a.py"], root=tmp_path) == []
+
+
+def test_actions_annotations_and_summary(tmp_path, monkeypatch, capsys):
+    summary = tmp_path / "summary.md"
+    monkeypatch.setenv("GITHUB_ACTIONS", "true")
+    monkeypatch.setenv("GITHUB_STEP_SUMMARY", str(summary))
+    check.report("错误", ID, "缺少 投稿.json")
+    assert f"::error title=投稿检查 {ID}::缺少 投稿.json" in capsys.readouterr().out
+    check.write_summary([(ID, ["x"], [])])
+    assert f"| {ID} | 不通过 | 1 | 0 |" in summary.read_text(encoding="utf-8")
