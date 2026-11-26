@@ -50,7 +50,7 @@ def filled(tmp_path, **overrides):
         "tools": {"model": "deepseek-v4", "agent": "Cline 3.0", "renderer": "manimgl 1.7.2", "tts": None},
         "videos": [{
             "version": "v002", "role": "final",
-            "url": f"{check.RELEASE_PREFIX}202611/{ID}-v002.mp4",
+            "url": f"{check.RELEASE_PREFIX}{ID}-v002.mp4",
             "sha256": "a" * 64, "size_bytes": 1000, "duration_seconds": 290.0,
             "resolution": "1920x1080", "audio": "none", "captions": False,
         }],
@@ -84,7 +84,8 @@ def test_guide_documents_what_the_checker_enforces():
     for name in (*check.REQUIRED_SECTIONS, *check.REQUIRED_KEYS, *check.STATUSES, *check.SUBJECTS):
         assert name in guide, name
     assert "scripts/check_submissions.py" in guide
-    assert "--prerelease" in guide and "--clobber" in guide
+    assert check.RELEASE_PREFIX in guide and "--clobber" in guide
+    assert "submissions-" not in guide and "release create" not in guide
 
 
 def test_filled_template_passes(tmp_path):
@@ -166,8 +167,8 @@ def test_voice_url_name_and_date_rules(tmp_path):
     voiced = filled(tmp_path / "b", videos=[dict(video, audio="tts")])
     errors = errors_of(voiced)
     assert any("讲稿.md" in e for e in errors) and any("tools.tts" in e for e in errors)
-    renamed = filled(tmp_path / "c", videos=[dict(video, url=f"{check.RELEASE_PREFIX}202611/other.mp4")])
-    assert any("文件名应为" in e for e in errors_of(renamed))
+    renamed = filled(tmp_path / "c", videos=[dict(video, url=f"{check.RELEASE_PREFIX}other.mp4")])
+    assert any("url 应为" in e for e in errors_of(renamed))
     assert any("created_at" in e for e in errors_of(filled(tmp_path / "d", created_at="20261126")))
 
 
