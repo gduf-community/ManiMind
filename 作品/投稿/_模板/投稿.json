@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "【待填】YYYYMMDD-github用户名小写-主题英文短名",
+  "title": "【待填】中文片名",
+  "subject": "【待填】高中数学/高中物理/微积分/线性代数/概率论/数理统计/其他",
+  "scene_id": null,
+  "author": {
+    "github": "【待填】GitHub用户名，原样",
+    "name": "【待填】组内称呼，可删"
+  },
+  "created_at": "【待填】YYYY-MM-DD",
+  "based_on": [],
+  "tools": {
+    "model": "【待填】如 deepseek-v4（思考模式）",
+    "agent": "【待填】驱动 DeepSeek 的工具及版本，如 Cline 3.x / 网页对话手动复制",
+    "renderer": "【待填】如 manimgl 1.7.2 / manim CE 0.19.0",
+    "tts": null
+  },
+  "status": "draft",
+  "watched_full": false,
+  "listened_full": false,
+  "videos": [
+    {
+      "version": "v001",
+      "role": "final",
+      "url": null,
+      "sha256": "【待填】shasum -a 256 的结果",
+      "size_bytes": 0,
+      "duration_seconds": 0,
+      "resolution": "1920x1080",
+      "audio": "none",
+      "captions": false
+    }
+  ]
+}
