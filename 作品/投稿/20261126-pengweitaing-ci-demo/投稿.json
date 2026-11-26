@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "id": "20261126-pengweitaing-ci-demo",
+  "title": "CI 拦截演示（不合格示例，将撤回）",
+  "subject": "微积分",
+  "scene_id": "XX-999",
+  "author": {
+    "github": "PengWeiTaing"
+  },
+  "created_at": "2026-11-26",
+  "based_on": [],
+  "tools": {
+    "model": "演示",
+    "agent": "演示",
+    "renderer": "演示",
+    "tts": null
+  },
+  "status": "self_checked",
+  "watched_full": true,
+  "listened_full": false,
+  "videos": [
+    {
+      "version": "v001",
+      "role": "final",
+      "url": "https://pan.example.com/x.mp4",
+      "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "size_bytes": 1,
+      "duration_seconds": 1.0,
+      "resolution": "1920x1080",
+      "audio": "none",
+      "captions": false
+    }
+  ]
+}
