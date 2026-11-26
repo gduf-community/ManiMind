@@ -41,6 +41,12 @@ dev = [
 [tool.pytest.ini_options]
 pythonpath = ["src"]
 testpaths = ["tests"]
+markers = [
+  "native: 依赖 ManimGL 原生对象/字形/渲染（tests/conftest.py 按源码自动标记）；快速层用 -m \"not native\"",
+  "media: 需要 FFmpeg/libass 等真实媒体工具（显式标记）",
+  "local: 依赖本机 outputs/ 或 runtime/ 素材（显式标记）",
+  "external: 需要外部服务、Windows 声音或 GPU，须操作者单独授权（显式标记）",
+]
 
 [tool.setuptools]
 package-dir = {"" = "src"}

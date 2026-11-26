@@ -1,6 +1,7 @@
 # Python
 __pycache__/
 *.py[cod]
+*.egg-info/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
@@ -29,6 +30,7 @@ runtime/projects/*
 !runtime/projects/.gitkeep
 runtime/sessions/*
 !runtime/sessions/.gitkeep
+runtime/tmp/
 runtime/bootstrap-report.json
 runtime/doctor-report.json
 runtime/thirdparty-sync-report.json
