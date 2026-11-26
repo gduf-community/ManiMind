@@ -13,7 +13,9 @@ spec.loader.exec_module(check)
 TEMPLATE = ROOT / check.SUBMISSIONS / "_模板"
 GUIDE = ROOT / check.SUBMISSIONS / "投稿指南.md"
 SCENES = {"CA-010"}
+MEMBER = "someone"
 ID = "20261126-someone-accumulation-rate"
+MEMBER_TEMPLATE = ROOT / check.SUBMISSIONS / "_成员模板/README.md"
 RECORD = """# 累积量的变化率
 
 ## 目标
@@ -39,8 +41,14 @@ v002，4:50，静音；作者 1 倍速完整看过一遍。
 """
 
 
+def member_page(member_dir, *ids):
+    rows = "\n".join(f"- 2026-11-26 · [片名]({i}/) · self_checked · 说明" for i in ids)
+    (member_dir / "README.md").write_text(f"# 某人（@someone）\n\n## 关于我\n微积分\n\n## 我的投稿\n\n{rows}\n",
+                                          encoding="utf-8")
+
+
 def filled(tmp_path, **overrides):
-    folder = tmp_path / ID
+    folder = tmp_path / MEMBER / ID
     shutil.copytree(TEMPLATE, folder)
     meta = json.loads((folder / "投稿.json").read_text(encoding="utf-8"))
     meta.update({
@@ -145,6 +153,7 @@ def test_overview_counts_open_issues(tmp_path):
     base = tmp_path / check.SUBMISSIONS
     base.mkdir(parents=True)
     filled(base)
+    member_page(base / MEMBER, ID)
     shutil.copytree(TEMPLATE, base / "_模板")
     assert check.overview(tmp_path) == [("CA-010", ID, "someone", "self_checked", 1, 1)]
 
@@ -180,20 +189,51 @@ def test_utf8_bom_from_windows_editors_is_accepted(tmp_path):
 
 
 def test_pr_scope_splits_submissions_maintainer_files_and_outside():
-    changed = [f"{check.SUBMISSIONS}/{ID}/投稿.json", f"{check.SUBMISSIONS}/{ID}/截图/a.png",
+    base = f"{check.SUBMISSIONS}/{MEMBER}"
+    changed = [f"{base}/{ID}/投稿.json", f"{base}/{ID}/截图/a.png", f"{base}/README.md",
                f"{check.SUBMISSIONS}/经验库.md", f"{check.SUBMISSIONS}/_模板/投稿.json", "README.md"]
     assert check.pr_scope(changed) == (
-        [ID], [f"{check.SUBMISSIONS}/_模板/投稿.json", f"{check.SUBMISSIONS}/经验库.md"], ["README.md"])
+        [f"{MEMBER}/{ID}"], [MEMBER],
+        [f"{check.SUBMISSIONS}/_模板/投稿.json", f"{check.SUBMISSIONS}/经验库.md"], ["README.md"])
 
 
 def test_pr_warnings_cover_scope_and_ownership(tmp_path):
     filled(tmp_path / check.SUBMISSIONS)
-    assert check.pr_warnings([ID], [], [], root=tmp_path, pr_author="SomeOne") == []
-    warnings = " ".join(check.pr_warnings([ID, "20261127-x-y"], ["作品/投稿/经验库.md"], ["src/a.py"],
-                                          root=tmp_path, pr_author="other"))
-    for expected in ("只放一个", "维护者", "src/a.py", "登记作者是 someone", "被删除"):
+    work = f"{MEMBER}/{ID}"
+    assert check.pr_warnings([work], [MEMBER], [], [], root=tmp_path, pr_author="SomeOne") == []
+    warnings = " ".join(check.pr_warnings([work, "other/20261127-other-y"], [MEMBER, "other"],
+                                          ["作品/投稿/经验库.md"], ["src/a.py"], root=tmp_path, pr_author="other"))
+    for expected in ("只放一个", "维护者", "src/a.py", "改了成员 someone 的目录", "被删除"):
         assert expected in warnings
-    assert check.pr_warnings([], [], ["src/a.py"], root=tmp_path) == []
+    assert check.pr_warnings([], [], [], ["src/a.py"], root=tmp_path) == []
+
+
+def test_submission_must_live_in_matching_member_folder(tmp_path):
+    flat = tmp_path / check.SUBMISSIONS
+    folder = filled(tmp_path / "x")
+    flat.mkdir(parents=True)
+    shutil.move(str(folder), str(flat / ID))
+    assert any("成员目录里" in e for e in errors_of(flat / ID))
+    wrong = filled(tmp_path / "y")
+    moved = wrong.parent.parent / "other" / ID
+    moved.parent.mkdir()
+    shutil.move(str(wrong), str(moved))
+    errors = " ".join(errors_of(moved))
+    assert "作者部分应与成员目录 other" in errors and "author.github" in errors
+
+
+def test_member_page_is_required_filled_and_lists_every_submission(tmp_path):
+    folder = filled(tmp_path)
+    member = folder.parent
+    assert any("缺少成员页" in e for e in check.check_member(member))
+    shutil.copy(MEMBER_TEMPLATE, member / "README.md")
+    assert any("占位符" in e for e in check.check_member(member))
+    member_page(member)
+    assert any(f"还没登记 {ID}" in e for e in check.check_member(member))
+    member_page(member, ID)
+    assert check.check_member(member) == []
+    (member / "notes.md").write_text("x", encoding="utf-8")
+    assert any("只放 README.md" in e for e in check.check_member(member))
 
 
 def test_actions_annotations_and_summary(tmp_path, monkeypatch, capsys):

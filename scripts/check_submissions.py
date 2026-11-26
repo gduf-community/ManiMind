@@ -2,10 +2,13 @@
 
 Usage from the repository root:
     python3 scripts/check_submissions.py                     # check every submission
-    python3 scripts/check_submissions.py 作品/投稿/<id>       # check one
-    python3 scripts/check_submissions.py 作品/投稿/<id> --video 本地.mp4   # also compare the local MP4
+    python3 scripts/check_submissions.py 作品/投稿/<用户名>/<id>       # check one
+    python3 scripts/check_submissions.py 作品/投稿/<用户名>/<id> --video 本地.mp4   # also compare the local MP4
     python3 scripts/check_submissions.py --list              # overview grouped by scene
-    python3 scripts/check_submissions.py 作品/投稿/<id> --online          # also probe the Release URL
+    python3 scripts/check_submissions.py 作品/投稿/<用户名>/<id> --online          # also probe the Release URL
+
+Layout: 作品/投稿/<GitHub 用户名小写>/README.md (member page, created on the first submission)
+        作品/投稿/<GitHub 用户名小写>/<投稿id>/  (one folder per work)
     python3 scripts/check_submissions.py --changed-since origin/develop --pr-author <login> --online   # CI
 
 Exit code 0 means no errors; warnings never fail the check.
@@ -32,6 +35,8 @@ SCENE_LIBRARY = "docs/curricula/scene-library"
 RELEASE_PREFIX = "https://github.com/gduf-community/ManiMind/releases/download/submissions/"
 
 ID_PATTERN = re.compile(r"^(\d{8})-[a-z0-9]+(?:-[a-z0-9]+)+$")
+MEMBER_PATTERN = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
+MEMBER_PAGE = "README.md"
 VERSION_PATTERN = re.compile(r"^v\d{3}$")
 SHA_PATTERN = re.compile(r"^[0-9a-f]{64}$")
 
@@ -139,8 +144,13 @@ def check_submission(folder, root=ROOT, known_scenes=None):
     folder = Path(folder)
     errors, warnings = [], []
     name = folder.name
+    member = folder.parent.name
+    if folder.parent.name == Path(SUBMISSIONS).name or not MEMBER_PATTERN.match(member):
+        errors.append("投稿要放在自己的成员目录里：作品/投稿/<GitHub 用户名小写>/<投稿id>/")
     if not ID_PATTERN.match(name):
         errors.append("目录名应为 YYYYMMDD-作者-主题，只用小写字母、数字和连字符")
+    elif not name.split("-", 1)[1].startswith(member + "-"):
+        errors.append(f"投稿 id 的作者部分应与成员目录 {member} 一致：YYYYMMDD-{member}-主题")
     for required in REQUIRED_FILES:
         if not (folder / required).is_file():
             errors.append(f"缺少 {required}")
@@ -223,6 +233,8 @@ def check_submission(folder, root=ROOT, known_scenes=None):
     author = meta.get("author")
     if not isinstance(author, dict) or not re.match(r"^[A-Za-z0-9-]+$", str(author.get("github", ""))):
         errors.append("author.github 应为 GitHub 用户名")
+    elif str(author["github"]).lower() != member:
+        errors.append(f"author.github（{author['github']}）的小写形式应与成员目录 {member} 相同")
     if not isinstance(meta.get("based_on"), list):
         errors.append("based_on 应为列表（借鉴的投稿 id 或经验库编号，没有就写 []）")
     tools = meta.get("tools")
@@ -295,9 +307,41 @@ def probe_online(meta_path, errors):
             errors.append(f"{video.get('version')}: 匿名下载失败：{exc}")
 
 
+def _visible_dirs(path):
+    return sorted(p for p in path.iterdir() if p.is_dir() and not p.name.startswith(("_", "."))) if path.is_dir() else []
+
+
+def member_folders(root=ROOT):
+    return _visible_dirs(root / SUBMISSIONS)
+
+
 def submission_folders(root=ROOT):
-    base = root / SUBMISSIONS
-    return sorted(p for p in base.iterdir() if p.is_dir() and not p.name.startswith(("_", "."))) if base.is_dir() else []
+    return [work for member in member_folders(root) for work in _visible_dirs(member)]
+
+
+def check_member(folder):
+    """A member folder holds README.md (the member page) and one folder per submission."""
+    folder = Path(folder)
+    errors = []
+    if not MEMBER_PATTERN.match(folder.name):
+        errors.append("成员目录名应为 GitHub 用户名的小写形式（字母、数字、连字符）")
+    for path in sorted(folder.iterdir()):
+        if path.is_file() and path.name not in {MEMBER_PAGE, ".gitkeep"}:
+            errors.append(f"{path.name}: 成员目录下只放 README.md 和各投稿目录，其他文件放进具体投稿里")
+    page = folder / MEMBER_PAGE
+    if not page.is_file():
+        errors.append("缺少成员页 README.md（第一次投稿时从 作品/投稿/_成员模板/README.md 复制）")
+        return errors
+    text = page.read_text(encoding="utf-8-sig")
+    if PLACEHOLDER in text:
+        errors.append(f"README.md 还有模板占位符“{PLACEHOLDER}”没替换")
+    for finding in public_findings(text):
+        errors.append(f"README.md:{finding['line']}: 疑似隐私或密钥（{finding['type']}），删除后再提交")
+    listed = strip_comments(text)
+    for work in _visible_dirs(folder):
+        if f"({work.name}/" not in listed:
+            errors.append(f"成员页“我的投稿”里还没登记 {work.name}，加一行链接 [片名]({work.name}/)")
+    return errors
 
 
 def overview(root=ROOT):
@@ -309,7 +353,7 @@ def overview(root=ROOT):
         except (OSError, json.JSONDecodeError):
             rows.append((folder.name, "?", "?", "无法读取", 0, 0))
             continue
-        rows.append((meta.get("scene_id") or "-", folder.name, meta.get("author", {}).get("github", "?"),
+        rows.append((meta.get("scene_id") or "-", folder.name, folder.parent.name,
                      meta.get("status", "?"), len(meta.get("videos", [])), open_issues(record)))
     return sorted(rows)
 
@@ -318,8 +362,8 @@ MAINTAINER_FILES = {"README.md", "投稿指南.md", "经验库.md"}
 
 
 def pr_scope(changed):
-    """Split changed repo paths into (submission ids, maintainer-owned submission files, files outside 作品/投稿)."""
-    ids, shared, outside = set(), [], []
+    """Split changed paths into (submissions as "member/id", touched members, maintainer files, outside files)."""
+    works, members, shared, outside = set(), set(), [], []
     prefix = SUBMISSIONS + "/"
     for path in changed:
         if not path.startswith(prefix):
@@ -328,33 +372,30 @@ def pr_scope(changed):
         parts = path[len(prefix):].split("/")
         if len(parts) == 1 or parts[0].startswith(("_", ".")):
             shared.append(path)
-        else:
-            ids.add(parts[0])
-    return sorted(ids), sorted(shared), sorted(outside)
+            continue
+        members.add(parts[0])
+        if len(parts) > 2:
+            works.add(f"{parts[0]}/{parts[1]}")
+    return sorted(works), sorted(members), sorted(shared), sorted(outside)
 
 
-def pr_warnings(ids, shared, outside, root=ROOT, pr_author=None):
+def pr_warnings(works, members, shared, outside, root=ROOT, pr_author=None):
     warnings = []
-    if not ids:
+    if not members:
         return warnings
-    if len(ids) > 1:
-        warnings.append(f"一个投稿 PR 只放一个投稿目录，这次改了 {len(ids)} 个：{'、'.join(ids)}")
+    if len(works) > 1:
+        warnings.append(f"一个投稿 PR 只放一个投稿目录，这次改了 {len(works)} 个：{'、'.join(works)}")
     if shared:
         warnings.append(f"这些文件由维护者更新，投稿 PR 不要改：{'、'.join(shared)}")
     if outside:
         warnings.append(f"投稿 PR 只应包含投稿目录，另外改了：{'、'.join(outside[:10])}" + ("……" if len(outside) > 10 else ""))
-    for name in ids:
-        meta_path = root / SUBMISSIONS / name / "投稿.json"
-        if not meta_path.is_file():
-            warnings.append(f"{name}: 投稿目录被删除或缺少 投稿.json；删除投稿须由维护者确认")
-            continue
-        if pr_author:
-            try:
-                owner = json.loads(meta_path.read_text(encoding="utf-8-sig")).get("author", {}).get("github", "")
-            except (json.JSONDecodeError, UnicodeDecodeError, AttributeError):
-                continue
-            if str(owner).lower() != pr_author.lower():
-                warnings.append(f"{name}: 登记作者是 {owner}，PR 由 {pr_author} 提交；改别人的作品请新建自己的投稿目录")
+    if pr_author:
+        for member in members:
+            if member != pr_author.lower():
+                warnings.append(f"改了成员 {member} 的目录，但 PR 由 {pr_author} 提交；改别人的作品请在自己的成员目录里新建投稿")
+    for work in works:
+        if not (root / SUBMISSIONS / work / "投稿.json").is_file():
+            warnings.append(f"{work}: 投稿目录被删除或缺少 投稿.json；删除投稿须由维护者确认")
     return warnings
 
 
@@ -395,7 +436,7 @@ def main(argv=None):
     args = parser.parse_args(argv)
 
     if args.list:
-        print("场景\t投稿\t作者\t状态\t视频数\t未解决")
+        print("场景\t投稿\t成员\t状态\t视频数\t未解决")
         for row in overview():
             print("\t".join(map(str, row)))
         return 0
@@ -404,27 +445,38 @@ def main(argv=None):
     if args.changed_since:
         if args.folders:
             parser.error("--changed-since 不能和投稿目录参数同时用")
-        ids, shared, outside = pr_scope(changed_paths(args.changed_since))
-        scope_warnings = pr_warnings(ids, shared, outside, pr_author=args.pr_author)
-        folders = [ROOT / SUBMISSIONS / name for name in ids if (ROOT / SUBMISSIONS / name).is_dir()]
+        works, members, shared, outside = pr_scope(changed_paths(args.changed_since))
+        scope_warnings = pr_warnings(works, members, shared, outside, pr_author=args.pr_author)
+        folders = [ROOT / SUBMISSIONS / work for work in works if (ROOT / SUBMISSIONS / work).is_dir()]
+        member_dirs = [ROOT / SUBMISSIONS / m for m in members if (ROOT / SUBMISSIONS / m).is_dir()]
         for message in scope_warnings:
             report("提醒", "PR 范围", message)
-        if not ids:
+        if not members:
             print("这次没有改动投稿目录")
     else:
         folders = [Path(f).resolve() for f in args.folders] or submission_folders()
+        member_dirs = sorted({f.parent for f in folders if f.parent.name != Path(SUBMISSIONS).name}) \
+            if args.folders else member_folders()
     if args.video and len(folders) != 1:
         parser.error("--video 只能配合一个投稿目录")
     known = scene_ids()
     failed = False
     results = []
+    for member in member_dirs:
+        errors = check_member(member)
+        label = f"成员 {member.name}"
+        for message in errors:
+            report("错误", label, message)
+        if errors:
+            results.append((label, errors, []))
+            failed = True
     for folder in folders:
         errors, warnings = check_submission(folder, known_scenes=known)
         if args.video and not errors:
             compare_local_video(folder / "投稿.json", args.video, errors)
         if args.online and not errors:
             probe_online(folder / "投稿.json", errors)
-        label = folder.name
+        label = f"{folder.parent.name}/{folder.name}"
         for message in errors:
             report("错误", label, message)
         for message in warnings:
@@ -434,7 +486,7 @@ def main(argv=None):
         results.append((label, errors, warnings))
         failed = failed or bool(errors)
     write_summary(results)
-    if not folders and not args.changed_since:
+    if not folders and not member_dirs and not args.changed_since:
         print("还没有投稿")
     elif folders and not args.online and not failed:
         print("说明：未加 --online，没有验证 Release 链接能否下载；“提醒”不算失败，但要在 PR 里照实说明")
