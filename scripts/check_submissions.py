@@ -26,7 +26,7 @@ import urllib.request
 ROOT = Path(__file__).resolve().parents[1]
 SUBMISSIONS = "作品/投稿"
 SCENE_LIBRARY = "docs/curricula/scene-library"
-RELEASE_PREFIX = "https://github.com/gduf-community/ManiMind/releases/download/submissions-"
+RELEASE_PREFIX = "https://github.com/gduf-community/ManiMind/releases/download/submissions/"
 
 ID_PATTERN = re.compile(r"^(\d{8})-[a-z0-9]+(?:-[a-z0-9]+)+$")
 VERSION_PATTERN = re.compile(r"^v\d{3}$")
@@ -128,7 +128,7 @@ def check_video(index, video, status, errors, warnings):
         if status != "draft":
             warnings.append(f"{where}.url 为空：视频还没上传，请维护者代传后补链接")
     elif not (isinstance(url, str) and url.startswith(RELEASE_PREFIX) and url.endswith(".mp4")):
-        errors.append(f"{where}.url 必须是本仓库 submissions-YYYYMM Release 里的 .mp4 附件链接，或 null")
+        errors.append(f"{where}.url 必须是本仓库 Release 中 submissions 预发布里的 .mp4 附件链接（{RELEASE_PREFIX}…），或 null")
 
 
 def check_submission(folder, root=ROOT, known_scenes=None):
@@ -239,9 +239,10 @@ def check_submission(folder, root=ROOT, known_scenes=None):
         videos = videos if isinstance(videos, list) else []
     for index, video in enumerate(videos):
         check_video(index, video, status, errors, warnings)
+        expected = f"{RELEASE_PREFIX}{name}-{video.get('version')}.mp4" if isinstance(video, dict) else None
         if isinstance(video, dict) and isinstance(video.get("url"), str) and \
-                not video["url"].endswith(f"/{name}-{video.get('version')}.mp4"):
-            errors.append(f"videos[{index}].url 的文件名应为 {name}-{video.get('version')}.mp4")
+                video["url"].startswith(RELEASE_PREFIX) and video["url"] != expected:
+            errors.append(f"videos[{index}].url 应为 {expected}")
     voiced = [v for v in videos if isinstance(v, dict) and v.get("audio") in ("tts", "human")]
     if voiced and not (folder / "讲稿.md").is_file():
         errors.append("有配音的投稿必须附 讲稿.md")

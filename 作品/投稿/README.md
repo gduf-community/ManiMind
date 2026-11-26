@@ -19,7 +19,7 @@ AI 会照着[投稿指南](投稿指南.md)建目录、填登记、整理制作�
 | [_模板](_模板/) | 新投稿从这里复制 |
 | `<投稿id>/` | 每个作品一个目录，如 `20261126-用户名-主题` |
 
-视频放在 GitHub Release 的 `submissions-YYYYMM` 预发布里，仓库只存登记和制作资料。查看全部投稿和各自未解决的问题数：
+视频统一放在 GitHub Release 的 [`submissions`](https://github.com/gduf-community/ManiMind/releases/tag/submissions) 预发布里，仓库只存登记和制作资料。查看全部投稿和各自未解决的问题数：
 
 ```bash
 python3 scripts/check_submissions.py --list
