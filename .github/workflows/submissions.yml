@@ -1,0 +1,48 @@
+# 组员投稿自动检查：PR 改动投稿区或检查工具时运行。规则见 作品/投稿/投稿指南.md。
+name: 投稿检查
+
+on:
+  pull_request:
+    paths:
+      - "作品/投稿/**"
+      - "scripts/check_submissions.py"
+      - "scripts/check_repository_organization.py"
+      - "tests/test_submissions.py"
+      - "docs/curricula/scene-library/*.csv"
+      - ".github/workflows/submissions.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: submissions-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 检查这次改动的投稿
+        if: github.event_name == 'pull_request'
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+        run: python3 scripts/check_submissions.py --changed-since "$BASE_SHA" --pr-author "$PR_AUTHOR" --online
+
+      - name: 检查全部投稿
+        run: python3 scripts/check_submissions.py
+
+      - name: 检查工具自身的测试
+        run: |
+          python3 -m pip install --quiet pytest
+          python3 -m pytest -q -p no:cacheprovider tests/test_submissions.py

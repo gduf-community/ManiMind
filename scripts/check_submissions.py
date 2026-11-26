@@ -6,6 +6,7 @@ Usage from the repository root:
     python3 scripts/check_submissions.py 作品/投稿/<id> --video 本地.mp4   # also compare the local MP4
     python3 scripts/check_submissions.py --list              # overview grouped by scene
     python3 scripts/check_submissions.py 作品/投稿/<id> --online          # also probe the Release URL
+    python3 scripts/check_submissions.py --changed-since origin/develop --pr-author <login> --online   # CI
 
 Exit code 0 means no errors; warnings never fail the check.
 """
@@ -18,8 +19,10 @@ from datetime import date
 import hashlib
 import importlib.util
 import json
+import os
 from pathlib import Path
 import re
+import subprocess
 import sys
 import urllib.request
 
@@ -311,12 +314,84 @@ def overview(root=ROOT):
     return sorted(rows)
 
 
+MAINTAINER_FILES = {"README.md", "投稿指南.md", "经验库.md"}
+
+
+def pr_scope(changed):
+    """Split changed repo paths into (submission ids, maintainer-owned submission files, files outside 作品/投稿)."""
+    ids, shared, outside = set(), [], []
+    prefix = SUBMISSIONS + "/"
+    for path in changed:
+        if not path.startswith(prefix):
+            outside.append(path)
+            continue
+        parts = path[len(prefix):].split("/")
+        if len(parts) == 1 or parts[0].startswith(("_", ".")):
+            shared.append(path)
+        else:
+            ids.add(parts[0])
+    return sorted(ids), sorted(shared), sorted(outside)
+
+
+def pr_warnings(ids, shared, outside, root=ROOT, pr_author=None):
+    warnings = []
+    if not ids:
+        return warnings
+    if len(ids) > 1:
+        warnings.append(f"一个投稿 PR 只放一个投稿目录，这次改了 {len(ids)} 个：{'、'.join(ids)}")
+    if shared:
+        warnings.append(f"这些文件由维护者更新，投稿 PR 不要改：{'、'.join(shared)}")
+    if outside:
+        warnings.append(f"投稿 PR 只应包含投稿目录，另外改了：{'、'.join(outside[:10])}" + ("……" if len(outside) > 10 else ""))
+    for name in ids:
+        meta_path = root / SUBMISSIONS / name / "投稿.json"
+        if not meta_path.is_file():
+            warnings.append(f"{name}: 投稿目录被删除或缺少 投稿.json；删除投稿须由维护者确认")
+            continue
+        if pr_author:
+            try:
+                owner = json.loads(meta_path.read_text(encoding="utf-8-sig")).get("author", {}).get("github", "")
+            except (json.JSONDecodeError, UnicodeDecodeError, AttributeError):
+                continue
+            if str(owner).lower() != pr_author.lower():
+                warnings.append(f"{name}: 登记作者是 {owner}，PR 由 {pr_author} 提交；改别人的作品请新建自己的投稿目录")
+    return warnings
+
+
+def changed_paths(ref, root=ROOT):
+    output = subprocess.run(["git", "-c", "core.quotepath=false", "diff", "--name-only", "-z", f"{ref}...HEAD"],
+                            cwd=root, capture_output=True, check=True).stdout.decode("utf-8")
+    return [path for path in output.split("\0") if path]
+
+
+def report(kind, label, message):
+    print(f"{kind} {label}: {message}")
+    if os.environ.get("GITHUB_ACTIONS") == "true":
+        level = {"错误": "error", "提醒": "warning"}[kind]
+        print(f"::{level} title=投稿检查 {label}::{message}")
+
+
+def write_summary(results):
+    path = os.environ.get("GITHUB_STEP_SUMMARY")
+    if not path:
+        return
+    lines = ["## 投稿检查", "", "| 投稿 | 结果 | 错误 | 提醒 |", "| --- | --- | ---: | ---: |"]
+    lines += [f"| {label} | {'不通过' if errors else '通过'} | {len(errors)} | {len(warnings)} |"
+              for label, errors, warnings in results]
+    if not results:
+        lines.append("| （这次没有改动投稿目录） | 通过 | 0 | 0 |")
+    with open(path, "a", encoding="utf-8") as handle:
+        handle.write("\n".join(lines) + "\n")
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("folders", nargs="*", help="投稿目录；省略时检查全部")
     parser.add_argument("--video", help="本地 final MP4，用来核对 SHA256 和大小（只能配合单个投稿）")
     parser.add_argument("--online", action="store_true", help="匿名请求 Release 链接，确认能下载")
     parser.add_argument("--list", action="store_true", help="按场景列出全部投稿和未解决问题数")
+    parser.add_argument("--changed-since", metavar="REF", help="只检查相对 REF 有改动的投稿目录，并检查 PR 范围（CI 用）")
+    parser.add_argument("--pr-author", metavar="LOGIN", help="PR 提交者的 GitHub 用户名，用于提醒改了别人的投稿")
     args = parser.parse_args(argv)
 
     if args.list:
@@ -325,11 +400,24 @@ def main(argv=None):
             print("\t".join(map(str, row)))
         return 0
 
-    folders = [Path(f).resolve() for f in args.folders] or submission_folders()
+    scope_warnings = []
+    if args.changed_since:
+        if args.folders:
+            parser.error("--changed-since 不能和投稿目录参数同时用")
+        ids, shared, outside = pr_scope(changed_paths(args.changed_since))
+        scope_warnings = pr_warnings(ids, shared, outside, pr_author=args.pr_author)
+        folders = [ROOT / SUBMISSIONS / name for name in ids if (ROOT / SUBMISSIONS / name).is_dir()]
+        for message in scope_warnings:
+            report("提醒", "PR 范围", message)
+        if not ids:
+            print("这次没有改动投稿目录")
+    else:
+        folders = [Path(f).resolve() for f in args.folders] or submission_folders()
     if args.video and len(folders) != 1:
         parser.error("--video 只能配合一个投稿目录")
     known = scene_ids()
     failed = False
+    results = []
     for folder in folders:
         errors, warnings = check_submission(folder, known_scenes=known)
         if args.video and not errors:
@@ -338,15 +426,17 @@ def main(argv=None):
             probe_online(folder / "投稿.json", errors)
         label = folder.name
         for message in errors:
-            print(f"错误 {label}: {message}")
+            report("错误", label, message)
         for message in warnings:
-            print(f"提醒 {label}: {message}")
+            report("提醒", label, message)
         if not errors:
             print(f"通过 {label}" + (f"（{len(warnings)} 条提醒）" if warnings else ""))
+        results.append((label, errors, warnings))
         failed = failed or bool(errors)
-    if not folders:
+    write_summary(results)
+    if not folders and not args.changed_since:
         print("还没有投稿")
-    elif args.online is False and not failed:
+    elif folders and not args.online and not failed:
         print("说明：未加 --online，没有验证 Release 链接能否下载；“提醒”不算失败，但要在 PR 里照实说明")
     return 1 if failed else 0
 
