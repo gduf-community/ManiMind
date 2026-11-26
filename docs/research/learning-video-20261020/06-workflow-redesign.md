@@ -29,7 +29,7 @@
 | 黑底蓝黄配色、固定字号与位置、每帧 2–3 个核心元素 | `llm/templates/style_guide.py`，由 `agents/manim_worker.py` 注入 | 改为可选风格示例，不作为全局视觉要求 | 主次、可读性、语义一致与主题适合度 |
 | 每个镜头单独 Scene、每步公式调用 `self.wait()` | `llm/templates/manim_worker.py` 及 worker 提示 | 允许连续场景和其他节奏表达，不指定源码写法 | 连贯性、实际观察时间与可维护的执行入口 |
 | 规划阶段镜头估时不得少于五秒 | `agents/planner.py`、`llm/templates/planner.py` | 改为可选估时建议；不拒绝有效短镜头 | 实际理解时间，而非估时字段达标 |
-| 固定六镜头、每镜十八秒 | `configs/isolated-comparison-prompt.txt` | 不继承为通用规则；由学习目标与实际语音决定结构 | 节奏和解释是否完整，是否符合用户交付要求 |
+| 固定六镜头、每镜十八秒 | `archive/legacy/configs/isolated-comparison-prompt.txt`（原 `configs/` 路径已归档） | 不继承为通用规则；由学习目标与实际语音决定结构 | 节奏和解释是否完整，是否符合用户交付要求 |
 | 每镜旁白 35–65 字、固定起止留白 | 同上及 `experiments/isolated_media.py` | 不按字数截断论证；提供语音测时、事件对齐工具 | 实际口播有无截断、抢跑、拖空或错配 |
 | 图区加侧栏固定布局 | `components/renderer.py` 的 `SIDEBAR`、`_row_layout`、`_build_shot` | 作为可选预设；支持自由布局或直接使用渲染后端 | 指代是否清楚、是否遮挡、关键内容是否足够大 |
 | 所有对象从开头一直存在，无显隐与缩放 | 冻结提示词和当前组件能力 | 增加可选事件、对象生命周期和镜头能力 | 变化能否被跟踪，是否造成错误含义 |

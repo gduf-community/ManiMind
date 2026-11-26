@@ -4,10 +4,7 @@
 
 ## 加载顺序
 
-1. 根 [AGENTS.md](../AGENTS.md) 与当前任务中的保护范围
-2. [完整 Agent 规则](AGENT_RULES.md)
-3. [强前置条件](contracts/强前置条件约束.md)
-4. [执行架构详解](architecture/执行架构详解.md)、[模块与状态详解](architecture/模块与状态详解.md)
+文档优先级只在根 [AGENTS.md](../AGENTS.md) 维护。独立审核任务只读[审核者规则卡](contracts/审核者规则卡.md)和对应阶段契约。
 
 ## 当前课程链
 
@@ -35,7 +32,7 @@
 - [归档与冻结迁移](migrations/README.md)、[历史实验资料](../archive/README.md)
 - [当前模块与历史源码定位](architecture/当前模块与历史源码.md)
 
-`docs/understanding-workflow.md` 与 `docs/remote-speech.md` 仍在原生来源闭包内。涉及本机主机/账号的资料保存在本机忽略区；公开导航仅给出通用契约与维护者入口。
+`docs/understanding-workflow.md` 与 `docs/remote-speech.md` 仍在原生来源闭包内。冻结文档（如 `docs/formula-motion.md`、`docs/understanding-workflow.md`）引用的 `examples/projectile_*.py` 已归档到 `archive/legacy/examples/`，冻结文件本身不改。涉及本机主机/账号的资料保存在本机忽略区；公开导航仅给出通用契约与维护者入口。
 
 ## 协作状态
 

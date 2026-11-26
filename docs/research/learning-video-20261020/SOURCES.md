@@ -225,7 +225,7 @@
 
 | 证据 | 主要用途 | 边界 |
 |---|---|---|
-| [冻结生成提示词](../../../configs/isolated-comparison-prompt.txt) | 区分创作限制与任务要求 | 属于特定旧实验，不能代表全部模型能力 |
+| [冻结生成提示词](../../../archive/legacy/configs/isolated-comparison-prompt.txt) | 区分创作限制与任务要求 | 属于特定旧实验，不能代表全部模型能力 |
 | [主工作流样式提示](../../../src/manimind/llm/templates/style_guide.py) | 核对固定配色、位置、字号与元素数量 | 内含的额外评分清单未检出运行时调用 |
 | [Manim Worker](../../../src/manimind/agents/manim_worker.py) | 确认样式提示被注入 | 不把有效 API 的技术事实当成可删除的创作习惯 |
 | [Planner 校验](../../../src/manimind/agents/planner.py) | 核对五秒估时门槛 | 估时字段不等于真实观看需要 |
