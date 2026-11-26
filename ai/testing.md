@@ -9,6 +9,8 @@
 | 本机素材 | 冻结 WAV、旧 candidate、真实计划 | 保留 native 来源的本机工作区 |
 | 外部服务 | API、Windows 声音、GPU | 操作者单独授权并记录实际结果 |
 
+依赖仓库内 `manimgl_env`、本机 `outputs/` 媒体或外部 CLI 的测试，逐条登记在 `tests/conftest.py` 的 `REQUIREMENTS`/`LOCAL_MEDIA`。缺少对应环境时（如 git worktree、CI、新克隆）显示“跳过 + 原因”，不报失败；环境齐全时照常运行。新增此类测试要在表里补一行，`tests/test_environment_requirements.py` 检查登记的测试仍然存在。只跑快速层：`pytest -m "not native and not media and not local and not external"`。
+
 离线验证设置 `MANIMIND_DISABLE_DOTENV=1`，不要收集或输出运行环境中的密钥。测试临时目录放在测试器自己的 session 或系统临时目录，不写在其他作者 session。
 
 旧 `test_projectile_formula_motion_full.py` 的本机 candidate 依赖已通过保留原文归档与可移植后继测试处理：原测试和场景在 `archive/legacy/`，五项源回归由 `tests/test_projectile_source_snapshot.py` 继续执行，原始 candidate 字节快照在 `tests/fixtures/legacy-projectile/`。新测试读取公开 fixture，制作来源的 `outputs/` 原件与既有批准保持原样。
