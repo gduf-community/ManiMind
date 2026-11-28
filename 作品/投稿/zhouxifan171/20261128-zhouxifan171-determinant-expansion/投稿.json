@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "id": "20261128-zhouxifan171-determinant-expansion",
+  "title": "三阶行列式按行（列）展开",
+  "subject": "线性代数",
+  "scene_id": null,
+  "author": {
+    "github": "zhouxifan171",
+    "name": "周熙钒、林琳"
+  },
+  "created_at": "2026-11-28",
+  "based_on": [
+    "EXP-002"
+  ],
+  "tools": {
+    "model": "DeepSeek（具体型号组员未记录）",
+    "agent": "WorkBuddy",
+    "renderer": "Manim Community 0.22.1",
+    "tts": "edge-tts 7.3.1（zh-CN-XiaoxuanNeural，语速 -10%，音调 -2Hz）"
+  },
+  "status": "self_checked",
+  "watched_full": true,
+  "listened_full": true,
+  "videos": [
+    {
+      "version": "v001",
+      "role": "final",
+      "url": null,
+      "sha256": "f5eea7cc2369313e95c4c2a26d8763e564c84d04229515a907c000aea127676f",
+      "size_bytes": 4529777,
+      "duration_seconds": 67.3,
+      "resolution": "1920x1080",
+      "audio": "tts",
+      "captions": true
+    }
+  ]
+}
