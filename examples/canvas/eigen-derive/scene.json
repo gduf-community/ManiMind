@@ -1,0 +1,109 @@
+{
+ "id": "eigen-derive",
+ "title": "特征值求解推导",
+ "duration": 101.5,
+ "background": "#101416",
+ "layers": [
+  {
+   "type": "canvas",
+   "id": "under"
+  },
+  {
+   "type": "fx",
+   "id": "fx"
+  },
+  {
+   "type": "canvas",
+   "id": "over"
+  }
+ ],
+ "scripts": [
+  "derive-timing.js",
+  "derive.js"
+ ],
+ "fonts": [
+  "40px KaTeX_Main",
+  "40px KaTeX_Math",
+  "40px KaTeX_Size1",
+  "40px KaTeX_Size2",
+  "40px KaTeX_Size3",
+  "40px KaTeX_Size4",
+  "40px KaTeX_AMS",
+  "600 64px \"PingFang SC\"",
+  "500 40px \"PingFang SC\"",
+  "400 30px \"PingFang SC\""
+ ],
+ "audio": [
+  {
+   "src": "outputs/eigen-directions-20261028/speech-v002/E06.wav",
+   "start": 1.12,
+   "volume": 1.0
+  },
+  {
+   "src": "outputs/eigen-directions-20261028/speech-v002/E07.wav",
+   "start": 9.12,
+   "volume": 1.0
+  },
+  {
+   "src": "outputs/eigen-directions-20261028/speech-v002/E08.wav",
+   "start": 18.12,
+   "volume": 1.0
+  },
+  {
+   "src": "outputs/eigen-directions-20261028/speech-v002/E09.wav",
+   "start": 28.12,
+   "volume": 1.0
+  },
+  {
+   "src": "outputs/eigen-directions-20261028/speech-v002/E10.wav",
+   "start": 35.12,
+   "volume": 1.0
+  },
+  {
+   "src": "outputs/eigen-directions-20261028/speech-v002/E11.wav",
+   "start": 43.12,
+   "volume": 1.0
+  },
+  {
+   "src": "outputs/eigen-directions-20261028/speech-v002/E12.wav",
+   "start": 49.12,
+   "volume": 1.0
+  },
+  {
+   "src": "outputs/eigen-directions-20261028/speech-v002/E13.wav",
+   "start": 54.12,
+   "volume": 1.0
+  },
+  {
+   "src": "outputs/eigen-directions-20261028/speech-v002/E14.wav",
+   "start": 60.12,
+   "volume": 1.0
+  },
+  {
+   "src": "outputs/eigen-directions-20261028/speech-v002/E15.wav",
+   "start": 69.12,
+   "volume": 1.0
+  },
+  {
+   "src": "outputs/eigen-directions-20261028/speech-v002/E16.wav",
+   "start": 77.12,
+   "volume": 1.0
+  },
+  {
+   "src": "outputs/eigen-directions-20261028/speech-v002/E17.wav",
+   "start": 83.12,
+   "volume": 1.0
+  },
+  {
+   "src": "outputs/eigen-directions-20261028/speech-v002/E18.wav",
+   "start": 90.12,
+   "volume": 1.0
+  },
+  {
+   "src": "outputs/eigen-directions-20261028/speech-v002/E19.wav",
+   "start": 94.12,
+   "volume": 1.0
+  }
+ ],
+ "notes": "Same narration as the ManimGL lesson eigen-directions (speech-v002 E06-E19 at aligned-v002 starts, clip from 59.0 s)."
+}

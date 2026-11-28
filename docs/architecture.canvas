@@ -206,7 +206,7 @@
       "y": 590,
       "width": 320,
       "height": 150,
-      "text": "# render/\n\n- ManimGL + manimgl.yml\n- ManimCE 兼容后端\n- ffmpeg 关键帧证据",
+      "text": "# render/\n\n- ManimGL + manimgl.yml（已发布课程；Canvas 的 3D 等素材源）\n- ManimCE 兼容后端\n- ffmpeg 关键帧证据",
       "color": "4"
     },
     {
@@ -413,8 +413,8 @@
       "x": 1830,
       "y": -300,
       "width": 320,
-      "height": 340,
-      "text": "# 外部能力目录\n\n- `resources/skills/html-animation/`\n- `resources/references/hyperframes/`\n- `resources/skills/manim/SKILL.md` (CE)\n- `manimgl` package (default)\n\n只引用，不在仓库内重写",
+      "height": 380,
+      "text": "# 外部能力目录\n\n- `resources/skills/html-animation/`\n- `resources/references/hyperframes/`\n- `tools/hyperframes/`（锁定 npm 版本，实际渲染）\n- `resources/skills/manim/SKILL.md` (CE)\n- `manimgl` package (default)\n\n只引用，不在仓库内重写",
       "color": "5"
     },
     {
@@ -542,6 +542,15 @@
       "y": -1770,
       "width": 340,
       "height": 230
+    },
+    {
+      "id": "node-canvas-module",
+      "type": "text",
+      "x": -300,
+      "y": 360,
+      "width": 320,
+      "height": 190,
+      "text": "# canvas/ 主舞台（2026-11-28）\n\n- seek(t) 场景 + 自有动效/公式变形库\n- 组装静音 HyperFrames 工程\n- tools/hyperframes 锁定版本渲染\n- 确定性检查 / 恒定增益配音 / 回执\n- ManimGL 片段作 3D 等素材并入"
     }
   ],
   "edges": [
@@ -1116,6 +1125,30 @@
       "toNode": "node-review-module",
       "toSide": "bottom",
       "label": "段内指向与字幕独立审查，听审另记"
+    },
+    {
+      "id": "edge-canvas-hyperframes",
+      "fromNode": "node-canvas-module",
+      "fromSide": "right",
+      "toNode": "node-external-capabilities",
+      "toSide": "left",
+      "label": "lint / render（锁定版本）"
+    },
+    {
+      "id": "edge-render-canvas-assets",
+      "fromNode": "node-render-module",
+      "fromSide": "top",
+      "toNode": "node-canvas-module",
+      "toSide": "bottom",
+      "label": "透明通道素材"
+    },
+    {
+      "id": "edge-canvas-outputs",
+      "fromNode": "node-canvas-module",
+      "fromSide": "right",
+      "toNode": "node-outputs",
+      "toSide": "left",
+      "label": "成片与回执"
     }
   ]
 }

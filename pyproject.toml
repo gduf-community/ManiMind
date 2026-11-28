@@ -56,3 +56,4 @@ where = ["src"]
 
 [tool.setuptools.package-data]
 "manimind.postproduce" = ["templates/*.html"]
+"manimind.canvas" = ["assets/*.js", "assets/*.css"]

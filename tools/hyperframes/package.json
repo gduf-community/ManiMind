@@ -1,0 +1,12 @@
+{
+  "name": "manimind-canvas-tools",
+  "private": true,
+  "description": "Pinned HyperFrames render engine and browser-side libraries for ManiMind Canvas films. Install with `npm ci`; node_modules stays out of Git.",
+  "license": "UNLICENSED",
+  "engines": { "node": ">=22" },
+  "dependencies": {
+    "gsap": "3.14.2",
+    "hyperframes": "0.9.43",
+    "katex": "0.19.1"
+  }
+}

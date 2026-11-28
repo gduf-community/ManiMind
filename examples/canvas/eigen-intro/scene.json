@@ -1,0 +1,65 @@
+{
+ "id": "eigen-intro",
+ "title": "特征向量 · 入门",
+ "duration": 55.5,
+ "background": "#101416",
+ "layers": [
+  {
+   "type": "canvas",
+   "id": "c"
+  },
+  {
+   "type": "fx",
+   "id": "fx"
+  }
+ ],
+ "scripts": [
+  "timing.js",
+  "eigen.js"
+ ],
+ "fonts": [
+  "40px KaTeX_Main",
+  "40px KaTeX_Math",
+  "40px KaTeX_Size1",
+  "40px KaTeX_Size2",
+  "40px KaTeX_Size3",
+  "40px KaTeX_Size4",
+  "40px KaTeX_AMS",
+  "600 64px \"PingFang SC\"",
+  "500 40px \"PingFang SC\"",
+  "400 30px \"PingFang SC\""
+ ],
+ "audio": [
+  {
+   "src": "outputs/eigen-canvas-sample-20261127/speech-v001/E0.wav",
+   "start": 0.6,
+   "volume": 1.0
+  },
+  {
+   "src": "outputs/eigen-canvas-sample-20261127/speech-v001/E1.wav",
+   "start": 5.4,
+   "volume": 1.0
+  },
+  {
+   "src": "outputs/eigen-canvas-sample-20261127/speech-v001/E2.wav",
+   "start": 12.8,
+   "volume": 1.0
+  },
+  {
+   "src": "outputs/eigen-canvas-sample-20261127/speech-v001/E3.wav",
+   "start": 22.2,
+   "volume": 1.0
+  },
+  {
+   "src": "outputs/eigen-canvas-sample-20261127/speech-v001/E4.wav",
+   "start": 35.0,
+   "volume": 1.0
+  },
+  {
+   "src": "outputs/eigen-canvas-sample-20261127/speech-v001/E5.wav",
+   "start": 46.6,
+   "volume": 1.0
+  }
+ ],
+ "notes": "Voice: V01 VoxCPM2 attempt eigen-canvas-sample-20261127-v001; timing.js generated from its forced alignment."
+}

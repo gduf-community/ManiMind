@@ -47,6 +47,25 @@ def _local(relative):
     return check
 
 
+def _canvas_libraries():
+    if not (ROOT / "tools/hyperframes/node_modules/katex/dist").is_dir():
+        return "缺少 tools/hyperframes/node_modules（在 tools/hyperframes 里运行 npm ci）"
+    return None
+
+
+def _canvas_render():
+    missing = _canvas_libraries() or _env_tools()
+    if missing:
+        return missing
+    try:
+        from manimind.canvas import render
+        render.node()
+        render.browser_path()
+    except (RuntimeError, FileNotFoundError) as exc:
+        return f"Canvas 渲染环境不全：{exc}"
+    return None
+
+
 def _codex():
     if not shutil.which("codex"):
         return ("本机没有 Codex CLI。注：冻结代码 codex_cli_team.role_request 先检查 CLI 再校验图片，"
@@ -75,6 +94,13 @@ REQUIREMENTS = {
         "tests/test_freeform_agent.py::test_real_sandbox_allows_tex_but_blocks_private_reads_and_writes",
         "tests/test_visual_first.py::test_real_silent_runtime_smoke",
     ]),
+    "canvas": (_canvas_libraries, [
+        "tests/test_canvas_project.py::test_assemble_builds_a_silent_hyperframes_composition",
+        "tests/test_canvas_project.py::test_span_project_keeps_film_time",
+    ]),
+    "canvas_render": (_canvas_render, [
+        "tests/test_canvas_render.py::test_hyperframes_renders_the_fixture_and_frames_do_not_depend_on_render_order",
+    ]),
     "local": None,  # filled below, one path per test
     "external": (_codex, [
         "tests/test_codex_cli_team.py::test_foreign_images_are_rejected_before_native_process",
@@ -90,7 +116,8 @@ LOCAL_MEDIA = {
     "tests/test_derivative_ch03_traceable_v011.py::test_all_rendered_parents_remain_frozen": f"{CH03}/visual-v010/render.json",
     "tests/test_derivative_ch07_extremes_v003.py::test_inventory_binds_actual_v001_pixels_not_hidden_numeric_precision": "outputs/math-derivative-ch07-extremes-20261102/visual-v001/frames",
 }
-MARKER = {"media": "media", "sandbox": "media", "local": "local", "external": "external"}
+MARKER = {"media": "media", "sandbox": "media", "canvas": "local", "canvas_render": "media", "local": "local",
+          "external": "external"}
 
 
 def _requirement(nodeid):
