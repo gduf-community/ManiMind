@@ -1,0 +1,9 @@
+{
+ "id": "tiny",
+ "title": "Canvas fixture",
+ "duration": 1.0,
+ "background": "#101416",
+ "layers": [{"type": "canvas", "id": "c"}, {"type": "fx", "id": "fx"}],
+ "scripts": ["tiny.js"],
+ "fonts": ["40px KaTeX_Main", "40px KaTeX_Math"]
+}

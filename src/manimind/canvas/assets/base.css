@@ -1,0 +1,12 @@
+/* Stage for ManiMind Canvas films. Formula layers are pinned as composited layers on purpose:
+   when an element's opacity animates, Chrome may otherwise switch its raster path and leave a few
+   antialiased pixels different when the same t is rendered again after other frames (seen on a
+   KaTeX delimiter, 2026-11-28). Keeping them always composited makes a frame independent of the
+   order frames were rendered in, which parallel HyperFrames workers require. */
+html, body { margin: 0; padding: 0; width: 1920px; height: 1080px; overflow: hidden; background: var(--bg, #101416); }
+#root { position: relative; width: 1920px; height: 1080px; overflow: hidden; background: var(--bg, #101416); }
+#root canvas { position: absolute; left: 0; top: 0; }
+.mm-fx { position: absolute; inset: 0; pointer-events: none; will-change: opacity; }
+.fx { position: absolute; left: 0; top: 0; white-space: nowrap; transform-origin: 50% 50%; will-change: transform, opacity; }
+.fx .katex { font-size: 1em; }
+.fx [id] { display: inline-block; transform-origin: 50% 50%; }
