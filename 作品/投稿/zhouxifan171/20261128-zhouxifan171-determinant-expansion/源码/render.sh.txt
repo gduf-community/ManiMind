@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+# 一键渲染两个场景并回收成片到 output/
+# 用法: ./render.sh [-ql|-qm|-qh|-qk]
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PY="$ROOT/../manimtopo/Scripts/python.exe"
+MEDIA="${MANIMTOP_MEDIA:-${TEMP:-/tmp}/manimtopo_media}"
+Q="${1:--qh}"
+
+case "$Q" in
+  -ql) QDIR=480p15 ;;
+  -qm) QDIR=720p30 ;;
+  -qh) QDIR=1080p60 ;;
+  -qp) QDIR=1440p60 ;;
+  -qk) QDIR=2160p60 ;;
+  *)   QDIR=1080p60 ;;
+esac
+
+[ -x "$PY" ] || { echo "找不到虚拟环境解释器: $PY"; exit 1; }
+export PATH="$ROOT/../manimtopo/Scripts:$PATH"
+mkdir -p "$ROOT/output"
+
+echo "=== 渲染 SecantToTangent ($Q) ==="
+"$PY" -m manim "$Q" --media_dir "$MEDIA" "$ROOT/scenes/derivative_tangent.py" SecantToTangent
+cp -f "$MEDIA/videos/derivative_tangent/$QDIR/SecantToTangent.mp4" "$ROOT/output/"
+
+echo "=== 渲染 SlopeToDerivative ($Q) ==="
+"$PY" -m manim "$Q" --media_dir "$MEDIA" "$ROOT/scenes/derivative_function.py" SlopeToDerivative
+cp -f "$MEDIA/videos/derivative_function/$QDIR/SlopeToDerivative.mp4" "$ROOT/output/"
+
+echo "=== 渲染 DetExpansion ($Q) ==="
+"$PY" -m manim "$Q" --media_dir "$MEDIA" "$ROOT/scenes/determinant_expansion.py" DetExpansion
+cp -f "$MEDIA/videos/determinant_expansion/$QDIR/DetExpansion.mp4" "$ROOT/output/"
+
+echo "=== 完成，成片已复制到 output/ ==="
+ls -1 "$ROOT/output"
